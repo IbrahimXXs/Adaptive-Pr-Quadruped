@@ -1,0 +1,342 @@
+{
+  "passed": true,
+  "experiment": "landing_pad",
+  "selected_leg": "FL",
+  "requested_cycles": 1,
+  "actual_completed_cycles": 1,
+  "limits": {
+    "minimum_hold_clearance_m": 0.02,
+    "minimum_hold_support_margin_m": 0.01,
+    "maximum_abs_roll_pitch_deg": 8.0,
+    "maximum_selected_foot_tracking_error_m": 0.012,
+    "maximum_support_foot_displacement_m": 0.01,
+    "force_cap_tolerance_n": 1.0,
+    "minimum_final_stance_s": 1.0,
+    "minimum_landing_normal_force_n": 2.0,
+    "minimum_unload_reload_duration_s": 3.0,
+    "maximum_pre_lift_selected_normal_force_n": 3.0,
+    "minimum_pre_lift_support_normal_force_n": 5.0,
+    "minimum_pre_lift_support_margin_m": 0.02,
+    "maximum_pre_lift_force_cap_n": 0.1,
+    "minimum_restored_foot_normal_force_n": 5.0,
+    "minimum_reload_loading_duration_s": 0.2
+  },
+  "criteria_basis": "Predeclared engineering limits for this controlled flat-ground simulation; not a stability proof.",
+  "conventions": {
+    "phase_duration": "Sample count \u00d7 dt; row labels describe the preceding control interval.",
+    "clearance": "Selected foot geometry-center height above recorded fixed pre-lift center; not absolute floor distance.",
+    "support_margin": "Independently recomputed from physical CoM and the other three measured foot centers in world XY.",
+    "support_displacement": "Foot geometry-center displacement from fixed per-cycle shift anchors includes rolling and contact compliance; it is not a measurement of pure tangential slip.",
+    "landing_debounce": "Pre-reload sampled selected-foot contacts must remain active with normal force >= 2 N; one boundary sample is allowed for control-start versus observation-end alignment.",
+    "restored_loading": "Each foot must exceed 5 N over the last 0.2 s of reload plus the first recenter sample, and throughout final standing; contact flags alone do not establish loading.",
+    "mpc_cadence": "Periodic interval is round(1/(configured frequency \u00d7 physics dt)), matching the controller. Initialization and support changes force solves; a support-change solve does not reset the periodic grid.",
+    "force_cap": "Bounds the MPC desired vertical force at MPC updates, not the measured contact reaction.",
+    "force_ramp_duration": "The 3 s minimum for unload/reload is a declared check of this milestone's fixed controller schedule, not a universal dynamics requirement.",
+    "landing_impact": "Peak simulated normal contact reaction in first 100 ms after contact; not a hardware impact measurement.",
+    "nlp_status": "Status 2 denotes the configured SQP iteration limit; underlying QP status must remain zero."
+  },
+  "criteria": {
+    "completed": {
+      "passed": true,
+      "requirement": "Completed status and exactly 1 completed cycles",
+      "observed": {
+        "status": "completed",
+        "completed_cycles": 1
+      }
+    },
+    "cycle_labels": {
+      "passed": true,
+      "requirement": "Every requested cycle appears in chronological order",
+      "observed": [
+        1
+      ]
+    },
+    "sample_clock": {
+      "passed": true,
+      "requirement": "Continuous end-of-interval sampling with no reset or time gap",
+      "observed": {
+        "rows": 16308,
+        "last_time_s": 32.615999999993896
+      }
+    },
+    "control_alignment": {
+      "passed": true,
+      "requirement": "Control timestamp equals interval endpoint minus dt",
+      "observed": 2.444225377651321e-15
+    },
+    "mpc_update_cadence": {
+      "passed": true,
+      "requirement": "MPC updates match the configured fixed-step cadence, initialization, and immediate support changes; no missing or unexplained solves",
+      "observed": {
+        "configured_frequency_hz": 100.0,
+        "effective_periodic_frequency_hz": 100.0,
+        "period_in_physics_steps": 5,
+        "step_sequence_valid": true,
+        "expected_updates": 3264,
+        "recorded_updates": 3264,
+        "extra_support_change_updates": 2,
+        "missing_periodic_updates": 0,
+        "missing_support_change_updates": 0,
+        "unexpected_updates": 0
+      }
+    },
+    "finite_data": {
+      "passed": true,
+      "requirement": "All recorded numerical signals finite",
+      "observed": []
+    },
+    "no_termination": {
+      "passed": true,
+      "requirement": "No termination or truncation",
+      "observed": 0
+    },
+    "no_numerical_warnings": {
+      "passed": true,
+      "requirement": "No MuJoCo numerical warnings",
+      "observed": 0.0
+    },
+    "no_torque_saturation": {
+      "passed": true,
+      "requirement": "No actuator command clipping",
+      "observed": 0
+    },
+    "qp_success": {
+      "passed": true,
+      "requirement": "Every MPC update has QP status 0",
+      "observed": {
+        "0": 3264
+      }
+    },
+    "nlp_status": {
+      "passed": true,
+      "requirement": "Post-settling MPC NLP status is 0 or 2",
+      "observed": {
+        "2": 2964
+      }
+    },
+    "selected_force_cap": {
+      "passed": true,
+      "requirement": "Desired selected-foot vertical force <= configured cap + 1 N at MPC updates",
+      "observed": 1.8122240945719716e-11
+    },
+    "body_tilt": {
+      "passed": true,
+      "requirement": "Maximum absolute roll or pitch < 8 degrees",
+      "observed": 0.43570502247900955
+    },
+    "cycle_1_phase_order": {
+      "passed": true,
+      "requirement": "All stages occur once in stand\u2192shift\u2192unload\u2192lift\u2192hold\u2192lower\u2192confirm\u2192reload\u2192recenter order",
+      "observed": [
+        "stand",
+        "shift",
+        "unload",
+        "lift",
+        "hold",
+        "lower",
+        "confirm",
+        "reload",
+        "recenter",
+        "complete"
+      ]
+    },
+    "cycle_1_hold_duration": {
+      "passed": true,
+      "requirement": "Continuous hold >= 5 s with at most one sample of boundary tolerance",
+      "observed": 5.0
+    },
+    "cycle_1_hold_contact": {
+      "passed": true,
+      "requirement": "Selected foot has neither contact nor planned support; other three have both for every hold sample",
+      "observed": {
+        "selected_measured_samples": 0,
+        "selected_planned_samples": 0,
+        "missing_support_measured_samples": 0,
+        "missing_support_planned_samples": 0
+      }
+    },
+    "cycle_1_swing_schedule": {
+      "passed": true,
+      "requirement": "Selected planned support remains off and the other three remain on throughout lift/hold/lower/confirm",
+      "observed": {
+        "selected_planned_samples": 0,
+        "missing_support_planned_samples": 0
+      }
+    },
+    "cycle_1_support_contact_continuity": {
+      "passed": true,
+      "requirement": "All three support feet retain measured contact throughout unload/lift/hold/lower/confirm/reload",
+      "observed": 0
+    },
+    "cycle_1_hold_clearance": {
+      "passed": true,
+      "requirement": "Selected foot remains >= 20 mm above its fixed pre-lift center height throughout hold",
+      "observed": 0.030134376927601916
+    },
+    "cycle_1_support_margin": {
+      "passed": true,
+      "requirement": "Physical CoM projection has >= 10 mm margin inside measured three-foot support triangle during hold",
+      "observed": {
+        "independent_minimum_m": 0.06959821637692096,
+        "logged_minimum_m": 0.06959821637692096
+      }
+    },
+    "cycle_1_fixed_lift_reference": {
+      "passed": true,
+      "requirement": "Immutable lift anchor and constant hold target 0.03 m above it, with zero desired velocity/acceleration",
+      "observed": true
+    },
+    "cycle_1_foot_tracking": {
+      "passed": true,
+      "requirement": "Selected-foot 3D error < 12 mm during lift, hold, lower and confirm",
+      "observed": 0.005427570084065536
+    },
+    "cycle_1_support_slip": {
+      "passed": true,
+      "requirement": "All three support feet stay within 10 mm of their fixed positions at shift entry",
+      "observed": 0.007541435182588614
+    },
+    "cycle_1_lift_entry_guard": {
+      "passed": true,
+      "requirement": "Last unload sample before lift: selected normal < 3 N, each support > 5 N, physical margin >= 20 mm, selected cap <= 0.1 N",
+      "observed": {
+        "last_unload_time_s": 10.504000000000177,
+        "selected_normal_force_n": 0.0,
+        "minimum_support_normal_force_n": 45.07142988585428,
+        "physical_support_margin_m": 0.06906348433927874,
+        "selected_force_cap_n": 0.0
+      }
+    },
+    "cycle_1_force_cap_ramps": {
+      "passed": true,
+      "requirement": "Unload and reload each last >= 3 s; held MPC force cap decreases monotonically on unload and increases on reload",
+      "observed": {
+        "unload_duration_s": 3.1,
+        "reload_duration_s": 3.202,
+        "maximum_unload_cap_increase_n": 0.0,
+        "maximum_reload_cap_decrease_n": -0.0
+      }
+    },
+    "cycle_1_reload_gate": {
+      "passed": true,
+      "requirement": "Reload follows confirm and recorded dwell >= 0.1 s; preceding contacts independently active at >= 2 N for that debounce minus at most one boundary sample",
+      "observed": {
+        "time_s": 23.209999999998015,
+        "contact_confirmed": true,
+        "measured_contact": true,
+        "dwell_s": 0.09999999999994458,
+        "independent_debounce_samples": 49,
+        "independent_debounce_duration_s": 0.098,
+        "independent_debounce_min_normal_force_n": 2.337950202800012,
+        "independent_debounce_passed": true
+      }
+    },
+    "cycle_1_reload_loading": {
+      "passed": true,
+      "requirement": "All four feet have measured/planned contact and normal force > 5 N for the last 0.2 s of reload and first recenter sample",
+      "observed": {
+        "reload_dwell_s": 0.2,
+        "first_recenter_time_s": 26.41199999999624,
+        "minimum_normal_force_n_by_leg": {
+          "FL": 11.631951227813337,
+          "FR": 37.048274595859866,
+          "RL": 40.16560110777123,
+          "RR": 60.27328002505773
+        },
+        "missing_measured_or_planned_contacts": 0
+      }
+    },
+    "final_four_foot_stance": {
+      "passed": true,
+      "requirement": "Final complete phase lasts >= 1 s with all four feet in measured and planned contact",
+      "observed": 2.004
+    },
+    "final_four_foot_loading": {
+      "passed": true,
+      "requirement": "Every foot remains loaded above 5 N throughout the final complete phase (at least 1 s), with measured and planned contact",
+      "observed": {
+        "duration_s": 2.004,
+        "minimum_normal_force_n_by_leg": {
+          "FL": 32.192897431540544,
+          "FR": 34.17431386952471,
+          "RL": 40.01721201721705,
+          "RR": 41.12619314642035
+        }
+      }
+    }
+  },
+  "cycles": [
+    {
+      "cycle": 1,
+      "phase_order": [
+        "stand",
+        "shift",
+        "unload",
+        "lift",
+        "hold",
+        "lower",
+        "confirm",
+        "reload",
+        "recenter",
+        "complete"
+      ],
+      "phase_durations_s": {
+        "stand": 3.202,
+        "shift": 4.202,
+        "unload": 3.1,
+        "lift": 2.2,
+        "hold": 5.0,
+        "lower": 4.002,
+        "confirm": 1.502,
+        "reload": 3.202,
+        "recenter": 4.202,
+        "complete": 2.004
+      },
+      "support_anchor_time_s": 3.2039999999998687,
+      "hold_minimum_clearance_m": 0.030134376927601916,
+      "hold_maximum_clearance_m": 0.03257001060542575,
+      "hold_minimum_support_margin_m": 0.06959821637692096,
+      "hold_maximum_tracking_error_m": 0.004059820681430199,
+      "swing_maximum_tracking_error_m": 0.005427570084065536,
+      "maximum_support_foot_displacement_m": 0.007541435182588614,
+      "maximum_abs_roll_pitch_deg": 0.43570502247900955,
+      "landing": {
+        "cycle": 1,
+        "first_contact_time_s": 22.375999999998477,
+        "normal_force_at_first_contact_n": 0.9015452329532947,
+        "peak_normal_force_first_100ms_n": 1.0276865846669587,
+        "peak_normal_force_lower_confirm_reload_n": 11.975938717863768,
+        "desired_vertical_speed_at_first_contact_m_s": -0.0037827172926439834,
+        "finite_difference_vertical_speed_at_first_contact_m_s": -0.004205984129430906
+      }
+    }
+  ],
+  "landing_events": [
+    {
+      "cycle": 1,
+      "first_contact_time_s": 22.375999999998477,
+      "normal_force_at_first_contact_n": 0.9015452329532947,
+      "peak_normal_force_first_100ms_n": 1.0276865846669587,
+      "peak_normal_force_lower_confirm_reload_n": 11.975938717863768,
+      "desired_vertical_speed_at_first_contact_m_s": -0.0037827172926439834,
+      "finite_difference_vertical_speed_at_first_contact_m_s": -0.004205984129430906
+    }
+  ],
+  "metrics": {
+    "sample_count": 16308,
+    "duration_s": 32.615999999993896,
+    "mpc_updates": 3264,
+    "maximum_abs_roll_pitch_deg": 0.43570502247900955,
+    "maximum_abs_actuator_torque_nm": 11.979147607776888,
+    "maximum_normal_force_n_by_leg": {
+      "FL": 52.33933564272423,
+      "FR": 54.64400117334323,
+      "RL": 54.46719814195869,
+      "RR": 61.94018067091842
+    },
+    "final_complete_duration_s": 2.004,
+    "maximum_logged_vs_independent_margin_difference_m": 0.0
+  },
+  "runner_status": "completed",
+  "runner_error": null
+}

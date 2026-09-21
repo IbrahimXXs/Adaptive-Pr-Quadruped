@@ -82,5 +82,468 @@
       "Robot completed the step. Reanalysis with independent reference bounds rejects the historical command discontinuity and planner restart timing; fixed before demonstration collection and formal evaluation.",
       "Current failed checks: pad_commanded_foot_speed, pad_planner_update_cadence"
     ]
+  },
+  "pad_reactive_20260921T082005_926207Z": {
+    "purpose": "V2 recovery training: -4 mm, zero estimate, 3 s nominal lowering",
+    "notes": [
+      "One of nine new recovery demonstrations; eligible for the 18-record nominal model and nine-record recovery model. Overlapping windows are not independent trials."
+    ]
+  },
+  "pad_reactive_20260921T082043_166457Z": {
+    "purpose": "V2 recovery training: -4 mm, zero estimate, 4 s nominal lowering",
+    "notes": [
+      "One of nine new recovery demonstrations; eligible for the 18-record nominal model and nine-record recovery model. Overlapping windows are not independent trials."
+    ]
+  },
+  "pad_reactive_20260921T082119_798405Z": {
+    "purpose": "V2 recovery training: -4 mm, zero estimate, 5 s nominal lowering",
+    "notes": [
+      "One of nine new recovery demonstrations; eligible for the 18-record nominal model and nine-record recovery model. Overlapping windows are not independent trials."
+    ]
+  },
+  "pad_reactive_20260921T082157_397600Z": {
+    "purpose": "V2 recovery training: -8 mm, zero estimate, 3 s nominal lowering",
+    "notes": [
+      "One of nine new recovery demonstrations; eligible for the 18-record nominal model and nine-record recovery model. Overlapping windows are not independent trials."
+    ]
+  },
+  "pad_reactive_20260921T082233_802281Z": {
+    "purpose": "V2 recovery training: -8 mm, zero estimate, 4 s nominal lowering",
+    "notes": [
+      "One of nine new recovery demonstrations; eligible for the 18-record nominal model and nine-record recovery model. Overlapping windows are not independent trials."
+    ]
+  },
+  "pad_reactive_20260921T082310_422902Z": {
+    "purpose": "V2 recovery training: -8 mm, zero estimate, 5 s nominal lowering",
+    "notes": [
+      "One of nine new recovery demonstrations; eligible for the 18-record nominal model and nine-record recovery model. Overlapping windows are not independent trials."
+    ]
+  },
+  "pad_reactive_20260921T082347_862204Z": {
+    "purpose": "V2 recovery training: -12 mm, zero estimate, 3 s nominal lowering",
+    "notes": [
+      "One of nine new recovery demonstrations; eligible for the 18-record nominal model and nine-record recovery model. Overlapping windows are not independent trials."
+    ]
+  },
+  "pad_reactive_20260921T082424_085682Z": {
+    "purpose": "V2 recovery training: -12 mm, zero estimate, 4 s nominal lowering",
+    "notes": [
+      "One of nine new recovery demonstrations; eligible for the 18-record nominal model and nine-record recovery model. Overlapping windows are not independent trials."
+    ]
+  },
+  "pad_reactive_20260921T082501_435853Z": {
+    "purpose": "V2 recovery training: -12 mm, zero estimate, 5 s nominal lowering",
+    "notes": [
+      "One of nine new recovery demonstrations; eligible for the 18-record nominal model and nine-record recovery model. Overlapping windows are not independent trials."
+    ]
+  },
+  "pad_matched_learned_20260921T082739_663282Z": {
+    "purpose": "V2 development: complete learned, -8 mm, nominal clearance",
+    "notes": [
+      "Unreserved development condition before the formal source freeze; excluded from training and all formal success denominators."
+    ]
+  },
+  "pad_matched_learned_20260921T082921_219283Z": {
+    "purpose": "V2 development: complete learned, +4 mm, nominal clearance",
+    "notes": [
+      "Unreserved development condition before the formal source freeze; excluded from training and all formal success denominators."
+    ]
+  },
+  "pad_matched_learned_20260921T083303_746154Z": {
+    "purpose": "V2 development: complete learned, +4 mm, nominal clearance",
+    "notes": [
+      "Unreserved development condition before the formal source freeze; excluded from training and all formal success denominators."
+    ]
+  },
+  "pad_matched_no_body_foot_correlation_20260921T083002_465192Z": {
+    "purpose": "V2 development: no direct body-foot correlation, -8 mm, nominal clearance",
+    "notes": [
+      "Unreserved development condition before the formal source freeze; excluded from training and all formal success denominators."
+    ]
+  },
+  "pad_matched_no_noncontact_updates_20260921T082921_242187Z": {
+    "purpose": "V2 preserved analyzer false rejection: skewed posterior credible interval",
+    "notes": [
+      "Unreserved development condition before the formal source freeze; excluded from training and all formal success denominators.",
+      "Retained FAIL: the valid posterior mean lay about 1.2 micrometres outside its 5th/95th percentiles. Means need not lie inside a central credible interval. The analyzer was corrected before freeze; controller/estimator were unchanged and a separate rerun passed. No physical fall."
+    ]
+  },
+  "pad_matched_no_noncontact_updates_20260921T083303_741617Z": {
+    "purpose": "V2 development: no noncontact belief updates, -8 mm, nominal clearance",
+    "notes": [
+      "Unreserved development condition before the formal source freeze; excluded from training and all formal success denominators."
+    ]
+  },
+  "pad_matched_no_timing_adaptation_20260921T082921_215962Z": {
+    "purpose": "V2 development: no learned timing adaptation, +4 mm, nominal clearance",
+    "notes": [
+      "Unreserved development condition before the formal source freeze; excluded from training and all formal success denominators."
+    ]
+  },
+  "pad_matched_predictive_20260921T082645_685884Z": {
+    "purpose": "V2 development: matched predictive, -4 mm, nominal clearance",
+    "notes": [
+      "Unreserved development condition before the formal source freeze; excluded from training and all formal success denominators."
+    ]
+  },
+  "pad_matched_learned_20260921T083449_239195Z": {
+    "purpose": "V2 formal paired evaluation: complete learned, -6 mm, seed 17, nominal clearance",
+    "notes": [
+      "Reserved study cell eval_matched_learned_h-6mm_seed17_nominal; shares frozen source/model and records measured initial condition. One preserved attempt, excluded from fitting."
+    ]
+  },
+  "pad_matched_learned_20260921T083531_182251Z": {
+    "purpose": "V2 formal paired evaluation: complete learned, -6 mm, seed 17, raised clearance",
+    "notes": [
+      "Reserved study cell eval_matched_learned_h-6mm_seed17_raised; shares frozen source/model and records measured initial condition. One preserved attempt, excluded from fitting."
+    ]
+  },
+  "pad_matched_learned_20260921T083613_771760Z": {
+    "purpose": "V2 formal paired evaluation: complete learned, -6 mm, seed 29, nominal clearance",
+    "notes": [
+      "Reserved study cell eval_matched_learned_h-6mm_seed29_nominal; shares frozen source/model and records measured initial condition. One preserved attempt, excluded from fitting."
+    ]
+  },
+  "pad_matched_learned_20260921T083736_153381Z": {
+    "purpose": "V2 formal paired evaluation: complete learned, -6 mm, seed 29, raised clearance",
+    "notes": [
+      "Reserved study cell eval_matched_learned_h-6mm_seed29_raised; shares frozen source/model and records measured initial condition. One preserved attempt, excluded from fitting."
+    ]
+  },
+  "pad_matched_learned_20260921T083818_730723Z": {
+    "purpose": "V2 formal paired evaluation: complete learned, -6 mm, seed 43, nominal clearance",
+    "notes": [
+      "Reserved study cell eval_matched_learned_h-6mm_seed43_nominal; shares frozen source/model and records measured initial condition. One preserved attempt, excluded from fitting."
+    ]
+  },
+  "pad_matched_learned_20260921T083902_538577Z": {
+    "purpose": "V2 formal paired evaluation: complete learned, -6 mm, seed 43, raised clearance",
+    "notes": [
+      "Reserved study cell eval_matched_learned_h-6mm_seed43_raised; shares frozen source/model and records measured initial condition. One preserved attempt, excluded from fitting."
+    ]
+  },
+  "pad_matched_learned_20260921T083946_591771Z": {
+    "purpose": "V2 formal paired evaluation: complete learned, +6 mm, seed 17, nominal clearance",
+    "notes": [
+      "Reserved study cell eval_matched_learned_h+6mm_seed17_nominal; shares frozen source/model and records measured initial condition. One preserved attempt, excluded from fitting."
+    ]
+  },
+  "pad_matched_learned_20260921T084106_553728Z": {
+    "purpose": "V2 formal paired evaluation: complete learned, +6 mm, seed 17, raised clearance",
+    "notes": [
+      "Reserved study cell eval_matched_learned_h+6mm_seed17_raised; shares frozen source/model and records measured initial condition. One preserved attempt, excluded from fitting."
+    ]
+  },
+  "pad_matched_learned_20260921T084149_318454Z": {
+    "purpose": "V2 formal paired evaluation: complete learned, +6 mm, seed 29, nominal clearance",
+    "notes": [
+      "Reserved study cell eval_matched_learned_h+6mm_seed29_nominal; shares frozen source/model and records measured initial condition. One preserved attempt, excluded from fitting."
+    ]
+  },
+  "pad_matched_learned_20260921T084231_289766Z": {
+    "purpose": "V2 formal paired evaluation: complete learned, +6 mm, seed 29, raised clearance",
+    "notes": [
+      "Reserved study cell eval_matched_learned_h+6mm_seed29_raised; shares frozen source/model and records measured initial condition. One preserved attempt, excluded from fitting."
+    ]
+  },
+  "pad_matched_learned_20260921T084314_548011Z": {
+    "purpose": "V2 formal paired evaluation: complete learned, +6 mm, seed 43, nominal clearance",
+    "notes": [
+      "Reserved study cell eval_matched_learned_h+6mm_seed43_nominal; shares frozen source/model and records measured initial condition. One preserved attempt, excluded from fitting."
+    ]
+  },
+  "pad_matched_learned_20260921T084435_433295Z": {
+    "purpose": "V2 formal paired evaluation: complete learned, +6 mm, seed 43, raised clearance",
+    "notes": [
+      "Reserved study cell eval_matched_learned_h+6mm_seed43_raised; shares frozen source/model and records measured initial condition. One preserved attempt, excluded from fitting."
+    ]
+  },
+  "pad_matched_no_body_foot_correlation_20260921T083449_310325Z": {
+    "purpose": "V2 formal paired evaluation: no direct body-foot correlation, -6 mm, seed 17, nominal clearance",
+    "notes": [
+      "Reserved study cell eval_matched_no_body_foot_correlation_h-6mm_seed17_nominal; shares frozen source/model and records measured initial condition. One preserved attempt, excluded from fitting."
+    ]
+  },
+  "pad_matched_no_body_foot_correlation_20260921T083531_318360Z": {
+    "purpose": "V2 formal paired evaluation: no direct body-foot correlation, -6 mm, seed 17, raised clearance",
+    "notes": [
+      "Reserved study cell eval_matched_no_body_foot_correlation_h-6mm_seed17_raised; shares frozen source/model and records measured initial condition. One preserved attempt, excluded from fitting."
+    ]
+  },
+  "pad_matched_no_body_foot_correlation_20260921T083654_205028Z": {
+    "purpose": "V2 formal paired evaluation: no direct body-foot correlation, -6 mm, seed 29, nominal clearance",
+    "notes": [
+      "Reserved study cell eval_matched_no_body_foot_correlation_h-6mm_seed29_nominal; shares frozen source/model and records measured initial condition. One preserved attempt, excluded from fitting."
+    ]
+  },
+  "pad_matched_no_body_foot_correlation_20260921T083736_500836Z": {
+    "purpose": "V2 formal paired evaluation: no direct body-foot correlation, -6 mm, seed 29, raised clearance",
+    "notes": [
+      "Reserved study cell eval_matched_no_body_foot_correlation_h-6mm_seed29_raised; shares frozen source/model and records measured initial condition. One preserved attempt, excluded from fitting."
+    ]
+  },
+  "pad_matched_no_body_foot_correlation_20260921T083819_778038Z": {
+    "purpose": "V2 formal paired evaluation: no direct body-foot correlation, -6 mm, seed 43, nominal clearance",
+    "notes": [
+      "Reserved study cell eval_matched_no_body_foot_correlation_h-6mm_seed43_nominal; shares frozen source/model and records measured initial condition. One preserved attempt, excluded from fitting."
+    ]
+  },
+  "pad_matched_no_body_foot_correlation_20260921T083904_453680Z": {
+    "purpose": "V2 formal paired evaluation: no direct body-foot correlation, -6 mm, seed 43, raised clearance",
+    "notes": [
+      "Reserved study cell eval_matched_no_body_foot_correlation_h-6mm_seed43_raised; shares frozen source/model and records measured initial condition. One preserved attempt, excluded from fitting."
+    ]
+  },
+  "pad_matched_no_body_foot_correlation_20260921T084024_875310Z": {
+    "purpose": "V2 formal paired evaluation: no direct body-foot correlation, +6 mm, seed 17, nominal clearance",
+    "notes": [
+      "Reserved study cell eval_matched_no_body_foot_correlation_h+6mm_seed17_nominal; shares frozen source/model and records measured initial condition. One preserved attempt, excluded from fitting."
+    ]
+  },
+  "pad_matched_no_body_foot_correlation_20260921T084107_451645Z": {
+    "purpose": "V2 formal paired evaluation: no direct body-foot correlation, +6 mm, seed 17, raised clearance",
+    "notes": [
+      "Reserved study cell eval_matched_no_body_foot_correlation_h+6mm_seed17_raised; shares frozen source/model and records measured initial condition. One preserved attempt, excluded from fitting."
+    ]
+  },
+  "pad_matched_no_body_foot_correlation_20260921T084149_864811Z": {
+    "purpose": "V2 formal paired evaluation: no direct body-foot correlation, +6 mm, seed 29, nominal clearance",
+    "notes": [
+      "Reserved study cell eval_matched_no_body_foot_correlation_h+6mm_seed29_nominal; shares frozen source/model and records measured initial condition. One preserved attempt, excluded from fitting."
+    ]
+  },
+  "pad_matched_no_body_foot_correlation_20260921T084232_283295Z": {
+    "purpose": "V2 formal paired evaluation: no direct body-foot correlation, +6 mm, seed 29, raised clearance",
+    "notes": [
+      "Reserved study cell eval_matched_no_body_foot_correlation_h+6mm_seed29_raised; shares frozen source/model and records measured initial condition. One preserved attempt, excluded from fitting."
+    ]
+  },
+  "pad_matched_no_body_foot_correlation_20260921T084353_199910Z": {
+    "purpose": "V2 formal paired evaluation: no direct body-foot correlation, +6 mm, seed 43, nominal clearance",
+    "notes": [
+      "Reserved study cell eval_matched_no_body_foot_correlation_h+6mm_seed43_nominal; shares frozen source/model and records measured initial condition. One preserved attempt, excluded from fitting."
+    ]
+  },
+  "pad_matched_no_body_foot_correlation_20260921T084435_852528Z": {
+    "purpose": "V2 formal paired evaluation: no direct body-foot correlation, +6 mm, seed 43, raised clearance",
+    "notes": [
+      "Reserved study cell eval_matched_no_body_foot_correlation_h+6mm_seed43_raised; shares frozen source/model and records measured initial condition. One preserved attempt, excluded from fitting."
+    ]
+  },
+  "pad_matched_no_noncontact_updates_20260921T083530_270313Z": {
+    "purpose": "V2 formal paired evaluation: no noncontact belief updates, -6 mm, seed 17, nominal clearance",
+    "notes": [
+      "Reserved study cell eval_matched_no_noncontact_updates_h-6mm_seed17_nominal; shares frozen source/model and records measured initial condition. One preserved attempt, excluded from fitting."
+    ]
+  },
+  "pad_matched_no_noncontact_updates_20260921T083613_021480Z": {
+    "purpose": "V2 formal paired evaluation: no noncontact belief updates, -6 mm, seed 17, raised clearance",
+    "notes": [
+      "Reserved study cell eval_matched_no_noncontact_updates_h-6mm_seed17_raised; shares frozen source/model and records measured initial condition. One preserved attempt, excluded from fitting."
+    ]
+  },
+  "pad_matched_no_noncontact_updates_20260921T083655_719649Z": {
+    "purpose": "V2 formal paired evaluation: no noncontact belief updates, -6 mm, seed 29, nominal clearance",
+    "notes": [
+      "Reserved study cell eval_matched_no_noncontact_updates_h-6mm_seed29_nominal; shares frozen source/model and records measured initial condition. One preserved attempt, excluded from fitting."
+    ]
+  },
+  "pad_matched_no_noncontact_updates_20260921T083738_570540Z": {
+    "purpose": "V2 formal paired evaluation: no noncontact belief updates, -6 mm, seed 29, raised clearance",
+    "notes": [
+      "Reserved study cell eval_matched_no_noncontact_updates_h-6mm_seed29_raised; shares frozen source/model and records measured initial condition. One preserved attempt, excluded from fitting."
+    ]
+  },
+  "pad_matched_no_noncontact_updates_20260921T083900_010463Z": {
+    "purpose": "V2 formal paired evaluation: no noncontact belief updates, -6 mm, seed 43, nominal clearance",
+    "notes": [
+      "Reserved study cell eval_matched_no_noncontact_updates_h-6mm_seed43_nominal; shares frozen source/model and records measured initial condition. One preserved attempt, excluded from fitting."
+    ]
+  },
+  "pad_matched_no_noncontact_updates_20260921T083942_731274Z": {
+    "purpose": "V2 formal paired evaluation: no noncontact belief updates, -6 mm, seed 43, raised clearance",
+    "notes": [
+      "Reserved study cell eval_matched_no_noncontact_updates_h-6mm_seed43_raised; shares frozen source/model and records measured initial condition. One preserved attempt, excluded from fitting."
+    ]
+  },
+  "pad_matched_no_noncontact_updates_20260921T084027_340423Z": {
+    "purpose": "V2 formal paired evaluation: no noncontact belief updates, +6 mm, seed 17, nominal clearance",
+    "notes": [
+      "Reserved study cell eval_matched_no_noncontact_updates_h+6mm_seed17_nominal; shares frozen source/model and records measured initial condition. One preserved attempt, excluded from fitting."
+    ]
+  },
+  "pad_matched_no_noncontact_updates_20260921T084108_843983Z": {
+    "purpose": "V2 formal paired evaluation: no noncontact belief updates, +6 mm, seed 17, raised clearance",
+    "notes": [
+      "Reserved study cell eval_matched_no_noncontact_updates_h+6mm_seed17_raised; shares frozen source/model and records measured initial condition. One preserved attempt, excluded from fitting."
+    ]
+  },
+  "pad_matched_no_noncontact_updates_20260921T084229_740096Z": {
+    "purpose": "V2 formal paired evaluation: no noncontact belief updates, +6 mm, seed 29, nominal clearance",
+    "notes": [
+      "Reserved study cell eval_matched_no_noncontact_updates_h+6mm_seed29_nominal; shares frozen source/model and records measured initial condition. One preserved attempt, excluded from fitting."
+    ]
+  },
+  "pad_matched_no_noncontact_updates_20260921T084312_152260Z": {
+    "purpose": "V2 formal paired evaluation: no noncontact belief updates, +6 mm, seed 29, raised clearance",
+    "notes": [
+      "Reserved study cell eval_matched_no_noncontact_updates_h+6mm_seed29_raised; shares frozen source/model and records measured initial condition. One preserved attempt, excluded from fitting."
+    ]
+  },
+  "pad_matched_no_noncontact_updates_20260921T084354_478478Z": {
+    "purpose": "V2 formal paired evaluation: no noncontact belief updates, +6 mm, seed 43, nominal clearance",
+    "notes": [
+      "Reserved study cell eval_matched_no_noncontact_updates_h+6mm_seed43_nominal; shares frozen source/model and records measured initial condition. One preserved attempt, excluded from fitting."
+    ]
+  },
+  "pad_matched_no_noncontact_updates_20260921T084437_633000Z": {
+    "purpose": "V2 formal paired evaluation: no noncontact belief updates, +6 mm, seed 43, raised clearance",
+    "notes": [
+      "Reserved study cell eval_matched_no_noncontact_updates_h+6mm_seed43_raised; shares frozen source/model and records measured initial condition. One preserved attempt, excluded from fitting."
+    ]
+  },
+  "pad_matched_no_timing_adaptation_20260921T083449_377847Z": {
+    "purpose": "V2 formal paired evaluation: no learned timing adaptation, -6 mm, seed 17, nominal clearance",
+    "notes": [
+      "Reserved study cell eval_matched_no_timing_adaptation_h-6mm_seed17_nominal; shares frozen source/model and records measured initial condition. One preserved attempt, excluded from fitting."
+    ]
+  },
+  "pad_matched_no_timing_adaptation_20260921T083612_409916Z": {
+    "purpose": "V2 formal paired evaluation: no learned timing adaptation, -6 mm, seed 17, raised clearance",
+    "notes": [
+      "Reserved study cell eval_matched_no_timing_adaptation_h-6mm_seed17_raised; shares frozen source/model and records measured initial condition. One preserved attempt, excluded from fitting."
+    ]
+  },
+  "pad_matched_no_timing_adaptation_20260921T083654_735566Z": {
+    "purpose": "V2 formal paired evaluation: no learned timing adaptation, -6 mm, seed 29, nominal clearance",
+    "notes": [
+      "Reserved study cell eval_matched_no_timing_adaptation_h-6mm_seed29_nominal; shares frozen source/model and records measured initial condition. One preserved attempt, excluded from fitting."
+    ]
+  },
+  "pad_matched_no_timing_adaptation_20260921T083737_721199Z": {
+    "purpose": "V2 formal paired evaluation: no learned timing adaptation, -6 mm, seed 29, raised clearance",
+    "notes": [
+      "Reserved study cell eval_matched_no_timing_adaptation_h-6mm_seed29_raised; shares frozen source/model and records measured initial condition. One preserved attempt, excluded from fitting."
+    ]
+  },
+  "pad_matched_no_timing_adaptation_20260921T083821_676913Z": {
+    "purpose": "V2 formal paired evaluation: no learned timing adaptation, -6 mm, seed 43, nominal clearance",
+    "notes": [
+      "Reserved study cell eval_matched_no_timing_adaptation_h-6mm_seed43_nominal; shares frozen source/model and records measured initial condition. One preserved attempt, excluded from fitting."
+    ]
+  },
+  "pad_matched_no_timing_adaptation_20260921T083942_556703Z": {
+    "purpose": "V2 formal paired evaluation: no learned timing adaptation, -6 mm, seed 43, raised clearance",
+    "notes": [
+      "Reserved study cell eval_matched_no_timing_adaptation_h-6mm_seed43_raised; shares frozen source/model and records measured initial condition. One preserved attempt, excluded from fitting."
+    ]
+  },
+  "pad_matched_no_timing_adaptation_20260921T084025_791186Z": {
+    "purpose": "V2 formal paired evaluation: no learned timing adaptation, +6 mm, seed 17, nominal clearance",
+    "notes": [
+      "Reserved study cell eval_matched_no_timing_adaptation_h+6mm_seed17_nominal; shares frozen source/model and records measured initial condition. One preserved attempt, excluded from fitting."
+    ]
+  },
+  "pad_matched_no_timing_adaptation_20260921T084108_382078Z": {
+    "purpose": "V2 formal paired evaluation: no learned timing adaptation, +6 mm, seed 17, raised clearance",
+    "notes": [
+      "Reserved study cell eval_matched_no_timing_adaptation_h+6mm_seed17_raised; shares frozen source/model and records measured initial condition. One preserved attempt, excluded from fitting."
+    ]
+  },
+  "pad_matched_no_timing_adaptation_20260921T084151_011085Z": {
+    "purpose": "V2 formal paired evaluation: no learned timing adaptation, +6 mm, seed 29, nominal clearance",
+    "notes": [
+      "Reserved study cell eval_matched_no_timing_adaptation_h+6mm_seed29_nominal; shares frozen source/model and records measured initial condition. One preserved attempt, excluded from fitting."
+    ]
+  },
+  "pad_matched_no_timing_adaptation_20260921T084311_610218Z": {
+    "purpose": "V2 formal paired evaluation: no learned timing adaptation, +6 mm, seed 29, raised clearance",
+    "notes": [
+      "Reserved study cell eval_matched_no_timing_adaptation_h+6mm_seed29_raised; shares frozen source/model and records measured initial condition. One preserved attempt, excluded from fitting."
+    ]
+  },
+  "pad_matched_no_timing_adaptation_20260921T084353_722096Z": {
+    "purpose": "V2 formal paired evaluation: no learned timing adaptation, +6 mm, seed 43, nominal clearance",
+    "notes": [
+      "Reserved study cell eval_matched_no_timing_adaptation_h+6mm_seed43_nominal; shares frozen source/model and records measured initial condition. One preserved attempt, excluded from fitting."
+    ]
+  },
+  "pad_matched_no_timing_adaptation_20260921T084436_543459Z": {
+    "purpose": "V2 formal paired evaluation: no learned timing adaptation, +6 mm, seed 43, raised clearance",
+    "notes": [
+      "Reserved study cell eval_matched_no_timing_adaptation_h+6mm_seed43_raised; shares frozen source/model and records measured initial condition. One preserved attempt, excluded from fitting."
+    ]
+  },
+  "pad_matched_predictive_20260921T083449_152540Z": {
+    "purpose": "V2 formal paired evaluation: matched predictive, -6 mm, seed 17, nominal clearance",
+    "notes": [
+      "Reserved study cell eval_matched_predictive_h-6mm_seed17_nominal; shares frozen source/model and records measured initial condition. One preserved attempt, excluded from fitting."
+    ]
+  },
+  "pad_matched_predictive_20260921T083531_018134Z": {
+    "purpose": "V2 formal paired evaluation: matched predictive, -6 mm, seed 17, raised clearance",
+    "notes": [
+      "Reserved study cell eval_matched_predictive_h-6mm_seed17_raised; shares frozen source/model and records measured initial condition. One preserved attempt, excluded from fitting."
+    ]
+  },
+  "pad_matched_predictive_20260921T083613_603295Z": {
+    "purpose": "V2 formal paired evaluation: matched predictive, -6 mm, seed 29, nominal clearance",
+    "notes": [
+      "Reserved study cell eval_matched_predictive_h-6mm_seed29_nominal; shares frozen source/model and records measured initial condition. One preserved attempt, excluded from fitting."
+    ]
+  },
+  "pad_matched_predictive_20260921T083656_202450Z": {
+    "purpose": "V2 formal paired evaluation: matched predictive, -6 mm, seed 29, raised clearance",
+    "notes": [
+      "Reserved study cell eval_matched_predictive_h-6mm_seed29_raised; shares frozen source/model and records measured initial condition. One preserved attempt, excluded from fitting."
+    ]
+  },
+  "pad_matched_predictive_20260921T083818_368516Z": {
+    "purpose": "V2 formal paired evaluation: matched predictive, -6 mm, seed 43, nominal clearance",
+    "notes": [
+      "Reserved study cell eval_matched_predictive_h-6mm_seed43_nominal; shares frozen source/model and records measured initial condition. One preserved attempt, excluded from fitting."
+    ]
+  },
+  "pad_matched_predictive_20260921T083901_253105Z": {
+    "purpose": "V2 formal paired evaluation: matched predictive, -6 mm, seed 43, raised clearance",
+    "notes": [
+      "Reserved study cell eval_matched_predictive_h-6mm_seed43_raised; shares frozen source/model and records measured initial condition. One preserved attempt, excluded from fitting."
+    ]
+  },
+  "pad_matched_predictive_20260921T083944_665504Z": {
+    "purpose": "V2 formal paired evaluation: matched predictive, +6 mm, seed 17, nominal clearance",
+    "notes": [
+      "Reserved study cell eval_matched_predictive_h+6mm_seed17_nominal; shares frozen source/model and records measured initial condition. One preserved attempt, excluded from fitting."
+    ]
+  },
+  "pad_matched_predictive_20260921T084027_478669Z": {
+    "purpose": "V2 formal paired evaluation: matched predictive, +6 mm, seed 17, raised clearance",
+    "notes": [
+      "Reserved study cell eval_matched_predictive_h+6mm_seed17_raised; shares frozen source/model and records measured initial condition. One preserved attempt, excluded from fitting."
+    ]
+  },
+  "pad_matched_predictive_20260921T084148_697547Z": {
+    "purpose": "V2 formal paired evaluation: matched predictive, +6 mm, seed 29, nominal clearance",
+    "notes": [
+      "Reserved study cell eval_matched_predictive_h+6mm_seed29_nominal; shares frozen source/model and records measured initial condition. One preserved attempt, excluded from fitting."
+    ]
+  },
+  "pad_matched_predictive_20260921T084230_893085Z": {
+    "purpose": "V2 formal paired evaluation: matched predictive, +6 mm, seed 29, raised clearance",
+    "notes": [
+      "Reserved study cell eval_matched_predictive_h+6mm_seed29_raised; shares frozen source/model and records measured initial condition. One preserved attempt, excluded from fitting."
+    ]
+  },
+  "pad_matched_predictive_20260921T084313_444637Z": {
+    "purpose": "V2 formal paired evaluation: matched predictive, +6 mm, seed 43, nominal clearance",
+    "notes": [
+      "Reserved study cell eval_matched_predictive_h+6mm_seed43_nominal; shares frozen source/model and records measured initial condition. One preserved attempt, excluded from fitting."
+    ]
+  },
+  "pad_matched_predictive_20260921T084355_998366Z": {
+    "purpose": "V2 formal paired evaluation: matched predictive, +6 mm, seed 43, raised clearance",
+    "notes": [
+      "Reserved study cell eval_matched_predictive_h+6mm_seed43_raised; shares frozen source/model and records measured initial condition. One preserved attempt, excluded from fitting."
+    ]
   }
 }

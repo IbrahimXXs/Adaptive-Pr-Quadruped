@@ -1,0 +1,16 @@
+........................................................................ [ 22%]
+........................................................................ [ 45%]
+........................................................................ [ 68%]
+........................................................................ [ 90%]
+.............................                                            [100%]
+=============================== warnings summary ===============================
+primp_project/tests/test_landing_pad.py::test_launch_has_four_real_support_contacts_and_valid_env_api
+  /home/ibrahim/miniconda3/envs/quadruped-pympc/lib/python3.12/site-packages/gymnasium/spaces/box.py:231: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+    gym.logger.warn(
+
+primp_project/tests/test_landing_pad.py::test_launch_has_four_real_support_contacts_and_valid_env_api
+  /home/ibrahim/miniconda3/envs/quadruped-pympc/lib/python3.12/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+    gym.logger.warn(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+317 passed, 2 warnings in 18.92s

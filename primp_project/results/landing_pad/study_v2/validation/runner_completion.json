@@ -1,0 +1,10 @@
+{
+  "initial_managed_session_exit_code": 143,
+  "initial_session_status": "Reported termination after all 60 attempts were completed and comparison artifacts existed; signal origin not established",
+  "resume_command": "python -m primp_project pad-study-v2 evaluate --workers 4",
+  "resume_exit_code": 0,
+  "native_trials_created_by_resume": 0,
+  "completed_evaluations": 60,
+  "successful_evaluations": 60,
+  "recording_policy": "Resume verified preserved attempts and regenerated comparison; no native trial was rerun or replaced"
+}

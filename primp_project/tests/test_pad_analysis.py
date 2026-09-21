@@ -91,6 +91,25 @@ def test_valid_pad_evidence_retains_base_checks_and_reports_metrics(pad_recordin
         assert (pad_recording[0] / name).stat().st_size > 0
 
 
+def test_skew_belief_mean_need_not_lie_inside_central_credible_interval(pad_recording, monkeypatch):
+    monkeypatch.setattr(analysis, '_plot', lambda *args: None)
+    monkeypatch.setattr(step_analysis, '_plot', lambda *args: None)
+    _, _, signals = pad_recording
+    # 96% at zero and 4% at +10 mm: mean +0.4 mm, both central
+    # discrete 5/95% quantiles zero. This is a valid bounded posterior.
+    signals['belief_mean_m'][:] = .0004
+    signals['belief_lower_m'][:] = signals['belief_upper_m'][:] = 0.
+    signals['belief_std_m'][:] = np.sqrt(.96*.0004**2+.04*.0096**2)
+    assert evaluate(pad_recording)['criteria']['pad_belief_bounds']['passed']
+
+
+def test_belief_mean_outside_declared_terrain_support_is_rejected(pad_recording, monkeypatch):
+    monkeypatch.setattr(analysis, '_plot', lambda *args: None)
+    monkeypatch.setattr(step_analysis, '_plot', lambda *args: None)
+    pad_recording[2]['belief_mean_m'][10] = .021
+    assert not evaluate(pad_recording)['criteria']['pad_belief_bounds']['passed']
+
+
 @pytest.mark.parametrize("corruption, criterion", [
     ("wrong_pad_final", "pad_final_target_loading"),
     ("wrong_pad_debounce", "pad_target_contact_before_reload"),

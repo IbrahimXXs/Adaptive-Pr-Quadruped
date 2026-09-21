@@ -1,5 +1,9 @@
 # Adjustable landing pad and coordinated motion adaptation
 
+This page describes the physical experiment and the preserved **V1 pilot**.
+The separate [V2 matched-planner study](landing_pad_v2.md) adds measured recovery
+demonstrations, fixed-posterior conditioning, and timing/covariance ablations.
+
 The task is one front-left step onto a separate surface whose height can differ
 from the robot's initial estimate. The robot shifts onto the other three legs,
 unloads and lifts FL, moves it forward, holds it above the target, and lowers it.

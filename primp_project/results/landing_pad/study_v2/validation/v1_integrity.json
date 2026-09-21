@@ -1,0 +1,528 @@
+{
+  "audit": "Preserved V1 recordings and model during V2 work; read-only hashes, no reanalysis",
+  "captured_at": "2026-09-21T08:47:27.145650+00:00",
+  "passed": true,
+  "checks": {
+    "v1_split_manifest_unchanged": true,
+    "v1_primary_state_unchanged": true,
+    "nine_inherited_recordings_unchanged": true,
+    "twenty_four_v1_evaluations_unchanged": true,
+    "v1_model_unchanged": true
+  },
+  "v1_training_inventory_sha256": "4678c3375cf71cde471fa3f0372fbc831c80da6926fde433348e163d1d8ea196",
+  "demonstrations": [
+    {
+      "run_id": "pad_reactive_20260921T071336_628655Z",
+      "actual_sha256": {
+        "signals.npz": "f72ecf567eb80b34d2c7edf2dc28005d77e314437bd569172ba05421fe04f581",
+        "metadata.json": "eb207d6e584097f925de6171c7eb3db7465055ccc5e84d4268c84a3767745f40",
+        "pad_summary.json": "34fb5bffbcf88a9160a5cf6e890478f12518667cf06c43759787a892ce617b65"
+      },
+      "matches_reserved_v1_inventory": {
+        "signals.npz": true,
+        "metadata.json": true,
+        "pad_summary.json": true
+      },
+      "passed": true
+    },
+    {
+      "run_id": "pad_reactive_20260921T071412_218286Z",
+      "actual_sha256": {
+        "signals.npz": "6d3bf963ab75fe33169d1242e14401a95f28e60993fd8054d5799b3772661c79",
+        "metadata.json": "080bff02e58bcfe5fd89f84abfc166825cb368b61fb354ff2331666c4bc59013",
+        "pad_summary.json": "a1dbd8ddbd534f414157cf18d28a2f413238e69c718b73e405de492c283dcf51"
+      },
+      "matches_reserved_v1_inventory": {
+        "signals.npz": true,
+        "metadata.json": true,
+        "pad_summary.json": true
+      },
+      "passed": true
+    },
+    {
+      "run_id": "pad_reactive_20260921T071447_116871Z",
+      "actual_sha256": {
+        "signals.npz": "009e4df37fc2f8b494cc401ff0284250002dfbf256633cc7e3b2319baaeb5a34",
+        "metadata.json": "0924dba9b732788cc89a8b795f6bdc32d5713ef8376cf90145b1edc9385ce8b3",
+        "pad_summary.json": "8bf8e55af8fd7277e1d74bfc260aca6597902522d020ed7d038a1dc67bfd1b19"
+      },
+      "matches_reserved_v1_inventory": {
+        "signals.npz": true,
+        "metadata.json": true,
+        "pad_summary.json": true
+      },
+      "passed": true
+    },
+    {
+      "run_id": "pad_reactive_20260921T071523_197312Z",
+      "actual_sha256": {
+        "signals.npz": "eb60d62e0975f856a87eaf76896dc08bd1c4dac3b97abaaeb92fabff703eaf15",
+        "metadata.json": "858aaab33971fce52108b7be16c1a53d15693a78a127f1ce0dcb821aedbf32b6",
+        "pad_summary.json": "6dbffc59ca73292008163c4026da242a3f5bddaf331f7fa9682b44746f8d635f"
+      },
+      "matches_reserved_v1_inventory": {
+        "signals.npz": true,
+        "metadata.json": true,
+        "pad_summary.json": true
+      },
+      "passed": true
+    },
+    {
+      "run_id": "pad_reactive_20260921T071557_323885Z",
+      "actual_sha256": {
+        "signals.npz": "2f4f621b6468c868cd2241ee7f0b360bae89dc7c314f5e201e07aa6c46442706",
+        "metadata.json": "82f4d8f0dd401288e212ba43791bf1b5cdc74d3f885183739a3b1bb2c77ec2e2",
+        "pad_summary.json": "5ee670bc473b0e286fb150ab696cfdb6dbf11823bdf8e68a26d7030b0fa6d41f"
+      },
+      "matches_reserved_v1_inventory": {
+        "signals.npz": true,
+        "metadata.json": true,
+        "pad_summary.json": true
+      },
+      "passed": true
+    },
+    {
+      "run_id": "pad_reactive_20260921T071632_779659Z",
+      "actual_sha256": {
+        "signals.npz": "9552eb8be48b5e2bd9cf80bd5c02f1f0626a077d929c5dd475aa9f3ef01ab2f2",
+        "metadata.json": "17759ee56e85725166b2836c9db9deb2de9b2b8cfdcc25cd15359445f3fcc5ea",
+        "pad_summary.json": "ecde372c8d3d197d7cc724fa92425e125a1a138a76fb89c46877a1b8ebd5e297"
+      },
+      "matches_reserved_v1_inventory": {
+        "signals.npz": true,
+        "metadata.json": true,
+        "pad_summary.json": true
+      },
+      "passed": true
+    },
+    {
+      "run_id": "pad_reactive_20260921T071709_594333Z",
+      "actual_sha256": {
+        "signals.npz": "024e79f620adfe9a02b77a62444353b346b13ef1e054c0e57ad363a841ebdf74",
+        "metadata.json": "4caff17de574d283a287ccbdabcf7f929a36d5b475b668082d77aeb8a90a5276",
+        "pad_summary.json": "0b3be06b1ea2afdb72eb9c7c7e5a935f1567913a5bc577768983f185a5b91efe"
+      },
+      "matches_reserved_v1_inventory": {
+        "signals.npz": true,
+        "metadata.json": true,
+        "pad_summary.json": true
+      },
+      "passed": true
+    },
+    {
+      "run_id": "pad_reactive_20260921T071743_601080Z",
+      "actual_sha256": {
+        "signals.npz": "b571dbbf6bd4a0515cb10c9f95665ef936b756a9901c35ce8a6c7bbadeb32055",
+        "metadata.json": "53caac14705892310936223645e6db89b6634fe0c7671e26f0df316ec6886a3c",
+        "pad_summary.json": "c73f01e6de460b23a35dbb52bd9657d7364d5844927112b73703242a559a9250"
+      },
+      "matches_reserved_v1_inventory": {
+        "signals.npz": true,
+        "metadata.json": true,
+        "pad_summary.json": true
+      },
+      "passed": true
+    },
+    {
+      "run_id": "pad_reactive_20260921T071818_547110Z",
+      "actual_sha256": {
+        "signals.npz": "7326fc9a33ea4bf4e7c503273e25a6a5d108f57ca1426268f47cc1e188d4951e",
+        "metadata.json": "3c747a32ac3e50ada6158dbd7a83e4eeb8fc7ad093457035b9b01c46e8d5bc86",
+        "pad_summary.json": "6904daba71afdccb98919517e232241e42cc2ddbbdda64a1c7ef74c8e17d60e5"
+      },
+      "matches_reserved_v1_inventory": {
+        "signals.npz": true,
+        "metadata.json": true,
+        "pad_summary.json": true
+      },
+      "passed": true
+    }
+  ],
+  "evaluations": [
+    {
+      "group": "primary",
+      "trial_id": "eval_reactive_h-05mm_clean",
+      "run_id": "pad_reactive_20260921T073116_115745Z",
+      "actual_sha256": {
+        "signals.npz": "59c547d262f5e036866eb96739fb2a6885c698b39a832f5fb13a785b865b41e9",
+        "metadata.json": "e3703d69dedbc44d79b8c1e10a4845255ac1c0f056aa353234749064fff0e51b",
+        "pad_summary.json": "07596d03c234bb90a4536197c9ad13ea731fa22fedd6fd3b99d4ac644aa3898c"
+      },
+      "matches_original_journal": {
+        "signals.npz": true,
+        "metadata.json": true,
+        "pad_summary.json": true
+      },
+      "passed": true
+    },
+    {
+      "group": "primary",
+      "trial_id": "eval_predictive_h-05mm_clean",
+      "run_id": "pad_predictive_20260921T073156_135681Z",
+      "actual_sha256": {
+        "signals.npz": "6d472c378fafab4dbec54e3bbb7323f1aa9f9651c8c46fe54b7904bff055436b",
+        "metadata.json": "9682c75c7d59350010399b4822c68ee60d5ccd96f8781eac183e488651c6637a",
+        "pad_summary.json": "a04f4a2dcf337dcee6d7eb507d964e45bf476b6a6c9c14b1d2a8ef3c6a785b6b"
+      },
+      "matches_original_journal": {
+        "signals.npz": true,
+        "metadata.json": true,
+        "pad_summary.json": true
+      },
+      "passed": true
+    },
+    {
+      "group": "primary",
+      "trial_id": "eval_learned_h-05mm_clean",
+      "run_id": "pad_learned_20260921T073235_006299Z",
+      "actual_sha256": {
+        "signals.npz": "ad306060f6fe901995673738a4272456361f036cf6c3a5061e77041f32bba10f",
+        "metadata.json": "4e525b847e6df97d491fa7fadc772837531cf0c0f6d11a47cee7aa635ab17c96",
+        "pad_summary.json": "dc8773fa7209ee6b9bda8846d01c5e379bee5a7d5ec4f7b89b06112d2111464d"
+      },
+      "matches_original_journal": {
+        "signals.npz": true,
+        "metadata.json": true,
+        "pad_summary.json": true
+      },
+      "passed": true
+    },
+    {
+      "group": "primary",
+      "trial_id": "eval_reactive_h+00mm_clean",
+      "run_id": "pad_reactive_20260921T073314_050135Z",
+      "actual_sha256": {
+        "signals.npz": "2978326aa63e0a9e687fb58c2f5a36e357c02564e42bf93999f01c86d84f8a3d",
+        "metadata.json": "f3cb183a52ca02cff967c8a7cd18027c57e26a49900b7435e41d1f8aae0fd4bc",
+        "pad_summary.json": "20b572c423c48d727f2a989e170395a12fd98467d33fde3d99d5cdf3844d1637"
+      },
+      "matches_original_journal": {
+        "signals.npz": true,
+        "metadata.json": true,
+        "pad_summary.json": true
+      },
+      "passed": true
+    },
+    {
+      "group": "primary",
+      "trial_id": "eval_predictive_h+00mm_clean",
+      "run_id": "pad_predictive_20260921T073351_881991Z",
+      "actual_sha256": {
+        "signals.npz": "fb77f8bfc786b89e00ebb87a8388bff8b1d52478ab6c2cb9c286a3604d7d42b2",
+        "metadata.json": "8d8629acbeac0e562d82b9f49396651c5c68550c7b6f4e5cf016ea3362fc37c2",
+        "pad_summary.json": "a05e179947a6c628a49179ad334b483ae3352d7ebcabde27970368a543757761"
+      },
+      "matches_original_journal": {
+        "signals.npz": true,
+        "metadata.json": true,
+        "pad_summary.json": true
+      },
+      "passed": true
+    },
+    {
+      "group": "primary",
+      "trial_id": "eval_learned_h+00mm_clean",
+      "run_id": "pad_learned_20260921T073430_105158Z",
+      "actual_sha256": {
+        "signals.npz": "703a02918c8c344b4a407115f2bb65b05d9f33a308105f440e238b339d730d56",
+        "metadata.json": "6d1d7e1a514e64faa6be6647488e5827c597f0a251d852d05c3aab774adcbd59",
+        "pad_summary.json": "550764db60be8c7ab71bf09003334221575dfa65895b59f3befad8f485beb2b3"
+      },
+      "matches_original_journal": {
+        "signals.npz": true,
+        "metadata.json": true,
+        "pad_summary.json": true
+      },
+      "passed": true
+    },
+    {
+      "group": "primary",
+      "trial_id": "eval_reactive_h+05mm_clean",
+      "run_id": "pad_reactive_20260921T073508_108531Z",
+      "actual_sha256": {
+        "signals.npz": "ff2d105d4fc18b1d1a3db3f8f99b04213163d8c90951aed1319cd9329f2d1e72",
+        "metadata.json": "38e62ba1ca686bbfd06a8bd1e423c86c020981cc8a7b6a53f536198aadc9d343",
+        "pad_summary.json": "773c5c88fb55e2414d7acdc4585d3cd43a1b5c607801d8f16b1abfdc21b50d50"
+      },
+      "matches_original_journal": {
+        "signals.npz": true,
+        "metadata.json": true,
+        "pad_summary.json": true
+      },
+      "passed": true
+    },
+    {
+      "group": "primary",
+      "trial_id": "eval_predictive_h+05mm_clean",
+      "run_id": "pad_predictive_20260921T073545_475536Z",
+      "actual_sha256": {
+        "signals.npz": "d18a0c3f84715c78fa1eb63c4846623121b72eca4563c4ef651cb0c1d8b2591d",
+        "metadata.json": "a00990d97a11b461220a3995f494dde24844cacc8d3bfaadc08f0dd737ea0b28",
+        "pad_summary.json": "eb564950593ff4060af4f2e97183bb997958fe1057c13cc6592482328a412dfd"
+      },
+      "matches_original_journal": {
+        "signals.npz": true,
+        "metadata.json": true,
+        "pad_summary.json": true
+      },
+      "passed": true
+    },
+    {
+      "group": "primary",
+      "trial_id": "eval_learned_h+05mm_clean",
+      "run_id": "pad_learned_20260921T073622_969397Z",
+      "actual_sha256": {
+        "signals.npz": "9303372e813f01f91fd911a153ff4f26a77b0e7cc04c7476a7b13179de582f76",
+        "metadata.json": "a40ca0ab5b8364004f9a372ed1a4e34a369898a97ef1c7f0cd9df2d5d22c9fc4",
+        "pad_summary.json": "669e4b952cb2301c9a957fe57552003cdd0e140f00679cad38c96ea206894d31"
+      },
+      "matches_original_journal": {
+        "signals.npz": true,
+        "metadata.json": true,
+        "pad_summary.json": true
+      },
+      "passed": true
+    },
+    {
+      "group": "primary",
+      "trial_id": "eval_reactive_h-05mm_noisy_delayed",
+      "run_id": "pad_reactive_20260921T073700_409382Z",
+      "actual_sha256": {
+        "signals.npz": "c62e344101cf4db9363106d827975d8365ebb197d87fafcccaa7fea0c7f847ad",
+        "metadata.json": "e42d0272c80591e43767f5c77d7b16ac9bf2ceef8560ec4d7897a92472c4b296",
+        "pad_summary.json": "817e01f88ee8044df1e9cbf77cded8e2c64cff4036a93e8557799a2677577f15"
+      },
+      "matches_original_journal": {
+        "signals.npz": true,
+        "metadata.json": true,
+        "pad_summary.json": true
+      },
+      "passed": true
+    },
+    {
+      "group": "primary",
+      "trial_id": "eval_predictive_h-05mm_noisy_delayed",
+      "run_id": "pad_predictive_20260921T073739_474670Z",
+      "actual_sha256": {
+        "signals.npz": "b0063ae30bb50f3b5484884537503e2e9abcab17f03f503838042641cc152094",
+        "metadata.json": "12447467c558a03a094dbca3de75ab27ac1f28215f4bbb21cf5fcc853ab19a28",
+        "pad_summary.json": "1c5c965481d01a2831a937376e924c6660d2bc63642bb41ee73bfff2efee5121"
+      },
+      "matches_original_journal": {
+        "signals.npz": true,
+        "metadata.json": true,
+        "pad_summary.json": true
+      },
+      "passed": true
+    },
+    {
+      "group": "primary",
+      "trial_id": "eval_learned_h-05mm_noisy_delayed",
+      "run_id": "pad_learned_20260921T073818_880290Z",
+      "actual_sha256": {
+        "signals.npz": "6bca7acf3b6accc7f4e5a79730d69ebfe26fe643aeae87e19436d8feb009ada4",
+        "metadata.json": "b47d20cf03353c6637b1f2f4688adec3cb041b5d14ba5f442674d4966152f074",
+        "pad_summary.json": "25c0c79e7b22135fd94f498475297f662f85ee042284a778273969d67e8e1f08"
+      },
+      "matches_original_journal": {
+        "signals.npz": true,
+        "metadata.json": true,
+        "pad_summary.json": true
+      },
+      "passed": true
+    },
+    {
+      "group": "primary",
+      "trial_id": "eval_reactive_h+00mm_noisy_delayed",
+      "run_id": "pad_reactive_20260921T073858_000299Z",
+      "actual_sha256": {
+        "signals.npz": "5b703a04d4107c88e73654179d818a3dc87cd1db5c492efa42cb3593afb3324a",
+        "metadata.json": "b2fd0ca93875488950e4715184c7eaab304ae4b45810444d518820bbc95cccc6",
+        "pad_summary.json": "ba9d5a6a1782fa1626cb4aaf15a9ed623830bfa68eea1a02996f2c9180936d3d"
+      },
+      "matches_original_journal": {
+        "signals.npz": true,
+        "metadata.json": true,
+        "pad_summary.json": true
+      },
+      "passed": true
+    },
+    {
+      "group": "primary",
+      "trial_id": "eval_predictive_h+00mm_noisy_delayed",
+      "run_id": "pad_predictive_20260921T073936_486243Z",
+      "actual_sha256": {
+        "signals.npz": "6ffdf6a12f98af3b6d7421126dcfbfe7db7209f114062394343f42f6a17f3e0d",
+        "metadata.json": "f8e98f41f472c4bb8d01ec027224ffe778c3eae89c15b8f0e54106b881fec39b",
+        "pad_summary.json": "e4b7798b105a3e29f9ba201cf4d32bb539ed52d4a5f78f21caf83389651a7a7d"
+      },
+      "matches_original_journal": {
+        "signals.npz": true,
+        "metadata.json": true,
+        "pad_summary.json": true
+      },
+      "passed": true
+    },
+    {
+      "group": "primary",
+      "trial_id": "eval_learned_h+00mm_noisy_delayed",
+      "run_id": "pad_learned_20260921T074014_952957Z",
+      "actual_sha256": {
+        "signals.npz": "0cdb372451321e27635ae3debdc9197f1fc8b5524227f6a4ad7a5f92a0f8f7f4",
+        "metadata.json": "fffea522b6ef1b207181e31b88f1bf5e4440c89dd839fb42afc1abc17432ec38",
+        "pad_summary.json": "de3fa1b48830a7781d5d2c1a4454ad386e9ab83f107311db19b5fe443ececc07"
+      },
+      "matches_original_journal": {
+        "signals.npz": true,
+        "metadata.json": true,
+        "pad_summary.json": true
+      },
+      "passed": true
+    },
+    {
+      "group": "primary",
+      "trial_id": "eval_reactive_h+05mm_noisy_delayed",
+      "run_id": "pad_reactive_20260921T074053_396590Z",
+      "actual_sha256": {
+        "signals.npz": "b0f6d6ec06cb3a88d949b8d4e34edaeafabb8ea1a2ccdadeecc9b90e720b234d",
+        "metadata.json": "6c696f411a7c907f26c02b417760716634a286061bac3b6deeb749651ce46031",
+        "pad_summary.json": "8891f54ec9608cd20dc856c6b59b3353a943a05786c7748aa752e209a05f543a"
+      },
+      "matches_original_journal": {
+        "signals.npz": true,
+        "metadata.json": true,
+        "pad_summary.json": true
+      },
+      "passed": true
+    },
+    {
+      "group": "primary",
+      "trial_id": "eval_predictive_h+05mm_noisy_delayed",
+      "run_id": "pad_predictive_20260921T074131_022165Z",
+      "actual_sha256": {
+        "signals.npz": "ec7d5f65a10075b8fc585eff4a78ce482e2cac62c5318ba78981e0932b36607d",
+        "metadata.json": "d6b5004109d24cd235c30b376adfaf7ec6b5f9f31b66f99a098bc2204b83dcfd",
+        "pad_summary.json": "69d80b308d6bdb410f083d56f0d68dca31f52944f52e334270475afd43a86118"
+      },
+      "matches_original_journal": {
+        "signals.npz": true,
+        "metadata.json": true,
+        "pad_summary.json": true
+      },
+      "passed": true
+    },
+    {
+      "group": "primary",
+      "trial_id": "eval_learned_h+05mm_noisy_delayed",
+      "run_id": "pad_learned_20260921T074209_475039Z",
+      "actual_sha256": {
+        "signals.npz": "cf86d2b95a739851b3d6f5c933a08189dc1f1794c187bc0715fcca240a61bd28",
+        "metadata.json": "32b9622e05c4b913805885513f1bf8e7ced1e078b5958ba508bd1cce88e93bef",
+        "pad_summary.json": "eeb8e36c0dbfec64c3aade76920f7a1a0fb8317e64b68af10610856dc0aad8de"
+      },
+      "matches_original_journal": {
+        "signals.npz": true,
+        "metadata.json": true,
+        "pad_summary.json": true
+      },
+      "passed": true
+    },
+    {
+      "group": "reserved_heights",
+      "trial_id": "heldout_reactive_h-7.5mm_clean",
+      "run_id": "pad_reactive_20260921T074309_905575Z",
+      "actual_sha256": {
+        "signals.npz": "02d9043852fa62a2554be7a051b901c4f828e87a08e32854667ae5f363b2bc72",
+        "metadata.json": "7dd768ac1b0d72ace2c634541319c56e096ac1dbcb13bb418f2183329604572e",
+        "pad_summary.json": "f88e17046041d706717276c563531306565896e2d7e3336626b45daa096425bd"
+      },
+      "matches_original_journal": {
+        "signals.npz": true,
+        "metadata.json": true,
+        "pad_summary.json": true
+      },
+      "passed": true
+    },
+    {
+      "group": "reserved_heights",
+      "trial_id": "heldout_predictive_h-7.5mm_clean",
+      "run_id": "pad_predictive_20260921T074351_535116Z",
+      "actual_sha256": {
+        "signals.npz": "be2e58570b0df567f1fa396d900d3ea67e33931c8e87486f4d79d2b3a4af8d32",
+        "metadata.json": "0f7c41e95bf2754135759f4d5a945a0b1f9fa432619c1356e612d682de7b1f77",
+        "pad_summary.json": "f2526b27558e1c9afb42f8957e57536173fa65eec875345287a04f8665c8474a"
+      },
+      "matches_original_journal": {
+        "signals.npz": true,
+        "metadata.json": true,
+        "pad_summary.json": true
+      },
+      "passed": true
+    },
+    {
+      "group": "reserved_heights",
+      "trial_id": "heldout_learned_h-7.5mm_clean",
+      "run_id": "pad_learned_20260921T074431_595543Z",
+      "actual_sha256": {
+        "signals.npz": "c1744ac457f8662556506b0082bb68ee9aefb19cfcec6f3a3bc823733478b734",
+        "metadata.json": "73f9bedce61ed916dfe01d5042de6f25a33a104212f97df4136452e12cb5c034",
+        "pad_summary.json": "a24c96d949f7993fe8d5af96382b18055de3f8eeb3645ae7f2ec2645244219be"
+      },
+      "matches_original_journal": {
+        "signals.npz": true,
+        "metadata.json": true,
+        "pad_summary.json": true
+      },
+      "passed": true
+    },
+    {
+      "group": "reserved_heights",
+      "trial_id": "heldout_reactive_h+7.5mm_clean",
+      "run_id": "pad_reactive_20260921T074511_234520Z",
+      "actual_sha256": {
+        "signals.npz": "9e47e8cecdd1163e811f5e24b8b6c107d98992b6cea606b57ba45c783e3e95af",
+        "metadata.json": "30a807f39ebcd3a633752449e0916c28df2e1dd7c721108ff70eb9c08bebc01a",
+        "pad_summary.json": "88ed00ac5d3c1194488cc5460f0f595126280ca8a59feb143f84275ac159896b"
+      },
+      "matches_original_journal": {
+        "signals.npz": true,
+        "metadata.json": true,
+        "pad_summary.json": true
+      },
+      "passed": true
+    },
+    {
+      "group": "reserved_heights",
+      "trial_id": "heldout_predictive_h+7.5mm_clean",
+      "run_id": "pad_predictive_20260921T074548_342858Z",
+      "actual_sha256": {
+        "signals.npz": "2609ed7c088ab8f07ae10d5ac379aeed19c46a1851acf2d7d2300488aed1f766",
+        "metadata.json": "ad09bb7af5f45dba6dfe17ccb374d071206e8e9d34f3eb434657f93a222bf365",
+        "pad_summary.json": "aa75d3ba8a851355df730a1b4d7d3bfe9abafb0cd7eb9aebc6c48c2669c7ac93"
+      },
+      "matches_original_journal": {
+        "signals.npz": true,
+        "metadata.json": true,
+        "pad_summary.json": true
+      },
+      "passed": true
+    },
+    {
+      "group": "reserved_heights",
+      "trial_id": "heldout_learned_h+7.5mm_clean",
+      "run_id": "pad_learned_20260921T074625_602021Z",
+      "actual_sha256": {
+        "signals.npz": "6fc96abcf1dbbe0a4c7f7940ce4a63e25dfdea4c9e8ab8dbf552e98412de5308",
+        "metadata.json": "fb642a9a94474a906b27c3e8a07de0d7f66d51d3906bbd18f672e9668599b510",
+        "pad_summary.json": "5febbd402c4100c57d966c32c092ccc4440b9821878549847fc7916f0dda644e"
+      },
+      "matches_original_journal": {
+        "signals.npz": true,
+        "metadata.json": true,
+        "pad_summary.json": true
+      },
+      "passed": true
+    }
+  ],
+  "note": "This is a dated integrity snapshot, not a new acceptance analysis or a claim about V2 performance."
+}

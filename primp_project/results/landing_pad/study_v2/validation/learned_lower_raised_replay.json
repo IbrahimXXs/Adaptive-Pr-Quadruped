@@ -1,0 +1,20 @@
+{
+  "run_id": "pad_matched_learned_20260921T083736_153381Z",
+  "video": "/home/ibrahim/Documents/GO-2 PRIMP/primp_project/results/landing_pad/study_v2/validation/learned_lower_raised_replay.mp4",
+  "preview": "/home/ibrahim/Documents/GO-2 PRIMP/primp_project/results/landing_pad/study_v2/validation/learned_lower_raised_replay.png",
+  "codec": "avc1",
+  "fps": 20,
+  "resolution": [
+    960,
+    720
+  ],
+  "frame_count": 655,
+  "playback_speed": 1.0,
+  "recorded_start_time_s": 0.002,
+  "recorded_end_time_s": 32.703999999994004,
+  "preview_time_s": 15.206000000001747,
+  "signals_sha256": "bdac5708054810cbd859f2ab1bd2a12ab0edf30f35db1ed8c4733fc51b58c554",
+  "scene_sha256": "b7bd58e78ee8bfe1d99319167d132515f5c736af26d264289367623166004c46",
+  "method": "Recorded qpos/qvel plus mj_forward for visualization; no mj_step or controller execution.",
+  "presentation": "Target pad recolored orange; fixed camera and recorded-value labels added for evaluation replay."
+}

@@ -1,0 +1,555 @@
+{
+  "passed": true,
+  "run_id": "pad_matched_no_noncontact_updates_20260921T083655_719649Z",
+  "experiment": "landing_pad",
+  "role": "evaluation",
+  "planner": "matched_no_noncontact_updates",
+  "criteria": {
+    "completed": {
+      "passed": true,
+      "requirement": "Completed status and exactly 1 completed cycles",
+      "observed": {
+        "status": "completed",
+        "completed_cycles": 1
+      }
+    },
+    "cycle_labels": {
+      "passed": true,
+      "requirement": "Every requested cycle appears in chronological order",
+      "observed": [
+        1
+      ]
+    },
+    "sample_clock": {
+      "passed": true,
+      "requirement": "Continuous end-of-interval sampling with no reset or time gap",
+      "observed": {
+        "rows": 16632,
+        "last_time_s": 33.26399999999469
+      }
+    },
+    "control_alignment": {
+      "passed": true,
+      "requirement": "Control timestamp equals interval endpoint minus dt",
+      "observed": 2.444225377651321e-15
+    },
+    "mpc_update_cadence": {
+      "passed": true,
+      "requirement": "MPC updates match the configured fixed-step cadence, initialization, and immediate support changes; no missing or unexplained solves",
+      "observed": {
+        "configured_frequency_hz": 100.0,
+        "effective_periodic_frequency_hz": 100.0,
+        "period_in_physics_steps": 5,
+        "step_sequence_valid": true,
+        "expected_updates": 3329,
+        "recorded_updates": 3329,
+        "extra_support_change_updates": 2,
+        "missing_periodic_updates": 0,
+        "missing_support_change_updates": 0,
+        "unexpected_updates": 0
+      }
+    },
+    "finite_data": {
+      "passed": true,
+      "requirement": "All recorded numerical signals finite",
+      "observed": []
+    },
+    "no_termination": {
+      "passed": true,
+      "requirement": "No termination or truncation",
+      "observed": 0
+    },
+    "no_numerical_warnings": {
+      "passed": true,
+      "requirement": "No MuJoCo numerical warnings",
+      "observed": 0.0
+    },
+    "no_torque_saturation": {
+      "passed": true,
+      "requirement": "No actuator command clipping",
+      "observed": 0
+    },
+    "qp_success": {
+      "passed": true,
+      "requirement": "Every MPC update has QP status 0",
+      "observed": {
+        "0": 3329
+      }
+    },
+    "nlp_status": {
+      "passed": true,
+      "requirement": "Post-settling MPC NLP status is 0 or 2",
+      "observed": {
+        "2": 3029
+      }
+    },
+    "selected_force_cap": {
+      "passed": true,
+      "requirement": "Desired selected-foot vertical force <= configured cap + 1 N at MPC updates",
+      "observed": 3.0258887756190775e-11
+    },
+    "body_tilt": {
+      "passed": true,
+      "requirement": "Maximum absolute roll or pitch < 8 degrees",
+      "observed": 0.43570502247900955
+    },
+    "cycle_1_phase_order": {
+      "passed": true,
+      "requirement": "All stages occur once in stand\u2192shift\u2192unload\u2192lift\u2192hold\u2192lower\u2192confirm\u2192reload\u2192recenter order",
+      "observed": [
+        "stand",
+        "shift",
+        "unload",
+        "lift",
+        "hold",
+        "lower",
+        "confirm",
+        "reload",
+        "recenter",
+        "complete"
+      ]
+    },
+    "cycle_1_hold_duration": {
+      "passed": true,
+      "requirement": "Continuous hold >= 5 s with at most one sample of boundary tolerance",
+      "observed": 5.0
+    },
+    "cycle_1_hold_contact": {
+      "passed": true,
+      "requirement": "Selected foot has neither contact nor planned support; other three have both for every hold sample",
+      "observed": {
+        "selected_measured_samples": 0,
+        "selected_planned_samples": 0,
+        "missing_support_measured_samples": 0,
+        "missing_support_planned_samples": 0
+      }
+    },
+    "cycle_1_swing_schedule": {
+      "passed": true,
+      "requirement": "Selected planned support remains off and the other three remain on throughout lift/hold/lower/confirm",
+      "observed": {
+        "selected_planned_samples": 0,
+        "missing_support_planned_samples": 0
+      }
+    },
+    "cycle_1_support_contact_continuity": {
+      "passed": true,
+      "requirement": "All three support feet retain measured contact throughout unload/lift/hold/lower/confirm/reload",
+      "observed": 0
+    },
+    "cycle_1_hold_clearance": {
+      "passed": true,
+      "requirement": "Selected foot remains >= 20 mm above its fixed pre-lift center height throughout hold",
+      "observed": 0.030134376927601916
+    },
+    "cycle_1_support_margin": {
+      "passed": true,
+      "requirement": "Physical CoM projection has >= 10 mm margin inside measured three-foot support triangle during hold",
+      "observed": {
+        "independent_minimum_m": 0.06959821637692096,
+        "logged_minimum_m": 0.06959821637692096
+      }
+    },
+    "cycle_1_fixed_lift_reference": {
+      "passed": true,
+      "requirement": "Immutable lift anchor and constant hold target 0.03 m above it, with zero desired velocity/acceleration",
+      "observed": true
+    },
+    "cycle_1_foot_tracking": {
+      "passed": true,
+      "requirement": "Selected-foot 3D error < 12 mm during lift, hold, lower and confirm",
+      "observed": 0.005427570084065536
+    },
+    "cycle_1_support_slip": {
+      "passed": true,
+      "requirement": "All three support feet stay within 10 mm of their fixed positions at shift entry",
+      "observed": 0.0074617100837211245
+    },
+    "cycle_1_lift_entry_guard": {
+      "passed": true,
+      "requirement": "Last unload sample before lift: selected normal < 3 N, each support > 5 N, physical margin >= 20 mm, selected cap <= 0.1 N",
+      "observed": {
+        "last_unload_time_s": 10.504000000000177,
+        "selected_normal_force_n": 0.0,
+        "minimum_support_normal_force_n": 45.07142988585428,
+        "physical_support_margin_m": 0.06906348433927874,
+        "selected_force_cap_n": 0.0
+      }
+    },
+    "cycle_1_force_cap_ramps": {
+      "passed": true,
+      "requirement": "Unload and reload each last >= 3 s; held MPC force cap decreases monotonically on unload and increases on reload",
+      "observed": {
+        "unload_duration_s": 3.1,
+        "reload_duration_s": 3.202,
+        "maximum_unload_cap_increase_n": 0.0,
+        "maximum_reload_cap_decrease_n": -0.0
+      }
+    },
+    "cycle_1_reload_gate": {
+      "passed": true,
+      "requirement": "Reload follows confirm and recorded dwell >= 0.1 s; preceding contacts independently active at >= 2 N for that debounce minus at most one boundary sample",
+      "observed": {
+        "time_s": 23.859999999997655,
+        "contact_confirmed": true,
+        "measured_contact": true,
+        "dwell_s": 0.09999999999994458,
+        "independent_debounce_samples": 49,
+        "independent_debounce_duration_s": 0.098,
+        "independent_debounce_min_normal_force_n": 2.3374588731783237,
+        "independent_debounce_passed": true
+      }
+    },
+    "cycle_1_reload_loading": {
+      "passed": true,
+      "requirement": "All four feet have measured/planned contact and normal force > 5 N for the last 0.2 s of reload and first recenter sample",
+      "observed": {
+        "reload_dwell_s": 0.2,
+        "first_recenter_time_s": 27.06199999999588,
+        "minimum_normal_force_n_by_leg": {
+          "FL": 11.656050079683176,
+          "FR": 37.08504571751313,
+          "RL": 40.21791012376182,
+          "RR": 60.15948269280394
+        },
+        "missing_measured_or_planned_contacts": 0
+      }
+    },
+    "final_four_foot_stance": {
+      "passed": true,
+      "requirement": "Final complete phase lasts >= 1 s with all four feet in measured and planned contact",
+      "observed": 2.0020000000000002
+    },
+    "final_four_foot_loading": {
+      "passed": true,
+      "requirement": "Every foot remains loaded above 5 N throughout the final complete phase (at least 1 s), with measured and planned contact",
+      "observed": {
+        "duration_s": 2.0020000000000002,
+        "minimum_normal_force_n_by_leg": {
+          "FL": 32.062428377182215,
+          "FR": 34.15678779373826,
+          "RL": 40.08023103895547,
+          "RR": 41.22844481232773
+        }
+      }
+    },
+    "pad_reference_limit_configuration": {
+      "passed": true,
+      "requirement": "Declared reference limits are positive and no looser than the shared executor limits",
+      "observed": {
+        "max_foot_speed_m_s": 0.015,
+        "search_speed_m_s": 0.005,
+        "max_com_speed_m_s": 0.008,
+        "max_body_displacement_m": 0.012,
+        "target_xy_tolerance_m": 0.005,
+        "max_orientation_deviation_rad": 0.03490658503988659,
+        "max_orientation_rate_rad_s": 0.02
+      }
+    },
+    "pad_finite_planner_signals": {
+      "passed": true,
+      "requirement": "All recorded planner, belief, and applied reference quantities are finite",
+      "observed": null
+    },
+    "pad_commanded_foot_speed": {
+      "passed": true,
+      "requirement": "Applied foot-position differences during lowering/confirmation respect the nominal speed limit",
+      "observed": {
+        "maximum_m_s": 0.011968661950289521,
+        "limit_m_s": 0.015
+      }
+    },
+    "pad_commanded_com_speed": {
+      "passed": true,
+      "requirement": "Applied CoM-position differences respect the shared body-speed limit",
+      "observed": {
+        "maximum_m_s": 0.0016859417073552976,
+        "limit_m_s": 0.008
+      }
+    },
+    "pad_monotone_lowering": {
+      "passed": true,
+      "requirement": "Applied foot Z never rises during lowering or contact confirmation",
+      "observed": {
+        "maximum_upward_speed_m_s": 0.0
+      }
+    },
+    "pad_commanded_body_displacement": {
+      "passed": true,
+      "requirement": "Each CoM coordinate stays within the permitted displacement from lowering entry",
+      "observed": {
+        "maximum_m": 0.0008243931877889299,
+        "limit_m": 0.012
+      }
+    },
+    "pad_commanded_target_xy": {
+      "passed": true,
+      "requirement": "The selected foot reference stays within the nominal landing-target XY bounds",
+      "observed": {
+        "maximum_coordinate_error_m": 0.0011624952392226273,
+        "limit_m": 0.005
+      }
+    },
+    "pad_commanded_orientation": {
+      "passed": true,
+      "requirement": "Each body-orientation reference coordinate respects displacement and rate limits",
+      "observed": {
+        "maximum_deviation_rad": 0.0008099708579455002,
+        "maximum_rate_rad_s": 0.0013561625971585949
+      }
+    },
+    "pad_contact_reference_freeze": {
+      "passed": true,
+      "requirement": "Applied body and foot positions remain fixed while loaded contact is being confirmed",
+      "observed": {
+        "maximum_foot_speed_m_s": 0.0,
+        "maximum_com_speed_m_s": 0.0
+      }
+    },
+    "pad_planner_update_cadence": {
+      "passed": true,
+      "requirement": "Planner updates at 20 Hz while active, pauses for loaded-contact debounce, and updates immediately on resume",
+      "observed": {
+        "frequency_hz": 20.0,
+        "period_steps": 25,
+        "missing_updates": 0,
+        "unexpected_updates": 0
+      }
+    },
+    "pad_commanded_recovery_speed": {
+      "passed": true,
+      "requirement": "Segments planned after sensed missing contact respect bounded slow descent, allowing one planning-tick latency",
+      "observed": {
+        "checked_intervals": 750,
+        "maximum_m_s": 0.0027596454556151817,
+        "limit_m_s": 0.005
+      }
+    },
+    "pad_adaptation_signals": {
+      "passed": true,
+      "requirement": "V2 records timing, measured state and applied fallback contributions",
+      "observed": []
+    },
+    "pad_adaptation_alignment": {
+      "passed": true,
+      "requirement": "V2 adaptation signals have one entry per control sample",
+      "observed": null
+    },
+    "pad_positive_remaining_duration": {
+      "passed": true,
+      "requirement": "Every unsupported planning update replans finite, strictly positive remaining time, including learned time",
+      "observed": {
+        "planner_remaining_time_s": 0.6470953981244915,
+        "optimized_remaining_time_s": 0.6470953981244915,
+        "feasible_remaining_time_s": 0.6470953981244915,
+        "model_remaining_time_s": 0.27764282617387426,
+        "raw_model_remaining_time_s": 0.27764282617387426
+      }
+    },
+    "pad_current_state_replanning": {
+      "passed": true,
+      "requirement": "Every active planning tick uses the contemporaneous allowed measured body and foot state",
+      "observed": null
+    },
+    "pad_fallback_prior_exclusion": {
+      "passed": true,
+      "requirement": "Fallback intervals execute the shared conventional reference rule with the learned prior disabled",
+      "observed": null
+    },
+    "pad_prior_execution": {
+      "passed": true,
+      "requirement": "Learned variants actually use their prior; the matched predictive baseline never uses it",
+      "observed": true
+    },
+    "pad_fallback_work_accounting": {
+      "passed": true,
+      "requirement": "Fallback contribution equals independently integrated applied reference intervals, including interrupted segments",
+      "observed": {
+        "active_time_s": 2.2419999999987574,
+        "foot_descent_m": 0.004277288246704772,
+        "com_travel_m": 0.0013544487446585894
+      }
+    },
+    "pad_noncontact_ablation_configuration": {
+      "passed": true,
+      "requirement": "Only the no-noncontact-update ablation disables censored belief updates",
+      "observed": true
+    },
+    "pad_configuration": {
+      "passed": true,
+      "requirement": "One landing-pad cycle with finite geometry and bounded search settings",
+      "observed": {
+        "experiment": "landing_pad",
+        "cycles": 1,
+        "max_search_depth_m": 0.02,
+        "contact_compression_m": 0.004
+      }
+    },
+    "pad_fixed_support_surfaces": {
+      "passed": true,
+      "requirement": "All four fixed launch/support surfaces have top z=0; only the separate landing pad changes",
+      "observed": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "pad_truth_separation_schema": {
+      "passed": true,
+      "requirement": "Actual height appears only in evaluation metadata; known height labels are confined to demonstrations",
+      "observed": []
+    },
+    "pad_bounded_descent": {
+      "passed": true,
+      "requirement": "Commanded foot bottom stays above initial estimate minus search depth and contact compression",
+      "observed": {
+        "minimum_commanded_bottom_m": -0.008592920344716072,
+        "minimum_allowed_bottom_m": -0.024
+      }
+    },
+    "pad_physical_reach": {
+      "passed": true,
+      "requirement": "Measured foot bottom never extends more than 40 mm below the initial estimate",
+      "observed": {
+        "minimum_actual_bottom_m": -0.006150421626284104,
+        "minimum_allowed_bottom_m": -0.04
+      }
+    },
+    "pad_foot_bottom_consistency": {
+      "passed": true,
+      "requirement": "Evaluation foot-bottom signal equals measured sphere center minus known radius",
+      "observed": 0.0
+    },
+    "pad_target_force_consistency": {
+      "passed": true,
+      "requirement": "Target-pad forces/contact are a nonnegative subset of measured selected-foot ground contact",
+      "observed": {
+        "maximum_target_force_n": 32.70933676252531,
+        "maximum_target_minus_total_normal_n": 0.0
+      }
+    },
+    "pad_final_target_loading": {
+      "passed": true,
+      "requirement": "Final standing loads the actual separate target pad above 5 N and stays within 20 mm of its center",
+      "observed": {
+        "minimum_normal_force_n": 32.062428377182215,
+        "maximum_xy_target_error_m": 0.0018252601385143018,
+        "missing_target_contact_samples": 0
+      }
+    },
+    "pad_final_height_consistency": {
+      "passed": true,
+      "requirement": "Loaded final foot bottom is within 5 mm of the simulator's true pad top, allowing contact compliance",
+      "observed": 0.00015042162628410398
+    },
+    "pad_target_contact_before_reload": {
+      "passed": true,
+      "requirement": "Independent target-pad contact carries at least 2 N throughout the pre-reload debounce window",
+      "observed": {
+        "required_samples": 49,
+        "first_reload_time_s": 23.859999999997655
+      }
+    },
+    "pad_target_reload_loading": {
+      "passed": true,
+      "requirement": "Actual target pad is loaded above 5 N over the last 0.2 s of reload and first recenter sample",
+      "observed": 11.656050079683176
+    },
+    "pad_belief_bounds": {
+      "passed": true,
+      "requirement": "Belief mean and ordered credible bounds lie within the declared height support, with feasible nonnegative uncertainty",
+      "observed": null
+    },
+    "pad_sensor_causality": {
+      "passed": true,
+      "requirement": "Sensor timestamps are monotonic and never later than the consuming control interval start",
+      "observed": {
+        "maximum_future_lead_s": 0.0
+      }
+    },
+    "pad_planner_execution": {
+      "passed": true,
+      "requirement": "Planner executes with finite nonnegative timing; bounded recovery fallback is reported separately",
+      "observed": {
+        "updates": 150,
+        "maximum_fallback_count": 79.0
+      }
+    }
+  },
+  "metrics": {
+    "sample_count": 16632,
+    "duration_s": 33.26399999999469,
+    "mpc_updates": 3329,
+    "maximum_abs_roll_pitch_deg": 0.43570502247900955,
+    "maximum_abs_actuator_torque_nm": 11.946406561399192,
+    "maximum_normal_force_n_by_leg": {
+      "FL": 52.33933564272423,
+      "FR": 54.64400117334323,
+      "RL": 54.46719814195869,
+      "RR": 61.70383827788327
+    },
+    "final_complete_duration_s": 2.0020000000000002,
+    "maximum_logged_vs_independent_margin_difference_m": 0.0,
+    "fallback_active_time_s": 2.2419999999987574,
+    "fallback_commanded_foot_descent_m": 0.004277288246704772,
+    "fallback_commanded_com_travel_m": 0.0013544487446585894,
+    "fallback_active_plan_count": 79,
+    "minimum_unsupported_remaining_time_s": 0.6470953981244915,
+    "minimum_raw_model_remaining_time_s": 0.27764282617387426,
+    "learned_prior_active_plan_count": 71,
+    "learned_prior_active_plan_fraction": 0.47333333333333333,
+    "missing_contact_planning_updates": 31,
+    "recovery_planning_updates": 79,
+    "minimum_raw_recovery_remaining_time_s": 0.27764282617387426,
+    "lowering_initial_measured_foot_bottom_m": 0.030165003966676436,
+    "lowering_initial_measured_com_w": [
+      -0.06750015063978843,
+      -0.04761579852235616,
+      0.2585508634092852
+    ],
+    "success": true,
+    "completion_time_s": 33.26399999999469,
+    "lowering_to_touchdown_s": 5.053999999997199,
+    "lowering_to_completion_s": 15.559999999993622,
+    "first_target_touchdown_time_s": 22.757999999998265,
+    "nominal_touchdown_deadline_s": 21.704000000001066,
+    "touchdown_minus_nominal_deadline_s": 1.053999999997199,
+    "observed_contact_timing": "late",
+    "missing_contact_observed": true,
+    "first_missing_contact_time_s": 21.207999999999124,
+    "missing_contact_before_physical_touchdown": true,
+    "recovery_to_touchdown_s": 1.549999999999141,
+    "peak_normal_force_first_100ms_n": 0.8458202649894874,
+    "normal_impulse_first_100ms_ns": 0.07369146878813207,
+    "maximum_roll_pitch_change_during_landing_deg": 0.4799832685389564,
+    "maximum_com_reference_error_during_landing_m": 0.015104150318658638,
+    "maximum_body_rotation_during_landing_deg": 1.0851019264217527,
+    "height_belief_final_error_m": 0.00030911126388605877,
+    "height_belief_error_at_contact_confirmation_m": 0.0008255965884404817,
+    "planner_update_count": 150,
+    "planner_mean_compute_time_s": 0.007016473173353006,
+    "planner_maximum_compute_time_s": 0.05244289800066326,
+    "reference_projection_count": 0.0,
+    "planner_fallback_count": 79.0,
+    "learned_conditioning_updates": 126.0,
+    "learned_duration_min_s": null,
+    "learned_duration_max_s": null,
+    "predictive_optimization_failures": 0.0
+  },
+  "evaluation": {
+    "actual_pad_height_m": -0.006,
+    "initial_height_estimate_m": 0.0,
+    "height_difference_m": -0.006,
+    "height_condition": "lower"
+  },
+  "base_summary_file": "step_summary.json",
+  "runner_error": null,
+  "conventions": {
+    "impact": "Simulated target-pad normal reaction over exactly 100 ms after first physical target contact; impulse is the rectangle-rule integral, including static load.",
+    "body_disturbance": "Roll/pitch change from lowering entry and CoM tracking error are reported separately from intentionally commanded body motion.",
+    "timing": "Physical contact time uses post-step evaluation contacts. Nominal deadline is lowering entry plus requested nominal duration; approximately planned means within 0.25 s. This descriptive label is not an acceptance criterion.",
+    "height_truth": "Actual height is used only by the simulator and this evaluator. Schema checks do not prove absence of arbitrary numeric information leaks; planner API tests and code review complement them.",
+    "completion": "All inherited controlled-step criteria and additional pad checks must pass. No relative planner superiority is assumed."
+  }
+}

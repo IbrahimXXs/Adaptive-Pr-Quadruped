@@ -1,0 +1,44 @@
+{
+  "passed": true,
+  "source_trial_id": "eval_matched_learned_h-6mm_seed17_nominal",
+  "source_recording": "/home/ibrahim/Documents/GO-2 PRIMP/primp_project/results/landing_pad/study_v2/evaluation/pad_matched_learned_20260921T083449_239195Z",
+  "signals_sha256": "b1cd4c1c0856587a9f4da384bdcfc10983abaabf91983735e3640fc66ddb502a",
+  "method": "In-memory corruption only; canonical files are never rewritten",
+  "cases": [
+    {
+      "corruption": "Expired raw learned recovery time concealed by positive feasible time",
+      "expected_criterion": "pad_positive_remaining_duration",
+      "rejected": true
+    },
+    {
+      "corruption": "Expired applied recovery time",
+      "expected_criterion": "pad_positive_remaining_duration",
+      "rejected": true
+    },
+    {
+      "corruption": "Stale measured foot anchor",
+      "expected_criterion": "pad_current_state_replanning",
+      "rejected": true
+    },
+    {
+      "corruption": "Unreported fallback duration",
+      "expected_criterion": "pad_fallback_work_accounting",
+      "rejected": true
+    },
+    {
+      "corruption": "Fabricated fallback descent",
+      "expected_criterion": "pad_fallback_work_accounting",
+      "rejected": true
+    },
+    {
+      "corruption": "Fallback simultaneously credited to learned prior",
+      "expected_criterion": "pad_fallback_prior_exclusion",
+      "rejected": true
+    },
+    {
+      "corruption": "Learned label without actual prior execution",
+      "expected_criterion": "pad_prior_execution",
+      "rejected": true
+    }
+  ]
+}

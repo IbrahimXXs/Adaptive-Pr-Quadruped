@@ -1,0 +1,17 @@
+<mujoco model="primp_adjustable_landing_pad">
+  <include file="/home/ibrahim/miniconda3/envs/quadruped-pympc/lib/python3.12/site-packages/gym_quadruped/robot_model/go2/go2.xml" />
+  <statistic center="0 0 0.1" extent="0.9" />
+  <visual>
+    <headlight diffuse="0.5 0.5 0.5" ambient="0.35 0.35 0.35" />
+    <global azimuth="-130" elevation="-25" />
+  </visual>
+  <worldbody>
+    <light pos="0 0 3" dir="0 0 -1" directional="true" />
+    <geom name="floor" type="plane" size="0 0 0.05" pos="0 0 -0.12" rgba="0.75 0.78 0.8 1" />
+    <geom name="primp_support_FL" type="box" pos="0.192156780063 0.142 -0.055" size="0.032 0.065 0.055" rgba="0.3 0.36 0.43 1" friction="0.8 0.005 0" condim="3" />
+    <geom name="primp_support_FR" type="box" pos="0.192156780063 -0.142 -0.055" size="0.075 0.075 0.055" rgba="0.3 0.36 0.43 1" friction="0.8 0.005 0" condim="3" />
+    <geom name="primp_support_RL" type="box" pos="-0.194643219937 0.142 -0.055" size="0.075 0.075 0.055" rgba="0.3 0.36 0.43 1" friction="0.8 0.005 0" condim="3" />
+    <geom name="primp_support_RR" type="box" pos="-0.194643219937 -0.142 -0.055" size="0.075 0.075 0.055" rgba="0.3 0.36 0.43 1" friction="0.8 0.005 0" condim="3" />
+    <geom name="primp_landing_pad" type="box" pos="0.282156780063 0.142 -0.053" size="0.032 0.065 0.057" rgba="0.18 0.6 0.72 1" friction="0.8 0.005 0" condim="3" />
+  </worldbody>
+</mujoco>

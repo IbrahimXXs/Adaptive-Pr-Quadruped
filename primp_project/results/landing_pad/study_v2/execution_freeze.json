@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "split_manifest_sha256": "ef432a9f34ae0e34573ccef2ba57299f3495ef85a6387dd73c830ba9f8feac6c",
+  "v1_training_manifest_sha256": "4678c3375cf71cde471fa3f0372fbc831c80da6926fde433348e163d1d8ea196",
+  "source_sha256": "e3cc580065831059bb7286330ffe467a495d8d91b43b01fea25eb7d53f6c54bd",
+  "model_files": {
+    "model/model.npz": "603829ce172190363291b5703aae84d4cfb64e019375ccaf32fccd4d8c133fe4",
+    "model/model.json": "41cd130a59870e8858ae4184fc43cd18707b07692a6fab3be6e940b243f62dd6",
+    "recovery_model/recovery.npz": "2ec6f32dce0e213086fe50537863d28ad293512fa91311c7f63112741f09c9ee",
+    "recovery_model/recovery.json": "6f9dadd6dbdab0d0c4a69721b85926ccb6b4d23c7cff68c4753fd26a92938882"
+  },
+  "frozen_at": "2026-09-21T08:34:29.275742+00:00"
+}

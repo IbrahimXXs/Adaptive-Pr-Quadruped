@@ -1,0 +1,170 @@
+{
+  "version": 1,
+  "source_study_directory": "/home/ibrahim/Documents/GO-2 PRIMP/primp_project/results/landing_pad/study",
+  "source_manifest_sha256": "7e3466ce5048816090589f99ac86748506e25105e284ce4b31be6f0b6e94edd7",
+  "source_state_sha256_at_capture": "11d90e47ac8aae54f5a849a5af4c49c53ecde7134e27565bae844a803964e33f",
+  "records": [
+    {
+      "trial_id": "demo_h-10mm_t3s",
+      "run_id": "pad_reactive_20260921T071336_628655Z",
+      "run_dir": "/home/ibrahim/Documents/GO-2 PRIMP/primp_project/results/landing_pad/demonstrations/pad_reactive_20260921T071336_628655Z",
+      "parameters": {
+        "trial_id": "demo_h-10mm_t3s",
+        "actual_height_m": -0.01,
+        "initial_estimate_m": -0.01,
+        "planner": "reactive",
+        "role": "demonstration",
+        "lower_duration_s": 3.0,
+        "sensor_profile": "clean",
+        "seed": 17
+      },
+      "signals_sha256": "f72ecf567eb80b34d2c7edf2dc28005d77e314437bd569172ba05421fe04f581",
+      "metadata_sha256": "eb207d6e584097f925de6171c7eb3db7465055ccc5e84d4268c84a3767745f40",
+      "summary_sha256": "34fb5bffbcf88a9160a5cf6e890478f12518667cf06c43759787a892ce617b65"
+    },
+    {
+      "trial_id": "demo_h-10mm_t4s",
+      "run_id": "pad_reactive_20260921T071412_218286Z",
+      "run_dir": "/home/ibrahim/Documents/GO-2 PRIMP/primp_project/results/landing_pad/demonstrations/pad_reactive_20260921T071412_218286Z",
+      "parameters": {
+        "trial_id": "demo_h-10mm_t4s",
+        "actual_height_m": -0.01,
+        "initial_estimate_m": -0.01,
+        "planner": "reactive",
+        "role": "demonstration",
+        "lower_duration_s": 4.0,
+        "sensor_profile": "clean",
+        "seed": 17
+      },
+      "signals_sha256": "6d3bf963ab75fe33169d1242e14401a95f28e60993fd8054d5799b3772661c79",
+      "metadata_sha256": "080bff02e58bcfe5fd89f84abfc166825cb368b61fb354ff2331666c4bc59013",
+      "summary_sha256": "a1dbd8ddbd534f414157cf18d28a2f413238e69c718b73e405de492c283dcf51"
+    },
+    {
+      "trial_id": "demo_h-10mm_t5s",
+      "run_id": "pad_reactive_20260921T071447_116871Z",
+      "run_dir": "/home/ibrahim/Documents/GO-2 PRIMP/primp_project/results/landing_pad/demonstrations/pad_reactive_20260921T071447_116871Z",
+      "parameters": {
+        "trial_id": "demo_h-10mm_t5s",
+        "actual_height_m": -0.01,
+        "initial_estimate_m": -0.01,
+        "planner": "reactive",
+        "role": "demonstration",
+        "lower_duration_s": 5.0,
+        "sensor_profile": "clean",
+        "seed": 17
+      },
+      "signals_sha256": "009e4df37fc2f8b494cc401ff0284250002dfbf256633cc7e3b2319baaeb5a34",
+      "metadata_sha256": "0924dba9b732788cc89a8b795f6bdc32d5713ef8376cf90145b1edc9385ce8b3",
+      "summary_sha256": "8bf8e55af8fd7277e1d74bfc260aca6597902522d020ed7d038a1dc67bfd1b19"
+    },
+    {
+      "trial_id": "demo_h+00mm_t3s",
+      "run_id": "pad_reactive_20260921T071523_197312Z",
+      "run_dir": "/home/ibrahim/Documents/GO-2 PRIMP/primp_project/results/landing_pad/demonstrations/pad_reactive_20260921T071523_197312Z",
+      "parameters": {
+        "trial_id": "demo_h+00mm_t3s",
+        "actual_height_m": 0.0,
+        "initial_estimate_m": 0.0,
+        "planner": "reactive",
+        "role": "demonstration",
+        "lower_duration_s": 3.0,
+        "sensor_profile": "clean",
+        "seed": 17
+      },
+      "signals_sha256": "eb60d62e0975f856a87eaf76896dc08bd1c4dac3b97abaaeb92fabff703eaf15",
+      "metadata_sha256": "858aaab33971fce52108b7be16c1a53d15693a78a127f1ce0dcb821aedbf32b6",
+      "summary_sha256": "6dbffc59ca73292008163c4026da242a3f5bddaf331f7fa9682b44746f8d635f"
+    },
+    {
+      "trial_id": "demo_h+00mm_t4s",
+      "run_id": "pad_reactive_20260921T071557_323885Z",
+      "run_dir": "/home/ibrahim/Documents/GO-2 PRIMP/primp_project/results/landing_pad/demonstrations/pad_reactive_20260921T071557_323885Z",
+      "parameters": {
+        "trial_id": "demo_h+00mm_t4s",
+        "actual_height_m": 0.0,
+        "initial_estimate_m": 0.0,
+        "planner": "reactive",
+        "role": "demonstration",
+        "lower_duration_s": 4.0,
+        "sensor_profile": "clean",
+        "seed": 17
+      },
+      "signals_sha256": "2f4f621b6468c868cd2241ee7f0b360bae89dc7c314f5e201e07aa6c46442706",
+      "metadata_sha256": "82f4d8f0dd401288e212ba43791bf1b5cdc74d3f885183739a3b1bb2c77ec2e2",
+      "summary_sha256": "5ee670bc473b0e286fb150ab696cfdb6dbf11823bdf8e68a26d7030b0fa6d41f"
+    },
+    {
+      "trial_id": "demo_h+00mm_t5s",
+      "run_id": "pad_reactive_20260921T071632_779659Z",
+      "run_dir": "/home/ibrahim/Documents/GO-2 PRIMP/primp_project/results/landing_pad/demonstrations/pad_reactive_20260921T071632_779659Z",
+      "parameters": {
+        "trial_id": "demo_h+00mm_t5s",
+        "actual_height_m": 0.0,
+        "initial_estimate_m": 0.0,
+        "planner": "reactive",
+        "role": "demonstration",
+        "lower_duration_s": 5.0,
+        "sensor_profile": "clean",
+        "seed": 17
+      },
+      "signals_sha256": "9552eb8be48b5e2bd9cf80bd5c02f1f0626a077d929c5dd475aa9f3ef01ab2f2",
+      "metadata_sha256": "17759ee56e85725166b2836c9db9deb2de9b2b8cfdcc25cd15359445f3fcc5ea",
+      "summary_sha256": "ecde372c8d3d197d7cc724fa92425e125a1a138a76fb89c46877a1b8ebd5e297"
+    },
+    {
+      "trial_id": "demo_h+10mm_t3s",
+      "run_id": "pad_reactive_20260921T071709_594333Z",
+      "run_dir": "/home/ibrahim/Documents/GO-2 PRIMP/primp_project/results/landing_pad/demonstrations/pad_reactive_20260921T071709_594333Z",
+      "parameters": {
+        "trial_id": "demo_h+10mm_t3s",
+        "actual_height_m": 0.01,
+        "initial_estimate_m": 0.01,
+        "planner": "reactive",
+        "role": "demonstration",
+        "lower_duration_s": 3.0,
+        "sensor_profile": "clean",
+        "seed": 17
+      },
+      "signals_sha256": "024e79f620adfe9a02b77a62444353b346b13ef1e054c0e57ad363a841ebdf74",
+      "metadata_sha256": "4caff17de574d283a287ccbdabcf7f929a36d5b475b668082d77aeb8a90a5276",
+      "summary_sha256": "0b3be06b1ea2afdb72eb9c7c7e5a935f1567913a5bc577768983f185a5b91efe"
+    },
+    {
+      "trial_id": "demo_h+10mm_t4s",
+      "run_id": "pad_reactive_20260921T071743_601080Z",
+      "run_dir": "/home/ibrahim/Documents/GO-2 PRIMP/primp_project/results/landing_pad/demonstrations/pad_reactive_20260921T071743_601080Z",
+      "parameters": {
+        "trial_id": "demo_h+10mm_t4s",
+        "actual_height_m": 0.01,
+        "initial_estimate_m": 0.01,
+        "planner": "reactive",
+        "role": "demonstration",
+        "lower_duration_s": 4.0,
+        "sensor_profile": "clean",
+        "seed": 17
+      },
+      "signals_sha256": "b571dbbf6bd4a0515cb10c9f95665ef936b756a9901c35ce8a6c7bbadeb32055",
+      "metadata_sha256": "53caac14705892310936223645e6db89b6634fe0c7671e26f0df316ec6886a3c",
+      "summary_sha256": "c73f01e6de460b23a35dbb52bd9657d7364d5844927112b73703242a559a9250"
+    },
+    {
+      "trial_id": "demo_h+10mm_t5s",
+      "run_id": "pad_reactive_20260921T071818_547110Z",
+      "run_dir": "/home/ibrahim/Documents/GO-2 PRIMP/primp_project/results/landing_pad/demonstrations/pad_reactive_20260921T071818_547110Z",
+      "parameters": {
+        "trial_id": "demo_h+10mm_t5s",
+        "actual_height_m": 0.01,
+        "initial_estimate_m": 0.01,
+        "planner": "reactive",
+        "role": "demonstration",
+        "lower_duration_s": 5.0,
+        "sensor_profile": "clean",
+        "seed": 17
+      },
+      "signals_sha256": "7326fc9a33ea4bf4e7c503273e25a6a5d108f57ca1426268f47cc1e188d4951e",
+      "metadata_sha256": "3c747a32ac3e50ada6158dbd7a83e4eeb8fc7ad093457035b9b01c46e8d5bc86",
+      "summary_sha256": "6904daba71afdccb98919517e232241e42cc2ddbbdda64a1c7ef74c8e17d60e5"
+    }
+  ]
+}

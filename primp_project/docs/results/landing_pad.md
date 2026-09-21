@@ -1,5 +1,9 @@
 # Adjustable landing-pad results
 
+This is the preserved **V1** result report. The separate
+[V2 study](../landing_pad_v2.md) investigates the learned recovery-timing
+limitation identified below; it does not replace these recordings or counts.
+
 Nine successful known-height demonstrations have been collected and fitted.
 **All 24 evaluation trials passed**: **18/18 primary trials** and **6/6
 supplementary reserved-height trials**. Each planner completed 6/6 primary
@@ -8,7 +12,7 @@ errors. The initial simulation prototype and its evaluation are complete.
 Individual reports are available through the
 [recording catalog](../../results/README.md).
 
-**Current learned-model limitation:** coordinated references change online, but
+**V1 learned-model limitation:** coordinated references change online, but
 the lower-pad recovery still depends substantially on the shared bounded
 fallback. The learned timing prediction does not account for that added
 recovery time. Passing completion checks should not be interpreted as evidence
@@ -202,7 +206,7 @@ was **31.962 N**. The [audit script](../../results/landing_pad/study/validation/
 and earlier [primary-only audit](../../results/landing_pad/study/validation/primary_execution_audit.json)
 remain beside the final result for reproduction.
 
-The completed 2026-09-21 catalog contains **54 recordings**, including **45
+At V1 completion on 2026-09-21 there were **54 recordings**, including **45
 landing-pad recordings**: 12 development, nine demonstrations, and 24 formal
 evaluations. Four development recordings retain **FAIL**: the three historical
 reference-transition failures and the expected search-bound abort. All remain

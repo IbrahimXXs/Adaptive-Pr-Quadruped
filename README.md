@@ -3,18 +3,24 @@
 This workspace builds on **Quadruped-PyMPC** to study how a quadruped can
 coordinate body motion, foot motion, and timing when the ground is higher or
 lower than expected. Stable standing and repeated controlled front-foot steps
-on flat ground are implemented and recorded. The next experiment adds a
+on flat ground are implemented and recorded. The landing experiment uses a
 separate adjustable landing pad, sensor-based ground-height belief, bounded
 recovery after missing contact, and a PRIMP-based body–foot motion distribution.
-The learning pipeline collects known-height demonstrations and compares learned,
-reactive, and predictive planners using the same sensing and PyMPC executor.
-Nine passing demonstrations now fit a model with measurable coupled body–foot
-variation. All **24 evaluation trials passed** across reactive, predictive,
-and learned planners: 18 primary trials and six additional trials at heights
-reserved from both training and development.
-The learned planner still relies on shared recovery after its modeled phase
-ends, so a useful learned timing advantage has not been shown.
-See the project documentation for the current evaluation status and its limits.
+The preserved **V1 pilot completed 24/24 evaluations**, while exposing a learned
+recovery-timing limitation and establishing no learned-method advantage.
+
+The separate **V2 study** now fits nominal motion from 18 passing demonstrations
+and remaining recovery motion/time from nine of those demonstrations. It uses
+the sensor-derived terrain posterior without applying the training-height prior
+again. Five variants share one predictive reference optimizer: conventional,
+complete learned, and body–foot-correlation, timing, and noncontact-update
+ablations. Its 60 reserved evaluation cells cover two heights, three noise
+seeds, and two initial foot clearances. **All 60/60 evaluations passed**, with
+317 tests and an independent raw-signal audit. Raw learned recovery time stays
+positive, but every complete learned trial still uses some common fallback;
+removing learned timing makes all 12 matched cases faster. An overall learned
+advantage remains unproven. See the [V2 results](primp_project/docs/results/landing_pad_v2.md)
+and [experiment guide](primp_project/docs/landing_pad_v2.md).
 
 Start with the [project README](primp_project/README.md) for the research goal,
 current status, commands, organized source layout, and recorded results. All

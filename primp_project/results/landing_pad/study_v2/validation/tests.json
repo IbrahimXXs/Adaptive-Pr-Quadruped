@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "test_count": 317,
+  "warnings": 2,
+  "elapsed_s": 18.92,
+  "source_sha256": "e3cc580065831059bb7286330ffe467a495d8d91b43b01fea25eb7d53f6c54bd",
+  "report_sha256": "e560c58a476e2a1f59ac540cdf560c72411d8839f8f0a49b86844342b8093b97",
+  "python": "3.12.14 | packaged by conda-forge | (main, Aug 21 2026, 22:48:28) [GCC 14.4.0]",
+  "executable": "/home/ibrahim/miniconda3/envs/quadruped-pympc/bin/python",
+  "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35",
+  "packages": {
+    "numpy": "2.5.2",
+    "scipy": "1.18.0",
+    "mujoco": "3.12.0",
+    "gym-quadruped": "1.1.5",
+    "casadi": "3.7.2",
+    "acados-template": "0.1",
+    "pytest": "9.1.1"
+  },
+  "command": "PYTEST_DISABLE_PLUGIN_AUTOLOAD=1 OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python -m pytest primp_project/tests -q -o cache_dir=primp_project/artifacts/cache/pytest --basetemp=primp_project/artifacts/test_tmp"
+}
