@@ -1,0 +1,127 @@
+{
+  "reason": "Display actual target-pad load, not FL launch-surface force; reference movement to first probe pose when a probe exists.",
+  "canonical_artifacts_unchanged": true,
+  "trials": [
+    {
+      "trial_id": "capacity25_probe20_unaware_seed17",
+      "run_dir": "/home/ibrahim/Documents/GO-2 PRIMP/primp_project/results/weak_pad/study/trials/capacity25_probe20_unaware_seed17/weak_pad_unaware_20260921T100816_063152Z",
+      "canonical_hashes": {
+        "signals.npz": "104e38f1fa499477c547044db9f9052f1bca022027577ce5a9573d1d449b3071",
+        "metadata.json": "50d9385733a07845e66ba12db493de395b0ec9603fdb0d4b3f376526f8e7f093",
+        "weak_pad_summary.json": "66d49620281f0064c453b3d5dda4b76fbfbb0a357170a47934a64b760f6e6cfd",
+        "weak_pad_overview.png": "36eba0179c49dd61275573b7ab1c63fc55add12b2df77b12d150037b2ffec019"
+      },
+      "corrected_plot": "capacity25_probe20_unaware_seed17.png"
+    },
+    {
+      "trial_id": "capacity25_probe20_conservative_seed17",
+      "run_dir": "/home/ibrahim/Documents/GO-2 PRIMP/primp_project/results/weak_pad/study/trials/capacity25_probe20_conservative_seed17/weak_pad_conservative_20260921T100816_063230Z",
+      "canonical_hashes": {
+        "signals.npz": "85d99a7e913039fd4819890836a1a3eb1868325aa5263c46bb01d70306909eb1",
+        "metadata.json": "b46e616f7bc2185c469f8b52c16001b1da52b61340cae229bbc37646322b43b4",
+        "weak_pad_summary.json": "91b4c52bf5decddca73ffb633054d47e73eb4b0b9104693d990eac80e8d11ea2",
+        "weak_pad_overview.png": "a67b8e1282540cc6b78dbd123e2da7e44eec9ea8f1a47535c505681303736562"
+      },
+      "corrected_plot": "capacity25_probe20_conservative_seed17.png"
+    },
+    {
+      "trial_id": "capacity25_probe20_adaptive_seed17",
+      "run_dir": "/home/ibrahim/Documents/GO-2 PRIMP/primp_project/results/weak_pad/study/trials/capacity25_probe20_adaptive_seed17/weak_pad_adaptive_20260921T100850_621481Z",
+      "canonical_hashes": {
+        "signals.npz": "23949c7de5916943e674bb6b7ee9104ebb358dafd032799387567ee36f8a09ae",
+        "metadata.json": "f2f70a1e007b6353c609f9d2a594b9ccb84de006e9fdbb2749829e3a4f0f4e2d",
+        "weak_pad_summary.json": "c41e6d86e891330b0ef247cb1f506fed17d88aa3de583202cc7c08558a5fb924",
+        "weak_pad_overview.png": "c2b2030a9012a4144334bb0302ed58f424a41c900ee218bef9f1cd7cd2ecd3c4"
+      },
+      "corrected_plot": "capacity25_probe20_adaptive_seed17.png"
+    },
+    {
+      "trial_id": "capacity25_probe22_unaware_seed17",
+      "run_dir": "/home/ibrahim/Documents/GO-2 PRIMP/primp_project/results/weak_pad/study/trials/capacity25_probe22_unaware_seed17/weak_pad_unaware_20260921T100855_451535Z",
+      "canonical_hashes": {
+        "signals.npz": "bb40adf72c70c3e2634793ca1e2747d0383734bf6395dd96b04c3893976d6289",
+        "metadata.json": "749faf0b03ae25d89db27dc2d8130fffef379ad5527d3f449b15fb005724a4dc",
+        "weak_pad_summary.json": "b036e5ddfb3c3ba5a2f322c32f7a3093d167ee3261860288ad9cf37287f72d4f",
+        "weak_pad_overview.png": "36eba0179c49dd61275573b7ab1c63fc55add12b2df77b12d150037b2ffec019"
+      },
+      "corrected_plot": "capacity25_probe22_unaware_seed17.png"
+    },
+    {
+      "trial_id": "capacity25_probe22_conservative_seed17",
+      "run_dir": "/home/ibrahim/Documents/GO-2 PRIMP/primp_project/results/weak_pad/study/trials/capacity25_probe22_conservative_seed17/weak_pad_conservative_20260921T100929_937092Z",
+      "canonical_hashes": {
+        "signals.npz": "0266cb01609e1b32b71491415ab70b1d57963936d2d96f461cc9eeb39e4086fd",
+        "metadata.json": "8d696f1e0efe2913de3234caa16761d9af7708e712b7ea7ae21398e1ca428e62",
+        "weak_pad_summary.json": "8040075017d18451ed1f765b5f781888c1d882c88324a8729f4c77a2165a2801",
+        "weak_pad_overview.png": "6b0598443a2a615e891c7bdb1136b88daebfda945f6c68e4e01b6a0a315de93a"
+      },
+      "corrected_plot": "capacity25_probe22_conservative_seed17.png"
+    },
+    {
+      "trial_id": "capacity25_probe22_adaptive_seed17",
+      "run_dir": "/home/ibrahim/Documents/GO-2 PRIMP/primp_project/results/weak_pad/study/trials/capacity25_probe22_adaptive_seed17/weak_pad_adaptive_20260921T100942_173909Z",
+      "canonical_hashes": {
+        "signals.npz": "94fa738d3a2afed869f7112b52cbbc3ac466cd2263e84d75667294f5892aefc2",
+        "metadata.json": "07c1f666feacf7eb771590b1c35f0ad9eb9839ca5f15bdba1da3eba917953528",
+        "weak_pad_summary.json": "286334a93ef39c53a590c7a06dbf98efd473acfa6e29b313f4544596d30ef2ce",
+        "weak_pad_overview.png": "fad85bb797c9bc125caf5ed6bd24aaede3050e050c47ee3112bcc53c8886b37f"
+      },
+      "corrected_plot": "capacity25_probe22_adaptive_seed17.png"
+    },
+    {
+      "trial_id": "capacity27_probe24_unaware_seed17",
+      "run_dir": "/home/ibrahim/Documents/GO-2 PRIMP/primp_project/results/weak_pad/study/trials/capacity27_probe24_unaware_seed17/weak_pad_unaware_20260921T101008_816713Z",
+      "canonical_hashes": {
+        "signals.npz": "252fe3412a77b215abc412d5e9173067e09ed400e1c23c7aeebee236b4df34eb",
+        "metadata.json": "2c98593486e39a074c8f610076dc7ad38db6fb88465501b2f13d2e4b7fc17e28",
+        "weak_pad_summary.json": "43678ff847d15f70bcdf38f336f14c1eb36df2ba6e8b3ed8c76e83e4bc049729",
+        "weak_pad_overview.png": "a338f5d723a57eff3790aedaad8ec8c7b58709e1ce69c67cf710622a24465970"
+      },
+      "corrected_plot": "capacity27_probe24_unaware_seed17.png"
+    },
+    {
+      "trial_id": "capacity27_probe24_conservative_seed17",
+      "run_dir": "/home/ibrahim/Documents/GO-2 PRIMP/primp_project/results/weak_pad/study/trials/capacity27_probe24_conservative_seed17/weak_pad_conservative_20260921T101033_392312Z",
+      "canonical_hashes": {
+        "signals.npz": "71f0f764cbb23634b1f6828cf981fbe793958ebb66484f616f3d9a47b4543ec7",
+        "metadata.json": "b2a0799427795fe686104b232ac4e3ad3547fa0fdad70775ef96b18675bc8c9b",
+        "weak_pad_summary.json": "6bb4e1f586c12c7d5745693bb257d11bb06a041e61bd57adcd12e44c939b82f1",
+        "weak_pad_overview.png": "c91b036ec8373d2f355f72b40d8e5b001e4a8ee234acf616f41a58bfed385e73"
+      },
+      "corrected_plot": "capacity27_probe24_conservative_seed17.png"
+    },
+    {
+      "trial_id": "capacity27_probe24_adaptive_seed17",
+      "run_dir": "/home/ibrahim/Documents/GO-2 PRIMP/primp_project/results/weak_pad/study/trials/capacity27_probe24_adaptive_seed17/weak_pad_adaptive_20260921T101043_349143Z",
+      "canonical_hashes": {
+        "signals.npz": "c1ccb6bb2d6aa520fe00a9f4f7cdaf22c97be801eb6ee3f08bcb050a9f0f9b39",
+        "metadata.json": "da35caaa5fd92b1d502f100a93ad6a33b2795fe140ff82266162eedd1934f3d0",
+        "weak_pad_summary.json": "f0fcb072a14c34f24aa8a2f3833bfd344b9e7475c5453c343509adf9ffb1ac4e",
+        "weak_pad_overview.png": "65dd7e9999940d52baecbc90b565af1cea670f5a9deb0ee9d9a0e33aa4cd30f9"
+      },
+      "corrected_plot": "capacity27_probe24_adaptive_seed17.png"
+    },
+    {
+      "trial_id": "capacity35_probe12_conservative_seed17",
+      "run_dir": "/home/ibrahim/Documents/GO-2 PRIMP/primp_project/results/weak_pad/study/trials/capacity35_probe12_conservative_seed17/weak_pad_conservative_20260921T101112_454474Z",
+      "canonical_hashes": {
+        "signals.npz": "64e6223db1682eaa3ac8b378f58a4a296873426bf9deb64ae5257369d332a1b9",
+        "metadata.json": "628b7a7dc901faf1df9d3198384d3abb7edc7ac70d6ff454bdbbe46af696a228",
+        "weak_pad_summary.json": "d19a6b7c5a634deaae338c82ed37551121905580a7dca7d4e48d8377b26a1529",
+        "weak_pad_overview.png": "df57d09c061b3545dd149ae7859b80017145aaa838697285534d2eef43fb6d49"
+      },
+      "corrected_plot": "capacity35_probe12_conservative_seed17.png"
+    },
+    {
+      "trial_id": "capacity35_probe12_adaptive_seed17",
+      "run_dir": "/home/ibrahim/Documents/GO-2 PRIMP/primp_project/results/weak_pad/study/trials/capacity35_probe12_adaptive_seed17/weak_pad_adaptive_20260921T101134_032466Z",
+      "canonical_hashes": {
+        "signals.npz": "018d818f919bddfd07d632ec97bc53eb3aa8e89beb3ce75ab6aa9606272f337a",
+        "metadata.json": "9042128446adf688c77981fe14db8423adb385b351ebfb4728e2f78e442504c5",
+        "weak_pad_summary.json": "6e6b2c03fb226a9a2862c9b0678d6092ba678b524897776d8ef42d20499c17a5",
+        "weak_pad_overview.png": "91b02d747001d07e8f022a56ae98b69f2fe475ad2f30797408bb993ba8e951ed"
+      },
+      "corrected_plot": "capacity35_probe12_adaptive_seed17.png"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "run_id": "weak_pad_adaptive_probe_20260921T111616_248612Z",
+  "video": "/home/ibrahim/Documents/GO-2 PRIMP/primp_project/results/weak_pad/study_v2/trials/fr_necessary_a_capacity34_adaptive_probe_seed101/weak_pad_adaptive_probe_20260921T111616_248612Z/media/weak_replay.mp4",
+  "preview": "/home/ibrahim/Documents/GO-2 PRIMP/primp_project/results/weak_pad/study_v2/trials/fr_necessary_a_capacity34_adaptive_probe_seed101/weak_pad_adaptive_probe_20260921T111616_248612Z/media/weak_replay.png",
+  "codec": "avc1",
+  "fps": 20,
+  "resolution": [
+    960,
+    720
+  ],
+  "frame_count": 846,
+  "playback_speed": 1.0,
+  "recorded_start_time_s": 0.002,
+  "recorded_end_time_s": 42.25200000000567,
+  "preview_time_s": 42.25200000000567,
+  "signals_sha256": "19b170b7a83aca95859cd7761f5dc8764624431b2bf1d091883c280e62808ed2",
+  "scene_sha256": "fcf83852a9b799545b01442ab3009dff2f9d4aab81d1d50da1e97e534d82c3b7",
+  "weak_truth_sha256": "279872c33053da42c2ca0fb00d261487ec0f19a1d7189c12db50d499bed3b24f",
+  "method": "Restore recorded qpos/qvel and pad_sink_displacement_m with mj_forward; no mj_step or controller execution",
+  "presentation": "Orange weak target; hidden capacity, failure, and sink shown only as evaluation-replay truth",
+  "overlay_evidence": {
+    "source": "Recorded actual target force, certificate, installed cap and measured body/feet",
+    "progress": "Physical CoM world-X minus its first confirmed probe origin; stronger probing is not task completion",
+    "recovery_lift": "Measured FL Z change from first recovery sample",
+    "next_leg": "FR",
+    "first_probe_sample": 10901,
+    "first_recovery_sample": 18574,
+    "script_sha256": "f296128bedb873dc6d85eab7b98c367b9a620a1d49d8effda14a82e21c82f506"
+  },
+  "decode_validation": {
+    "all_frames_decoded": true,
+    "decoded_frames": 846,
+    "resolution_valid": true
+  },
+  "video_sha256": "7977d68ee69d40eea772454e0927f695c9438273085db6bd86a4a56d4c9f85ee",
+  "visual_validation": {
+    "preview_inspected": true,
+    "measured_preview_state": {
+      "actual_pad_normal_force_n": 0.0,
+      "certificate_force_n": 0.0,
+      "applied_pad_force_cap_n": 0.0,
+      "pad_sink_displacement_m": 0.05999999999999999,
+      "phase": "recovery_hold",
+      "contacts": [
+        false,
+        true,
+        true,
+        true
+      ]
+    },
+    "observation": "FL visibly withdrawn above failed orange pad; zero target force/certificate/cap, original three contacts maintained. Body probe excursion is not completed forward task."
+  }
+}

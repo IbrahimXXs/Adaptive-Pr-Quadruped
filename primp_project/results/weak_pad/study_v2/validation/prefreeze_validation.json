@@ -1,0 +1,9 @@
+{
+  "note": "Supplemental pre-evaluation orchestration and test provenance; execution freeze separately covers controller, planner, environment, recorder and analyzer.",
+  "files": {
+    "primp_project/experiments/weak_pad_study_v2.py": "1c4ea8525bd4cbe494104dbd570c2294653020d89e965f9518b567b1576813c0",
+    "primp_project/artifacts/logs/weak_v2_prefreeze_tests.log": "f74ed4fff24b6a11940d7007d473de2752ce8b2a24e038f67b88c6c2dd109be1"
+  },
+  "test_result": "482 passed, 8 warnings in23.09s",
+  "historical_tracked_results_diff": []
+}

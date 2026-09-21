@@ -1,0 +1,53 @@
+{
+  "run_id": "weak_pad_adaptive_force_fixed_posture_20260921T111442_328019Z",
+  "video": "/home/ibrahim/Documents/GO-2 PRIMP/primp_project/results/weak_pad/study_v2/trials/fr_necessary_a_capacity66_adaptive_force_fixed_posture_seed101/weak_pad_adaptive_force_fixed_posture_20260921T111442_328019Z/media/weak_replay.mp4",
+  "preview": "/home/ibrahim/Documents/GO-2 PRIMP/primp_project/results/weak_pad/study_v2/trials/fr_necessary_a_capacity66_adaptive_force_fixed_posture_seed101/weak_pad_adaptive_force_fixed_posture_20260921T111442_328019Z/media/weak_replay.png",
+  "codec": "avc1",
+  "fps": 20,
+  "resolution": [
+    960,
+    720
+  ],
+  "frame_count": 661,
+  "playback_speed": 1.0,
+  "recorded_start_time_s": 0.002,
+  "recorded_end_time_s": 33.00399999999437,
+  "preview_time_s": 31.511999999993414,
+  "signals_sha256": "efdc142c10688ccf5853e333e21e169b1e286ddd1263e7b7ddd06d4788359f24",
+  "scene_sha256": "c54af96b6d10c57bbdd7a79234cb3255314891f96c5a8e5ce73ef321447ff5ee",
+  "weak_truth_sha256": "d5dc85bbe60fbcccf58d03dabac55edc29d5ce82602f4cee5113042c16afef2e",
+  "method": "Restore recorded qpos/qvel and pad_sink_displacement_m with mj_forward; no mj_step or controller execution",
+  "presentation": "Orange weak target; hidden capacity, failure, and sink shown only as evaluation-replay truth",
+  "overlay_evidence": {
+    "source": "Recorded actual target force, certificate, installed cap and measured body/feet",
+    "progress": "Physical CoM world-X minus its first confirmed probe origin; stronger probing is not task completion",
+    "recovery_lift": "Measured FL Z change from first recovery sample",
+    "next_leg": "FR",
+    "first_probe_sample": 10901,
+    "first_recovery_sample": null,
+    "script_sha256": "f296128bedb873dc6d85eab7b98c367b9a620a1d49d8effda14a82e21c82f506"
+  },
+  "decode_validation": {
+    "all_frames_decoded": true,
+    "decoded_frames": 661,
+    "resolution_valid": true
+  },
+  "video_sha256": "5119b21e6902ded2bec2f4ed52149dbbb188b2e5e2d9268bd88fc37bbae13181",
+  "visual_validation": {
+    "preview_inspected": true,
+    "measured_preview_state": {
+      "actual_pad_normal_force_n": 2.6939300073952435,
+      "certificate_force_n": 11.823535845532845,
+      "applied_pad_force_cap_n": 3.823535845532845,
+      "pad_sink_displacement_m": -0.0,
+      "phase": "safe_stop",
+      "contacts": [
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    "observation": "Stable safe_stop with all contacts, zero FR lift; no completed movement"
+  }
+}

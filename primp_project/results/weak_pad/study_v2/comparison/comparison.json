@@ -1,0 +1,3380 @@
+{
+  "version": 2,
+  "complete": true,
+  "expected_trials": 48,
+  "expected_outcomes_met": 48,
+  "physical_successes": 20,
+  "trials": [
+    {
+      "trial_id": "rl_layout_a_capacity38_fixed_probe_seed101",
+      "case_id": "rl_layout_a_capacity38",
+      "strategy": "fixed_probe",
+      "seed": 101,
+      "family": "rl_layout_a",
+      "condition_role": "held_out",
+      "status": "completed",
+      "run_dir": "/home/ibrahim/Documents/GO-2 PRIMP/primp_project/results/weak_pad/study_v2/trials/rl_layout_a_capacity38_fixed_probe_seed101/weak_pad_fixed_probe_20260921T110942_110655Z",
+      "outcome": "SUCCESS",
+      "physical_success": true,
+      "expected_outcome_met": true,
+      "metrics": {
+        "duration_s": 44.55800000000849,
+        "probe_requested_shortfall_n": 37.4737042243346,
+        "maximum_certified_force_n": 21.937367347923647,
+        "maximum_actual_future_pad_force_n": 15.519773246810788,
+        "maximum_forward_com_motion_m": 0.04267799285722226,
+        "maximum_next_foot_clearance_m": 0.028945701907313673,
+        "simultaneous_progress_hold_s": 2.9640000000036197,
+        "progress_window_samples": [
+          20797,
+          22278
+        ],
+        "maximum_roll_pitch_deg": 1.7488920770786605,
+        "maximum_pad_sink_m": -0.0,
+        "pad_failed": false,
+        "certificate_updates_audited": 1,
+        "stable_safe_stop_s": 0.0,
+        "probe_time_s": 8.206,
+        "recovery_time_s": 0.0,
+        "recovery_unload_delay_s": null,
+        "recovery_lift_m": 0.0,
+        "recovery_stable_hold_s": 0.0,
+        "certificate_invalidations": 0,
+        "additional_probe_count": 0,
+        "final_forward_com_motion_m": 0.04031822681178217,
+        "terminal_mean_forward_com_motion_m": 0.04031743832908228,
+        "simultaneous_progress_min_forward_m": 0.04026283442707484,
+        "simultaneous_progress_max_forward_m": 0.040372758495290775,
+        "simultaneous_progress_min_next_foot_clearance_m": 0.020007068280899376,
+        "tracking_gap_by_phase_group": {
+          "future_execution": {
+            "samples": 7275,
+            "maximum_actual_minus_cap_n": 1.5824058988871403,
+            "maximum_actual_minus_command_n": 1.58240589969272,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "probe_transition": {
+            "samples": 1101,
+            "maximum_actual_minus_cap_n": 0.03079000626350492,
+            "maximum_actual_minus_command_n": 3.6215555771242123,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "deliberate_probe": {
+            "samples": 3002,
+            "maximum_actual_minus_cap_n": 0.8035819915974144,
+            "maximum_actual_minus_command_n": 0.986128975710276,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "recovery": {
+            "samples": 0,
+            "maximum_actual_minus_cap_n": null,
+            "maximum_actual_minus_command_n": null,
+            "samples_above_declared_tracking_reserve": 0
+          }
+        },
+        "maximum_probe_com_displacement_m": 0.003009128591195702
+      },
+      "error": null
+    },
+    {
+      "trial_id": "rl_layout_a_capacity38_fixed_probe_seed509",
+      "case_id": "rl_layout_a_capacity38",
+      "strategy": "fixed_probe",
+      "seed": 509,
+      "family": "rl_layout_a",
+      "condition_role": "held_out",
+      "status": "completed",
+      "run_dir": "/home/ibrahim/Documents/GO-2 PRIMP/primp_project/results/weak_pad/study_v2/trials/rl_layout_a_capacity38_fixed_probe_seed509/weak_pad_fixed_probe_20260921T110942_112444Z",
+      "outcome": "SUCCESS",
+      "physical_success": true,
+      "expected_outcome_met": true,
+      "metrics": {
+        "duration_s": 44.56000000000849,
+        "probe_requested_shortfall_n": 37.4805508264875,
+        "maximum_certified_force_n": 21.951889519219947,
+        "maximum_actual_future_pad_force_n": 15.530913958931476,
+        "maximum_forward_com_motion_m": 0.042677779871992325,
+        "maximum_next_foot_clearance_m": 0.02894737789519014,
+        "simultaneous_progress_hold_s": 2.9640000000036197,
+        "progress_window_samples": [
+          20798,
+          22279
+        ],
+        "maximum_roll_pitch_deg": 1.7426418421428482,
+        "maximum_pad_sink_m": -0.0,
+        "pad_failed": false,
+        "certificate_updates_audited": 1,
+        "stable_safe_stop_s": 0.0,
+        "probe_time_s": 8.206,
+        "recovery_time_s": 0.0,
+        "recovery_unload_delay_s": null,
+        "recovery_lift_m": 0.0,
+        "recovery_stable_hold_s": 0.0,
+        "certificate_invalidations": 0,
+        "additional_probe_count": 0,
+        "final_forward_com_motion_m": 0.04032231397033399,
+        "terminal_mean_forward_com_motion_m": 0.040321507257811605,
+        "simultaneous_progress_min_forward_m": 0.0402665690794023,
+        "simultaneous_progress_max_forward_m": 0.04037592158221283,
+        "simultaneous_progress_min_next_foot_clearance_m": 0.020006423912123594,
+        "tracking_gap_by_phase_group": {
+          "future_execution": {
+            "samples": 7274,
+            "maximum_actual_minus_cap_n": 1.5790244397115298,
+            "maximum_actual_minus_command_n": 1.5790244405115192,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "probe_transition": {
+            "samples": 1101,
+            "maximum_actual_minus_cap_n": -1.8414400985870891,
+            "maximum_actual_minus_command_n": 3.6143385817467433,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "deliberate_probe": {
+            "samples": 3002,
+            "maximum_actual_minus_cap_n": 0.8027273264003961,
+            "maximum_actual_minus_command_n": 0.9785574073540282,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "recovery": {
+            "samples": 0,
+            "maximum_actual_minus_cap_n": null,
+            "maximum_actual_minus_command_n": null,
+            "samples_above_declared_tracking_reserve": 0
+          }
+        },
+        "maximum_probe_com_displacement_m": 0.0030256990896815722
+      },
+      "error": null
+    },
+    {
+      "trial_id": "rl_layout_a_capacity38_adaptive_force_fixed_posture_seed101",
+      "case_id": "rl_layout_a_capacity38",
+      "strategy": "adaptive_force_fixed_posture",
+      "seed": 101,
+      "family": "rl_layout_a",
+      "condition_role": "held_out",
+      "status": "completed",
+      "run_dir": "/home/ibrahim/Documents/GO-2 PRIMP/primp_project/results/weak_pad/study_v2/trials/rl_layout_a_capacity38_adaptive_force_fixed_posture_seed101/weak_pad_adaptive_force_fixed_posture_20260921T110942_111475Z",
+      "outcome": "SUCCESS",
+      "physical_success": true,
+      "expected_outcome_met": true,
+      "metrics": {
+        "duration_s": 44.55800000000849,
+        "probe_requested_shortfall_n": 37.4737042243346,
+        "maximum_certified_force_n": 21.937367347923647,
+        "maximum_actual_future_pad_force_n": 15.519773246810788,
+        "maximum_forward_com_motion_m": 0.04267799285722226,
+        "maximum_next_foot_clearance_m": 0.028945701907313673,
+        "simultaneous_progress_hold_s": 2.9640000000036197,
+        "progress_window_samples": [
+          20797,
+          22278
+        ],
+        "maximum_roll_pitch_deg": 1.7488920770786605,
+        "maximum_pad_sink_m": -0.0,
+        "pad_failed": false,
+        "certificate_updates_audited": 1,
+        "stable_safe_stop_s": 0.0,
+        "probe_time_s": 8.206,
+        "recovery_time_s": 0.0,
+        "recovery_unload_delay_s": null,
+        "recovery_lift_m": 0.0,
+        "recovery_stable_hold_s": 0.0,
+        "certificate_invalidations": 0,
+        "additional_probe_count": 0,
+        "final_forward_com_motion_m": 0.04031822681178217,
+        "terminal_mean_forward_com_motion_m": 0.04031743832908228,
+        "simultaneous_progress_min_forward_m": 0.04026283442707484,
+        "simultaneous_progress_max_forward_m": 0.040372758495290775,
+        "simultaneous_progress_min_next_foot_clearance_m": 0.020007068280899376,
+        "tracking_gap_by_phase_group": {
+          "future_execution": {
+            "samples": 7275,
+            "maximum_actual_minus_cap_n": 1.5824058988871403,
+            "maximum_actual_minus_command_n": 1.58240589969272,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "probe_transition": {
+            "samples": 1101,
+            "maximum_actual_minus_cap_n": 0.03079000626350492,
+            "maximum_actual_minus_command_n": 3.6215555771242123,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "deliberate_probe": {
+            "samples": 3002,
+            "maximum_actual_minus_cap_n": 0.8035819915974144,
+            "maximum_actual_minus_command_n": 0.986128975710276,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "recovery": {
+            "samples": 0,
+            "maximum_actual_minus_cap_n": null,
+            "maximum_actual_minus_command_n": null,
+            "samples_above_declared_tracking_reserve": 0
+          }
+        },
+        "maximum_probe_com_displacement_m": 0.003009128591195702
+      },
+      "error": null
+    },
+    {
+      "trial_id": "rl_layout_a_capacity38_adaptive_force_fixed_posture_seed509",
+      "case_id": "rl_layout_a_capacity38",
+      "strategy": "adaptive_force_fixed_posture",
+      "seed": 509,
+      "family": "rl_layout_a",
+      "condition_role": "held_out",
+      "status": "completed",
+      "run_dir": "/home/ibrahim/Documents/GO-2 PRIMP/primp_project/results/weak_pad/study_v2/trials/rl_layout_a_capacity38_adaptive_force_fixed_posture_seed509/weak_pad_adaptive_force_fixed_posture_20260921T110942_111320Z",
+      "outcome": "SUCCESS",
+      "physical_success": true,
+      "expected_outcome_met": true,
+      "metrics": {
+        "duration_s": 44.56000000000849,
+        "probe_requested_shortfall_n": 37.4805508264875,
+        "maximum_certified_force_n": 21.951889519219947,
+        "maximum_actual_future_pad_force_n": 15.530913958931476,
+        "maximum_forward_com_motion_m": 0.042677779871992325,
+        "maximum_next_foot_clearance_m": 0.02894737789519014,
+        "simultaneous_progress_hold_s": 2.9640000000036197,
+        "progress_window_samples": [
+          20798,
+          22279
+        ],
+        "maximum_roll_pitch_deg": 1.7426418421428482,
+        "maximum_pad_sink_m": -0.0,
+        "pad_failed": false,
+        "certificate_updates_audited": 1,
+        "stable_safe_stop_s": 0.0,
+        "probe_time_s": 8.206,
+        "recovery_time_s": 0.0,
+        "recovery_unload_delay_s": null,
+        "recovery_lift_m": 0.0,
+        "recovery_stable_hold_s": 0.0,
+        "certificate_invalidations": 0,
+        "additional_probe_count": 0,
+        "final_forward_com_motion_m": 0.04032231397033399,
+        "terminal_mean_forward_com_motion_m": 0.040321507257811605,
+        "simultaneous_progress_min_forward_m": 0.0402665690794023,
+        "simultaneous_progress_max_forward_m": 0.04037592158221283,
+        "simultaneous_progress_min_next_foot_clearance_m": 0.020006423912123594,
+        "tracking_gap_by_phase_group": {
+          "future_execution": {
+            "samples": 7274,
+            "maximum_actual_minus_cap_n": 1.5790244397115298,
+            "maximum_actual_minus_command_n": 1.5790244405115192,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "probe_transition": {
+            "samples": 1101,
+            "maximum_actual_minus_cap_n": -1.8414400985870891,
+            "maximum_actual_minus_command_n": 3.6143385817467433,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "deliberate_probe": {
+            "samples": 3002,
+            "maximum_actual_minus_cap_n": 0.8027273264003961,
+            "maximum_actual_minus_command_n": 0.9785574073540282,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "recovery": {
+            "samples": 0,
+            "maximum_actual_minus_cap_n": null,
+            "maximum_actual_minus_command_n": null,
+            "samples_above_declared_tracking_reserve": 0
+          }
+        },
+        "maximum_probe_com_displacement_m": 0.0030256990896815722
+      },
+      "error": null
+    },
+    {
+      "trial_id": "rl_layout_a_capacity38_adaptive_probe_seed101",
+      "case_id": "rl_layout_a_capacity38",
+      "strategy": "adaptive_probe",
+      "seed": 101,
+      "family": "rl_layout_a",
+      "condition_role": "held_out",
+      "status": "completed",
+      "run_dir": "/home/ibrahim/Documents/GO-2 PRIMP/primp_project/results/weak_pad/study_v2/trials/rl_layout_a_capacity38_adaptive_probe_seed101/weak_pad_adaptive_probe_20260921T111038_439829Z",
+      "outcome": "SUCCESS",
+      "physical_success": true,
+      "expected_outcome_met": true,
+      "metrics": {
+        "duration_s": 44.55800000000849,
+        "probe_requested_shortfall_n": 37.4737042243346,
+        "maximum_certified_force_n": 21.937367347923647,
+        "maximum_actual_future_pad_force_n": 15.519773246810788,
+        "maximum_forward_com_motion_m": 0.04267799285722226,
+        "maximum_next_foot_clearance_m": 0.028945701907313673,
+        "simultaneous_progress_hold_s": 2.9640000000036197,
+        "progress_window_samples": [
+          20797,
+          22278
+        ],
+        "maximum_roll_pitch_deg": 1.7488920770786605,
+        "maximum_pad_sink_m": -0.0,
+        "pad_failed": false,
+        "certificate_updates_audited": 1,
+        "stable_safe_stop_s": 0.0,
+        "probe_time_s": 8.206,
+        "recovery_time_s": 0.0,
+        "recovery_unload_delay_s": null,
+        "recovery_lift_m": 0.0,
+        "recovery_stable_hold_s": 0.0,
+        "certificate_invalidations": 0,
+        "additional_probe_count": 0,
+        "final_forward_com_motion_m": 0.04031822681178217,
+        "terminal_mean_forward_com_motion_m": 0.04031743832908228,
+        "simultaneous_progress_min_forward_m": 0.04026283442707484,
+        "simultaneous_progress_max_forward_m": 0.040372758495290775,
+        "simultaneous_progress_min_next_foot_clearance_m": 0.020007068280899376,
+        "tracking_gap_by_phase_group": {
+          "future_execution": {
+            "samples": 7275,
+            "maximum_actual_minus_cap_n": 1.5824058988871403,
+            "maximum_actual_minus_command_n": 1.58240589969272,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "probe_transition": {
+            "samples": 1101,
+            "maximum_actual_minus_cap_n": 0.03079000626350492,
+            "maximum_actual_minus_command_n": 3.6215555771242123,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "deliberate_probe": {
+            "samples": 3002,
+            "maximum_actual_minus_cap_n": 0.8035819915974144,
+            "maximum_actual_minus_command_n": 0.986128975710276,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "recovery": {
+            "samples": 0,
+            "maximum_actual_minus_cap_n": null,
+            "maximum_actual_minus_command_n": null,
+            "samples_above_declared_tracking_reserve": 0
+          }
+        },
+        "maximum_probe_com_displacement_m": 0.003009128591195702
+      },
+      "error": null
+    },
+    {
+      "trial_id": "rl_layout_a_capacity38_adaptive_probe_seed509",
+      "case_id": "rl_layout_a_capacity38",
+      "strategy": "adaptive_probe",
+      "seed": 509,
+      "family": "rl_layout_a",
+      "condition_role": "held_out",
+      "status": "completed",
+      "run_dir": "/home/ibrahim/Documents/GO-2 PRIMP/primp_project/results/weak_pad/study_v2/trials/rl_layout_a_capacity38_adaptive_probe_seed509/weak_pad_adaptive_probe_20260921T111038_568292Z",
+      "outcome": "SUCCESS",
+      "physical_success": true,
+      "expected_outcome_met": true,
+      "metrics": {
+        "duration_s": 44.56000000000849,
+        "probe_requested_shortfall_n": 37.4805508264875,
+        "maximum_certified_force_n": 21.951889519219947,
+        "maximum_actual_future_pad_force_n": 15.530913958931476,
+        "maximum_forward_com_motion_m": 0.042677779871992325,
+        "maximum_next_foot_clearance_m": 0.02894737789519014,
+        "simultaneous_progress_hold_s": 2.9640000000036197,
+        "progress_window_samples": [
+          20798,
+          22279
+        ],
+        "maximum_roll_pitch_deg": 1.7426418421428482,
+        "maximum_pad_sink_m": -0.0,
+        "pad_failed": false,
+        "certificate_updates_audited": 1,
+        "stable_safe_stop_s": 0.0,
+        "probe_time_s": 8.206,
+        "recovery_time_s": 0.0,
+        "recovery_unload_delay_s": null,
+        "recovery_lift_m": 0.0,
+        "recovery_stable_hold_s": 0.0,
+        "certificate_invalidations": 0,
+        "additional_probe_count": 0,
+        "final_forward_com_motion_m": 0.04032231397033399,
+        "terminal_mean_forward_com_motion_m": 0.040321507257811605,
+        "simultaneous_progress_min_forward_m": 0.0402665690794023,
+        "simultaneous_progress_max_forward_m": 0.04037592158221283,
+        "simultaneous_progress_min_next_foot_clearance_m": 0.020006423912123594,
+        "tracking_gap_by_phase_group": {
+          "future_execution": {
+            "samples": 7274,
+            "maximum_actual_minus_cap_n": 1.5790244397115298,
+            "maximum_actual_minus_command_n": 1.5790244405115192,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "probe_transition": {
+            "samples": 1101,
+            "maximum_actual_minus_cap_n": -1.8414400985870891,
+            "maximum_actual_minus_command_n": 3.6143385817467433,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "deliberate_probe": {
+            "samples": 3002,
+            "maximum_actual_minus_cap_n": 0.8027273264003961,
+            "maximum_actual_minus_command_n": 0.9785574073540282,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "recovery": {
+            "samples": 0,
+            "maximum_actual_minus_cap_n": null,
+            "maximum_actual_minus_command_n": null,
+            "samples_above_declared_tracking_reserve": 0
+          }
+        },
+        "maximum_probe_com_displacement_m": 0.0030256990896815722
+      },
+      "error": null
+    },
+    {
+      "trial_id": "rl_layout_b_capacity32_fixed_probe_seed101",
+      "case_id": "rl_layout_b_capacity32",
+      "strategy": "fixed_probe",
+      "seed": 101,
+      "family": "rl_layout_b",
+      "condition_role": "held_out",
+      "status": "completed",
+      "run_dir": "/home/ibrahim/Documents/GO-2 PRIMP/primp_project/results/weak_pad/study_v2/trials/rl_layout_b_capacity32_fixed_probe_seed101/weak_pad_fixed_probe_20260921T111038_541579Z",
+      "outcome": "SUCCESS",
+      "physical_success": true,
+      "expected_outcome_met": true,
+      "metrics": {
+        "duration_s": 44.8900000000089,
+        "probe_requested_shortfall_n": 35.39618778129743,
+        "maximum_certified_force_n": 22.830065505633304,
+        "maximum_actual_future_pad_force_n": 16.27510494211532,
+        "maximum_forward_com_motion_m": 0.04310894828185561,
+        "maximum_next_foot_clearance_m": 0.02901402936991096,
+        "simultaneous_progress_hold_s": 2.9640000000036197,
+        "progress_window_samples": [
+          20963,
+          22444
+        ],
+        "maximum_roll_pitch_deg": 1.54301495802597,
+        "maximum_pad_sink_m": -0.0,
+        "pad_failed": false,
+        "certificate_updates_audited": 1,
+        "stable_safe_stop_s": 0.0,
+        "probe_time_s": 8.206,
+        "recovery_time_s": 0.0,
+        "recovery_unload_delay_s": null,
+        "recovery_lift_m": 0.0,
+        "recovery_stable_hold_s": 0.0,
+        "certificate_invalidations": 0,
+        "additional_probe_count": 0,
+        "final_forward_com_motion_m": 0.04116484524134362,
+        "terminal_mean_forward_com_motion_m": 0.04115847171121048,
+        "simultaneous_progress_min_forward_m": 0.04103347584896424,
+        "simultaneous_progress_max_forward_m": 0.04116484524134362,
+        "simultaneous_progress_min_next_foot_clearance_m": 0.02001519875701957,
+        "tracking_gap_by_phase_group": {
+          "future_execution": {
+            "samples": 7279,
+            "maximum_actual_minus_cap_n": 1.4450394364820163,
+            "maximum_actual_minus_command_n": 1.44503943808596,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "probe_transition": {
+            "samples": 1101,
+            "maximum_actual_minus_cap_n": -2.208751304499877,
+            "maximum_actual_minus_command_n": 3.9298901613857566,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "deliberate_probe": {
+            "samples": 3002,
+            "maximum_actual_minus_cap_n": 1.6127528935465598,
+            "maximum_actual_minus_command_n": 1.612760528988416,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "recovery": {
+            "samples": 0,
+            "maximum_actual_minus_cap_n": null,
+            "maximum_actual_minus_command_n": null,
+            "samples_above_declared_tracking_reserve": 0
+          }
+        },
+        "maximum_probe_com_displacement_m": 0.004249843314461245
+      },
+      "error": null
+    },
+    {
+      "trial_id": "rl_layout_b_capacity32_fixed_probe_seed509",
+      "case_id": "rl_layout_b_capacity32",
+      "strategy": "fixed_probe",
+      "seed": 509,
+      "family": "rl_layout_b",
+      "condition_role": "held_out",
+      "status": "completed",
+      "run_dir": "/home/ibrahim/Documents/GO-2 PRIMP/primp_project/results/weak_pad/study_v2/trials/rl_layout_b_capacity32_fixed_probe_seed509/weak_pad_fixed_probe_20260921T111038_759729Z",
+      "outcome": "SUCCESS",
+      "physical_success": true,
+      "expected_outcome_met": true,
+      "metrics": {
+        "duration_s": 44.90200000000891,
+        "probe_requested_shortfall_n": 35.3938327860181,
+        "maximum_certified_force_n": 22.827357158010603,
+        "maximum_actual_future_pad_force_n": 16.274168073594048,
+        "maximum_forward_com_motion_m": 0.043108750281926594,
+        "maximum_next_foot_clearance_m": 0.029013726834058784,
+        "simultaneous_progress_hold_s": 2.9640000000036197,
+        "progress_window_samples": [
+          20969,
+          22450
+        ],
+        "maximum_roll_pitch_deg": 1.5437274631007247,
+        "maximum_pad_sink_m": -0.0,
+        "pad_failed": false,
+        "certificate_updates_audited": 1,
+        "stable_safe_stop_s": 0.0,
+        "probe_time_s": 8.206,
+        "recovery_time_s": 0.0,
+        "recovery_unload_delay_s": null,
+        "recovery_lift_m": 0.0,
+        "recovery_stable_hold_s": 0.0,
+        "certificate_invalidations": 0,
+        "additional_probe_count": 0,
+        "final_forward_com_motion_m": 0.04116414175524746,
+        "terminal_mean_forward_com_motion_m": 0.04115776287855119,
+        "simultaneous_progress_min_forward_m": 0.04103262711905211,
+        "simultaneous_progress_max_forward_m": 0.04116414175524746,
+        "simultaneous_progress_min_next_foot_clearance_m": 0.020015173712152973,
+        "tracking_gap_by_phase_group": {
+          "future_execution": {
+            "samples": 7279,
+            "maximum_actual_minus_cap_n": 1.4468109155834448,
+            "maximum_actual_minus_command_n": 1.446810917173794,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "probe_transition": {
+            "samples": 1101,
+            "maximum_actual_minus_cap_n": 0.06419110224763003,
+            "maximum_actual_minus_command_n": 3.930826615004497,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "deliberate_probe": {
+            "samples": 3002,
+            "maximum_actual_minus_cap_n": 1.6157921613002433,
+            "maximum_actual_minus_command_n": 1.6158507143519367,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "recovery": {
+            "samples": 0,
+            "maximum_actual_minus_cap_n": null,
+            "maximum_actual_minus_command_n": null,
+            "samples_above_declared_tracking_reserve": 0
+          }
+        },
+        "maximum_probe_com_displacement_m": 0.004261129755236218
+      },
+      "error": null
+    },
+    {
+      "trial_id": "rl_layout_b_capacity32_adaptive_force_fixed_posture_seed101",
+      "case_id": "rl_layout_b_capacity32",
+      "strategy": "adaptive_force_fixed_posture",
+      "seed": 101,
+      "family": "rl_layout_b",
+      "condition_role": "held_out",
+      "status": "completed",
+      "run_dir": "/home/ibrahim/Documents/GO-2 PRIMP/primp_project/results/weak_pad/study_v2/trials/rl_layout_b_capacity32_adaptive_force_fixed_posture_seed101/weak_pad_adaptive_force_fixed_posture_20260921T111138_034233Z",
+      "outcome": "SUCCESS",
+      "physical_success": true,
+      "expected_outcome_met": true,
+      "metrics": {
+        "duration_s": 44.8900000000089,
+        "probe_requested_shortfall_n": 35.39618778129743,
+        "maximum_certified_force_n": 22.830065505633304,
+        "maximum_actual_future_pad_force_n": 16.27510494211532,
+        "maximum_forward_com_motion_m": 0.04310894828185561,
+        "maximum_next_foot_clearance_m": 0.02901402936991096,
+        "simultaneous_progress_hold_s": 2.9640000000036197,
+        "progress_window_samples": [
+          20963,
+          22444
+        ],
+        "maximum_roll_pitch_deg": 1.54301495802597,
+        "maximum_pad_sink_m": -0.0,
+        "pad_failed": false,
+        "certificate_updates_audited": 1,
+        "stable_safe_stop_s": 0.0,
+        "probe_time_s": 8.206,
+        "recovery_time_s": 0.0,
+        "recovery_unload_delay_s": null,
+        "recovery_lift_m": 0.0,
+        "recovery_stable_hold_s": 0.0,
+        "certificate_invalidations": 0,
+        "additional_probe_count": 0,
+        "final_forward_com_motion_m": 0.04116484524134362,
+        "terminal_mean_forward_com_motion_m": 0.04115847171121048,
+        "simultaneous_progress_min_forward_m": 0.04103347584896424,
+        "simultaneous_progress_max_forward_m": 0.04116484524134362,
+        "simultaneous_progress_min_next_foot_clearance_m": 0.02001519875701957,
+        "tracking_gap_by_phase_group": {
+          "future_execution": {
+            "samples": 7279,
+            "maximum_actual_minus_cap_n": 1.4450394364820163,
+            "maximum_actual_minus_command_n": 1.44503943808596,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "probe_transition": {
+            "samples": 1101,
+            "maximum_actual_minus_cap_n": -2.208751304499877,
+            "maximum_actual_minus_command_n": 3.9298901613857566,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "deliberate_probe": {
+            "samples": 3002,
+            "maximum_actual_minus_cap_n": 1.6127528935465598,
+            "maximum_actual_minus_command_n": 1.612760528988416,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "recovery": {
+            "samples": 0,
+            "maximum_actual_minus_cap_n": null,
+            "maximum_actual_minus_command_n": null,
+            "samples_above_declared_tracking_reserve": 0
+          }
+        },
+        "maximum_probe_com_displacement_m": 0.004249843314461245
+      },
+      "error": null
+    },
+    {
+      "trial_id": "rl_layout_b_capacity32_adaptive_force_fixed_posture_seed509",
+      "case_id": "rl_layout_b_capacity32",
+      "strategy": "adaptive_force_fixed_posture",
+      "seed": 509,
+      "family": "rl_layout_b",
+      "condition_role": "held_out",
+      "status": "completed",
+      "run_dir": "/home/ibrahim/Documents/GO-2 PRIMP/primp_project/results/weak_pad/study_v2/trials/rl_layout_b_capacity32_adaptive_force_fixed_posture_seed509/weak_pad_adaptive_force_fixed_posture_20260921T111138_749294Z",
+      "outcome": "SUCCESS",
+      "physical_success": true,
+      "expected_outcome_met": true,
+      "metrics": {
+        "duration_s": 44.90200000000891,
+        "probe_requested_shortfall_n": 35.3938327860181,
+        "maximum_certified_force_n": 22.827357158010603,
+        "maximum_actual_future_pad_force_n": 16.274168073594048,
+        "maximum_forward_com_motion_m": 0.043108750281926594,
+        "maximum_next_foot_clearance_m": 0.029013726834058784,
+        "simultaneous_progress_hold_s": 2.9640000000036197,
+        "progress_window_samples": [
+          20969,
+          22450
+        ],
+        "maximum_roll_pitch_deg": 1.5437274631007247,
+        "maximum_pad_sink_m": -0.0,
+        "pad_failed": false,
+        "certificate_updates_audited": 1,
+        "stable_safe_stop_s": 0.0,
+        "probe_time_s": 8.206,
+        "recovery_time_s": 0.0,
+        "recovery_unload_delay_s": null,
+        "recovery_lift_m": 0.0,
+        "recovery_stable_hold_s": 0.0,
+        "certificate_invalidations": 0,
+        "additional_probe_count": 0,
+        "final_forward_com_motion_m": 0.04116414175524746,
+        "terminal_mean_forward_com_motion_m": 0.04115776287855119,
+        "simultaneous_progress_min_forward_m": 0.04103262711905211,
+        "simultaneous_progress_max_forward_m": 0.04116414175524746,
+        "simultaneous_progress_min_next_foot_clearance_m": 0.020015173712152973,
+        "tracking_gap_by_phase_group": {
+          "future_execution": {
+            "samples": 7279,
+            "maximum_actual_minus_cap_n": 1.4468109155834448,
+            "maximum_actual_minus_command_n": 1.446810917173794,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "probe_transition": {
+            "samples": 1101,
+            "maximum_actual_minus_cap_n": 0.06419110224763003,
+            "maximum_actual_minus_command_n": 3.930826615004497,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "deliberate_probe": {
+            "samples": 3002,
+            "maximum_actual_minus_cap_n": 1.6157921613002433,
+            "maximum_actual_minus_command_n": 1.6158507143519367,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "recovery": {
+            "samples": 0,
+            "maximum_actual_minus_cap_n": null,
+            "maximum_actual_minus_command_n": null,
+            "samples_above_declared_tracking_reserve": 0
+          }
+        },
+        "maximum_probe_com_displacement_m": 0.004261129755236218
+      },
+      "error": null
+    },
+    {
+      "trial_id": "rl_layout_b_capacity32_adaptive_probe_seed101",
+      "case_id": "rl_layout_b_capacity32",
+      "strategy": "adaptive_probe",
+      "seed": 101,
+      "family": "rl_layout_b",
+      "condition_role": "held_out",
+      "status": "completed",
+      "run_dir": "/home/ibrahim/Documents/GO-2 PRIMP/primp_project/results/weak_pad/study_v2/trials/rl_layout_b_capacity32_adaptive_probe_seed101/weak_pad_adaptive_probe_20260921T111139_210353Z",
+      "outcome": "SUCCESS",
+      "physical_success": true,
+      "expected_outcome_met": true,
+      "metrics": {
+        "duration_s": 44.8900000000089,
+        "probe_requested_shortfall_n": 35.39618778129743,
+        "maximum_certified_force_n": 22.830065505633304,
+        "maximum_actual_future_pad_force_n": 16.27510494211532,
+        "maximum_forward_com_motion_m": 0.04310894828185561,
+        "maximum_next_foot_clearance_m": 0.02901402936991096,
+        "simultaneous_progress_hold_s": 2.9640000000036197,
+        "progress_window_samples": [
+          20963,
+          22444
+        ],
+        "maximum_roll_pitch_deg": 1.54301495802597,
+        "maximum_pad_sink_m": -0.0,
+        "pad_failed": false,
+        "certificate_updates_audited": 1,
+        "stable_safe_stop_s": 0.0,
+        "probe_time_s": 8.206,
+        "recovery_time_s": 0.0,
+        "recovery_unload_delay_s": null,
+        "recovery_lift_m": 0.0,
+        "recovery_stable_hold_s": 0.0,
+        "certificate_invalidations": 0,
+        "additional_probe_count": 0,
+        "final_forward_com_motion_m": 0.04116484524134362,
+        "terminal_mean_forward_com_motion_m": 0.04115847171121048,
+        "simultaneous_progress_min_forward_m": 0.04103347584896424,
+        "simultaneous_progress_max_forward_m": 0.04116484524134362,
+        "simultaneous_progress_min_next_foot_clearance_m": 0.02001519875701957,
+        "tracking_gap_by_phase_group": {
+          "future_execution": {
+            "samples": 7279,
+            "maximum_actual_minus_cap_n": 1.4450394364820163,
+            "maximum_actual_minus_command_n": 1.44503943808596,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "probe_transition": {
+            "samples": 1101,
+            "maximum_actual_minus_cap_n": -2.208751304499877,
+            "maximum_actual_minus_command_n": 3.9298901613857566,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "deliberate_probe": {
+            "samples": 3002,
+            "maximum_actual_minus_cap_n": 1.6127528935465598,
+            "maximum_actual_minus_command_n": 1.612760528988416,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "recovery": {
+            "samples": 0,
+            "maximum_actual_minus_cap_n": null,
+            "maximum_actual_minus_command_n": null,
+            "samples_above_declared_tracking_reserve": 0
+          }
+        },
+        "maximum_probe_com_displacement_m": 0.004249843314461245
+      },
+      "error": null
+    },
+    {
+      "trial_id": "rl_layout_b_capacity32_adaptive_probe_seed509",
+      "case_id": "rl_layout_b_capacity32",
+      "strategy": "adaptive_probe",
+      "seed": 509,
+      "family": "rl_layout_b",
+      "condition_role": "held_out",
+      "status": "completed",
+      "run_dir": "/home/ibrahim/Documents/GO-2 PRIMP/primp_project/results/weak_pad/study_v2/trials/rl_layout_b_capacity32_adaptive_probe_seed509/weak_pad_adaptive_probe_20260921T111139_337004Z",
+      "outcome": "SUCCESS",
+      "physical_success": true,
+      "expected_outcome_met": true,
+      "metrics": {
+        "duration_s": 44.90200000000891,
+        "probe_requested_shortfall_n": 35.3938327860181,
+        "maximum_certified_force_n": 22.827357158010603,
+        "maximum_actual_future_pad_force_n": 16.274168073594048,
+        "maximum_forward_com_motion_m": 0.043108750281926594,
+        "maximum_next_foot_clearance_m": 0.029013726834058784,
+        "simultaneous_progress_hold_s": 2.9640000000036197,
+        "progress_window_samples": [
+          20969,
+          22450
+        ],
+        "maximum_roll_pitch_deg": 1.5437274631007247,
+        "maximum_pad_sink_m": -0.0,
+        "pad_failed": false,
+        "certificate_updates_audited": 1,
+        "stable_safe_stop_s": 0.0,
+        "probe_time_s": 8.206,
+        "recovery_time_s": 0.0,
+        "recovery_unload_delay_s": null,
+        "recovery_lift_m": 0.0,
+        "recovery_stable_hold_s": 0.0,
+        "certificate_invalidations": 0,
+        "additional_probe_count": 0,
+        "final_forward_com_motion_m": 0.04116414175524746,
+        "terminal_mean_forward_com_motion_m": 0.04115776287855119,
+        "simultaneous_progress_min_forward_m": 0.04103262711905211,
+        "simultaneous_progress_max_forward_m": 0.04116414175524746,
+        "simultaneous_progress_min_next_foot_clearance_m": 0.020015173712152973,
+        "tracking_gap_by_phase_group": {
+          "future_execution": {
+            "samples": 7279,
+            "maximum_actual_minus_cap_n": 1.4468109155834448,
+            "maximum_actual_minus_command_n": 1.446810917173794,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "probe_transition": {
+            "samples": 1101,
+            "maximum_actual_minus_cap_n": 0.06419110224763003,
+            "maximum_actual_minus_command_n": 3.930826615004497,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "deliberate_probe": {
+            "samples": 3002,
+            "maximum_actual_minus_cap_n": 1.6157921613002433,
+            "maximum_actual_minus_command_n": 1.6158507143519367,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "recovery": {
+            "samples": 0,
+            "maximum_actual_minus_cap_n": null,
+            "maximum_actual_minus_command_n": null,
+            "samples_above_declared_tracking_reserve": 0
+          }
+        },
+        "maximum_probe_com_displacement_m": 0.004261129755236218
+      },
+      "error": null
+    },
+    {
+      "trial_id": "rl_additional_test_capacity56_fixed_probe_seed101",
+      "case_id": "rl_additional_test_capacity56",
+      "strategy": "fixed_probe",
+      "seed": 101,
+      "family": "rl_additional_test",
+      "condition_role": "held_out",
+      "status": "completed",
+      "run_dir": "/home/ibrahim/Documents/GO-2 PRIMP/primp_project/results/weak_pad/study_v2/trials/rl_additional_test_capacity56_fixed_probe_seed101/weak_pad_fixed_probe_20260921T111239_255626Z",
+      "outcome": "SAFE_STOP",
+      "physical_success": false,
+      "expected_outcome_met": true,
+      "metrics": {
+        "duration_s": 33.31999999999476,
+        "probe_requested_shortfall_n": 47.6796308515936,
+        "maximum_certified_force_n": 10.534579500350223,
+        "maximum_actual_future_pad_force_n": 2.4548946573803567,
+        "maximum_forward_com_motion_m": 0.0013321306661082527,
+        "maximum_next_foot_clearance_m": -3.430742247707841e-05,
+        "simultaneous_progress_hold_s": 0.0,
+        "progress_window_samples": null,
+        "maximum_roll_pitch_deg": 0.4652648568859397,
+        "maximum_pad_sink_m": -0.0,
+        "pad_failed": false,
+        "certificate_updates_audited": 1,
+        "stable_safe_stop_s": 3.0020000000006783,
+        "probe_time_s": 8.206,
+        "recovery_time_s": 0.0,
+        "recovery_unload_delay_s": null,
+        "recovery_lift_m": 0.0,
+        "recovery_stable_hold_s": 0.0,
+        "certificate_invalidations": 0,
+        "additional_probe_count": 0,
+        "final_forward_com_motion_m": 0.0010577454943072606,
+        "terminal_mean_forward_com_motion_m": 0.0010670615272971066,
+        "simultaneous_progress_min_forward_m": null,
+        "simultaneous_progress_max_forward_m": null,
+        "simultaneous_progress_min_next_foot_clearance_m": null,
+        "tracking_gap_by_phase_group": {
+          "future_execution": {
+            "samples": 1501,
+            "maximum_actual_minus_cap_n": -0.07968484296986578,
+            "maximum_actual_minus_command_n": -0.0794733474023741,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "probe_transition": {
+            "samples": 1101,
+            "maximum_actual_minus_cap_n": 0.29118955621257747,
+            "maximum_actual_minus_command_n": 0.29679711593549385,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "deliberate_probe": {
+            "samples": 3002,
+            "maximum_actual_minus_cap_n": 1.6008306792679068,
+            "maximum_actual_minus_command_n": 1.6008596906899055,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "recovery": {
+            "samples": 0,
+            "maximum_actual_minus_cap_n": null,
+            "maximum_actual_minus_command_n": null,
+            "samples_above_declared_tracking_reserve": 0
+          }
+        },
+        "maximum_probe_com_displacement_m": 0.002794443878338696
+      },
+      "error": null
+    },
+    {
+      "trial_id": "rl_additional_test_capacity56_fixed_probe_seed509",
+      "case_id": "rl_additional_test_capacity56",
+      "strategy": "fixed_probe",
+      "seed": 509,
+      "family": "rl_additional_test",
+      "condition_role": "held_out",
+      "status": "completed",
+      "run_dir": "/home/ibrahim/Documents/GO-2 PRIMP/primp_project/results/weak_pad/study_v2/trials/rl_additional_test_capacity56_fixed_probe_seed509/weak_pad_fixed_probe_20260921T111239_522746Z",
+      "outcome": "SAFE_STOP",
+      "physical_success": false,
+      "expected_outcome_met": true,
+      "metrics": {
+        "duration_s": 33.309999999994744,
+        "probe_requested_shortfall_n": 47.68353329347771,
+        "maximum_certified_force_n": 10.529143695031953,
+        "maximum_actual_future_pad_force_n": 2.448430782324973,
+        "maximum_forward_com_motion_m": 0.0013191589293378436,
+        "maximum_next_foot_clearance_m": -3.299702267005322e-05,
+        "simultaneous_progress_hold_s": 0.0,
+        "progress_window_samples": null,
+        "maximum_roll_pitch_deg": 0.4652648568859464,
+        "maximum_pad_sink_m": -0.0,
+        "pad_failed": false,
+        "certificate_updates_audited": 1,
+        "stable_safe_stop_s": 3.0020000000006606,
+        "probe_time_s": 8.206,
+        "recovery_time_s": 0.0,
+        "recovery_unload_delay_s": null,
+        "recovery_lift_m": 0.0,
+        "recovery_stable_hold_s": 0.0,
+        "certificate_invalidations": 0,
+        "additional_probe_count": 0,
+        "final_forward_com_motion_m": 0.0010436199056839818,
+        "terminal_mean_forward_com_motion_m": 0.001053004688989764,
+        "simultaneous_progress_min_forward_m": null,
+        "simultaneous_progress_max_forward_m": null,
+        "simultaneous_progress_min_next_foot_clearance_m": null,
+        "tracking_gap_by_phase_group": {
+          "future_execution": {
+            "samples": 1501,
+            "maximum_actual_minus_cap_n": -0.08071291270698033,
+            "maximum_actual_minus_command_n": -0.08050106246871191,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "probe_transition": {
+            "samples": 1101,
+            "maximum_actual_minus_cap_n": 0.2884995013264664,
+            "maximum_actual_minus_command_n": 0.29088149154483567,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "deliberate_probe": {
+            "samples": 3002,
+            "maximum_actual_minus_cap_n": 1.570898618032284,
+            "maximum_actual_minus_command_n": 1.5709238742239242,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "recovery": {
+            "samples": 0,
+            "maximum_actual_minus_cap_n": null,
+            "maximum_actual_minus_command_n": null,
+            "samples_above_declared_tracking_reserve": 0
+          }
+        },
+        "maximum_probe_com_displacement_m": 0.0027701986035631944
+      },
+      "error": null
+    },
+    {
+      "trial_id": "rl_additional_test_capacity56_adaptive_force_fixed_posture_seed101",
+      "case_id": "rl_additional_test_capacity56",
+      "strategy": "adaptive_force_fixed_posture",
+      "seed": 101,
+      "family": "rl_additional_test",
+      "condition_role": "held_out",
+      "status": "completed",
+      "run_dir": "/home/ibrahim/Documents/GO-2 PRIMP/primp_project/results/weak_pad/study_v2/trials/rl_additional_test_capacity56_adaptive_force_fixed_posture_seed101/weak_pad_adaptive_force_fixed_posture_20260921T111240_074544Z",
+      "outcome": "SUCCESS",
+      "physical_success": true,
+      "expected_outcome_met": true,
+      "metrics": {
+        "duration_s": 56.622000000023235,
+        "probe_requested_shortfall_n": 47.6796308515936,
+        "maximum_certified_force_n": 32.31339452048561,
+        "maximum_actual_future_pad_force_n": 25.607037826017258,
+        "maximum_forward_com_motion_m": 0.042983869295751695,
+        "maximum_next_foot_clearance_m": 0.029289307081899377,
+        "simultaneous_progress_hold_s": 2.9440000000035953,
+        "progress_window_samples": [
+          26839,
+          28310
+        ],
+        "maximum_roll_pitch_deg": 0.4652648568859397,
+        "maximum_pad_sink_m": -0.0,
+        "pad_failed": false,
+        "certificate_updates_audited": 2,
+        "stable_safe_stop_s": 0.0,
+        "probe_time_s": 20.706,
+        "recovery_time_s": 0.0,
+        "recovery_unload_delay_s": null,
+        "recovery_lift_m": 0.0,
+        "recovery_stable_hold_s": 0.0,
+        "certificate_invalidations": 0,
+        "additional_probe_count": 1,
+        "final_forward_com_motion_m": 0.042055355357723326,
+        "terminal_mean_forward_com_motion_m": 0.04204906773820659,
+        "simultaneous_progress_min_forward_m": 0.04186580509892896,
+        "simultaneous_progress_max_forward_m": 0.042055355357723326,
+        "simultaneous_progress_min_next_foot_clearance_m": 0.020016391722031734,
+        "tracking_gap_by_phase_group": {
+          "future_execution": {
+            "samples": 6902,
+            "maximum_actual_minus_cap_n": 1.2936433055316492,
+            "maximum_actual_minus_command_n": 1.2936742507213665,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "probe_transition": {
+            "samples": 4351,
+            "maximum_actual_minus_cap_n": 0.29118955621257747,
+            "maximum_actual_minus_command_n": 5.5062977396808,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "deliberate_probe": {
+            "samples": 6002,
+            "maximum_actual_minus_cap_n": 1.6008306792679068,
+            "maximum_actual_minus_command_n": 1.6008596906899055,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "recovery": {
+            "samples": 0,
+            "maximum_actual_minus_cap_n": null,
+            "maximum_actual_minus_command_n": null,
+            "samples_above_declared_tracking_reserve": 0
+          }
+        },
+        "maximum_probe_com_displacement_m": 0.004079179494174825
+      },
+      "error": null
+    },
+    {
+      "trial_id": "rl_additional_test_capacity56_adaptive_force_fixed_posture_seed509",
+      "case_id": "rl_additional_test_capacity56",
+      "strategy": "adaptive_force_fixed_posture",
+      "seed": 509,
+      "family": "rl_additional_test",
+      "condition_role": "held_out",
+      "status": "completed",
+      "run_dir": "/home/ibrahim/Documents/GO-2 PRIMP/primp_project/results/weak_pad/study_v2/trials/rl_additional_test_capacity56_adaptive_force_fixed_posture_seed509/weak_pad_adaptive_force_fixed_posture_20260921T111240_235001Z",
+      "outcome": "SUCCESS",
+      "physical_success": true,
+      "expected_outcome_met": true,
+      "metrics": {
+        "duration_s": 56.61200000002322,
+        "probe_requested_shortfall_n": 47.68353329347771,
+        "maximum_certified_force_n": 32.34872242579439,
+        "maximum_actual_future_pad_force_n": 25.577388196001753,
+        "maximum_forward_com_motion_m": 0.04298442568053265,
+        "maximum_next_foot_clearance_m": 0.029289826182039624,
+        "simultaneous_progress_hold_s": 2.9440000000035953,
+        "progress_window_samples": [
+          26834,
+          28305
+        ],
+        "maximum_roll_pitch_deg": 0.4652648568859464,
+        "maximum_pad_sink_m": -0.0,
+        "pad_failed": false,
+        "certificate_updates_audited": 2,
+        "stable_safe_stop_s": 0.0,
+        "probe_time_s": 20.706,
+        "recovery_time_s": 0.0,
+        "recovery_unload_delay_s": null,
+        "recovery_lift_m": 0.0,
+        "recovery_stable_hold_s": 0.0,
+        "certificate_invalidations": 0,
+        "additional_probe_count": 1,
+        "final_forward_com_motion_m": 0.04205866576214137,
+        "terminal_mean_forward_com_motion_m": 0.042052383745663315,
+        "simultaneous_progress_min_forward_m": 0.0418692667159903,
+        "simultaneous_progress_max_forward_m": 0.04205866576214137,
+        "simultaneous_progress_min_next_foot_clearance_m": 0.020015391461203888,
+        "tracking_gap_by_phase_group": {
+          "future_execution": {
+            "samples": 6902,
+            "maximum_actual_minus_cap_n": 1.2286657702073605,
+            "maximum_actual_minus_command_n": 1.2286991710108275,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "probe_transition": {
+            "samples": 4351,
+            "maximum_actual_minus_cap_n": 0.2884995013264664,
+            "maximum_actual_minus_command_n": 5.507379385822766,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "deliberate_probe": {
+            "samples": 6002,
+            "maximum_actual_minus_cap_n": 1.570898618032284,
+            "maximum_actual_minus_command_n": 1.5709238742239242,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "recovery": {
+            "samples": 0,
+            "maximum_actual_minus_cap_n": null,
+            "maximum_actual_minus_command_n": null,
+            "samples_above_declared_tracking_reserve": 0
+          }
+        },
+        "maximum_probe_com_displacement_m": 0.004076116617826393
+      },
+      "error": null
+    },
+    {
+      "trial_id": "rl_additional_test_capacity56_adaptive_probe_seed101",
+      "case_id": "rl_additional_test_capacity56",
+      "strategy": "adaptive_probe",
+      "seed": 101,
+      "family": "rl_additional_test",
+      "condition_role": "held_out",
+      "status": "completed",
+      "run_dir": "/home/ibrahim/Documents/GO-2 PRIMP/primp_project/results/weak_pad/study_v2/trials/rl_additional_test_capacity56_adaptive_probe_seed101/weak_pad_adaptive_probe_20260921T111327_876611Z",
+      "outcome": "SUCCESS",
+      "physical_success": true,
+      "expected_outcome_met": true,
+      "metrics": {
+        "duration_s": 56.622000000023235,
+        "probe_requested_shortfall_n": 47.6796308515936,
+        "maximum_certified_force_n": 32.31339452048561,
+        "maximum_actual_future_pad_force_n": 25.607037826017258,
+        "maximum_forward_com_motion_m": 0.042983869295751695,
+        "maximum_next_foot_clearance_m": 0.029289307081899377,
+        "simultaneous_progress_hold_s": 2.9440000000035953,
+        "progress_window_samples": [
+          26839,
+          28310
+        ],
+        "maximum_roll_pitch_deg": 0.4652648568859397,
+        "maximum_pad_sink_m": -0.0,
+        "pad_failed": false,
+        "certificate_updates_audited": 2,
+        "stable_safe_stop_s": 0.0,
+        "probe_time_s": 20.706,
+        "recovery_time_s": 0.0,
+        "recovery_unload_delay_s": null,
+        "recovery_lift_m": 0.0,
+        "recovery_stable_hold_s": 0.0,
+        "certificate_invalidations": 0,
+        "additional_probe_count": 1,
+        "final_forward_com_motion_m": 0.042055355357723326,
+        "terminal_mean_forward_com_motion_m": 0.04204906773820659,
+        "simultaneous_progress_min_forward_m": 0.04186580509892896,
+        "simultaneous_progress_max_forward_m": 0.042055355357723326,
+        "simultaneous_progress_min_next_foot_clearance_m": 0.020016391722031734,
+        "tracking_gap_by_phase_group": {
+          "future_execution": {
+            "samples": 6902,
+            "maximum_actual_minus_cap_n": 1.2936433055316492,
+            "maximum_actual_minus_command_n": 1.2936742507213665,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "probe_transition": {
+            "samples": 4351,
+            "maximum_actual_minus_cap_n": 0.29118955621257747,
+            "maximum_actual_minus_command_n": 5.5062977396808,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "deliberate_probe": {
+            "samples": 6002,
+            "maximum_actual_minus_cap_n": 1.6008306792679068,
+            "maximum_actual_minus_command_n": 1.6008596906899055,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "recovery": {
+            "samples": 0,
+            "maximum_actual_minus_cap_n": null,
+            "maximum_actual_minus_command_n": null,
+            "samples_above_declared_tracking_reserve": 0
+          }
+        },
+        "maximum_probe_com_displacement_m": 0.004079179494174825
+      },
+      "error": null
+    },
+    {
+      "trial_id": "rl_additional_test_capacity56_adaptive_probe_seed509",
+      "case_id": "rl_additional_test_capacity56",
+      "strategy": "adaptive_probe",
+      "seed": 509,
+      "family": "rl_additional_test",
+      "condition_role": "held_out",
+      "status": "completed",
+      "run_dir": "/home/ibrahim/Documents/GO-2 PRIMP/primp_project/results/weak_pad/study_v2/trials/rl_additional_test_capacity56_adaptive_probe_seed509/weak_pad_adaptive_probe_20260921T111328_877724Z",
+      "outcome": "SUCCESS",
+      "physical_success": true,
+      "expected_outcome_met": true,
+      "metrics": {
+        "duration_s": 56.61200000002322,
+        "probe_requested_shortfall_n": 47.68353329347771,
+        "maximum_certified_force_n": 32.34872242579439,
+        "maximum_actual_future_pad_force_n": 25.577388196001753,
+        "maximum_forward_com_motion_m": 0.04298442568053265,
+        "maximum_next_foot_clearance_m": 0.029289826182039624,
+        "simultaneous_progress_hold_s": 2.9440000000035953,
+        "progress_window_samples": [
+          26834,
+          28305
+        ],
+        "maximum_roll_pitch_deg": 0.4652648568859464,
+        "maximum_pad_sink_m": -0.0,
+        "pad_failed": false,
+        "certificate_updates_audited": 2,
+        "stable_safe_stop_s": 0.0,
+        "probe_time_s": 20.706,
+        "recovery_time_s": 0.0,
+        "recovery_unload_delay_s": null,
+        "recovery_lift_m": 0.0,
+        "recovery_stable_hold_s": 0.0,
+        "certificate_invalidations": 0,
+        "additional_probe_count": 1,
+        "final_forward_com_motion_m": 0.04205866576214137,
+        "terminal_mean_forward_com_motion_m": 0.042052383745663315,
+        "simultaneous_progress_min_forward_m": 0.0418692667159903,
+        "simultaneous_progress_max_forward_m": 0.04205866576214137,
+        "simultaneous_progress_min_next_foot_clearance_m": 0.020015391461203888,
+        "tracking_gap_by_phase_group": {
+          "future_execution": {
+            "samples": 6902,
+            "maximum_actual_minus_cap_n": 1.2286657702073605,
+            "maximum_actual_minus_command_n": 1.2286991710108275,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "probe_transition": {
+            "samples": 4351,
+            "maximum_actual_minus_cap_n": 0.2884995013264664,
+            "maximum_actual_minus_command_n": 5.507379385822766,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "deliberate_probe": {
+            "samples": 6002,
+            "maximum_actual_minus_cap_n": 1.570898618032284,
+            "maximum_actual_minus_command_n": 1.5709238742239242,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "recovery": {
+            "samples": 0,
+            "maximum_actual_minus_cap_n": null,
+            "maximum_actual_minus_command_n": null,
+            "samples_above_declared_tracking_reserve": 0
+          }
+        },
+        "maximum_probe_com_displacement_m": 0.004076116617826393
+      },
+      "error": null
+    },
+    {
+      "trial_id": "fr_necessary_a_capacity66_fixed_probe_seed101",
+      "case_id": "fr_necessary_a_capacity66",
+      "strategy": "fixed_probe",
+      "seed": 101,
+      "family": "fr_necessary_a",
+      "condition_role": "held_out",
+      "status": "completed",
+      "run_dir": "/home/ibrahim/Documents/GO-2 PRIMP/primp_project/results/weak_pad/study_v2/trials/fr_necessary_a_capacity66_fixed_probe_seed101/weak_pad_fixed_probe_20260921T111356_491977Z",
+      "outcome": "SAFE_STOP",
+      "physical_success": false,
+      "expected_outcome_met": true,
+      "metrics": {
+        "duration_s": 33.00999999999438,
+        "probe_requested_shortfall_n": 47.58490650209604,
+        "maximum_certified_force_n": 11.823535845532845,
+        "maximum_actual_future_pad_force_n": 2.701854655675396,
+        "maximum_forward_com_motion_m": 0.0015309052969440518,
+        "maximum_next_foot_clearance_m": 1.33334870165841e-05,
+        "simultaneous_progress_hold_s": 0.0,
+        "progress_window_samples": null,
+        "maximum_roll_pitch_deg": 1.0708507961822606,
+        "maximum_pad_sink_m": -0.0,
+        "pad_failed": false,
+        "certificate_updates_audited": 1,
+        "stable_safe_stop_s": 3.0020000000001277,
+        "probe_time_s": 8.206,
+        "recovery_time_s": 0.0,
+        "recovery_unload_delay_s": null,
+        "recovery_lift_m": 0.0,
+        "recovery_stable_hold_s": 0.0,
+        "certificate_invalidations": 0,
+        "additional_probe_count": 0,
+        "final_forward_com_motion_m": 0.0015309052969440518,
+        "terminal_mean_forward_com_motion_m": 0.001524004658132958,
+        "simultaneous_progress_min_forward_m": null,
+        "simultaneous_progress_max_forward_m": null,
+        "simultaneous_progress_min_next_foot_clearance_m": null,
+        "tracking_gap_by_phase_group": {
+          "future_execution": {
+            "samples": 1501,
+            "maximum_actual_minus_cap_n": -1.121681189857449,
+            "maximum_actual_minus_command_n": 0.1215169731163015,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "probe_transition": {
+            "samples": 1101,
+            "maximum_actual_minus_cap_n": 0.008314573116617652,
+            "maximum_actual_minus_command_n": 3.6121905812044535,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "deliberate_probe": {
+            "samples": 3002,
+            "maximum_actual_minus_cap_n": 0.9018537983705642,
+            "maximum_actual_minus_command_n": 0.9026170334506703,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "recovery": {
+            "samples": 0,
+            "maximum_actual_minus_cap_n": null,
+            "maximum_actual_minus_command_n": null,
+            "samples_above_declared_tracking_reserve": 0
+          }
+        },
+        "maximum_probe_com_displacement_m": 0.002113770780282018
+      },
+      "error": null
+    },
+    {
+      "trial_id": "fr_necessary_a_capacity66_fixed_probe_seed509",
+      "case_id": "fr_necessary_a_capacity66",
+      "strategy": "fixed_probe",
+      "seed": 509,
+      "family": "fr_necessary_a",
+      "condition_role": "held_out",
+      "status": "completed",
+      "run_dir": "/home/ibrahim/Documents/GO-2 PRIMP/primp_project/results/weak_pad/study_v2/trials/fr_necessary_a_capacity66_fixed_probe_seed509/weak_pad_fixed_probe_20260921T111356_765273Z",
+      "outcome": "SAFE_STOP",
+      "physical_success": false,
+      "expected_outcome_met": true,
+      "metrics": {
+        "duration_s": 33.01399999999438,
+        "probe_requested_shortfall_n": 47.58314763430261,
+        "maximum_certified_force_n": 11.848312463504435,
+        "maximum_actual_future_pad_force_n": 2.700772867786576,
+        "maximum_forward_com_motion_m": 0.0015265143971173317,
+        "maximum_next_foot_clearance_m": 1.4238756785245332e-05,
+        "simultaneous_progress_hold_s": 0.0,
+        "progress_window_samples": null,
+        "maximum_roll_pitch_deg": 1.070850796182286,
+        "maximum_pad_sink_m": -0.0,
+        "pad_failed": false,
+        "certificate_updates_audited": 1,
+        "stable_safe_stop_s": 3.002000000000135,
+        "probe_time_s": 8.206,
+        "recovery_time_s": 0.0,
+        "recovery_unload_delay_s": null,
+        "recovery_lift_m": 0.0,
+        "recovery_stable_hold_s": 0.0,
+        "certificate_invalidations": 0,
+        "additional_probe_count": 0,
+        "final_forward_com_motion_m": 0.0015265143971173317,
+        "terminal_mean_forward_com_motion_m": 0.0015195761550327088,
+        "simultaneous_progress_min_forward_m": null,
+        "simultaneous_progress_max_forward_m": null,
+        "simultaneous_progress_min_next_foot_clearance_m": null,
+        "tracking_gap_by_phase_group": {
+          "future_execution": {
+            "samples": 1501,
+            "maximum_actual_minus_cap_n": -1.1475395957178587,
+            "maximum_actual_minus_command_n": 0.12247666541944913,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "probe_transition": {
+            "samples": 1101,
+            "maximum_actual_minus_cap_n": -1.1608269365588644,
+            "maximum_actual_minus_command_n": 3.615352754964995,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "deliberate_probe": {
+            "samples": 3002,
+            "maximum_actual_minus_cap_n": 0.8941980939520267,
+            "maximum_actual_minus_command_n": 0.8949868980660342,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "recovery": {
+            "samples": 0,
+            "maximum_actual_minus_cap_n": null,
+            "maximum_actual_minus_command_n": null,
+            "samples_above_declared_tracking_reserve": 0
+          }
+        },
+        "maximum_probe_com_displacement_m": 0.002108662753022129
+      },
+      "error": null
+    },
+    {
+      "trial_id": "fr_necessary_a_capacity66_adaptive_force_fixed_posture_seed101",
+      "case_id": "fr_necessary_a_capacity66",
+      "strategy": "adaptive_force_fixed_posture",
+      "seed": 101,
+      "family": "fr_necessary_a",
+      "condition_role": "held_out",
+      "status": "completed",
+      "run_dir": "/home/ibrahim/Documents/GO-2 PRIMP/primp_project/results/weak_pad/study_v2/trials/fr_necessary_a_capacity66_adaptive_force_fixed_posture_seed101/weak_pad_adaptive_force_fixed_posture_20260921T111442_328019Z",
+      "outcome": "SAFE_STOP",
+      "physical_success": false,
+      "expected_outcome_met": true,
+      "metrics": {
+        "duration_s": 33.00999999999438,
+        "probe_requested_shortfall_n": 47.58490650209604,
+        "maximum_certified_force_n": 11.823535845532845,
+        "maximum_actual_future_pad_force_n": 2.701854655675396,
+        "maximum_forward_com_motion_m": 0.0015309052969440518,
+        "maximum_next_foot_clearance_m": 1.33334870165841e-05,
+        "simultaneous_progress_hold_s": 0.0,
+        "progress_window_samples": null,
+        "maximum_roll_pitch_deg": 1.0708507961822606,
+        "maximum_pad_sink_m": -0.0,
+        "pad_failed": false,
+        "certificate_updates_audited": 1,
+        "stable_safe_stop_s": 3.0020000000001277,
+        "probe_time_s": 8.206,
+        "recovery_time_s": 0.0,
+        "recovery_unload_delay_s": null,
+        "recovery_lift_m": 0.0,
+        "recovery_stable_hold_s": 0.0,
+        "certificate_invalidations": 0,
+        "additional_probe_count": 0,
+        "final_forward_com_motion_m": 0.0015309052969440518,
+        "terminal_mean_forward_com_motion_m": 0.001524004658132958,
+        "simultaneous_progress_min_forward_m": null,
+        "simultaneous_progress_max_forward_m": null,
+        "simultaneous_progress_min_next_foot_clearance_m": null,
+        "tracking_gap_by_phase_group": {
+          "future_execution": {
+            "samples": 1501,
+            "maximum_actual_minus_cap_n": -1.121681189857449,
+            "maximum_actual_minus_command_n": 0.1215169731163015,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "probe_transition": {
+            "samples": 1101,
+            "maximum_actual_minus_cap_n": 0.008314573116617652,
+            "maximum_actual_minus_command_n": 3.6121905812044535,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "deliberate_probe": {
+            "samples": 3002,
+            "maximum_actual_minus_cap_n": 0.9018537983705642,
+            "maximum_actual_minus_command_n": 0.9026170334506703,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "recovery": {
+            "samples": 0,
+            "maximum_actual_minus_cap_n": null,
+            "maximum_actual_minus_command_n": null,
+            "samples_above_declared_tracking_reserve": 0
+          }
+        },
+        "maximum_probe_com_displacement_m": 0.002113770780282018
+      },
+      "error": null
+    },
+    {
+      "trial_id": "fr_necessary_a_capacity66_adaptive_force_fixed_posture_seed509",
+      "case_id": "fr_necessary_a_capacity66",
+      "strategy": "adaptive_force_fixed_posture",
+      "seed": 509,
+      "family": "fr_necessary_a",
+      "condition_role": "held_out",
+      "status": "completed",
+      "run_dir": "/home/ibrahim/Documents/GO-2 PRIMP/primp_project/results/weak_pad/study_v2/trials/fr_necessary_a_capacity66_adaptive_force_fixed_posture_seed509/weak_pad_adaptive_force_fixed_posture_20260921T111442_792148Z",
+      "outcome": "SAFE_STOP",
+      "physical_success": false,
+      "expected_outcome_met": true,
+      "metrics": {
+        "duration_s": 33.01399999999438,
+        "probe_requested_shortfall_n": 47.58314763430261,
+        "maximum_certified_force_n": 11.848312463504435,
+        "maximum_actual_future_pad_force_n": 2.700772867786576,
+        "maximum_forward_com_motion_m": 0.0015265143971173317,
+        "maximum_next_foot_clearance_m": 1.4238756785245332e-05,
+        "simultaneous_progress_hold_s": 0.0,
+        "progress_window_samples": null,
+        "maximum_roll_pitch_deg": 1.070850796182286,
+        "maximum_pad_sink_m": -0.0,
+        "pad_failed": false,
+        "certificate_updates_audited": 1,
+        "stable_safe_stop_s": 3.002000000000135,
+        "probe_time_s": 8.206,
+        "recovery_time_s": 0.0,
+        "recovery_unload_delay_s": null,
+        "recovery_lift_m": 0.0,
+        "recovery_stable_hold_s": 0.0,
+        "certificate_invalidations": 0,
+        "additional_probe_count": 0,
+        "final_forward_com_motion_m": 0.0015265143971173317,
+        "terminal_mean_forward_com_motion_m": 0.0015195761550327088,
+        "simultaneous_progress_min_forward_m": null,
+        "simultaneous_progress_max_forward_m": null,
+        "simultaneous_progress_min_next_foot_clearance_m": null,
+        "tracking_gap_by_phase_group": {
+          "future_execution": {
+            "samples": 1501,
+            "maximum_actual_minus_cap_n": -1.1475395957178587,
+            "maximum_actual_minus_command_n": 0.12247666541944913,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "probe_transition": {
+            "samples": 1101,
+            "maximum_actual_minus_cap_n": -1.1608269365588644,
+            "maximum_actual_minus_command_n": 3.615352754964995,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "deliberate_probe": {
+            "samples": 3002,
+            "maximum_actual_minus_cap_n": 0.8941980939520267,
+            "maximum_actual_minus_command_n": 0.8949868980660342,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "recovery": {
+            "samples": 0,
+            "maximum_actual_minus_cap_n": null,
+            "maximum_actual_minus_command_n": null,
+            "samples_above_declared_tracking_reserve": 0
+          }
+        },
+        "maximum_probe_com_displacement_m": 0.002108662753022129
+      },
+      "error": null
+    },
+    {
+      "trial_id": "fr_necessary_a_capacity66_adaptive_probe_seed101",
+      "case_id": "fr_necessary_a_capacity66",
+      "strategy": "adaptive_probe",
+      "seed": 101,
+      "family": "fr_necessary_a",
+      "condition_role": "held_out",
+      "status": "completed",
+      "run_dir": "/home/ibrahim/Documents/GO-2 PRIMP/primp_project/results/weak_pad/study_v2/trials/fr_necessary_a_capacity66_adaptive_probe_seed101/weak_pad_adaptive_probe_20260921T111443_104920Z",
+      "outcome": "SUCCESS",
+      "physical_success": true,
+      "expected_outcome_met": true,
+      "metrics": {
+        "duration_s": 57.05400000002376,
+        "probe_requested_shortfall_n": 47.58490650209604,
+        "maximum_certified_force_n": 52.043971567485855,
+        "maximum_actual_future_pad_force_n": 39.57850788763948,
+        "maximum_forward_com_motion_m": 0.09211288062044799,
+        "maximum_next_foot_clearance_m": 0.029673307225476286,
+        "simultaneous_progress_hold_s": 3.122000000003813,
+        "progress_window_samples": [
+          26966,
+          28526
+        ],
+        "maximum_roll_pitch_deg": 1.0708507961822606,
+        "maximum_pad_sink_m": -0.0,
+        "pad_failed": false,
+        "certificate_updates_audited": 2,
+        "stable_safe_stop_s": 0.0,
+        "probe_time_s": 21.348,
+        "recovery_time_s": 0.0,
+        "recovery_unload_delay_s": null,
+        "recovery_lift_m": 0.0,
+        "recovery_stable_hold_s": 0.0,
+        "certificate_invalidations": 0,
+        "additional_probe_count": 1,
+        "final_forward_com_motion_m": 0.039896564351503905,
+        "terminal_mean_forward_com_motion_m": 0.0399252868671158,
+        "simultaneous_progress_min_forward_m": 0.039896564351503905,
+        "simultaneous_progress_max_forward_m": 0.04046849182168783,
+        "simultaneous_progress_min_next_foot_clearance_m": 0.02004097655353386,
+        "tracking_gap_by_phase_group": {
+          "future_execution": {
+            "samples": 6952,
+            "maximum_actual_minus_cap_n": -4.465463679846373,
+            "maximum_actual_minus_command_n": 0.8616957008674788,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "probe_transition": {
+            "samples": 4672,
+            "maximum_actual_minus_cap_n": 6.429832811950357,
+            "maximum_actual_minus_command_n": 7.601383445988816,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "deliberate_probe": {
+            "samples": 6002,
+            "maximum_actual_minus_cap_n": 3.3413991590284544,
+            "maximum_actual_minus_command_n": 3.3413991637195952,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "recovery": {
+            "samples": 0,
+            "maximum_actual_minus_cap_n": null,
+            "maximum_actual_minus_command_n": null,
+            "samples_above_declared_tracking_reserve": 0
+          }
+        },
+        "maximum_probe_com_displacement_m": 0.09810686892800663
+      },
+      "error": null
+    },
+    {
+      "trial_id": "fr_necessary_a_capacity66_adaptive_probe_seed509",
+      "case_id": "fr_necessary_a_capacity66",
+      "strategy": "adaptive_probe",
+      "seed": 509,
+      "family": "fr_necessary_a",
+      "condition_role": "held_out",
+      "status": "completed",
+      "run_dir": "/home/ibrahim/Documents/GO-2 PRIMP/primp_project/results/weak_pad/study_v2/trials/fr_necessary_a_capacity66_adaptive_probe_seed509/weak_pad_adaptive_probe_20260921T111444_264392Z",
+      "outcome": "SUCCESS",
+      "physical_success": true,
+      "expected_outcome_met": true,
+      "metrics": {
+        "duration_s": 57.056000000023765,
+        "probe_requested_shortfall_n": 47.58314763430261,
+        "maximum_certified_force_n": 52.06602982443559,
+        "maximum_actual_future_pad_force_n": 39.55562625922239,
+        "maximum_forward_com_motion_m": 0.09212352599157177,
+        "maximum_next_foot_clearance_m": 0.02967329353455997,
+        "simultaneous_progress_hold_s": 3.122000000003813,
+        "progress_window_samples": [
+          26967,
+          28527
+        ],
+        "maximum_roll_pitch_deg": 1.070850796182286,
+        "maximum_pad_sink_m": -0.0,
+        "pad_failed": false,
+        "certificate_updates_audited": 2,
+        "stable_safe_stop_s": 0.0,
+        "probe_time_s": 21.346,
+        "recovery_time_s": 0.0,
+        "recovery_unload_delay_s": null,
+        "recovery_lift_m": 0.0,
+        "recovery_stable_hold_s": 0.0,
+        "certificate_invalidations": 0,
+        "additional_probe_count": 1,
+        "final_forward_com_motion_m": 0.03989659882093842,
+        "terminal_mean_forward_com_motion_m": 0.0399253208878754,
+        "simultaneous_progress_min_forward_m": 0.03989659882093842,
+        "simultaneous_progress_max_forward_m": 0.04046850190712328,
+        "simultaneous_progress_min_next_foot_clearance_m": 0.02004094298210808,
+        "tracking_gap_by_phase_group": {
+          "future_execution": {
+            "samples": 6952,
+            "maximum_actual_minus_cap_n": -4.5104035652131955,
+            "maximum_actual_minus_command_n": 0.8620071363008108,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "probe_transition": {
+            "samples": 4671,
+            "maximum_actual_minus_cap_n": 6.42721516022851,
+            "maximum_actual_minus_command_n": 7.601545668894843,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "deliberate_probe": {
+            "samples": 6002,
+            "maximum_actual_minus_cap_n": 3.432427122028641,
+            "maximum_actual_minus_command_n": 3.4327937765721575,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "recovery": {
+            "samples": 0,
+            "maximum_actual_minus_cap_n": null,
+            "maximum_actual_minus_command_n": null,
+            "samples_above_declared_tracking_reserve": 0
+          }
+        },
+        "maximum_probe_com_displacement_m": 0.09813602258152355
+      },
+      "error": null
+    },
+    {
+      "trial_id": "fr_necessary_a_capacity34_fixed_probe_seed101",
+      "case_id": "fr_necessary_a_capacity34",
+      "strategy": "fixed_probe",
+      "seed": 101,
+      "family": "fr_necessary_a",
+      "condition_role": "held_out",
+      "status": "completed",
+      "run_dir": "/home/ibrahim/Documents/GO-2 PRIMP/primp_project/results/weak_pad/study_v2/trials/fr_necessary_a_capacity34_fixed_probe_seed101/weak_pad_fixed_probe_20260921T111529_516745Z",
+      "outcome": "SAFE_STOP",
+      "physical_success": false,
+      "expected_outcome_met": true,
+      "metrics": {
+        "duration_s": 33.00999999999438,
+        "probe_requested_shortfall_n": 47.58490650209604,
+        "maximum_certified_force_n": 11.823535845532845,
+        "maximum_actual_future_pad_force_n": 2.701854655675396,
+        "maximum_forward_com_motion_m": 0.0015309052969440518,
+        "maximum_next_foot_clearance_m": 1.33334870165841e-05,
+        "simultaneous_progress_hold_s": 0.0,
+        "progress_window_samples": null,
+        "maximum_roll_pitch_deg": 1.0708507961822606,
+        "maximum_pad_sink_m": -0.0,
+        "pad_failed": false,
+        "certificate_updates_audited": 1,
+        "stable_safe_stop_s": 3.0020000000001277,
+        "probe_time_s": 8.206,
+        "recovery_time_s": 0.0,
+        "recovery_unload_delay_s": null,
+        "recovery_lift_m": 0.0,
+        "recovery_stable_hold_s": 0.0,
+        "certificate_invalidations": 0,
+        "additional_probe_count": 0,
+        "final_forward_com_motion_m": 0.0015309052969440518,
+        "terminal_mean_forward_com_motion_m": 0.001524004658132958,
+        "simultaneous_progress_min_forward_m": null,
+        "simultaneous_progress_max_forward_m": null,
+        "simultaneous_progress_min_next_foot_clearance_m": null,
+        "tracking_gap_by_phase_group": {
+          "future_execution": {
+            "samples": 1501,
+            "maximum_actual_minus_cap_n": -1.121681189857449,
+            "maximum_actual_minus_command_n": 0.1215169731163015,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "probe_transition": {
+            "samples": 1101,
+            "maximum_actual_minus_cap_n": 0.008314573116617652,
+            "maximum_actual_minus_command_n": 3.6121905812044535,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "deliberate_probe": {
+            "samples": 3002,
+            "maximum_actual_minus_cap_n": 0.9018537983705642,
+            "maximum_actual_minus_command_n": 0.9026170334506703,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "recovery": {
+            "samples": 0,
+            "maximum_actual_minus_cap_n": null,
+            "maximum_actual_minus_command_n": null,
+            "samples_above_declared_tracking_reserve": 0
+          }
+        },
+        "maximum_probe_com_displacement_m": 0.002113770780282018
+      },
+      "error": null
+    },
+    {
+      "trial_id": "fr_necessary_a_capacity34_fixed_probe_seed509",
+      "case_id": "fr_necessary_a_capacity34",
+      "strategy": "fixed_probe",
+      "seed": 509,
+      "family": "fr_necessary_a",
+      "condition_role": "held_out",
+      "status": "completed",
+      "run_dir": "/home/ibrahim/Documents/GO-2 PRIMP/primp_project/results/weak_pad/study_v2/trials/fr_necessary_a_capacity34_fixed_probe_seed509/weak_pad_fixed_probe_20260921T111529_820399Z",
+      "outcome": "SAFE_STOP",
+      "physical_success": false,
+      "expected_outcome_met": true,
+      "metrics": {
+        "duration_s": 33.01399999999438,
+        "probe_requested_shortfall_n": 47.58314763430261,
+        "maximum_certified_force_n": 11.848312463504435,
+        "maximum_actual_future_pad_force_n": 2.700772867786576,
+        "maximum_forward_com_motion_m": 0.0015265143971173317,
+        "maximum_next_foot_clearance_m": 1.4238756785245332e-05,
+        "simultaneous_progress_hold_s": 0.0,
+        "progress_window_samples": null,
+        "maximum_roll_pitch_deg": 1.070850796182286,
+        "maximum_pad_sink_m": -0.0,
+        "pad_failed": false,
+        "certificate_updates_audited": 1,
+        "stable_safe_stop_s": 3.002000000000135,
+        "probe_time_s": 8.206,
+        "recovery_time_s": 0.0,
+        "recovery_unload_delay_s": null,
+        "recovery_lift_m": 0.0,
+        "recovery_stable_hold_s": 0.0,
+        "certificate_invalidations": 0,
+        "additional_probe_count": 0,
+        "final_forward_com_motion_m": 0.0015265143971173317,
+        "terminal_mean_forward_com_motion_m": 0.0015195761550327088,
+        "simultaneous_progress_min_forward_m": null,
+        "simultaneous_progress_max_forward_m": null,
+        "simultaneous_progress_min_next_foot_clearance_m": null,
+        "tracking_gap_by_phase_group": {
+          "future_execution": {
+            "samples": 1501,
+            "maximum_actual_minus_cap_n": -1.1475395957178587,
+            "maximum_actual_minus_command_n": 0.12247666541944913,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "probe_transition": {
+            "samples": 1101,
+            "maximum_actual_minus_cap_n": -1.1608269365588644,
+            "maximum_actual_minus_command_n": 3.615352754964995,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "deliberate_probe": {
+            "samples": 3002,
+            "maximum_actual_minus_cap_n": 0.8941980939520267,
+            "maximum_actual_minus_command_n": 0.8949868980660342,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "recovery": {
+            "samples": 0,
+            "maximum_actual_minus_cap_n": null,
+            "maximum_actual_minus_command_n": null,
+            "samples_above_declared_tracking_reserve": 0
+          }
+        },
+        "maximum_probe_com_displacement_m": 0.002108662753022129
+      },
+      "error": null
+    },
+    {
+      "trial_id": "fr_necessary_a_capacity34_adaptive_force_fixed_posture_seed101",
+      "case_id": "fr_necessary_a_capacity34",
+      "strategy": "adaptive_force_fixed_posture",
+      "seed": 101,
+      "family": "fr_necessary_a",
+      "condition_role": "held_out",
+      "status": "completed",
+      "run_dir": "/home/ibrahim/Documents/GO-2 PRIMP/primp_project/results/weak_pad/study_v2/trials/fr_necessary_a_capacity34_adaptive_force_fixed_posture_seed101/weak_pad_adaptive_force_fixed_posture_20260921T111559_088856Z",
+      "outcome": "SAFE_STOP",
+      "physical_success": false,
+      "expected_outcome_met": true,
+      "metrics": {
+        "duration_s": 33.00999999999438,
+        "probe_requested_shortfall_n": 47.58490650209604,
+        "maximum_certified_force_n": 11.823535845532845,
+        "maximum_actual_future_pad_force_n": 2.701854655675396,
+        "maximum_forward_com_motion_m": 0.0015309052969440518,
+        "maximum_next_foot_clearance_m": 1.33334870165841e-05,
+        "simultaneous_progress_hold_s": 0.0,
+        "progress_window_samples": null,
+        "maximum_roll_pitch_deg": 1.0708507961822606,
+        "maximum_pad_sink_m": -0.0,
+        "pad_failed": false,
+        "certificate_updates_audited": 1,
+        "stable_safe_stop_s": 3.0020000000001277,
+        "probe_time_s": 8.206,
+        "recovery_time_s": 0.0,
+        "recovery_unload_delay_s": null,
+        "recovery_lift_m": 0.0,
+        "recovery_stable_hold_s": 0.0,
+        "certificate_invalidations": 0,
+        "additional_probe_count": 0,
+        "final_forward_com_motion_m": 0.0015309052969440518,
+        "terminal_mean_forward_com_motion_m": 0.001524004658132958,
+        "simultaneous_progress_min_forward_m": null,
+        "simultaneous_progress_max_forward_m": null,
+        "simultaneous_progress_min_next_foot_clearance_m": null,
+        "tracking_gap_by_phase_group": {
+          "future_execution": {
+            "samples": 1501,
+            "maximum_actual_minus_cap_n": -1.121681189857449,
+            "maximum_actual_minus_command_n": 0.1215169731163015,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "probe_transition": {
+            "samples": 1101,
+            "maximum_actual_minus_cap_n": 0.008314573116617652,
+            "maximum_actual_minus_command_n": 3.6121905812044535,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "deliberate_probe": {
+            "samples": 3002,
+            "maximum_actual_minus_cap_n": 0.9018537983705642,
+            "maximum_actual_minus_command_n": 0.9026170334506703,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "recovery": {
+            "samples": 0,
+            "maximum_actual_minus_cap_n": null,
+            "maximum_actual_minus_command_n": null,
+            "samples_above_declared_tracking_reserve": 0
+          }
+        },
+        "maximum_probe_com_displacement_m": 0.002113770780282018
+      },
+      "error": null
+    },
+    {
+      "trial_id": "fr_necessary_a_capacity34_adaptive_force_fixed_posture_seed509",
+      "case_id": "fr_necessary_a_capacity34",
+      "strategy": "adaptive_force_fixed_posture",
+      "seed": 509,
+      "family": "fr_necessary_a",
+      "condition_role": "held_out",
+      "status": "completed",
+      "run_dir": "/home/ibrahim/Documents/GO-2 PRIMP/primp_project/results/weak_pad/study_v2/trials/fr_necessary_a_capacity34_adaptive_force_fixed_posture_seed509/weak_pad_adaptive_force_fixed_posture_20260921T111600_322577Z",
+      "outcome": "SAFE_STOP",
+      "physical_success": false,
+      "expected_outcome_met": true,
+      "metrics": {
+        "duration_s": 33.01399999999438,
+        "probe_requested_shortfall_n": 47.58314763430261,
+        "maximum_certified_force_n": 11.848312463504435,
+        "maximum_actual_future_pad_force_n": 2.700772867786576,
+        "maximum_forward_com_motion_m": 0.0015265143971173317,
+        "maximum_next_foot_clearance_m": 1.4238756785245332e-05,
+        "simultaneous_progress_hold_s": 0.0,
+        "progress_window_samples": null,
+        "maximum_roll_pitch_deg": 1.070850796182286,
+        "maximum_pad_sink_m": -0.0,
+        "pad_failed": false,
+        "certificate_updates_audited": 1,
+        "stable_safe_stop_s": 3.002000000000135,
+        "probe_time_s": 8.206,
+        "recovery_time_s": 0.0,
+        "recovery_unload_delay_s": null,
+        "recovery_lift_m": 0.0,
+        "recovery_stable_hold_s": 0.0,
+        "certificate_invalidations": 0,
+        "additional_probe_count": 0,
+        "final_forward_com_motion_m": 0.0015265143971173317,
+        "terminal_mean_forward_com_motion_m": 0.0015195761550327088,
+        "simultaneous_progress_min_forward_m": null,
+        "simultaneous_progress_max_forward_m": null,
+        "simultaneous_progress_min_next_foot_clearance_m": null,
+        "tracking_gap_by_phase_group": {
+          "future_execution": {
+            "samples": 1501,
+            "maximum_actual_minus_cap_n": -1.1475395957178587,
+            "maximum_actual_minus_command_n": 0.12247666541944913,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "probe_transition": {
+            "samples": 1101,
+            "maximum_actual_minus_cap_n": -1.1608269365588644,
+            "maximum_actual_minus_command_n": 3.615352754964995,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "deliberate_probe": {
+            "samples": 3002,
+            "maximum_actual_minus_cap_n": 0.8941980939520267,
+            "maximum_actual_minus_command_n": 0.8949868980660342,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "recovery": {
+            "samples": 0,
+            "maximum_actual_minus_cap_n": null,
+            "maximum_actual_minus_command_n": null,
+            "samples_above_declared_tracking_reserve": 0
+          }
+        },
+        "maximum_probe_com_displacement_m": 0.002108662753022129
+      },
+      "error": null
+    },
+    {
+      "trial_id": "fr_necessary_a_capacity34_adaptive_probe_seed101",
+      "case_id": "fr_necessary_a_capacity34",
+      "strategy": "adaptive_probe",
+      "seed": 101,
+      "family": "fr_necessary_a",
+      "condition_role": "held_out",
+      "status": "completed",
+      "run_dir": "/home/ibrahim/Documents/GO-2 PRIMP/primp_project/results/weak_pad/study_v2/trials/fr_necessary_a_capacity34_adaptive_probe_seed101/weak_pad_adaptive_probe_20260921T111616_248612Z",
+      "outcome": "RECOVERED_STOP",
+      "physical_success": false,
+      "expected_outcome_met": true,
+      "metrics": {
+        "duration_s": 42.25200000000567,
+        "probe_requested_shortfall_n": 47.58490650209604,
+        "maximum_certified_force_n": 11.823535845532845,
+        "maximum_actual_future_pad_force_n": null,
+        "maximum_forward_com_motion_m": null,
+        "maximum_next_foot_clearance_m": null,
+        "simultaneous_progress_hold_s": 0.0,
+        "progress_window_samples": null,
+        "maximum_roll_pitch_deg": 1.0708507961822606,
+        "maximum_pad_sink_m": 0.05999999999999999,
+        "pad_failed": true,
+        "certificate_updates_audited": 1,
+        "stable_safe_stop_s": 0.0,
+        "probe_time_s": 15.346,
+        "recovery_time_s": 5.104,
+        "recovery_unload_delay_s": 0.0,
+        "recovery_lift_m": 0.03555913271912091,
+        "recovery_stable_hold_s": 3.320000000004055,
+        "certificate_invalidations": 1,
+        "additional_probe_count": 1,
+        "final_forward_com_motion_m": 0.08665561200680792,
+        "terminal_mean_forward_com_motion_m": 0.08663514125003942,
+        "simultaneous_progress_min_forward_m": null,
+        "simultaneous_progress_max_forward_m": null,
+        "simultaneous_progress_min_next_foot_clearance_m": null,
+        "tracking_gap_by_phase_group": {
+          "future_execution": {
+            "samples": 0,
+            "maximum_actual_minus_cap_n": null,
+            "maximum_actual_minus_command_n": null,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "probe_transition": {
+            "samples": 3572,
+            "maximum_actual_minus_cap_n": 6.429832811950357,
+            "maximum_actual_minus_command_n": 6.643725851251135,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "deliberate_probe": {
+            "samples": 4101,
+            "maximum_actual_minus_cap_n": 3.3413991590284544,
+            "maximum_actual_minus_command_n": 3.3413991637195952,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "recovery": {
+            "samples": 2552,
+            "maximum_actual_minus_cap_n": 0.0,
+            "maximum_actual_minus_command_n": 0.0,
+            "samples_above_declared_tracking_reserve": 0
+          }
+        },
+        "maximum_probe_com_displacement_m": 0.09105069003144554
+      },
+      "error": null
+    },
+    {
+      "trial_id": "fr_necessary_a_capacity34_adaptive_probe_seed509",
+      "case_id": "fr_necessary_a_capacity34",
+      "strategy": "adaptive_probe",
+      "seed": 509,
+      "family": "fr_necessary_a",
+      "condition_role": "held_out",
+      "status": "completed",
+      "run_dir": "/home/ibrahim/Documents/GO-2 PRIMP/primp_project/results/weak_pad/study_v2/trials/fr_necessary_a_capacity34_adaptive_probe_seed509/weak_pad_adaptive_probe_20260921T111616_413472Z",
+      "outcome": "RECOVERED_STOP",
+      "physical_success": false,
+      "expected_outcome_met": true,
+      "metrics": {
+        "duration_s": 42.254000000005675,
+        "probe_requested_shortfall_n": 47.58314763430261,
+        "maximum_certified_force_n": 11.848312463504435,
+        "maximum_actual_future_pad_force_n": null,
+        "maximum_forward_com_motion_m": null,
+        "maximum_next_foot_clearance_m": null,
+        "simultaneous_progress_hold_s": 0.0,
+        "progress_window_samples": null,
+        "maximum_roll_pitch_deg": 1.070850796182286,
+        "maximum_pad_sink_m": 0.05999999999999999,
+        "pad_failed": true,
+        "certificate_updates_audited": 1,
+        "stable_safe_stop_s": 0.0,
+        "probe_time_s": 15.344000000000001,
+        "recovery_time_s": 5.104,
+        "recovery_unload_delay_s": 0.0,
+        "recovery_lift_m": 0.035650447158169535,
+        "recovery_stable_hold_s": 3.3240000000040597,
+        "certificate_invalidations": 1,
+        "additional_probe_count": 1,
+        "final_forward_com_motion_m": 0.08666477889437536,
+        "terminal_mean_forward_com_motion_m": 0.08664428847010422,
+        "simultaneous_progress_min_forward_m": null,
+        "simultaneous_progress_max_forward_m": null,
+        "simultaneous_progress_min_next_foot_clearance_m": null,
+        "tracking_gap_by_phase_group": {
+          "future_execution": {
+            "samples": 0,
+            "maximum_actual_minus_cap_n": null,
+            "maximum_actual_minus_command_n": null,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "probe_transition": {
+            "samples": 3571,
+            "maximum_actual_minus_cap_n": 6.42721516022851,
+            "maximum_actual_minus_command_n": 6.643219363348637,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "deliberate_probe": {
+            "samples": 4101,
+            "maximum_actual_minus_cap_n": 3.432427122028641,
+            "maximum_actual_minus_command_n": 3.4327937765721575,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "recovery": {
+            "samples": 2552,
+            "maximum_actual_minus_cap_n": 0.0,
+            "maximum_actual_minus_command_n": 0.0,
+            "samples_above_declared_tracking_reserve": 0
+          }
+        },
+        "maximum_probe_com_displacement_m": 0.09106009783006228
+      },
+      "error": null
+    },
+    {
+      "trial_id": "fr_necessary_b_capacity62_fixed_probe_seed101",
+      "case_id": "fr_necessary_b_capacity62",
+      "strategy": "fixed_probe",
+      "seed": 101,
+      "family": "fr_necessary_b",
+      "condition_role": "held_out",
+      "status": "completed",
+      "run_dir": "/home/ibrahim/Documents/GO-2 PRIMP/primp_project/results/weak_pad/study_v2/trials/fr_necessary_b_capacity62_fixed_probe_seed101/weak_pad_fixed_probe_20260921T111646_609402Z",
+      "outcome": "SAFE_STOP",
+      "physical_success": false,
+      "expected_outcome_met": true,
+      "metrics": {
+        "duration_s": 33.253999999994676,
+        "probe_requested_shortfall_n": 47.70276585997759,
+        "maximum_certified_force_n": 10.509710938437186,
+        "maximum_actual_future_pad_force_n": 2.4987728132734537,
+        "maximum_forward_com_motion_m": 0.0019253011930912833,
+        "maximum_next_foot_clearance_m": -4.56537741456986e-05,
+        "simultaneous_progress_hold_s": 0.0,
+        "progress_window_samples": null,
+        "maximum_roll_pitch_deg": 1.0971042920286274,
+        "maximum_pad_sink_m": -0.0,
+        "pad_failed": false,
+        "certificate_updates_audited": 1,
+        "stable_safe_stop_s": 3.002000000000561,
+        "probe_time_s": 8.206,
+        "recovery_time_s": 0.0,
+        "recovery_unload_delay_s": null,
+        "recovery_lift_m": 0.0,
+        "recovery_stable_hold_s": 0.0,
+        "certificate_invalidations": 0,
+        "additional_probe_count": 0,
+        "final_forward_com_motion_m": 0.001808423101626877,
+        "terminal_mean_forward_com_motion_m": 0.0018095718878953378,
+        "simultaneous_progress_min_forward_m": null,
+        "simultaneous_progress_max_forward_m": null,
+        "simultaneous_progress_min_next_foot_clearance_m": null,
+        "tracking_gap_by_phase_group": {
+          "future_execution": {
+            "samples": 1501,
+            "maximum_actual_minus_cap_n": -0.01093812516373216,
+            "maximum_actual_minus_command_n": -0.004682009646028273,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "probe_transition": {
+            "samples": 1101,
+            "maximum_actual_minus_cap_n": 0.049500728651934,
+            "maximum_actual_minus_command_n": 3.2923075736246954,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "deliberate_probe": {
+            "samples": 3002,
+            "maximum_actual_minus_cap_n": 1.6359642090376736,
+            "maximum_actual_minus_command_n": 1.6367819505210819,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "recovery": {
+            "samples": 0,
+            "maximum_actual_minus_cap_n": null,
+            "maximum_actual_minus_command_n": null,
+            "samples_above_declared_tracking_reserve": 0
+          }
+        },
+        "maximum_probe_com_displacement_m": 0.002907438259036519
+      },
+      "error": null
+    },
+    {
+      "trial_id": "fr_necessary_b_capacity62_fixed_probe_seed509",
+      "case_id": "fr_necessary_b_capacity62",
+      "strategy": "fixed_probe",
+      "seed": 509,
+      "family": "fr_necessary_b",
+      "condition_role": "held_out",
+      "status": "completed",
+      "run_dir": "/home/ibrahim/Documents/GO-2 PRIMP/primp_project/results/weak_pad/study_v2/trials/fr_necessary_b_capacity62_fixed_probe_seed509/weak_pad_fixed_probe_20260921T111648_504064Z",
+      "outcome": "SAFE_STOP",
+      "physical_success": false,
+      "expected_outcome_met": true,
+      "metrics": {
+        "duration_s": 33.219999999994634,
+        "probe_requested_shortfall_n": 47.71768295461665,
+        "maximum_certified_force_n": 10.493456232478128,
+        "maximum_actual_future_pad_force_n": 2.480190813368309,
+        "maximum_forward_com_motion_m": 0.0019062339532350814,
+        "maximum_next_foot_clearance_m": -4.28793437512176e-05,
+        "simultaneous_progress_hold_s": 0.0,
+        "progress_window_samples": null,
+        "maximum_roll_pitch_deg": 1.0971042920286274,
+        "maximum_pad_sink_m": -0.0,
+        "pad_failed": false,
+        "certificate_updates_audited": 1,
+        "stable_safe_stop_s": 3.0020000000005007,
+        "probe_time_s": 8.206,
+        "recovery_time_s": 0.0,
+        "recovery_unload_delay_s": null,
+        "recovery_lift_m": 0.0,
+        "recovery_stable_hold_s": 0.0,
+        "certificate_invalidations": 0,
+        "additional_probe_count": 0,
+        "final_forward_com_motion_m": 0.0017861604148698695,
+        "terminal_mean_forward_com_motion_m": 0.001787501757380569,
+        "simultaneous_progress_min_forward_m": null,
+        "simultaneous_progress_max_forward_m": null,
+        "simultaneous_progress_min_next_foot_clearance_m": null,
+        "tracking_gap_by_phase_group": {
+          "future_execution": {
+            "samples": 1501,
+            "maximum_actual_minus_cap_n": -0.013265419109818488,
+            "maximum_actual_minus_command_n": -0.007095527895235154,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "probe_transition": {
+            "samples": 1101,
+            "maximum_actual_minus_cap_n": 0.04730913918619484,
+            "maximum_actual_minus_command_n": 3.2746881092196336,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "deliberate_probe": {
+            "samples": 3002,
+            "maximum_actual_minus_cap_n": 1.5683346109421854,
+            "maximum_actual_minus_command_n": 1.5695640855846849,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "recovery": {
+            "samples": 0,
+            "maximum_actual_minus_cap_n": null,
+            "maximum_actual_minus_command_n": null,
+            "samples_above_declared_tracking_reserve": 0
+          }
+        },
+        "maximum_probe_com_displacement_m": 0.0028692438517007274
+      },
+      "error": null
+    },
+    {
+      "trial_id": "fr_necessary_b_capacity62_adaptive_force_fixed_posture_seed101",
+      "case_id": "fr_necessary_b_capacity62",
+      "strategy": "adaptive_force_fixed_posture",
+      "seed": 101,
+      "family": "fr_necessary_b",
+      "condition_role": "held_out",
+      "status": "completed",
+      "run_dir": "/home/ibrahim/Documents/GO-2 PRIMP/primp_project/results/weak_pad/study_v2/trials/fr_necessary_b_capacity62_adaptive_force_fixed_posture_seed101/weak_pad_adaptive_force_fixed_posture_20260921T111715_453911Z",
+      "outcome": "SAFE_STOP",
+      "physical_success": false,
+      "expected_outcome_met": true,
+      "metrics": {
+        "duration_s": 33.253999999994676,
+        "probe_requested_shortfall_n": 47.70276585997759,
+        "maximum_certified_force_n": 10.509710938437186,
+        "maximum_actual_future_pad_force_n": 2.4987728132734537,
+        "maximum_forward_com_motion_m": 0.0019253011930912833,
+        "maximum_next_foot_clearance_m": -4.56537741456986e-05,
+        "simultaneous_progress_hold_s": 0.0,
+        "progress_window_samples": null,
+        "maximum_roll_pitch_deg": 1.0971042920286274,
+        "maximum_pad_sink_m": -0.0,
+        "pad_failed": false,
+        "certificate_updates_audited": 1,
+        "stable_safe_stop_s": 3.002000000000561,
+        "probe_time_s": 8.206,
+        "recovery_time_s": 0.0,
+        "recovery_unload_delay_s": null,
+        "recovery_lift_m": 0.0,
+        "recovery_stable_hold_s": 0.0,
+        "certificate_invalidations": 0,
+        "additional_probe_count": 0,
+        "final_forward_com_motion_m": 0.001808423101626877,
+        "terminal_mean_forward_com_motion_m": 0.0018095718878953378,
+        "simultaneous_progress_min_forward_m": null,
+        "simultaneous_progress_max_forward_m": null,
+        "simultaneous_progress_min_next_foot_clearance_m": null,
+        "tracking_gap_by_phase_group": {
+          "future_execution": {
+            "samples": 1501,
+            "maximum_actual_minus_cap_n": -0.01093812516373216,
+            "maximum_actual_minus_command_n": -0.004682009646028273,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "probe_transition": {
+            "samples": 1101,
+            "maximum_actual_minus_cap_n": 0.049500728651934,
+            "maximum_actual_minus_command_n": 3.2923075736246954,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "deliberate_probe": {
+            "samples": 3002,
+            "maximum_actual_minus_cap_n": 1.6359642090376736,
+            "maximum_actual_minus_command_n": 1.6367819505210819,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "recovery": {
+            "samples": 0,
+            "maximum_actual_minus_cap_n": null,
+            "maximum_actual_minus_command_n": null,
+            "samples_above_declared_tracking_reserve": 0
+          }
+        },
+        "maximum_probe_com_displacement_m": 0.002907438259036519
+      },
+      "error": null
+    },
+    {
+      "trial_id": "fr_necessary_b_capacity62_adaptive_force_fixed_posture_seed509",
+      "case_id": "fr_necessary_b_capacity62",
+      "strategy": "adaptive_force_fixed_posture",
+      "seed": 509,
+      "family": "fr_necessary_b",
+      "condition_role": "held_out",
+      "status": "completed",
+      "run_dir": "/home/ibrahim/Documents/GO-2 PRIMP/primp_project/results/weak_pad/study_v2/trials/fr_necessary_b_capacity62_adaptive_force_fixed_posture_seed509/weak_pad_adaptive_force_fixed_posture_20260921T111717_314546Z",
+      "outcome": "SAFE_STOP",
+      "physical_success": false,
+      "expected_outcome_met": true,
+      "metrics": {
+        "duration_s": 33.219999999994634,
+        "probe_requested_shortfall_n": 47.71768295461665,
+        "maximum_certified_force_n": 10.493456232478128,
+        "maximum_actual_future_pad_force_n": 2.480190813368309,
+        "maximum_forward_com_motion_m": 0.0019062339532350814,
+        "maximum_next_foot_clearance_m": -4.28793437512176e-05,
+        "simultaneous_progress_hold_s": 0.0,
+        "progress_window_samples": null,
+        "maximum_roll_pitch_deg": 1.0971042920286274,
+        "maximum_pad_sink_m": -0.0,
+        "pad_failed": false,
+        "certificate_updates_audited": 1,
+        "stable_safe_stop_s": 3.0020000000005007,
+        "probe_time_s": 8.206,
+        "recovery_time_s": 0.0,
+        "recovery_unload_delay_s": null,
+        "recovery_lift_m": 0.0,
+        "recovery_stable_hold_s": 0.0,
+        "certificate_invalidations": 0,
+        "additional_probe_count": 0,
+        "final_forward_com_motion_m": 0.0017861604148698695,
+        "terminal_mean_forward_com_motion_m": 0.001787501757380569,
+        "simultaneous_progress_min_forward_m": null,
+        "simultaneous_progress_max_forward_m": null,
+        "simultaneous_progress_min_next_foot_clearance_m": null,
+        "tracking_gap_by_phase_group": {
+          "future_execution": {
+            "samples": 1501,
+            "maximum_actual_minus_cap_n": -0.013265419109818488,
+            "maximum_actual_minus_command_n": -0.007095527895235154,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "probe_transition": {
+            "samples": 1101,
+            "maximum_actual_minus_cap_n": 0.04730913918619484,
+            "maximum_actual_minus_command_n": 3.2746881092196336,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "deliberate_probe": {
+            "samples": 3002,
+            "maximum_actual_minus_cap_n": 1.5683346109421854,
+            "maximum_actual_minus_command_n": 1.5695640855846849,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "recovery": {
+            "samples": 0,
+            "maximum_actual_minus_cap_n": null,
+            "maximum_actual_minus_command_n": null,
+            "samples_above_declared_tracking_reserve": 0
+          }
+        },
+        "maximum_probe_com_displacement_m": 0.0028692438517007274
+      },
+      "error": null
+    },
+    {
+      "trial_id": "fr_necessary_b_capacity62_adaptive_probe_seed101",
+      "case_id": "fr_necessary_b_capacity62",
+      "strategy": "adaptive_probe",
+      "seed": 101,
+      "family": "fr_necessary_b",
+      "condition_role": "held_out",
+      "status": "completed",
+      "run_dir": "/home/ibrahim/Documents/GO-2 PRIMP/primp_project/results/weak_pad/study_v2/trials/fr_necessary_b_capacity62_adaptive_probe_seed101/weak_pad_adaptive_probe_20260921T111734_321818Z",
+      "outcome": "SUCCESS",
+      "physical_success": true,
+      "expected_outcome_met": true,
+      "metrics": {
+        "duration_s": 57.366000000024144,
+        "probe_requested_shortfall_n": 47.70276585997759,
+        "maximum_certified_force_n": 51.63274298108838,
+        "maximum_actual_future_pad_force_n": 40.900886739144894,
+        "maximum_forward_com_motion_m": 0.08980295411651992,
+        "maximum_next_foot_clearance_m": 0.0296589718750008,
+        "simultaneous_progress_hold_s": 3.122000000003813,
+        "progress_window_samples": [
+          27122,
+          28682
+        ],
+        "maximum_roll_pitch_deg": 1.0971042920286274,
+        "maximum_pad_sink_m": -0.0,
+        "pad_failed": false,
+        "certificate_updates_audited": 2,
+        "stable_safe_stop_s": 0.0,
+        "probe_time_s": 21.458000000000002,
+        "recovery_time_s": 0.0,
+        "recovery_unload_delay_s": null,
+        "recovery_lift_m": 0.0,
+        "recovery_stable_hold_s": 0.0,
+        "certificate_invalidations": 0,
+        "additional_probe_count": 1,
+        "final_forward_com_motion_m": 0.03988497663257899,
+        "terminal_mean_forward_com_motion_m": 0.03991190246332732,
+        "simultaneous_progress_min_forward_m": 0.03988497663257899,
+        "simultaneous_progress_max_forward_m": 0.04043559110912328,
+        "simultaneous_progress_min_next_foot_clearance_m": 0.02002823543190796,
+        "tracking_gap_by_phase_group": {
+          "future_execution": {
+            "samples": 6931,
+            "maximum_actual_minus_cap_n": -2.7318562419434826,
+            "maximum_actual_minus_command_n": 0.8441900913514679,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "probe_transition": {
+            "samples": 4727,
+            "maximum_actual_minus_cap_n": 6.545587504381144,
+            "maximum_actual_minus_command_n": 7.602702671549416,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "deliberate_probe": {
+            "samples": 6002,
+            "maximum_actual_minus_cap_n": 3.313747350987362,
+            "maximum_actual_minus_command_n": 3.3137488364124645,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "recovery": {
+            "samples": 0,
+            "maximum_actual_minus_cap_n": null,
+            "maximum_actual_minus_command_n": null,
+            "samples_above_declared_tracking_reserve": 0
+          }
+        },
+        "maximum_probe_com_displacement_m": 0.09562590531840977
+      },
+      "error": null
+    },
+    {
+      "trial_id": "fr_necessary_b_capacity62_adaptive_probe_seed509",
+      "case_id": "fr_necessary_b_capacity62",
+      "strategy": "adaptive_probe",
+      "seed": 509,
+      "family": "fr_necessary_b",
+      "condition_role": "held_out",
+      "status": "completed",
+      "run_dir": "/home/ibrahim/Documents/GO-2 PRIMP/primp_project/results/weak_pad/study_v2/trials/fr_necessary_b_capacity62_adaptive_probe_seed509/weak_pad_adaptive_probe_20260921T111736_148285Z",
+      "outcome": "SUCCESS",
+      "physical_success": true,
+      "expected_outcome_met": true,
+      "metrics": {
+        "duration_s": 57.334000000024105,
+        "probe_requested_shortfall_n": 47.71768295461665,
+        "maximum_certified_force_n": 51.61541690643489,
+        "maximum_actual_future_pad_force_n": 40.93829971498142,
+        "maximum_forward_com_motion_m": 0.08977032816866615,
+        "maximum_next_foot_clearance_m": 0.029658823539918305,
+        "simultaneous_progress_hold_s": 3.122000000003813,
+        "progress_window_samples": [
+          27106,
+          28666
+        ],
+        "maximum_roll_pitch_deg": 1.0971042920286274,
+        "maximum_pad_sink_m": -0.0,
+        "pad_failed": false,
+        "certificate_updates_audited": 2,
+        "stable_safe_stop_s": 0.0,
+        "probe_time_s": 21.462,
+        "recovery_time_s": 0.0,
+        "recovery_unload_delay_s": null,
+        "recovery_lift_m": 0.0,
+        "recovery_stable_hold_s": 0.0,
+        "certificate_invalidations": 0,
+        "additional_probe_count": 1,
+        "final_forward_com_motion_m": 0.03988415004142683,
+        "terminal_mean_forward_com_motion_m": 0.03991106899328317,
+        "simultaneous_progress_min_forward_m": 0.03988415004142683,
+        "simultaneous_progress_max_forward_m": 0.04043477468493567,
+        "simultaneous_progress_min_next_foot_clearance_m": 0.020028379493731263,
+        "tracking_gap_by_phase_group": {
+          "future_execution": {
+            "samples": 6930,
+            "maximum_actual_minus_cap_n": -2.677117191453469,
+            "maximum_actual_minus_command_n": 0.8442483867549377,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "probe_transition": {
+            "samples": 4729,
+            "maximum_actual_minus_cap_n": 6.546769497435969,
+            "maximum_actual_minus_command_n": 7.6017547186404,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "deliberate_probe": {
+            "samples": 6002,
+            "maximum_actual_minus_cap_n": 3.3130752859069776,
+            "maximum_actual_minus_command_n": 3.313076905690291,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "recovery": {
+            "samples": 0,
+            "maximum_actual_minus_cap_n": null,
+            "maximum_actual_minus_command_n": null,
+            "samples_above_declared_tracking_reserve": 0
+          }
+        },
+        "maximum_probe_com_displacement_m": 0.09562426139139399
+      },
+      "error": null
+    },
+    {
+      "trial_id": "fr_necessary_b_capacity29_fixed_probe_seed101",
+      "case_id": "fr_necessary_b_capacity29",
+      "strategy": "fixed_probe",
+      "seed": 101,
+      "family": "fr_necessary_b",
+      "condition_role": "held_out",
+      "status": "completed",
+      "run_dir": "/home/ibrahim/Documents/GO-2 PRIMP/primp_project/results/weak_pad/study_v2/trials/fr_necessary_b_capacity29_fixed_probe_seed101/weak_pad_fixed_probe_20260921T111802_975165Z",
+      "outcome": "SAFE_STOP",
+      "physical_success": false,
+      "expected_outcome_met": true,
+      "metrics": {
+        "duration_s": 33.253999999994676,
+        "probe_requested_shortfall_n": 47.70276585997759,
+        "maximum_certified_force_n": 10.509710938437186,
+        "maximum_actual_future_pad_force_n": 2.4987728132734537,
+        "maximum_forward_com_motion_m": 0.0019253011930912833,
+        "maximum_next_foot_clearance_m": -4.56537741456986e-05,
+        "simultaneous_progress_hold_s": 0.0,
+        "progress_window_samples": null,
+        "maximum_roll_pitch_deg": 1.0971042920286274,
+        "maximum_pad_sink_m": -0.0,
+        "pad_failed": false,
+        "certificate_updates_audited": 1,
+        "stable_safe_stop_s": 3.002000000000561,
+        "probe_time_s": 8.206,
+        "recovery_time_s": 0.0,
+        "recovery_unload_delay_s": null,
+        "recovery_lift_m": 0.0,
+        "recovery_stable_hold_s": 0.0,
+        "certificate_invalidations": 0,
+        "additional_probe_count": 0,
+        "final_forward_com_motion_m": 0.001808423101626877,
+        "terminal_mean_forward_com_motion_m": 0.0018095718878953378,
+        "simultaneous_progress_min_forward_m": null,
+        "simultaneous_progress_max_forward_m": null,
+        "simultaneous_progress_min_next_foot_clearance_m": null,
+        "tracking_gap_by_phase_group": {
+          "future_execution": {
+            "samples": 1501,
+            "maximum_actual_minus_cap_n": -0.01093812516373216,
+            "maximum_actual_minus_command_n": -0.004682009646028273,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "probe_transition": {
+            "samples": 1101,
+            "maximum_actual_minus_cap_n": 0.049500728651934,
+            "maximum_actual_minus_command_n": 3.2923075736246954,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "deliberate_probe": {
+            "samples": 3002,
+            "maximum_actual_minus_cap_n": 1.6359642090376736,
+            "maximum_actual_minus_command_n": 1.6367819505210819,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "recovery": {
+            "samples": 0,
+            "maximum_actual_minus_cap_n": null,
+            "maximum_actual_minus_command_n": null,
+            "samples_above_declared_tracking_reserve": 0
+          }
+        },
+        "maximum_probe_com_displacement_m": 0.002907438259036519
+      },
+      "error": null
+    },
+    {
+      "trial_id": "fr_necessary_b_capacity29_fixed_probe_seed509",
+      "case_id": "fr_necessary_b_capacity29",
+      "strategy": "fixed_probe",
+      "seed": 509,
+      "family": "fr_necessary_b",
+      "condition_role": "held_out",
+      "status": "completed",
+      "run_dir": "/home/ibrahim/Documents/GO-2 PRIMP/primp_project/results/weak_pad/study_v2/trials/fr_necessary_b_capacity29_fixed_probe_seed509/weak_pad_fixed_probe_20260921T111804_494151Z",
+      "outcome": "SAFE_STOP",
+      "physical_success": false,
+      "expected_outcome_met": true,
+      "metrics": {
+        "duration_s": 33.219999999994634,
+        "probe_requested_shortfall_n": 47.71768295461665,
+        "maximum_certified_force_n": 10.493456232478128,
+        "maximum_actual_future_pad_force_n": 2.480190813368309,
+        "maximum_forward_com_motion_m": 0.0019062339532350814,
+        "maximum_next_foot_clearance_m": -4.28793437512176e-05,
+        "simultaneous_progress_hold_s": 0.0,
+        "progress_window_samples": null,
+        "maximum_roll_pitch_deg": 1.0971042920286274,
+        "maximum_pad_sink_m": -0.0,
+        "pad_failed": false,
+        "certificate_updates_audited": 1,
+        "stable_safe_stop_s": 3.0020000000005007,
+        "probe_time_s": 8.206,
+        "recovery_time_s": 0.0,
+        "recovery_unload_delay_s": null,
+        "recovery_lift_m": 0.0,
+        "recovery_stable_hold_s": 0.0,
+        "certificate_invalidations": 0,
+        "additional_probe_count": 0,
+        "final_forward_com_motion_m": 0.0017861604148698695,
+        "terminal_mean_forward_com_motion_m": 0.001787501757380569,
+        "simultaneous_progress_min_forward_m": null,
+        "simultaneous_progress_max_forward_m": null,
+        "simultaneous_progress_min_next_foot_clearance_m": null,
+        "tracking_gap_by_phase_group": {
+          "future_execution": {
+            "samples": 1501,
+            "maximum_actual_minus_cap_n": -0.013265419109818488,
+            "maximum_actual_minus_command_n": -0.007095527895235154,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "probe_transition": {
+            "samples": 1101,
+            "maximum_actual_minus_cap_n": 0.04730913918619484,
+            "maximum_actual_minus_command_n": 3.2746881092196336,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "deliberate_probe": {
+            "samples": 3002,
+            "maximum_actual_minus_cap_n": 1.5683346109421854,
+            "maximum_actual_minus_command_n": 1.5695640855846849,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "recovery": {
+            "samples": 0,
+            "maximum_actual_minus_cap_n": null,
+            "maximum_actual_minus_command_n": null,
+            "samples_above_declared_tracking_reserve": 0
+          }
+        },
+        "maximum_probe_com_displacement_m": 0.0028692438517007274
+      },
+      "error": null
+    },
+    {
+      "trial_id": "fr_necessary_b_capacity29_adaptive_force_fixed_posture_seed101",
+      "case_id": "fr_necessary_b_capacity29",
+      "strategy": "adaptive_force_fixed_posture",
+      "seed": 101,
+      "family": "fr_necessary_b",
+      "condition_role": "held_out",
+      "status": "completed",
+      "run_dir": "/home/ibrahim/Documents/GO-2 PRIMP/primp_project/results/weak_pad/study_v2/trials/fr_necessary_b_capacity29_adaptive_force_fixed_posture_seed101/weak_pad_adaptive_force_fixed_posture_20260921T111851_731513Z",
+      "outcome": "SAFE_STOP",
+      "physical_success": false,
+      "expected_outcome_met": true,
+      "metrics": {
+        "duration_s": 33.253999999994676,
+        "probe_requested_shortfall_n": 47.70276585997759,
+        "maximum_certified_force_n": 10.509710938437186,
+        "maximum_actual_future_pad_force_n": 2.4987728132734537,
+        "maximum_forward_com_motion_m": 0.0019253011930912833,
+        "maximum_next_foot_clearance_m": -4.56537741456986e-05,
+        "simultaneous_progress_hold_s": 0.0,
+        "progress_window_samples": null,
+        "maximum_roll_pitch_deg": 1.0971042920286274,
+        "maximum_pad_sink_m": -0.0,
+        "pad_failed": false,
+        "certificate_updates_audited": 1,
+        "stable_safe_stop_s": 3.002000000000561,
+        "probe_time_s": 8.206,
+        "recovery_time_s": 0.0,
+        "recovery_unload_delay_s": null,
+        "recovery_lift_m": 0.0,
+        "recovery_stable_hold_s": 0.0,
+        "certificate_invalidations": 0,
+        "additional_probe_count": 0,
+        "final_forward_com_motion_m": 0.001808423101626877,
+        "terminal_mean_forward_com_motion_m": 0.0018095718878953378,
+        "simultaneous_progress_min_forward_m": null,
+        "simultaneous_progress_max_forward_m": null,
+        "simultaneous_progress_min_next_foot_clearance_m": null,
+        "tracking_gap_by_phase_group": {
+          "future_execution": {
+            "samples": 1501,
+            "maximum_actual_minus_cap_n": -0.01093812516373216,
+            "maximum_actual_minus_command_n": -0.004682009646028273,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "probe_transition": {
+            "samples": 1101,
+            "maximum_actual_minus_cap_n": 0.049500728651934,
+            "maximum_actual_minus_command_n": 3.2923075736246954,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "deliberate_probe": {
+            "samples": 3002,
+            "maximum_actual_minus_cap_n": 1.6359642090376736,
+            "maximum_actual_minus_command_n": 1.6367819505210819,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "recovery": {
+            "samples": 0,
+            "maximum_actual_minus_cap_n": null,
+            "maximum_actual_minus_command_n": null,
+            "samples_above_declared_tracking_reserve": 0
+          }
+        },
+        "maximum_probe_com_displacement_m": 0.002907438259036519
+      },
+      "error": null
+    },
+    {
+      "trial_id": "fr_necessary_b_capacity29_adaptive_force_fixed_posture_seed509",
+      "case_id": "fr_necessary_b_capacity29",
+      "strategy": "adaptive_force_fixed_posture",
+      "seed": 509,
+      "family": "fr_necessary_b",
+      "condition_role": "held_out",
+      "status": "completed",
+      "run_dir": "/home/ibrahim/Documents/GO-2 PRIMP/primp_project/results/weak_pad/study_v2/trials/fr_necessary_b_capacity29_adaptive_force_fixed_posture_seed509/weak_pad_adaptive_force_fixed_posture_20260921T111853_129646Z",
+      "outcome": "SAFE_STOP",
+      "physical_success": false,
+      "expected_outcome_met": true,
+      "metrics": {
+        "duration_s": 33.219999999994634,
+        "probe_requested_shortfall_n": 47.71768295461665,
+        "maximum_certified_force_n": 10.493456232478128,
+        "maximum_actual_future_pad_force_n": 2.480190813368309,
+        "maximum_forward_com_motion_m": 0.0019062339532350814,
+        "maximum_next_foot_clearance_m": -4.28793437512176e-05,
+        "simultaneous_progress_hold_s": 0.0,
+        "progress_window_samples": null,
+        "maximum_roll_pitch_deg": 1.0971042920286274,
+        "maximum_pad_sink_m": -0.0,
+        "pad_failed": false,
+        "certificate_updates_audited": 1,
+        "stable_safe_stop_s": 3.0020000000005007,
+        "probe_time_s": 8.206,
+        "recovery_time_s": 0.0,
+        "recovery_unload_delay_s": null,
+        "recovery_lift_m": 0.0,
+        "recovery_stable_hold_s": 0.0,
+        "certificate_invalidations": 0,
+        "additional_probe_count": 0,
+        "final_forward_com_motion_m": 0.0017861604148698695,
+        "terminal_mean_forward_com_motion_m": 0.001787501757380569,
+        "simultaneous_progress_min_forward_m": null,
+        "simultaneous_progress_max_forward_m": null,
+        "simultaneous_progress_min_next_foot_clearance_m": null,
+        "tracking_gap_by_phase_group": {
+          "future_execution": {
+            "samples": 1501,
+            "maximum_actual_minus_cap_n": -0.013265419109818488,
+            "maximum_actual_minus_command_n": -0.007095527895235154,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "probe_transition": {
+            "samples": 1101,
+            "maximum_actual_minus_cap_n": 0.04730913918619484,
+            "maximum_actual_minus_command_n": 3.2746881092196336,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "deliberate_probe": {
+            "samples": 3002,
+            "maximum_actual_minus_cap_n": 1.5683346109421854,
+            "maximum_actual_minus_command_n": 1.5695640855846849,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "recovery": {
+            "samples": 0,
+            "maximum_actual_minus_cap_n": null,
+            "maximum_actual_minus_command_n": null,
+            "samples_above_declared_tracking_reserve": 0
+          }
+        },
+        "maximum_probe_com_displacement_m": 0.0028692438517007274
+      },
+      "error": null
+    },
+    {
+      "trial_id": "fr_necessary_b_capacity29_adaptive_probe_seed101",
+      "case_id": "fr_necessary_b_capacity29",
+      "strategy": "adaptive_probe",
+      "seed": 101,
+      "family": "fr_necessary_b",
+      "condition_role": "held_out",
+      "status": "completed",
+      "run_dir": "/home/ibrahim/Documents/GO-2 PRIMP/primp_project/results/weak_pad/study_v2/trials/fr_necessary_b_capacity29_adaptive_probe_seed101/weak_pad_adaptive_probe_20260921T111853_495367Z",
+      "outcome": "RECOVERED_STOP",
+      "physical_success": false,
+      "expected_outcome_met": true,
+      "metrics": {
+        "duration_s": 42.402000000005856,
+        "probe_requested_shortfall_n": 47.70276585997759,
+        "maximum_certified_force_n": 10.509710938437186,
+        "maximum_actual_future_pad_force_n": null,
+        "maximum_forward_com_motion_m": null,
+        "maximum_next_foot_clearance_m": null,
+        "simultaneous_progress_hold_s": 0.0,
+        "progress_window_samples": null,
+        "maximum_roll_pitch_deg": 1.0971042920286274,
+        "maximum_pad_sink_m": 0.05999999999999999,
+        "pad_failed": true,
+        "certificate_updates_audited": 1,
+        "stable_safe_stop_s": 0.0,
+        "probe_time_s": 15.252,
+        "recovery_time_s": 5.104,
+        "recovery_unload_delay_s": 0.0,
+        "recovery_lift_m": 0.035267934506325704,
+        "recovery_stable_hold_s": 3.3140000000040475,
+        "certificate_invalidations": 1,
+        "additional_probe_count": 1,
+        "final_forward_com_motion_m": 0.0836188234872085,
+        "terminal_mean_forward_com_motion_m": 0.08359829829214264,
+        "simultaneous_progress_min_forward_m": null,
+        "simultaneous_progress_max_forward_m": null,
+        "simultaneous_progress_min_next_foot_clearance_m": null,
+        "tracking_gap_by_phase_group": {
+          "future_execution": {
+            "samples": 0,
+            "maximum_actual_minus_cap_n": null,
+            "maximum_actual_minus_command_n": null,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "probe_transition": {
+            "samples": 3627,
+            "maximum_actual_minus_cap_n": 6.545587504381144,
+            "maximum_actual_minus_command_n": 6.586418472399309,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "deliberate_probe": {
+            "samples": 3999,
+            "maximum_actual_minus_cap_n": 3.313747350987362,
+            "maximum_actual_minus_command_n": 3.3137488364124645,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "recovery": {
+            "samples": 2552,
+            "maximum_actual_minus_cap_n": 0.0,
+            "maximum_actual_minus_command_n": 0.0,
+            "samples_above_declared_tracking_reserve": 0
+          }
+        },
+        "maximum_probe_com_displacement_m": 0.08795336764187428
+      },
+      "error": null
+    },
+    {
+      "trial_id": "fr_necessary_b_capacity29_adaptive_probe_seed509",
+      "case_id": "fr_necessary_b_capacity29",
+      "strategy": "adaptive_probe",
+      "seed": 509,
+      "family": "fr_necessary_b",
+      "condition_role": "held_out",
+      "status": "completed",
+      "run_dir": "/home/ibrahim/Documents/GO-2 PRIMP/primp_project/results/weak_pad/study_v2/trials/fr_necessary_b_capacity29_adaptive_probe_seed509/weak_pad_adaptive_probe_20260921T111855_993903Z",
+      "outcome": "RECOVERED_STOP",
+      "physical_success": false,
+      "expected_outcome_met": true,
+      "metrics": {
+        "duration_s": 42.37200000000582,
+        "probe_requested_shortfall_n": 47.71768295461665,
+        "maximum_certified_force_n": 10.493456232478128,
+        "maximum_actual_future_pad_force_n": null,
+        "maximum_forward_com_motion_m": null,
+        "maximum_next_foot_clearance_m": null,
+        "simultaneous_progress_hold_s": 0.0,
+        "progress_window_samples": null,
+        "maximum_roll_pitch_deg": 1.0971042920286274,
+        "maximum_pad_sink_m": 0.05999999999999999,
+        "pad_failed": true,
+        "certificate_updates_audited": 1,
+        "stable_safe_stop_s": 0.0,
+        "probe_time_s": 15.256,
+        "recovery_time_s": 5.104,
+        "recovery_unload_delay_s": 0.0,
+        "recovery_lift_m": 0.03523199411034622,
+        "recovery_stable_hold_s": 3.312000000004045,
+        "certificate_invalidations": 1,
+        "additional_probe_count": 1,
+        "final_forward_com_motion_m": 0.08358166569815778,
+        "terminal_mean_forward_com_motion_m": 0.0835611392712068,
+        "simultaneous_progress_min_forward_m": null,
+        "simultaneous_progress_max_forward_m": null,
+        "simultaneous_progress_min_next_foot_clearance_m": null,
+        "tracking_gap_by_phase_group": {
+          "future_execution": {
+            "samples": 0,
+            "maximum_actual_minus_cap_n": null,
+            "maximum_actual_minus_command_n": null,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "probe_transition": {
+            "samples": 3629,
+            "maximum_actual_minus_cap_n": 6.546769497435969,
+            "maximum_actual_minus_command_n": 6.5866229140979975,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "deliberate_probe": {
+            "samples": 3999,
+            "maximum_actual_minus_cap_n": 3.3130752859069776,
+            "maximum_actual_minus_command_n": 3.313076905690291,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "recovery": {
+            "samples": 2552,
+            "maximum_actual_minus_cap_n": 0.0,
+            "maximum_actual_minus_command_n": 0.0,
+            "samples_above_declared_tracking_reserve": 0
+          }
+        },
+        "maximum_probe_com_displacement_m": 0.08790976402873238
+      },
+      "error": null
+    },
+    {
+      "trial_id": "fr_no_safe_test_capacity80_fixed_probe_seed101",
+      "case_id": "fr_no_safe_test_capacity80",
+      "strategy": "fixed_probe",
+      "seed": 101,
+      "family": "fr_no_safe_test",
+      "condition_role": "held_out",
+      "status": "completed",
+      "run_dir": "/home/ibrahim/Documents/GO-2 PRIMP/primp_project/results/weak_pad/study_v2/trials/fr_no_safe_test_capacity80_fixed_probe_seed101/weak_pad_fixed_probe_20260921T111938_445105Z",
+      "outcome": "SAFE_STOP",
+      "physical_success": false,
+      "expected_outcome_met": true,
+      "metrics": {
+        "duration_s": 33.00999999999438,
+        "probe_requested_shortfall_n": 39.55713306244227,
+        "maximum_certified_force_n": 19.85303580625395,
+        "maximum_actual_future_pad_force_n": 11.850841022332155,
+        "maximum_forward_com_motion_m": 0.0014245269075917333,
+        "maximum_next_foot_clearance_m": 0.0003962158818009709,
+        "simultaneous_progress_hold_s": 0.0,
+        "progress_window_samples": null,
+        "maximum_roll_pitch_deg": 0.42811635495435874,
+        "maximum_pad_sink_m": -0.0,
+        "pad_failed": false,
+        "certificate_updates_audited": 1,
+        "stable_safe_stop_s": 3.0020000000001277,
+        "probe_time_s": 8.206,
+        "recovery_time_s": 0.0,
+        "recovery_unload_delay_s": null,
+        "recovery_lift_m": 0.0,
+        "recovery_stable_hold_s": 0.0,
+        "certificate_invalidations": 0,
+        "additional_probe_count": 0,
+        "final_forward_com_motion_m": 0.0013437547202284211,
+        "terminal_mean_forward_com_motion_m": 0.001344542759873789,
+        "simultaneous_progress_min_forward_m": null,
+        "simultaneous_progress_max_forward_m": null,
+        "simultaneous_progress_min_next_foot_clearance_m": null,
+        "tracking_gap_by_phase_group": {
+          "future_execution": {
+            "samples": 1501,
+            "maximum_actual_minus_cap_n": -0.0021947839217943965,
+            "maximum_actual_minus_command_n": 0.0033051164862847315,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "probe_transition": {
+            "samples": 1101,
+            "maximum_actual_minus_cap_n": 0.03460268362537633,
+            "maximum_actual_minus_command_n": 2.9934194082330023,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "deliberate_probe": {
+            "samples": 3002,
+            "maximum_actual_minus_cap_n": 0.8243878649591769,
+            "maximum_actual_minus_command_n": 0.8693175589998816,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "recovery": {
+            "samples": 0,
+            "maximum_actual_minus_cap_n": null,
+            "maximum_actual_minus_command_n": null,
+            "samples_above_declared_tracking_reserve": 0
+          }
+        },
+        "maximum_probe_com_displacement_m": 0.002653508408446087
+      },
+      "error": null
+    },
+    {
+      "trial_id": "fr_no_safe_test_capacity80_fixed_probe_seed509",
+      "case_id": "fr_no_safe_test_capacity80",
+      "strategy": "fixed_probe",
+      "seed": 509,
+      "family": "fr_no_safe_test",
+      "condition_role": "held_out",
+      "status": "completed",
+      "run_dir": "/home/ibrahim/Documents/GO-2 PRIMP/primp_project/results/weak_pad/study_v2/trials/fr_no_safe_test_capacity80_fixed_probe_seed509/weak_pad_fixed_probe_20260921T111940_075152Z",
+      "outcome": "SAFE_STOP",
+      "physical_success": false,
+      "expected_outcome_met": true,
+      "metrics": {
+        "duration_s": 33.01399999999438,
+        "probe_requested_shortfall_n": 39.55735357201049,
+        "maximum_certified_force_n": 19.8749688109917,
+        "maximum_actual_future_pad_force_n": 11.872990320495116,
+        "maximum_forward_com_motion_m": 0.0014236396792912248,
+        "maximum_next_foot_clearance_m": 0.0003976982498989784,
+        "simultaneous_progress_hold_s": 0.0,
+        "progress_window_samples": null,
+        "maximum_roll_pitch_deg": 0.43363233543041546,
+        "maximum_pad_sink_m": -0.0,
+        "pad_failed": false,
+        "certificate_updates_audited": 1,
+        "stable_safe_stop_s": 3.002000000000135,
+        "probe_time_s": 8.206,
+        "recovery_time_s": 0.0,
+        "recovery_unload_delay_s": null,
+        "recovery_lift_m": 0.0,
+        "recovery_stable_hold_s": 0.0,
+        "certificate_invalidations": 0,
+        "additional_probe_count": 0,
+        "final_forward_com_motion_m": 0.0013440762582280774,
+        "terminal_mean_forward_com_motion_m": 0.0013448206711770025,
+        "simultaneous_progress_min_forward_m": null,
+        "simultaneous_progress_max_forward_m": null,
+        "simultaneous_progress_min_next_foot_clearance_m": null,
+        "tracking_gap_by_phase_group": {
+          "future_execution": {
+            "samples": 1501,
+            "maximum_actual_minus_cap_n": -0.001978490496583163,
+            "maximum_actual_minus_command_n": 0.003690085442180191,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "probe_transition": {
+            "samples": 1101,
+            "maximum_actual_minus_cap_n": 0.033300639173555524,
+            "maximum_actual_minus_command_n": 2.9944399377806192,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "deliberate_probe": {
+            "samples": 3002,
+            "maximum_actual_minus_cap_n": 0.8187610001839258,
+            "maximum_actual_minus_command_n": 0.869529498322958,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "recovery": {
+            "samples": 0,
+            "maximum_actual_minus_cap_n": null,
+            "maximum_actual_minus_command_n": null,
+            "samples_above_declared_tracking_reserve": 0
+          }
+        },
+        "maximum_probe_com_displacement_m": 0.0026549986059684724
+      },
+      "error": null
+    },
+    {
+      "trial_id": "fr_no_safe_test_capacity80_adaptive_force_fixed_posture_seed101",
+      "case_id": "fr_no_safe_test_capacity80",
+      "strategy": "adaptive_force_fixed_posture",
+      "seed": 101,
+      "family": "fr_no_safe_test",
+      "condition_role": "held_out",
+      "status": "completed",
+      "run_dir": "/home/ibrahim/Documents/GO-2 PRIMP/primp_project/results/weak_pad/study_v2/trials/fr_no_safe_test_capacity80_adaptive_force_fixed_posture_seed101/weak_pad_adaptive_force_fixed_posture_20260921T111951_992495Z",
+      "outcome": "SAFE_STOP",
+      "physical_success": false,
+      "expected_outcome_met": true,
+      "metrics": {
+        "duration_s": 33.00999999999438,
+        "probe_requested_shortfall_n": 39.55713306244227,
+        "maximum_certified_force_n": 19.85303580625395,
+        "maximum_actual_future_pad_force_n": 11.850841022332155,
+        "maximum_forward_com_motion_m": 0.0014245269075917333,
+        "maximum_next_foot_clearance_m": 0.0003962158818009709,
+        "simultaneous_progress_hold_s": 0.0,
+        "progress_window_samples": null,
+        "maximum_roll_pitch_deg": 0.42811635495435874,
+        "maximum_pad_sink_m": -0.0,
+        "pad_failed": false,
+        "certificate_updates_audited": 1,
+        "stable_safe_stop_s": 3.0020000000001277,
+        "probe_time_s": 8.206,
+        "recovery_time_s": 0.0,
+        "recovery_unload_delay_s": null,
+        "recovery_lift_m": 0.0,
+        "recovery_stable_hold_s": 0.0,
+        "certificate_invalidations": 0,
+        "additional_probe_count": 0,
+        "final_forward_com_motion_m": 0.0013437547202284211,
+        "terminal_mean_forward_com_motion_m": 0.001344542759873789,
+        "simultaneous_progress_min_forward_m": null,
+        "simultaneous_progress_max_forward_m": null,
+        "simultaneous_progress_min_next_foot_clearance_m": null,
+        "tracking_gap_by_phase_group": {
+          "future_execution": {
+            "samples": 1501,
+            "maximum_actual_minus_cap_n": -0.0021947839217943965,
+            "maximum_actual_minus_command_n": 0.0033051164862847315,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "probe_transition": {
+            "samples": 1101,
+            "maximum_actual_minus_cap_n": 0.03460268362537633,
+            "maximum_actual_minus_command_n": 2.9934194082330023,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "deliberate_probe": {
+            "samples": 3002,
+            "maximum_actual_minus_cap_n": 0.8243878649591769,
+            "maximum_actual_minus_command_n": 0.8693175589998816,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "recovery": {
+            "samples": 0,
+            "maximum_actual_minus_cap_n": null,
+            "maximum_actual_minus_command_n": null,
+            "samples_above_declared_tracking_reserve": 0
+          }
+        },
+        "maximum_probe_com_displacement_m": 0.002653508408446087
+      },
+      "error": null
+    },
+    {
+      "trial_id": "fr_no_safe_test_capacity80_adaptive_force_fixed_posture_seed509",
+      "case_id": "fr_no_safe_test_capacity80",
+      "strategy": "adaptive_force_fixed_posture",
+      "seed": 509,
+      "family": "fr_no_safe_test",
+      "condition_role": "held_out",
+      "status": "completed",
+      "run_dir": "/home/ibrahim/Documents/GO-2 PRIMP/primp_project/results/weak_pad/study_v2/trials/fr_no_safe_test_capacity80_adaptive_force_fixed_posture_seed509/weak_pad_adaptive_force_fixed_posture_20260921T111954_534075Z",
+      "outcome": "SAFE_STOP",
+      "physical_success": false,
+      "expected_outcome_met": true,
+      "metrics": {
+        "duration_s": 33.01399999999438,
+        "probe_requested_shortfall_n": 39.55735357201049,
+        "maximum_certified_force_n": 19.8749688109917,
+        "maximum_actual_future_pad_force_n": 11.872990320495116,
+        "maximum_forward_com_motion_m": 0.0014236396792912248,
+        "maximum_next_foot_clearance_m": 0.0003976982498989784,
+        "simultaneous_progress_hold_s": 0.0,
+        "progress_window_samples": null,
+        "maximum_roll_pitch_deg": 0.43363233543041546,
+        "maximum_pad_sink_m": -0.0,
+        "pad_failed": false,
+        "certificate_updates_audited": 1,
+        "stable_safe_stop_s": 3.002000000000135,
+        "probe_time_s": 8.206,
+        "recovery_time_s": 0.0,
+        "recovery_unload_delay_s": null,
+        "recovery_lift_m": 0.0,
+        "recovery_stable_hold_s": 0.0,
+        "certificate_invalidations": 0,
+        "additional_probe_count": 0,
+        "final_forward_com_motion_m": 0.0013440762582280774,
+        "terminal_mean_forward_com_motion_m": 0.0013448206711770025,
+        "simultaneous_progress_min_forward_m": null,
+        "simultaneous_progress_max_forward_m": null,
+        "simultaneous_progress_min_next_foot_clearance_m": null,
+        "tracking_gap_by_phase_group": {
+          "future_execution": {
+            "samples": 1501,
+            "maximum_actual_minus_cap_n": -0.001978490496583163,
+            "maximum_actual_minus_command_n": 0.003690085442180191,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "probe_transition": {
+            "samples": 1101,
+            "maximum_actual_minus_cap_n": 0.033300639173555524,
+            "maximum_actual_minus_command_n": 2.9944399377806192,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "deliberate_probe": {
+            "samples": 3002,
+            "maximum_actual_minus_cap_n": 0.8187610001839258,
+            "maximum_actual_minus_command_n": 0.869529498322958,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "recovery": {
+            "samples": 0,
+            "maximum_actual_minus_cap_n": null,
+            "maximum_actual_minus_command_n": null,
+            "samples_above_declared_tracking_reserve": 0
+          }
+        },
+        "maximum_probe_com_displacement_m": 0.0026549986059684724
+      },
+      "error": null
+    },
+    {
+      "trial_id": "fr_no_safe_test_capacity80_adaptive_probe_seed101",
+      "case_id": "fr_no_safe_test_capacity80",
+      "strategy": "adaptive_probe",
+      "seed": 101,
+      "family": "fr_no_safe_test",
+      "condition_role": "held_out",
+      "status": "completed",
+      "run_dir": "/home/ibrahim/Documents/GO-2 PRIMP/primp_project/results/weak_pad/study_v2/trials/fr_no_safe_test_capacity80_adaptive_probe_seed101/weak_pad_adaptive_probe_20260921T112023_679764Z",
+      "outcome": "SAFE_STOP",
+      "physical_success": false,
+      "expected_outcome_met": true,
+      "metrics": {
+        "duration_s": 33.00999999999438,
+        "probe_requested_shortfall_n": 39.55713306244227,
+        "maximum_certified_force_n": 19.85303580625395,
+        "maximum_actual_future_pad_force_n": 11.850841022332155,
+        "maximum_forward_com_motion_m": 0.0014245269075917333,
+        "maximum_next_foot_clearance_m": 0.0003962158818009709,
+        "simultaneous_progress_hold_s": 0.0,
+        "progress_window_samples": null,
+        "maximum_roll_pitch_deg": 0.42811635495435874,
+        "maximum_pad_sink_m": -0.0,
+        "pad_failed": false,
+        "certificate_updates_audited": 1,
+        "stable_safe_stop_s": 3.0020000000001277,
+        "probe_time_s": 8.206,
+        "recovery_time_s": 0.0,
+        "recovery_unload_delay_s": null,
+        "recovery_lift_m": 0.0,
+        "recovery_stable_hold_s": 0.0,
+        "certificate_invalidations": 0,
+        "additional_probe_count": 0,
+        "final_forward_com_motion_m": 0.0013437547202284211,
+        "terminal_mean_forward_com_motion_m": 0.001344542759873789,
+        "simultaneous_progress_min_forward_m": null,
+        "simultaneous_progress_max_forward_m": null,
+        "simultaneous_progress_min_next_foot_clearance_m": null,
+        "tracking_gap_by_phase_group": {
+          "future_execution": {
+            "samples": 1501,
+            "maximum_actual_minus_cap_n": -0.0021947839217943965,
+            "maximum_actual_minus_command_n": 0.0033051164862847315,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "probe_transition": {
+            "samples": 1101,
+            "maximum_actual_minus_cap_n": 0.03460268362537633,
+            "maximum_actual_minus_command_n": 2.9934194082330023,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "deliberate_probe": {
+            "samples": 3002,
+            "maximum_actual_minus_cap_n": 0.8243878649591769,
+            "maximum_actual_minus_command_n": 0.8693175589998816,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "recovery": {
+            "samples": 0,
+            "maximum_actual_minus_cap_n": null,
+            "maximum_actual_minus_command_n": null,
+            "samples_above_declared_tracking_reserve": 0
+          }
+        },
+        "maximum_probe_com_displacement_m": 0.002653508408446087
+      },
+      "error": null
+    },
+    {
+      "trial_id": "fr_no_safe_test_capacity80_adaptive_probe_seed509",
+      "case_id": "fr_no_safe_test_capacity80",
+      "strategy": "adaptive_probe",
+      "seed": 509,
+      "family": "fr_no_safe_test",
+      "condition_role": "held_out",
+      "status": "completed",
+      "run_dir": "/home/ibrahim/Documents/GO-2 PRIMP/primp_project/results/weak_pad/study_v2/trials/fr_no_safe_test_capacity80_adaptive_probe_seed509/weak_pad_adaptive_probe_20260921T112025_446395Z",
+      "outcome": "SAFE_STOP",
+      "physical_success": false,
+      "expected_outcome_met": true,
+      "metrics": {
+        "duration_s": 33.01399999999438,
+        "probe_requested_shortfall_n": 39.55735357201049,
+        "maximum_certified_force_n": 19.8749688109917,
+        "maximum_actual_future_pad_force_n": 11.872990320495116,
+        "maximum_forward_com_motion_m": 0.0014236396792912248,
+        "maximum_next_foot_clearance_m": 0.0003976982498989784,
+        "simultaneous_progress_hold_s": 0.0,
+        "progress_window_samples": null,
+        "maximum_roll_pitch_deg": 0.43363233543041546,
+        "maximum_pad_sink_m": -0.0,
+        "pad_failed": false,
+        "certificate_updates_audited": 1,
+        "stable_safe_stop_s": 3.002000000000135,
+        "probe_time_s": 8.206,
+        "recovery_time_s": 0.0,
+        "recovery_unload_delay_s": null,
+        "recovery_lift_m": 0.0,
+        "recovery_stable_hold_s": 0.0,
+        "certificate_invalidations": 0,
+        "additional_probe_count": 0,
+        "final_forward_com_motion_m": 0.0013440762582280774,
+        "terminal_mean_forward_com_motion_m": 0.0013448206711770025,
+        "simultaneous_progress_min_forward_m": null,
+        "simultaneous_progress_max_forward_m": null,
+        "simultaneous_progress_min_next_foot_clearance_m": null,
+        "tracking_gap_by_phase_group": {
+          "future_execution": {
+            "samples": 1501,
+            "maximum_actual_minus_cap_n": -0.001978490496583163,
+            "maximum_actual_minus_command_n": 0.003690085442180191,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "probe_transition": {
+            "samples": 1101,
+            "maximum_actual_minus_cap_n": 0.033300639173555524,
+            "maximum_actual_minus_command_n": 2.9944399377806192,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "deliberate_probe": {
+            "samples": 3002,
+            "maximum_actual_minus_cap_n": 0.8187610001839258,
+            "maximum_actual_minus_command_n": 0.869529498322958,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "recovery": {
+            "samples": 0,
+            "maximum_actual_minus_cap_n": null,
+            "maximum_actual_minus_command_n": null,
+            "samples_above_declared_tracking_reserve": 0
+          }
+        },
+        "maximum_probe_com_displacement_m": 0.0026549986059684724
+      },
+      "error": null
+    }
+  ],
+  "paired_optimizer_verified": true,
+  "policy": {
+    "attempts": "One attempt per cell, including failures and interrupted attempts; no silent reruns",
+    "comparison": "Every strategy uses the same movement optimizer, movement freedoms, feasibility limits and force allocation; only probing adaptation differs",
+    "success": "Only actual body-and-foot progress is SUCCESS; SAFE_STOP and RECOVERED_STOP do not count as task completion",
+    "truth": "Hidden pad strength is evaluator-only; sensing, geometry and error bounds are public",
+    "interpretation": "Predeclared engineering cases and declared seeds, not a statistical population or independent samples within each trace",
+    "holdout": "Held-out labels describe condition selection before evaluation; development conditions remain labeled separately"
+  },
+  "by_strategy": {
+    "fixed_probe": {
+      "trials": 16,
+      "outcomes": {
+        "SUCCESS": 4,
+        "SAFE_STOP": 12,
+        "RECOVERED_STOP": 0,
+        "UNSAFE": 0,
+        "INCOMPLETE": 0,
+        "INVALID": 0
+      },
+      "no_result": 0
+    },
+    "adaptive_force_fixed_posture": {
+      "trials": 16,
+      "outcomes": {
+        "SUCCESS": 6,
+        "SAFE_STOP": 10,
+        "RECOVERED_STOP": 0,
+        "UNSAFE": 0,
+        "INCOMPLETE": 0,
+        "INVALID": 0
+      },
+      "no_result": 0
+    },
+    "adaptive_probe": {
+      "trials": 16,
+      "outcomes": {
+        "SUCCESS": 10,
+        "SAFE_STOP": 2,
+        "RECOVERED_STOP": 4,
+        "UNSAFE": 0,
+        "INCOMPLETE": 0,
+        "INVALID": 0
+      },
+      "no_result": 0
+    }
+  }
+}

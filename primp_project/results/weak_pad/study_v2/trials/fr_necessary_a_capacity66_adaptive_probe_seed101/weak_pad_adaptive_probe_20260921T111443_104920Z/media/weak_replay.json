@@ -1,0 +1,53 @@
+{
+  "run_id": "weak_pad_adaptive_probe_20260921T111443_104920Z",
+  "video": "/home/ibrahim/Documents/GO-2 PRIMP/primp_project/results/weak_pad/study_v2/trials/fr_necessary_a_capacity66_adaptive_probe_seed101/weak_pad_adaptive_probe_20260921T111443_104920Z/media/weak_replay.mp4",
+  "preview": "/home/ibrahim/Documents/GO-2 PRIMP/primp_project/results/weak_pad/study_v2/trials/fr_necessary_a_capacity66_adaptive_probe_seed101/weak_pad_adaptive_probe_20260921T111443_104920Z/media/weak_replay.png",
+  "codec": "avc1",
+  "fps": 20,
+  "resolution": [
+    960,
+    720
+  ],
+  "frame_count": 1142,
+  "playback_speed": 1.0,
+  "recorded_start_time_s": 0.002,
+  "recorded_end_time_s": 57.05200000002376,
+  "preview_time_s": 55.452000000021805,
+  "signals_sha256": "b88e5d881bbd58e95e6f783a84639a6e695d7505b230d47e3cc265803ad48993",
+  "scene_sha256": "6ae3c5919a325978d7e5a7889f1aecdf8a80e3db7fb7cebc53a776ca485ec119",
+  "weak_truth_sha256": "d5dc85bbe60fbcccf58d03dabac55edc29d5ce82602f4cee5113042c16afef2e",
+  "method": "Restore recorded qpos/qvel and pad_sink_displacement_m with mj_forward; no mj_step or controller execution",
+  "presentation": "Orange weak target; hidden capacity, failure, and sink shown only as evaluation-replay truth",
+  "overlay_evidence": {
+    "source": "Recorded actual target force, certificate, installed cap and measured body/feet",
+    "progress": "Physical CoM world-X minus its first confirmed probe origin; stronger probing is not task completion",
+    "recovery_lift": "Measured FL Z change from first recovery sample",
+    "next_leg": "FR",
+    "first_probe_sample": 10901,
+    "first_recovery_sample": null,
+    "script_sha256": "f296128bedb873dc6d85eab7b98c367b9a620a1d49d8effda14a82e21c82f506"
+  },
+  "decode_validation": {
+    "all_frames_decoded": true,
+    "decoded_frames": 1142,
+    "resolution_valid": true
+  },
+  "video_sha256": "a2d48c22b067e8d6f78990715a7aa2d4a02433af1126572bad4158d8a74dc000",
+  "visual_validation": {
+    "preview_inspected": true,
+    "measured_preview_state": {
+      "actual_pad_normal_force_n": 39.03792667868137,
+      "certificate_force_n": 52.043971567485855,
+      "applied_pad_force_cap_n": 44.043971567485855,
+      "pad_sink_displacement_m": -0.0,
+      "phase": "progress_hold",
+      "contacts": [
+        true,
+        false,
+        true,
+        true
+      ]
+    },
+    "observation": "FR visibly airborne, FL on intact pad, original recorded state"
+  }
+}

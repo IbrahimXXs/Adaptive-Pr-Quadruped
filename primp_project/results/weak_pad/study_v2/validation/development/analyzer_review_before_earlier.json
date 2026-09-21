@@ -1,0 +1,227 @@
+{
+  "source_sha256": "fb5297729207ccce0869987801c89ba06b3587cfe7f179897497fcb7548e4a04",
+  "raw_files_unchanged": true,
+  "raw_sha256": {
+    "success": "67ed6d7282526f0fb9df79348050d4841e48b036588ca6bf89382e27e34fe8a9",
+    "recovery": "dce9d4da49df63af7b35c5ede359a611d0df32c12949be2599bf1ed3f6180f61"
+  },
+  "cases": {
+    "unsupported_position_noise": {
+      "baseline": "success",
+      "outcome": "SUCCESS",
+      "detail": {
+        "position_noise_m": 0.1
+      },
+      "failed_checks": [
+        "conservative_stop",
+        "collapse_after_light_touch",
+        "controlled_probe_failure_recovery",
+        "terminal_safe_stop"
+      ]
+    },
+    "unaccounted_sensor_delay": {
+      "baseline": "success",
+      "outcome": "SUCCESS",
+      "detail": {
+        "sensor_delay_s": 0.04
+      },
+      "failed_checks": [
+        "conservative_stop",
+        "collapse_after_light_touch",
+        "controlled_probe_failure_recovery",
+        "terminal_safe_stop"
+      ]
+    },
+    "realized_sensor_error": {
+      "baseline": "success",
+      "outcome": "INVALID",
+      "detail": 21216,
+      "failed_checks": [
+        "conservative_stop",
+        "collapse_after_light_touch",
+        "realized_sensor_error_bounds",
+        "controlled_probe_failure_recovery",
+        "terminal_safe_stop"
+      ]
+    },
+    "missed_monitor": {
+      "baseline": "success",
+      "outcome": "UNSAFE",
+      "detail": 14046,
+      "failed_checks": [
+        "conservative_stop",
+        "collapse_after_light_touch",
+        "continuous_certificate_monitor",
+        "controlled_probe_failure_recovery",
+        "terminal_safe_stop"
+      ]
+    },
+    "aligned_transient_contact_loss": {
+      "baseline": "success",
+      "outcome": "UNSAFE",
+      "detail": 14046,
+      "failed_checks": [
+        "conservative_stop",
+        "collapse_after_light_touch",
+        "continuous_certificate_monitor",
+        "controlled_probe_failure_recovery",
+        "terminal_safe_stop"
+      ]
+    },
+    "no_actual_recovery_lift": {
+      "baseline": "recovery",
+      "outcome": "UNSAFE",
+      "detail": 11994,
+      "failed_checks": [
+        "probe_tripod_support",
+        "actual_dwell_certificate",
+        "future_declared",
+        "future_valid_certificate",
+        "planned_force_with_reserve",
+        "actual_future_loading",
+        "pad_survives",
+        "meaningful_progress",
+        "terminal_support",
+        "conservative_stop",
+        "requested_force_is_not_achieved",
+        "collapse_after_light_touch",
+        "controlled_probe_failure_recovery",
+        "terminal_safe_stop"
+      ]
+    },
+    "no_commanded_recovery_lift": {
+      "baseline": "recovery",
+      "outcome": "UNSAFE",
+      "detail": 11994,
+      "failed_checks": [
+        "probe_tripod_support",
+        "actual_dwell_certificate",
+        "future_declared",
+        "future_valid_certificate",
+        "planned_force_with_reserve",
+        "actual_future_loading",
+        "pad_survives",
+        "meaningful_progress",
+        "terminal_support",
+        "conservative_stop",
+        "requested_force_is_not_achieved",
+        "collapse_after_light_touch",
+        "controlled_probe_failure_recovery",
+        "terminal_safe_stop"
+      ]
+    },
+    "lost_terminal_support": {
+      "baseline": "recovery",
+      "outcome": "UNSAFE",
+      "detail": {
+        "last_support": "FR"
+      },
+      "failed_checks": [
+        "probe_tripod_support",
+        "actual_dwell_certificate",
+        "future_declared",
+        "future_valid_certificate",
+        "planned_force_with_reserve",
+        "actual_future_loading",
+        "pad_survives",
+        "meaningful_progress",
+        "terminal_support",
+        "conservative_stop",
+        "requested_force_is_not_achieved",
+        "collapse_after_light_touch",
+        "probe_and_recovery_tripod",
+        "controlled_probe_failure_recovery",
+        "terminal_safe_stop"
+      ]
+    },
+    "recovery_before_failure_then_probe_resumed": {
+      "baseline": "recovery",
+      "outcome": "UNSAFE",
+      "detail": 11044,
+      "failed_checks": [
+        "probe_tripod_support",
+        "actual_dwell_certificate",
+        "future_declared",
+        "future_valid_certificate",
+        "planned_force_with_reserve",
+        "actual_future_loading",
+        "pad_survives",
+        "meaningful_progress",
+        "terminal_support",
+        "conservative_stop",
+        "requested_force_is_not_achieved",
+        "collapse_after_light_touch",
+        "controlled_probe_failure_recovery",
+        "terminal_safe_stop"
+      ]
+    },
+    "recovery_keeps_commanding_load": {
+      "baseline": "recovery",
+      "outcome": "RECOVERED_STOP",
+      "detail": {
+        "recovery_hold_commanded_support_force_n": 30.0
+      },
+      "failed_checks": [
+        "probe_tripod_support",
+        "actual_dwell_certificate",
+        "future_declared",
+        "future_valid_certificate",
+        "planned_force_with_reserve",
+        "actual_future_loading",
+        "pad_survives",
+        "meaningful_progress",
+        "terminal_support",
+        "conservative_stop",
+        "requested_force_is_not_achieved",
+        "collapse_after_light_touch",
+        "terminal_safe_stop"
+      ]
+    },
+    "recovery_phase_mask_hides_support_loss": {
+      "baseline": "recovery",
+      "outcome": "UNSAFE",
+      "detail": 12004,
+      "failed_checks": [
+        "probe_tripod_support",
+        "actual_dwell_certificate",
+        "future_declared",
+        "future_valid_certificate",
+        "planned_force_with_reserve",
+        "actual_future_loading",
+        "pad_survives",
+        "meaningful_progress",
+        "terminal_support",
+        "conservative_stop",
+        "requested_force_is_not_achieved",
+        "collapse_after_light_touch",
+        "probe_and_recovery_tripod",
+        "terminal_safe_stop"
+      ]
+    },
+    "recovery_two_phase_rows_hide_support_loss": {
+      "baseline": "recovery",
+      "outcome": "RECOVERED_STOP",
+      "detail": {
+        "sample": 12004,
+        "time_s": 24.007999999997573,
+        "mutated_phases": "two rows recovery_unload->stand",
+        "aligned_contact_loss": "FR"
+      },
+      "failed_checks": [
+        "probe_tripod_support",
+        "actual_dwell_certificate",
+        "future_declared",
+        "future_valid_certificate",
+        "planned_force_with_reserve",
+        "actual_future_loading",
+        "pad_survives",
+        "meaningful_progress",
+        "terminal_support",
+        "conservative_stop",
+        "requested_force_is_not_achieved",
+        "collapse_after_light_touch",
+        "terminal_safe_stop"
+      ]
+    }
+  }
+}

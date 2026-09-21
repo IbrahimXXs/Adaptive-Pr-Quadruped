@@ -42,6 +42,18 @@ def test_demonstration_uses_minimum_achieved_force_and_two_explicit_reserves():
         replace(sample(1.), requested_force_n=45.)
 
 
+def test_positive_weak_proof_remains_valid_when_tracking_reserve_leaves_zero_cap():
+    estimator = demonstrated(force=5., config=CertificateConfig(dwell_s=.5,
+        measurement_margin_n=1., tracking_margin_n=8.))
+    assert estimator.certificate.valid
+    assert estimator.certificate.certified_load_n == pytest.approx(4.)
+    assert estimator.certificate.force_cap_n == 0.
+    decision = CapacityPlanner().decide(estimator.certificate, ANCHORS, WEIGHT,
+        PROBE, [150.]*4, allow_additional_probe=False)
+    assert decision.action == 'SAFE_STOP'
+    assert decision.mpc_force_caps_n[0] == 0.
+
+
 def test_short_large_force_spike_cannot_create_or_raise_certificate():
     estimator = DemonstratedLoadCertificate(CertificateConfig(dwell_s=.5))
     for i in range(45):

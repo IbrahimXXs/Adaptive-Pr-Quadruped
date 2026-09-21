@@ -144,7 +144,8 @@ class LandingPadEnv(QuadrupedEnv):
 
     def __init__(self, spec, scene_dir, *, robot="go2", scene="flat", sim_dt=.002,
                  state_obs_names=(), base_vel_command_type="human",
-                 ref_base_lin_vel=0., ref_base_ang_vel=0., ground_friction_coeff=.8):
+                 ref_base_lin_vel=0., ref_base_ang_vel=0., ground_friction_coeff=.8,
+                 _scene_builder=None):
         gym.Env.__init__(self)
         if robot != "go2":
             raise ValueError("The adjustable landing-pad geometry is verified for Go2 only")
@@ -165,7 +166,8 @@ class LandingPadEnv(QuadrupedEnv):
             "ref_base_ang_vel": ref_base_ang_vel,
             "ground_friction_coeff": ground_friction_coeff,
         }
-        self.mjModel, self.landing_pad_geometry, self.landing_pad_evaluation = _make_scene(
+        scene_builder = _make_scene if _scene_builder is None else _scene_builder
+        self.mjModel, self.landing_pad_geometry, self.landing_pad_evaluation = scene_builder(
             self.robot_cfg, spec, scene_dir)
         self.mjModel.opt.timestep = sim_dt
         self.mjData = mujoco.MjData(self.mjModel)

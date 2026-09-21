@@ -1,0 +1,86 @@
+[
+  {
+    "time_s": 3.201999999999869,
+    "cycle": 1,
+    "from": "stand",
+    "to": "shift"
+  },
+  {
+    "time_s": 7.403999999999407,
+    "cycle": 1,
+    "from": "shift",
+    "to": "unload"
+  },
+  {
+    "time_s": 10.504000000000177,
+    "cycle": 1,
+    "from": "unload",
+    "to": "lift"
+  },
+  {
+    "time_s": 12.704000000000912,
+    "cycle": 1,
+    "from": "lift",
+    "to": "hold"
+  },
+  {
+    "time_s": 17.704000000001066,
+    "cycle": 1,
+    "from": "hold",
+    "to": "lower"
+  },
+  {
+    "time_s": 21.70599999999885,
+    "cycle": 1,
+    "from": "lower",
+    "to": "confirm"
+  },
+  {
+    "time_s": 22.125999999998616,
+    "cycle": 1,
+    "from": "confirm",
+    "to": "probe_ramp"
+  },
+  {
+    "time_s": 26.127999999996398,
+    "cycle": 1,
+    "from": "probe_ramp",
+    "to": "probe_hold"
+  },
+  {
+    "time_s": 28.129999999995288,
+    "cycle": 1,
+    "from": "probe_hold",
+    "to": "probe_release"
+  },
+  {
+    "time_s": 30.331999999994068,
+    "cycle": 1,
+    "from": "probe_release",
+    "to": "progress_shift"
+  },
+  {
+    "time_s": 36.3859999999985,
+    "cycle": 1,
+    "from": "progress_shift",
+    "to": "next_unload"
+  },
+  {
+    "time_s": 40.486000000003514,
+    "cycle": 1,
+    "from": "next_unload",
+    "to": "next_lift"
+  },
+  {
+    "time_s": 42.6860000000062,
+    "cycle": 1,
+    "from": "next_lift",
+    "to": "progress_hold"
+  },
+  {
+    "time_s": 43.88800000000767,
+    "cycle": 1,
+    "from": "progress_hold",
+    "to": "progress_complete"
+  }
+]

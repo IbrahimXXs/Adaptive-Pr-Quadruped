@@ -1,0 +1,81 @@
+{
+  "controller_rerun": false,
+  "native_signals_unchanged": true,
+  "condition_comparison": "The 66 N pair shares trial conditions; the 34 N case demonstrates recovery on a weaker surface.",
+  "all_frames_decoded": true,
+  "all_previews_visually_reviewed": true,
+  "records": [
+    {
+      "trial_id": "fr_necessary_a_capacity66_adaptive_force_fixed_posture_seed101",
+      "label": "66 N, adaptive force with fixed posture",
+      "outcome": "SAFE_STOP",
+      "physical_success": false,
+      "video": "trials/fr_necessary_a_capacity66_adaptive_force_fixed_posture_seed101/weak_pad_adaptive_force_fixed_posture_20260921T111442_328019Z/media/weak_replay.mp4",
+      "preview": "trials/fr_necessary_a_capacity66_adaptive_force_fixed_posture_seed101/weak_pad_adaptive_force_fixed_posture_20260921T111442_328019Z/media/weak_replay.png",
+      "replay_manifest": "trials/fr_necessary_a_capacity66_adaptive_force_fixed_posture_seed101/weak_pad_adaptive_force_fixed_posture_20260921T111442_328019Z/media/weak_replay.json",
+      "raw_sha256": "efdc142c10688ccf5853e333e21e169b1e286ddd1263e7b7ddd06d4788359f24",
+      "decoded_frames": 661,
+      "preview_measured_state": {
+        "actual_pad_normal_force_n": 2.6939300073952435,
+        "certificate_force_n": 11.823535845532845,
+        "applied_pad_force_cap_n": 3.823535845532845,
+        "pad_sink_displacement_m": -0.0,
+        "phase": "safe_stop",
+        "contacts": [
+          true,
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "trial_id": "fr_necessary_a_capacity66_adaptive_probe_seed101",
+      "label": "66 N, adaptive probe",
+      "outcome": "SUCCESS",
+      "physical_success": true,
+      "video": "trials/fr_necessary_a_capacity66_adaptive_probe_seed101/weak_pad_adaptive_probe_20260921T111443_104920Z/media/weak_replay.mp4",
+      "preview": "trials/fr_necessary_a_capacity66_adaptive_probe_seed101/weak_pad_adaptive_probe_20260921T111443_104920Z/media/weak_replay.png",
+      "replay_manifest": "trials/fr_necessary_a_capacity66_adaptive_probe_seed101/weak_pad_adaptive_probe_20260921T111443_104920Z/media/weak_replay.json",
+      "raw_sha256": "b88e5d881bbd58e95e6f783a84639a6e695d7505b230d47e3cc265803ad48993",
+      "decoded_frames": 1142,
+      "preview_measured_state": {
+        "actual_pad_normal_force_n": 39.03792667868137,
+        "certificate_force_n": 52.043971567485855,
+        "applied_pad_force_cap_n": 44.043971567485855,
+        "pad_sink_displacement_m": -0.0,
+        "phase": "progress_hold",
+        "contacts": [
+          true,
+          false,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "trial_id": "fr_necessary_a_capacity34_adaptive_probe_seed101",
+      "label": "34 N, adaptive probe",
+      "outcome": "RECOVERED_STOP",
+      "physical_success": false,
+      "video": "trials/fr_necessary_a_capacity34_adaptive_probe_seed101/weak_pad_adaptive_probe_20260921T111616_248612Z/media/weak_replay.mp4",
+      "preview": "trials/fr_necessary_a_capacity34_adaptive_probe_seed101/weak_pad_adaptive_probe_20260921T111616_248612Z/media/weak_replay.png",
+      "replay_manifest": "trials/fr_necessary_a_capacity34_adaptive_probe_seed101/weak_pad_adaptive_probe_20260921T111616_248612Z/media/weak_replay.json",
+      "raw_sha256": "19b170b7a83aca95859cd7761f5dc8764624431b2bf1d091883c280e62808ed2",
+      "decoded_frames": 846,
+      "preview_measured_state": {
+        "actual_pad_normal_force_n": 0.0,
+        "certificate_force_n": 0.0,
+        "applied_pad_force_cap_n": 0.0,
+        "pad_sink_displacement_m": 0.05999999999999999,
+        "phase": "recovery_hold",
+        "contacts": [
+          false,
+          true,
+          true,
+          true
+        ]
+      }
+    }
+  ]
+}

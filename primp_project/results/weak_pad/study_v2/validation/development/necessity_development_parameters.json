@@ -1,0 +1,58 @@
+{
+  "strategy": "adaptive_probe",
+  "scenario": "necessity_geometry",
+  "failure_threshold_n": 70.0,
+  "initial_probe_force_n": 12.0,
+  "requested_probe_force_n": 60.0,
+  "maximum_probe_force_n": 60.0,
+  "measurement_reserve_n": 1.0,
+  "tracking_reserve_n": 8.0,
+  "planning_config": {
+    "weak_leg": 0,
+    "next_lift_leg": 1,
+    "forward_progress_m": 0.04,
+    "nominal_lateral_shift_m": -0.02,
+    "maximum_lateral_adjustment_m": 0.08,
+    "maximum_extra_forward_m": 0.01,
+    "support_margin_m": 0.01,
+    "original_tripod_margin_m": 0.02,
+    "minimum_support_force_n": 12.0,
+    "next_lift_height_m": 0.02,
+    "next_hold_s": 1.0,
+    "probe_posture_adjustment_m": 0.1,
+    "maximum_probe_request_n": 60.0,
+    "requested_probe_load_n": 60.0,
+    "probe_force_ceiling_n": 60.0,
+    "probe_robustness_margin_n": 2.0
+  },
+  "probe_offset_xy_m": [
+    -0.04,
+    0.0
+  ],
+  "initial_state": {
+    "body_offset_xy_m": [
+      0.0,
+      0.0
+    ],
+    "foot_offsets_xy_m": [
+      [
+        -0.035,
+        -0.02
+      ],
+      [
+        -0.035,
+        -0.02
+      ],
+      [
+        0.035,
+        0.02
+      ],
+      [
+        0.035,
+        -0.02
+      ]
+    ]
+  },
+  "seed": 17,
+  "role": "development"
+}

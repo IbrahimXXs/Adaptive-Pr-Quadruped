@@ -1,0 +1,51 @@
+{
+  "run_id": "weak_pad_adaptive_probe_20260921T110600_073353Z",
+  "video": "/home/ibrahim/Documents/GO-2 PRIMP/primp_project/results/weak_pad/development_v2/weak_pad_adaptive_probe_20260921T110600_073353Z/media/weak_replay.mp4",
+  "preview": "/home/ibrahim/Documents/GO-2 PRIMP/primp_project/results/weak_pad/development_v2/weak_pad_adaptive_probe_20260921T110600_073353Z/media/weak_replay.png",
+  "codec": "avc1",
+  "fps": 20,
+  "resolution": [
+    960,
+    720
+  ],
+  "frame_count": 849,
+  "playback_speed": 1.0,
+  "recorded_start_time_s": 0.002,
+  "recorded_end_time_s": 42.402000000005856,
+  "preview_time_s": 42.41600000000587,
+  "signals_sha256": "3d3e67bff808ce2cd4b7da6bfa7533488aef6eaf5c7deaa5805b9f8a39e880f7",
+  "scene_sha256": "6eaa5e7b35a6f6640daa10c75b97645bdc48060d3d4930c440c41509f877748e",
+  "weak_truth_sha256": "04f339e4c99cc0a0cac6ab763c57a4fa9c446eb629111bd428f87cb714a1cb08",
+  "method": "Restore recorded qpos/qvel and pad_sink_displacement_m with mj_forward; no mj_step or controller execution",
+  "presentation": "Orange weak target; hidden capacity, failure, and sink shown only as evaluation-replay truth",
+  "overlay_evidence": {
+    "source": "Recorded actual target force, certificate, installed cap and measured body/feet",
+    "progress": "Physical CoM world-X minus its first confirmed probe origin; stronger probing is not task completion",
+    "recovery_lift": "Measured FL Z change from first recovery sample",
+    "next_leg": "FR",
+    "first_probe_sample": 10931,
+    "first_recovery_sample": 18656,
+    "script_sha256": "f296128bedb873dc6d85eab7b98c367b9a620a1d49d8effda14a82e21c82f506"
+  },
+  "decode_validation": {
+    "all_frames_decoded": true,
+    "decoded_frames": 849,
+    "resolution_valid": true
+  },
+  "video_sha256": "51d36a48f01907abf44882ef408d78342c73040990b8362828b0701277cb63b2",
+  "visual_validation": {
+    "preview_inspected": true,
+    "measured_preview_state": {
+      "phase": "recovery_hold",
+      "actual_pad_force_n": 0.0,
+      "pad_sink_m": 0.05999999999999999,
+      "contacts": [
+        false,
+        true,
+        true,
+        true
+      ]
+    },
+    "observation": "FL withdrawn above failed pad; FR/RL/RR remain contacts; no forward-task completion claim"
+  }
+}

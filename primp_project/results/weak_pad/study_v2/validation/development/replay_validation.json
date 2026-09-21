@@ -1,0 +1,44 @@
+{
+  "controller_executed": false,
+  "records": [
+    {
+      "run_id": "weak_pad_adaptive_probe_20260921T110509_467417Z",
+      "manifest": "development_v2/weak_pad_adaptive_probe_20260921T110509_467417Z/media/weak_replay.json",
+      "raw_unchanged": true,
+      "all_frames_decoded": true,
+      "preview_inspected": true,
+      "measured_preview_state": {
+        "phase": "progress_hold",
+        "actual_pad_force_n": 40.033438197821354,
+        "pad_sink_m": -0.0,
+        "contacts": [
+          true,
+          false,
+          true,
+          true
+        ]
+      },
+      "observation": "FR airborne with FL on intact pad"
+    },
+    {
+      "run_id": "weak_pad_adaptive_probe_20260921T110600_073353Z",
+      "manifest": "development_v2/weak_pad_adaptive_probe_20260921T110600_073353Z/media/weak_replay.json",
+      "raw_unchanged": true,
+      "all_frames_decoded": true,
+      "preview_inspected": true,
+      "measured_preview_state": {
+        "phase": "recovery_hold",
+        "actual_pad_force_n": 0.0,
+        "pad_sink_m": 0.05999999999999999,
+        "contacts": [
+          false,
+          true,
+          true,
+          true
+        ]
+      },
+      "observation": "FL withdrawn above failed pad; FR/RL/RR remain contacts; no forward-task completion claim"
+    }
+  ],
+  "passed": true
+}

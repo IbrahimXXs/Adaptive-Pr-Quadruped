@@ -1,4 +1,8 @@
-# Testing a foothold before relying on it
+# V1: testing a foothold before relying on it
+
+This page preserves the first experiment and its fixed-motion baseline.
+The current [V2 guide](weak_pad_v2.md) compares testing policies with the same
+body/load optimizer and movement freedoms.
 
 This experiment extends the controlled front-foot landing task to a surface
 whose normal-load capacity is unknown to the controller. The robot must do

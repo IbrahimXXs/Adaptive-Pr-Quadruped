@@ -557,5 +557,236 @@
     "notes": [
       "Measured load exceeded 25 N continuously for 10 ms; failure at 27.860 s during recentering, after reload started at 21.890 s. Sensor-triggered controlled termination at 28.014 s preserves 15.4 mm sink. Demonstrates failed/deforming support, not a physical fall or successful task completion."
     ]
+  },
+  "weak_pad_adaptive_force_fixed_posture_20260921T110710_629660Z": {
+    "purpose": "Weak foothold V2 development: adaptive_force_fixed_posture, development_necessary_posture",
+    "notes": [
+      "Controlled stop preserved as an incomplete movement; no physical task-success credit."
+    ]
+  },
+  "weak_pad_adaptive_probe_20260921T110015_033589Z": {
+    "purpose": "Weak foothold V2 development: adaptive_probe, development_necessary_posture",
+    "notes": [
+      "Controlled stop preserved as an incomplete movement; no physical task-success credit.",
+      "Early necessary-posture development. Later cases changed the support-force floor and allowed probe-posture movement; this original safe-stop recording is retained."
+    ]
+  },
+  "weak_pad_adaptive_probe_20260921T110509_467417Z": {
+    "purpose": "Weak foothold V2 development: adaptive_probe, development_necessary_posture",
+    "notes": []
+  },
+  "weak_pad_adaptive_probe_20260921T110600_073353Z": {
+    "purpose": "Weak foothold V2 development: adaptive_probe, development_failed_stronger_probe",
+    "notes": [
+      "Actual weak-pad failure followed by controlled withdrawal and stable original-tripod support. This is a recovery, not completed forward movement."
+    ]
+  },
+  "weak_pad_fixed_probe_20260921T105743_948963Z": {
+    "purpose": "Weak foothold V2 development: fixed_probe, nominal",
+    "notes": []
+  },
+  "weak_pad_fixed_probe_20260921T105745_065855Z": {
+    "purpose": "Weak foothold V2 development: fixed_probe, nominal",
+    "notes": [
+      "Actual weak-pad failure followed by controlled withdrawal and stable original-tripod support. This is a recovery, not completed forward movement."
+    ]
+  },
+  "weak_pad_fixed_probe_20260921T110625_114013Z": {
+    "purpose": "Weak foothold V2 development: fixed_probe, development_necessary_posture",
+    "notes": [
+      "Controlled stop preserved as an incomplete movement; no physical task-success credit."
+    ]
+  },
+  "weak_pad_fixed_probe_20260921T110942_110655Z": {
+    "purpose": "Weak foothold V2 held-out evaluation: rl_layout_a_capacity38, fixed_probe, seed 101",
+    "notes": []
+  },
+  "weak_pad_fixed_probe_20260921T110942_112444Z": {
+    "purpose": "Weak foothold V2 held-out evaluation: rl_layout_a_capacity38, fixed_probe, seed 509",
+    "notes": []
+  },
+  "weak_pad_adaptive_force_fixed_posture_20260921T110942_111475Z": {
+    "purpose": "Weak foothold V2 held-out evaluation: rl_layout_a_capacity38, adaptive_force_fixed_posture, seed 101",
+    "notes": []
+  },
+  "weak_pad_adaptive_force_fixed_posture_20260921T110942_111320Z": {
+    "purpose": "Weak foothold V2 held-out evaluation: rl_layout_a_capacity38, adaptive_force_fixed_posture, seed 509",
+    "notes": []
+  },
+  "weak_pad_adaptive_probe_20260921T111038_439829Z": {
+    "purpose": "Weak foothold V2 held-out evaluation: rl_layout_a_capacity38, adaptive_probe, seed 101",
+    "notes": []
+  },
+  "weak_pad_adaptive_probe_20260921T111038_568292Z": {
+    "purpose": "Weak foothold V2 held-out evaluation: rl_layout_a_capacity38, adaptive_probe, seed 509",
+    "notes": []
+  },
+  "weak_pad_fixed_probe_20260921T111038_541579Z": {
+    "purpose": "Weak foothold V2 held-out evaluation: rl_layout_b_capacity32, fixed_probe, seed 101",
+    "notes": []
+  },
+  "weak_pad_fixed_probe_20260921T111038_759729Z": {
+    "purpose": "Weak foothold V2 held-out evaluation: rl_layout_b_capacity32, fixed_probe, seed 509",
+    "notes": []
+  },
+  "weak_pad_adaptive_force_fixed_posture_20260921T111138_034233Z": {
+    "purpose": "Weak foothold V2 held-out evaluation: rl_layout_b_capacity32, adaptive_force_fixed_posture, seed 101",
+    "notes": []
+  },
+  "weak_pad_adaptive_force_fixed_posture_20260921T111138_749294Z": {
+    "purpose": "Weak foothold V2 held-out evaluation: rl_layout_b_capacity32, adaptive_force_fixed_posture, seed 509",
+    "notes": []
+  },
+  "weak_pad_adaptive_probe_20260921T111139_210353Z": {
+    "purpose": "Weak foothold V2 held-out evaluation: rl_layout_b_capacity32, adaptive_probe, seed 101",
+    "notes": []
+  },
+  "weak_pad_adaptive_probe_20260921T111139_337004Z": {
+    "purpose": "Weak foothold V2 held-out evaluation: rl_layout_b_capacity32, adaptive_probe, seed 509",
+    "notes": []
+  },
+  "weak_pad_fixed_probe_20260921T111239_255626Z": {
+    "purpose": "Weak foothold V2 held-out evaluation: rl_additional_test_capacity56, fixed_probe, seed 101",
+    "notes": []
+  },
+  "weak_pad_fixed_probe_20260921T111239_522746Z": {
+    "purpose": "Weak foothold V2 held-out evaluation: rl_additional_test_capacity56, fixed_probe, seed 509",
+    "notes": []
+  },
+  "weak_pad_adaptive_force_fixed_posture_20260921T111240_074544Z": {
+    "purpose": "Weak foothold V2 held-out evaluation: rl_additional_test_capacity56, adaptive_force_fixed_posture, seed 101",
+    "notes": []
+  },
+  "weak_pad_adaptive_force_fixed_posture_20260921T111240_235001Z": {
+    "purpose": "Weak foothold V2 held-out evaluation: rl_additional_test_capacity56, adaptive_force_fixed_posture, seed 509",
+    "notes": []
+  },
+  "weak_pad_adaptive_probe_20260921T111327_876611Z": {
+    "purpose": "Weak foothold V2 held-out evaluation: rl_additional_test_capacity56, adaptive_probe, seed 101",
+    "notes": []
+  },
+  "weak_pad_adaptive_probe_20260921T111328_877724Z": {
+    "purpose": "Weak foothold V2 held-out evaluation: rl_additional_test_capacity56, adaptive_probe, seed 509",
+    "notes": []
+  },
+  "weak_pad_fixed_probe_20260921T111356_491977Z": {
+    "purpose": "Weak foothold V2 held-out evaluation: fr_necessary_a_capacity66, fixed_probe, seed 101",
+    "notes": []
+  },
+  "weak_pad_fixed_probe_20260921T111356_765273Z": {
+    "purpose": "Weak foothold V2 held-out evaluation: fr_necessary_a_capacity66, fixed_probe, seed 509",
+    "notes": []
+  },
+  "weak_pad_adaptive_force_fixed_posture_20260921T111442_328019Z": {
+    "purpose": "Weak foothold V2 held-out evaluation: fr_necessary_a_capacity66, adaptive_force_fixed_posture, seed 101",
+    "notes": []
+  },
+  "weak_pad_adaptive_force_fixed_posture_20260921T111442_792148Z": {
+    "purpose": "Weak foothold V2 held-out evaluation: fr_necessary_a_capacity66, adaptive_force_fixed_posture, seed 509",
+    "notes": []
+  },
+  "weak_pad_adaptive_probe_20260921T111443_104920Z": {
+    "purpose": "Weak foothold V2 held-out evaluation: fr_necessary_a_capacity66, adaptive_probe, seed 101",
+    "notes": []
+  },
+  "weak_pad_adaptive_probe_20260921T111444_264392Z": {
+    "purpose": "Weak foothold V2 held-out evaluation: fr_necessary_a_capacity66, adaptive_probe, seed 509",
+    "notes": []
+  },
+  "weak_pad_fixed_probe_20260921T111529_516745Z": {
+    "purpose": "Weak foothold V2 held-out evaluation: fr_necessary_a_capacity34, fixed_probe, seed 101",
+    "notes": []
+  },
+  "weak_pad_fixed_probe_20260921T111529_820399Z": {
+    "purpose": "Weak foothold V2 held-out evaluation: fr_necessary_a_capacity34, fixed_probe, seed 509",
+    "notes": []
+  },
+  "weak_pad_adaptive_force_fixed_posture_20260921T111559_088856Z": {
+    "purpose": "Weak foothold V2 held-out evaluation: fr_necessary_a_capacity34, adaptive_force_fixed_posture, seed 101",
+    "notes": []
+  },
+  "weak_pad_adaptive_force_fixed_posture_20260921T111600_322577Z": {
+    "purpose": "Weak foothold V2 held-out evaluation: fr_necessary_a_capacity34, adaptive_force_fixed_posture, seed 509",
+    "notes": []
+  },
+  "weak_pad_adaptive_probe_20260921T111616_248612Z": {
+    "purpose": "Weak foothold V2 held-out evaluation: fr_necessary_a_capacity34, adaptive_probe, seed 101",
+    "notes": []
+  },
+  "weak_pad_adaptive_probe_20260921T111616_413472Z": {
+    "purpose": "Weak foothold V2 held-out evaluation: fr_necessary_a_capacity34, adaptive_probe, seed 509",
+    "notes": []
+  },
+  "weak_pad_fixed_probe_20260921T111646_609402Z": {
+    "purpose": "Weak foothold V2 held-out evaluation: fr_necessary_b_capacity62, fixed_probe, seed 101",
+    "notes": []
+  },
+  "weak_pad_fixed_probe_20260921T111648_504064Z": {
+    "purpose": "Weak foothold V2 held-out evaluation: fr_necessary_b_capacity62, fixed_probe, seed 509",
+    "notes": []
+  },
+  "weak_pad_adaptive_force_fixed_posture_20260921T111715_453911Z": {
+    "purpose": "Weak foothold V2 held-out evaluation: fr_necessary_b_capacity62, adaptive_force_fixed_posture, seed 101",
+    "notes": []
+  },
+  "weak_pad_adaptive_force_fixed_posture_20260921T111717_314546Z": {
+    "purpose": "Weak foothold V2 held-out evaluation: fr_necessary_b_capacity62, adaptive_force_fixed_posture, seed 509",
+    "notes": []
+  },
+  "weak_pad_adaptive_probe_20260921T111734_321818Z": {
+    "purpose": "Weak foothold V2 held-out evaluation: fr_necessary_b_capacity62, adaptive_probe, seed 101",
+    "notes": []
+  },
+  "weak_pad_adaptive_probe_20260921T111736_148285Z": {
+    "purpose": "Weak foothold V2 held-out evaluation: fr_necessary_b_capacity62, adaptive_probe, seed 509",
+    "notes": []
+  },
+  "weak_pad_fixed_probe_20260921T111802_975165Z": {
+    "purpose": "Weak foothold V2 held-out evaluation: fr_necessary_b_capacity29, fixed_probe, seed 101",
+    "notes": []
+  },
+  "weak_pad_fixed_probe_20260921T111804_494151Z": {
+    "purpose": "Weak foothold V2 held-out evaluation: fr_necessary_b_capacity29, fixed_probe, seed 509",
+    "notes": []
+  },
+  "weak_pad_adaptive_force_fixed_posture_20260921T111851_731513Z": {
+    "purpose": "Weak foothold V2 held-out evaluation: fr_necessary_b_capacity29, adaptive_force_fixed_posture, seed 101",
+    "notes": []
+  },
+  "weak_pad_adaptive_force_fixed_posture_20260921T111853_129646Z": {
+    "purpose": "Weak foothold V2 held-out evaluation: fr_necessary_b_capacity29, adaptive_force_fixed_posture, seed 509",
+    "notes": []
+  },
+  "weak_pad_adaptive_probe_20260921T111853_495367Z": {
+    "purpose": "Weak foothold V2 held-out evaluation: fr_necessary_b_capacity29, adaptive_probe, seed 101",
+    "notes": []
+  },
+  "weak_pad_adaptive_probe_20260921T111855_993903Z": {
+    "purpose": "Weak foothold V2 held-out evaluation: fr_necessary_b_capacity29, adaptive_probe, seed 509",
+    "notes": []
+  },
+  "weak_pad_fixed_probe_20260921T111938_445105Z": {
+    "purpose": "Weak foothold V2 held-out evaluation: fr_no_safe_test_capacity80, fixed_probe, seed 101",
+    "notes": []
+  },
+  "weak_pad_fixed_probe_20260921T111940_075152Z": {
+    "purpose": "Weak foothold V2 held-out evaluation: fr_no_safe_test_capacity80, fixed_probe, seed 509",
+    "notes": []
+  },
+  "weak_pad_adaptive_force_fixed_posture_20260921T111951_992495Z": {
+    "purpose": "Weak foothold V2 held-out evaluation: fr_no_safe_test_capacity80, adaptive_force_fixed_posture, seed 101",
+    "notes": []
+  },
+  "weak_pad_adaptive_force_fixed_posture_20260921T111954_534075Z": {
+    "purpose": "Weak foothold V2 held-out evaluation: fr_no_safe_test_capacity80, adaptive_force_fixed_posture, seed 509",
+    "notes": []
+  },
+  "weak_pad_adaptive_probe_20260921T112023_679764Z": {
+    "purpose": "Weak foothold V2 held-out evaluation: fr_no_safe_test_capacity80, adaptive_probe, seed 101",
+    "notes": []
+  },
+  "weak_pad_adaptive_probe_20260921T112025_446395Z": {
+    "purpose": "Weak foothold V2 held-out evaluation: fr_no_safe_test_capacity80, adaptive_probe, seed 509",
+    "notes": []
   }
 }

@@ -1,0 +1,39 @@
+{
+  "version": 2,
+  "manifest_sha256": "c4a9cabe63a02f7fcb1d7bae586f4d6ea68096a428ffae9a7d7c101427839bbf",
+  "source": {
+    "sha256": "7f8501f0270429c3929f9c888604dd54448064f60e78fe24079746cd740f4afd",
+    "files": {
+      "primp_project/control/__init__.py": "936a82aa515b92b8e3eea71615c2755ec6621f0736e249e24f923f02a7d5d9a3",
+      "primp_project/control/controlled_step.py": "af0def31a1e1c58c926e7df65900bd0b448bb1077f6c1a931f9cd9228f9d9427",
+      "primp_project/control/landing_pad.py": "bc8751ce5855f6cd57867e9f79963920b58ca73c9763655c962ececbba1c228a",
+      "primp_project/control/weak_pad.py": "57c5f6326a1eae0bf992f7d1c739ba244a065d491c3b91165b421ba1d3fcfef5",
+      "primp_project/control/weak_pad_v2.py": "e8bc5fd4a196063b0cdc1602797d829a7d0da5d0d7cd45b68a841c65cf444847",
+      "primp_project/environment/__init__.py": "d897f13899f875ea0cb512894358875c0546d9bf369bee42e9d5399583c5312a",
+      "primp_project/environment/landing_pad.py": "5f4ed54a055b11908983803d9d7b4ab2c0376e25f42df6b4fae5ca8bc6a0b696",
+      "primp_project/environment/weak_pad.py": "7a58eee215f0cc96c51504b40ce63eb3325ce58e0447e5c29341c3562dc32e5a",
+      "primp_project/environment/weak_pad_initial_state.py": "d45ad15bbe35cf8d4d9f3f22f28bc8bb6115651013162210e8e21be8d4046850",
+      "primp_project/experiments/weak_pad.py": "337495dce45b3a067956717c75da30a1801d6b5ddc7a41dab1e2c6bbda932c55",
+      "primp_project/planning/__init__.py": "153c47089444eeac644f98c9d9b3c5e560684feed1ccca8eb63272f6714e29ea",
+      "primp_project/planning/baselines.py": "ab38e6d549127acd44162d1725d7f0459006d3802b8d84038c230dba28e8f804",
+      "primp_project/planning/belief.py": "f07702bf9d60762ad3154e7a4d96139aa6263ac3a0c490c0ab8533c38eb3ea32",
+      "primp_project/planning/load_capacity.py": "5e91aa54b9f38fbe785c0a144e2ff1fe3f14b56c92b8a4639e60e6f86ebf608a",
+      "primp_project/planning/matched.py": "4e69afdc3670fea5ff22267a3ee4319092cf5dde30a02f7a4680ebc0880d5b9e",
+      "primp_project/planning/observations.py": "781e9055329bc4d593fbc32929dc03a7e3e5cbbebdcb629366672a4a4d8f3e76",
+      "primp_project/recording/__init__.py": "40e5ae9795720c6b78c2ca7185273cda8c55d3277928743ea66d06f206ba1a62",
+      "primp_project/recording/pad.py": "0f2d74fba53f7472fd021d96cd254bf64f3341e0c1c625e884a8752032cd277a",
+      "primp_project/recording/standing.py": "f55e320b90fcb155561a220f136ce0e0d5deadfdb939b3c3db4f42d835593f4d",
+      "primp_project/recording/step.py": "ebba4e929e60b41e99111097f893f589ddb00ef6dbc77a38369230bec237929f",
+      "primp_project/recording/weak_pad.py": "c06d0793048c8e1e54ccdf299a29a2381458186b1b1be8beb8750fbcf2d8d97b",
+      "primp_project/recording/weak_pad_v2.py": "fa52eced10297dc7769375b930b897cfbde9e5a43e1b17b0c3f90c8fde2be98f",
+      "quadruped_pympc/config.py": "9834126a8c3b851a3d506e067b24cf69382478d7557589761e8ba558da86b4ec",
+      "quadruped_pympc/controllers/gradient/nominal/centroidal_nmpc_nominal.py": "310133620715a17787332bf6f6d9c972bb38624ce63148228abde6661814d263",
+      "simulation/simulation.py": "19bc9e212a74ed16ae4ac574a83f38a11729a9aba86b98b02b5e8ea4cc058946",
+      "primp_project/experiments/weak_pad_v2.py": "f81bc76a3bbaab8c5715926329470785d198de4e7f74537ce1ceeeaf24b2ddf8",
+      "primp_project/analysis/weak_pad_v2.py": "edbeb67485dc4dff4b4ed329d941072f6c97a5e5c67c4bd505c4e74873d174fe",
+      "primp_project/analysis/weak_pad.py": "63b1950274b961ddff66460b02a6493b2ba5d2a80a3c0d3f7f56fe462afd8a55",
+      "primp_project/analysis/step.py": "774d3339edf1eaecb96c59707f9de1f90fdde07377d79b51c5b9d8786c4f917e"
+    }
+  },
+  "frozen_at": "2026-09-21T11:09:20.892674+00:00"
+}

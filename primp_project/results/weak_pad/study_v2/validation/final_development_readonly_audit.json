@@ -1,0 +1,425 @@
+{
+  "analyzer_sha256": "edbeb67485dc4dff4b4ed329d941072f6c97a5e5c67c4bd505c4e74873d174fe",
+  "protocol_trials": 48,
+  "development_trials": [
+    {
+      "run_id": "weak_pad_adaptive_force_fixed_posture_20260921T110710_629660Z",
+      "outcome": "SAFE_STOP",
+      "metrics": {
+        "duration_s": 33.06999999999445,
+        "probe_requested_shortfall_n": 47.693454977208965,
+        "maximum_certified_force_n": 11.306531308742684,
+        "maximum_actual_future_pad_force_n": 3.2848484849388684,
+        "maximum_forward_com_motion_m": 0.0017306790394724658,
+        "maximum_next_foot_clearance_m": 1.9928869363444734e-05,
+        "simultaneous_progress_hold_s": 0.0,
+        "progress_window_samples": null,
+        "maximum_roll_pitch_deg": 1.0634886346458312,
+        "maximum_pad_sink_m": -0.0,
+        "pad_failed": false,
+        "certificate_updates_audited": 1,
+        "stable_safe_stop_s": 3.0020000000002343,
+        "probe_time_s": 8.206,
+        "recovery_time_s": 0.0,
+        "recovery_unload_delay_s": null,
+        "recovery_lift_m": 0.0,
+        "recovery_stable_hold_s": 0.0,
+        "certificate_invalidations": 0,
+        "additional_probe_count": 0,
+        "final_forward_com_motion_m": 0.0016782136402388598,
+        "terminal_mean_forward_com_motion_m": 0.00167676959244023,
+        "simultaneous_progress_min_forward_m": null,
+        "simultaneous_progress_max_forward_m": null,
+        "simultaneous_progress_min_next_foot_clearance_m": null,
+        "tracking_gap_by_phase_group": {
+          "future_execution": {
+            "samples": 1501,
+            "maximum_actual_minus_cap_n": -0.02168282380381603,
+            "maximum_actual_minus_command_n": 0.018793345508965498,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "probe_transition": {
+            "samples": 1101,
+            "maximum_actual_minus_cap_n": -0.0662984615090374,
+            "maximum_actual_minus_command_n": 3.3384043895032,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "deliberate_probe": {
+            "samples": 3002,
+            "maximum_actual_minus_cap_n": 1.1428261492464618,
+            "maximum_actual_minus_command_n": 1.143368425886511,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "recovery": {
+            "samples": 0,
+            "maximum_actual_minus_cap_n": null,
+            "maximum_actual_minus_command_n": null,
+            "samples_above_declared_tracking_reserve": 0
+          }
+        },
+        "maximum_probe_com_displacement_m": 0.0024835677248448607
+      },
+      "failed_integrity_checks": []
+    },
+    {
+      "run_id": "weak_pad_adaptive_probe_20260921T110015_033589Z",
+      "outcome": "SAFE_STOP",
+      "metrics": {
+        "duration_s": 33.07999999999446,
+        "probe_requested_shortfall_n": 47.75840611544934,
+        "maximum_certified_force_n": 11.241580694713235,
+        "maximum_actual_future_pad_force_n": 3.2254753712072173,
+        "maximum_forward_com_motion_m": 0.0016455036047406252,
+        "maximum_next_foot_clearance_m": 2.1043664306066856e-05,
+        "simultaneous_progress_hold_s": 0.0,
+        "progress_window_samples": null,
+        "maximum_roll_pitch_deg": 0.9879798470323212,
+        "maximum_pad_sink_m": -0.0,
+        "pad_failed": false,
+        "certificate_updates_audited": 1,
+        "stable_safe_stop_s": 3.002000000000252,
+        "probe_time_s": 8.206,
+        "recovery_time_s": 0.0,
+        "recovery_unload_delay_s": null,
+        "recovery_lift_m": 0.0,
+        "recovery_stable_hold_s": 0.0,
+        "certificate_invalidations": 0,
+        "additional_probe_count": 0,
+        "final_forward_com_motion_m": 0.0015105380418651837,
+        "terminal_mean_forward_com_motion_m": 0.0015125812110795551,
+        "simultaneous_progress_min_forward_m": null,
+        "simultaneous_progress_max_forward_m": null,
+        "simultaneous_progress_min_next_foot_clearance_m": null,
+        "tracking_gap_by_phase_group": {
+          "future_execution": {
+            "samples": 1501,
+            "maximum_actual_minus_cap_n": -0.01610532350601801,
+            "maximum_actual_minus_command_n": -0.013201679190157467,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "probe_transition": {
+            "samples": 1101,
+            "maximum_actual_minus_cap_n": 0.09827633068618358,
+            "maximum_actual_minus_command_n": 2.794883762274731,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "deliberate_probe": {
+            "samples": 3002,
+            "maximum_actual_minus_cap_n": 1.1119167393040454,
+            "maximum_actual_minus_command_n": 1.112175739816934,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "recovery": {
+            "samples": 0,
+            "maximum_actual_minus_cap_n": null,
+            "maximum_actual_minus_command_n": null,
+            "samples_above_declared_tracking_reserve": 0
+          }
+        },
+        "maximum_probe_com_displacement_m": 0.00245248423897905
+      },
+      "failed_integrity_checks": []
+    },
+    {
+      "run_id": "weak_pad_adaptive_probe_20260921T110509_467417Z",
+      "outcome": "SUCCESS",
+      "metrics": {
+        "duration_s": 57.12800000002385,
+        "probe_requested_shortfall_n": 47.693454977208965,
+        "maximum_certified_force_n": 52.08010418207873,
+        "maximum_actual_future_pad_force_n": 40.56347353138946,
+        "maximum_forward_com_motion_m": 0.0910289258020916,
+        "maximum_next_foot_clearance_m": 0.029670867272802187,
+        "simultaneous_progress_hold_s": 3.1240000000038153,
+        "progress_window_samples": [
+          27002,
+          28563
+        ],
+        "maximum_roll_pitch_deg": 1.0634886346458312,
+        "maximum_pad_sink_m": -0.0,
+        "pad_failed": false,
+        "certificate_updates_audited": 2,
+        "stable_safe_stop_s": 0.0,
+        "probe_time_s": 21.41,
+        "recovery_time_s": 0.0,
+        "recovery_unload_delay_s": null,
+        "recovery_lift_m": 0.0,
+        "recovery_stable_hold_s": 0.0,
+        "certificate_invalidations": 0,
+        "additional_probe_count": 1,
+        "final_forward_com_motion_m": 0.039861113220991354,
+        "terminal_mean_forward_com_motion_m": 0.039888806144093354,
+        "simultaneous_progress_min_forward_m": 0.039861113220991354,
+        "simultaneous_progress_max_forward_m": 0.04042291623611778,
+        "simultaneous_progress_min_next_foot_clearance_m": 0.020005772620552767,
+        "tracking_gap_by_phase_group": {
+          "future_execution": {
+            "samples": 6928,
+            "maximum_actual_minus_cap_n": -3.5166306506892653,
+            "maximum_actual_minus_command_n": 0.8760094198771533,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "probe_transition": {
+            "samples": 4703,
+            "maximum_actual_minus_cap_n": 6.500269210043584,
+            "maximum_actual_minus_command_n": 7.6270017307213465,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "deliberate_probe": {
+            "samples": 6002,
+            "maximum_actual_minus_cap_n": 3.4674127678496873,
+            "maximum_actual_minus_command_n": 3.4674142820936282,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "recovery": {
+            "samples": 0,
+            "maximum_actual_minus_cap_n": null,
+            "maximum_actual_minus_command_n": null,
+            "samples_above_declared_tracking_reserve": 0
+          }
+        },
+        "maximum_probe_com_displacement_m": 0.09708992536148281
+      },
+      "failed_integrity_checks": []
+    },
+    {
+      "run_id": "weak_pad_adaptive_probe_20260921T110600_073353Z",
+      "outcome": "RECOVERED_STOP",
+      "metrics": {
+        "duration_s": 42.41600000000587,
+        "probe_requested_shortfall_n": 47.693454977208965,
+        "maximum_certified_force_n": 11.306531308742684,
+        "maximum_actual_future_pad_force_n": null,
+        "maximum_forward_com_motion_m": null,
+        "maximum_next_foot_clearance_m": null,
+        "simultaneous_progress_hold_s": 0.0,
+        "progress_window_samples": null,
+        "maximum_roll_pitch_deg": 1.0634886346458312,
+        "maximum_pad_sink_m": 0.05999999999999999,
+        "pad_failed": true,
+        "certificate_updates_audited": 1,
+        "stable_safe_stop_s": 0.0,
+        "probe_time_s": 15.450000000000001,
+        "recovery_time_s": 5.104,
+        "recovery_unload_delay_s": 0.0,
+        "recovery_lift_m": 0.03559731527756081,
+        "recovery_stable_hold_s": 3.3240000000040597,
+        "certificate_invalidations": 1,
+        "additional_probe_count": 1,
+        "final_forward_com_motion_m": 0.08563344839072082,
+        "terminal_mean_forward_com_motion_m": 0.08561330613630795,
+        "simultaneous_progress_min_forward_m": null,
+        "simultaneous_progress_max_forward_m": null,
+        "simultaneous_progress_min_next_foot_clearance_m": null,
+        "tracking_gap_by_phase_group": {
+          "future_execution": {
+            "samples": 0,
+            "maximum_actual_minus_cap_n": null,
+            "maximum_actual_minus_command_n": null,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "probe_transition": {
+            "samples": 3603,
+            "maximum_actual_minus_cap_n": 6.500269210043584,
+            "maximum_actual_minus_command_n": 6.632145444534409,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "deliberate_probe": {
+            "samples": 4122,
+            "maximum_actual_minus_cap_n": 3.4674127678496873,
+            "maximum_actual_minus_command_n": 3.4674142820936282,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "recovery": {
+            "samples": 2552,
+            "maximum_actual_minus_cap_n": 0.0,
+            "maximum_actual_minus_command_n": 0.0,
+            "samples_above_declared_tracking_reserve": 0
+          }
+        },
+        "maximum_probe_com_displacement_m": 0.09007932981175361
+      },
+      "failed_integrity_checks": []
+    },
+    {
+      "run_id": "weak_pad_fixed_probe_20260921T105743_948963Z",
+      "outcome": "SUCCESS",
+      "metrics": {
+        "duration_s": 44.43600000000834,
+        "probe_requested_shortfall_n": 37.53288716879055,
+        "maximum_certified_force_n": 21.467081665114414,
+        "maximum_actual_future_pad_force_n": 19.72439481579042,
+        "maximum_forward_com_motion_m": 0.04199534769386403,
+        "maximum_next_foot_clearance_m": 0.02904765499461931,
+        "simultaneous_progress_hold_s": 2.9800000000036393,
+        "progress_window_samples": [
+          20728,
+          22217
+        ],
+        "maximum_roll_pitch_deg": 2.5594183878528263,
+        "maximum_pad_sink_m": -0.0,
+        "pad_failed": false,
+        "certificate_updates_audited": 1,
+        "stable_safe_stop_s": 0.0,
+        "probe_time_s": 8.206,
+        "recovery_time_s": 0.0,
+        "recovery_unload_delay_s": null,
+        "recovery_lift_m": 0.0,
+        "recovery_stable_hold_s": 0.0,
+        "certificate_invalidations": 0,
+        "additional_probe_count": 0,
+        "final_forward_com_motion_m": 0.039879119792520824,
+        "terminal_mean_forward_com_motion_m": 0.039885362336912915,
+        "simultaneous_progress_min_forward_m": 0.039866411313931926,
+        "simultaneous_progress_max_forward_m": 0.039915235630908555,
+        "simultaneous_progress_min_next_foot_clearance_m": 0.0200113517981593,
+        "tracking_gap_by_phase_group": {
+          "future_execution": {
+            "samples": 7171,
+            "maximum_actual_minus_cap_n": 6.257313150676005,
+            "maximum_actual_minus_command_n": 6.257313370499686,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "probe_transition": {
+            "samples": 1101,
+            "maximum_actual_minus_cap_n": -0.024232343542372803,
+            "maximum_actual_minus_command_n": 3.5124815253879937,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "deliberate_probe": {
+            "samples": 3002,
+            "maximum_actual_minus_cap_n": 1.0385134660804616,
+            "maximum_actual_minus_command_n": 1.0385332693650986,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "recovery": {
+            "samples": 0,
+            "maximum_actual_minus_cap_n": null,
+            "maximum_actual_minus_command_n": null,
+            "samples_above_declared_tracking_reserve": 0
+          }
+        },
+        "maximum_probe_com_displacement_m": 0.0036035298786248767
+      },
+      "failed_integrity_checks": []
+    },
+    {
+      "run_id": "weak_pad_fixed_probe_20260921T105745_065855Z",
+      "outcome": "RECOVERED_STOP",
+      "metrics": {
+        "duration_s": 29.095999999994753,
+        "probe_requested_shortfall_n": 0.0,
+        "maximum_certified_force_n": null,
+        "maximum_actual_future_pad_force_n": null,
+        "maximum_forward_com_motion_m": null,
+        "maximum_next_foot_clearance_m": null,
+        "simultaneous_progress_hold_s": 0.0,
+        "progress_window_samples": null,
+        "maximum_roll_pitch_deg": 0.4357050138230353,
+        "maximum_pad_sink_m": 0.05999999999999999,
+        "pad_failed": true,
+        "certificate_updates_audited": 0,
+        "stable_safe_stop_s": 0.0,
+        "probe_time_s": 2.1,
+        "recovery_time_s": 5.1080000000000005,
+        "recovery_unload_delay_s": 0.007999999999995566,
+        "recovery_lift_m": 0.03745469271317332,
+        "recovery_stable_hold_s": 3.39399999999812,
+        "certificate_invalidations": 0,
+        "additional_probe_count": 0,
+        "final_forward_com_motion_m": 0.0004420221274978875,
+        "terminal_mean_forward_com_motion_m": 0.00043828775381853655,
+        "simultaneous_progress_min_forward_m": null,
+        "simultaneous_progress_max_forward_m": null,
+        "simultaneous_progress_min_next_foot_clearance_m": null,
+        "tracking_gap_by_phase_group": {
+          "future_execution": {
+            "samples": 0,
+            "maximum_actual_minus_cap_n": null,
+            "maximum_actual_minus_command_n": null,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "probe_transition": {
+            "samples": 0,
+            "maximum_actual_minus_cap_n": null,
+            "maximum_actual_minus_command_n": null,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "deliberate_probe": {
+            "samples": 1050,
+            "maximum_actual_minus_cap_n": 1.6924135035932082,
+            "maximum_actual_minus_command_n": 1.7061324554325736,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "recovery": {
+            "samples": 2554,
+            "maximum_actual_minus_cap_n": 7.29252639232558,
+            "maximum_actual_minus_command_n": 7.29252639232558,
+            "samples_above_declared_tracking_reserve": 0
+          }
+        },
+        "maximum_probe_com_displacement_m": 0.0011765628646770072
+      },
+      "failed_integrity_checks": []
+    },
+    {
+      "run_id": "weak_pad_fixed_probe_20260921T110625_114013Z",
+      "outcome": "SAFE_STOP",
+      "metrics": {
+        "duration_s": 33.06999999999445,
+        "probe_requested_shortfall_n": 47.693454977208965,
+        "maximum_certified_force_n": 11.306531308742684,
+        "maximum_actual_future_pad_force_n": 3.2848484849388684,
+        "maximum_forward_com_motion_m": 0.0017306790394724658,
+        "maximum_next_foot_clearance_m": 1.9928869363444734e-05,
+        "simultaneous_progress_hold_s": 0.0,
+        "progress_window_samples": null,
+        "maximum_roll_pitch_deg": 1.0634886346458312,
+        "maximum_pad_sink_m": -0.0,
+        "pad_failed": false,
+        "certificate_updates_audited": 1,
+        "stable_safe_stop_s": 3.0020000000002343,
+        "probe_time_s": 8.206,
+        "recovery_time_s": 0.0,
+        "recovery_unload_delay_s": null,
+        "recovery_lift_m": 0.0,
+        "recovery_stable_hold_s": 0.0,
+        "certificate_invalidations": 0,
+        "additional_probe_count": 0,
+        "final_forward_com_motion_m": 0.0016782136402388598,
+        "terminal_mean_forward_com_motion_m": 0.00167676959244023,
+        "simultaneous_progress_min_forward_m": null,
+        "simultaneous_progress_max_forward_m": null,
+        "simultaneous_progress_min_next_foot_clearance_m": null,
+        "tracking_gap_by_phase_group": {
+          "future_execution": {
+            "samples": 1501,
+            "maximum_actual_minus_cap_n": -0.02168282380381603,
+            "maximum_actual_minus_command_n": 0.018793345508965498,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "probe_transition": {
+            "samples": 1101,
+            "maximum_actual_minus_cap_n": -0.0662984615090374,
+            "maximum_actual_minus_command_n": 3.3384043895032,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "deliberate_probe": {
+            "samples": 3002,
+            "maximum_actual_minus_cap_n": 1.1428261492464618,
+            "maximum_actual_minus_command_n": 1.143368425886511,
+            "samples_above_declared_tracking_reserve": 0
+          },
+          "recovery": {
+            "samples": 0,
+            "maximum_actual_minus_cap_n": null,
+            "maximum_actual_minus_command_n": null,
+            "samples_above_declared_tracking_reserve": 0
+          }
+        },
+        "maximum_probe_com_displacement_m": 0.0024835677248448607
+      },
+      "failed_integrity_checks": []
+    }
+  ]
+}

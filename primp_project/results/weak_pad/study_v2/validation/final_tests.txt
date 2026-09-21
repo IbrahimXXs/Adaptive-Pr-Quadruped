@@ -1,0 +1,24 @@
+........................................................................ [ 14%]
+........................................................................ [ 29%]
+........................................................................ [ 44%]
+........................................................................ [ 59%]
+........................................................................ [ 73%]
+........................................................................ [ 88%]
+.......................................................                  [100%]
+=============================== warnings summary ===============================
+primp_project/tests/test_landing_pad.py::test_launch_has_four_real_support_contacts_and_valid_env_api
+primp_project/tests/test_weak_pad_environment.py::test_strength_is_hidden_and_does_not_change_initial_geometry_or_robot
+primp_project/tests/test_weak_pad_environment.py::test_real_measured_contact_triggers_step_hook_and_observation_stays_aligned
+primp_project/tests/test_weak_pad_initial_state.py::test_strength_does_not_change_varied_initial_observations_or_public_geometry
+  /home/ibrahim/miniconda3/envs/quadruped-pympc/lib/python3.12/site-packages/gymnasium/spaces/box.py:231: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+    gym.logger.warn(
+
+primp_project/tests/test_landing_pad.py::test_launch_has_four_real_support_contacts_and_valid_env_api
+primp_project/tests/test_weak_pad_environment.py::test_strength_is_hidden_and_does_not_change_initial_geometry_or_robot
+primp_project/tests/test_weak_pad_environment.py::test_real_measured_contact_triggers_step_hook_and_observation_stays_aligned
+primp_project/tests/test_weak_pad_initial_state.py::test_strength_does_not_change_varied_initial_observations_or_public_geometry
+  /home/ibrahim/miniconda3/envs/quadruped-pympc/lib/python3.12/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+    gym.logger.warn(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+487 passed, 8 warnings in 29.13s

@@ -157,3 +157,29 @@ def test_weak_pad_missing_or_contradictory_summary_cannot_inherit_success(tmp_pa
     assert refresh_catalog(root)[0]['status'] == 'UNANALYZED'
     (run/'weak_pad_summary.json').write_text(json.dumps(dict(outcome='SAFE_STOP', passed=True, physical_success=True)))
     assert refresh_catalog(root)[0]['status'] == 'INVALID'
+
+
+@pytest.mark.parametrize('physical,passed,recovered,expected', [
+    (False, False, True, 'RECOVERED_STOP'),
+    (True, False, True, 'INVALID'), (False, True, True, 'INVALID'),
+    (False, False, False, 'INVALID'), (False, False, None, 'INVALID'),
+])
+def test_weak_v2_recovery_is_distinct_from_completed_movement(tmp_path, physical, passed, recovered, expected):
+    root = tmp_path/'results'
+    run = _run(root, 'weak_pad/study_v2/evaluation', 'recovered', {
+        'experiment':'weak_pad', 'protocol_version':2, 'strategy':'fixed_probe',
+        'scenario':'weak_surface', 'status':'completed'})
+    (run/'weak_pad_summary.json').write_text(json.dumps(dict(outcome='RECOVERED_STOP',
+        physical_success=physical, passed=passed, controlled_recovery_passed=recovered)))
+    (run/'media').mkdir()
+    (run/'media/weak_replay.mp4').write_bytes(b'opaque offline replay')
+    (run/'media/weak_replay.png').write_bytes(b'opaque rendered preview')
+    before = {path:path.read_bytes() for path in run.rglob('*') if path.is_file()}
+    record = refresh_catalog(root)[0]
+    assert record['status'] == expected
+    assert record['protocol_version'] == 2 and record['scenario'] == 'weak_surface'
+    assert record['controlled_recovery_passed'] is recovered
+    assert record['links']['replay'].endswith('media/weak_replay.mp4')
+    assert record['links']['replay_preview'].endswith('media/weak_replay.png')
+    assert 'protocol V2' in (root/'README.md').read_text()
+    assert all(path.read_bytes() == value for path,value in before.items())

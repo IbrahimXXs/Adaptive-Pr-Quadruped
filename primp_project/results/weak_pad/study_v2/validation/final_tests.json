@@ -1,0 +1,5 @@
+{
+  "command": "PYTEST_DISABLE_PLUGIN_AUTOLOAD=1 OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python -m pytest primp_project/tests -q -o cache_dir=primp_project/artifacts/cache/pytest --basetemp=primp_project/artifacts/test_tmp",
+  "result": "487 passed, 8 warnings in29.13s",
+  "log_sha256": "21afc8804a6824f9c1dde94e373a9f9bb59657a13074e7f1b7f84a626c38ecbc"
+}

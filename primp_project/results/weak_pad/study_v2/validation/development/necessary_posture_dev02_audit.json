@@ -1,0 +1,94 @@
+{
+  "run_id": "weak_pad_adaptive_probe_20260921T110509_467417Z",
+  "raw_sha256": "37e218be331863f7e7fa3b23c69f321879d8d75c31f7bde9788788ec76b6b06d",
+  "first_probe_sample": 10931,
+  "control_time_s": 21.861999999998762,
+  "anchors_from_applied_feet_reference_w": [
+    [
+      0.24530415308238207,
+      0.12073009537694532,
+      0.022829954429316915
+    ],
+    [
+      0.14723595119890476,
+      -0.16516107611642597,
+      0.02197656883425668
+    ],
+    [
+      -0.16442854769546217,
+      0.15646714373191115,
+      0.021349907957226216
+    ],
+    [
+      -0.16841558698715126,
+      -0.16480420804110468,
+      0.02073158605433456
+    ]
+  ],
+  "anchors_match_independent_prior_physics_max_error_m": 0.0,
+  "initial_probe_com_w": [
+    -0.09555919876141257,
+    -0.053496991888955854,
+    0.25978138417823277
+  ],
+  "weight_n": 149.17486248000003,
+  "fixed_raw_maximum_probe_n": 19.83789423680806,
+  "ideal_fixed_maximum_without_force_floors_n": 25.994389198395584,
+  "moved_raw_maximum_probe_n": 54.80282538991069,
+  "moved_robust_probe_command_n": 52.80282538991069,
+  "future_global_minima": {
+    "0.04": {
+      "feasible": true,
+      "minimum_future_FL_n": 40.18071043481853,
+      "body_target_w": [
+        -0.05555919876141257,
+        0.026503008111044148,
+        0.25978138417823277
+      ],
+      "support_margin_m": 0.09334483446080447,
+      "forces_n": [
+        40.18071043481853,
+        0.0,
+        53.11789053677305,
+        55.87626150840845
+      ]
+    },
+    "0.03": {
+      "feasible": true,
+      "minimum_future_FL_n": 36.54386215178775,
+      "body_target_w": [
+        -0.06555919876141257,
+        0.026503008111044148,
+        0.25978138417823277
+      ],
+      "support_margin_m": 0.09902499937065637,
+      "forces_n": [
+        36.54386215178775,
+        0.0,
+        56.350189138566854,
+        56.280811189645426
+      ]
+    }
+  },
+  "necessary_even_without_original_support_force_floors": true,
+  "initial_certificate_n": 11.306531308742684,
+  "stronger_certificate_n": 52.08010418207873,
+  "minimum_installed_future_cap_n": 44.08010418207873,
+  "maximum_installed_future_cap_n": 44.08010418207873,
+  "maximum_commanded_future_FL_n": 41.3670253697986,
+  "maximum_actual_future_FL_n": 40.56347353138946,
+  "maximum_actual_minus_certificate_n": -11.516630650689265,
+  "maximum_command_minus_cap_n": -2.7130788122801306,
+  "final_actual_forward_progress_range_m": [
+    0.039859446238040636,
+    0.03997997165988727
+  ],
+  "final_actual_FR_clearance_range_m": [
+    0.029229327942134592,
+    0.02967100156990067
+  ],
+  "next_lift_leg": "FR",
+  "final_FR_contact_absent": true,
+  "final_other3_min_force_n": 11.322034788872172,
+  "note": "No controller rerun; global LP minima include full identical future lateral/longitudinal freedoms for all policies; no surface strength used in planning."
+}

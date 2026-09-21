@@ -198,3 +198,20 @@ def test_hidden_capacity_in_nested_planner_input_list_is_rejected():
     result=evaluate_weak_pad(m,d)
     assert not result['criteria']['strength_truth_boundary']['passed']
     assert not result['physical_success']
+
+
+def test_plot_uses_actual_target_pad_force_and_probe_origin_not_launch_stance():
+    from primp_project.analysis.weak_pad import overview_series
+    m,d=evidence()
+    d['phase'][:20]='stand'
+    d['sensor_pad_normal_force_n'][:20]=45.
+    d['actual_pad_normal_force_n'][:20]=0.
+    d['com_pos_w'][:20,0]+=.07
+    d['feet_pos_w'][:20,2,2]+=.003
+    values=overview_series(m,d)
+    assert np.all(values['target_pad_force_n'][:20]==0.)
+    assert values['origin_sample']==20
+    assert values['forward_progress_m'][20]==0.
+    assert values['next_foot_clearance_m'][20]==0.
+    assert values['forward_progress_m'][100]==pytest.approx(.04)
+    assert values['next_foot_clearance_m'][150]==pytest.approx(.025)

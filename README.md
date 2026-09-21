@@ -6,14 +6,26 @@ and a large unachieved force request are insufficient. The robot must advance
 its body and lift another leg within a measured support limit, request a
 stronger feasible probe, or stop safely.
 
-The load-limited-pad study records **four adapted movements, four conservative
-safe stops, and three unaware pad-collapse demonstrations** across 11 declared
-trials. Only the four movements count as physical success. This milestone uses
-measured-load certificates and a constrained body/force planner on the existing
-**Quadruped-PyMPC** controller; it does not claim a learned PRIMP strength model.
-See the [results and three replays](primp_project/docs/results/weak_pad.md),
-[experiment guide](primp_project/docs/weak_pad.md), and
-[independent audit](primp_project/results/weak_pad/study/validation/independent_audit.json).
+The current comparison gives every probing policy the **same body/load
+optimizer and movement freedoms**. All 48 held-out evaluations are complete:
+fixed probing completes 4/16 movements, force adaptation at a fixed test pose
+completes 6/16, and adaptation of force and test pose completes 10/16. The
+remaining outcomes are 24 safe stops and four controlled recoveries after actual
+pad failure. Those four failures occur under adaptive probing; fixed-pose
+policies stop without damaging the same pads. The benefit is **four additional
+movements versus the force-only baseline, with four failed probes and recovery**.
+See the [results and limitations](primp_project/docs/results/weak_pad_v2.md),
+[matched replays](primp_project/results/weak_pad/study_v2/media/README.md), and
+[experiment guide](primp_project/docs/weak_pad_v2.md). Independent audits verify
+the prescribed FR task's testing-pose necessity and all recordings;
+[487 tests pass](primp_project/results/weak_pad/study_v2/validation/final_tests.json).
+
+The preserved [11-trial V1 study](primp_project/docs/results/weak_pad.md) records
+four adapted movements, four conservative safe stops, and three unaware pad
+collapses. Its conventional body/load planner is now the common foundation and
+capable baseline. This stage uses measured certificates and constrained planning
+on **Quadruped-PyMPC**; it uses no PRIMP strength model and establishes no claim
+of research novelty. Safe stopping and recovery do not count as completed movement.
 
 The earlier control and motion-learning foundation studies how a quadruped can
 coordinate body motion, foot motion, and timing when the ground is higher or

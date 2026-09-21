@@ -1,0 +1,51 @@
+{
+  "run_id": "weak_pad_adaptive_probe_20260921T110509_467417Z",
+  "video": "/home/ibrahim/Documents/GO-2 PRIMP/primp_project/results/weak_pad/development_v2/weak_pad_adaptive_probe_20260921T110509_467417Z/media/weak_replay.mp4",
+  "preview": "/home/ibrahim/Documents/GO-2 PRIMP/primp_project/results/weak_pad/development_v2/weak_pad_adaptive_probe_20260921T110509_467417Z/media/weak_replay.png",
+  "codec": "avc1",
+  "fps": 20,
+  "resolution": [
+    960,
+    720
+  ],
+  "frame_count": 1143,
+  "playback_speed": 1.0,
+  "recorded_start_time_s": 0.002,
+  "recorded_end_time_s": 57.10200000002382,
+  "preview_time_s": 55.526000000021895,
+  "signals_sha256": "37e218be331863f7e7fa3b23c69f321879d8d75c31f7bde9788788ec76b6b06d",
+  "scene_sha256": "a8db6933e44edcd5e45ef9b89e52618dbd7bbe293a7c4c13d6f09a8643197316",
+  "weak_truth_sha256": "53302032a2fa8728be88eb1c20cd2e1271ec6b310bc45ec9a753269de7c31da7",
+  "method": "Restore recorded qpos/qvel and pad_sink_displacement_m with mj_forward; no mj_step or controller execution",
+  "presentation": "Orange weak target; hidden capacity, failure, and sink shown only as evaluation-replay truth",
+  "overlay_evidence": {
+    "source": "Recorded actual target force, certificate, installed cap and measured body/feet",
+    "progress": "Physical CoM world-X minus its first confirmed probe origin; stronger probing is not task completion",
+    "recovery_lift": "Measured FL Z change from first recovery sample",
+    "next_leg": "FR",
+    "first_probe_sample": 10931,
+    "first_recovery_sample": null,
+    "script_sha256": "f296128bedb873dc6d85eab7b98c367b9a620a1d49d8effda14a82e21c82f506"
+  },
+  "decode_validation": {
+    "all_frames_decoded": true,
+    "decoded_frames": 1143,
+    "resolution_valid": true
+  },
+  "video_sha256": "e82d784436aa02cc5f6d81a9b738df019e29de70c6683bd54f29e969e5b37528",
+  "visual_validation": {
+    "preview_inspected": true,
+    "measured_preview_state": {
+      "phase": "progress_hold",
+      "actual_pad_force_n": 40.033438197821354,
+      "pad_sink_m": -0.0,
+      "contacts": [
+        true,
+        false,
+        true,
+        true
+      ]
+    },
+    "observation": "FR airborne with FL on intact pad"
+  }
+}

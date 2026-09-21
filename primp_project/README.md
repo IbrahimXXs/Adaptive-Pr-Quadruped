@@ -6,20 +6,33 @@ survive a light load while still failing during later weight transfer. The
 robot must account for how much load its intended body motion and next leg
 lift will place on the new support.
 
-The implemented milestone turns a sustained measured load plateau into a
-conservative certificate, then selects a feasible body/force plan, requests a
-stronger achievable probe, or stops. Actual task completion requires at least
-30 mm forward CoM movement and a 20 mm rear-left foot lift together for at
-least one second. The 11-case native study records **four completed adaptive
-movements, four conservative safe stops, and three unaware pad collapses**.
-Only the completed movements count as physical success.
+The current comparison turns a measured load plateau into a conservative
+certificate and gives **every policy the same body/load optimizer and movement
+freedoms**. Policies differ only in whether further testing may change force
+and testing pose. Task completion requires at least 30 mm forward CoM movement
+and 20 mm lift of the declared next leg together for at least one second.
 
-Start with the [weak-pad results and replays](docs/results/weak_pad.md),
-[experiment guide](docs/weak_pad.md), and
-[independent audit](results/weak_pad/study/validation/independent_audit.json).
-This is a measured-load planning layer, not a newly trained PRIMP model of
-material strength. The earlier height-adaptation and motion-learning work
-provides its control foundation and remains preserved below.
+All **48 held-out trials** are complete. Fixed probing completes 4/16 movements,
+force adaptation at the fixed test pose completes 6/16, and adaptation of force
+and pose completes 10/16. The other outcomes are **24 safe stops and four
+controlled recoveries after actual pad failure**. Adaptive probing enables four
+additional movements versus the force-only baseline, but also damages four
+pads that fixed-pose policies preserve by stopping. This is a conditional
+feasibility benefit with additional probing cost and risk.
+
+Start with the [V2 results](docs/results/weak_pad_v2.md),
+[matched replays](results/weak_pad/study_v2/media/README.md),
+[independent raw audit](results/weak_pad/study_v2/validation/independent_execution_audit.json),
+and [experiment guide](docs/weak_pad_v2.md). All 48 predeclared outcomes were
+observed, and the [final suite passes 487 tests](results/weak_pad/study_v2/validation/final_tests.json).
+
+The preserved [11-case V1 study and replays](docs/results/weak_pad.md) contain
+four completed movements, four conservative safe stops, and three unaware
+collapses. Its ordinary body/load quadratic program is now the shared
+foundation and capable baseline. This comparison uses no PRIMP model and
+establishes no research novelty claim. Only completed movements count as
+physical success; stops and controlled recovery remain separate outcomes.
+The earlier height-adaptation and motion-learning work remains preserved below.
 
 ## Control and motion-learning foundation
 
@@ -51,7 +64,8 @@ extension from published PRIMP.
 
 | Milestone | Status | Evidence or intended outcome |
 | --- | --- | --- |
-| Plan beyond first contact on a weak foothold | Validated in 11 declared simulator cases | Four adapted movements, four conservative safe stops, three unaware collapses; includes a stronger-probe-then-execute case with fresh measured proof |
+| Compare testing policies with matched movement freedoms | Complete: 48 held-out trials | Fixed/force-only/adaptive probing complete 4/6/10 of 16 tasks each; 24 safe stops and 4 controlled recoveries remain separate. Independent settled-geometry necessity and raw audits pass |
+| Plan beyond first contact on a weak foothold | Preserved V1: 11 declared cases | Four adapted movements, four conservative safe stops, three unaware collapses; its body/load optimizer becomes the V2 shared baseline |
 | Stable four-foot standing | Complete | 30 seconds at zero commanded velocity, with synchronized body, foot, contact, force, support, and timing logs |
 | Controlled front-left step on flat ground | Complete | Body shift, gradual unloading, 3 cm lift, 5–10 second airborne hold, slow lowering, contact confirmation, gradual reloading, and recentering |
 | Repeat the controlled step | Complete for tested flat-ground conditions | Six successful cycles across two runs, with 6 and 10 second holds and friction coefficients 0.8 and 0.6 |
@@ -185,7 +199,7 @@ The experiment guides describe the full behavior, controller choices, signals,
 and validation: [standing](docs/standing.md) and
 [controlled step](docs/controlled_step.md), [V1 landing pad](docs/landing_pad.md),
 [V2 matched study](docs/landing_pad_v2.md),
-the [weak-pad experiment](docs/weak_pad.md),
+the [matched weak-pad experiment](docs/weak_pad_v2.md),
 and [learned model](docs/PRIMP_MODEL.md).
 
 ## Project layout

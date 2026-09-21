@@ -1,4 +1,8 @@
-# Weak-foothold results
+# V1 weak-foothold results
+
+These historical results remain unchanged. The current
+[V2 comparison](weak_pad_v2.md) gives every probing policy the same future
+body/load optimizer and movement freedoms.
 
 The capacity-aware controller completed the meaningful next movement in **4/4
 recorded cases**. The fixed-motion conservative baseline stopped safely in

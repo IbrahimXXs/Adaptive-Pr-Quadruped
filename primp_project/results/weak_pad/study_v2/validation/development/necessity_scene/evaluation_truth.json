@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "scene_type": "independent_landing_pad",
+  "true_height_m": 0.0,
+  "scene_spec": {
+    "true_height_m": 0.0,
+    "target_offset_xy_m": [
+      0.09,
+      0.0
+    ],
+    "pad_half_size_xy_m": [
+      0.032,
+      0.065
+    ],
+    "floor_height_m": -0.12
+  },
+  "landing_geom_name": "primp_landing_pad",
+  "landing_geom_id": 5,
+  "support_geom_names": [
+    "primp_support_FL",
+    "primp_support_FR",
+    "primp_support_RL",
+    "primp_support_RR"
+  ],
+  "support_geom_ids": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "support_top_heights_m": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "scene_path": "/home/ibrahim/Documents/GO-2 PRIMP/primp_project/results/weak_pad/study_v2/validation/development/necessity_scene/scene.xml",
+  "geometry": {
+    "target_xy_m": [
+      0.24715678006196184,
+      0.12200000000011048
+    ],
+    "target_offset_xy_m": [
+      0.09,
+      0.0
+    ],
+    "launch_support_xy_m": [
+      [
+        0.15715678006196185,
+        0.12200000000011048
+      ],
+      [
+        0.1571567800634569,
+        -0.1619999999999998
+      ],
+      [
+        -0.15964321993566893,
+        0.16199999999992148
+      ],
+      [
+        -0.1596432199356691,
+        -0.16199999999992148
+      ]
+    ],
+    "foot_radius_m": 0.022,
+    "pad_half_size_xy_m": [
+      0.032,
+      0.065
+    ],
+    "fixed_surface_height_m": 0.0
+  }
+}

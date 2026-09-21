@@ -1,0 +1,8 @@
+time_s,leg,event,phase,planned_support,normal_force_N
+0.006,FR,touchdown,stand,True,46.3406694652644
+0.006,RL,touchdown,stand,True,53.409612475808416
+0.006,RR,touchdown,stand,True,43.79295017239808
+0.008,FL,touchdown,stand,True,50.1371530315345
+9.169999999999732,FL,liftoff,unload,True,0.0
+21.59799999999891,FL,touchdown,lower,False,1.5903746360816065
+37.311999999999635,FL,liftoff,probe_ramp,True,0.0

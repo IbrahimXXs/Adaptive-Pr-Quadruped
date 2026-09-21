@@ -1,0 +1,17 @@
+{
+  "total_catalog_recordings": 203,
+  "formal_v2_recordings": 48,
+  "formal_outcomes": {
+    "SAFE_STOP": 24,
+    "RECOVERED_STOP": 4,
+    "SUCCESS": 20
+  },
+  "formal_catalog_statuses": {
+    "SAFE_STOP": 24,
+    "RECOVERED_STOP": 4,
+    "PASS": 20
+  },
+  "protocol_v2_recordings": 55,
+  "all_recovered_stops_distinct_from_success": true,
+  "raw_recordings_modified": false
+}
