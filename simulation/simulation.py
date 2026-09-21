@@ -42,7 +42,14 @@ def run_simulation(
     experiment_recorder=None,
     lock_zero_velocity=False,
     stop_on_termination=False,
+    controller_factory=None,
 ):
+    """Run the simulator, optionally with an experiment wrapper and recorder.
+
+    A controller_factory receives (env, **wrapper_kwargs). Its wrapper supplies
+    prepare_observation() and may set experiment_complete to end the episode.
+    Nonperiodic wrappers bypass the stock periodic swing visualization.
+    """
     np.set_printoptions(precision=3, suppress=True)
     np.random.seed(seed)
 
@@ -148,7 +155,8 @@ def run_simulation(
         # "base_poz_z_err",
     )
 
-    quadrupedpympc_wrapper = QuadrupedPyMPC_Wrapper(
+    wrapper_factory = QuadrupedPyMPC_Wrapper if controller_factory is None else lambda **kw: controller_factory(env, **kw)
+    quadrupedpympc_wrapper = wrapper_factory(
         initial_feet_pos=env.feet_pos,
         legs_order=tuple(legs_order),
         feet_geom_id=env._feet_geom_id,
@@ -189,6 +197,8 @@ def run_simulation(
     for episode_num in range(N_EPISODES):
         ep_state_history, ep_ctrl_state_history, ep_time = [], [], []
         for _ in tqdm(range(N_STEPS_PER_EPISODE), desc=f"Ep:{episode_num:d}-steps:", total=N_STEPS_PER_EPISODE):
+            if controller_factory is not None:
+                quadrupedpympc_wrapper.prepare_observation()
             # Update value from SE or Simulator ----------------------
             feet_pos = env.feet_pos(frame="world")
             feet_vel = env.feet_vel(frame='world')
@@ -306,7 +316,7 @@ def run_simulation(
                 _, _, feet_GRF = env.feet_contact_state(ground_reaction_forces=True)
 
                 # Plot the swing trajectory
-                feet_traj_geom_ids = plot_swing_mujoco(
+                feet_traj_geom_ids = None if controller_factory is not None else plot_swing_mujoco(
                     viewer=env.viewer,
                     swing_traj_controller=quadrupedpympc_wrapper.wb_interface.stc,
                     swing_period=quadrupedpympc_wrapper.wb_interface.stc.swing_period,
@@ -354,6 +364,9 @@ def run_simulation(
 
                 env.render()
                 last_render_time = time.time()
+
+            if getattr(quadrupedpympc_wrapper, "experiment_complete", False):
+                break
 
             # Reset the environment if the episode is terminated ------------------------------------------------
             if env.step_num >= N_STEPS_PER_EPISODE or is_terminated or is_truncated:

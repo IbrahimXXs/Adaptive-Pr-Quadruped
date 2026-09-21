@@ -1,9 +1,24 @@
-# PRIMP project: standing baseline
+# PRIMP project: standing and controlled stepping
 
 This folder contains the experiment code, recordings, reports, and plots for
-our ground-height adaptation project. The first experiment is **two seconds
+our ground-height adaptation project. The standing baseline is **two seconds
 of settling followed by 30 seconds of four-foot standing** on flat ground.
 The existing Go2 robot and nominal acados MPC settings are retained.
+
+The next milestone is a contact-gated front-left step: shift the body,
+unload and lift the foot 3 cm, hold it for 6 seconds, lower it slowly,
+confirm contact, reload, and recenter. Run three consecutive cycles with:
+
+```bash
+conda activate quadruped-pympc
+python primp_project/run_step.py
+```
+
+Add `--headless` for unattended verification, or `--cycles 1` for one cycle.
+The [controlled-step guide](STEP_EXPERIMENT.md) explains the controller changes,
+phase gates, records, validation, and limitations. The sections below describe
+the original standing baseline, which remains available separately.
+Verified repeatability measurements are in [STEP_RESULTS.md](STEP_RESULTS.md).
 
 ## Run
 
@@ -48,9 +63,8 @@ Each invocation creates a new `runs/standing_<UTC timestamp>/` directory.
 | `error.txt` | Exception details, if a run failed or was interrupted |
 
 All new experiment artifacts stay in this folder. Generated recordings and
-debug output are ignored by Git. The two necessary integration changes outside
-it are the existing robot configuration and explicit recorder calls in the
-existing simulation loop.
+debug output are ignored by Git. Integration outside this folder is limited to
+the existing robot configuration and simulation recorder/controller hooks.
 
 ## What is measured
 
