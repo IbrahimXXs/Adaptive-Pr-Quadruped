@@ -1,5 +1,7 @@
 # Description: This script is used to simulate the full model of the robot in mujoco
+import atexit
 import pathlib
+import threading
 
 # Authors:
 # Giulio Turrisi, Daniel Ordonez
@@ -37,6 +39,9 @@ def run_simulation(
     seed=0,
     render=True,
     recording_path: PathLike = None,
+    experiment_recorder=None,
+    lock_zero_velocity=False,
+    stop_on_termination=False,
 ):
     np.set_printoptions(precision=3, suppress=True)
     np.random.seed(seed)
@@ -70,8 +75,20 @@ def run_simulation(
         env.mjModel.qpos0 = np.concatenate((env.mjModel.qpos0[:7], qpympc_cfg.qpos0_js))
 
     env.reset(random=False)
+    viewer_threads = set()
+
+    def close_environment():
+        env.close()
+        # MuJoCo closes its passive viewer asynchronously. Finish rendering
+        # before its GLFW atexit handler tears down the graphics context.
+        for viewer_thread in viewer_threads:
+            viewer_thread.join()
+
     if render:
+        existing_threads = set(threading.enumerate())
         env.render()  # Pass in the first render call any mujoco.viewer.KeyCallbackType
+        viewer_threads = set(threading.enumerate()) - existing_threads
+        atexit.register(close_environment)
         env.viewer.user_scn.flags[mujoco.mjtRndFlag.mjRND_SHADOW] = False
         env.viewer.user_scn.flags[mujoco.mjtRndFlag.mjRND_REFLECTION] = False
 
@@ -138,6 +155,9 @@ def run_simulation(
         quadrupedpympc_observables_names=quadrupedpympc_observables_names,
     )
 
+    if experiment_recorder is not None:
+        experiment_recorder.start(env, qpympc_cfg)
+
     # Data recording -------------------------------------------------------------------------------------------
     if recording_path is not None:
         from gym_quadruped.utils.data.h5py import H5Writer
@@ -162,7 +182,7 @@ def run_simulation(
     # -----------------------------------------------------------------------------------------------------------
     RENDER_FREQ = 30  # Hz
     N_EPISODES = num_episodes
-    N_STEPS_PER_EPISODE = int(num_seconds_per_episode // simulation_dt)
+    N_STEPS_PER_EPISODE = int(round(num_seconds_per_episode / simulation_dt))
     last_render_time = time.time()
 
     state_obs_history, ctrl_state_history = [], []
@@ -181,6 +201,10 @@ def run_simulation(
 
             # Get the reference base velocity in the world frame
             ref_base_lin_vel, ref_base_ang_vel = env.target_base_vel()
+            if lock_zero_velocity:
+                # Keep a controlled standing baseline even if a viewer key is pressed.
+                ref_base_lin_vel = np.zeros(3)
+                ref_base_ang_vel = np.zeros(3)
 
             # Get the inertia matrix
             if qpympc_cfg.simulation_params["use_inertia_recomputation"]:
@@ -235,8 +259,10 @@ def run_simulation(
                 env.mjData.contact,
             )
             # Limit tau between tau_limits
+            torque_saturated = np.zeros(env.mjModel.nu, dtype=bool)
             for leg in ["FL", "FR", "RL", "RR"]:
                 tau_min, tau_max = tau_limits[leg][:, 0], tau_limits[leg][:, 1]
+                torque_saturated[env.legs_tau_idx[leg]] = (tau[leg] < tau_min) | (tau[leg] > tau_max)
                 tau[leg] = np.clip(tau[leg], tau_min, tau_max)
 
             # Set control and mujoco step -------------------------------------------------------------------------
@@ -248,7 +274,21 @@ def run_simulation(
 
 
             # Apply the action to the environment and evolve sim --------------------------------------------------
+            control_time = env.simulation_time
+            control_step = env.step_num
             state, reward, is_terminated, is_truncated, info = env.step(action=action)
+
+            if experiment_recorder is not None:
+                experiment_recorder.record_step(
+                    env, quadrupedpympc_wrapper, episode_num, control_step, control_time,
+                    action, torque_saturated, ref_base_lin_vel, ref_base_ang_vel,
+                    is_terminated, is_truncated,
+                )
+            if stop_on_termination and (is_terminated or is_truncated):
+                close_environment()
+                if render:
+                    atexit.unregister(close_environment)
+                raise RuntimeError(f"Experiment terminated at step {env.step_num}: {info}")
 
             # Get Controller state observables
             ctrl_state = quadrupedpympc_wrapper.get_obs()
@@ -323,15 +363,19 @@ def run_simulation(
                     state_obs_history.append(ep_state_history)
                     ctrl_state_history.append(ep_ctrl_state_history)     
 
-                env.reset(random=True)
-                quadrupedpympc_wrapper.reset(initial_feet_pos=env.feet_pos(frame="world"))
+                # Preserve the terminal state of the final episode for experiment logs.
+                if episode_num + 1 < N_EPISODES or env.step_num < N_STEPS_PER_EPISODE:
+                    env.reset(random=True)
+                    quadrupedpympc_wrapper.reset(initial_feet_pos=env.feet_pos(frame="world"))
 
         if h5py_writer is not None:  # Save episode trajectory data to disk.
             ep_obs_history = collate_obs(ep_state_history)  # | collate_obs(ep_ctrl_state_history)
             ep_traj_time = np.asarray(ep_time)[:, np.newaxis]
             h5py_writer.append_trajectory(state_obs_traj=ep_obs_history, time=ep_traj_time)
 
-    env.close()
+    close_environment()
+    if render:
+        atexit.unregister(close_environment)
     if h5py_writer is not None:
         return h5py_writer.file_path
 
