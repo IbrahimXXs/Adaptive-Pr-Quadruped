@@ -1,3 +1,21 @@
+# Go2 PRIMP ground-height adaptation project
+
+This workspace builds on **Quadruped-PyMPC** to study how a quadruped can
+coordinate body motion, foot motion, and timing when the ground is higher or
+lower than expected. We are building a PRIMP-inspired approach that will learn
+from successful steps and revise movement using contact and missing-contact
+evidence. Stable standing and repeated controlled front-foot steps on flat
+ground are implemented and recorded; terrain estimation and learned adaptation
+are the next research milestones.
+
+Start with the [project README](primp_project/README.md) for the research goal,
+current status, commands, organized source layout, and recorded results. All
+project-specific work is kept in `primp_project/`.
+
+The original Quadruped-PyMPC documentation and credits follow.
+
+---
+
 <div style="display: flex; justify-content: space-around;">
   <img src="./gifs/aliengo_trot.gif" alt="Trot" width="30%">
   <img src="./gifs/hyqreal_pace.gif" alt="Pace" width="30%">

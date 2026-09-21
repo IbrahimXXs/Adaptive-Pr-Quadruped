@@ -1,5 +1,6 @@
-runs/
-debug/
+artifacts/
+# Keep result metadata, summaries, and catalog labels with their recordings.
+!results/**/*.json
 __pycache__/
 .pytest_cache/
 .pytest_tmp/

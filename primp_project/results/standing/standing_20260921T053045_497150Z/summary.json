@@ -1,0 +1,283 @@
+{
+  "passed": true,
+  "robot": "go2",
+  "controller": "nominal",
+  "runner_status": "completed",
+  "runner_error": null,
+  "criteria_basis": "Chosen engineering acceptance limits for this flat-ground standing experiment; not paper guarantees.",
+  "limits": {
+    "zero_command_tolerance": 1e-12,
+    "max_abs_roll_pitch_deg": 5.0,
+    "max_xy_drift_m": 0.02,
+    "height_range_m": 0.02,
+    "rms_linear_speed_m_s": 0.03,
+    "rms_angular_speed_rad_s": 0.05,
+    "max_foot_displacement_m": 0.01
+  },
+  "sample_convention": "Rows are interval endpoints; no t=0 row. Standing covers (settling_duration, total_duration].",
+  "anchor_convention": "First standing sample, held fixed for all body and foot drift measurements.",
+  "mpc_status_note": "Status 2 is the configured SQP iteration budget being reached. QP success is checked independently; full NLP convergence is not claimed.",
+  "foot_error_note": "Desired and foothold-reference errors are diagnostics. Full-stance desired positions can copy sensed feet, so small errors do not demonstrate independent stance-trajectory tracking.",
+  "criteria": {
+    "completed": {
+      "passed": true,
+      "requirement": "Runner status is completed",
+      "observed": "completed"
+    },
+    "sample_count": {
+      "passed": true,
+      "requirement": "Exactly 16000 integration intervals",
+      "observed": 16000
+    },
+    "total_duration": {
+      "passed": true,
+      "requirement": "Final experiment time 32 s",
+      "observed": 31.999999999993147
+    },
+    "time_grid": {
+      "passed": true,
+      "requirement": "End-of-interval times on 0.002 s grid, no reset or gap",
+      "observed": 16000
+    },
+    "control_state_alignment": {
+      "passed": true,
+      "requirement": "Control timestamp is the start of its recorded state interval (time_s - dt)",
+      "observed": 3.552713678800501e-15
+    },
+    "mujoco_clock": {
+      "passed": true,
+      "requirement": "Raw MuJoCo clock advances one dt per sample without reset",
+      "observed": 0.0019999999999988916
+    },
+    "standing_duration": {
+      "passed": true,
+      "requirement": "Exactly 30 s / 15000 standing intervals after settling",
+      "observed": 30.0
+    },
+    "finite_data": {
+      "passed": true,
+      "requirement": "Every numeric raw array is finite",
+      "observed": []
+    },
+    "zero_velocity_command": {
+      "passed": true,
+      "requirement": "All linear and angular command components <= 1e-12 in magnitude",
+      "observed": [
+        0.0,
+        0.0
+      ]
+    },
+    "no_termination": {
+      "passed": true,
+      "requirement": "No terminated or truncated sample",
+      "observed": [
+        0,
+        0
+      ]
+    },
+    "no_numerical_warnings": {
+      "passed": true,
+      "requirement": "No MuJoCo numerical warnings",
+      "observed": 0
+    },
+    "planned_full_stance": {
+      "passed": true,
+      "requirement": "All four scheduled support flags true throughout",
+      "observed": 0
+    },
+    "measured_full_stance": {
+      "passed": true,
+      "requirement": "Every foot has an active contact at every standing sample",
+      "observed": {
+        "FL": 0,
+        "FR": 0,
+        "RL": 0,
+        "RR": 0
+      }
+    },
+    "mpc_update_cadence": {
+      "passed": true,
+      "requirement": "3200 MPC updates at 100 Hz; every 5 intervals starting at control t=0",
+      "observed": 3200
+    },
+    "qp_success": {
+      "passed": true,
+      "requirement": "QP status 0 at every MPC update",
+      "observed": {
+        "0": 3200
+      }
+    },
+    "nlp_status": {
+      "passed": true,
+      "requirement": "NLP status 0 or 2 at every MPC update",
+      "observed": {
+        "2": 3200
+      }
+    },
+    "max_abs_roll_pitch_deg": {
+      "passed": true,
+      "requirement": "Standing max_abs_roll_pitch_deg <= 5",
+      "observed": 1.5679716425837178
+    },
+    "max_xy_drift_m": {
+      "passed": true,
+      "requirement": "Standing max_xy_drift_m <= 0.02",
+      "observed": 0.0034726943757795213
+    },
+    "height_range_m": {
+      "passed": true,
+      "requirement": "Standing height_range_m <= 0.02",
+      "observed": 0.007455796878626242
+    },
+    "rms_linear_speed_m_s": {
+      "passed": true,
+      "requirement": "Standing rms_linear_speed_m_s <= 0.03",
+      "observed": 0.0006453342919859031
+    },
+    "rms_angular_speed_rad_s": {
+      "passed": true,
+      "requirement": "Standing rms_angular_speed_rad_s <= 0.05",
+      "observed": 0.00048603571948568875
+    },
+    "max_foot_displacement_m": {
+      "passed": true,
+      "requirement": "Standing max_foot_displacement_m <= 0.01",
+      "observed": 0.0007716082866736963
+    }
+  },
+  "metrics": {
+    "sample_count": 16000,
+    "standing_sample_count": 15000,
+    "settling_sample_count": 1000,
+    "recorded_duration_s": 31.999999999993147,
+    "standing_interval_coverage_s": 30.0,
+    "mpc_solve_count": 3200,
+    "expected_mpc_solve_count": 3200,
+    "configured_mpc_frequency_hz": 100.0,
+    "mpc_period_integration_steps": 5,
+    "max_control_state_alignment_error_s": 3.552713678800501e-15,
+    "mpc_status_counts_at_updates": {
+      "2": 3200
+    },
+    "qp_status_counts_at_updates": {
+      "0": 3200
+    },
+    "max_abs_linear_command_m_s": 0.0,
+    "max_abs_angular_command_rad_s": 0.0,
+    "max_abs_actuator_torque_nm": 8.582471600978039,
+    "saturated_actuator_sample_count": 0,
+    "numerical_warning_count_max": 0,
+    "terminated_sample_count": 0,
+    "truncated_sample_count": 0,
+    "nonfinite_signals": [],
+    "wall_time_last_sample_s": 32.853530323000086,
+    "model_weight_n": 149.17486248000003,
+    "settling_contact_fraction_by_leg": {
+      "FL": 0.998,
+      "FR": 0.998,
+      "RL": 0.998,
+      "RR": 0.998
+    },
+    "first_measured_contact_time_s_by_leg": {
+      "FL": 0.006,
+      "FR": 0.006,
+      "RL": 0.006,
+      "RR": 0.006
+    },
+    "standing": {
+      "anchor_time_s": 2.002000000000001,
+      "anchor_base_pos_w_m": [
+        0.0008081589118782153,
+        0.0006477555612735652,
+        0.2995636872926715
+      ],
+      "anchor_feet_pos_w_m": [
+        [
+          0.19123933793386064,
+          0.13898106259808346,
+          0.021688131266604932
+        ],
+        [
+          0.191267511735222,
+          -0.13974298768785548,
+          0.021756568264054643
+        ],
+        [
+          -0.19533236378773,
+          0.1397097339958071,
+          0.02174945830081984
+        ],
+        [
+          -0.19507844812580102,
+          -0.13958325755448794,
+          0.021746002641716722
+        ]
+      ],
+      "final_base_pos_w_m": [
+        -0.0010189889238632838,
+        0.0002601472222034187,
+        0.3070163251525582
+      ],
+      "base_height_min_m": 0.2995636872926715,
+      "base_height_max_m": 0.30701948417129776,
+      "height_range_m": 0.007455796878626242,
+      "max_abs_roll_pitch_deg": 1.5679716425837178,
+      "max_xy_drift_m": 0.0034726943757795213,
+      "final_xy_drift_m": 0.0018678087263345681,
+      "rms_linear_speed_m_s": 0.0006453342919859031,
+      "rms_angular_speed_rad_s": 0.00048603571948568875,
+      "max_foot_displacement_m": 0.0007716082866736963,
+      "max_abs_actuator_torque_nm": 6.224318933562607,
+      "all_four_feet_contact_fraction": 1.0,
+      "mean_total_measured_fz_n": 149.17394623257064,
+      "mean_total_desired_fz_n": 139.1648275998428,
+      "per_leg": {
+        "FL": {
+          "measured_contact_fraction": 1.0,
+          "missing_contact_samples": 0,
+          "max_fixed_anchor_displacement_m": 0.0007342074168841556,
+          "rms_desired_actual_distance_m": 4.790142988679397e-07,
+          "max_desired_actual_distance_m": 2.5833502333058957e-06,
+          "rms_foothold_reference_distance_m": 0.009275010988857323,
+          "mean_measured_fz_n": 37.66590415638513,
+          "mean_desired_fz_n": 35.17515070965642,
+          "rms_measured_minus_desired_fz_n": 2.570854318975037
+        },
+        "FR": {
+          "measured_contact_fraction": 1.0,
+          "missing_contact_samples": 0,
+          "max_fixed_anchor_displacement_m": 0.0006889813699735396,
+          "rms_desired_actual_distance_m": 4.7628701401071587e-07,
+          "max_desired_actual_distance_m": 2.6092392194593705e-06,
+          "rms_foothold_reference_distance_m": 0.007808892116821661,
+          "mean_measured_fz_n": 37.56479469758915,
+          "mean_desired_fz_n": 35.02789122718909,
+          "rms_measured_minus_desired_fz_n": 2.599710038399853
+        },
+        "RL": {
+          "measured_contact_fraction": 1.0,
+          "missing_contact_samples": 0,
+          "max_fixed_anchor_displacement_m": 0.0007716082866736963,
+          "rms_desired_actual_distance_m": 5.664312209059508e-07,
+          "max_desired_actual_distance_m": 3.491717765770132e-06,
+          "rms_foothold_reference_distance_m": 0.007739920468665655,
+          "mean_measured_fz_n": 37.085144147728336,
+          "mean_desired_fz_n": 34.554517363579166,
+          "rms_measured_minus_desired_fz_n": 2.6126784090002455
+        },
+        "RR": {
+          "measured_contact_fraction": 1.0,
+          "missing_contact_samples": 0,
+          "max_fixed_anchor_displacement_m": 0.0007279722549602713,
+          "rms_desired_actual_distance_m": 5.439005272906073e-07,
+          "max_desired_actual_distance_m": 3.2186941877355155e-06,
+          "rms_foothold_reference_distance_m": 0.008500402078953605,
+          "mean_measured_fz_n": 36.85810323086806,
+          "mean_desired_fz_n": 34.40726829941812,
+          "rms_measured_minus_desired_fz_n": 2.579436549859717
+        }
+      },
+      "mean_vertical_support_to_model_weight": 0.9999938578966043
+    }
+  }
+}

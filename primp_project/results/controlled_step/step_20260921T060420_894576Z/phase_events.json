@@ -1,0 +1,164 @@
+[
+  {
+    "time_s": 3.201999999999869,
+    "cycle": 1,
+    "from": "stand",
+    "to": "shift"
+  },
+  {
+    "time_s": 7.403999999999407,
+    "cycle": 1,
+    "from": "shift",
+    "to": "unload"
+  },
+  {
+    "time_s": 10.504000000000177,
+    "cycle": 1,
+    "from": "unload",
+    "to": "lift"
+  },
+  {
+    "time_s": 12.704000000000912,
+    "cycle": 1,
+    "from": "lift",
+    "to": "hold"
+  },
+  {
+    "time_s": 18.704000000000512,
+    "cycle": 1,
+    "from": "hold",
+    "to": "lower"
+  },
+  {
+    "time_s": 22.705999999998294,
+    "cycle": 1,
+    "from": "lower",
+    "to": "confirm"
+  },
+  {
+    "time_s": 23.943999999997608,
+    "cycle": 1,
+    "from": "confirm",
+    "to": "reload"
+  },
+  {
+    "time_s": 27.145999999995833,
+    "cycle": 1,
+    "from": "reload",
+    "to": "recenter"
+  },
+  {
+    "time_s": 31.347999999993505,
+    "cycle": 2,
+    "from": "recenter",
+    "to": "stand"
+  },
+  {
+    "time_s": 34.54799999999626,
+    "cycle": 2,
+    "from": "stand",
+    "to": "shift"
+  },
+  {
+    "time_s": 38.74800000000139,
+    "cycle": 2,
+    "from": "shift",
+    "to": "unload"
+  },
+  {
+    "time_s": 41.84800000000518,
+    "cycle": 2,
+    "from": "unload",
+    "to": "lift"
+  },
+  {
+    "time_s": 44.04800000000787,
+    "cycle": 2,
+    "from": "lift",
+    "to": "hold"
+  },
+  {
+    "time_s": 50.0480000000152,
+    "cycle": 2,
+    "from": "hold",
+    "to": "lower"
+  },
+  {
+    "time_s": 54.04800000002009,
+    "cycle": 2,
+    "from": "lower",
+    "to": "confirm"
+  },
+  {
+    "time_s": 55.29400000002161,
+    "cycle": 2,
+    "from": "confirm",
+    "to": "reload"
+  },
+  {
+    "time_s": 58.49400000002552,
+    "cycle": 2,
+    "from": "reload",
+    "to": "recenter"
+  },
+  {
+    "time_s": 62.694000000030655,
+    "cycle": 3,
+    "from": "recenter",
+    "to": "stand"
+  },
+  {
+    "time_s": 65.89600000002783,
+    "cycle": 3,
+    "from": "stand",
+    "to": "shift"
+  },
+  {
+    "time_s": 70.09800000001803,
+    "cycle": 3,
+    "from": "shift",
+    "to": "unload"
+  },
+  {
+    "time_s": 73.2000000000108,
+    "cycle": 3,
+    "from": "unload",
+    "to": "lift"
+  },
+  {
+    "time_s": 75.40200000000567,
+    "cycle": 3,
+    "from": "lift",
+    "to": "hold"
+  },
+  {
+    "time_s": 81.40199999999169,
+    "cycle": 3,
+    "from": "hold",
+    "to": "lower"
+  },
+  {
+    "time_s": 85.40399999998236,
+    "cycle": 3,
+    "from": "lower",
+    "to": "confirm"
+  },
+  {
+    "time_s": 86.65599999997944,
+    "cycle": 3,
+    "from": "confirm",
+    "to": "reload"
+  },
+  {
+    "time_s": 89.85799999997198,
+    "cycle": 3,
+    "from": "reload",
+    "to": "recenter"
+  },
+  {
+    "time_s": 94.05999999996219,
+    "cycle": 3,
+    "from": "recenter",
+    "to": "complete"
+  }
+]

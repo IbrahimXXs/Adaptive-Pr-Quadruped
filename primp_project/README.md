@@ -1,151 +1,122 @@
-# PRIMP project: standing and controlled stepping
+# Go2 ground-height adaptation with PRIMP-inspired motion learning
 
-This folder contains the experiment code, recordings, reports, and plots for
-our ground-height adaptation project. The standing baseline is **two seconds
-of settling followed by 30 seconds of four-foot standing** on flat ground.
-The existing Go2 robot and nominal acados MPC settings are retained.
+Our goal is to teach a quadruped to adjust its **body motion, foot motion, and
+timing together** when the ground is higher or lower than expected. This
+project uses the Go2 simulation and nominal acados controller in
+[Quadruped-PyMPC](https://github.com/iit-DLSLab/Quadruped-PyMPC).
 
-The next milestone is a contact-gated front-left step: shift the body,
-unload and lift the foot 3 cm, hold it for 6 seconds, lower it slowly,
-confirm contact, reload, and recenter. Run three consecutive cycles with:
+The first scenario is a controlled front-foot lowering movement. If the foot
+reaches the expected surface height without contact, the robot should decide
+how much farther to lower it, how to move its body while the other three feet
+support it, and when to transfer weight. Early contact should also update its
+estimate of the surface height.
+
+We intend to learn coordinated movements from successful stepping examples
+with a **PRIMP-inspired model**. During execution, contact and missing contact
+will update the ground-height estimate, and the learned model will suggest a
+revised movement. The current work builds and verifies the control and
+recording foundation for that research.
+
+## Current status and next milestones
+
+| Milestone | Status | Evidence or intended outcome |
+| --- | --- | --- |
+| Stable four-foot standing | Complete | 30 seconds at zero commanded velocity, with synchronized body, foot, contact, force, support, and timing logs |
+| Controlled front-left step on flat ground | Complete | Body shift, gradual unloading, 3 cm lift, 5–10 second airborne hold, slow lowering, contact confirmation, gradual reloading, and recentering |
+| Repeat the controlled step | Complete for tested flat-ground conditions | Six successful cycles across two runs, with 6 and 10 second holds and friction coefficients 0.8 and 0.6 |
+| Introduce a known ground-height mismatch | Planned | Test early or missing contact while preserving three-leg support; establish recovery limits and failure criteria |
+| Estimate ground height from contact evidence | Planned | Use touchdown or continued absence of contact to revise the estimated surface height |
+| Learn coordinated movement from demonstrations | Planned | Build a dataset and a PRIMP-inspired model of body trajectory, foot trajectory, and timing |
+| Adapt and evaluate complete movements | Planned | Revise all three components during execution and compare against the scripted baseline |
+
+The current step is a scripted, contact-gated primitive. Ground-height
+estimation, learned movement generation, adaptation to unexpected terrain,
+and hardware validation are still future work. Sustained three-leg support
+is implemented explicitly; `full_stance` supplies the four-foot starting state.
+
+See the [standing results](docs/results/standing.md) and
+[controlled-step results](docs/results/controlled_step.md) for measurements,
+acceptance checks, and links to the recorded evidence.
+
+## Run an experiment
+
+Run these commands from the repository root using the existing project
+environment:
 
 ```bash
 conda activate quadruped-pympc
-python primp_project/run_step.py
+python -m primp_project standing
+python -m primp_project step
 ```
 
-Add `--headless` for unattended verification, or `--cycles 1` for one cycle.
-The [controlled-step guide](STEP_EXPERIMENT.md) explains the controller changes,
-phase gates, records, validation, and limitations. The sections below describe
-the original standing baseline, which remains available separately.
-Verified repeatability measurements are in [STEP_RESULTS.md](STEP_RESULTS.md).
-
-## Run
-
-From the repository root:
+The standing experiment includes 2 seconds of settling and 30 seconds of
+standing. The step experiment runs three consecutive cycles with 6-second
+airborne holds. Both open the viewer and save a new recording automatically.
+Use `--headless` for unattended runs, or inspect options with `--help`:
 
 ```bash
-conda activate quadruped-pympc
-python primp_project/run_standing.py
+python -m primp_project step --headless --cycles 3 --hold-seconds 10
+python -m primp_project step --help
+python -m primp_project results
 ```
 
-The viewer opens and the experiment ends automatically. For unattended runs:
+The experiment guides describe the full behavior, controller choices, signals,
+and validation: [standing](docs/standing.md) and
+[controlled step](docs/controlled_step.md).
+
+## Project layout
+
+All project-specific source, documentation, recordings, and working artifacts
+live here. The upstream simulator and robot/controller packages remain at the
+repository root.
+
+```text
+primp_project/
+├── README.md              # Research goal, status, and entry points
+├── __main__.py            # Unified command-line entry point
+├── experiments/           # Standing and controlled-step runners
+├── control/               # Coordinated step controller and phase logic
+├── recording/             # Synchronized simulation and experiment logging
+├── analysis/              # Independent acceptance checks and plots
+├── tests/                 # Recording, controller, and analysis checks
+├── docs/                  # Experiment guides and written result summaries
+│   └── results/
+├── results/               # Preserved recordings and searchable catalog
+│   ├── standing/
+│   ├── controlled_step/
+│   └── archive/
+└── artifacts/             # Diagnostic logs, caches, and temporary test files
+```
+
+## Recordings and results
+
+The [results catalog](results/README.md) lists the retained runs and their
+purpose. `results/catalog.json` provides the machine-readable index. Original
+metadata is preserved; descriptive labels live in `results/annotations.json`.
+Recordings are grouped by experiment; development and verification runs are
+retained under `archive/`.
+Each active experiment directory has a `LATEST.txt` pointer for the newest run
+and a `CANONICAL.txt` pointer for the selected reference recording.
+
+Each run keeps its measurements, metadata, reports, and plots together.
+Signals include body pose, actual and desired foot positions, measured contacts
+and forces, planned support, timestamps, and movement phase. Controlled-step
+runs also record body references, foot trajectory derivatives, support margins,
+force limits, phase transitions, and touchdown confirmation. Source snapshots
+and provenance belong to the recording that produced them.
+
+To regenerate a report for a particular run:
 
 ```bash
-python primp_project/run_standing.py --headless
+python -m primp_project analyze-standing primp_project/results/standing/standing_<timestamp>
+python -m primp_project analyze-step primp_project/results/controlled_step/step_<timestamp>
 ```
 
-The runner checks that `simulation_params` contains `gait='full_stance'`,
-`scene='flat'`, and `mode='human'`. It enforces zero linear and angular velocity
-commands on **every** control step, including if arrow keys are pressed.
-Mouse disturbances can still affect the robot and its validation results.
-Ground friction is fixed at 0.8; the seed defaults to 0. It stops on a fall or
-other termination instead of silently resetting and continuing the recording.
-
-For short debugging runs use `--seconds 1 --settle-seconds 2`. These are not
-the full 30-second baseline. Durations must be multiples of the 0.002 s step.
-
-## Files in each recording
-
-Each invocation creates a new `runs/standing_<UTC timestamp>/` directory.
-`runs/LATEST.txt` identifies the most recent run. Previous runs are preserved.
-
-| File | Contents |
-| --- | --- |
-| `signals.npz` | All signals as named NumPy arrays, including raw model state |
-| `samples.csv` | The same measurements as flat columns, one row per physics interval |
-| `contact_events.csv` | Observed contact onset/loss, leg, phase, and force at detection |
-| `metadata.json` | Settings, versions, source revision, units, frames, and clock conventions |
-| `source_changes.patch` | Local simulator/configuration changes at recording time |
-| `summary.json` | Numerical metrics, explicit pass criteria, and overall result |
-| `REPORT.md` | Human-readable results |
-| `overview.png` | Body motion, foot motion, forces, and support plots |
-| `error.txt` | Exception details, if a run failed or was interrupted |
-
-All new experiment artifacts stay in this folder. Generated recordings and
-debug output are ignored by Git. Integration outside this folder is limited to
-the existing robot configuration and simulation recorder/controller hooks.
-
-## What is measured
-
-The logging rate is **500 Hz**; the MPC updates at **100 Hz**. The default run
-contains 16,000 integration intervals: 1,000 settling and 15,000 standing.
-Each sample is the **end** of an interval, so time runs from 0.002 to 32.000 s.
-The standing samples cover `(2, 32]` s. `control_time_s` identifies the start
-of the interval for the held reference and command. Raw MuJoCo and wall clocks
-are also saved. The reset's internal physics step is excluded from experiment
-time; its resulting initial state is retained in metadata.
-
-Leg order is always **FL, FR, RL, RR** (front-left, front-right, rear-left,
-rear-right). Position is in metres, forces in newtons, torques in Nm, and
-rotation/phase timing in radians/seconds as named. Positions, linear velocities,
-and contact forces use world XYZ; angular velocity uses the base frame.
-Orientation is saved both as scalar-first quaternion and XYZ roll/pitch/yaw.
-
-Actual foot positions are the foot **geometry centers**, not the terrain
-surface/contact points. The logger records the actual instantaneous foot target
-from the whole-body controller separately from the planner's touchdown target.
-During stance, the controller's foot target follows recent measured foot
-positions. Therefore a small desired-minus-actual error does not prove the
-feet stayed fixed: the report also measures drift from fixed anchors at the
-start of the standing phase.
-
-Measured support means an active simulator constraint between the exact foot
-geometry and static world geometry. Planned support is copied independently
-from the controller. Contact forces are summed **on the foot**, with the sign
-corrected for either MuJoCo geometry order. Planned MPC forces are recorded
-separately. These are simulator measurements, not hardware force-sensor data.
-
-MuJoCo leaves some geometry/contact arrays stale after stepping. The recorder
-copies `MjData` and refreshes the copy with `mj_forward`, aligning actual body,
-feet, contacts, and forces at the post-step timestamp without changing the live
-controller state. Forces therefore describe the instantaneous post-step
-reaction under the held control; they are not integrated landing impulses.
-The physical CoM uses mass-weighted body inertial positions. It is distinct
-from the CoM estimate used internally by the unchanged controller.
-
-`phase` and `phase_time_s` distinguish settling and standing. Raw gait phase
-and per-leg swing time are retained, but full-stance gait phase is a constant
-offset rather than a progressing step cycle. Planned support is not inferred
-from that phase. Solver results are counted only on `mpc_update` rows; other
-rows hold the previous result. Acados status 2 is expected with the existing
-one-iteration SQP setting and is allowed only with successful QP solves.
-
-## Validation
-
-The report checks exact duration and continuous clocks, finite data, zero
-commands, four planned supports, no reset/termination/numerical warnings, and
-successful QP solves. During the standing window all four measured contacts
-must remain active. Chosen engineering limits are 5 degrees roll/pitch,
-2 cm horizontal body drift, 2 cm height range, 0.03 m/s RMS linear speed,
-0.05 rad/s RMS angular speed, and 1 cm maximum foot drift from fixed anchors.
-These are explicit baseline acceptance criteria, not general robot safety
-limits. Startup/contact settling remains in the logs and is reported separately.
-
-The completed 30-second baseline is recorded in [RESULTS.md](RESULTS.md).
-
-To inspect data interactively:
-
-```python
-from pathlib import Path
-import numpy as np
-
-root = Path('primp_project/runs')
-run = root / (root / 'LATEST.txt').read_text().strip()
-with np.load(run / 'signals.npz', allow_pickle=False) as log:
-    print(log['time_s'].shape)
-    print(log['contact_measured'][-1])
-    print(log['contact_planned'][-1])
-```
-
-This baseline does not yet lower a foot or learn a motion model. It establishes
-the standing behavior and measurements needed for that next experiment.
-
-Focused recording/analysis tests can be run with:
+## Checks
 
 ```bash
-PYTEST_DISABLE_PLUGIN_AUTOLOAD=1 python -m pytest primp_project/test_recorder.py primp_project/test_analysis.py -q -o cache_dir=primp_project/.pytest_cache --basetemp=primp_project/.pytest_tmp
+PYTEST_DISABLE_PLUGIN_AUTOLOAD=1 python -m pytest primp_project/tests -q -o cache_dir=primp_project/artifacts/cache/pytest --basetemp=primp_project/artifacts/test_tmp
 ```
 
-Plugin autoload is disabled only for this test command because the installed
-ROS pytest plugin uses an older pytest hook API.
+Plugin autoload is disabled for this command because the installed ROS pytest
+plugin uses an incompatible hook API. The experiment commands do not need it.

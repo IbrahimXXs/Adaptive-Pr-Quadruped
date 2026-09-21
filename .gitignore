@@ -320,4 +320,6 @@ quadruped_pympc/controllers/gradient/nominal/c_generated_code_gait_adaptive/
 # ROS2
 ros2/msgs_ws/build/
 ros2/msgs_ws/install/
-ros2/msgs_ws/log/
+ros2/msgs_ws/log/primp_project/results/controlled_step/step_20260921T060420_894576Z/samples.csv
+primp_project/results/controlled_step/step_20260921T060615_222958Z/samples.csv
+primp_project/results/controlled_step/step_20260921T060420_894576Z/samples.csv

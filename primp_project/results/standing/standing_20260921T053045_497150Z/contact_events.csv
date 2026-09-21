@@ -1,0 +1,5 @@
+time_s,leg,event,phase,planned_support,normal_force_N
+0.006,FL,touchdown,settling,True,53.41509817177126
+0.006,FR,touchdown,settling,True,57.168882795571065
+0.006,RL,touchdown,settling,True,54.58672149519133
+0.006,RR,touchdown,settling,True,56.051014049593405
