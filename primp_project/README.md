@@ -6,7 +6,26 @@ survive a light load while still failing during later weight transfer. The
 robot must account for how much load its intended body motion and next leg
 lift will place on the new support.
 
-The current comparison turns a measured load plateau into a conservative
+The latest experiment asks **how much additional testing is necessary** while
+keeping the existing controller and evaluation frozen. Its 32-cell capacity
+sweep compares the maximum-feasible test with a minimum sufficient test target,
+including the same certificate reserves and explicit command allowances.
+The smaller test completes **8/16 movements and damages 8/16 pads**, compared with
+**4/16 completions and 12/16 damaged pads** for the baseline. All damage is followed by
+controlled recovery. At 52 N and 53 N, four matched trials complete intact where
+the larger test breaks the pad. Lower boundary capacities still fail under both
+policies, and probing time does not improve.
+
+Start with the [probe-efficiency results](docs/results/probe_efficiency.md),
+[paired replay](results/weak_pad/probe_efficiency/media/README.md),
+[experiment guide](docs/probe_efficiency.md), and
+[independent audit](results/weak_pad/probe_efficiency/validation/independent_execution_audit.json).
+All 32 predeclared outcomes were observed; the
+[combined suite passes 549 tests](results/weak_pad/probe_efficiency/validation/final_tests.json).
+The four newly avoided failures involve stronger pads and are distinct from
+the four earlier V2 failures, which remain below the relaxed task load.
+
+The preserved V2 comparison turns a measured load plateau into a conservative
 certificate and gives **every policy the same body/load optimizer and movement
 freedoms**. Policies differ only in whether further testing may change force
 and testing pose. Task completion requires at least 30 mm forward CoM movement
@@ -20,11 +39,12 @@ additional movements versus the force-only baseline, but also damages four
 pads that fixed-pose policies preserve by stopping. This is a conditional
 feasibility benefit with additional probing cost and risk.
 
-Start with the [V2 results](docs/results/weak_pad_v2.md),
+The [V2 results](docs/results/weak_pad_v2.md),
 [matched replays](results/weak_pad/study_v2/media/README.md),
 [independent raw audit](results/weak_pad/study_v2/validation/independent_execution_audit.json),
-and [experiment guide](docs/weak_pad_v2.md). All 48 predeclared outcomes were
-observed, and the [final suite passes 487 tests](results/weak_pad/study_v2/validation/final_tests.json).
+and [experiment guide](docs/weak_pad_v2.md) retain that earlier comparison.
+All 48 predeclared outcomes were observed, with
+[487 tests at its freeze](results/weak_pad/study_v2/validation/final_tests.json).
 
 The preserved [11-case V1 study and replays](docs/results/weak_pad.md) contain
 four completed movements, four conservative safe stops, and three unaware
@@ -64,6 +84,7 @@ extension from published PRIMP.
 
 | Milestone | Status | Evidence or intended outcome |
 | --- | --- | --- |
+| Target only sufficient additional testing | Complete: 32 declared trials | Minimum targeting completes 8/16 versus 4/16 for the frozen baseline; four new matched pairs avoid damage, while eight minimum-policy trials still damage the pad and recover. No timing advantage |
 | Compare testing policies with matched movement freedoms | Complete: 48 held-out trials | Fixed/force-only/adaptive probing complete 4/6/10 of 16 tasks each; 24 safe stops and 4 controlled recoveries remain separate. Independent settled-geometry necessity and raw audits pass |
 | Plan beyond first contact on a weak foothold | Preserved V1: 11 declared cases | Four adapted movements, four conservative safe stops, three unaware collapses; its body/load optimizer becomes the V2 shared baseline |
 | Stable four-foot standing | Complete | 30 seconds at zero commanded velocity, with synchronized body, foot, contact, force, support, and timing logs |
@@ -200,6 +221,7 @@ and validation: [standing](docs/standing.md) and
 [controlled step](docs/controlled_step.md), [V1 landing pad](docs/landing_pad.md),
 [V2 matched study](docs/landing_pad_v2.md),
 the [matched weak-pad experiment](docs/weak_pad_v2.md),
+the [probe-efficiency extension](docs/probe_efficiency.md),
 and [learned model](docs/PRIMP_MODEL.md).
 
 ## Project layout
@@ -220,6 +242,7 @@ primp_project/
 ├── recording/             # Synchronized simulation and experiment logging
 ├── analysis/              # Independent acceptance checks and plots
 ├── visualization/         # Offline rendering of recorded physical states
+├── probe_efficiency/      # Isolated test-target policy, runner, evaluation, tests
 ├── tests/                 # Recording, controller, and analysis checks
 ├── docs/                  # Experiment guides and written result summaries
 │   └── results/
@@ -277,7 +300,7 @@ python -m primp_project analyze-pad primp_project/results/landing_pad/evaluation
 ## Checks
 
 ```bash
-PYTEST_DISABLE_PLUGIN_AUTOLOAD=1 python -m pytest primp_project/tests -q -o cache_dir=primp_project/artifacts/cache/pytest --basetemp=primp_project/artifacts/test_tmp
+PYTEST_DISABLE_PLUGIN_AUTOLOAD=1 python -m pytest primp_project/tests primp_project/probe_efficiency/tests -q -o cache_dir=primp_project/artifacts/cache/pytest --basetemp=primp_project/artifacts/test_tmp
 ```
 
 Plugin autoload is disabled for this command because the installed ROS pytest

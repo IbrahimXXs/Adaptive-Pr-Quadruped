@@ -1,0 +1,1072 @@
+{
+  "verified": true,
+  "frozen_study": {
+    "verified": true,
+    "trials": 32,
+    "source_sha256": "ae942d6cb4139dbe3322aef4e56bf43647604de79298aab43c98285f7360e8ab",
+    "legacy_baseline": {
+      "verified": true,
+      "trials": 48,
+      "source_sha256": "7f8501f0270429c3929f9c888604dd54448064f60e78fe24079746cd740f4afd",
+      "canonical_files": 147
+    }
+  },
+  "original_evaluator_source_sha256": "edbeb67485dc4dff4b4ed329d941072f6c97a5e5c67c4bd505c4e74873d174fe",
+  "audited_trials": 32,
+  "audit_source_sha256": "2f6fda44119a28452ce51257e85c0f61efc69062dcf4c5e2a50fb1bb74bdd9c3",
+  "original_evaluation_checks_preserved": [
+    {
+      "trial_id": "capacity48p5_maximum_feasible_seed211",
+      "exact_original_evaluator_result": true,
+      "every_original_criterion_unchanged": true,
+      "original_outcome_unchanged": true,
+      "original_completion_semantics": true,
+      "all_new_integrity_checks": true,
+      "actual_pad_damage": true,
+      "exact_probe_time": true,
+      "exact_deliberate_probe_time": true,
+      "exact_recovery_time": true,
+      "distinct_command_and_physical_force": true,
+      "raw_and_summaries_unchanged": true,
+      "verified": true
+    },
+    {
+      "trial_id": "capacity48p5_maximum_feasible_seed907",
+      "exact_original_evaluator_result": true,
+      "every_original_criterion_unchanged": true,
+      "original_outcome_unchanged": true,
+      "original_completion_semantics": true,
+      "all_new_integrity_checks": true,
+      "actual_pad_damage": true,
+      "exact_probe_time": true,
+      "exact_deliberate_probe_time": true,
+      "exact_recovery_time": true,
+      "distinct_command_and_physical_force": true,
+      "raw_and_summaries_unchanged": true,
+      "verified": true
+    },
+    {
+      "trial_id": "capacity48p5_minimum_sufficient_seed211",
+      "exact_original_evaluator_result": true,
+      "every_original_criterion_unchanged": true,
+      "original_outcome_unchanged": true,
+      "original_completion_semantics": true,
+      "all_new_integrity_checks": true,
+      "actual_pad_damage": true,
+      "exact_probe_time": true,
+      "exact_deliberate_probe_time": true,
+      "exact_recovery_time": true,
+      "distinct_command_and_physical_force": true,
+      "raw_and_summaries_unchanged": true,
+      "verified": true
+    },
+    {
+      "trial_id": "capacity48p5_minimum_sufficient_seed907",
+      "exact_original_evaluator_result": true,
+      "every_original_criterion_unchanged": true,
+      "original_outcome_unchanged": true,
+      "original_completion_semantics": true,
+      "all_new_integrity_checks": true,
+      "actual_pad_damage": true,
+      "exact_probe_time": true,
+      "exact_deliberate_probe_time": true,
+      "exact_recovery_time": true,
+      "distinct_command_and_physical_force": true,
+      "raw_and_summaries_unchanged": true,
+      "verified": true
+    },
+    {
+      "trial_id": "capacity49p5_maximum_feasible_seed211",
+      "exact_original_evaluator_result": true,
+      "every_original_criterion_unchanged": true,
+      "original_outcome_unchanged": true,
+      "original_completion_semantics": true,
+      "all_new_integrity_checks": true,
+      "actual_pad_damage": true,
+      "exact_probe_time": true,
+      "exact_deliberate_probe_time": true,
+      "exact_recovery_time": true,
+      "distinct_command_and_physical_force": true,
+      "raw_and_summaries_unchanged": true,
+      "verified": true
+    },
+    {
+      "trial_id": "capacity49p5_maximum_feasible_seed907",
+      "exact_original_evaluator_result": true,
+      "every_original_criterion_unchanged": true,
+      "original_outcome_unchanged": true,
+      "original_completion_semantics": true,
+      "all_new_integrity_checks": true,
+      "actual_pad_damage": true,
+      "exact_probe_time": true,
+      "exact_deliberate_probe_time": true,
+      "exact_recovery_time": true,
+      "distinct_command_and_physical_force": true,
+      "raw_and_summaries_unchanged": true,
+      "verified": true
+    },
+    {
+      "trial_id": "capacity49p5_minimum_sufficient_seed211",
+      "exact_original_evaluator_result": true,
+      "every_original_criterion_unchanged": true,
+      "original_outcome_unchanged": true,
+      "original_completion_semantics": true,
+      "all_new_integrity_checks": true,
+      "actual_pad_damage": true,
+      "exact_probe_time": true,
+      "exact_deliberate_probe_time": true,
+      "exact_recovery_time": true,
+      "distinct_command_and_physical_force": true,
+      "raw_and_summaries_unchanged": true,
+      "verified": true
+    },
+    {
+      "trial_id": "capacity49p5_minimum_sufficient_seed907",
+      "exact_original_evaluator_result": true,
+      "every_original_criterion_unchanged": true,
+      "original_outcome_unchanged": true,
+      "original_completion_semantics": true,
+      "all_new_integrity_checks": true,
+      "actual_pad_damage": true,
+      "exact_probe_time": true,
+      "exact_deliberate_probe_time": true,
+      "exact_recovery_time": true,
+      "distinct_command_and_physical_force": true,
+      "raw_and_summaries_unchanged": true,
+      "verified": true
+    },
+    {
+      "trial_id": "capacity50p5_maximum_feasible_seed211",
+      "exact_original_evaluator_result": true,
+      "every_original_criterion_unchanged": true,
+      "original_outcome_unchanged": true,
+      "original_completion_semantics": true,
+      "all_new_integrity_checks": true,
+      "actual_pad_damage": true,
+      "exact_probe_time": true,
+      "exact_deliberate_probe_time": true,
+      "exact_recovery_time": true,
+      "distinct_command_and_physical_force": true,
+      "raw_and_summaries_unchanged": true,
+      "verified": true
+    },
+    {
+      "trial_id": "capacity50p5_maximum_feasible_seed907",
+      "exact_original_evaluator_result": true,
+      "every_original_criterion_unchanged": true,
+      "original_outcome_unchanged": true,
+      "original_completion_semantics": true,
+      "all_new_integrity_checks": true,
+      "actual_pad_damage": true,
+      "exact_probe_time": true,
+      "exact_deliberate_probe_time": true,
+      "exact_recovery_time": true,
+      "distinct_command_and_physical_force": true,
+      "raw_and_summaries_unchanged": true,
+      "verified": true
+    },
+    {
+      "trial_id": "capacity50p5_minimum_sufficient_seed211",
+      "exact_original_evaluator_result": true,
+      "every_original_criterion_unchanged": true,
+      "original_outcome_unchanged": true,
+      "original_completion_semantics": true,
+      "all_new_integrity_checks": true,
+      "actual_pad_damage": true,
+      "exact_probe_time": true,
+      "exact_deliberate_probe_time": true,
+      "exact_recovery_time": true,
+      "distinct_command_and_physical_force": true,
+      "raw_and_summaries_unchanged": true,
+      "verified": true
+    },
+    {
+      "trial_id": "capacity50p5_minimum_sufficient_seed907",
+      "exact_original_evaluator_result": true,
+      "every_original_criterion_unchanged": true,
+      "original_outcome_unchanged": true,
+      "original_completion_semantics": true,
+      "all_new_integrity_checks": true,
+      "actual_pad_damage": true,
+      "exact_probe_time": true,
+      "exact_deliberate_probe_time": true,
+      "exact_recovery_time": true,
+      "distinct_command_and_physical_force": true,
+      "raw_and_summaries_unchanged": true,
+      "verified": true
+    },
+    {
+      "trial_id": "capacity51p0_maximum_feasible_seed211",
+      "exact_original_evaluator_result": true,
+      "every_original_criterion_unchanged": true,
+      "original_outcome_unchanged": true,
+      "original_completion_semantics": true,
+      "all_new_integrity_checks": true,
+      "actual_pad_damage": true,
+      "exact_probe_time": true,
+      "exact_deliberate_probe_time": true,
+      "exact_recovery_time": true,
+      "distinct_command_and_physical_force": true,
+      "raw_and_summaries_unchanged": true,
+      "verified": true
+    },
+    {
+      "trial_id": "capacity51p0_maximum_feasible_seed907",
+      "exact_original_evaluator_result": true,
+      "every_original_criterion_unchanged": true,
+      "original_outcome_unchanged": true,
+      "original_completion_semantics": true,
+      "all_new_integrity_checks": true,
+      "actual_pad_damage": true,
+      "exact_probe_time": true,
+      "exact_deliberate_probe_time": true,
+      "exact_recovery_time": true,
+      "distinct_command_and_physical_force": true,
+      "raw_and_summaries_unchanged": true,
+      "verified": true
+    },
+    {
+      "trial_id": "capacity51p0_minimum_sufficient_seed211",
+      "exact_original_evaluator_result": true,
+      "every_original_criterion_unchanged": true,
+      "original_outcome_unchanged": true,
+      "original_completion_semantics": true,
+      "all_new_integrity_checks": true,
+      "actual_pad_damage": true,
+      "exact_probe_time": true,
+      "exact_deliberate_probe_time": true,
+      "exact_recovery_time": true,
+      "distinct_command_and_physical_force": true,
+      "raw_and_summaries_unchanged": true,
+      "verified": true
+    },
+    {
+      "trial_id": "capacity51p0_minimum_sufficient_seed907",
+      "exact_original_evaluator_result": true,
+      "every_original_criterion_unchanged": true,
+      "original_outcome_unchanged": true,
+      "original_completion_semantics": true,
+      "all_new_integrity_checks": true,
+      "actual_pad_damage": true,
+      "exact_probe_time": true,
+      "exact_deliberate_probe_time": true,
+      "exact_recovery_time": true,
+      "distinct_command_and_physical_force": true,
+      "raw_and_summaries_unchanged": true,
+      "verified": true
+    },
+    {
+      "trial_id": "capacity52p0_maximum_feasible_seed211",
+      "exact_original_evaluator_result": true,
+      "every_original_criterion_unchanged": true,
+      "original_outcome_unchanged": true,
+      "original_completion_semantics": true,
+      "all_new_integrity_checks": true,
+      "actual_pad_damage": true,
+      "exact_probe_time": true,
+      "exact_deliberate_probe_time": true,
+      "exact_recovery_time": true,
+      "distinct_command_and_physical_force": true,
+      "raw_and_summaries_unchanged": true,
+      "verified": true
+    },
+    {
+      "trial_id": "capacity52p0_maximum_feasible_seed907",
+      "exact_original_evaluator_result": true,
+      "every_original_criterion_unchanged": true,
+      "original_outcome_unchanged": true,
+      "original_completion_semantics": true,
+      "all_new_integrity_checks": true,
+      "actual_pad_damage": true,
+      "exact_probe_time": true,
+      "exact_deliberate_probe_time": true,
+      "exact_recovery_time": true,
+      "distinct_command_and_physical_force": true,
+      "raw_and_summaries_unchanged": true,
+      "verified": true
+    },
+    {
+      "trial_id": "capacity52p0_minimum_sufficient_seed211",
+      "exact_original_evaluator_result": true,
+      "every_original_criterion_unchanged": true,
+      "original_outcome_unchanged": true,
+      "original_completion_semantics": true,
+      "all_new_integrity_checks": true,
+      "actual_pad_damage": true,
+      "exact_probe_time": true,
+      "exact_deliberate_probe_time": true,
+      "exact_recovery_time": true,
+      "distinct_command_and_physical_force": true,
+      "raw_and_summaries_unchanged": true,
+      "verified": true
+    },
+    {
+      "trial_id": "capacity52p0_minimum_sufficient_seed907",
+      "exact_original_evaluator_result": true,
+      "every_original_criterion_unchanged": true,
+      "original_outcome_unchanged": true,
+      "original_completion_semantics": true,
+      "all_new_integrity_checks": true,
+      "actual_pad_damage": true,
+      "exact_probe_time": true,
+      "exact_deliberate_probe_time": true,
+      "exact_recovery_time": true,
+      "distinct_command_and_physical_force": true,
+      "raw_and_summaries_unchanged": true,
+      "verified": true
+    },
+    {
+      "trial_id": "capacity53p0_maximum_feasible_seed211",
+      "exact_original_evaluator_result": true,
+      "every_original_criterion_unchanged": true,
+      "original_outcome_unchanged": true,
+      "original_completion_semantics": true,
+      "all_new_integrity_checks": true,
+      "actual_pad_damage": true,
+      "exact_probe_time": true,
+      "exact_deliberate_probe_time": true,
+      "exact_recovery_time": true,
+      "distinct_command_and_physical_force": true,
+      "raw_and_summaries_unchanged": true,
+      "verified": true
+    },
+    {
+      "trial_id": "capacity53p0_maximum_feasible_seed907",
+      "exact_original_evaluator_result": true,
+      "every_original_criterion_unchanged": true,
+      "original_outcome_unchanged": true,
+      "original_completion_semantics": true,
+      "all_new_integrity_checks": true,
+      "actual_pad_damage": true,
+      "exact_probe_time": true,
+      "exact_deliberate_probe_time": true,
+      "exact_recovery_time": true,
+      "distinct_command_and_physical_force": true,
+      "raw_and_summaries_unchanged": true,
+      "verified": true
+    },
+    {
+      "trial_id": "capacity53p0_minimum_sufficient_seed211",
+      "exact_original_evaluator_result": true,
+      "every_original_criterion_unchanged": true,
+      "original_outcome_unchanged": true,
+      "original_completion_semantics": true,
+      "all_new_integrity_checks": true,
+      "actual_pad_damage": true,
+      "exact_probe_time": true,
+      "exact_deliberate_probe_time": true,
+      "exact_recovery_time": true,
+      "distinct_command_and_physical_force": true,
+      "raw_and_summaries_unchanged": true,
+      "verified": true
+    },
+    {
+      "trial_id": "capacity53p0_minimum_sufficient_seed907",
+      "exact_original_evaluator_result": true,
+      "every_original_criterion_unchanged": true,
+      "original_outcome_unchanged": true,
+      "original_completion_semantics": true,
+      "all_new_integrity_checks": true,
+      "actual_pad_damage": true,
+      "exact_probe_time": true,
+      "exact_deliberate_probe_time": true,
+      "exact_recovery_time": true,
+      "distinct_command_and_physical_force": true,
+      "raw_and_summaries_unchanged": true,
+      "verified": true
+    },
+    {
+      "trial_id": "capacity54p0_maximum_feasible_seed211",
+      "exact_original_evaluator_result": true,
+      "every_original_criterion_unchanged": true,
+      "original_outcome_unchanged": true,
+      "original_completion_semantics": true,
+      "all_new_integrity_checks": true,
+      "actual_pad_damage": true,
+      "exact_probe_time": true,
+      "exact_deliberate_probe_time": true,
+      "exact_recovery_time": true,
+      "distinct_command_and_physical_force": true,
+      "raw_and_summaries_unchanged": true,
+      "verified": true
+    },
+    {
+      "trial_id": "capacity54p0_maximum_feasible_seed907",
+      "exact_original_evaluator_result": true,
+      "every_original_criterion_unchanged": true,
+      "original_outcome_unchanged": true,
+      "original_completion_semantics": true,
+      "all_new_integrity_checks": true,
+      "actual_pad_damage": true,
+      "exact_probe_time": true,
+      "exact_deliberate_probe_time": true,
+      "exact_recovery_time": true,
+      "distinct_command_and_physical_force": true,
+      "raw_and_summaries_unchanged": true,
+      "verified": true
+    },
+    {
+      "trial_id": "capacity54p0_minimum_sufficient_seed211",
+      "exact_original_evaluator_result": true,
+      "every_original_criterion_unchanged": true,
+      "original_outcome_unchanged": true,
+      "original_completion_semantics": true,
+      "all_new_integrity_checks": true,
+      "actual_pad_damage": true,
+      "exact_probe_time": true,
+      "exact_deliberate_probe_time": true,
+      "exact_recovery_time": true,
+      "distinct_command_and_physical_force": true,
+      "raw_and_summaries_unchanged": true,
+      "verified": true
+    },
+    {
+      "trial_id": "capacity54p0_minimum_sufficient_seed907",
+      "exact_original_evaluator_result": true,
+      "every_original_criterion_unchanged": true,
+      "original_outcome_unchanged": true,
+      "original_completion_semantics": true,
+      "all_new_integrity_checks": true,
+      "actual_pad_damage": true,
+      "exact_probe_time": true,
+      "exact_deliberate_probe_time": true,
+      "exact_recovery_time": true,
+      "distinct_command_and_physical_force": true,
+      "raw_and_summaries_unchanged": true,
+      "verified": true
+    },
+    {
+      "trial_id": "capacity56p0_maximum_feasible_seed211",
+      "exact_original_evaluator_result": true,
+      "every_original_criterion_unchanged": true,
+      "original_outcome_unchanged": true,
+      "original_completion_semantics": true,
+      "all_new_integrity_checks": true,
+      "actual_pad_damage": true,
+      "exact_probe_time": true,
+      "exact_deliberate_probe_time": true,
+      "exact_recovery_time": true,
+      "distinct_command_and_physical_force": true,
+      "raw_and_summaries_unchanged": true,
+      "verified": true
+    },
+    {
+      "trial_id": "capacity56p0_maximum_feasible_seed907",
+      "exact_original_evaluator_result": true,
+      "every_original_criterion_unchanged": true,
+      "original_outcome_unchanged": true,
+      "original_completion_semantics": true,
+      "all_new_integrity_checks": true,
+      "actual_pad_damage": true,
+      "exact_probe_time": true,
+      "exact_deliberate_probe_time": true,
+      "exact_recovery_time": true,
+      "distinct_command_and_physical_force": true,
+      "raw_and_summaries_unchanged": true,
+      "verified": true
+    },
+    {
+      "trial_id": "capacity56p0_minimum_sufficient_seed211",
+      "exact_original_evaluator_result": true,
+      "every_original_criterion_unchanged": true,
+      "original_outcome_unchanged": true,
+      "original_completion_semantics": true,
+      "all_new_integrity_checks": true,
+      "actual_pad_damage": true,
+      "exact_probe_time": true,
+      "exact_deliberate_probe_time": true,
+      "exact_recovery_time": true,
+      "distinct_command_and_physical_force": true,
+      "raw_and_summaries_unchanged": true,
+      "verified": true
+    },
+    {
+      "trial_id": "capacity56p0_minimum_sufficient_seed907",
+      "exact_original_evaluator_result": true,
+      "every_original_criterion_unchanged": true,
+      "original_outcome_unchanged": true,
+      "original_completion_semantics": true,
+      "all_new_integrity_checks": true,
+      "actual_pad_damage": true,
+      "exact_probe_time": true,
+      "exact_deliberate_probe_time": true,
+      "exact_recovery_time": true,
+      "distinct_command_and_physical_force": true,
+      "raw_and_summaries_unchanged": true,
+      "verified": true
+    }
+  ],
+  "matched_policy_geometry_and_parameters": [
+    {
+      "case_id": "capacity48p5",
+      "seed": 211,
+      "verified": true
+    },
+    {
+      "case_id": "capacity48p5",
+      "seed": 907,
+      "verified": true
+    },
+    {
+      "case_id": "capacity49p5",
+      "seed": 211,
+      "verified": true
+    },
+    {
+      "case_id": "capacity49p5",
+      "seed": 907,
+      "verified": true
+    },
+    {
+      "case_id": "capacity50p5",
+      "seed": 211,
+      "verified": true
+    },
+    {
+      "case_id": "capacity50p5",
+      "seed": 907,
+      "verified": true
+    },
+    {
+      "case_id": "capacity51p0",
+      "seed": 211,
+      "verified": true
+    },
+    {
+      "case_id": "capacity51p0",
+      "seed": 907,
+      "verified": true
+    },
+    {
+      "case_id": "capacity52p0",
+      "seed": 211,
+      "verified": true
+    },
+    {
+      "case_id": "capacity52p0",
+      "seed": 907,
+      "verified": true
+    },
+    {
+      "case_id": "capacity53p0",
+      "seed": 211,
+      "verified": true
+    },
+    {
+      "case_id": "capacity53p0",
+      "seed": 907,
+      "verified": true
+    },
+    {
+      "case_id": "capacity54p0",
+      "seed": 211,
+      "verified": true
+    },
+    {
+      "case_id": "capacity54p0",
+      "seed": 907,
+      "verified": true
+    },
+    {
+      "case_id": "capacity56p0",
+      "seed": 211,
+      "verified": true
+    },
+    {
+      "case_id": "capacity56p0",
+      "seed": 907,
+      "verified": true
+    }
+  ],
+  "across_capacity_prefix_checks": [
+    {
+      "probe_policy": "maximum_feasible",
+      "seed": 211,
+      "hidden_capacity_n": 48.5,
+      "verified": true,
+      "reference_run_id": "weak_pad_maximum_feasible_20260921T123007_389107Z",
+      "compared_run_id": "weak_pad_maximum_feasible_20260921T122256_520185Z",
+      "compared_samples": 19108,
+      "compared_channels": 103,
+      "prefix_duration_s": 38.21600000000074,
+      "ignored_host_and_evaluator_channels": [
+        "overload_elapsed_s",
+        "solver_time_s",
+        "wall_time_s"
+      ],
+      "mismatches": []
+    },
+    {
+      "probe_policy": "maximum_feasible",
+      "seed": 211,
+      "hidden_capacity_n": 49.5,
+      "verified": true,
+      "reference_run_id": "weak_pad_maximum_feasible_20260921T123007_389107Z",
+      "compared_run_id": "weak_pad_maximum_feasible_20260921T122353_026403Z",
+      "compared_samples": 19143,
+      "compared_channels": 103,
+      "prefix_duration_s": 38.286000000000826,
+      "ignored_host_and_evaluator_channels": [
+        "overload_elapsed_s",
+        "solver_time_s",
+        "wall_time_s"
+      ],
+      "mismatches": []
+    },
+    {
+      "probe_policy": "maximum_feasible",
+      "seed": 211,
+      "hidden_capacity_n": 50.5,
+      "verified": true,
+      "reference_run_id": "weak_pad_maximum_feasible_20260921T123007_389107Z",
+      "compared_run_id": "weak_pad_maximum_feasible_20260921T122452_109652Z",
+      "compared_samples": 19180,
+      "compared_channels": 103,
+      "prefix_duration_s": 38.360000000000916,
+      "ignored_host_and_evaluator_channels": [
+        "overload_elapsed_s",
+        "solver_time_s",
+        "wall_time_s"
+      ],
+      "mismatches": []
+    },
+    {
+      "probe_policy": "maximum_feasible",
+      "seed": 211,
+      "hidden_capacity_n": 51.0,
+      "verified": true,
+      "reference_run_id": "weak_pad_maximum_feasible_20260921T123007_389107Z",
+      "compared_run_id": "weak_pad_maximum_feasible_20260921T122551_223698Z",
+      "compared_samples": 19204,
+      "compared_channels": 103,
+      "prefix_duration_s": 38.408000000000975,
+      "ignored_host_and_evaluator_channels": [
+        "overload_elapsed_s",
+        "solver_time_s",
+        "wall_time_s"
+      ],
+      "mismatches": []
+    },
+    {
+      "probe_policy": "maximum_feasible",
+      "seed": 211,
+      "hidden_capacity_n": 52.0,
+      "verified": true,
+      "reference_run_id": "weak_pad_maximum_feasible_20260921T123007_389107Z",
+      "compared_run_id": "weak_pad_maximum_feasible_20260921T122651_238994Z",
+      "compared_samples": 19279,
+      "compared_channels": 103,
+      "prefix_duration_s": 38.55800000000116,
+      "ignored_host_and_evaluator_channels": [
+        "overload_elapsed_s",
+        "solver_time_s",
+        "wall_time_s"
+      ],
+      "mismatches": []
+    },
+    {
+      "probe_policy": "maximum_feasible",
+      "seed": 211,
+      "hidden_capacity_n": 53.0,
+      "verified": true,
+      "reference_run_id": "weak_pad_maximum_feasible_20260921T123007_389107Z",
+      "compared_run_id": "weak_pad_maximum_feasible_20260921T122750_820870Z",
+      "compared_samples": 19437,
+      "compared_channels": 103,
+      "prefix_duration_s": 38.874000000001544,
+      "ignored_host_and_evaluator_channels": [
+        "overload_elapsed_s",
+        "solver_time_s",
+        "wall_time_s"
+      ],
+      "mismatches": []
+    },
+    {
+      "probe_policy": "maximum_feasible",
+      "seed": 211,
+      "hidden_capacity_n": 54.0,
+      "verified": true,
+      "reference_run_id": "weak_pad_maximum_feasible_20260921T123007_389107Z",
+      "compared_run_id": "weak_pad_maximum_feasible_20260921T122853_290969Z",
+      "compared_samples": 28685,
+      "compared_channels": 103,
+      "prefix_duration_s": 57.37000000002415,
+      "ignored_host_and_evaluator_channels": [
+        "overload_elapsed_s",
+        "solver_time_s",
+        "wall_time_s"
+      ],
+      "mismatches": []
+    },
+    {
+      "probe_policy": "maximum_feasible",
+      "seed": 907,
+      "hidden_capacity_n": 48.5,
+      "verified": true,
+      "reference_run_id": "weak_pad_maximum_feasible_20260921T123007_942697Z",
+      "compared_run_id": "weak_pad_maximum_feasible_20260921T122256_520372Z",
+      "compared_samples": 19102,
+      "compared_channels": 103,
+      "prefix_duration_s": 38.204000000000725,
+      "ignored_host_and_evaluator_channels": [
+        "overload_elapsed_s",
+        "solver_time_s",
+        "wall_time_s"
+      ],
+      "mismatches": []
+    },
+    {
+      "probe_policy": "maximum_feasible",
+      "seed": 907,
+      "hidden_capacity_n": 49.5,
+      "verified": true,
+      "reference_run_id": "weak_pad_maximum_feasible_20260921T123007_942697Z",
+      "compared_run_id": "weak_pad_maximum_feasible_20260921T122353_111876Z",
+      "compared_samples": 19136,
+      "compared_channels": 103,
+      "prefix_duration_s": 38.27200000000081,
+      "ignored_host_and_evaluator_channels": [
+        "overload_elapsed_s",
+        "solver_time_s",
+        "wall_time_s"
+      ],
+      "mismatches": []
+    },
+    {
+      "probe_policy": "maximum_feasible",
+      "seed": 907,
+      "hidden_capacity_n": 50.5,
+      "verified": true,
+      "reference_run_id": "weak_pad_maximum_feasible_20260921T123007_942697Z",
+      "compared_run_id": "weak_pad_maximum_feasible_20260921T122452_216832Z",
+      "compared_samples": 19174,
+      "compared_channels": 103,
+      "prefix_duration_s": 38.3480000000009,
+      "ignored_host_and_evaluator_channels": [
+        "overload_elapsed_s",
+        "solver_time_s",
+        "wall_time_s"
+      ],
+      "mismatches": []
+    },
+    {
+      "probe_policy": "maximum_feasible",
+      "seed": 907,
+      "hidden_capacity_n": 51.0,
+      "verified": true,
+      "reference_run_id": "weak_pad_maximum_feasible_20260921T123007_942697Z",
+      "compared_run_id": "weak_pad_maximum_feasible_20260921T122551_806628Z",
+      "compared_samples": 19198,
+      "compared_channels": 103,
+      "prefix_duration_s": 38.39600000000096,
+      "ignored_host_and_evaluator_channels": [
+        "overload_elapsed_s",
+        "solver_time_s",
+        "wall_time_s"
+      ],
+      "mismatches": []
+    },
+    {
+      "probe_policy": "maximum_feasible",
+      "seed": 907,
+      "hidden_capacity_n": 52.0,
+      "verified": true,
+      "reference_run_id": "weak_pad_maximum_feasible_20260921T123007_942697Z",
+      "compared_run_id": "weak_pad_maximum_feasible_20260921T122651_365456Z",
+      "compared_samples": 19274,
+      "compared_channels": 103,
+      "prefix_duration_s": 38.548000000001146,
+      "ignored_host_and_evaluator_channels": [
+        "overload_elapsed_s",
+        "solver_time_s",
+        "wall_time_s"
+      ],
+      "mismatches": []
+    },
+    {
+      "probe_policy": "maximum_feasible",
+      "seed": 907,
+      "hidden_capacity_n": 53.0,
+      "verified": true,
+      "reference_run_id": "weak_pad_maximum_feasible_20260921T123007_942697Z",
+      "compared_run_id": "weak_pad_maximum_feasible_20260921T122751_194857Z",
+      "compared_samples": 19432,
+      "compared_channels": 103,
+      "prefix_duration_s": 38.86400000000153,
+      "ignored_host_and_evaluator_channels": [
+        "overload_elapsed_s",
+        "solver_time_s",
+        "wall_time_s"
+      ],
+      "mismatches": []
+    },
+    {
+      "probe_policy": "maximum_feasible",
+      "seed": 907,
+      "hidden_capacity_n": 54.0,
+      "verified": true,
+      "reference_run_id": "weak_pad_maximum_feasible_20260921T123007_942697Z",
+      "compared_run_id": "weak_pad_maximum_feasible_20260921T122853_752351Z",
+      "compared_samples": 28679,
+      "compared_channels": 103,
+      "prefix_duration_s": 57.358000000024134,
+      "ignored_host_and_evaluator_channels": [
+        "overload_elapsed_s",
+        "solver_time_s",
+        "wall_time_s"
+      ],
+      "mismatches": []
+    },
+    {
+      "probe_policy": "minimum_sufficient",
+      "seed": 211,
+      "hidden_capacity_n": 48.5,
+      "verified": true,
+      "reference_run_id": "weak_pad_minimum_sufficient_20260921T123040_216085Z",
+      "compared_run_id": "weak_pad_minimum_sufficient_20260921T122256_519671Z",
+      "compared_samples": 19224,
+      "compared_channels": 103,
+      "prefix_duration_s": 38.448000000001024,
+      "ignored_host_and_evaluator_channels": [
+        "overload_elapsed_s",
+        "solver_time_s",
+        "wall_time_s"
+      ],
+      "mismatches": []
+    },
+    {
+      "probe_policy": "minimum_sufficient",
+      "seed": 211,
+      "hidden_capacity_n": 49.5,
+      "verified": true,
+      "reference_run_id": "weak_pad_minimum_sufficient_20260921T123040_216085Z",
+      "compared_run_id": "weak_pad_minimum_sufficient_20260921T122353_323884Z",
+      "compared_samples": 19304,
+      "compared_channels": 103,
+      "prefix_duration_s": 38.60800000000122,
+      "ignored_host_and_evaluator_channels": [
+        "overload_elapsed_s",
+        "solver_time_s",
+        "wall_time_s"
+      ],
+      "mismatches": []
+    },
+    {
+      "probe_policy": "minimum_sufficient",
+      "seed": 211,
+      "hidden_capacity_n": 50.5,
+      "verified": true,
+      "reference_run_id": "weak_pad_minimum_sufficient_20260921T123040_216085Z",
+      "compared_run_id": "weak_pad_minimum_sufficient_20260921T122452_345221Z",
+      "compared_samples": 19474,
+      "compared_channels": 103,
+      "prefix_duration_s": 38.948000000001635,
+      "ignored_host_and_evaluator_channels": [
+        "overload_elapsed_s",
+        "solver_time_s",
+        "wall_time_s"
+      ],
+      "mismatches": []
+    },
+    {
+      "probe_policy": "minimum_sufficient",
+      "seed": 211,
+      "hidden_capacity_n": 51.0,
+      "verified": true,
+      "reference_run_id": "weak_pad_minimum_sufficient_20260921T123040_216085Z",
+      "compared_run_id": "weak_pad_minimum_sufficient_20260921T122551_947600Z",
+      "compared_samples": 19549,
+      "compared_channels": 103,
+      "prefix_duration_s": 39.09800000000182,
+      "ignored_host_and_evaluator_channels": [
+        "overload_elapsed_s",
+        "solver_time_s",
+        "wall_time_s"
+      ],
+      "mismatches": []
+    },
+    {
+      "probe_policy": "minimum_sufficient",
+      "seed": 211,
+      "hidden_capacity_n": 52.0,
+      "verified": true,
+      "reference_run_id": "weak_pad_minimum_sufficient_20260921T123040_216085Z",
+      "compared_run_id": "weak_pad_minimum_sufficient_20260921T122652_382436Z",
+      "compared_samples": 28696,
+      "compared_channels": 103,
+      "prefix_duration_s": 57.392000000024176,
+      "ignored_host_and_evaluator_channels": [
+        "overload_elapsed_s",
+        "solver_time_s",
+        "wall_time_s"
+      ],
+      "mismatches": []
+    },
+    {
+      "probe_policy": "minimum_sufficient",
+      "seed": 211,
+      "hidden_capacity_n": 53.0,
+      "verified": true,
+      "reference_run_id": "weak_pad_minimum_sufficient_20260921T123040_216085Z",
+      "compared_run_id": "weak_pad_minimum_sufficient_20260921T122808_619098Z",
+      "compared_samples": 28696,
+      "compared_channels": 103,
+      "prefix_duration_s": 57.392000000024176,
+      "ignored_host_and_evaluator_channels": [
+        "overload_elapsed_s",
+        "solver_time_s",
+        "wall_time_s"
+      ],
+      "mismatches": []
+    },
+    {
+      "probe_policy": "minimum_sufficient",
+      "seed": 211,
+      "hidden_capacity_n": 54.0,
+      "verified": true,
+      "reference_run_id": "weak_pad_minimum_sufficient_20260921T123040_216085Z",
+      "compared_run_id": "weak_pad_minimum_sufficient_20260921T122925_855829Z",
+      "compared_samples": 28696,
+      "compared_channels": 103,
+      "prefix_duration_s": 57.392000000024176,
+      "ignored_host_and_evaluator_channels": [
+        "overload_elapsed_s",
+        "solver_time_s",
+        "wall_time_s"
+      ],
+      "mismatches": []
+    },
+    {
+      "probe_policy": "minimum_sufficient",
+      "seed": 907,
+      "hidden_capacity_n": 48.5,
+      "verified": true,
+      "reference_run_id": "weak_pad_minimum_sufficient_20260921T123041_783614Z",
+      "compared_run_id": "weak_pad_minimum_sufficient_20260921T122256_533073Z",
+      "compared_samples": 19219,
+      "compared_channels": 103,
+      "prefix_duration_s": 38.43800000000101,
+      "ignored_host_and_evaluator_channels": [
+        "overload_elapsed_s",
+        "solver_time_s",
+        "wall_time_s"
+      ],
+      "mismatches": []
+    },
+    {
+      "probe_policy": "minimum_sufficient",
+      "seed": 907,
+      "hidden_capacity_n": 49.5,
+      "verified": true,
+      "reference_run_id": "weak_pad_minimum_sufficient_20260921T123041_783614Z",
+      "compared_run_id": "weak_pad_minimum_sufficient_20260921T122353_446206Z",
+      "compared_samples": 19299,
+      "compared_channels": 103,
+      "prefix_duration_s": 38.59800000000121,
+      "ignored_host_and_evaluator_channels": [
+        "overload_elapsed_s",
+        "solver_time_s",
+        "wall_time_s"
+      ],
+      "mismatches": []
+    },
+    {
+      "probe_policy": "minimum_sufficient",
+      "seed": 907,
+      "hidden_capacity_n": 50.5,
+      "verified": true,
+      "reference_run_id": "weak_pad_minimum_sufficient_20260921T123041_783614Z",
+      "compared_run_id": "weak_pad_minimum_sufficient_20260921T122452_965150Z",
+      "compared_samples": 19469,
+      "compared_channels": 103,
+      "prefix_duration_s": 38.93800000000162,
+      "ignored_host_and_evaluator_channels": [
+        "overload_elapsed_s",
+        "solver_time_s",
+        "wall_time_s"
+      ],
+      "mismatches": []
+    },
+    {
+      "probe_policy": "minimum_sufficient",
+      "seed": 907,
+      "hidden_capacity_n": 51.0,
+      "verified": true,
+      "reference_run_id": "weak_pad_minimum_sufficient_20260921T123041_783614Z",
+      "compared_run_id": "weak_pad_minimum_sufficient_20260921T122552_988602Z",
+      "compared_samples": 19549,
+      "compared_channels": 103,
+      "prefix_duration_s": 39.09800000000182,
+      "ignored_host_and_evaluator_channels": [
+        "overload_elapsed_s",
+        "solver_time_s",
+        "wall_time_s"
+      ],
+      "mismatches": []
+    },
+    {
+      "probe_policy": "minimum_sufficient",
+      "seed": 907,
+      "hidden_capacity_n": 52.0,
+      "verified": true,
+      "reference_run_id": "weak_pad_minimum_sufficient_20260921T123041_783614Z",
+      "compared_run_id": "weak_pad_minimum_sufficient_20260921T122653_516574Z",
+      "compared_samples": 28728,
+      "compared_channels": 103,
+      "prefix_duration_s": 57.456000000024254,
+      "ignored_host_and_evaluator_channels": [
+        "overload_elapsed_s",
+        "solver_time_s",
+        "wall_time_s"
+      ],
+      "mismatches": []
+    },
+    {
+      "probe_policy": "minimum_sufficient",
+      "seed": 907,
+      "hidden_capacity_n": 53.0,
+      "verified": true,
+      "reference_run_id": "weak_pad_minimum_sufficient_20260921T123041_783614Z",
+      "compared_run_id": "weak_pad_minimum_sufficient_20260921T122809_825999Z",
+      "compared_samples": 28728,
+      "compared_channels": 103,
+      "prefix_duration_s": 57.456000000024254,
+      "ignored_host_and_evaluator_channels": [
+        "overload_elapsed_s",
+        "solver_time_s",
+        "wall_time_s"
+      ],
+      "mismatches": []
+    },
+    {
+      "probe_policy": "minimum_sufficient",
+      "seed": 907,
+      "hidden_capacity_n": 54.0,
+      "verified": true,
+      "reference_run_id": "weak_pad_minimum_sufficient_20260921T123041_783614Z",
+      "compared_run_id": "weak_pad_minimum_sufficient_20260921T122926_955622Z",
+      "compared_samples": 28728,
+      "compared_channels": 103,
+      "prefix_duration_s": 57.456000000024254,
+      "ignored_host_and_evaluator_channels": [
+        "overload_elapsed_s",
+        "solver_time_s",
+        "wall_time_s"
+      ],
+      "mismatches": []
+    }
+  ],
+  "paired_comparison_matches_raw_results": true,
+  "physical_outcomes": {
+    "RECOVERED_STOP": 20,
+    "SUCCESS": 12
+  },
+  "paired_damage_prevented_with_task_completion": 4,
+  "canonical_evidence_modified": false,
+  "legacy_baseline_after_audit": {
+    "verified": true,
+    "trials": 48,
+    "source_sha256": "7f8501f0270429c3929f9c888604dd54448064f60e78fe24079746cd740f4afd",
+    "canonical_files": 147
+  }
+}

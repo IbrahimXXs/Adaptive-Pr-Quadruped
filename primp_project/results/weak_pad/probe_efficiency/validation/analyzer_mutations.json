@@ -1,0 +1,108 @@
+{
+  "audit": "Independent in-memory mutations of completed native development evidence",
+  "raw_logs_modified": false,
+  "native_originals": [
+    {
+      "policy": "minimum_sufficient",
+      "run": "primp_project/results/weak_pad/probe_efficiency_development/weak_pad_minimum_sufficient_20260921T121507_334941Z",
+      "outcome": "SUCCESS",
+      "physical_success": true
+    },
+    {
+      "policy": "maximum_feasible",
+      "run": "primp_project/results/weak_pad/probe_efficiency_development/weak_pad_maximum_feasible_20260921T121521_781558Z",
+      "outcome": "SUCCESS",
+      "physical_success": true
+    }
+  ],
+  "mutations": [
+    {
+      "mutation": "false_lower_target_consistent_formula",
+      "outcome": "INVALID",
+      "rejected": true,
+      "failed_integrity_checks": [
+        "selected_target_matches_executed_command",
+        "selected_target_matches_planner_decision",
+        "task_minimum_recomputed_from_geometry",
+        "probe_mpc_bounds_match_target"
+      ]
+    },
+    {
+      "mutation": "command_exceeds_declared_target",
+      "outcome": "INVALID",
+      "rejected": true,
+      "failed_integrity_checks": [
+        "selected_target_matches_executed_command"
+      ]
+    },
+    {
+      "mutation": "request_substituted_for_proof",
+      "outcome": "INVALID",
+      "rejected": true,
+      "failed_integrity_checks": [
+        "certificate_evidence_sound"
+      ]
+    },
+    {
+      "mutation": "tracking_reserve_weakened",
+      "outcome": "INVALID",
+      "rejected": true,
+      "failed_integrity_checks": [
+        "reserve_and_sensor_configuration_consistent",
+        "selected_target_matches_executed_command",
+        "selected_target_matches_planner_decision",
+        "probe_mpc_bounds_match_target"
+      ]
+    },
+    {
+      "mutation": "tracking_reserve_consistently_weakened",
+      "outcome": "INVALID",
+      "rejected": true,
+      "failed_integrity_checks": [
+        "reserve_and_sensor_configuration_consistent",
+        "selected_target_matches_executed_command",
+        "selected_target_matches_planner_decision",
+        "probe_mpc_bounds_match_target"
+      ]
+    },
+    {
+      "mutation": "failure_latch_hidden_despite_overload",
+      "outcome": "INVALID",
+      "rejected": true,
+      "failed_integrity_checks": [
+        "physical_failure_model"
+      ]
+    },
+    {
+      "mutation": "damage_displacement_alias_inconsistent",
+      "outcome": "INVALID",
+      "rejected": true,
+      "failed_integrity_checks": [
+        "pad_displacement_channels_agree"
+      ]
+    },
+    {
+      "mutation": "selected_request_disagrees_with_execution",
+      "outcome": "INVALID",
+      "rejected": true,
+      "failed_integrity_checks": [
+        "selected_target_matches_planner_decision"
+      ]
+    }
+  ],
+  "raw_sha256_before": {
+    "primp_project/results/weak_pad/probe_efficiency_development/weak_pad_minimum_sufficient_20260921T121507_334941Z/metadata.json": "742064bdb552f31729813ca8d428389ba17f871848f460ca5e187a1a372d2498",
+    "primp_project/results/weak_pad/probe_efficiency_development/weak_pad_minimum_sufficient_20260921T121507_334941Z/signals.npz": "64b4618c3378a174ebba1b24c8f64d0211298ea8f96c9f12527e56e3bd44b819",
+    "primp_project/results/weak_pad/probe_efficiency_development/weak_pad_maximum_feasible_20260921T121521_781558Z/metadata.json": "91c0b74b8f66af9cbdfca5f750e41a6efc1cd5ce43e1ed5664690c71f7300010",
+    "primp_project/results/weak_pad/probe_efficiency_development/weak_pad_maximum_feasible_20260921T121521_781558Z/signals.npz": "a7fcc3f7ea0d4810a3030dcf480fe1805f32f27628f54cd4b0d549bbb6c20284"
+  },
+  "raw_sha256_after": {
+    "primp_project/results/weak_pad/probe_efficiency_development/weak_pad_minimum_sufficient_20260921T121507_334941Z/metadata.json": "742064bdb552f31729813ca8d428389ba17f871848f460ca5e187a1a372d2498",
+    "primp_project/results/weak_pad/probe_efficiency_development/weak_pad_minimum_sufficient_20260921T121507_334941Z/signals.npz": "64b4618c3378a174ebba1b24c8f64d0211298ea8f96c9f12527e56e3bd44b819",
+    "primp_project/results/weak_pad/probe_efficiency_development/weak_pad_maximum_feasible_20260921T121521_781558Z/metadata.json": "91c0b74b8f66af9cbdfca5f750e41a6efc1cd5ce43e1ed5664690c71f7300010",
+    "primp_project/results/weak_pad/probe_efficiency_development/weak_pad_maximum_feasible_20260921T121521_781558Z/signals.npz": "a7fcc3f7ea0d4810a3030dcf480fe1805f32f27628f54cd4b0d549bbb6c20284"
+  },
+  "raw_hashes_unchanged": true,
+  "analysis_source_sha256": "984e61c9bcb0e725cbff350252c3c3ea3a1caef2f12f459446b701ddc023428a",
+  "passed": true
+}

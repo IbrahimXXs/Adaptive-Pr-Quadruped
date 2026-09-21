@@ -1,0 +1,33 @@
+{
+  "verified": true,
+  "checks": {
+    "all_formal_runs_listed": true,
+    "all_policies_explicit_in_purpose": true,
+    "catalog_and_focused_outcomes_agree": true,
+    "recovery_distinct_from_completion": true,
+    "historical_annotations_preserved": true
+  },
+  "total_catalog_recordings": 237,
+  "formal_probe_efficiency_recordings": 32,
+  "development_probe_efficiency_recordings": 2,
+  "outcomes": {
+    "RECOVERED_STOP": 20,
+    "SUCCESS": 12
+  },
+  "catalog_statuses": {
+    "RECOVERED_STOP": 20,
+    "PASS": 12
+  },
+  "recording_evidence_modified": false,
+  "post_catalog_study_verification": {
+    "verified": true,
+    "trials": 32,
+    "source_sha256": "ae942d6cb4139dbe3322aef4e56bf43647604de79298aab43c98285f7360e8ab",
+    "legacy_baseline": {
+      "verified": true,
+      "trials": 48,
+      "source_sha256": "7f8501f0270429c3929f9c888604dd54448064f60e78fe24079746cd740f4afd",
+      "canonical_files": 147
+    }
+  }
+}

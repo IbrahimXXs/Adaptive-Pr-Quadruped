@@ -1,0 +1,3017 @@
+{
+  "version": 1,
+  "experiment": "weak_pad",
+  "study_name": "probe_efficiency",
+  "cases": [
+    {
+      "case_id": "capacity48p5",
+      "family": "b_geometry_capacity_sweep",
+      "condition_role": "held_out",
+      "purpose": "Capacity sweep from below the sufficient measured target through the larger baseline test force; geometry and sensing fixed.",
+      "parameters": {
+        "scenario": "probe_efficiency_capacity48p5",
+        "failure_threshold_n": 48.5,
+        "initial_probe_force_n": 12.0,
+        "requested_probe_force_n": 60.0,
+        "maximum_probe_force_n": 60.0,
+        "measurement_reserve_n": 1.0,
+        "tracking_reserve_n": 8.0,
+        "planning_config": {
+          "weak_leg": 0,
+          "next_lift_leg": 1,
+          "forward_progress_m": 0.04,
+          "nominal_lateral_shift_m": -0.02,
+          "maximum_lateral_adjustment_m": 0.08,
+          "maximum_extra_forward_m": 0.01,
+          "support_margin_m": 0.01,
+          "original_tripod_margin_m": 0.02,
+          "minimum_support_force_n": 8.0,
+          "next_lift_height_m": 0.03,
+          "next_hold_s": 1.0,
+          "probe_posture_adjustment_m": 0.12,
+          "maximum_probe_request_n": 60.0,
+          "requested_probe_load_n": 60.0,
+          "probe_force_ceiling_n": 60.0,
+          "probe_robustness_margin_n": 2.0
+        },
+        "probe_offset_xy_m": [
+          -0.048,
+          0.0
+        ],
+        "initial_state": {
+          "body_offset_xy_m": [
+            0.004,
+            -0.005
+          ],
+          "foot_offsets_xy_m": [
+            [
+              -0.039,
+              -0.024
+            ],
+            [
+              -0.039,
+              -0.024
+            ],
+            [
+              0.039,
+              0.024
+            ],
+            [
+              0.039,
+              -0.024
+            ]
+          ]
+        },
+        "sensor_config": {
+          "force_bias_n": -0.6,
+          "force_noise_n": 0.2,
+          "position_noise_m": 0.0001
+        },
+        "target_tolerance_n": 0.001,
+        "probe_undershoot_allowance_n": 0.2
+      },
+      "expected_outcomes": {
+        "maximum_feasible": [
+          "RECOVERED_STOP"
+        ],
+        "minimum_sufficient": [
+          "RECOVERED_STOP"
+        ]
+      }
+    },
+    {
+      "case_id": "capacity49p5",
+      "family": "b_geometry_capacity_sweep",
+      "condition_role": "held_out",
+      "purpose": "Capacity sweep from below the sufficient measured target through the larger baseline test force; geometry and sensing fixed.",
+      "parameters": {
+        "scenario": "probe_efficiency_capacity49p5",
+        "failure_threshold_n": 49.5,
+        "initial_probe_force_n": 12.0,
+        "requested_probe_force_n": 60.0,
+        "maximum_probe_force_n": 60.0,
+        "measurement_reserve_n": 1.0,
+        "tracking_reserve_n": 8.0,
+        "planning_config": {
+          "weak_leg": 0,
+          "next_lift_leg": 1,
+          "forward_progress_m": 0.04,
+          "nominal_lateral_shift_m": -0.02,
+          "maximum_lateral_adjustment_m": 0.08,
+          "maximum_extra_forward_m": 0.01,
+          "support_margin_m": 0.01,
+          "original_tripod_margin_m": 0.02,
+          "minimum_support_force_n": 8.0,
+          "next_lift_height_m": 0.03,
+          "next_hold_s": 1.0,
+          "probe_posture_adjustment_m": 0.12,
+          "maximum_probe_request_n": 60.0,
+          "requested_probe_load_n": 60.0,
+          "probe_force_ceiling_n": 60.0,
+          "probe_robustness_margin_n": 2.0
+        },
+        "probe_offset_xy_m": [
+          -0.048,
+          0.0
+        ],
+        "initial_state": {
+          "body_offset_xy_m": [
+            0.004,
+            -0.005
+          ],
+          "foot_offsets_xy_m": [
+            [
+              -0.039,
+              -0.024
+            ],
+            [
+              -0.039,
+              -0.024
+            ],
+            [
+              0.039,
+              0.024
+            ],
+            [
+              0.039,
+              -0.024
+            ]
+          ]
+        },
+        "sensor_config": {
+          "force_bias_n": -0.6,
+          "force_noise_n": 0.2,
+          "position_noise_m": 0.0001
+        },
+        "target_tolerance_n": 0.001,
+        "probe_undershoot_allowance_n": 0.2
+      },
+      "expected_outcomes": {
+        "maximum_feasible": [
+          "RECOVERED_STOP"
+        ],
+        "minimum_sufficient": [
+          "RECOVERED_STOP"
+        ]
+      }
+    },
+    {
+      "case_id": "capacity50p5",
+      "family": "b_geometry_capacity_sweep",
+      "condition_role": "held_out",
+      "purpose": "Capacity sweep from below the sufficient measured target through the larger baseline test force; geometry and sensing fixed.",
+      "parameters": {
+        "scenario": "probe_efficiency_capacity50p5",
+        "failure_threshold_n": 50.5,
+        "initial_probe_force_n": 12.0,
+        "requested_probe_force_n": 60.0,
+        "maximum_probe_force_n": 60.0,
+        "measurement_reserve_n": 1.0,
+        "tracking_reserve_n": 8.0,
+        "planning_config": {
+          "weak_leg": 0,
+          "next_lift_leg": 1,
+          "forward_progress_m": 0.04,
+          "nominal_lateral_shift_m": -0.02,
+          "maximum_lateral_adjustment_m": 0.08,
+          "maximum_extra_forward_m": 0.01,
+          "support_margin_m": 0.01,
+          "original_tripod_margin_m": 0.02,
+          "minimum_support_force_n": 8.0,
+          "next_lift_height_m": 0.03,
+          "next_hold_s": 1.0,
+          "probe_posture_adjustment_m": 0.12,
+          "maximum_probe_request_n": 60.0,
+          "requested_probe_load_n": 60.0,
+          "probe_force_ceiling_n": 60.0,
+          "probe_robustness_margin_n": 2.0
+        },
+        "probe_offset_xy_m": [
+          -0.048,
+          0.0
+        ],
+        "initial_state": {
+          "body_offset_xy_m": [
+            0.004,
+            -0.005
+          ],
+          "foot_offsets_xy_m": [
+            [
+              -0.039,
+              -0.024
+            ],
+            [
+              -0.039,
+              -0.024
+            ],
+            [
+              0.039,
+              0.024
+            ],
+            [
+              0.039,
+              -0.024
+            ]
+          ]
+        },
+        "sensor_config": {
+          "force_bias_n": -0.6,
+          "force_noise_n": 0.2,
+          "position_noise_m": 0.0001
+        },
+        "target_tolerance_n": 0.001,
+        "probe_undershoot_allowance_n": 0.2
+      },
+      "expected_outcomes": {
+        "maximum_feasible": [
+          "RECOVERED_STOP"
+        ],
+        "minimum_sufficient": [
+          "RECOVERED_STOP"
+        ]
+      }
+    },
+    {
+      "case_id": "capacity51p0",
+      "family": "b_geometry_capacity_sweep",
+      "condition_role": "held_out",
+      "purpose": "Capacity sweep from below the sufficient measured target through the larger baseline test force; geometry and sensing fixed.",
+      "parameters": {
+        "scenario": "probe_efficiency_capacity51p0",
+        "failure_threshold_n": 51.0,
+        "initial_probe_force_n": 12.0,
+        "requested_probe_force_n": 60.0,
+        "maximum_probe_force_n": 60.0,
+        "measurement_reserve_n": 1.0,
+        "tracking_reserve_n": 8.0,
+        "planning_config": {
+          "weak_leg": 0,
+          "next_lift_leg": 1,
+          "forward_progress_m": 0.04,
+          "nominal_lateral_shift_m": -0.02,
+          "maximum_lateral_adjustment_m": 0.08,
+          "maximum_extra_forward_m": 0.01,
+          "support_margin_m": 0.01,
+          "original_tripod_margin_m": 0.02,
+          "minimum_support_force_n": 8.0,
+          "next_lift_height_m": 0.03,
+          "next_hold_s": 1.0,
+          "probe_posture_adjustment_m": 0.12,
+          "maximum_probe_request_n": 60.0,
+          "requested_probe_load_n": 60.0,
+          "probe_force_ceiling_n": 60.0,
+          "probe_robustness_margin_n": 2.0
+        },
+        "probe_offset_xy_m": [
+          -0.048,
+          0.0
+        ],
+        "initial_state": {
+          "body_offset_xy_m": [
+            0.004,
+            -0.005
+          ],
+          "foot_offsets_xy_m": [
+            [
+              -0.039,
+              -0.024
+            ],
+            [
+              -0.039,
+              -0.024
+            ],
+            [
+              0.039,
+              0.024
+            ],
+            [
+              0.039,
+              -0.024
+            ]
+          ]
+        },
+        "sensor_config": {
+          "force_bias_n": -0.6,
+          "force_noise_n": 0.2,
+          "position_noise_m": 0.0001
+        },
+        "target_tolerance_n": 0.001,
+        "probe_undershoot_allowance_n": 0.2
+      },
+      "expected_outcomes": {
+        "maximum_feasible": [
+          "RECOVERED_STOP"
+        ],
+        "minimum_sufficient": [
+          "RECOVERED_STOP"
+        ]
+      }
+    },
+    {
+      "case_id": "capacity52p0",
+      "family": "b_geometry_capacity_sweep",
+      "condition_role": "held_out",
+      "purpose": "Capacity sweep from below the sufficient measured target through the larger baseline test force; geometry and sensing fixed.",
+      "parameters": {
+        "scenario": "probe_efficiency_capacity52p0",
+        "failure_threshold_n": 52.0,
+        "initial_probe_force_n": 12.0,
+        "requested_probe_force_n": 60.0,
+        "maximum_probe_force_n": 60.0,
+        "measurement_reserve_n": 1.0,
+        "tracking_reserve_n": 8.0,
+        "planning_config": {
+          "weak_leg": 0,
+          "next_lift_leg": 1,
+          "forward_progress_m": 0.04,
+          "nominal_lateral_shift_m": -0.02,
+          "maximum_lateral_adjustment_m": 0.08,
+          "maximum_extra_forward_m": 0.01,
+          "support_margin_m": 0.01,
+          "original_tripod_margin_m": 0.02,
+          "minimum_support_force_n": 8.0,
+          "next_lift_height_m": 0.03,
+          "next_hold_s": 1.0,
+          "probe_posture_adjustment_m": 0.12,
+          "maximum_probe_request_n": 60.0,
+          "requested_probe_load_n": 60.0,
+          "probe_force_ceiling_n": 60.0,
+          "probe_robustness_margin_n": 2.0
+        },
+        "probe_offset_xy_m": [
+          -0.048,
+          0.0
+        ],
+        "initial_state": {
+          "body_offset_xy_m": [
+            0.004,
+            -0.005
+          ],
+          "foot_offsets_xy_m": [
+            [
+              -0.039,
+              -0.024
+            ],
+            [
+              -0.039,
+              -0.024
+            ],
+            [
+              0.039,
+              0.024
+            ],
+            [
+              0.039,
+              -0.024
+            ]
+          ]
+        },
+        "sensor_config": {
+          "force_bias_n": -0.6,
+          "force_noise_n": 0.2,
+          "position_noise_m": 0.0001
+        },
+        "target_tolerance_n": 0.001,
+        "probe_undershoot_allowance_n": 0.2
+      },
+      "expected_outcomes": {
+        "maximum_feasible": [
+          "RECOVERED_STOP"
+        ],
+        "minimum_sufficient": [
+          "SUCCESS"
+        ]
+      }
+    },
+    {
+      "case_id": "capacity53p0",
+      "family": "b_geometry_capacity_sweep",
+      "condition_role": "held_out",
+      "purpose": "Capacity sweep from below the sufficient measured target through the larger baseline test force; geometry and sensing fixed.",
+      "parameters": {
+        "scenario": "probe_efficiency_capacity53p0",
+        "failure_threshold_n": 53.0,
+        "initial_probe_force_n": 12.0,
+        "requested_probe_force_n": 60.0,
+        "maximum_probe_force_n": 60.0,
+        "measurement_reserve_n": 1.0,
+        "tracking_reserve_n": 8.0,
+        "planning_config": {
+          "weak_leg": 0,
+          "next_lift_leg": 1,
+          "forward_progress_m": 0.04,
+          "nominal_lateral_shift_m": -0.02,
+          "maximum_lateral_adjustment_m": 0.08,
+          "maximum_extra_forward_m": 0.01,
+          "support_margin_m": 0.01,
+          "original_tripod_margin_m": 0.02,
+          "minimum_support_force_n": 8.0,
+          "next_lift_height_m": 0.03,
+          "next_hold_s": 1.0,
+          "probe_posture_adjustment_m": 0.12,
+          "maximum_probe_request_n": 60.0,
+          "requested_probe_load_n": 60.0,
+          "probe_force_ceiling_n": 60.0,
+          "probe_robustness_margin_n": 2.0
+        },
+        "probe_offset_xy_m": [
+          -0.048,
+          0.0
+        ],
+        "initial_state": {
+          "body_offset_xy_m": [
+            0.004,
+            -0.005
+          ],
+          "foot_offsets_xy_m": [
+            [
+              -0.039,
+              -0.024
+            ],
+            [
+              -0.039,
+              -0.024
+            ],
+            [
+              0.039,
+              0.024
+            ],
+            [
+              0.039,
+              -0.024
+            ]
+          ]
+        },
+        "sensor_config": {
+          "force_bias_n": -0.6,
+          "force_noise_n": 0.2,
+          "position_noise_m": 0.0001
+        },
+        "target_tolerance_n": 0.001,
+        "probe_undershoot_allowance_n": 0.2
+      },
+      "expected_outcomes": {
+        "maximum_feasible": [
+          "RECOVERED_STOP"
+        ],
+        "minimum_sufficient": [
+          "SUCCESS"
+        ]
+      }
+    },
+    {
+      "case_id": "capacity54p0",
+      "family": "b_geometry_capacity_sweep",
+      "condition_role": "held_out",
+      "purpose": "Capacity sweep from below the sufficient measured target through the larger baseline test force; geometry and sensing fixed.",
+      "parameters": {
+        "scenario": "probe_efficiency_capacity54p0",
+        "failure_threshold_n": 54.0,
+        "initial_probe_force_n": 12.0,
+        "requested_probe_force_n": 60.0,
+        "maximum_probe_force_n": 60.0,
+        "measurement_reserve_n": 1.0,
+        "tracking_reserve_n": 8.0,
+        "planning_config": {
+          "weak_leg": 0,
+          "next_lift_leg": 1,
+          "forward_progress_m": 0.04,
+          "nominal_lateral_shift_m": -0.02,
+          "maximum_lateral_adjustment_m": 0.08,
+          "maximum_extra_forward_m": 0.01,
+          "support_margin_m": 0.01,
+          "original_tripod_margin_m": 0.02,
+          "minimum_support_force_n": 8.0,
+          "next_lift_height_m": 0.03,
+          "next_hold_s": 1.0,
+          "probe_posture_adjustment_m": 0.12,
+          "maximum_probe_request_n": 60.0,
+          "requested_probe_load_n": 60.0,
+          "probe_force_ceiling_n": 60.0,
+          "probe_robustness_margin_n": 2.0
+        },
+        "probe_offset_xy_m": [
+          -0.048,
+          0.0
+        ],
+        "initial_state": {
+          "body_offset_xy_m": [
+            0.004,
+            -0.005
+          ],
+          "foot_offsets_xy_m": [
+            [
+              -0.039,
+              -0.024
+            ],
+            [
+              -0.039,
+              -0.024
+            ],
+            [
+              0.039,
+              0.024
+            ],
+            [
+              0.039,
+              -0.024
+            ]
+          ]
+        },
+        "sensor_config": {
+          "force_bias_n": -0.6,
+          "force_noise_n": 0.2,
+          "position_noise_m": 0.0001
+        },
+        "target_tolerance_n": 0.001,
+        "probe_undershoot_allowance_n": 0.2
+      },
+      "expected_outcomes": {
+        "maximum_feasible": [
+          "SUCCESS"
+        ],
+        "minimum_sufficient": [
+          "SUCCESS"
+        ]
+      }
+    },
+    {
+      "case_id": "capacity56p0",
+      "family": "b_geometry_capacity_sweep",
+      "condition_role": "held_out",
+      "purpose": "Capacity sweep from below the sufficient measured target through the larger baseline test force; geometry and sensing fixed.",
+      "parameters": {
+        "scenario": "probe_efficiency_capacity56p0",
+        "failure_threshold_n": 56.0,
+        "initial_probe_force_n": 12.0,
+        "requested_probe_force_n": 60.0,
+        "maximum_probe_force_n": 60.0,
+        "measurement_reserve_n": 1.0,
+        "tracking_reserve_n": 8.0,
+        "planning_config": {
+          "weak_leg": 0,
+          "next_lift_leg": 1,
+          "forward_progress_m": 0.04,
+          "nominal_lateral_shift_m": -0.02,
+          "maximum_lateral_adjustment_m": 0.08,
+          "maximum_extra_forward_m": 0.01,
+          "support_margin_m": 0.01,
+          "original_tripod_margin_m": 0.02,
+          "minimum_support_force_n": 8.0,
+          "next_lift_height_m": 0.03,
+          "next_hold_s": 1.0,
+          "probe_posture_adjustment_m": 0.12,
+          "maximum_probe_request_n": 60.0,
+          "requested_probe_load_n": 60.0,
+          "probe_force_ceiling_n": 60.0,
+          "probe_robustness_margin_n": 2.0
+        },
+        "probe_offset_xy_m": [
+          -0.048,
+          0.0
+        ],
+        "initial_state": {
+          "body_offset_xy_m": [
+            0.004,
+            -0.005
+          ],
+          "foot_offsets_xy_m": [
+            [
+              -0.039,
+              -0.024
+            ],
+            [
+              -0.039,
+              -0.024
+            ],
+            [
+              0.039,
+              0.024
+            ],
+            [
+              0.039,
+              -0.024
+            ]
+          ]
+        },
+        "sensor_config": {
+          "force_bias_n": -0.6,
+          "force_noise_n": 0.2,
+          "position_noise_m": 0.0001
+        },
+        "target_tolerance_n": 0.001,
+        "probe_undershoot_allowance_n": 0.2
+      },
+      "expected_outcomes": {
+        "maximum_feasible": [
+          "SUCCESS"
+        ],
+        "minimum_sufficient": [
+          "SUCCESS"
+        ]
+      }
+    }
+  ],
+  "seeds": [
+    211,
+    907
+  ],
+  "trials": [
+    {
+      "trial_id": "capacity48p5_maximum_feasible_seed211",
+      "case_id": "capacity48p5",
+      "family": "b_geometry_capacity_sweep",
+      "condition_role": "held_out",
+      "probe_policy": "maximum_feasible",
+      "seed": 211,
+      "role": "evaluation",
+      "parameters": {
+        "failure_threshold_n": 48.5,
+        "scenario": "probe_efficiency_capacity48p5",
+        "initial_probe_force_n": 12.0,
+        "requested_probe_force_n": 60.0,
+        "maximum_probe_force_n": 60.0,
+        "measurement_reserve_n": 1.0,
+        "tracking_reserve_n": 8.0,
+        "planning_config": {
+          "weak_leg": 0,
+          "next_lift_leg": 1,
+          "forward_progress_m": 0.04,
+          "nominal_lateral_shift_m": -0.02,
+          "maximum_lateral_adjustment_m": 0.08,
+          "maximum_extra_forward_m": 0.01,
+          "support_margin_m": 0.01,
+          "original_tripod_margin_m": 0.02,
+          "minimum_support_force_n": 8.0,
+          "next_lift_height_m": 0.03,
+          "next_hold_s": 1.0,
+          "probe_posture_adjustment_m": 0.12,
+          "maximum_probe_request_n": 60.0,
+          "requested_probe_load_n": 60.0,
+          "probe_force_ceiling_n": 60.0,
+          "probe_robustness_margin_n": 2.0
+        },
+        "probe_offset_xy_m": [
+          -0.048,
+          0.0
+        ],
+        "initial_state": {
+          "body_offset_xy_m": [
+            0.004,
+            -0.005
+          ],
+          "foot_offsets_xy_m": [
+            [
+              -0.039,
+              -0.024
+            ],
+            [
+              -0.039,
+              -0.024
+            ],
+            [
+              0.039,
+              0.024
+            ],
+            [
+              0.039,
+              -0.024
+            ]
+          ]
+        },
+        "sensor_config": {
+          "force_bias_n": -0.6,
+          "force_noise_n": 0.2,
+          "position_noise_m": 0.0001
+        },
+        "target_tolerance_n": 0.001,
+        "probe_undershoot_allowance_n": 0.2
+      },
+      "expected_outcomes": [
+        "RECOVERED_STOP"
+      ]
+    },
+    {
+      "trial_id": "capacity48p5_maximum_feasible_seed907",
+      "case_id": "capacity48p5",
+      "family": "b_geometry_capacity_sweep",
+      "condition_role": "held_out",
+      "probe_policy": "maximum_feasible",
+      "seed": 907,
+      "role": "evaluation",
+      "parameters": {
+        "failure_threshold_n": 48.5,
+        "scenario": "probe_efficiency_capacity48p5",
+        "initial_probe_force_n": 12.0,
+        "requested_probe_force_n": 60.0,
+        "maximum_probe_force_n": 60.0,
+        "measurement_reserve_n": 1.0,
+        "tracking_reserve_n": 8.0,
+        "planning_config": {
+          "weak_leg": 0,
+          "next_lift_leg": 1,
+          "forward_progress_m": 0.04,
+          "nominal_lateral_shift_m": -0.02,
+          "maximum_lateral_adjustment_m": 0.08,
+          "maximum_extra_forward_m": 0.01,
+          "support_margin_m": 0.01,
+          "original_tripod_margin_m": 0.02,
+          "minimum_support_force_n": 8.0,
+          "next_lift_height_m": 0.03,
+          "next_hold_s": 1.0,
+          "probe_posture_adjustment_m": 0.12,
+          "maximum_probe_request_n": 60.0,
+          "requested_probe_load_n": 60.0,
+          "probe_force_ceiling_n": 60.0,
+          "probe_robustness_margin_n": 2.0
+        },
+        "probe_offset_xy_m": [
+          -0.048,
+          0.0
+        ],
+        "initial_state": {
+          "body_offset_xy_m": [
+            0.004,
+            -0.005
+          ],
+          "foot_offsets_xy_m": [
+            [
+              -0.039,
+              -0.024
+            ],
+            [
+              -0.039,
+              -0.024
+            ],
+            [
+              0.039,
+              0.024
+            ],
+            [
+              0.039,
+              -0.024
+            ]
+          ]
+        },
+        "sensor_config": {
+          "force_bias_n": -0.6,
+          "force_noise_n": 0.2,
+          "position_noise_m": 0.0001
+        },
+        "target_tolerance_n": 0.001,
+        "probe_undershoot_allowance_n": 0.2
+      },
+      "expected_outcomes": [
+        "RECOVERED_STOP"
+      ]
+    },
+    {
+      "trial_id": "capacity48p5_minimum_sufficient_seed211",
+      "case_id": "capacity48p5",
+      "family": "b_geometry_capacity_sweep",
+      "condition_role": "held_out",
+      "probe_policy": "minimum_sufficient",
+      "seed": 211,
+      "role": "evaluation",
+      "parameters": {
+        "failure_threshold_n": 48.5,
+        "scenario": "probe_efficiency_capacity48p5",
+        "initial_probe_force_n": 12.0,
+        "requested_probe_force_n": 60.0,
+        "maximum_probe_force_n": 60.0,
+        "measurement_reserve_n": 1.0,
+        "tracking_reserve_n": 8.0,
+        "planning_config": {
+          "weak_leg": 0,
+          "next_lift_leg": 1,
+          "forward_progress_m": 0.04,
+          "nominal_lateral_shift_m": -0.02,
+          "maximum_lateral_adjustment_m": 0.08,
+          "maximum_extra_forward_m": 0.01,
+          "support_margin_m": 0.01,
+          "original_tripod_margin_m": 0.02,
+          "minimum_support_force_n": 8.0,
+          "next_lift_height_m": 0.03,
+          "next_hold_s": 1.0,
+          "probe_posture_adjustment_m": 0.12,
+          "maximum_probe_request_n": 60.0,
+          "requested_probe_load_n": 60.0,
+          "probe_force_ceiling_n": 60.0,
+          "probe_robustness_margin_n": 2.0
+        },
+        "probe_offset_xy_m": [
+          -0.048,
+          0.0
+        ],
+        "initial_state": {
+          "body_offset_xy_m": [
+            0.004,
+            -0.005
+          ],
+          "foot_offsets_xy_m": [
+            [
+              -0.039,
+              -0.024
+            ],
+            [
+              -0.039,
+              -0.024
+            ],
+            [
+              0.039,
+              0.024
+            ],
+            [
+              0.039,
+              -0.024
+            ]
+          ]
+        },
+        "sensor_config": {
+          "force_bias_n": -0.6,
+          "force_noise_n": 0.2,
+          "position_noise_m": 0.0001
+        },
+        "target_tolerance_n": 0.001,
+        "probe_undershoot_allowance_n": 0.2
+      },
+      "expected_outcomes": [
+        "RECOVERED_STOP"
+      ]
+    },
+    {
+      "trial_id": "capacity48p5_minimum_sufficient_seed907",
+      "case_id": "capacity48p5",
+      "family": "b_geometry_capacity_sweep",
+      "condition_role": "held_out",
+      "probe_policy": "minimum_sufficient",
+      "seed": 907,
+      "role": "evaluation",
+      "parameters": {
+        "failure_threshold_n": 48.5,
+        "scenario": "probe_efficiency_capacity48p5",
+        "initial_probe_force_n": 12.0,
+        "requested_probe_force_n": 60.0,
+        "maximum_probe_force_n": 60.0,
+        "measurement_reserve_n": 1.0,
+        "tracking_reserve_n": 8.0,
+        "planning_config": {
+          "weak_leg": 0,
+          "next_lift_leg": 1,
+          "forward_progress_m": 0.04,
+          "nominal_lateral_shift_m": -0.02,
+          "maximum_lateral_adjustment_m": 0.08,
+          "maximum_extra_forward_m": 0.01,
+          "support_margin_m": 0.01,
+          "original_tripod_margin_m": 0.02,
+          "minimum_support_force_n": 8.0,
+          "next_lift_height_m": 0.03,
+          "next_hold_s": 1.0,
+          "probe_posture_adjustment_m": 0.12,
+          "maximum_probe_request_n": 60.0,
+          "requested_probe_load_n": 60.0,
+          "probe_force_ceiling_n": 60.0,
+          "probe_robustness_margin_n": 2.0
+        },
+        "probe_offset_xy_m": [
+          -0.048,
+          0.0
+        ],
+        "initial_state": {
+          "body_offset_xy_m": [
+            0.004,
+            -0.005
+          ],
+          "foot_offsets_xy_m": [
+            [
+              -0.039,
+              -0.024
+            ],
+            [
+              -0.039,
+              -0.024
+            ],
+            [
+              0.039,
+              0.024
+            ],
+            [
+              0.039,
+              -0.024
+            ]
+          ]
+        },
+        "sensor_config": {
+          "force_bias_n": -0.6,
+          "force_noise_n": 0.2,
+          "position_noise_m": 0.0001
+        },
+        "target_tolerance_n": 0.001,
+        "probe_undershoot_allowance_n": 0.2
+      },
+      "expected_outcomes": [
+        "RECOVERED_STOP"
+      ]
+    },
+    {
+      "trial_id": "capacity49p5_maximum_feasible_seed211",
+      "case_id": "capacity49p5",
+      "family": "b_geometry_capacity_sweep",
+      "condition_role": "held_out",
+      "probe_policy": "maximum_feasible",
+      "seed": 211,
+      "role": "evaluation",
+      "parameters": {
+        "failure_threshold_n": 49.5,
+        "scenario": "probe_efficiency_capacity49p5",
+        "initial_probe_force_n": 12.0,
+        "requested_probe_force_n": 60.0,
+        "maximum_probe_force_n": 60.0,
+        "measurement_reserve_n": 1.0,
+        "tracking_reserve_n": 8.0,
+        "planning_config": {
+          "weak_leg": 0,
+          "next_lift_leg": 1,
+          "forward_progress_m": 0.04,
+          "nominal_lateral_shift_m": -0.02,
+          "maximum_lateral_adjustment_m": 0.08,
+          "maximum_extra_forward_m": 0.01,
+          "support_margin_m": 0.01,
+          "original_tripod_margin_m": 0.02,
+          "minimum_support_force_n": 8.0,
+          "next_lift_height_m": 0.03,
+          "next_hold_s": 1.0,
+          "probe_posture_adjustment_m": 0.12,
+          "maximum_probe_request_n": 60.0,
+          "requested_probe_load_n": 60.0,
+          "probe_force_ceiling_n": 60.0,
+          "probe_robustness_margin_n": 2.0
+        },
+        "probe_offset_xy_m": [
+          -0.048,
+          0.0
+        ],
+        "initial_state": {
+          "body_offset_xy_m": [
+            0.004,
+            -0.005
+          ],
+          "foot_offsets_xy_m": [
+            [
+              -0.039,
+              -0.024
+            ],
+            [
+              -0.039,
+              -0.024
+            ],
+            [
+              0.039,
+              0.024
+            ],
+            [
+              0.039,
+              -0.024
+            ]
+          ]
+        },
+        "sensor_config": {
+          "force_bias_n": -0.6,
+          "force_noise_n": 0.2,
+          "position_noise_m": 0.0001
+        },
+        "target_tolerance_n": 0.001,
+        "probe_undershoot_allowance_n": 0.2
+      },
+      "expected_outcomes": [
+        "RECOVERED_STOP"
+      ]
+    },
+    {
+      "trial_id": "capacity49p5_maximum_feasible_seed907",
+      "case_id": "capacity49p5",
+      "family": "b_geometry_capacity_sweep",
+      "condition_role": "held_out",
+      "probe_policy": "maximum_feasible",
+      "seed": 907,
+      "role": "evaluation",
+      "parameters": {
+        "failure_threshold_n": 49.5,
+        "scenario": "probe_efficiency_capacity49p5",
+        "initial_probe_force_n": 12.0,
+        "requested_probe_force_n": 60.0,
+        "maximum_probe_force_n": 60.0,
+        "measurement_reserve_n": 1.0,
+        "tracking_reserve_n": 8.0,
+        "planning_config": {
+          "weak_leg": 0,
+          "next_lift_leg": 1,
+          "forward_progress_m": 0.04,
+          "nominal_lateral_shift_m": -0.02,
+          "maximum_lateral_adjustment_m": 0.08,
+          "maximum_extra_forward_m": 0.01,
+          "support_margin_m": 0.01,
+          "original_tripod_margin_m": 0.02,
+          "minimum_support_force_n": 8.0,
+          "next_lift_height_m": 0.03,
+          "next_hold_s": 1.0,
+          "probe_posture_adjustment_m": 0.12,
+          "maximum_probe_request_n": 60.0,
+          "requested_probe_load_n": 60.0,
+          "probe_force_ceiling_n": 60.0,
+          "probe_robustness_margin_n": 2.0
+        },
+        "probe_offset_xy_m": [
+          -0.048,
+          0.0
+        ],
+        "initial_state": {
+          "body_offset_xy_m": [
+            0.004,
+            -0.005
+          ],
+          "foot_offsets_xy_m": [
+            [
+              -0.039,
+              -0.024
+            ],
+            [
+              -0.039,
+              -0.024
+            ],
+            [
+              0.039,
+              0.024
+            ],
+            [
+              0.039,
+              -0.024
+            ]
+          ]
+        },
+        "sensor_config": {
+          "force_bias_n": -0.6,
+          "force_noise_n": 0.2,
+          "position_noise_m": 0.0001
+        },
+        "target_tolerance_n": 0.001,
+        "probe_undershoot_allowance_n": 0.2
+      },
+      "expected_outcomes": [
+        "RECOVERED_STOP"
+      ]
+    },
+    {
+      "trial_id": "capacity49p5_minimum_sufficient_seed211",
+      "case_id": "capacity49p5",
+      "family": "b_geometry_capacity_sweep",
+      "condition_role": "held_out",
+      "probe_policy": "minimum_sufficient",
+      "seed": 211,
+      "role": "evaluation",
+      "parameters": {
+        "failure_threshold_n": 49.5,
+        "scenario": "probe_efficiency_capacity49p5",
+        "initial_probe_force_n": 12.0,
+        "requested_probe_force_n": 60.0,
+        "maximum_probe_force_n": 60.0,
+        "measurement_reserve_n": 1.0,
+        "tracking_reserve_n": 8.0,
+        "planning_config": {
+          "weak_leg": 0,
+          "next_lift_leg": 1,
+          "forward_progress_m": 0.04,
+          "nominal_lateral_shift_m": -0.02,
+          "maximum_lateral_adjustment_m": 0.08,
+          "maximum_extra_forward_m": 0.01,
+          "support_margin_m": 0.01,
+          "original_tripod_margin_m": 0.02,
+          "minimum_support_force_n": 8.0,
+          "next_lift_height_m": 0.03,
+          "next_hold_s": 1.0,
+          "probe_posture_adjustment_m": 0.12,
+          "maximum_probe_request_n": 60.0,
+          "requested_probe_load_n": 60.0,
+          "probe_force_ceiling_n": 60.0,
+          "probe_robustness_margin_n": 2.0
+        },
+        "probe_offset_xy_m": [
+          -0.048,
+          0.0
+        ],
+        "initial_state": {
+          "body_offset_xy_m": [
+            0.004,
+            -0.005
+          ],
+          "foot_offsets_xy_m": [
+            [
+              -0.039,
+              -0.024
+            ],
+            [
+              -0.039,
+              -0.024
+            ],
+            [
+              0.039,
+              0.024
+            ],
+            [
+              0.039,
+              -0.024
+            ]
+          ]
+        },
+        "sensor_config": {
+          "force_bias_n": -0.6,
+          "force_noise_n": 0.2,
+          "position_noise_m": 0.0001
+        },
+        "target_tolerance_n": 0.001,
+        "probe_undershoot_allowance_n": 0.2
+      },
+      "expected_outcomes": [
+        "RECOVERED_STOP"
+      ]
+    },
+    {
+      "trial_id": "capacity49p5_minimum_sufficient_seed907",
+      "case_id": "capacity49p5",
+      "family": "b_geometry_capacity_sweep",
+      "condition_role": "held_out",
+      "probe_policy": "minimum_sufficient",
+      "seed": 907,
+      "role": "evaluation",
+      "parameters": {
+        "failure_threshold_n": 49.5,
+        "scenario": "probe_efficiency_capacity49p5",
+        "initial_probe_force_n": 12.0,
+        "requested_probe_force_n": 60.0,
+        "maximum_probe_force_n": 60.0,
+        "measurement_reserve_n": 1.0,
+        "tracking_reserve_n": 8.0,
+        "planning_config": {
+          "weak_leg": 0,
+          "next_lift_leg": 1,
+          "forward_progress_m": 0.04,
+          "nominal_lateral_shift_m": -0.02,
+          "maximum_lateral_adjustment_m": 0.08,
+          "maximum_extra_forward_m": 0.01,
+          "support_margin_m": 0.01,
+          "original_tripod_margin_m": 0.02,
+          "minimum_support_force_n": 8.0,
+          "next_lift_height_m": 0.03,
+          "next_hold_s": 1.0,
+          "probe_posture_adjustment_m": 0.12,
+          "maximum_probe_request_n": 60.0,
+          "requested_probe_load_n": 60.0,
+          "probe_force_ceiling_n": 60.0,
+          "probe_robustness_margin_n": 2.0
+        },
+        "probe_offset_xy_m": [
+          -0.048,
+          0.0
+        ],
+        "initial_state": {
+          "body_offset_xy_m": [
+            0.004,
+            -0.005
+          ],
+          "foot_offsets_xy_m": [
+            [
+              -0.039,
+              -0.024
+            ],
+            [
+              -0.039,
+              -0.024
+            ],
+            [
+              0.039,
+              0.024
+            ],
+            [
+              0.039,
+              -0.024
+            ]
+          ]
+        },
+        "sensor_config": {
+          "force_bias_n": -0.6,
+          "force_noise_n": 0.2,
+          "position_noise_m": 0.0001
+        },
+        "target_tolerance_n": 0.001,
+        "probe_undershoot_allowance_n": 0.2
+      },
+      "expected_outcomes": [
+        "RECOVERED_STOP"
+      ]
+    },
+    {
+      "trial_id": "capacity50p5_maximum_feasible_seed211",
+      "case_id": "capacity50p5",
+      "family": "b_geometry_capacity_sweep",
+      "condition_role": "held_out",
+      "probe_policy": "maximum_feasible",
+      "seed": 211,
+      "role": "evaluation",
+      "parameters": {
+        "failure_threshold_n": 50.5,
+        "scenario": "probe_efficiency_capacity50p5",
+        "initial_probe_force_n": 12.0,
+        "requested_probe_force_n": 60.0,
+        "maximum_probe_force_n": 60.0,
+        "measurement_reserve_n": 1.0,
+        "tracking_reserve_n": 8.0,
+        "planning_config": {
+          "weak_leg": 0,
+          "next_lift_leg": 1,
+          "forward_progress_m": 0.04,
+          "nominal_lateral_shift_m": -0.02,
+          "maximum_lateral_adjustment_m": 0.08,
+          "maximum_extra_forward_m": 0.01,
+          "support_margin_m": 0.01,
+          "original_tripod_margin_m": 0.02,
+          "minimum_support_force_n": 8.0,
+          "next_lift_height_m": 0.03,
+          "next_hold_s": 1.0,
+          "probe_posture_adjustment_m": 0.12,
+          "maximum_probe_request_n": 60.0,
+          "requested_probe_load_n": 60.0,
+          "probe_force_ceiling_n": 60.0,
+          "probe_robustness_margin_n": 2.0
+        },
+        "probe_offset_xy_m": [
+          -0.048,
+          0.0
+        ],
+        "initial_state": {
+          "body_offset_xy_m": [
+            0.004,
+            -0.005
+          ],
+          "foot_offsets_xy_m": [
+            [
+              -0.039,
+              -0.024
+            ],
+            [
+              -0.039,
+              -0.024
+            ],
+            [
+              0.039,
+              0.024
+            ],
+            [
+              0.039,
+              -0.024
+            ]
+          ]
+        },
+        "sensor_config": {
+          "force_bias_n": -0.6,
+          "force_noise_n": 0.2,
+          "position_noise_m": 0.0001
+        },
+        "target_tolerance_n": 0.001,
+        "probe_undershoot_allowance_n": 0.2
+      },
+      "expected_outcomes": [
+        "RECOVERED_STOP"
+      ]
+    },
+    {
+      "trial_id": "capacity50p5_maximum_feasible_seed907",
+      "case_id": "capacity50p5",
+      "family": "b_geometry_capacity_sweep",
+      "condition_role": "held_out",
+      "probe_policy": "maximum_feasible",
+      "seed": 907,
+      "role": "evaluation",
+      "parameters": {
+        "failure_threshold_n": 50.5,
+        "scenario": "probe_efficiency_capacity50p5",
+        "initial_probe_force_n": 12.0,
+        "requested_probe_force_n": 60.0,
+        "maximum_probe_force_n": 60.0,
+        "measurement_reserve_n": 1.0,
+        "tracking_reserve_n": 8.0,
+        "planning_config": {
+          "weak_leg": 0,
+          "next_lift_leg": 1,
+          "forward_progress_m": 0.04,
+          "nominal_lateral_shift_m": -0.02,
+          "maximum_lateral_adjustment_m": 0.08,
+          "maximum_extra_forward_m": 0.01,
+          "support_margin_m": 0.01,
+          "original_tripod_margin_m": 0.02,
+          "minimum_support_force_n": 8.0,
+          "next_lift_height_m": 0.03,
+          "next_hold_s": 1.0,
+          "probe_posture_adjustment_m": 0.12,
+          "maximum_probe_request_n": 60.0,
+          "requested_probe_load_n": 60.0,
+          "probe_force_ceiling_n": 60.0,
+          "probe_robustness_margin_n": 2.0
+        },
+        "probe_offset_xy_m": [
+          -0.048,
+          0.0
+        ],
+        "initial_state": {
+          "body_offset_xy_m": [
+            0.004,
+            -0.005
+          ],
+          "foot_offsets_xy_m": [
+            [
+              -0.039,
+              -0.024
+            ],
+            [
+              -0.039,
+              -0.024
+            ],
+            [
+              0.039,
+              0.024
+            ],
+            [
+              0.039,
+              -0.024
+            ]
+          ]
+        },
+        "sensor_config": {
+          "force_bias_n": -0.6,
+          "force_noise_n": 0.2,
+          "position_noise_m": 0.0001
+        },
+        "target_tolerance_n": 0.001,
+        "probe_undershoot_allowance_n": 0.2
+      },
+      "expected_outcomes": [
+        "RECOVERED_STOP"
+      ]
+    },
+    {
+      "trial_id": "capacity50p5_minimum_sufficient_seed211",
+      "case_id": "capacity50p5",
+      "family": "b_geometry_capacity_sweep",
+      "condition_role": "held_out",
+      "probe_policy": "minimum_sufficient",
+      "seed": 211,
+      "role": "evaluation",
+      "parameters": {
+        "failure_threshold_n": 50.5,
+        "scenario": "probe_efficiency_capacity50p5",
+        "initial_probe_force_n": 12.0,
+        "requested_probe_force_n": 60.0,
+        "maximum_probe_force_n": 60.0,
+        "measurement_reserve_n": 1.0,
+        "tracking_reserve_n": 8.0,
+        "planning_config": {
+          "weak_leg": 0,
+          "next_lift_leg": 1,
+          "forward_progress_m": 0.04,
+          "nominal_lateral_shift_m": -0.02,
+          "maximum_lateral_adjustment_m": 0.08,
+          "maximum_extra_forward_m": 0.01,
+          "support_margin_m": 0.01,
+          "original_tripod_margin_m": 0.02,
+          "minimum_support_force_n": 8.0,
+          "next_lift_height_m": 0.03,
+          "next_hold_s": 1.0,
+          "probe_posture_adjustment_m": 0.12,
+          "maximum_probe_request_n": 60.0,
+          "requested_probe_load_n": 60.0,
+          "probe_force_ceiling_n": 60.0,
+          "probe_robustness_margin_n": 2.0
+        },
+        "probe_offset_xy_m": [
+          -0.048,
+          0.0
+        ],
+        "initial_state": {
+          "body_offset_xy_m": [
+            0.004,
+            -0.005
+          ],
+          "foot_offsets_xy_m": [
+            [
+              -0.039,
+              -0.024
+            ],
+            [
+              -0.039,
+              -0.024
+            ],
+            [
+              0.039,
+              0.024
+            ],
+            [
+              0.039,
+              -0.024
+            ]
+          ]
+        },
+        "sensor_config": {
+          "force_bias_n": -0.6,
+          "force_noise_n": 0.2,
+          "position_noise_m": 0.0001
+        },
+        "target_tolerance_n": 0.001,
+        "probe_undershoot_allowance_n": 0.2
+      },
+      "expected_outcomes": [
+        "RECOVERED_STOP"
+      ]
+    },
+    {
+      "trial_id": "capacity50p5_minimum_sufficient_seed907",
+      "case_id": "capacity50p5",
+      "family": "b_geometry_capacity_sweep",
+      "condition_role": "held_out",
+      "probe_policy": "minimum_sufficient",
+      "seed": 907,
+      "role": "evaluation",
+      "parameters": {
+        "failure_threshold_n": 50.5,
+        "scenario": "probe_efficiency_capacity50p5",
+        "initial_probe_force_n": 12.0,
+        "requested_probe_force_n": 60.0,
+        "maximum_probe_force_n": 60.0,
+        "measurement_reserve_n": 1.0,
+        "tracking_reserve_n": 8.0,
+        "planning_config": {
+          "weak_leg": 0,
+          "next_lift_leg": 1,
+          "forward_progress_m": 0.04,
+          "nominal_lateral_shift_m": -0.02,
+          "maximum_lateral_adjustment_m": 0.08,
+          "maximum_extra_forward_m": 0.01,
+          "support_margin_m": 0.01,
+          "original_tripod_margin_m": 0.02,
+          "minimum_support_force_n": 8.0,
+          "next_lift_height_m": 0.03,
+          "next_hold_s": 1.0,
+          "probe_posture_adjustment_m": 0.12,
+          "maximum_probe_request_n": 60.0,
+          "requested_probe_load_n": 60.0,
+          "probe_force_ceiling_n": 60.0,
+          "probe_robustness_margin_n": 2.0
+        },
+        "probe_offset_xy_m": [
+          -0.048,
+          0.0
+        ],
+        "initial_state": {
+          "body_offset_xy_m": [
+            0.004,
+            -0.005
+          ],
+          "foot_offsets_xy_m": [
+            [
+              -0.039,
+              -0.024
+            ],
+            [
+              -0.039,
+              -0.024
+            ],
+            [
+              0.039,
+              0.024
+            ],
+            [
+              0.039,
+              -0.024
+            ]
+          ]
+        },
+        "sensor_config": {
+          "force_bias_n": -0.6,
+          "force_noise_n": 0.2,
+          "position_noise_m": 0.0001
+        },
+        "target_tolerance_n": 0.001,
+        "probe_undershoot_allowance_n": 0.2
+      },
+      "expected_outcomes": [
+        "RECOVERED_STOP"
+      ]
+    },
+    {
+      "trial_id": "capacity51p0_maximum_feasible_seed211",
+      "case_id": "capacity51p0",
+      "family": "b_geometry_capacity_sweep",
+      "condition_role": "held_out",
+      "probe_policy": "maximum_feasible",
+      "seed": 211,
+      "role": "evaluation",
+      "parameters": {
+        "failure_threshold_n": 51.0,
+        "scenario": "probe_efficiency_capacity51p0",
+        "initial_probe_force_n": 12.0,
+        "requested_probe_force_n": 60.0,
+        "maximum_probe_force_n": 60.0,
+        "measurement_reserve_n": 1.0,
+        "tracking_reserve_n": 8.0,
+        "planning_config": {
+          "weak_leg": 0,
+          "next_lift_leg": 1,
+          "forward_progress_m": 0.04,
+          "nominal_lateral_shift_m": -0.02,
+          "maximum_lateral_adjustment_m": 0.08,
+          "maximum_extra_forward_m": 0.01,
+          "support_margin_m": 0.01,
+          "original_tripod_margin_m": 0.02,
+          "minimum_support_force_n": 8.0,
+          "next_lift_height_m": 0.03,
+          "next_hold_s": 1.0,
+          "probe_posture_adjustment_m": 0.12,
+          "maximum_probe_request_n": 60.0,
+          "requested_probe_load_n": 60.0,
+          "probe_force_ceiling_n": 60.0,
+          "probe_robustness_margin_n": 2.0
+        },
+        "probe_offset_xy_m": [
+          -0.048,
+          0.0
+        ],
+        "initial_state": {
+          "body_offset_xy_m": [
+            0.004,
+            -0.005
+          ],
+          "foot_offsets_xy_m": [
+            [
+              -0.039,
+              -0.024
+            ],
+            [
+              -0.039,
+              -0.024
+            ],
+            [
+              0.039,
+              0.024
+            ],
+            [
+              0.039,
+              -0.024
+            ]
+          ]
+        },
+        "sensor_config": {
+          "force_bias_n": -0.6,
+          "force_noise_n": 0.2,
+          "position_noise_m": 0.0001
+        },
+        "target_tolerance_n": 0.001,
+        "probe_undershoot_allowance_n": 0.2
+      },
+      "expected_outcomes": [
+        "RECOVERED_STOP"
+      ]
+    },
+    {
+      "trial_id": "capacity51p0_maximum_feasible_seed907",
+      "case_id": "capacity51p0",
+      "family": "b_geometry_capacity_sweep",
+      "condition_role": "held_out",
+      "probe_policy": "maximum_feasible",
+      "seed": 907,
+      "role": "evaluation",
+      "parameters": {
+        "failure_threshold_n": 51.0,
+        "scenario": "probe_efficiency_capacity51p0",
+        "initial_probe_force_n": 12.0,
+        "requested_probe_force_n": 60.0,
+        "maximum_probe_force_n": 60.0,
+        "measurement_reserve_n": 1.0,
+        "tracking_reserve_n": 8.0,
+        "planning_config": {
+          "weak_leg": 0,
+          "next_lift_leg": 1,
+          "forward_progress_m": 0.04,
+          "nominal_lateral_shift_m": -0.02,
+          "maximum_lateral_adjustment_m": 0.08,
+          "maximum_extra_forward_m": 0.01,
+          "support_margin_m": 0.01,
+          "original_tripod_margin_m": 0.02,
+          "minimum_support_force_n": 8.0,
+          "next_lift_height_m": 0.03,
+          "next_hold_s": 1.0,
+          "probe_posture_adjustment_m": 0.12,
+          "maximum_probe_request_n": 60.0,
+          "requested_probe_load_n": 60.0,
+          "probe_force_ceiling_n": 60.0,
+          "probe_robustness_margin_n": 2.0
+        },
+        "probe_offset_xy_m": [
+          -0.048,
+          0.0
+        ],
+        "initial_state": {
+          "body_offset_xy_m": [
+            0.004,
+            -0.005
+          ],
+          "foot_offsets_xy_m": [
+            [
+              -0.039,
+              -0.024
+            ],
+            [
+              -0.039,
+              -0.024
+            ],
+            [
+              0.039,
+              0.024
+            ],
+            [
+              0.039,
+              -0.024
+            ]
+          ]
+        },
+        "sensor_config": {
+          "force_bias_n": -0.6,
+          "force_noise_n": 0.2,
+          "position_noise_m": 0.0001
+        },
+        "target_tolerance_n": 0.001,
+        "probe_undershoot_allowance_n": 0.2
+      },
+      "expected_outcomes": [
+        "RECOVERED_STOP"
+      ]
+    },
+    {
+      "trial_id": "capacity51p0_minimum_sufficient_seed211",
+      "case_id": "capacity51p0",
+      "family": "b_geometry_capacity_sweep",
+      "condition_role": "held_out",
+      "probe_policy": "minimum_sufficient",
+      "seed": 211,
+      "role": "evaluation",
+      "parameters": {
+        "failure_threshold_n": 51.0,
+        "scenario": "probe_efficiency_capacity51p0",
+        "initial_probe_force_n": 12.0,
+        "requested_probe_force_n": 60.0,
+        "maximum_probe_force_n": 60.0,
+        "measurement_reserve_n": 1.0,
+        "tracking_reserve_n": 8.0,
+        "planning_config": {
+          "weak_leg": 0,
+          "next_lift_leg": 1,
+          "forward_progress_m": 0.04,
+          "nominal_lateral_shift_m": -0.02,
+          "maximum_lateral_adjustment_m": 0.08,
+          "maximum_extra_forward_m": 0.01,
+          "support_margin_m": 0.01,
+          "original_tripod_margin_m": 0.02,
+          "minimum_support_force_n": 8.0,
+          "next_lift_height_m": 0.03,
+          "next_hold_s": 1.0,
+          "probe_posture_adjustment_m": 0.12,
+          "maximum_probe_request_n": 60.0,
+          "requested_probe_load_n": 60.0,
+          "probe_force_ceiling_n": 60.0,
+          "probe_robustness_margin_n": 2.0
+        },
+        "probe_offset_xy_m": [
+          -0.048,
+          0.0
+        ],
+        "initial_state": {
+          "body_offset_xy_m": [
+            0.004,
+            -0.005
+          ],
+          "foot_offsets_xy_m": [
+            [
+              -0.039,
+              -0.024
+            ],
+            [
+              -0.039,
+              -0.024
+            ],
+            [
+              0.039,
+              0.024
+            ],
+            [
+              0.039,
+              -0.024
+            ]
+          ]
+        },
+        "sensor_config": {
+          "force_bias_n": -0.6,
+          "force_noise_n": 0.2,
+          "position_noise_m": 0.0001
+        },
+        "target_tolerance_n": 0.001,
+        "probe_undershoot_allowance_n": 0.2
+      },
+      "expected_outcomes": [
+        "RECOVERED_STOP"
+      ]
+    },
+    {
+      "trial_id": "capacity51p0_minimum_sufficient_seed907",
+      "case_id": "capacity51p0",
+      "family": "b_geometry_capacity_sweep",
+      "condition_role": "held_out",
+      "probe_policy": "minimum_sufficient",
+      "seed": 907,
+      "role": "evaluation",
+      "parameters": {
+        "failure_threshold_n": 51.0,
+        "scenario": "probe_efficiency_capacity51p0",
+        "initial_probe_force_n": 12.0,
+        "requested_probe_force_n": 60.0,
+        "maximum_probe_force_n": 60.0,
+        "measurement_reserve_n": 1.0,
+        "tracking_reserve_n": 8.0,
+        "planning_config": {
+          "weak_leg": 0,
+          "next_lift_leg": 1,
+          "forward_progress_m": 0.04,
+          "nominal_lateral_shift_m": -0.02,
+          "maximum_lateral_adjustment_m": 0.08,
+          "maximum_extra_forward_m": 0.01,
+          "support_margin_m": 0.01,
+          "original_tripod_margin_m": 0.02,
+          "minimum_support_force_n": 8.0,
+          "next_lift_height_m": 0.03,
+          "next_hold_s": 1.0,
+          "probe_posture_adjustment_m": 0.12,
+          "maximum_probe_request_n": 60.0,
+          "requested_probe_load_n": 60.0,
+          "probe_force_ceiling_n": 60.0,
+          "probe_robustness_margin_n": 2.0
+        },
+        "probe_offset_xy_m": [
+          -0.048,
+          0.0
+        ],
+        "initial_state": {
+          "body_offset_xy_m": [
+            0.004,
+            -0.005
+          ],
+          "foot_offsets_xy_m": [
+            [
+              -0.039,
+              -0.024
+            ],
+            [
+              -0.039,
+              -0.024
+            ],
+            [
+              0.039,
+              0.024
+            ],
+            [
+              0.039,
+              -0.024
+            ]
+          ]
+        },
+        "sensor_config": {
+          "force_bias_n": -0.6,
+          "force_noise_n": 0.2,
+          "position_noise_m": 0.0001
+        },
+        "target_tolerance_n": 0.001,
+        "probe_undershoot_allowance_n": 0.2
+      },
+      "expected_outcomes": [
+        "RECOVERED_STOP"
+      ]
+    },
+    {
+      "trial_id": "capacity52p0_maximum_feasible_seed211",
+      "case_id": "capacity52p0",
+      "family": "b_geometry_capacity_sweep",
+      "condition_role": "held_out",
+      "probe_policy": "maximum_feasible",
+      "seed": 211,
+      "role": "evaluation",
+      "parameters": {
+        "failure_threshold_n": 52.0,
+        "scenario": "probe_efficiency_capacity52p0",
+        "initial_probe_force_n": 12.0,
+        "requested_probe_force_n": 60.0,
+        "maximum_probe_force_n": 60.0,
+        "measurement_reserve_n": 1.0,
+        "tracking_reserve_n": 8.0,
+        "planning_config": {
+          "weak_leg": 0,
+          "next_lift_leg": 1,
+          "forward_progress_m": 0.04,
+          "nominal_lateral_shift_m": -0.02,
+          "maximum_lateral_adjustment_m": 0.08,
+          "maximum_extra_forward_m": 0.01,
+          "support_margin_m": 0.01,
+          "original_tripod_margin_m": 0.02,
+          "minimum_support_force_n": 8.0,
+          "next_lift_height_m": 0.03,
+          "next_hold_s": 1.0,
+          "probe_posture_adjustment_m": 0.12,
+          "maximum_probe_request_n": 60.0,
+          "requested_probe_load_n": 60.0,
+          "probe_force_ceiling_n": 60.0,
+          "probe_robustness_margin_n": 2.0
+        },
+        "probe_offset_xy_m": [
+          -0.048,
+          0.0
+        ],
+        "initial_state": {
+          "body_offset_xy_m": [
+            0.004,
+            -0.005
+          ],
+          "foot_offsets_xy_m": [
+            [
+              -0.039,
+              -0.024
+            ],
+            [
+              -0.039,
+              -0.024
+            ],
+            [
+              0.039,
+              0.024
+            ],
+            [
+              0.039,
+              -0.024
+            ]
+          ]
+        },
+        "sensor_config": {
+          "force_bias_n": -0.6,
+          "force_noise_n": 0.2,
+          "position_noise_m": 0.0001
+        },
+        "target_tolerance_n": 0.001,
+        "probe_undershoot_allowance_n": 0.2
+      },
+      "expected_outcomes": [
+        "RECOVERED_STOP"
+      ]
+    },
+    {
+      "trial_id": "capacity52p0_maximum_feasible_seed907",
+      "case_id": "capacity52p0",
+      "family": "b_geometry_capacity_sweep",
+      "condition_role": "held_out",
+      "probe_policy": "maximum_feasible",
+      "seed": 907,
+      "role": "evaluation",
+      "parameters": {
+        "failure_threshold_n": 52.0,
+        "scenario": "probe_efficiency_capacity52p0",
+        "initial_probe_force_n": 12.0,
+        "requested_probe_force_n": 60.0,
+        "maximum_probe_force_n": 60.0,
+        "measurement_reserve_n": 1.0,
+        "tracking_reserve_n": 8.0,
+        "planning_config": {
+          "weak_leg": 0,
+          "next_lift_leg": 1,
+          "forward_progress_m": 0.04,
+          "nominal_lateral_shift_m": -0.02,
+          "maximum_lateral_adjustment_m": 0.08,
+          "maximum_extra_forward_m": 0.01,
+          "support_margin_m": 0.01,
+          "original_tripod_margin_m": 0.02,
+          "minimum_support_force_n": 8.0,
+          "next_lift_height_m": 0.03,
+          "next_hold_s": 1.0,
+          "probe_posture_adjustment_m": 0.12,
+          "maximum_probe_request_n": 60.0,
+          "requested_probe_load_n": 60.0,
+          "probe_force_ceiling_n": 60.0,
+          "probe_robustness_margin_n": 2.0
+        },
+        "probe_offset_xy_m": [
+          -0.048,
+          0.0
+        ],
+        "initial_state": {
+          "body_offset_xy_m": [
+            0.004,
+            -0.005
+          ],
+          "foot_offsets_xy_m": [
+            [
+              -0.039,
+              -0.024
+            ],
+            [
+              -0.039,
+              -0.024
+            ],
+            [
+              0.039,
+              0.024
+            ],
+            [
+              0.039,
+              -0.024
+            ]
+          ]
+        },
+        "sensor_config": {
+          "force_bias_n": -0.6,
+          "force_noise_n": 0.2,
+          "position_noise_m": 0.0001
+        },
+        "target_tolerance_n": 0.001,
+        "probe_undershoot_allowance_n": 0.2
+      },
+      "expected_outcomes": [
+        "RECOVERED_STOP"
+      ]
+    },
+    {
+      "trial_id": "capacity52p0_minimum_sufficient_seed211",
+      "case_id": "capacity52p0",
+      "family": "b_geometry_capacity_sweep",
+      "condition_role": "held_out",
+      "probe_policy": "minimum_sufficient",
+      "seed": 211,
+      "role": "evaluation",
+      "parameters": {
+        "failure_threshold_n": 52.0,
+        "scenario": "probe_efficiency_capacity52p0",
+        "initial_probe_force_n": 12.0,
+        "requested_probe_force_n": 60.0,
+        "maximum_probe_force_n": 60.0,
+        "measurement_reserve_n": 1.0,
+        "tracking_reserve_n": 8.0,
+        "planning_config": {
+          "weak_leg": 0,
+          "next_lift_leg": 1,
+          "forward_progress_m": 0.04,
+          "nominal_lateral_shift_m": -0.02,
+          "maximum_lateral_adjustment_m": 0.08,
+          "maximum_extra_forward_m": 0.01,
+          "support_margin_m": 0.01,
+          "original_tripod_margin_m": 0.02,
+          "minimum_support_force_n": 8.0,
+          "next_lift_height_m": 0.03,
+          "next_hold_s": 1.0,
+          "probe_posture_adjustment_m": 0.12,
+          "maximum_probe_request_n": 60.0,
+          "requested_probe_load_n": 60.0,
+          "probe_force_ceiling_n": 60.0,
+          "probe_robustness_margin_n": 2.0
+        },
+        "probe_offset_xy_m": [
+          -0.048,
+          0.0
+        ],
+        "initial_state": {
+          "body_offset_xy_m": [
+            0.004,
+            -0.005
+          ],
+          "foot_offsets_xy_m": [
+            [
+              -0.039,
+              -0.024
+            ],
+            [
+              -0.039,
+              -0.024
+            ],
+            [
+              0.039,
+              0.024
+            ],
+            [
+              0.039,
+              -0.024
+            ]
+          ]
+        },
+        "sensor_config": {
+          "force_bias_n": -0.6,
+          "force_noise_n": 0.2,
+          "position_noise_m": 0.0001
+        },
+        "target_tolerance_n": 0.001,
+        "probe_undershoot_allowance_n": 0.2
+      },
+      "expected_outcomes": [
+        "SUCCESS"
+      ]
+    },
+    {
+      "trial_id": "capacity52p0_minimum_sufficient_seed907",
+      "case_id": "capacity52p0",
+      "family": "b_geometry_capacity_sweep",
+      "condition_role": "held_out",
+      "probe_policy": "minimum_sufficient",
+      "seed": 907,
+      "role": "evaluation",
+      "parameters": {
+        "failure_threshold_n": 52.0,
+        "scenario": "probe_efficiency_capacity52p0",
+        "initial_probe_force_n": 12.0,
+        "requested_probe_force_n": 60.0,
+        "maximum_probe_force_n": 60.0,
+        "measurement_reserve_n": 1.0,
+        "tracking_reserve_n": 8.0,
+        "planning_config": {
+          "weak_leg": 0,
+          "next_lift_leg": 1,
+          "forward_progress_m": 0.04,
+          "nominal_lateral_shift_m": -0.02,
+          "maximum_lateral_adjustment_m": 0.08,
+          "maximum_extra_forward_m": 0.01,
+          "support_margin_m": 0.01,
+          "original_tripod_margin_m": 0.02,
+          "minimum_support_force_n": 8.0,
+          "next_lift_height_m": 0.03,
+          "next_hold_s": 1.0,
+          "probe_posture_adjustment_m": 0.12,
+          "maximum_probe_request_n": 60.0,
+          "requested_probe_load_n": 60.0,
+          "probe_force_ceiling_n": 60.0,
+          "probe_robustness_margin_n": 2.0
+        },
+        "probe_offset_xy_m": [
+          -0.048,
+          0.0
+        ],
+        "initial_state": {
+          "body_offset_xy_m": [
+            0.004,
+            -0.005
+          ],
+          "foot_offsets_xy_m": [
+            [
+              -0.039,
+              -0.024
+            ],
+            [
+              -0.039,
+              -0.024
+            ],
+            [
+              0.039,
+              0.024
+            ],
+            [
+              0.039,
+              -0.024
+            ]
+          ]
+        },
+        "sensor_config": {
+          "force_bias_n": -0.6,
+          "force_noise_n": 0.2,
+          "position_noise_m": 0.0001
+        },
+        "target_tolerance_n": 0.001,
+        "probe_undershoot_allowance_n": 0.2
+      },
+      "expected_outcomes": [
+        "SUCCESS"
+      ]
+    },
+    {
+      "trial_id": "capacity53p0_maximum_feasible_seed211",
+      "case_id": "capacity53p0",
+      "family": "b_geometry_capacity_sweep",
+      "condition_role": "held_out",
+      "probe_policy": "maximum_feasible",
+      "seed": 211,
+      "role": "evaluation",
+      "parameters": {
+        "failure_threshold_n": 53.0,
+        "scenario": "probe_efficiency_capacity53p0",
+        "initial_probe_force_n": 12.0,
+        "requested_probe_force_n": 60.0,
+        "maximum_probe_force_n": 60.0,
+        "measurement_reserve_n": 1.0,
+        "tracking_reserve_n": 8.0,
+        "planning_config": {
+          "weak_leg": 0,
+          "next_lift_leg": 1,
+          "forward_progress_m": 0.04,
+          "nominal_lateral_shift_m": -0.02,
+          "maximum_lateral_adjustment_m": 0.08,
+          "maximum_extra_forward_m": 0.01,
+          "support_margin_m": 0.01,
+          "original_tripod_margin_m": 0.02,
+          "minimum_support_force_n": 8.0,
+          "next_lift_height_m": 0.03,
+          "next_hold_s": 1.0,
+          "probe_posture_adjustment_m": 0.12,
+          "maximum_probe_request_n": 60.0,
+          "requested_probe_load_n": 60.0,
+          "probe_force_ceiling_n": 60.0,
+          "probe_robustness_margin_n": 2.0
+        },
+        "probe_offset_xy_m": [
+          -0.048,
+          0.0
+        ],
+        "initial_state": {
+          "body_offset_xy_m": [
+            0.004,
+            -0.005
+          ],
+          "foot_offsets_xy_m": [
+            [
+              -0.039,
+              -0.024
+            ],
+            [
+              -0.039,
+              -0.024
+            ],
+            [
+              0.039,
+              0.024
+            ],
+            [
+              0.039,
+              -0.024
+            ]
+          ]
+        },
+        "sensor_config": {
+          "force_bias_n": -0.6,
+          "force_noise_n": 0.2,
+          "position_noise_m": 0.0001
+        },
+        "target_tolerance_n": 0.001,
+        "probe_undershoot_allowance_n": 0.2
+      },
+      "expected_outcomes": [
+        "RECOVERED_STOP"
+      ]
+    },
+    {
+      "trial_id": "capacity53p0_maximum_feasible_seed907",
+      "case_id": "capacity53p0",
+      "family": "b_geometry_capacity_sweep",
+      "condition_role": "held_out",
+      "probe_policy": "maximum_feasible",
+      "seed": 907,
+      "role": "evaluation",
+      "parameters": {
+        "failure_threshold_n": 53.0,
+        "scenario": "probe_efficiency_capacity53p0",
+        "initial_probe_force_n": 12.0,
+        "requested_probe_force_n": 60.0,
+        "maximum_probe_force_n": 60.0,
+        "measurement_reserve_n": 1.0,
+        "tracking_reserve_n": 8.0,
+        "planning_config": {
+          "weak_leg": 0,
+          "next_lift_leg": 1,
+          "forward_progress_m": 0.04,
+          "nominal_lateral_shift_m": -0.02,
+          "maximum_lateral_adjustment_m": 0.08,
+          "maximum_extra_forward_m": 0.01,
+          "support_margin_m": 0.01,
+          "original_tripod_margin_m": 0.02,
+          "minimum_support_force_n": 8.0,
+          "next_lift_height_m": 0.03,
+          "next_hold_s": 1.0,
+          "probe_posture_adjustment_m": 0.12,
+          "maximum_probe_request_n": 60.0,
+          "requested_probe_load_n": 60.0,
+          "probe_force_ceiling_n": 60.0,
+          "probe_robustness_margin_n": 2.0
+        },
+        "probe_offset_xy_m": [
+          -0.048,
+          0.0
+        ],
+        "initial_state": {
+          "body_offset_xy_m": [
+            0.004,
+            -0.005
+          ],
+          "foot_offsets_xy_m": [
+            [
+              -0.039,
+              -0.024
+            ],
+            [
+              -0.039,
+              -0.024
+            ],
+            [
+              0.039,
+              0.024
+            ],
+            [
+              0.039,
+              -0.024
+            ]
+          ]
+        },
+        "sensor_config": {
+          "force_bias_n": -0.6,
+          "force_noise_n": 0.2,
+          "position_noise_m": 0.0001
+        },
+        "target_tolerance_n": 0.001,
+        "probe_undershoot_allowance_n": 0.2
+      },
+      "expected_outcomes": [
+        "RECOVERED_STOP"
+      ]
+    },
+    {
+      "trial_id": "capacity53p0_minimum_sufficient_seed211",
+      "case_id": "capacity53p0",
+      "family": "b_geometry_capacity_sweep",
+      "condition_role": "held_out",
+      "probe_policy": "minimum_sufficient",
+      "seed": 211,
+      "role": "evaluation",
+      "parameters": {
+        "failure_threshold_n": 53.0,
+        "scenario": "probe_efficiency_capacity53p0",
+        "initial_probe_force_n": 12.0,
+        "requested_probe_force_n": 60.0,
+        "maximum_probe_force_n": 60.0,
+        "measurement_reserve_n": 1.0,
+        "tracking_reserve_n": 8.0,
+        "planning_config": {
+          "weak_leg": 0,
+          "next_lift_leg": 1,
+          "forward_progress_m": 0.04,
+          "nominal_lateral_shift_m": -0.02,
+          "maximum_lateral_adjustment_m": 0.08,
+          "maximum_extra_forward_m": 0.01,
+          "support_margin_m": 0.01,
+          "original_tripod_margin_m": 0.02,
+          "minimum_support_force_n": 8.0,
+          "next_lift_height_m": 0.03,
+          "next_hold_s": 1.0,
+          "probe_posture_adjustment_m": 0.12,
+          "maximum_probe_request_n": 60.0,
+          "requested_probe_load_n": 60.0,
+          "probe_force_ceiling_n": 60.0,
+          "probe_robustness_margin_n": 2.0
+        },
+        "probe_offset_xy_m": [
+          -0.048,
+          0.0
+        ],
+        "initial_state": {
+          "body_offset_xy_m": [
+            0.004,
+            -0.005
+          ],
+          "foot_offsets_xy_m": [
+            [
+              -0.039,
+              -0.024
+            ],
+            [
+              -0.039,
+              -0.024
+            ],
+            [
+              0.039,
+              0.024
+            ],
+            [
+              0.039,
+              -0.024
+            ]
+          ]
+        },
+        "sensor_config": {
+          "force_bias_n": -0.6,
+          "force_noise_n": 0.2,
+          "position_noise_m": 0.0001
+        },
+        "target_tolerance_n": 0.001,
+        "probe_undershoot_allowance_n": 0.2
+      },
+      "expected_outcomes": [
+        "SUCCESS"
+      ]
+    },
+    {
+      "trial_id": "capacity53p0_minimum_sufficient_seed907",
+      "case_id": "capacity53p0",
+      "family": "b_geometry_capacity_sweep",
+      "condition_role": "held_out",
+      "probe_policy": "minimum_sufficient",
+      "seed": 907,
+      "role": "evaluation",
+      "parameters": {
+        "failure_threshold_n": 53.0,
+        "scenario": "probe_efficiency_capacity53p0",
+        "initial_probe_force_n": 12.0,
+        "requested_probe_force_n": 60.0,
+        "maximum_probe_force_n": 60.0,
+        "measurement_reserve_n": 1.0,
+        "tracking_reserve_n": 8.0,
+        "planning_config": {
+          "weak_leg": 0,
+          "next_lift_leg": 1,
+          "forward_progress_m": 0.04,
+          "nominal_lateral_shift_m": -0.02,
+          "maximum_lateral_adjustment_m": 0.08,
+          "maximum_extra_forward_m": 0.01,
+          "support_margin_m": 0.01,
+          "original_tripod_margin_m": 0.02,
+          "minimum_support_force_n": 8.0,
+          "next_lift_height_m": 0.03,
+          "next_hold_s": 1.0,
+          "probe_posture_adjustment_m": 0.12,
+          "maximum_probe_request_n": 60.0,
+          "requested_probe_load_n": 60.0,
+          "probe_force_ceiling_n": 60.0,
+          "probe_robustness_margin_n": 2.0
+        },
+        "probe_offset_xy_m": [
+          -0.048,
+          0.0
+        ],
+        "initial_state": {
+          "body_offset_xy_m": [
+            0.004,
+            -0.005
+          ],
+          "foot_offsets_xy_m": [
+            [
+              -0.039,
+              -0.024
+            ],
+            [
+              -0.039,
+              -0.024
+            ],
+            [
+              0.039,
+              0.024
+            ],
+            [
+              0.039,
+              -0.024
+            ]
+          ]
+        },
+        "sensor_config": {
+          "force_bias_n": -0.6,
+          "force_noise_n": 0.2,
+          "position_noise_m": 0.0001
+        },
+        "target_tolerance_n": 0.001,
+        "probe_undershoot_allowance_n": 0.2
+      },
+      "expected_outcomes": [
+        "SUCCESS"
+      ]
+    },
+    {
+      "trial_id": "capacity54p0_maximum_feasible_seed211",
+      "case_id": "capacity54p0",
+      "family": "b_geometry_capacity_sweep",
+      "condition_role": "held_out",
+      "probe_policy": "maximum_feasible",
+      "seed": 211,
+      "role": "evaluation",
+      "parameters": {
+        "failure_threshold_n": 54.0,
+        "scenario": "probe_efficiency_capacity54p0",
+        "initial_probe_force_n": 12.0,
+        "requested_probe_force_n": 60.0,
+        "maximum_probe_force_n": 60.0,
+        "measurement_reserve_n": 1.0,
+        "tracking_reserve_n": 8.0,
+        "planning_config": {
+          "weak_leg": 0,
+          "next_lift_leg": 1,
+          "forward_progress_m": 0.04,
+          "nominal_lateral_shift_m": -0.02,
+          "maximum_lateral_adjustment_m": 0.08,
+          "maximum_extra_forward_m": 0.01,
+          "support_margin_m": 0.01,
+          "original_tripod_margin_m": 0.02,
+          "minimum_support_force_n": 8.0,
+          "next_lift_height_m": 0.03,
+          "next_hold_s": 1.0,
+          "probe_posture_adjustment_m": 0.12,
+          "maximum_probe_request_n": 60.0,
+          "requested_probe_load_n": 60.0,
+          "probe_force_ceiling_n": 60.0,
+          "probe_robustness_margin_n": 2.0
+        },
+        "probe_offset_xy_m": [
+          -0.048,
+          0.0
+        ],
+        "initial_state": {
+          "body_offset_xy_m": [
+            0.004,
+            -0.005
+          ],
+          "foot_offsets_xy_m": [
+            [
+              -0.039,
+              -0.024
+            ],
+            [
+              -0.039,
+              -0.024
+            ],
+            [
+              0.039,
+              0.024
+            ],
+            [
+              0.039,
+              -0.024
+            ]
+          ]
+        },
+        "sensor_config": {
+          "force_bias_n": -0.6,
+          "force_noise_n": 0.2,
+          "position_noise_m": 0.0001
+        },
+        "target_tolerance_n": 0.001,
+        "probe_undershoot_allowance_n": 0.2
+      },
+      "expected_outcomes": [
+        "SUCCESS"
+      ]
+    },
+    {
+      "trial_id": "capacity54p0_maximum_feasible_seed907",
+      "case_id": "capacity54p0",
+      "family": "b_geometry_capacity_sweep",
+      "condition_role": "held_out",
+      "probe_policy": "maximum_feasible",
+      "seed": 907,
+      "role": "evaluation",
+      "parameters": {
+        "failure_threshold_n": 54.0,
+        "scenario": "probe_efficiency_capacity54p0",
+        "initial_probe_force_n": 12.0,
+        "requested_probe_force_n": 60.0,
+        "maximum_probe_force_n": 60.0,
+        "measurement_reserve_n": 1.0,
+        "tracking_reserve_n": 8.0,
+        "planning_config": {
+          "weak_leg": 0,
+          "next_lift_leg": 1,
+          "forward_progress_m": 0.04,
+          "nominal_lateral_shift_m": -0.02,
+          "maximum_lateral_adjustment_m": 0.08,
+          "maximum_extra_forward_m": 0.01,
+          "support_margin_m": 0.01,
+          "original_tripod_margin_m": 0.02,
+          "minimum_support_force_n": 8.0,
+          "next_lift_height_m": 0.03,
+          "next_hold_s": 1.0,
+          "probe_posture_adjustment_m": 0.12,
+          "maximum_probe_request_n": 60.0,
+          "requested_probe_load_n": 60.0,
+          "probe_force_ceiling_n": 60.0,
+          "probe_robustness_margin_n": 2.0
+        },
+        "probe_offset_xy_m": [
+          -0.048,
+          0.0
+        ],
+        "initial_state": {
+          "body_offset_xy_m": [
+            0.004,
+            -0.005
+          ],
+          "foot_offsets_xy_m": [
+            [
+              -0.039,
+              -0.024
+            ],
+            [
+              -0.039,
+              -0.024
+            ],
+            [
+              0.039,
+              0.024
+            ],
+            [
+              0.039,
+              -0.024
+            ]
+          ]
+        },
+        "sensor_config": {
+          "force_bias_n": -0.6,
+          "force_noise_n": 0.2,
+          "position_noise_m": 0.0001
+        },
+        "target_tolerance_n": 0.001,
+        "probe_undershoot_allowance_n": 0.2
+      },
+      "expected_outcomes": [
+        "SUCCESS"
+      ]
+    },
+    {
+      "trial_id": "capacity54p0_minimum_sufficient_seed211",
+      "case_id": "capacity54p0",
+      "family": "b_geometry_capacity_sweep",
+      "condition_role": "held_out",
+      "probe_policy": "minimum_sufficient",
+      "seed": 211,
+      "role": "evaluation",
+      "parameters": {
+        "failure_threshold_n": 54.0,
+        "scenario": "probe_efficiency_capacity54p0",
+        "initial_probe_force_n": 12.0,
+        "requested_probe_force_n": 60.0,
+        "maximum_probe_force_n": 60.0,
+        "measurement_reserve_n": 1.0,
+        "tracking_reserve_n": 8.0,
+        "planning_config": {
+          "weak_leg": 0,
+          "next_lift_leg": 1,
+          "forward_progress_m": 0.04,
+          "nominal_lateral_shift_m": -0.02,
+          "maximum_lateral_adjustment_m": 0.08,
+          "maximum_extra_forward_m": 0.01,
+          "support_margin_m": 0.01,
+          "original_tripod_margin_m": 0.02,
+          "minimum_support_force_n": 8.0,
+          "next_lift_height_m": 0.03,
+          "next_hold_s": 1.0,
+          "probe_posture_adjustment_m": 0.12,
+          "maximum_probe_request_n": 60.0,
+          "requested_probe_load_n": 60.0,
+          "probe_force_ceiling_n": 60.0,
+          "probe_robustness_margin_n": 2.0
+        },
+        "probe_offset_xy_m": [
+          -0.048,
+          0.0
+        ],
+        "initial_state": {
+          "body_offset_xy_m": [
+            0.004,
+            -0.005
+          ],
+          "foot_offsets_xy_m": [
+            [
+              -0.039,
+              -0.024
+            ],
+            [
+              -0.039,
+              -0.024
+            ],
+            [
+              0.039,
+              0.024
+            ],
+            [
+              0.039,
+              -0.024
+            ]
+          ]
+        },
+        "sensor_config": {
+          "force_bias_n": -0.6,
+          "force_noise_n": 0.2,
+          "position_noise_m": 0.0001
+        },
+        "target_tolerance_n": 0.001,
+        "probe_undershoot_allowance_n": 0.2
+      },
+      "expected_outcomes": [
+        "SUCCESS"
+      ]
+    },
+    {
+      "trial_id": "capacity54p0_minimum_sufficient_seed907",
+      "case_id": "capacity54p0",
+      "family": "b_geometry_capacity_sweep",
+      "condition_role": "held_out",
+      "probe_policy": "minimum_sufficient",
+      "seed": 907,
+      "role": "evaluation",
+      "parameters": {
+        "failure_threshold_n": 54.0,
+        "scenario": "probe_efficiency_capacity54p0",
+        "initial_probe_force_n": 12.0,
+        "requested_probe_force_n": 60.0,
+        "maximum_probe_force_n": 60.0,
+        "measurement_reserve_n": 1.0,
+        "tracking_reserve_n": 8.0,
+        "planning_config": {
+          "weak_leg": 0,
+          "next_lift_leg": 1,
+          "forward_progress_m": 0.04,
+          "nominal_lateral_shift_m": -0.02,
+          "maximum_lateral_adjustment_m": 0.08,
+          "maximum_extra_forward_m": 0.01,
+          "support_margin_m": 0.01,
+          "original_tripod_margin_m": 0.02,
+          "minimum_support_force_n": 8.0,
+          "next_lift_height_m": 0.03,
+          "next_hold_s": 1.0,
+          "probe_posture_adjustment_m": 0.12,
+          "maximum_probe_request_n": 60.0,
+          "requested_probe_load_n": 60.0,
+          "probe_force_ceiling_n": 60.0,
+          "probe_robustness_margin_n": 2.0
+        },
+        "probe_offset_xy_m": [
+          -0.048,
+          0.0
+        ],
+        "initial_state": {
+          "body_offset_xy_m": [
+            0.004,
+            -0.005
+          ],
+          "foot_offsets_xy_m": [
+            [
+              -0.039,
+              -0.024
+            ],
+            [
+              -0.039,
+              -0.024
+            ],
+            [
+              0.039,
+              0.024
+            ],
+            [
+              0.039,
+              -0.024
+            ]
+          ]
+        },
+        "sensor_config": {
+          "force_bias_n": -0.6,
+          "force_noise_n": 0.2,
+          "position_noise_m": 0.0001
+        },
+        "target_tolerance_n": 0.001,
+        "probe_undershoot_allowance_n": 0.2
+      },
+      "expected_outcomes": [
+        "SUCCESS"
+      ]
+    },
+    {
+      "trial_id": "capacity56p0_maximum_feasible_seed211",
+      "case_id": "capacity56p0",
+      "family": "b_geometry_capacity_sweep",
+      "condition_role": "held_out",
+      "probe_policy": "maximum_feasible",
+      "seed": 211,
+      "role": "evaluation",
+      "parameters": {
+        "failure_threshold_n": 56.0,
+        "scenario": "probe_efficiency_capacity56p0",
+        "initial_probe_force_n": 12.0,
+        "requested_probe_force_n": 60.0,
+        "maximum_probe_force_n": 60.0,
+        "measurement_reserve_n": 1.0,
+        "tracking_reserve_n": 8.0,
+        "planning_config": {
+          "weak_leg": 0,
+          "next_lift_leg": 1,
+          "forward_progress_m": 0.04,
+          "nominal_lateral_shift_m": -0.02,
+          "maximum_lateral_adjustment_m": 0.08,
+          "maximum_extra_forward_m": 0.01,
+          "support_margin_m": 0.01,
+          "original_tripod_margin_m": 0.02,
+          "minimum_support_force_n": 8.0,
+          "next_lift_height_m": 0.03,
+          "next_hold_s": 1.0,
+          "probe_posture_adjustment_m": 0.12,
+          "maximum_probe_request_n": 60.0,
+          "requested_probe_load_n": 60.0,
+          "probe_force_ceiling_n": 60.0,
+          "probe_robustness_margin_n": 2.0
+        },
+        "probe_offset_xy_m": [
+          -0.048,
+          0.0
+        ],
+        "initial_state": {
+          "body_offset_xy_m": [
+            0.004,
+            -0.005
+          ],
+          "foot_offsets_xy_m": [
+            [
+              -0.039,
+              -0.024
+            ],
+            [
+              -0.039,
+              -0.024
+            ],
+            [
+              0.039,
+              0.024
+            ],
+            [
+              0.039,
+              -0.024
+            ]
+          ]
+        },
+        "sensor_config": {
+          "force_bias_n": -0.6,
+          "force_noise_n": 0.2,
+          "position_noise_m": 0.0001
+        },
+        "target_tolerance_n": 0.001,
+        "probe_undershoot_allowance_n": 0.2
+      },
+      "expected_outcomes": [
+        "SUCCESS"
+      ]
+    },
+    {
+      "trial_id": "capacity56p0_maximum_feasible_seed907",
+      "case_id": "capacity56p0",
+      "family": "b_geometry_capacity_sweep",
+      "condition_role": "held_out",
+      "probe_policy": "maximum_feasible",
+      "seed": 907,
+      "role": "evaluation",
+      "parameters": {
+        "failure_threshold_n": 56.0,
+        "scenario": "probe_efficiency_capacity56p0",
+        "initial_probe_force_n": 12.0,
+        "requested_probe_force_n": 60.0,
+        "maximum_probe_force_n": 60.0,
+        "measurement_reserve_n": 1.0,
+        "tracking_reserve_n": 8.0,
+        "planning_config": {
+          "weak_leg": 0,
+          "next_lift_leg": 1,
+          "forward_progress_m": 0.04,
+          "nominal_lateral_shift_m": -0.02,
+          "maximum_lateral_adjustment_m": 0.08,
+          "maximum_extra_forward_m": 0.01,
+          "support_margin_m": 0.01,
+          "original_tripod_margin_m": 0.02,
+          "minimum_support_force_n": 8.0,
+          "next_lift_height_m": 0.03,
+          "next_hold_s": 1.0,
+          "probe_posture_adjustment_m": 0.12,
+          "maximum_probe_request_n": 60.0,
+          "requested_probe_load_n": 60.0,
+          "probe_force_ceiling_n": 60.0,
+          "probe_robustness_margin_n": 2.0
+        },
+        "probe_offset_xy_m": [
+          -0.048,
+          0.0
+        ],
+        "initial_state": {
+          "body_offset_xy_m": [
+            0.004,
+            -0.005
+          ],
+          "foot_offsets_xy_m": [
+            [
+              -0.039,
+              -0.024
+            ],
+            [
+              -0.039,
+              -0.024
+            ],
+            [
+              0.039,
+              0.024
+            ],
+            [
+              0.039,
+              -0.024
+            ]
+          ]
+        },
+        "sensor_config": {
+          "force_bias_n": -0.6,
+          "force_noise_n": 0.2,
+          "position_noise_m": 0.0001
+        },
+        "target_tolerance_n": 0.001,
+        "probe_undershoot_allowance_n": 0.2
+      },
+      "expected_outcomes": [
+        "SUCCESS"
+      ]
+    },
+    {
+      "trial_id": "capacity56p0_minimum_sufficient_seed211",
+      "case_id": "capacity56p0",
+      "family": "b_geometry_capacity_sweep",
+      "condition_role": "held_out",
+      "probe_policy": "minimum_sufficient",
+      "seed": 211,
+      "role": "evaluation",
+      "parameters": {
+        "failure_threshold_n": 56.0,
+        "scenario": "probe_efficiency_capacity56p0",
+        "initial_probe_force_n": 12.0,
+        "requested_probe_force_n": 60.0,
+        "maximum_probe_force_n": 60.0,
+        "measurement_reserve_n": 1.0,
+        "tracking_reserve_n": 8.0,
+        "planning_config": {
+          "weak_leg": 0,
+          "next_lift_leg": 1,
+          "forward_progress_m": 0.04,
+          "nominal_lateral_shift_m": -0.02,
+          "maximum_lateral_adjustment_m": 0.08,
+          "maximum_extra_forward_m": 0.01,
+          "support_margin_m": 0.01,
+          "original_tripod_margin_m": 0.02,
+          "minimum_support_force_n": 8.0,
+          "next_lift_height_m": 0.03,
+          "next_hold_s": 1.0,
+          "probe_posture_adjustment_m": 0.12,
+          "maximum_probe_request_n": 60.0,
+          "requested_probe_load_n": 60.0,
+          "probe_force_ceiling_n": 60.0,
+          "probe_robustness_margin_n": 2.0
+        },
+        "probe_offset_xy_m": [
+          -0.048,
+          0.0
+        ],
+        "initial_state": {
+          "body_offset_xy_m": [
+            0.004,
+            -0.005
+          ],
+          "foot_offsets_xy_m": [
+            [
+              -0.039,
+              -0.024
+            ],
+            [
+              -0.039,
+              -0.024
+            ],
+            [
+              0.039,
+              0.024
+            ],
+            [
+              0.039,
+              -0.024
+            ]
+          ]
+        },
+        "sensor_config": {
+          "force_bias_n": -0.6,
+          "force_noise_n": 0.2,
+          "position_noise_m": 0.0001
+        },
+        "target_tolerance_n": 0.001,
+        "probe_undershoot_allowance_n": 0.2
+      },
+      "expected_outcomes": [
+        "SUCCESS"
+      ]
+    },
+    {
+      "trial_id": "capacity56p0_minimum_sufficient_seed907",
+      "case_id": "capacity56p0",
+      "family": "b_geometry_capacity_sweep",
+      "condition_role": "held_out",
+      "probe_policy": "minimum_sufficient",
+      "seed": 907,
+      "role": "evaluation",
+      "parameters": {
+        "failure_threshold_n": 56.0,
+        "scenario": "probe_efficiency_capacity56p0",
+        "initial_probe_force_n": 12.0,
+        "requested_probe_force_n": 60.0,
+        "maximum_probe_force_n": 60.0,
+        "measurement_reserve_n": 1.0,
+        "tracking_reserve_n": 8.0,
+        "planning_config": {
+          "weak_leg": 0,
+          "next_lift_leg": 1,
+          "forward_progress_m": 0.04,
+          "nominal_lateral_shift_m": -0.02,
+          "maximum_lateral_adjustment_m": 0.08,
+          "maximum_extra_forward_m": 0.01,
+          "support_margin_m": 0.01,
+          "original_tripod_margin_m": 0.02,
+          "minimum_support_force_n": 8.0,
+          "next_lift_height_m": 0.03,
+          "next_hold_s": 1.0,
+          "probe_posture_adjustment_m": 0.12,
+          "maximum_probe_request_n": 60.0,
+          "requested_probe_load_n": 60.0,
+          "probe_force_ceiling_n": 60.0,
+          "probe_robustness_margin_n": 2.0
+        },
+        "probe_offset_xy_m": [
+          -0.048,
+          0.0
+        ],
+        "initial_state": {
+          "body_offset_xy_m": [
+            0.004,
+            -0.005
+          ],
+          "foot_offsets_xy_m": [
+            [
+              -0.039,
+              -0.024
+            ],
+            [
+              -0.039,
+              -0.024
+            ],
+            [
+              0.039,
+              0.024
+            ],
+            [
+              0.039,
+              -0.024
+            ]
+          ]
+        },
+        "sensor_config": {
+          "force_bias_n": -0.6,
+          "force_noise_n": 0.2,
+          "position_noise_m": 0.0001
+        },
+        "target_tolerance_n": 0.001,
+        "probe_undershoot_allowance_n": 0.2
+      },
+      "expected_outcomes": [
+        "SUCCESS"
+      ]
+    }
+  ],
+  "policy": {
+    "attempts": "One attempt per cell, including failures and interrupted attempts; no silent reruns",
+    "comparison": "Both policies use the frozen V2 controller, movement optimizer, freedoms, constraints and reserves; the added policy targets a task-sufficient additional probe instead of the maximum feasible probe",
+    "success": "Only actual body-and-foot progress is SUCCESS; SAFE_STOP and RECOVERED_STOP do not count as task completion",
+    "truth": "Hidden pad strength is evaluator-only; sensing, geometry and error bounds are public",
+    "interpretation": "Predeclared engineering cases and declared seeds, not a statistical population or independent samples within each trace",
+    "holdout": "Held-out labels describe condition selection before evaluation; development conditions remain labeled separately",
+    "damage": "Pad damage is the actual failure latch, including successfully recovered damage; recovery never counts as movement completion",
+    "avoidable_damage": "A paired maximum-policy pad failure is called avoidable here only when the minimum policy completes the same movement undamaged",
+    "prior_failures": "The four previous failures remain below the relaxed task load and are not claimed preventable by this experiment"
+  },
+  "created_at": "2026-09-21T12:22:01.712876+00:00",
+  "development_inventory": [
+    {
+      "run_id": "weak_pad_maximum_feasible_20260921T121521_781558Z",
+      "run_dir": "/home/ibrahim/Documents/GO-2 PRIMP/primp_project/results/weak_pad/probe_efficiency_development/weak_pad_maximum_feasible_20260921T121521_781558Z",
+      "metadata_sha256": "91c0b74b8f66af9cbdfca5f750e41a6efc1cd5ce43e1ed5664690c71f7300010",
+      "signals_sha256": "a7fcc3f7ea0d4810a3030dcf480fe1805f32f27628f54cd4b0d549bbb6c20284",
+      "condition_sha256": "84f67b1f6fcea2462c43e6d94b093769992ce5c6e68b9a06f6f923fb06db3ee5"
+    },
+    {
+      "run_id": "weak_pad_minimum_sufficient_20260921T121507_334941Z",
+      "run_dir": "/home/ibrahim/Documents/GO-2 PRIMP/primp_project/results/weak_pad/probe_efficiency_development/weak_pad_minimum_sufficient_20260921T121507_334941Z",
+      "metadata_sha256": "742064bdb552f31729813ca8d428389ba17f871848f460ca5e187a1a372d2498",
+      "signals_sha256": "64b4618c3378a174ebba1b24c8f64d0211298ea8f96c9f12527e56e3bd44b819",
+      "condition_sha256": "84f67b1f6fcea2462c43e6d94b093769992ce5c6e68b9a06f6f923fb06db3ee5"
+    }
+  ]
+}

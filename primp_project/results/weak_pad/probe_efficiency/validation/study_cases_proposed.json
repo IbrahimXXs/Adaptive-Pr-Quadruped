@@ -1,0 +1,610 @@
+[
+  {
+    "case_id": "capacity48p5",
+    "family": "b_geometry_capacity_sweep",
+    "condition_role": "held_out",
+    "purpose": "Capacity sweep from below the sufficient measured target through the larger baseline test force; geometry and sensing fixed.",
+    "parameters": {
+      "scenario": "probe_efficiency_capacity48p5",
+      "failure_threshold_n": 48.5,
+      "initial_probe_force_n": 12.0,
+      "requested_probe_force_n": 60.0,
+      "maximum_probe_force_n": 60.0,
+      "measurement_reserve_n": 1.0,
+      "tracking_reserve_n": 8.0,
+      "planning_config": {
+        "weak_leg": 0,
+        "next_lift_leg": 1,
+        "forward_progress_m": 0.04,
+        "nominal_lateral_shift_m": -0.02,
+        "maximum_lateral_adjustment_m": 0.08,
+        "maximum_extra_forward_m": 0.01,
+        "support_margin_m": 0.01,
+        "original_tripod_margin_m": 0.02,
+        "minimum_support_force_n": 8.0,
+        "next_lift_height_m": 0.03,
+        "next_hold_s": 1.0,
+        "probe_posture_adjustment_m": 0.12,
+        "maximum_probe_request_n": 60.0,
+        "requested_probe_load_n": 60.0,
+        "probe_force_ceiling_n": 60.0,
+        "probe_robustness_margin_n": 2.0
+      },
+      "probe_offset_xy_m": [
+        -0.048,
+        0.0
+      ],
+      "initial_state": {
+        "body_offset_xy_m": [
+          0.004,
+          -0.005
+        ],
+        "foot_offsets_xy_m": [
+          [
+            -0.039,
+            -0.024
+          ],
+          [
+            -0.039,
+            -0.024
+          ],
+          [
+            0.039,
+            0.024
+          ],
+          [
+            0.039,
+            -0.024
+          ]
+        ]
+      },
+      "sensor_config": {
+        "force_bias_n": -0.6,
+        "force_noise_n": 0.2,
+        "position_noise_m": 0.0001
+      },
+      "target_tolerance_n": 0.001,
+      "probe_undershoot_allowance_n": 0.2
+    },
+    "expected_outcomes": {
+      "maximum_feasible": [
+        "RECOVERED_STOP"
+      ],
+      "minimum_sufficient": [
+        "RECOVERED_STOP"
+      ]
+    }
+  },
+  {
+    "case_id": "capacity49p5",
+    "family": "b_geometry_capacity_sweep",
+    "condition_role": "held_out",
+    "purpose": "Capacity sweep from below the sufficient measured target through the larger baseline test force; geometry and sensing fixed.",
+    "parameters": {
+      "scenario": "probe_efficiency_capacity49p5",
+      "failure_threshold_n": 49.5,
+      "initial_probe_force_n": 12.0,
+      "requested_probe_force_n": 60.0,
+      "maximum_probe_force_n": 60.0,
+      "measurement_reserve_n": 1.0,
+      "tracking_reserve_n": 8.0,
+      "planning_config": {
+        "weak_leg": 0,
+        "next_lift_leg": 1,
+        "forward_progress_m": 0.04,
+        "nominal_lateral_shift_m": -0.02,
+        "maximum_lateral_adjustment_m": 0.08,
+        "maximum_extra_forward_m": 0.01,
+        "support_margin_m": 0.01,
+        "original_tripod_margin_m": 0.02,
+        "minimum_support_force_n": 8.0,
+        "next_lift_height_m": 0.03,
+        "next_hold_s": 1.0,
+        "probe_posture_adjustment_m": 0.12,
+        "maximum_probe_request_n": 60.0,
+        "requested_probe_load_n": 60.0,
+        "probe_force_ceiling_n": 60.0,
+        "probe_robustness_margin_n": 2.0
+      },
+      "probe_offset_xy_m": [
+        -0.048,
+        0.0
+      ],
+      "initial_state": {
+        "body_offset_xy_m": [
+          0.004,
+          -0.005
+        ],
+        "foot_offsets_xy_m": [
+          [
+            -0.039,
+            -0.024
+          ],
+          [
+            -0.039,
+            -0.024
+          ],
+          [
+            0.039,
+            0.024
+          ],
+          [
+            0.039,
+            -0.024
+          ]
+        ]
+      },
+      "sensor_config": {
+        "force_bias_n": -0.6,
+        "force_noise_n": 0.2,
+        "position_noise_m": 0.0001
+      },
+      "target_tolerance_n": 0.001,
+      "probe_undershoot_allowance_n": 0.2
+    },
+    "expected_outcomes": {
+      "maximum_feasible": [
+        "RECOVERED_STOP"
+      ],
+      "minimum_sufficient": [
+        "RECOVERED_STOP"
+      ]
+    }
+  },
+  {
+    "case_id": "capacity50p5",
+    "family": "b_geometry_capacity_sweep",
+    "condition_role": "held_out",
+    "purpose": "Capacity sweep from below the sufficient measured target through the larger baseline test force; geometry and sensing fixed.",
+    "parameters": {
+      "scenario": "probe_efficiency_capacity50p5",
+      "failure_threshold_n": 50.5,
+      "initial_probe_force_n": 12.0,
+      "requested_probe_force_n": 60.0,
+      "maximum_probe_force_n": 60.0,
+      "measurement_reserve_n": 1.0,
+      "tracking_reserve_n": 8.0,
+      "planning_config": {
+        "weak_leg": 0,
+        "next_lift_leg": 1,
+        "forward_progress_m": 0.04,
+        "nominal_lateral_shift_m": -0.02,
+        "maximum_lateral_adjustment_m": 0.08,
+        "maximum_extra_forward_m": 0.01,
+        "support_margin_m": 0.01,
+        "original_tripod_margin_m": 0.02,
+        "minimum_support_force_n": 8.0,
+        "next_lift_height_m": 0.03,
+        "next_hold_s": 1.0,
+        "probe_posture_adjustment_m": 0.12,
+        "maximum_probe_request_n": 60.0,
+        "requested_probe_load_n": 60.0,
+        "probe_force_ceiling_n": 60.0,
+        "probe_robustness_margin_n": 2.0
+      },
+      "probe_offset_xy_m": [
+        -0.048,
+        0.0
+      ],
+      "initial_state": {
+        "body_offset_xy_m": [
+          0.004,
+          -0.005
+        ],
+        "foot_offsets_xy_m": [
+          [
+            -0.039,
+            -0.024
+          ],
+          [
+            -0.039,
+            -0.024
+          ],
+          [
+            0.039,
+            0.024
+          ],
+          [
+            0.039,
+            -0.024
+          ]
+        ]
+      },
+      "sensor_config": {
+        "force_bias_n": -0.6,
+        "force_noise_n": 0.2,
+        "position_noise_m": 0.0001
+      },
+      "target_tolerance_n": 0.001,
+      "probe_undershoot_allowance_n": 0.2
+    },
+    "expected_outcomes": {
+      "maximum_feasible": [
+        "RECOVERED_STOP"
+      ],
+      "minimum_sufficient": [
+        "RECOVERED_STOP"
+      ]
+    }
+  },
+  {
+    "case_id": "capacity51p0",
+    "family": "b_geometry_capacity_sweep",
+    "condition_role": "held_out",
+    "purpose": "Capacity sweep from below the sufficient measured target through the larger baseline test force; geometry and sensing fixed.",
+    "parameters": {
+      "scenario": "probe_efficiency_capacity51p0",
+      "failure_threshold_n": 51.0,
+      "initial_probe_force_n": 12.0,
+      "requested_probe_force_n": 60.0,
+      "maximum_probe_force_n": 60.0,
+      "measurement_reserve_n": 1.0,
+      "tracking_reserve_n": 8.0,
+      "planning_config": {
+        "weak_leg": 0,
+        "next_lift_leg": 1,
+        "forward_progress_m": 0.04,
+        "nominal_lateral_shift_m": -0.02,
+        "maximum_lateral_adjustment_m": 0.08,
+        "maximum_extra_forward_m": 0.01,
+        "support_margin_m": 0.01,
+        "original_tripod_margin_m": 0.02,
+        "minimum_support_force_n": 8.0,
+        "next_lift_height_m": 0.03,
+        "next_hold_s": 1.0,
+        "probe_posture_adjustment_m": 0.12,
+        "maximum_probe_request_n": 60.0,
+        "requested_probe_load_n": 60.0,
+        "probe_force_ceiling_n": 60.0,
+        "probe_robustness_margin_n": 2.0
+      },
+      "probe_offset_xy_m": [
+        -0.048,
+        0.0
+      ],
+      "initial_state": {
+        "body_offset_xy_m": [
+          0.004,
+          -0.005
+        ],
+        "foot_offsets_xy_m": [
+          [
+            -0.039,
+            -0.024
+          ],
+          [
+            -0.039,
+            -0.024
+          ],
+          [
+            0.039,
+            0.024
+          ],
+          [
+            0.039,
+            -0.024
+          ]
+        ]
+      },
+      "sensor_config": {
+        "force_bias_n": -0.6,
+        "force_noise_n": 0.2,
+        "position_noise_m": 0.0001
+      },
+      "target_tolerance_n": 0.001,
+      "probe_undershoot_allowance_n": 0.2
+    },
+    "expected_outcomes": {
+      "maximum_feasible": [
+        "RECOVERED_STOP"
+      ],
+      "minimum_sufficient": [
+        "RECOVERED_STOP"
+      ]
+    }
+  },
+  {
+    "case_id": "capacity52p0",
+    "family": "b_geometry_capacity_sweep",
+    "condition_role": "held_out",
+    "purpose": "Capacity sweep from below the sufficient measured target through the larger baseline test force; geometry and sensing fixed.",
+    "parameters": {
+      "scenario": "probe_efficiency_capacity52p0",
+      "failure_threshold_n": 52.0,
+      "initial_probe_force_n": 12.0,
+      "requested_probe_force_n": 60.0,
+      "maximum_probe_force_n": 60.0,
+      "measurement_reserve_n": 1.0,
+      "tracking_reserve_n": 8.0,
+      "planning_config": {
+        "weak_leg": 0,
+        "next_lift_leg": 1,
+        "forward_progress_m": 0.04,
+        "nominal_lateral_shift_m": -0.02,
+        "maximum_lateral_adjustment_m": 0.08,
+        "maximum_extra_forward_m": 0.01,
+        "support_margin_m": 0.01,
+        "original_tripod_margin_m": 0.02,
+        "minimum_support_force_n": 8.0,
+        "next_lift_height_m": 0.03,
+        "next_hold_s": 1.0,
+        "probe_posture_adjustment_m": 0.12,
+        "maximum_probe_request_n": 60.0,
+        "requested_probe_load_n": 60.0,
+        "probe_force_ceiling_n": 60.0,
+        "probe_robustness_margin_n": 2.0
+      },
+      "probe_offset_xy_m": [
+        -0.048,
+        0.0
+      ],
+      "initial_state": {
+        "body_offset_xy_m": [
+          0.004,
+          -0.005
+        ],
+        "foot_offsets_xy_m": [
+          [
+            -0.039,
+            -0.024
+          ],
+          [
+            -0.039,
+            -0.024
+          ],
+          [
+            0.039,
+            0.024
+          ],
+          [
+            0.039,
+            -0.024
+          ]
+        ]
+      },
+      "sensor_config": {
+        "force_bias_n": -0.6,
+        "force_noise_n": 0.2,
+        "position_noise_m": 0.0001
+      },
+      "target_tolerance_n": 0.001,
+      "probe_undershoot_allowance_n": 0.2
+    },
+    "expected_outcomes": {
+      "maximum_feasible": [
+        "RECOVERED_STOP"
+      ],
+      "minimum_sufficient": [
+        "SUCCESS"
+      ]
+    }
+  },
+  {
+    "case_id": "capacity53p0",
+    "family": "b_geometry_capacity_sweep",
+    "condition_role": "held_out",
+    "purpose": "Capacity sweep from below the sufficient measured target through the larger baseline test force; geometry and sensing fixed.",
+    "parameters": {
+      "scenario": "probe_efficiency_capacity53p0",
+      "failure_threshold_n": 53.0,
+      "initial_probe_force_n": 12.0,
+      "requested_probe_force_n": 60.0,
+      "maximum_probe_force_n": 60.0,
+      "measurement_reserve_n": 1.0,
+      "tracking_reserve_n": 8.0,
+      "planning_config": {
+        "weak_leg": 0,
+        "next_lift_leg": 1,
+        "forward_progress_m": 0.04,
+        "nominal_lateral_shift_m": -0.02,
+        "maximum_lateral_adjustment_m": 0.08,
+        "maximum_extra_forward_m": 0.01,
+        "support_margin_m": 0.01,
+        "original_tripod_margin_m": 0.02,
+        "minimum_support_force_n": 8.0,
+        "next_lift_height_m": 0.03,
+        "next_hold_s": 1.0,
+        "probe_posture_adjustment_m": 0.12,
+        "maximum_probe_request_n": 60.0,
+        "requested_probe_load_n": 60.0,
+        "probe_force_ceiling_n": 60.0,
+        "probe_robustness_margin_n": 2.0
+      },
+      "probe_offset_xy_m": [
+        -0.048,
+        0.0
+      ],
+      "initial_state": {
+        "body_offset_xy_m": [
+          0.004,
+          -0.005
+        ],
+        "foot_offsets_xy_m": [
+          [
+            -0.039,
+            -0.024
+          ],
+          [
+            -0.039,
+            -0.024
+          ],
+          [
+            0.039,
+            0.024
+          ],
+          [
+            0.039,
+            -0.024
+          ]
+        ]
+      },
+      "sensor_config": {
+        "force_bias_n": -0.6,
+        "force_noise_n": 0.2,
+        "position_noise_m": 0.0001
+      },
+      "target_tolerance_n": 0.001,
+      "probe_undershoot_allowance_n": 0.2
+    },
+    "expected_outcomes": {
+      "maximum_feasible": [
+        "RECOVERED_STOP"
+      ],
+      "minimum_sufficient": [
+        "SUCCESS"
+      ]
+    }
+  },
+  {
+    "case_id": "capacity54p0",
+    "family": "b_geometry_capacity_sweep",
+    "condition_role": "held_out",
+    "purpose": "Capacity sweep from below the sufficient measured target through the larger baseline test force; geometry and sensing fixed.",
+    "parameters": {
+      "scenario": "probe_efficiency_capacity54p0",
+      "failure_threshold_n": 54.0,
+      "initial_probe_force_n": 12.0,
+      "requested_probe_force_n": 60.0,
+      "maximum_probe_force_n": 60.0,
+      "measurement_reserve_n": 1.0,
+      "tracking_reserve_n": 8.0,
+      "planning_config": {
+        "weak_leg": 0,
+        "next_lift_leg": 1,
+        "forward_progress_m": 0.04,
+        "nominal_lateral_shift_m": -0.02,
+        "maximum_lateral_adjustment_m": 0.08,
+        "maximum_extra_forward_m": 0.01,
+        "support_margin_m": 0.01,
+        "original_tripod_margin_m": 0.02,
+        "minimum_support_force_n": 8.0,
+        "next_lift_height_m": 0.03,
+        "next_hold_s": 1.0,
+        "probe_posture_adjustment_m": 0.12,
+        "maximum_probe_request_n": 60.0,
+        "requested_probe_load_n": 60.0,
+        "probe_force_ceiling_n": 60.0,
+        "probe_robustness_margin_n": 2.0
+      },
+      "probe_offset_xy_m": [
+        -0.048,
+        0.0
+      ],
+      "initial_state": {
+        "body_offset_xy_m": [
+          0.004,
+          -0.005
+        ],
+        "foot_offsets_xy_m": [
+          [
+            -0.039,
+            -0.024
+          ],
+          [
+            -0.039,
+            -0.024
+          ],
+          [
+            0.039,
+            0.024
+          ],
+          [
+            0.039,
+            -0.024
+          ]
+        ]
+      },
+      "sensor_config": {
+        "force_bias_n": -0.6,
+        "force_noise_n": 0.2,
+        "position_noise_m": 0.0001
+      },
+      "target_tolerance_n": 0.001,
+      "probe_undershoot_allowance_n": 0.2
+    },
+    "expected_outcomes": {
+      "maximum_feasible": [
+        "SUCCESS"
+      ],
+      "minimum_sufficient": [
+        "SUCCESS"
+      ]
+    }
+  },
+  {
+    "case_id": "capacity56p0",
+    "family": "b_geometry_capacity_sweep",
+    "condition_role": "held_out",
+    "purpose": "Capacity sweep from below the sufficient measured target through the larger baseline test force; geometry and sensing fixed.",
+    "parameters": {
+      "scenario": "probe_efficiency_capacity56p0",
+      "failure_threshold_n": 56.0,
+      "initial_probe_force_n": 12.0,
+      "requested_probe_force_n": 60.0,
+      "maximum_probe_force_n": 60.0,
+      "measurement_reserve_n": 1.0,
+      "tracking_reserve_n": 8.0,
+      "planning_config": {
+        "weak_leg": 0,
+        "next_lift_leg": 1,
+        "forward_progress_m": 0.04,
+        "nominal_lateral_shift_m": -0.02,
+        "maximum_lateral_adjustment_m": 0.08,
+        "maximum_extra_forward_m": 0.01,
+        "support_margin_m": 0.01,
+        "original_tripod_margin_m": 0.02,
+        "minimum_support_force_n": 8.0,
+        "next_lift_height_m": 0.03,
+        "next_hold_s": 1.0,
+        "probe_posture_adjustment_m": 0.12,
+        "maximum_probe_request_n": 60.0,
+        "requested_probe_load_n": 60.0,
+        "probe_force_ceiling_n": 60.0,
+        "probe_robustness_margin_n": 2.0
+      },
+      "probe_offset_xy_m": [
+        -0.048,
+        0.0
+      ],
+      "initial_state": {
+        "body_offset_xy_m": [
+          0.004,
+          -0.005
+        ],
+        "foot_offsets_xy_m": [
+          [
+            -0.039,
+            -0.024
+          ],
+          [
+            -0.039,
+            -0.024
+          ],
+          [
+            0.039,
+            0.024
+          ],
+          [
+            0.039,
+            -0.024
+          ]
+        ]
+      },
+      "sensor_config": {
+        "force_bias_n": -0.6,
+        "force_noise_n": 0.2,
+        "position_noise_m": 0.0001
+      },
+      "target_tolerance_n": 0.001,
+      "probe_undershoot_allowance_n": 0.2
+    },
+    "expected_outcomes": {
+      "maximum_feasible": [
+        "SUCCESS"
+      ],
+      "minimum_sufficient": [
+        "SUCCESS"
+      ]
+    }
+  }
+]

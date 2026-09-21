@@ -1,0 +1,118 @@
+{
+  "case_id": "capacity52p0",
+  "seed": 211,
+  "individual": [
+    {
+      "run_id": "weak_pad_maximum_feasible_20260921T122651_238994Z",
+      "video": "/home/ibrahim/Documents/GO-2 PRIMP/primp_project/results/weak_pad/probe_efficiency/media/capacity52p0_maximum_feasible_seed211.mp4",
+      "preview": "/home/ibrahim/Documents/GO-2 PRIMP/primp_project/results/weak_pad/probe_efficiency/media/capacity52p0_maximum_feasible_seed211.png",
+      "codec": "avc1",
+      "fps": 20,
+      "resolution": [
+        960,
+        720
+      ],
+      "frame_count": 314,
+      "playback_speed": 1.0,
+      "recorded_start_time_s": 28.00199999999536,
+      "recorded_end_time_s": 43.65000000000738,
+      "preview_time_s": 43.686000000007425,
+      "signals_sha256": "a4b71b5cac2926f4d813e876911ec6f76bcdea8714cb862c03a44fb415894180",
+      "scene_sha256": "ecf1a8f87220c7590feaca0b6a5dd9770c3f46655232e97e6c088ea60e300739",
+      "weak_truth_sha256": "0e9db465544939930ed3b0f03c558a01e661824f5f68f6646622e91ab4e03d48",
+      "method": "Restore recorded qpos/qvel and pad_sink_displacement_m with mj_forward; no mj_step or controller execution",
+      "presentation": "Orange weak target; hidden capacity, failure, and sink shown only as evaluation-replay truth",
+      "overlay_evidence": {
+        "source": "Recorded actual target force, certificate, installed cap and measured body/feet",
+        "progress": "Physical CoM world-X minus its first confirmed probe origin; stronger probing is not task completion",
+        "recovery_lift": "Measured FL Z change from first recovery sample",
+        "next_leg": "FR",
+        "first_probe_sample": 11025,
+        "first_recovery_sample": 19291,
+        "script_sha256": "f296128bedb873dc6d85eab7b98c367b9a620a1d49d8effda14a82e21c82f506"
+      },
+      "decode_validation": {
+        "all_frames_decoded": true,
+        "decoded_frames": 314,
+        "resolution_valid": true
+      },
+      "video_sha256": "0980dd97dcacc886d43e959441afd1432418e4a5c1f3f91c6dce162067cce25c",
+      "probe_policy": "maximum_feasible",
+      "policy_label": "MAXIMUM FEASIBLE TEST",
+      "hidden_capacity_n": 52.0,
+      "capacity_evaluator_only": true,
+      "wrapper_sha256": "a7c7eca905d2791cb3f6e705b3955f9013051858c75e0dbf5262b1ecda27239d",
+      "legacy_renderer_sha256": "f296128bedb873dc6d85eab7b98c367b9a620a1d49d8effda14a82e21c82f506",
+      "trial_id": "capacity52p0_maximum_feasible_seed211",
+      "outcome": "RECOVERED_STOP"
+    },
+    {
+      "run_id": "weak_pad_minimum_sufficient_20260921T122652_382436Z",
+      "video": "/home/ibrahim/Documents/GO-2 PRIMP/primp_project/results/weak_pad/probe_efficiency/media/capacity52p0_minimum_sufficient_seed211.mp4",
+      "preview": "/home/ibrahim/Documents/GO-2 PRIMP/primp_project/results/weak_pad/probe_efficiency/media/capacity52p0_minimum_sufficient_seed211.png",
+      "codec": "avc1",
+      "fps": 20,
+      "resolution": [
+        960,
+        720
+      ],
+      "frame_count": 588,
+      "playback_speed": 1.0,
+      "recorded_start_time_s": 28.00199999999536,
+      "recorded_end_time_s": 57.350000000024124,
+      "preview_time_s": 55.79000000002222,
+      "signals_sha256": "6638ee78b40fbff8c0c2136c2bfebd18c7d17565a44a82bb5f217fdf2f90e94a",
+      "scene_sha256": "a9585b7280607d6c259298dd481a4b17ae5a71e268ad55d2cec63f96e1bdd654",
+      "weak_truth_sha256": "0e9db465544939930ed3b0f03c558a01e661824f5f68f6646622e91ab4e03d48",
+      "method": "Restore recorded qpos/qvel and pad_sink_displacement_m with mj_forward; no mj_step or controller execution",
+      "presentation": "Orange weak target; hidden capacity, failure, and sink shown only as evaluation-replay truth",
+      "overlay_evidence": {
+        "source": "Recorded actual target force, certificate, installed cap and measured body/feet",
+        "progress": "Physical CoM world-X minus its first confirmed probe origin; stronger probing is not task completion",
+        "recovery_lift": "Measured FL Z change from first recovery sample",
+        "next_leg": "FR",
+        "first_probe_sample": 11025,
+        "first_recovery_sample": null,
+        "script_sha256": "f296128bedb873dc6d85eab7b98c367b9a620a1d49d8effda14a82e21c82f506"
+      },
+      "decode_validation": {
+        "all_frames_decoded": true,
+        "decoded_frames": 588,
+        "resolution_valid": true
+      },
+      "video_sha256": "a1a26348305a5456e77e6760827a81135a93c076275beee654b07733ce356657",
+      "probe_policy": "minimum_sufficient",
+      "policy_label": "MINIMUM SUFFICIENT TEST",
+      "hidden_capacity_n": 52.0,
+      "capacity_evaluator_only": true,
+      "wrapper_sha256": "a7c7eca905d2791cb3f6e705b3955f9013051858c75e0dbf5262b1ecda27239d",
+      "legacy_renderer_sha256": "f296128bedb873dc6d85eab7b98c367b9a620a1d49d8effda14a82e21c82f506",
+      "trial_id": "capacity52p0_minimum_sufficient_seed211",
+      "outcome": "SUCCESS"
+    }
+  ],
+  "paired": {
+    "video": "/home/ibrahim/Documents/GO-2 PRIMP/primp_project/results/weak_pad/probe_efficiency/media/capacity52p0_paired_seed211.mp4",
+    "preview": "/home/ibrahim/Documents/GO-2 PRIMP/primp_project/results/weak_pad/probe_efficiency/media/capacity52p0_paired_seed211.png",
+    "video_sha256": "8b2b0162b7159db6df8809d14e586a90b656df4b5fb67cd45a2855400db055d8",
+    "fps": 20.0,
+    "frame_count": 588,
+    "resolution": [
+      1920,
+      720
+    ],
+    "all_frames_decoded": true,
+    "left_policy": "maximum_feasible",
+    "right_policy": "minimum_sufficient",
+    "shared_start_time_s": 28.00199999999536,
+    "shorter_trial_presentation": "Hold the final recorded frame with an explicit trial-complete label.",
+    "preview_presentation": "Two representative outcome frames, each labeled with its own recorded timestamp.",
+    "source_videos": [
+      "0980dd97dcacc886d43e959441afd1432418e4a5c1f3f91c6dce162067cce25c",
+      "a1a26348305a5456e77e6760827a81135a93c076275beee654b07733ce356657"
+    ]
+  },
+  "method": "Only recorded qpos/qvel and pad deformation are rendered; no controller or simulation step is run.",
+  "selection": "Capacity52 N, seed211 was chosen before its formal recordings completed.",
+  "source_sha256": "a7c7eca905d2791cb3f6e705b3955f9013051858c75e0dbf5262b1ecda27239d"
+}

@@ -1,0 +1,34 @@
+{
+  "trial_id": "weak_pad_minimum_sufficient_20260921T121507_334941Z",
+  "case_id": "development_b62",
+  "seed": 101,
+  "probe_policy": "minimum_sufficient",
+  "outcome": "SUCCESS",
+  "verified": true,
+  "failed_checks": [],
+  "hidden_capacity_n": 62.0,
+  "minimum_future_load_n": 40.55948189113205,
+  "required_minimum_sensor_plateau_n": 49.56048189113205,
+  "selected_additional_command_n": 50.56048189113205,
+  "declared_execution_allowance_n": 1.0,
+  "maximum_actual_probe_force_n": 51.0460812152728,
+  "pad_damaged": false,
+  "failure_time_s": null,
+  "failure_phase": null,
+  "probe_time_s": 21.506,
+  "active_ramp_hold_time_s": 12.004,
+  "physical_progress_hold_s": 3.122,
+  "recovery_stable_hold_s": 0.0,
+  "future_maximum_actual_minus_cap_n": -0.15560294287460863,
+  "transition_maximum_actual_minus_cap_n": 6.483040408662225,
+  "certificate_history": {
+    "verified": true,
+    "failed_checks": [],
+    "proof_windows_checked": 2
+  },
+  "source_data_hashes": {
+    "metadata.json": "742064bdb552f31729813ca8d428389ba17f871848f460ca5e187a1a372d2498",
+    "signals.npz": "64b4618c3378a174ebba1b24c8f64d0211298ea8f96c9f12527e56e3bd44b819",
+    "probe_efficiency_summary.json": "a75d8731f210c32575552d8800f3ea78bb6528ee18d04bc3ec9eea6db5177884"
+  }
+}

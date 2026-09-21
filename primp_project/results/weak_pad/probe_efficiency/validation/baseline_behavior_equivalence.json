@@ -1,0 +1,505 @@
+{
+  "old_run": "/home/ibrahim/Documents/GO-2 PRIMP/primp_project/results/weak_pad/study_v2/trials/fr_necessary_b_capacity62_adaptive_probe_seed101/weak_pad_adaptive_probe_20260921T111734_321818Z",
+  "new_run": "/home/ibrahim/Documents/GO-2 PRIMP/primp_project/results/weak_pad/probe_efficiency_development/weak_pad_maximum_feasible_20260921T121521_781558Z",
+  "old_signals_sha256": "dc4e4579859acaf7f0a5c2d808ffc1251e888480f828a6205bbea2b0c99407f1",
+  "new_signals_sha256": "a7fcc3f7ea0d4810a3030dcf480fe1805f32f27628f54cd4b0d549bbb6c20284",
+  "audit_source_sha256": "cec7d6e7eb3a83376432d249f9137dfe9c0f133853bcfafe62cd048b2ab784f5",
+  "excluded_nonphysical_wall_times": [
+    "wall_time_s",
+    "solver_time_s"
+  ],
+  "identical_all_compared_fields": true,
+  "compared_field_count": 98,
+  "checks": {
+    "achieved_probe_command_n": {
+      "same_shape": true,
+      "identical": true,
+      "max_absolute_difference": 0.0
+    },
+    "actual_pad_displacement_m": {
+      "same_shape": true,
+      "identical": true,
+      "max_absolute_difference": 0.0
+    },
+    "actual_pad_normal_force_n": {
+      "same_shape": true,
+      "identical": true,
+      "max_absolute_difference": 0.0
+    },
+    "actuator_torque": {
+      "same_shape": true,
+      "identical": true,
+      "max_absolute_difference": 0.0
+    },
+    "additional_probe_count": {
+      "same_shape": true,
+      "identical": true,
+      "max_absolute_difference": 0.0
+    },
+    "applied_pad_force_cap_n": {
+      "same_shape": true,
+      "identical": true,
+      "max_absolute_difference": 0.0
+    },
+    "base_ang_vel_b": {
+      "same_shape": true,
+      "identical": true,
+      "max_absolute_difference": 0.0
+    },
+    "base_lin_vel_w": {
+      "same_shape": true,
+      "identical": true,
+      "max_absolute_difference": 0.0
+    },
+    "base_pos_w": {
+      "same_shape": true,
+      "identical": true,
+      "max_absolute_difference": 0.0
+    },
+    "base_quat_wxyz": {
+      "same_shape": true,
+      "identical": true,
+      "max_absolute_difference": 0.0
+    },
+    "base_rpy_rad": {
+      "same_shape": true,
+      "identical": true,
+      "max_absolute_difference": 0.0
+    },
+    "certificate_allow_increase": {
+      "same_shape": true,
+      "identical": true,
+      "max_absolute_difference": 0.0
+    },
+    "certificate_evidence_anchor_w": {
+      "same_shape": true,
+      "identical": true,
+      "max_absolute_difference": 0.0
+    },
+    "certificate_force_n": {
+      "same_shape": true,
+      "identical": true,
+      "max_absolute_difference": 0.0
+    },
+    "certificate_invalidation_reason": {
+      "same_shape": true,
+      "identical": true,
+      "max_absolute_difference": null
+    },
+    "certificate_monitor_update": {
+      "same_shape": true,
+      "identical": true,
+      "max_absolute_difference": 0.0
+    },
+    "certificate_observation_phase": {
+      "same_shape": true,
+      "identical": true,
+      "max_absolute_difference": null
+    },
+    "certificate_reset": {
+      "same_shape": true,
+      "identical": true,
+      "max_absolute_difference": 0.0
+    },
+    "certificate_revision": {
+      "same_shape": true,
+      "identical": true,
+      "max_absolute_difference": 0.0
+    },
+    "certificate_update": {
+      "same_shape": true,
+      "identical": true,
+      "max_absolute_difference": 0.0
+    },
+    "certificate_valid": {
+      "same_shape": true,
+      "identical": true,
+      "max_absolute_difference": 0.0
+    },
+    "cmd_ang_vel_w": {
+      "same_shape": true,
+      "identical": true,
+      "max_absolute_difference": 0.0
+    },
+    "cmd_lin_vel_w": {
+      "same_shape": true,
+      "identical": true,
+      "max_absolute_difference": 0.0
+    },
+    "com_pos_w": {
+      "same_shape": true,
+      "identical": true,
+      "max_absolute_difference": 0.0
+    },
+    "com_target_w": {
+      "same_shape": true,
+      "identical": true,
+      "max_absolute_difference": 0.0
+    },
+    "com_velocity_ref_w": {
+      "same_shape": true,
+      "identical": true,
+      "max_absolute_difference": 0.0
+    },
+    "commanded_next_leg_lift_m": {
+      "same_shape": true,
+      "identical": true,
+      "max_absolute_difference": 0.0
+    },
+    "contact_confirmed": {
+      "same_shape": true,
+      "identical": true,
+      "max_absolute_difference": 0.0
+    },
+    "contact_count": {
+      "same_shape": true,
+      "identical": true,
+      "max_absolute_difference": 0.0
+    },
+    "contact_force_w": {
+      "same_shape": true,
+      "identical": true,
+      "max_absolute_difference": 0.0
+    },
+    "contact_measured": {
+      "same_shape": true,
+      "identical": true,
+      "max_absolute_difference": 0.0
+    },
+    "contact_normal_force": {
+      "same_shape": true,
+      "identical": true,
+      "max_absolute_difference": 0.0
+    },
+    "contact_planned": {
+      "same_shape": true,
+      "identical": true,
+      "max_absolute_difference": 0.0
+    },
+    "control_time_s": {
+      "same_shape": true,
+      "identical": true,
+      "max_absolute_difference": 0.0
+    },
+    "cycle": {
+      "same_shape": true,
+      "identical": true,
+      "max_absolute_difference": 0.0
+    },
+    "desired_foot_acc_w": {
+      "same_shape": true,
+      "identical": true,
+      "max_absolute_difference": 0.0
+    },
+    "desired_foot_vel_w": {
+      "same_shape": true,
+      "identical": true,
+      "max_absolute_difference": 0.0
+    },
+    "episode": {
+      "same_shape": true,
+      "identical": true,
+      "max_absolute_difference": 0.0
+    },
+    "experiment_complete": {
+      "same_shape": true,
+      "identical": true,
+      "max_absolute_difference": 0.0
+    },
+    "feet_desired_w": {
+      "same_shape": true,
+      "identical": true,
+      "max_absolute_difference": 0.0
+    },
+    "feet_foothold_ref_w": {
+      "same_shape": true,
+      "identical": true,
+      "max_absolute_difference": 0.0
+    },
+    "feet_mpc_foothold_w": {
+      "same_shape": true,
+      "identical": true,
+      "max_absolute_difference": 0.0
+    },
+    "feet_pos_w": {
+      "same_shape": true,
+      "identical": true,
+      "max_absolute_difference": 0.0
+    },
+    "foot_anchor_w": {
+      "same_shape": true,
+      "identical": true,
+      "max_absolute_difference": 0.0
+    },
+    "force_before_deformation_n": {
+      "same_shape": true,
+      "identical": true,
+      "max_absolute_difference": 0.0
+    },
+    "force_caps_n": {
+      "same_shape": true,
+      "identical": true,
+      "max_absolute_difference": 0.0
+    },
+    "future_plan_active": {
+      "same_shape": true,
+      "identical": true,
+      "max_absolute_difference": 0.0
+    },
+    "gait_phase": {
+      "same_shape": true,
+      "identical": true,
+      "max_absolute_difference": 0.0
+    },
+    "grf_desired_w": {
+      "same_shape": true,
+      "identical": true,
+      "max_absolute_difference": 0.0
+    },
+    "landing_contact_dwell_s": {
+      "same_shape": true,
+      "identical": true,
+      "max_absolute_difference": 0.0
+    },
+    "maximum_achievable_probe_force_n": {
+      "same_shape": true,
+      "identical": true,
+      "max_absolute_difference": 0.0
+    },
+    "movement_feasible": {
+      "same_shape": true,
+      "identical": true,
+      "max_absolute_difference": 0.0
+    },
+    "mpc_status": {
+      "same_shape": true,
+      "identical": true,
+      "max_absolute_difference": 0.0
+    },
+    "mpc_update": {
+      "same_shape": true,
+      "identical": true,
+      "max_absolute_difference": 0.0
+    },
+    "mujoco_time_s": {
+      "same_shape": true,
+      "identical": true,
+      "max_absolute_difference": 0.0
+    },
+    "next_lift_anchor_w": {
+      "same_shape": true,
+      "identical": true,
+      "max_absolute_difference": 0.0
+    },
+    "numerical_warning_count": {
+      "same_shape": true,
+      "identical": true,
+      "max_absolute_difference": 0.0
+    },
+    "overload_elapsed_s": {
+      "same_shape": true,
+      "identical": true,
+      "max_absolute_difference": 0.0
+    },
+    "pad_contact": {
+      "same_shape": true,
+      "identical": true,
+      "max_absolute_difference": 0.0
+    },
+    "pad_failed": {
+      "same_shape": true,
+      "identical": true,
+      "max_absolute_difference": 0.0
+    },
+    "pad_sink_displacement_m": {
+      "same_shape": true,
+      "identical": true,
+      "max_absolute_difference": 0.0
+    },
+    "phase": {
+      "same_shape": true,
+      "identical": true,
+      "max_absolute_difference": null
+    },
+    "phase_time_s": {
+      "same_shape": true,
+      "identical": true,
+      "max_absolute_difference": 0.0
+    },
+    "planned_pad_force_n": {
+      "same_shape": true,
+      "identical": true,
+      "max_absolute_difference": 0.0
+    },
+    "probe_evidence_end_time_s": {
+      "same_shape": true,
+      "identical": true,
+      "max_absolute_difference": 0.0
+    },
+    "probe_evidence_start_time_s": {
+      "same_shape": true,
+      "identical": true,
+      "max_absolute_difference": 0.0
+    },
+    "probe_origin_com_w": {
+      "same_shape": true,
+      "identical": true,
+      "max_absolute_difference": 0.0
+    },
+    "progress_target_w": {
+      "same_shape": true,
+      "identical": true,
+      "max_absolute_difference": 0.0
+    },
+    "qp_status": {
+      "same_shape": true,
+      "identical": true,
+      "max_absolute_difference": 0.0
+    },
+    "qpos": {
+      "same_shape": true,
+      "identical": true,
+      "max_absolute_difference": 0.0
+    },
+    "qvel": {
+      "same_shape": true,
+      "identical": true,
+      "max_absolute_difference": 0.0
+    },
+    "recovered_stop_declared": {
+      "same_shape": true,
+      "identical": true,
+      "max_absolute_difference": 0.0
+    },
+    "recovery_foot_anchor_w": {
+      "same_shape": true,
+      "identical": true,
+      "max_absolute_difference": 0.0
+    },
+    "recovery_start_time_s": {
+      "same_shape": true,
+      "identical": true,
+      "max_absolute_difference": 0.0
+    },
+    "recovery_trigger_reason": {
+      "same_shape": true,
+      "identical": true,
+      "max_absolute_difference": null
+    },
+    "recovery_triggered": {
+      "same_shape": true,
+      "identical": true,
+      "max_absolute_difference": 0.0
+    },
+    "requested_probe_force_n": {
+      "same_shape": true,
+      "identical": true,
+      "max_absolute_difference": 0.0
+    },
+    "required_pad_force_n": {
+      "same_shape": true,
+      "identical": true,
+      "max_absolute_difference": 0.0
+    },
+    "safe_stop_declared": {
+      "same_shape": true,
+      "identical": true,
+      "max_absolute_difference": 0.0
+    },
+    "selected_force_cap_N": {
+      "same_shape": true,
+      "identical": true,
+      "max_absolute_difference": 0.0
+    },
+    "sensor_contact_measured": {
+      "same_shape": true,
+      "identical": true,
+      "max_absolute_difference": 0.0
+    },
+    "sensor_force_error_bound_n": {
+      "same_shape": true,
+      "identical": true,
+      "max_absolute_difference": 0.0
+    },
+    "sensor_observation_time_s": {
+      "same_shape": true,
+      "identical": true,
+      "max_absolute_difference": 0.0
+    },
+    "sensor_pad_foot_pos_w": {
+      "same_shape": true,
+      "identical": true,
+      "max_absolute_difference": 0.0
+    },
+    "sensor_pad_foot_vel_w": {
+      "same_shape": true,
+      "identical": true,
+      "max_absolute_difference": 0.0
+    },
+    "sensor_pad_normal_force_n": {
+      "same_shape": true,
+      "identical": true,
+      "max_absolute_difference": 0.0
+    },
+    "solved_force_floors": {
+      "same_shape": true,
+      "identical": true,
+      "max_absolute_difference": 0.0
+    },
+    "step": {
+      "same_shape": true,
+      "identical": true,
+      "max_absolute_difference": 0.0
+    },
+    "strategy_state": {
+      "same_shape": true,
+      "identical": true,
+      "max_absolute_difference": null
+    },
+    "support_margin_m": {
+      "same_shape": true,
+      "identical": true,
+      "max_absolute_difference": 0.0
+    },
+    "swing_time_s": {
+      "same_shape": true,
+      "identical": true,
+      "max_absolute_difference": 0.0
+    },
+    "task_complete_declared": {
+      "same_shape": true,
+      "identical": true,
+      "max_absolute_difference": 0.0
+    },
+    "terminated": {
+      "same_shape": true,
+      "identical": true,
+      "max_absolute_difference": 0.0
+    },
+    "time_s": {
+      "same_shape": true,
+      "identical": true,
+      "max_absolute_difference": 0.0
+    },
+    "torque_saturated": {
+      "same_shape": true,
+      "identical": true,
+      "max_absolute_difference": 0.0
+    },
+    "tracking_reserve_n": {
+      "same_shape": true,
+      "identical": true,
+      "max_absolute_difference": 0.0
+    },
+    "truncated": {
+      "same_shape": true,
+      "identical": true,
+      "max_absolute_difference": 0.0
+    },
+    "unload_blend": {
+      "same_shape": true,
+      "identical": true,
+      "max_absolute_difference": 0.0
+    }
+  }
+}

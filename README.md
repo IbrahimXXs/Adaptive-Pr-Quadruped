@@ -6,7 +6,21 @@ and a large unachieved force request are insufficient. The robot must advance
 its body and lift another leg within a measured support limit, request a
 stronger feasible probe, or stop safely.
 
-The current comparison gives every probing policy the **same body/load
+The latest focused experiment asks **how much additional testing is necessary**.
+A 32-trial capacity sweep keeps the existing controller and evaluation frozen
+and compares its maximum-feasible test with a minimum sufficient test target.
+The smaller test completes **8/16 movements and damages 8/16 pads**, versus
+**4/16 completions and 12/16 damaged pads** for the baseline; every damaged trial recovers to
+the original supporting tripod. At the new 52 N and 53 N capacities, four
+matched trials complete intact where the larger test breaks the pad. Probing
+time does not improve with the phase durations frozen. See the
+[results and boundary failures](primp_project/docs/results/probe_efficiency.md),
+[paired replay](primp_project/results/weak_pad/probe_efficiency/media/README.md),
+and [549-test validation](primp_project/results/weak_pad/probe_efficiency/validation/final_tests.json).
+This does not claim to prevent the earlier four failures: those pads are below
+even the relaxed task load.
+
+The preserved V2 comparison gives every probing policy the **same body/load
 optimizer and movement freedoms**. All 48 held-out evaluations are complete:
 fixed probing completes 4/16 movements, force adaptation at a fixed test pose
 completes 6/16, and adaptation of force and test pose completes 10/16. The

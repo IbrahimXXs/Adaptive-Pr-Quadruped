@@ -1,0 +1,110 @@
+[
+  {
+    "time_s": 3.201999999999869,
+    "cycle": 1,
+    "from": "stand",
+    "to": "shift"
+  },
+  {
+    "time_s": 7.403999999999407,
+    "cycle": 1,
+    "from": "shift",
+    "to": "unload"
+  },
+  {
+    "time_s": 10.504000000000177,
+    "cycle": 1,
+    "from": "unload",
+    "to": "lift"
+  },
+  {
+    "time_s": 12.704000000000912,
+    "cycle": 1,
+    "from": "lift",
+    "to": "hold"
+  },
+  {
+    "time_s": 17.704000000001066,
+    "cycle": 1,
+    "from": "hold",
+    "to": "lower"
+  },
+  {
+    "time_s": 21.70599999999885,
+    "cycle": 1,
+    "from": "lower",
+    "to": "confirm"
+  },
+  {
+    "time_s": 22.049999999998658,
+    "cycle": 1,
+    "from": "confirm",
+    "to": "probe_ramp"
+  },
+  {
+    "time_s": 26.05199999999644,
+    "cycle": 1,
+    "from": "probe_ramp",
+    "to": "probe_hold"
+  },
+  {
+    "time_s": 28.05399999999533,
+    "cycle": 1,
+    "from": "probe_hold",
+    "to": "probe_release"
+  },
+  {
+    "time_s": 30.25599999999411,
+    "cycle": 1,
+    "from": "probe_release",
+    "to": "reprobe_posture"
+  },
+  {
+    "time_s": 35.307999999997186,
+    "cycle": 1,
+    "from": "reprobe_posture",
+    "to": "probe_ramp"
+  },
+  {
+    "time_s": 39.308000000002075,
+    "cycle": 1,
+    "from": "probe_ramp",
+    "to": "probe_hold"
+  },
+  {
+    "time_s": 41.30800000000452,
+    "cycle": 1,
+    "from": "probe_hold",
+    "to": "probe_release"
+  },
+  {
+    "time_s": 43.50800000000721,
+    "cycle": 1,
+    "from": "probe_release",
+    "to": "progress_shift"
+  },
+  {
+    "time_s": 48.866000000013756,
+    "cycle": 1,
+    "from": "progress_shift",
+    "to": "next_unload"
+  },
+  {
+    "time_s": 52.96600000001877,
+    "cycle": 1,
+    "from": "next_unload",
+    "to": "next_lift"
+  },
+  {
+    "time_s": 55.166000000021455,
+    "cycle": 1,
+    "from": "next_lift",
+    "to": "progress_hold"
+  },
+  {
+    "time_s": 56.368000000022924,
+    "cycle": 1,
+    "from": "progress_hold",
+    "to": "progress_complete"
+  }
+]

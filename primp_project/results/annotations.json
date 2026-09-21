@@ -788,5 +788,241 @@
   "weak_pad_adaptive_probe_20260921T112025_446395Z": {
     "purpose": "Weak foothold V2 held-out evaluation: fr_no_safe_test_capacity80, adaptive_probe, seed 509",
     "notes": []
+  },
+  "weak_pad_maximum_feasible_20260921T122256_520185Z": {
+    "purpose": "Probe efficiency: maximum_feasible; 48.5 N hidden capacity, seed 211",
+    "notes": [
+      "Frozen matched probe-dose evaluation. Probe policy: maximum_feasible. Focused validation outcome: RECOVERED_STOP; actual pad damage: True.",
+      "The catalog status uses the unchanged V2 physical validator. [Focused report](weak_pad/probe_efficiency/trials/capacity48p5_maximum_feasible_seed211/weak_pad_maximum_feasible_20260921T122256_520185Z/probe_efficiency_report.md) · [Target-integrity summary](weak_pad/probe_efficiency/trials/capacity48p5_maximum_feasible_seed211/weak_pad_maximum_feasible_20260921T122256_520185Z/probe_efficiency_summary.json)."
+    ]
+  },
+  "weak_pad_maximum_feasible_20260921T122256_520372Z": {
+    "purpose": "Probe efficiency: maximum_feasible; 48.5 N hidden capacity, seed 907",
+    "notes": [
+      "Frozen matched probe-dose evaluation. Probe policy: maximum_feasible. Focused validation outcome: RECOVERED_STOP; actual pad damage: True.",
+      "The catalog status uses the unchanged V2 physical validator. [Focused report](weak_pad/probe_efficiency/trials/capacity48p5_maximum_feasible_seed907/weak_pad_maximum_feasible_20260921T122256_520372Z/probe_efficiency_report.md) · [Target-integrity summary](weak_pad/probe_efficiency/trials/capacity48p5_maximum_feasible_seed907/weak_pad_maximum_feasible_20260921T122256_520372Z/probe_efficiency_summary.json)."
+    ]
+  },
+  "weak_pad_minimum_sufficient_20260921T122256_519671Z": {
+    "purpose": "Probe efficiency: minimum_sufficient; 48.5 N hidden capacity, seed 211",
+    "notes": [
+      "Frozen matched probe-dose evaluation. Probe policy: minimum_sufficient. Focused validation outcome: RECOVERED_STOP; actual pad damage: True.",
+      "The catalog status uses the unchanged V2 physical validator. [Focused report](weak_pad/probe_efficiency/trials/capacity48p5_minimum_sufficient_seed211/weak_pad_minimum_sufficient_20260921T122256_519671Z/probe_efficiency_report.md) · [Target-integrity summary](weak_pad/probe_efficiency/trials/capacity48p5_minimum_sufficient_seed211/weak_pad_minimum_sufficient_20260921T122256_519671Z/probe_efficiency_summary.json)."
+    ]
+  },
+  "weak_pad_minimum_sufficient_20260921T122256_533073Z": {
+    "purpose": "Probe efficiency: minimum_sufficient; 48.5 N hidden capacity, seed 907",
+    "notes": [
+      "Frozen matched probe-dose evaluation. Probe policy: minimum_sufficient. Focused validation outcome: RECOVERED_STOP; actual pad damage: True.",
+      "The catalog status uses the unchanged V2 physical validator. [Focused report](weak_pad/probe_efficiency/trials/capacity48p5_minimum_sufficient_seed907/weak_pad_minimum_sufficient_20260921T122256_533073Z/probe_efficiency_report.md) · [Target-integrity summary](weak_pad/probe_efficiency/trials/capacity48p5_minimum_sufficient_seed907/weak_pad_minimum_sufficient_20260921T122256_533073Z/probe_efficiency_summary.json)."
+    ]
+  },
+  "weak_pad_maximum_feasible_20260921T122353_026403Z": {
+    "purpose": "Probe efficiency: maximum_feasible; 49.5 N hidden capacity, seed 211",
+    "notes": [
+      "Frozen matched probe-dose evaluation. Probe policy: maximum_feasible. Focused validation outcome: RECOVERED_STOP; actual pad damage: True.",
+      "The catalog status uses the unchanged V2 physical validator. [Focused report](weak_pad/probe_efficiency/trials/capacity49p5_maximum_feasible_seed211/weak_pad_maximum_feasible_20260921T122353_026403Z/probe_efficiency_report.md) · [Target-integrity summary](weak_pad/probe_efficiency/trials/capacity49p5_maximum_feasible_seed211/weak_pad_maximum_feasible_20260921T122353_026403Z/probe_efficiency_summary.json)."
+    ]
+  },
+  "weak_pad_maximum_feasible_20260921T122353_111876Z": {
+    "purpose": "Probe efficiency: maximum_feasible; 49.5 N hidden capacity, seed 907",
+    "notes": [
+      "Frozen matched probe-dose evaluation. Probe policy: maximum_feasible. Focused validation outcome: RECOVERED_STOP; actual pad damage: True.",
+      "The catalog status uses the unchanged V2 physical validator. [Focused report](weak_pad/probe_efficiency/trials/capacity49p5_maximum_feasible_seed907/weak_pad_maximum_feasible_20260921T122353_111876Z/probe_efficiency_report.md) · [Target-integrity summary](weak_pad/probe_efficiency/trials/capacity49p5_maximum_feasible_seed907/weak_pad_maximum_feasible_20260921T122353_111876Z/probe_efficiency_summary.json)."
+    ]
+  },
+  "weak_pad_minimum_sufficient_20260921T122353_323884Z": {
+    "purpose": "Probe efficiency: minimum_sufficient; 49.5 N hidden capacity, seed 211",
+    "notes": [
+      "Frozen matched probe-dose evaluation. Probe policy: minimum_sufficient. Focused validation outcome: RECOVERED_STOP; actual pad damage: True.",
+      "The catalog status uses the unchanged V2 physical validator. [Focused report](weak_pad/probe_efficiency/trials/capacity49p5_minimum_sufficient_seed211/weak_pad_minimum_sufficient_20260921T122353_323884Z/probe_efficiency_report.md) · [Target-integrity summary](weak_pad/probe_efficiency/trials/capacity49p5_minimum_sufficient_seed211/weak_pad_minimum_sufficient_20260921T122353_323884Z/probe_efficiency_summary.json)."
+    ]
+  },
+  "weak_pad_minimum_sufficient_20260921T122353_446206Z": {
+    "purpose": "Probe efficiency: minimum_sufficient; 49.5 N hidden capacity, seed 907",
+    "notes": [
+      "Frozen matched probe-dose evaluation. Probe policy: minimum_sufficient. Focused validation outcome: RECOVERED_STOP; actual pad damage: True.",
+      "The catalog status uses the unchanged V2 physical validator. [Focused report](weak_pad/probe_efficiency/trials/capacity49p5_minimum_sufficient_seed907/weak_pad_minimum_sufficient_20260921T122353_446206Z/probe_efficiency_report.md) · [Target-integrity summary](weak_pad/probe_efficiency/trials/capacity49p5_minimum_sufficient_seed907/weak_pad_minimum_sufficient_20260921T122353_446206Z/probe_efficiency_summary.json)."
+    ]
+  },
+  "weak_pad_maximum_feasible_20260921T122452_109652Z": {
+    "purpose": "Probe efficiency: maximum_feasible; 50.5 N hidden capacity, seed 211",
+    "notes": [
+      "Frozen matched probe-dose evaluation. Probe policy: maximum_feasible. Focused validation outcome: RECOVERED_STOP; actual pad damage: True.",
+      "The catalog status uses the unchanged V2 physical validator. [Focused report](weak_pad/probe_efficiency/trials/capacity50p5_maximum_feasible_seed211/weak_pad_maximum_feasible_20260921T122452_109652Z/probe_efficiency_report.md) · [Target-integrity summary](weak_pad/probe_efficiency/trials/capacity50p5_maximum_feasible_seed211/weak_pad_maximum_feasible_20260921T122452_109652Z/probe_efficiency_summary.json)."
+    ]
+  },
+  "weak_pad_maximum_feasible_20260921T122452_216832Z": {
+    "purpose": "Probe efficiency: maximum_feasible; 50.5 N hidden capacity, seed 907",
+    "notes": [
+      "Frozen matched probe-dose evaluation. Probe policy: maximum_feasible. Focused validation outcome: RECOVERED_STOP; actual pad damage: True.",
+      "The catalog status uses the unchanged V2 physical validator. [Focused report](weak_pad/probe_efficiency/trials/capacity50p5_maximum_feasible_seed907/weak_pad_maximum_feasible_20260921T122452_216832Z/probe_efficiency_report.md) · [Target-integrity summary](weak_pad/probe_efficiency/trials/capacity50p5_maximum_feasible_seed907/weak_pad_maximum_feasible_20260921T122452_216832Z/probe_efficiency_summary.json)."
+    ]
+  },
+  "weak_pad_minimum_sufficient_20260921T122452_345221Z": {
+    "purpose": "Probe efficiency: minimum_sufficient; 50.5 N hidden capacity, seed 211",
+    "notes": [
+      "Frozen matched probe-dose evaluation. Probe policy: minimum_sufficient. Focused validation outcome: RECOVERED_STOP; actual pad damage: True.",
+      "The catalog status uses the unchanged V2 physical validator. [Focused report](weak_pad/probe_efficiency/trials/capacity50p5_minimum_sufficient_seed211/weak_pad_minimum_sufficient_20260921T122452_345221Z/probe_efficiency_report.md) · [Target-integrity summary](weak_pad/probe_efficiency/trials/capacity50p5_minimum_sufficient_seed211/weak_pad_minimum_sufficient_20260921T122452_345221Z/probe_efficiency_summary.json)."
+    ]
+  },
+  "weak_pad_minimum_sufficient_20260921T122452_965150Z": {
+    "purpose": "Probe efficiency: minimum_sufficient; 50.5 N hidden capacity, seed 907",
+    "notes": [
+      "Frozen matched probe-dose evaluation. Probe policy: minimum_sufficient. Focused validation outcome: RECOVERED_STOP; actual pad damage: True.",
+      "The catalog status uses the unchanged V2 physical validator. [Focused report](weak_pad/probe_efficiency/trials/capacity50p5_minimum_sufficient_seed907/weak_pad_minimum_sufficient_20260921T122452_965150Z/probe_efficiency_report.md) · [Target-integrity summary](weak_pad/probe_efficiency/trials/capacity50p5_minimum_sufficient_seed907/weak_pad_minimum_sufficient_20260921T122452_965150Z/probe_efficiency_summary.json)."
+    ]
+  },
+  "weak_pad_maximum_feasible_20260921T122551_223698Z": {
+    "purpose": "Probe efficiency: maximum_feasible; 51 N hidden capacity, seed 211",
+    "notes": [
+      "Frozen matched probe-dose evaluation. Probe policy: maximum_feasible. Focused validation outcome: RECOVERED_STOP; actual pad damage: True.",
+      "The catalog status uses the unchanged V2 physical validator. [Focused report](weak_pad/probe_efficiency/trials/capacity51p0_maximum_feasible_seed211/weak_pad_maximum_feasible_20260921T122551_223698Z/probe_efficiency_report.md) · [Target-integrity summary](weak_pad/probe_efficiency/trials/capacity51p0_maximum_feasible_seed211/weak_pad_maximum_feasible_20260921T122551_223698Z/probe_efficiency_summary.json)."
+    ]
+  },
+  "weak_pad_maximum_feasible_20260921T122551_806628Z": {
+    "purpose": "Probe efficiency: maximum_feasible; 51 N hidden capacity, seed 907",
+    "notes": [
+      "Frozen matched probe-dose evaluation. Probe policy: maximum_feasible. Focused validation outcome: RECOVERED_STOP; actual pad damage: True.",
+      "The catalog status uses the unchanged V2 physical validator. [Focused report](weak_pad/probe_efficiency/trials/capacity51p0_maximum_feasible_seed907/weak_pad_maximum_feasible_20260921T122551_806628Z/probe_efficiency_report.md) · [Target-integrity summary](weak_pad/probe_efficiency/trials/capacity51p0_maximum_feasible_seed907/weak_pad_maximum_feasible_20260921T122551_806628Z/probe_efficiency_summary.json)."
+    ]
+  },
+  "weak_pad_minimum_sufficient_20260921T122551_947600Z": {
+    "purpose": "Probe efficiency: minimum_sufficient; 51 N hidden capacity, seed 211",
+    "notes": [
+      "Frozen matched probe-dose evaluation. Probe policy: minimum_sufficient. Focused validation outcome: RECOVERED_STOP; actual pad damage: True.",
+      "The catalog status uses the unchanged V2 physical validator. [Focused report](weak_pad/probe_efficiency/trials/capacity51p0_minimum_sufficient_seed211/weak_pad_minimum_sufficient_20260921T122551_947600Z/probe_efficiency_report.md) · [Target-integrity summary](weak_pad/probe_efficiency/trials/capacity51p0_minimum_sufficient_seed211/weak_pad_minimum_sufficient_20260921T122551_947600Z/probe_efficiency_summary.json)."
+    ]
+  },
+  "weak_pad_minimum_sufficient_20260921T122552_988602Z": {
+    "purpose": "Probe efficiency: minimum_sufficient; 51 N hidden capacity, seed 907",
+    "notes": [
+      "Frozen matched probe-dose evaluation. Probe policy: minimum_sufficient. Focused validation outcome: RECOVERED_STOP; actual pad damage: True.",
+      "The catalog status uses the unchanged V2 physical validator. [Focused report](weak_pad/probe_efficiency/trials/capacity51p0_minimum_sufficient_seed907/weak_pad_minimum_sufficient_20260921T122552_988602Z/probe_efficiency_report.md) · [Target-integrity summary](weak_pad/probe_efficiency/trials/capacity51p0_minimum_sufficient_seed907/weak_pad_minimum_sufficient_20260921T122552_988602Z/probe_efficiency_summary.json)."
+    ]
+  },
+  "weak_pad_maximum_feasible_20260921T122651_238994Z": {
+    "purpose": "Probe efficiency: maximum_feasible; 52 N hidden capacity, seed 211",
+    "notes": [
+      "Frozen matched probe-dose evaluation. Probe policy: maximum_feasible. Focused validation outcome: RECOVERED_STOP; actual pad damage: True.",
+      "The catalog status uses the unchanged V2 physical validator. [Focused report](weak_pad/probe_efficiency/trials/capacity52p0_maximum_feasible_seed211/weak_pad_maximum_feasible_20260921T122651_238994Z/probe_efficiency_report.md) · [Target-integrity summary](weak_pad/probe_efficiency/trials/capacity52p0_maximum_feasible_seed211/weak_pad_maximum_feasible_20260921T122651_238994Z/probe_efficiency_summary.json)."
+    ]
+  },
+  "weak_pad_maximum_feasible_20260921T122651_365456Z": {
+    "purpose": "Probe efficiency: maximum_feasible; 52 N hidden capacity, seed 907",
+    "notes": [
+      "Frozen matched probe-dose evaluation. Probe policy: maximum_feasible. Focused validation outcome: RECOVERED_STOP; actual pad damage: True.",
+      "The catalog status uses the unchanged V2 physical validator. [Focused report](weak_pad/probe_efficiency/trials/capacity52p0_maximum_feasible_seed907/weak_pad_maximum_feasible_20260921T122651_365456Z/probe_efficiency_report.md) · [Target-integrity summary](weak_pad/probe_efficiency/trials/capacity52p0_maximum_feasible_seed907/weak_pad_maximum_feasible_20260921T122651_365456Z/probe_efficiency_summary.json)."
+    ]
+  },
+  "weak_pad_minimum_sufficient_20260921T122652_382436Z": {
+    "purpose": "Probe efficiency: minimum_sufficient; 52 N hidden capacity, seed 211",
+    "notes": [
+      "Frozen matched probe-dose evaluation. Probe policy: minimum_sufficient. Focused validation outcome: SUCCESS; actual pad damage: False.",
+      "The catalog status uses the unchanged V2 physical validator. [Focused report](weak_pad/probe_efficiency/trials/capacity52p0_minimum_sufficient_seed211/weak_pad_minimum_sufficient_20260921T122652_382436Z/probe_efficiency_report.md) · [Target-integrity summary](weak_pad/probe_efficiency/trials/capacity52p0_minimum_sufficient_seed211/weak_pad_minimum_sufficient_20260921T122652_382436Z/probe_efficiency_summary.json)."
+    ]
+  },
+  "weak_pad_minimum_sufficient_20260921T122653_516574Z": {
+    "purpose": "Probe efficiency: minimum_sufficient; 52 N hidden capacity, seed 907",
+    "notes": [
+      "Frozen matched probe-dose evaluation. Probe policy: minimum_sufficient. Focused validation outcome: SUCCESS; actual pad damage: False.",
+      "The catalog status uses the unchanged V2 physical validator. [Focused report](weak_pad/probe_efficiency/trials/capacity52p0_minimum_sufficient_seed907/weak_pad_minimum_sufficient_20260921T122653_516574Z/probe_efficiency_report.md) · [Target-integrity summary](weak_pad/probe_efficiency/trials/capacity52p0_minimum_sufficient_seed907/weak_pad_minimum_sufficient_20260921T122653_516574Z/probe_efficiency_summary.json)."
+    ]
+  },
+  "weak_pad_maximum_feasible_20260921T122750_820870Z": {
+    "purpose": "Probe efficiency: maximum_feasible; 53 N hidden capacity, seed 211",
+    "notes": [
+      "Frozen matched probe-dose evaluation. Probe policy: maximum_feasible. Focused validation outcome: RECOVERED_STOP; actual pad damage: True.",
+      "The catalog status uses the unchanged V2 physical validator. [Focused report](weak_pad/probe_efficiency/trials/capacity53p0_maximum_feasible_seed211/weak_pad_maximum_feasible_20260921T122750_820870Z/probe_efficiency_report.md) · [Target-integrity summary](weak_pad/probe_efficiency/trials/capacity53p0_maximum_feasible_seed211/weak_pad_maximum_feasible_20260921T122750_820870Z/probe_efficiency_summary.json)."
+    ]
+  },
+  "weak_pad_maximum_feasible_20260921T122751_194857Z": {
+    "purpose": "Probe efficiency: maximum_feasible; 53 N hidden capacity, seed 907",
+    "notes": [
+      "Frozen matched probe-dose evaluation. Probe policy: maximum_feasible. Focused validation outcome: RECOVERED_STOP; actual pad damage: True.",
+      "The catalog status uses the unchanged V2 physical validator. [Focused report](weak_pad/probe_efficiency/trials/capacity53p0_maximum_feasible_seed907/weak_pad_maximum_feasible_20260921T122751_194857Z/probe_efficiency_report.md) · [Target-integrity summary](weak_pad/probe_efficiency/trials/capacity53p0_maximum_feasible_seed907/weak_pad_maximum_feasible_20260921T122751_194857Z/probe_efficiency_summary.json)."
+    ]
+  },
+  "weak_pad_minimum_sufficient_20260921T122808_619098Z": {
+    "purpose": "Probe efficiency: minimum_sufficient; 53 N hidden capacity, seed 211",
+    "notes": [
+      "Frozen matched probe-dose evaluation. Probe policy: minimum_sufficient. Focused validation outcome: SUCCESS; actual pad damage: False.",
+      "The catalog status uses the unchanged V2 physical validator. [Focused report](weak_pad/probe_efficiency/trials/capacity53p0_minimum_sufficient_seed211/weak_pad_minimum_sufficient_20260921T122808_619098Z/probe_efficiency_report.md) · [Target-integrity summary](weak_pad/probe_efficiency/trials/capacity53p0_minimum_sufficient_seed211/weak_pad_minimum_sufficient_20260921T122808_619098Z/probe_efficiency_summary.json)."
+    ]
+  },
+  "weak_pad_minimum_sufficient_20260921T122809_825999Z": {
+    "purpose": "Probe efficiency: minimum_sufficient; 53 N hidden capacity, seed 907",
+    "notes": [
+      "Frozen matched probe-dose evaluation. Probe policy: minimum_sufficient. Focused validation outcome: SUCCESS; actual pad damage: False.",
+      "The catalog status uses the unchanged V2 physical validator. [Focused report](weak_pad/probe_efficiency/trials/capacity53p0_minimum_sufficient_seed907/weak_pad_minimum_sufficient_20260921T122809_825999Z/probe_efficiency_report.md) · [Target-integrity summary](weak_pad/probe_efficiency/trials/capacity53p0_minimum_sufficient_seed907/weak_pad_minimum_sufficient_20260921T122809_825999Z/probe_efficiency_summary.json)."
+    ]
+  },
+  "weak_pad_maximum_feasible_20260921T122853_290969Z": {
+    "purpose": "Probe efficiency: maximum_feasible; 54 N hidden capacity, seed 211",
+    "notes": [
+      "Frozen matched probe-dose evaluation. Probe policy: maximum_feasible. Focused validation outcome: SUCCESS; actual pad damage: False.",
+      "The catalog status uses the unchanged V2 physical validator. [Focused report](weak_pad/probe_efficiency/trials/capacity54p0_maximum_feasible_seed211/weak_pad_maximum_feasible_20260921T122853_290969Z/probe_efficiency_report.md) · [Target-integrity summary](weak_pad/probe_efficiency/trials/capacity54p0_maximum_feasible_seed211/weak_pad_maximum_feasible_20260921T122853_290969Z/probe_efficiency_summary.json)."
+    ]
+  },
+  "weak_pad_maximum_feasible_20260921T122853_752351Z": {
+    "purpose": "Probe efficiency: maximum_feasible; 54 N hidden capacity, seed 907",
+    "notes": [
+      "Frozen matched probe-dose evaluation. Probe policy: maximum_feasible. Focused validation outcome: SUCCESS; actual pad damage: False.",
+      "The catalog status uses the unchanged V2 physical validator. [Focused report](weak_pad/probe_efficiency/trials/capacity54p0_maximum_feasible_seed907/weak_pad_maximum_feasible_20260921T122853_752351Z/probe_efficiency_report.md) · [Target-integrity summary](weak_pad/probe_efficiency/trials/capacity54p0_maximum_feasible_seed907/weak_pad_maximum_feasible_20260921T122853_752351Z/probe_efficiency_summary.json)."
+    ]
+  },
+  "weak_pad_minimum_sufficient_20260921T122925_855829Z": {
+    "purpose": "Probe efficiency: minimum_sufficient; 54 N hidden capacity, seed 211",
+    "notes": [
+      "Frozen matched probe-dose evaluation. Probe policy: minimum_sufficient. Focused validation outcome: SUCCESS; actual pad damage: False.",
+      "The catalog status uses the unchanged V2 physical validator. [Focused report](weak_pad/probe_efficiency/trials/capacity54p0_minimum_sufficient_seed211/weak_pad_minimum_sufficient_20260921T122925_855829Z/probe_efficiency_report.md) · [Target-integrity summary](weak_pad/probe_efficiency/trials/capacity54p0_minimum_sufficient_seed211/weak_pad_minimum_sufficient_20260921T122925_855829Z/probe_efficiency_summary.json)."
+    ]
+  },
+  "weak_pad_minimum_sufficient_20260921T122926_955622Z": {
+    "purpose": "Probe efficiency: minimum_sufficient; 54 N hidden capacity, seed 907",
+    "notes": [
+      "Frozen matched probe-dose evaluation. Probe policy: minimum_sufficient. Focused validation outcome: SUCCESS; actual pad damage: False.",
+      "The catalog status uses the unchanged V2 physical validator. [Focused report](weak_pad/probe_efficiency/trials/capacity54p0_minimum_sufficient_seed907/weak_pad_minimum_sufficient_20260921T122926_955622Z/probe_efficiency_report.md) · [Target-integrity summary](weak_pad/probe_efficiency/trials/capacity54p0_minimum_sufficient_seed907/weak_pad_minimum_sufficient_20260921T122926_955622Z/probe_efficiency_summary.json)."
+    ]
+  },
+  "weak_pad_maximum_feasible_20260921T123007_389107Z": {
+    "purpose": "Probe efficiency: maximum_feasible; 56 N hidden capacity, seed 211",
+    "notes": [
+      "Frozen matched probe-dose evaluation. Probe policy: maximum_feasible. Focused validation outcome: SUCCESS; actual pad damage: False.",
+      "The catalog status uses the unchanged V2 physical validator. [Focused report](weak_pad/probe_efficiency/trials/capacity56p0_maximum_feasible_seed211/weak_pad_maximum_feasible_20260921T123007_389107Z/probe_efficiency_report.md) · [Target-integrity summary](weak_pad/probe_efficiency/trials/capacity56p0_maximum_feasible_seed211/weak_pad_maximum_feasible_20260921T123007_389107Z/probe_efficiency_summary.json)."
+    ]
+  },
+  "weak_pad_maximum_feasible_20260921T123007_942697Z": {
+    "purpose": "Probe efficiency: maximum_feasible; 56 N hidden capacity, seed 907",
+    "notes": [
+      "Frozen matched probe-dose evaluation. Probe policy: maximum_feasible. Focused validation outcome: SUCCESS; actual pad damage: False.",
+      "The catalog status uses the unchanged V2 physical validator. [Focused report](weak_pad/probe_efficiency/trials/capacity56p0_maximum_feasible_seed907/weak_pad_maximum_feasible_20260921T123007_942697Z/probe_efficiency_report.md) · [Target-integrity summary](weak_pad/probe_efficiency/trials/capacity56p0_maximum_feasible_seed907/weak_pad_maximum_feasible_20260921T123007_942697Z/probe_efficiency_summary.json)."
+    ]
+  },
+  "weak_pad_minimum_sufficient_20260921T123040_216085Z": {
+    "purpose": "Probe efficiency: minimum_sufficient; 56 N hidden capacity, seed 211",
+    "notes": [
+      "Frozen matched probe-dose evaluation. Probe policy: minimum_sufficient. Focused validation outcome: SUCCESS; actual pad damage: False.",
+      "The catalog status uses the unchanged V2 physical validator. [Focused report](weak_pad/probe_efficiency/trials/capacity56p0_minimum_sufficient_seed211/weak_pad_minimum_sufficient_20260921T123040_216085Z/probe_efficiency_report.md) · [Target-integrity summary](weak_pad/probe_efficiency/trials/capacity56p0_minimum_sufficient_seed211/weak_pad_minimum_sufficient_20260921T123040_216085Z/probe_efficiency_summary.json)."
+    ]
+  },
+  "weak_pad_minimum_sufficient_20260921T123041_783614Z": {
+    "purpose": "Probe efficiency: minimum_sufficient; 56 N hidden capacity, seed 907",
+    "notes": [
+      "Frozen matched probe-dose evaluation. Probe policy: minimum_sufficient. Focused validation outcome: SUCCESS; actual pad damage: False.",
+      "The catalog status uses the unchanged V2 physical validator. [Focused report](weak_pad/probe_efficiency/trials/capacity56p0_minimum_sufficient_seed907/weak_pad_minimum_sufficient_20260921T123041_783614Z/probe_efficiency_report.md) · [Target-integrity summary](weak_pad/probe_efficiency/trials/capacity56p0_minimum_sufficient_seed907/weak_pad_minimum_sufficient_20260921T123041_783614Z/probe_efficiency_summary.json)."
+    ]
+  },
+  "weak_pad_maximum_feasible_20260921T121521_781558Z": {
+    "purpose": "Probe-efficiency development check: maximum_feasible, seed 101; excluded from the 32-trial sweep",
+    "notes": [
+      "Capacity 62 N development reference. The maximum-policy run reproduces all 98 shared physical/control channels of the frozen V2 baseline exactly."
+    ]
+  },
+  "weak_pad_minimum_sufficient_20260921T121507_334941Z": {
+    "purpose": "Probe-efficiency development check: minimum_sufficient, seed 101; excluded from the 32-trial sweep",
+    "notes": [
+      "Capacity 62 N development reference. The maximum-policy run reproduces all 98 shared physical/control channels of the frozen V2 baseline exactly."
+    ]
   }
 }

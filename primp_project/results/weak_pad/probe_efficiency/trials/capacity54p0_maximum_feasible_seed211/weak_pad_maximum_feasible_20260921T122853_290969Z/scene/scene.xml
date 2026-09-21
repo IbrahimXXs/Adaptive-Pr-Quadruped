@@ -1,0 +1,17 @@
+<mujoco model="primp_adjustable_landing_pad">
+  <include file="/home/ibrahim/Documents/GO-2 PRIMP/primp_project/results/weak_pad/probe_efficiency/trials/capacity54p0_maximum_feasible_seed211/weak_pad_maximum_feasible_20260921T122853_290969Z/scene/robot_initial.xml" />
+  <statistic center="0 0 0.1" extent="0.9" />
+  <visual>
+    <headlight diffuse="0.5 0.5 0.5" ambient="0.35 0.35 0.35" />
+    <global azimuth="-130" elevation="-25" />
+  </visual>
+  <worldbody>
+    <light pos="0 0 3" dir="0 0 -1" directional="true" />
+    <geom name="floor" type="plane" size="0 0 0.05" pos="0 0 -0.12" rgba="0.75 0.78 0.8 1" />
+    <geom name="primp_support_FL" type="box" pos="0.15315678006345865 0.11800000000000004 -0.055" size="0.032 0.065 0.055" rgba="0.3 0.36 0.43 1" friction="0.8 0.005 0" condim="3" />
+    <geom name="primp_support_FR" type="box" pos="0.15315678006313341 -0.16599999999996923 -0.055" size="0.075 0.075 0.055" rgba="0.3 0.36 0.43 1" friction="0.8 0.005 0" condim="3" />
+    <geom name="primp_support_RL" type="box" pos="-0.15564322000884112 0.16599999999544035 -0.055" size="0.075 0.075 0.055" rgba="0.3 0.36 0.43 1" friction="0.8 0.005 0" condim="3" />
+    <geom name="primp_support_RR" type="box" pos="-0.1556432199357681 -0.16599999999993434 -0.055" size="0.075 0.075 0.055" rgba="0.3 0.36 0.43 1" friction="0.8 0.005 0" condim="3" />
+    <geom name="primp_landing_pad" type="box" pos="0.24315678006345864 0.11800000000000004 -0.055" size="0.032 0.065 0.055" rgba="0.18 0.6 0.72 1" friction="0.8 0.005 0" condim="3" />
+  </worldbody>
+</mujoco>

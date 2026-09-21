@@ -1,0 +1,158 @@
+{
+  "protocol": "reference-only; no new policy or native trial is evaluated here",
+  "preserved_manifest_sha256": "c4a9cabe63a02f7fcb1d7bae586f4d6ea68096a428ffae9a7d7c101427839bbf",
+  "preserved_execution_freeze_sha256": "766570e122323d447349d6c1de8b5bb55a198bfaeb31714cdf34eeb54210e652",
+  "independent_lp_source_sha256": "63390f51cb643314cff881134ddc82f75d60c0d4b2b58ea73e1071e1ddda731d",
+  "audit_source_sha256": "3258bde5af4cee6c0a9a58672ccc3e77f29fa7bafe315aa4d878f9dc5bd7ae7b",
+  "interpretation": [
+    "Minimum future load is a quasistatic optimization lower bound for the shared task, not a physical certificate.",
+    "A sufficient certificate requires the minimum observed stable plateau to exceed future load plus both unchanged reserves.",
+    "The illustrative additional 1 N only targets the command: 0.8 N declared sensing error and 0.2 N observed late-hold undershoot allowance. It is not a new certificate or a verified general tracking guarantee.",
+    "The old four failed pads are below even the relaxed task load; these data do not show that gentler probing could complete those tasks.",
+    "The new capacity sweep should test the missing corridor between sufficient proof and the old larger applied test, and include boundary failures without tuning capacities to force success."
+  ],
+  "recorded_reference_trials": [
+    {
+      "trial_id": "fr_necessary_a_capacity66_adaptive_probe_seed101",
+      "family": "fr_necessary_a",
+      "seed": 101,
+      "source": "results/weak_pad/study_v2/trials/fr_necessary_a_capacity66_adaptive_probe_seed101/weak_pad_adaptive_probe_20260921T111443_104920Z",
+      "hashes": {
+        "metadata.json": "70ee954acf271f2c29637ae5c42792ff65c64cad3a668186cb359289937fa2ba",
+        "signals.npz": "b88e5d881bbd58e95e6f783a84639a6e695d7505b230d47e3cc265803ad48993"
+      },
+      "minimum_future_load_n": 39.127327705067195,
+      "relaxed_30mm_minimum_future_load_n": 35.451427731548314,
+      "measurement_reserve_n": 1.0,
+      "tracking_reserve_n": 8.0,
+      "required_minimum_sensor_plateau_n": 48.127327705067195,
+      "declared_sensor_error_bound_n": 0.8,
+      "old_probe_command_n": 52.36696695532947,
+      "old_probe_actual_peak_n": 52.96791234550663,
+      "late_hold_actual_minus_command_min_n": -0.1478062638590174,
+      "late_hold_actual_minus_command_max_n": 0.06377897391600129,
+      "measured_certificate_n": 52.043971567485855,
+      "executed_future_allocated_load_n": 39.59405775002904,
+      "ideal_command_reduction_n": 4.239639250262272,
+      "illustrative_command_with_one_newton_execution_allowance_n": 49.127327705067195,
+      "capacity_corridor_above_illustrative_command_below_old_command_n": [
+        49.127327705067195,
+        52.36696695532947
+      ]
+    },
+    {
+      "trial_id": "fr_necessary_a_capacity66_adaptive_probe_seed509",
+      "family": "fr_necessary_a",
+      "seed": 509,
+      "source": "results/weak_pad/study_v2/trials/fr_necessary_a_capacity66_adaptive_probe_seed509/weak_pad_adaptive_probe_20260921T111444_264392Z",
+      "hashes": {
+        "metadata.json": "d9c0c501eca9644259cb6dd607107bcbf591512f3d149781c400581663378646",
+        "signals.npz": "de52a1401c9a618845a667203739e55dc0584d449ac156974e0b6f604d0f0eab"
+      },
+      "minimum_future_load_n": 39.132804026622246,
+      "relaxed_30mm_minimum_future_load_n": 35.45631658129119,
+      "measurement_reserve_n": 1.0,
+      "tracking_reserve_n": 8.0,
+      "required_minimum_sensor_plateau_n": 48.132804026622246,
+      "declared_sensor_error_bound_n": 0.8,
+      "old_probe_command_n": 52.37719846744725,
+      "old_probe_actual_peak_n": 52.97950302458539,
+      "late_hold_actual_minus_command_min_n": -0.14827604317134302,
+      "late_hold_actual_minus_command_max_n": 0.06338254181402903,
+      "measured_certificate_n": 52.06602982443559,
+      "executed_future_allocated_load_n": 39.5996730036806,
+      "ideal_command_reduction_n": 4.244394440825005,
+      "illustrative_command_with_one_newton_execution_allowance_n": 49.132804026622246,
+      "capacity_corridor_above_illustrative_command_below_old_command_n": [
+        49.132804026622246,
+        52.37719846744725
+      ]
+    },
+    {
+      "trial_id": "fr_necessary_b_capacity62_adaptive_probe_seed101",
+      "family": "fr_necessary_b",
+      "seed": 101,
+      "source": "results/weak_pad/study_v2/trials/fr_necessary_b_capacity62_adaptive_probe_seed101/weak_pad_adaptive_probe_20260921T111734_321818Z",
+      "hashes": {
+        "metadata.json": "376e72521a134e75f0f5380591263f9aef05074555731a9aa14c2de0a34bf676",
+        "signals.npz": "dc4e4579859acaf7f0a5c2d808ffc1251e888480f828a6205bbea2b0c99407f1"
+      },
+      "minimum_future_load_n": 40.55948189113205,
+      "relaxed_30mm_minimum_future_load_n": 36.85293224438601,
+      "measurement_reserve_n": 1.0,
+      "tracking_reserve_n": 8.0,
+      "required_minimum_sensor_plateau_n": 49.55948189113205,
+      "declared_sensor_error_bound_n": 0.8,
+      "old_probe_command_n": 53.11965540021643,
+      "old_probe_actual_peak_n": 53.69537443919163,
+      "late_hold_actual_minus_command_min_n": -0.14934407193547372,
+      "late_hold_actual_minus_command_max_n": 0.058251481236922587,
+      "measured_certificate_n": 51.63274298108838,
+      "executed_future_allocated_load_n": 40.99520020392331,
+      "ideal_command_reduction_n": 3.560173509084379,
+      "illustrative_command_with_one_newton_execution_allowance_n": 50.55948189113205,
+      "capacity_corridor_above_illustrative_command_below_old_command_n": [
+        50.55948189113205,
+        53.11965540021643
+      ]
+    },
+    {
+      "trial_id": "fr_necessary_b_capacity62_adaptive_probe_seed509",
+      "family": "fr_necessary_b",
+      "seed": 509,
+      "source": "results/weak_pad/study_v2/trials/fr_necessary_b_capacity62_adaptive_probe_seed509/weak_pad_adaptive_probe_20260921T111736_148285Z",
+      "hashes": {
+        "metadata.json": "09226a136f1e8fbf447186c1a5180a5044380ded2b13ba843e6faa651f5716ad",
+        "signals.npz": "80c74bc8356df9c454737068c981d55ae95d6dbf0e6a9dc942fa23968cfd7d4f"
+      },
+      "minimum_future_load_n": 40.58355208066557,
+      "relaxed_30mm_minimum_future_load_n": 36.87569299713091,
+      "measurement_reserve_n": 1.0,
+      "tracking_reserve_n": 8.0,
+      "required_minimum_sensor_plateau_n": 49.58355208066557,
+      "declared_sensor_error_bound_n": 0.8,
+      "old_probe_command_n": 53.13463275251314,
+      "old_probe_actual_peak_n": 53.71397233607658,
+      "late_hold_actual_minus_command_min_n": -0.14981814375924785,
+      "late_hold_actual_minus_command_max_n": 0.05831553657983335,
+      "measured_certificate_n": 51.61541690643489,
+      "executed_future_allocated_load_n": 41.0188079159535,
+      "ideal_command_reduction_n": 3.551080671847572,
+      "illustrative_command_with_one_newton_execution_allowance_n": 50.58355208066557,
+      "capacity_corridor_above_illustrative_command_below_old_command_n": [
+        50.58355208066557,
+        53.13463275251314
+      ]
+    }
+  ],
+  "preserved_failed_trials": [
+    {
+      "trial_id": "fr_necessary_a_capacity34_adaptive_probe_seed101",
+      "hidden_capacity_n": 34,
+      "outcome": "RECOVERED_STOP",
+      "relaxed_task_required_load_n": 35.451427731548314,
+      "below_even_relaxed_required_load": true
+    },
+    {
+      "trial_id": "fr_necessary_a_capacity34_adaptive_probe_seed509",
+      "hidden_capacity_n": 34,
+      "outcome": "RECOVERED_STOP",
+      "relaxed_task_required_load_n": 35.45631658129119,
+      "below_even_relaxed_required_load": true
+    },
+    {
+      "trial_id": "fr_necessary_b_capacity29_adaptive_probe_seed101",
+      "hidden_capacity_n": 29,
+      "outcome": "RECOVERED_STOP",
+      "relaxed_task_required_load_n": 36.85293224438601,
+      "below_even_relaxed_required_load": true
+    },
+    {
+      "trial_id": "fr_necessary_b_capacity29_adaptive_probe_seed509",
+      "hidden_capacity_n": 29,
+      "outcome": "RECOVERED_STOP",
+      "relaxed_task_required_load_n": 36.87569299713091,
+      "below_even_relaxed_required_load": true
+    }
+  ]
+}
