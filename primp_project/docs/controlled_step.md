@@ -120,6 +120,19 @@ margin, bounded tracking/slip/tilt, contact-confirmed reloading, successful QPs,
 no torque saturation or termination, and final four-foot standing. Initial
 contact settling remains visible in the logs.
 
+Restored support is verified from measured loading: every foot must have
+measured and planned contact and normal force **above 5 N** throughout the
+last **0.2 s of reload**, at the first recenter sample, and throughout final
+standing. The earlier 2 N touchdown threshold establishes initial contact;
+it does not by itself establish completed load transfer.
+
+MPC update flags must match the configured cadence exactly: at the current
+500 Hz physics rate and 100 Hz MPC rate, a regular solve is required every
+five physics steps. Initialization and changes in planned support require
+immediate solves as well. Extra transition solves preserve the original
+periodic timing. Missing updates, unexplained extra updates, displaced updates
+with the same total count, and missing frequency metadata fail validation.
+
 Repeated-run results and recording links are in the
 [controlled-step results](results/controlled_step.md).
 To reanalyze a recording:

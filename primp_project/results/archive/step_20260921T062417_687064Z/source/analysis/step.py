@@ -35,9 +35,11 @@ LIMITS = {
     "minimum_pre_lift_support_normal_force_n": 5.0,
     "minimum_pre_lift_support_margin_m": 0.02,
     "maximum_pre_lift_force_cap_n": 0.1,
+    "minimum_restored_foot_normal_force_n": 5.0,
+    "minimum_reload_loading_duration_s": 0.2,
 }
 REQUIRED = (
-    "time_s", "mujoco_time_s", "control_time_s", "phase", "cycle", "base_rpy_rad", "com_pos_w",
+    "time_s", "mujoco_time_s", "control_time_s", "step", "phase", "cycle", "base_rpy_rad", "com_pos_w",
     "feet_pos_w", "feet_desired_w", "foot_anchor_w", "contact_measured", "contact_planned",
     "contact_normal_force", "contact_force_w", "grf_desired_w", "support_margin_m", "selected_force_cap_N",
     "contact_confirmed", "landing_contact_dwell_s", "desired_foot_vel_w", "desired_foot_acc_w",
@@ -142,6 +144,35 @@ def analyze_step(run_dir: Path) -> dict:
           "Continuous end-of-interval sampling with no reset or time gap", {"rows": n, "last_time_s": t[-1] if n else None})
     check("control_alignment", n > 0 and np.allclose(data["control_time_s"], t - dt, atol=tolerance, rtol=0),
           "Control timestamp equals interval endpoint minus dt", _extreme(np.abs(data["control_time_s"] - t + dt)))
+    # Reconstruct the expected solve schedule independently of mpc_update.
+    # The controller solves on the fixed physics-step grid, at initialization,
+    # and immediately when its binary support schedule changes.
+    try:
+        frequency = float(metadata.get("simulation_params", {}).get("mpc_frequency"))
+    except (TypeError, ValueError):
+        frequency = float("nan")
+    frequency_valid = np.isfinite(frequency) and np.isfinite(dt) and dt > 0 and 0 < frequency <= 1.0 / dt
+    period = int(round(1.0 / (frequency * dt))) if frequency_valid else 0
+    periodic = np.arange(n) % period == 0 if period > 0 else np.zeros(n, dtype=bool)
+    support_changes = np.zeros(n, dtype=bool)
+    support_changes[1:] = np.any(planned[1:] != planned[:-1], axis=1)
+    expected_updates = periodic | support_changes
+    if n:
+        expected_updates[0] = True
+    step_sequence_valid = np.array_equal(data["step"], np.arange(1, n + 1))
+    check("mpc_update_cadence", n > 0 and period > 0 and step_sequence_valid
+          and np.array_equal(updates, expected_updates),
+          "MPC updates match the configured fixed-step cadence, initialization, and immediate support changes; no missing or unexplained solves",
+          {"configured_frequency_hz": frequency,
+           "effective_periodic_frequency_hz": 1.0 / (period * dt) if period > 0 else None,
+           "period_in_physics_steps": period if period > 0 else None,
+           "step_sequence_valid": step_sequence_valid,
+           "expected_updates": int(np.count_nonzero(expected_updates)),
+           "recorded_updates": int(np.count_nonzero(updates)),
+           "extra_support_change_updates": int(np.count_nonzero(support_changes & ~periodic)),
+           "missing_periodic_updates": int(np.count_nonzero(periodic & ~updates)),
+           "missing_support_change_updates": int(np.count_nonzero(support_changes & ~updates)),
+           "unexpected_updates": int(np.count_nonzero(updates & ~expected_updates))})
     check("finite_data", not finite_bad and n > 0, "All recorded numerical signals finite", finite_bad)
     check("no_termination", n > 0 and not np.any(data["terminated"] | data["truncated"]),
           "No termination or truncation", int(np.count_nonzero(data["terminated"] | data["truncated"])))
@@ -275,6 +306,33 @@ def analyze_step(run_dir: Path) -> dict:
         check(f"cycle_{number}_reload_gate", reload_valid,
               f"Reload follows confirm and recorded dwell >= {debounce:g} s; preceding contacts independently active at >= 2 N for that debounce minus at most one boundary sample", reload_evidence)
 
+        # Touchdown confirmation proves only a small initial landing load.
+        # Restored support requires every foot to carry load for the controller's
+        # 0.2 s reload-completion dwell, including the next command interval.
+        loading_samples = max(1, int(np.ceil(LIMITS["minimum_reload_loading_duration_s"] / dt - 1e-9)))
+        recenter = np.flatnonzero(mask & (phase == "recenter"))
+        reload_loaded = False
+        reload_loading_evidence = None
+        if len(reload) >= loading_samples and len(recenter):
+            end_reload, start_recenter = int(reload[-1]), int(recenter[0])
+            loading_window = np.r_[reload[-loading_samples:], start_recenter]
+            forces = data["contact_normal_force"][loading_window]
+            reload_loaded = (
+                end_reload + 1 == start_recenter
+                and np.all(np.diff(loading_window) == 1)
+                and np.all(measured[loading_window]) and np.all(planned[loading_window])
+                and np.all(forces > LIMITS["minimum_restored_foot_normal_force_n"])
+            )
+            reload_loading_evidence = {
+                "reload_dwell_s": loading_samples * dt,
+                "first_recenter_time_s": float(t[start_recenter]),
+                "minimum_normal_force_n_by_leg": dict(zip(legs, np.min(forces, axis=0))),
+                "missing_measured_or_planned_contacts": int(np.count_nonzero(~measured[loading_window] | ~planned[loading_window])),
+            }
+        check(f"cycle_{number}_reload_loading", reload_loaded,
+              "All four feet have measured/planned contact and normal force > 5 N for the last 0.2 s of reload and first recenter sample",
+              reload_loading_evidence)
+
         landing_mask = mask & np.isin(phase, ["lower", "confirm", "reload"])
         candidates = np.flatnonzero(landing_mask & measured[:, selected])
         landing = None
@@ -313,6 +371,14 @@ def analyze_step(run_dir: Path) -> dict:
     check("final_four_foot_stance", tail_duration + dt + tolerance >= LIMITS["minimum_final_stance_s"]
           and np.all(measured[tail]) and np.all(planned[tail]) and np.all(cycle[tail] == expected_cycles),
           "Final complete phase lasts >= 1 s with all four feet in measured and planned contact", tail_duration)
+    check("final_four_foot_loading", np.any(tail)
+          and tail_duration + dt + tolerance >= LIMITS["minimum_final_stance_s"]
+          and np.all(measured[tail]) and np.all(planned[tail])
+          and np.all(data["contact_normal_force"][tail] > LIMITS["minimum_restored_foot_normal_force_n"]),
+          "Every foot remains loaded above 5 N throughout the final complete phase (at least 1 s), with measured and planned contact",
+          {"duration_s": tail_duration,
+           "minimum_normal_force_n_by_leg": {
+               leg: _extreme(data["contact_normal_force"][tail, index], False) for index, leg in enumerate(legs)}})
     summary = _safe({
         "passed": all(check["passed"] for check in checks.values()), "experiment": metadata.get("experiment"),
         "selected_leg": metadata["selected_leg"], "requested_cycles": expected_cycles,
@@ -324,6 +390,8 @@ def analyze_step(run_dir: Path) -> dict:
             "support_margin": "Independently recomputed from physical CoM and the other three measured foot centers in world XY.",
             "support_displacement": "Foot geometry-center displacement from fixed per-cycle shift anchors includes rolling and contact compliance; it is not a measurement of pure tangential slip.",
             "landing_debounce": "Pre-reload sampled selected-foot contacts must remain active with normal force >= 2 N; one boundary sample is allowed for control-start versus observation-end alignment.",
+            "restored_loading": "Each foot must exceed 5 N over the last 0.2 s of reload plus the first recenter sample, and throughout final standing; contact flags alone do not establish loading.",
+            "mpc_cadence": "Periodic interval is round(1/(configured frequency × physics dt)), matching the controller. Initialization and support changes force solves; a support-change solve does not reset the periodic grid.",
             "force_cap": "Bounds the MPC desired vertical force at MPC updates, not the measured contact reaction.",
             "force_ramp_duration": "The 3 s minimum for unload/reload is a declared check of this milestone's fixed controller schedule, not a universal dynamics requirement.",
             "landing_impact": "Peak simulated normal contact reaction in first 100 ms after contact; not a hardware impact measurement.",

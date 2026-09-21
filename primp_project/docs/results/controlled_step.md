@@ -61,5 +61,15 @@ phase gates, and intentionally corrupted step logs. A fresh
 [30-second standing regression](../../results/standing/standing_20260921T060814_841427Z/REPORT.md)
 also passed after these integration changes (plus the usual 2 s settling).
 
+The analyzer was subsequently strengthened to require measured loading above
+5 N on every foot over the final 0.2 s of reload, at recenter entry, and throughout
+final standing. It now checks the exact configured MPC cadence, including
+immediate support-change solves. Both three-cycle recordings pass all **57
+checks** after reanalysis; the two archived single-cycle recordings also pass.
+Raw measurements, events, and metadata were hash-checked and remain unchanged.
+The expanded regression suite passes **112 tests**, including synthetic cases
+that previously escaped these loading and cadence checks. The earlier gaps
+were limitations of automatic validation, not observed failures in these trials.
+
 The [results catalog](../../results/README.md) also retains earlier runs and
 separates them from these selected milestone recordings.

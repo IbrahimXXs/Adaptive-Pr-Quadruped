@@ -14,7 +14,9 @@ import primp_project.analysis.step as analysis
 @pytest.fixture
 def recording():
     dt = 0.01
-    durations = [1.0, 1.0, 3.0, 0.5, 6.0, 1.0, 0.2, 3.0, 1.0, 1.0]
+    # The extra shift sample moves lift/reload transitions off the regular
+    # five-step MPC grid; recenter restores the original total run duration.
+    durations = [1.0, 1.01, 3.0, 0.5, 6.0, 1.0, 0.2, 3.0, 0.99, 1.0]
     phase = np.concatenate([np.repeat(name, round(duration / dt)) for name, duration in zip(analysis.PHASES, durations)])
     n = len(phase)
     t = np.arange(1, n + 1) * dt
@@ -47,9 +49,15 @@ def recording():
         "selected_leg": "FL", "legs": ["FL", "FR", "RL", "RR"], "cycles": 1,
         "hold_seconds": 6.0, "lift_height_m": 0.03, "contact_debounce_s": 0.1,
         "actual_completed_cycles": 1, "status": "completed", "dt_s": dt,
+        "simulation_params": {"mpc_frequency": 20},
     }
+    step = np.arange(1, n + 1)
+    transition = np.r_[False, np.any(planned[1:] != planned[:-1], axis=1)]
+    mpc_update = ((step - 1) % 5 == 0) | transition
+    mpc_update[0] = True
     signals = {
         "time_s": t, "mujoco_time_s": t + dt, "control_time_s": t - dt,
+        "step": step,
         "phase": phase, "cycle": np.ones(n, dtype=int), "base_rpy_rad": np.zeros((n, 3)),
         "com_pos_w": com, "feet_pos_w": feet, "feet_desired_w": feet.copy(),
         "foot_anchor_w": np.broadcast_to(anchors[0], (n, 3)).copy(),
@@ -59,7 +67,7 @@ def recording():
         "selected_force_cap_N": force_cap,
         "contact_confirmed": dwell >= 0.1, "landing_contact_dwell_s": dwell,
         "desired_foot_vel_w": np.zeros((n, 3)), "desired_foot_acc_w": np.zeros((n, 3)),
-        "mpc_update": np.ones(n, dtype=bool), "mpc_status": np.full(n, 2), "qp_status": np.zeros(n, dtype=int),
+        "mpc_update": mpc_update, "mpc_status": np.full(n, 2), "qp_status": np.zeros(n, dtype=int),
         "terminated": np.zeros(n, dtype=bool), "truncated": np.zeros(n, dtype=bool),
         "numerical_warning_count": np.zeros(n, dtype=int), "torque_saturated": np.zeros((n, 12), dtype=bool),
         "actuator_torque": np.zeros((n, 12)),
@@ -80,6 +88,15 @@ def analyze_recording(recording):
 def test_valid_evidence_produces_report_and_landing_metrics(recording):
     result = analyze_recording(recording)
     assert result["passed"], {name: value for name, value in result["criteria"].items() if not value["passed"]}
+    _, metadata, signals = recording
+    periodic_updates = (signals["step"] - 1) % 5 == 0
+    transitions = np.r_[False, np.any(np.diff(signals["contact_planned"].astype(int), axis=0), axis=1)]
+    assert metadata["simulation_params"]["mpc_frequency"] == 20
+    assert np.count_nonzero(transitions & ~periodic_updates) == 2
+    assert np.array_equal(signals["mpc_update"], periodic_updates | transitions)
+    assert result["criteria"]["mpc_update_cadence"]["passed"]
+    assert result["criteria"]["cycle_1_reload_loading"]["passed"]
+    assert result["criteria"]["final_four_foot_loading"]["passed"]
     assert result["cycles"][0]["phase_durations_s"]["hold"] == 6.0
     assert len(result["landing_events"]) == 1
     for name in ("step_summary.json", "step_report.md", "step_overview.png"):
@@ -136,7 +153,8 @@ def test_corrupted_evidence_rejects_success(recording, monkeypatch, corruption, 
     elif corruption == "low_force_debounce":
         signals["contact_normal_force"][reload - 5, 0] = 1.5
     elif corruption == "force_cap_exceeded":
-        signals["grf_desired_w"][hold, 0, 2] = signals["selected_force_cap_N"][hold] + 2.0
+        hold_update = np.flatnonzero((signals["phase"] == "hold") & signals["mpc_update"])[0]
+        signals["grf_desired_w"][hold_update, 0, 2] = signals["selected_force_cap_N"][hold_update] + 2.0
     elif corruption == "loaded_lift_entry":
         signals["contact_normal_force"][np.flatnonzero(signals["phase"] == "unload")[-1], 0] = 4.0
     elif corruption == "reversed_unload_ramp":
@@ -151,3 +169,102 @@ def test_corrupted_evidence_rejects_success(recording, monkeypatch, corruption, 
     result = analyze_recording(recording)
     assert not result["passed"]
     assert not result["criteria"][rejected]["passed"]
+
+
+def _loading_sample(signals, location):
+    if location == "reload_dwell":
+        # An interior sample in the last 200 ms, not just the endpoint.
+        return np.flatnonzero(signals["phase"] == "reload")[-10]
+    if location == "reload_boundary":
+        return np.flatnonzero(signals["phase"] == "recenter")[0]
+    return np.flatnonzero(signals["phase"] == "complete")[10]
+
+
+@pytest.mark.parametrize("leg", range(4), ids=["FL", "FR", "RL", "RR"])
+@pytest.mark.parametrize("location", ["reload_dwell", "reload_boundary", "final_standing"])
+@pytest.mark.parametrize("normal_force", [0.0, 4.9, 5.0], ids=["unloaded", "low_load", "exact_threshold"])
+def test_loading_requires_each_foot_above_threshold(recording, monkeypatch, leg, location, normal_force):
+    monkeypatch.setattr(analysis, "_plot", lambda *args: None)
+    signals = recording[2]
+    sample = _loading_sample(signals, location)
+    assert np.all(signals["contact_measured"][sample])
+    assert np.all(signals["contact_planned"][sample])
+    signals["contact_normal_force"][sample, leg] = normal_force
+    signals["contact_force_w"][sample, leg, 2] = normal_force
+
+    result = analyze_recording(recording)
+    criterion = "final_four_foot_loading" if location == "final_standing" else "cycle_1_reload_loading"
+    assert not result["passed"]
+    assert not result["criteria"][criterion]["passed"]
+
+
+@pytest.mark.parametrize("leg", range(4), ids=["FL", "FR", "RL", "RR"])
+@pytest.mark.parametrize("location", ["reload_dwell", "reload_boundary", "final_standing"])
+@pytest.mark.parametrize("signal", ["contact_measured", "contact_planned"])
+def test_loading_also_requires_measured_and_planned_contact(recording, monkeypatch, leg, location, signal):
+    monkeypatch.setattr(analysis, "_plot", lambda *args: None)
+    signals = recording[2]
+    sample = _loading_sample(signals, location)
+    assert np.all(signals["contact_normal_force"][sample] > 5.0)
+    signals[signal][sample, leg] = False
+
+    result = analyze_recording(recording)
+    criterion = "final_four_foot_loading" if location == "final_standing" else "cycle_1_reload_loading"
+    assert not result["passed"]
+    assert not result["criteria"][criterion]["passed"]
+
+
+def test_reload_loading_only_at_endpoint_is_insufficient(recording, monkeypatch):
+    monkeypatch.setattr(analysis, "_plot", lambda *args: None)
+    signals = recording[2]
+    reload_samples = np.flatnonzero(signals["phase"] == "reload")
+    signals["contact_normal_force"][reload_samples[:-1], 0] = 2.5
+    signals["contact_force_w"][reload_samples[:-1], 0, 2] = 2.5
+    assert signals["contact_normal_force"][reload_samples[-1], 0] > 5.0
+
+    result = analyze_recording(recording)
+    assert not result["passed"]
+    assert not result["criteria"]["cycle_1_reload_loading"]["passed"]
+
+
+def test_early_reload_can_be_lightly_loaded_before_completion_dwell(recording, monkeypatch):
+    monkeypatch.setattr(analysis, "_plot", lambda *args: None)
+    signals = recording[2]
+    reload_samples = np.flatnonzero(signals["phase"] == "reload")
+    signals["contact_normal_force"][reload_samples[:-25], 0] = 2.5
+    signals["contact_force_w"][reload_samples[:-25], 0, 2] = 2.5
+
+    result = analyze_recording(recording)
+    assert result["passed"], {name: value for name, value in result["criteria"].items() if not value["passed"]}
+
+
+@pytest.mark.parametrize("corruption", [
+    "only_one_update", "missing_regular_update", "same_count_jitter",
+    "unexpected_off_grid_update", "missing_transition_update", "missing_frequency",
+])
+def test_mpc_update_cadence_rejects_incomplete_or_mistimed_updates(recording, monkeypatch, corruption):
+    monkeypatch.setattr(analysis, "_plot", lambda *args: None)
+    _, metadata, signals = recording
+    updates = signals["mpc_update"]
+    if corruption == "only_one_update":
+        updates[:] = False
+        updates[0] = True
+    elif corruption == "missing_regular_update":
+        updates[10] = False
+    elif corruption == "same_count_jitter":
+        count = np.count_nonzero(updates)
+        updates[10] = False
+        updates[11] = True
+        assert np.count_nonzero(updates) == count
+    elif corruption == "unexpected_off_grid_update":
+        updates[11] = True
+    elif corruption == "missing_transition_update":
+        transition = np.r_[False, np.any(signals["contact_planned"][1:] != signals["contact_planned"][:-1], axis=1)]
+        off_grid_transition = np.flatnonzero(transition & ((signals["step"] - 1) % 5 != 0))[0]
+        updates[off_grid_transition] = False
+    elif corruption == "missing_frequency":
+        metadata["simulation_params"].pop("mpc_frequency")
+
+    result = analyze_recording(recording)
+    assert not result["passed"]
+    assert not result["criteria"]["mpc_update_cadence"]["passed"]

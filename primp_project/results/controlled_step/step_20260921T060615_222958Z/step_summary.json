@@ -17,7 +17,9 @@
     "maximum_pre_lift_selected_normal_force_n": 3.0,
     "minimum_pre_lift_support_normal_force_n": 5.0,
     "minimum_pre_lift_support_margin_m": 0.02,
-    "maximum_pre_lift_force_cap_n": 0.1
+    "maximum_pre_lift_force_cap_n": 0.1,
+    "minimum_restored_foot_normal_force_n": 5.0,
+    "minimum_reload_loading_duration_s": 0.2
   },
   "criteria_basis": "Predeclared engineering limits for this controlled flat-ground simulation; not a stability proof.",
   "conventions": {
@@ -26,6 +28,8 @@
     "support_margin": "Independently recomputed from physical CoM and the other three measured foot centers in world XY.",
     "support_displacement": "Foot geometry-center displacement from fixed per-cycle shift anchors includes rolling and contact compliance; it is not a measurement of pure tangential slip.",
     "landing_debounce": "Pre-reload sampled selected-foot contacts must remain active with normal force >= 2 N; one boundary sample is allowed for control-start versus observation-end alignment.",
+    "restored_loading": "Each foot must exceed 5 N over the last 0.2 s of reload plus the first recenter sample, and throughout final standing; contact flags alone do not establish loading.",
+    "mpc_cadence": "Periodic interval is round(1/(configured frequency \u00d7 physics dt)), matching the controller. Initialization and support changes force solves; a support-change solve does not reset the periodic grid.",
     "force_cap": "Bounds the MPC desired vertical force at MPC updates, not the measured contact reaction.",
     "force_ramp_duration": "The 3 s minimum for unload/reload is a declared check of this milestone's fixed controller schedule, not a universal dynamics requirement.",
     "landing_impact": "Peak simulated normal contact reaction in first 100 ms after contact; not a hardware impact measurement.",
@@ -61,6 +65,22 @@
       "passed": true,
       "requirement": "Control timestamp equals interval endpoint minus dt",
       "observed": 4.661201979949681e-15
+    },
+    "mpc_update_cadence": {
+      "passed": true,
+      "requirement": "MPC updates match the configured fixed-step cadence, initialization, and immediate support changes; no missing or unexplained solves",
+      "observed": {
+        "configured_frequency_hz": 100.0,
+        "effective_periodic_frequency_hz": 100.0,
+        "period_in_physics_steps": 5,
+        "step_sequence_valid": true,
+        "expected_updates": 10811,
+        "recorded_updates": 10811,
+        "extra_support_change_updates": 5,
+        "missing_periodic_updates": 0,
+        "missing_support_change_updates": 0,
+        "unexpected_updates": 0
+      }
     },
     "finite_data": {
       "passed": true,
@@ -212,6 +232,21 @@
         "independent_debounce_passed": true
       }
     },
+    "cycle_1_reload_loading": {
+      "passed": true,
+      "requirement": "All four feet have measured/planned contact and normal force > 5 N for the last 0.2 s of reload and first recenter sample",
+      "observed": {
+        "reload_dwell_s": 0.2,
+        "first_recenter_time_s": 31.145999999993617,
+        "minimum_normal_force_n_by_leg": {
+          "FL": 14.499220971113289,
+          "FR": 37.144629129406006,
+          "RL": 37.463901212952514,
+          "RR": 60.007522199564335
+        },
+        "missing_measured_or_planned_contacts": 0
+      }
+    },
     "cycle_2_phase_order": {
       "passed": true,
       "requirement": "All stages occur once in stand\u2192shift\u2192unload\u2192lift\u2192hold\u2192lower\u2192confirm\u2192reload\u2192recenter order",
@@ -316,6 +351,21 @@
         "independent_debounce_duration_s": 0.098,
         "independent_debounce_min_normal_force_n": 2.009579832266478,
         "independent_debounce_passed": true
+      }
+    },
+    "cycle_2_reload_loading": {
+      "passed": true,
+      "requirement": "All four feet have measured/planned contact and normal force > 5 N for the last 0.2 s of reload and first recenter sample",
+      "observed": {
+        "reload_dwell_s": 0.2,
+        "first_recenter_time_s": 66.49000000002644,
+        "minimum_normal_force_n_by_leg": {
+          "FL": 14.263941958814188,
+          "FR": 37.25377613021364,
+          "RL": 37.53754689999559,
+          "RR": 60.059404430503015
+        },
+        "missing_measured_or_planned_contacts": 0
       }
     },
     "cycle_3_phase_order": {
@@ -425,10 +475,38 @@
         "independent_debounce_passed": true
       }
     },
+    "cycle_3_reload_loading": {
+      "passed": true,
+      "requirement": "All four feet have measured/planned contact and normal force > 5 N for the last 0.2 s of reload and first recenter sample",
+      "observed": {
+        "reload_dwell_s": 0.2,
+        "first_recenter_time_s": 101.85399999994402,
+        "minimum_normal_force_n_by_leg": {
+          "FL": 14.065876376822803,
+          "FR": 37.360223361028964,
+          "RL": 37.607850045468,
+          "RR": 60.080668814580896
+        },
+        "missing_measured_or_planned_contacts": 0
+      }
+    },
     "final_four_foot_stance": {
       "passed": true,
       "requirement": "Final complete phase lasts >= 1 s with all four feet in measured and planned contact",
       "observed": 2.004
+    },
+    "final_four_foot_loading": {
+      "passed": true,
+      "requirement": "Every foot remains loaded above 5 N throughout the final complete phase (at least 1 s), with measured and planned contact",
+      "observed": {
+        "duration_s": 2.004,
+        "minimum_normal_force_n_by_leg": {
+          "FL": 35.55974198766451,
+          "FR": 37.504235830837295,
+          "RL": 36.15373245626761,
+          "RR": 38.40582353334699
+        }
+      }
     }
   },
   "cycles": [

@@ -10,6 +10,7 @@ Predeclared engineering limits for this controlled flat-ground simulation; not a
 | cycle_labels | PASS | Every requested cycle appears in chronological order | [1] |
 | sample_clock | PASS | Continuous end-of-interval sampling with no reset or time gap | {"rows": 16674, "last_time_s": 33.34799999999479} |
 | control_alignment | PASS | Control timestamp equals interval endpoint minus dt | 2.444225377651321e-15 |
+| mpc_update_cadence | PASS | MPC updates match the configured fixed-step cadence, initialization, and immediate support changes; no missing or unexplained solves | {"configured_frequency_hz": 100.0, "effective_periodic_frequency_hz": 100.0, "period_in_physics_steps": 5, "step_sequence_valid": true, "expected_updates": 3337, "recorded_updates": 3337, "extra_support_change_updates": 2, "missing_periodic_updates": 0, "missing_support_change_updates": 0, "unexpected_updates": 0} |
 | finite_data | PASS | All recorded numerical signals finite | [] |
 | no_termination | PASS | No termination or truncation | 0 |
 | no_numerical_warnings | PASS | No MuJoCo numerical warnings | 0.0 |
@@ -21,13 +22,19 @@ Predeclared engineering limits for this controlled flat-ground simulation; not a
 | cycle_1_phase_order | PASS | All stages occur once in stand→shift→unload→lift→hold→lower→confirm→reload→recenter order | ["stand", "shift", "unload", "lift", "hold", "lower", "confirm", "reload", "recenter", "complete"] |
 | cycle_1_hold_duration | PASS | Continuous hold >= 6 s with at most one sample of boundary tolerance | 6.0 |
 | cycle_1_hold_contact | PASS | Selected foot has neither contact nor planned support; other three have both for every hold sample | {"selected_measured_samples": 0, "selected_planned_samples": 0, "missing_support_measured_samples": 0, "missing_support_planned_samples": 0} |
+| cycle_1_swing_schedule | PASS | Selected planned support remains off and the other three remain on throughout lift/hold/lower/confirm | {"selected_planned_samples": 0, "missing_support_planned_samples": 0} |
+| cycle_1_support_contact_continuity | PASS | All three support feet retain measured contact throughout unload/lift/hold/lower/confirm/reload | 0 |
 | cycle_1_hold_clearance | PASS | Selected foot remains >= 20 mm above its fixed pre-lift center height throughout hold | 0.027016910911158834 |
 | cycle_1_support_margin | PASS | Physical CoM projection has >= 10 mm margin inside measured three-foot support triangle during hold | {"independent_minimum_m": 0.06992759409047483, "logged_minimum_m": 0.06992759409047483} |
 | cycle_1_fixed_lift_reference | PASS | Immutable lift anchor and constant hold target 0.03 m above it, with zero desired velocity/acceleration | true |
 | cycle_1_foot_tracking | PASS | Selected-foot 3D error < 12 mm during lift, hold, lower and confirm | 0.004970839538036122 |
 | cycle_1_support_slip | PASS | All three support feet stay within 10 mm of their fixed positions at shift entry | 0.0073209810733960825 |
-| cycle_1_reload_gate | PASS | Reload starts only after confirm phase, measured selected-foot contact and recorded contact debounce >= 0.1 s (>0) | {"time_s": 23.943999999997608, "contact_confirmed": true, "measured_contact": true, "dwell_s": 0.09999999999994458} |
+| cycle_1_lift_entry_guard | PASS | Last unload sample before lift: selected normal < 3 N, each support > 5 N, physical margin >= 20 mm, selected cap <= 0.1 N | {"last_unload_time_s": 10.504000000000177, "selected_normal_force_n": 0.0, "minimum_support_normal_force_n": 45.027134616756356, "physical_support_margin_m": 0.06900113784096723, "selected_force_cap_n": 0.0} |
+| cycle_1_force_cap_ramps | PASS | Unload and reload each last >= 3 s; held MPC force cap decreases monotonically on unload and increases on reload | {"unload_duration_s": 3.1, "reload_duration_s": 3.202, "maximum_unload_cap_increase_n": 0.0, "maximum_reload_cap_decrease_n": -0.0} |
+| cycle_1_reload_gate | PASS | Reload follows confirm and recorded dwell >= 0.1 s; preceding contacts independently active at >= 2 N for that debounce minus at most one boundary sample | {"time_s": 23.943999999997608, "contact_confirmed": true, "measured_contact": true, "dwell_s": 0.09999999999994458, "independent_debounce_samples": 49, "independent_debounce_duration_s": 0.098, "independent_debounce_min_normal_force_n": 2.0151145768028687, "independent_debounce_passed": true} |
+| cycle_1_reload_loading | PASS | All four feet have measured/planned contact and normal force > 5 N for the last 0.2 s of reload and first recenter sample | {"reload_dwell_s": 0.2, "first_recenter_time_s": 27.145999999995833, "minimum_normal_force_n_by_leg": {"FL": 14.499831036695376, "FR": 37.15264331958219, "RL": 37.45858479696357, "RR": 60.00410493770644}, "missing_measured_or_planned_contacts": 0} |
 | final_four_foot_stance | PASS | Final complete phase lasts >= 1 s with all four feet in measured and planned contact | 2.0020000000000002 |
+| final_four_foot_loading | PASS | Every foot remains loaded above 5 N throughout the final complete phase (at least 1 s), with measured and planned contact | {"duration_s": 2.0020000000000002, "minimum_normal_force_n_by_leg": {"FL": 36.05862366860177, "FR": 37.389122430228845, "RL": 36.145048103703296, "RR": 37.936597382380675}} |
 
 | Cycle | Hold (s) | Min clearance (mm) | Min support margin (mm) | Max hold error (mm) | Max support drift (mm) |
 |---|---:|---:|---:|---:|---:|
@@ -38,7 +45,12 @@ Phase durations and landing-force peaks for every cycle are in `step_summary.jso
 - **phase duration:** Sample count × dt; row labels describe the preceding control interval.
 - **clearance:** Selected foot geometry-center height above recorded fixed pre-lift center; not absolute floor distance.
 - **support margin:** Independently recomputed from physical CoM and the other three measured foot centers in world XY.
+- **support displacement:** Foot geometry-center displacement from fixed per-cycle shift anchors includes rolling and contact compliance; it is not a measurement of pure tangential slip.
+- **landing debounce:** Pre-reload sampled selected-foot contacts must remain active with normal force >= 2 N; one boundary sample is allowed for control-start versus observation-end alignment.
+- **restored loading:** Each foot must exceed 5 N over the last 0.2 s of reload plus the first recenter sample, and throughout final standing; contact flags alone do not establish loading.
+- **mpc cadence:** Periodic interval is round(1/(configured frequency × physics dt)), matching the controller. Initialization and support changes force solves; a support-change solve does not reset the periodic grid.
 - **force cap:** Bounds the MPC desired vertical force at MPC updates, not the measured contact reaction.
+- **force ramp duration:** The 3 s minimum for unload/reload is a declared check of this milestone's fixed controller schedule, not a universal dynamics requirement.
 - **landing impact:** Peak simulated normal contact reaction in first 100 ms after contact; not a hardware impact measurement.
 - **nlp status:** Status 2 denotes the configured SQP iteration limit; underlying QP status must remain zero.
 
