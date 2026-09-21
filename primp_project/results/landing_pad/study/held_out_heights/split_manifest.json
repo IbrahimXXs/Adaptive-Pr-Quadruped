@@ -1,0 +1,88 @@
+{
+  "version": 1,
+  "study": "adjustable_landing_pad_held_out_heights",
+  "demonstrations": [],
+  "evaluations": [
+    {
+      "trial_id": "heldout_reactive_h-7.5mm_clean",
+      "actual_height_m": -0.0075,
+      "initial_estimate_m": 0.0,
+      "planner": "reactive",
+      "role": "evaluation",
+      "lower_duration_s": 4.0,
+      "sensor_profile": "clean",
+      "seed": 17
+    },
+    {
+      "trial_id": "heldout_predictive_h-7.5mm_clean",
+      "actual_height_m": -0.0075,
+      "initial_estimate_m": 0.0,
+      "planner": "predictive",
+      "role": "evaluation",
+      "lower_duration_s": 4.0,
+      "sensor_profile": "clean",
+      "seed": 17
+    },
+    {
+      "trial_id": "heldout_learned_h-7.5mm_clean",
+      "actual_height_m": -0.0075,
+      "initial_estimate_m": 0.0,
+      "planner": "learned",
+      "role": "evaluation",
+      "lower_duration_s": 4.0,
+      "sensor_profile": "clean",
+      "seed": 17
+    },
+    {
+      "trial_id": "heldout_reactive_h+7.5mm_clean",
+      "actual_height_m": 0.0075,
+      "initial_estimate_m": 0.0,
+      "planner": "reactive",
+      "role": "evaluation",
+      "lower_duration_s": 4.0,
+      "sensor_profile": "clean",
+      "seed": 17
+    },
+    {
+      "trial_id": "heldout_predictive_h+7.5mm_clean",
+      "actual_height_m": 0.0075,
+      "initial_estimate_m": 0.0,
+      "planner": "predictive",
+      "role": "evaluation",
+      "lower_duration_s": 4.0,
+      "sensor_profile": "clean",
+      "seed": 17
+    },
+    {
+      "trial_id": "heldout_learned_h+7.5mm_clean",
+      "actual_height_m": 0.0075,
+      "initial_estimate_m": 0.0,
+      "planner": "learned",
+      "role": "evaluation",
+      "lower_duration_s": 4.0,
+      "sensor_profile": "clean",
+      "seed": 17
+    }
+  ],
+  "inherits": {
+    "primary_split_manifest_sha256": "7e3466ce5048816090589f99ac86748506e25105e284ce4b31be6f0b6e94edd7",
+    "fitted_model_sha256": "dbd348e8f86bba50f1374b135816b8b0bec86af86d3496dac223dd3db585f5c5",
+    "fitted_model_relative_path": "../model/model.npz"
+  },
+  "evaluation_policy": {
+    "repetitions_per_cell": 1,
+    "seed": 17,
+    "held_out_heights_m": [
+      -0.0075,
+      0.0075
+    ],
+    "sensor_profiles": [
+      "clean"
+    ],
+    "height_reservation": "Neither height used in demonstration fitting or live engineering development before declaration",
+    "model_policy": "Reuse the original nine-demonstration model; no refitting",
+    "execution_policy": "Same source fingerprint and controller as the completed paired eighteen-cell pilot",
+    "conclusions": "Descriptive supplementary simulation pilot; no statistical superiority claim"
+  },
+  "created_at": "2026-09-21T07:30:04.035344+00:00"
+}

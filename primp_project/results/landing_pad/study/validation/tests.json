@@ -1,0 +1,8 @@
+{
+  "passed": 220,
+  "warnings": 2,
+  "command": "PYTEST_DISABLE_PLUGIN_AUTOLOAD=1 python -m pytest primp_project/tests -q -o cache_dir=primp_project/artifacts/cache/pytest --basetemp=primp_project/artifacts/test_tmp",
+  "environment": "quadruped-pympc",
+  "log": "tests.txt",
+  "subsequent_check": "15 study tests passed after comparison presentation changes; runtime source remained frozen"
+}

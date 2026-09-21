@@ -1,0 +1,56 @@
+[
+  {
+    "time_s": 3.201999999999869,
+    "cycle": 1,
+    "from": "stand",
+    "to": "shift"
+  },
+  {
+    "time_s": 7.403999999999407,
+    "cycle": 1,
+    "from": "shift",
+    "to": "unload"
+  },
+  {
+    "time_s": 10.504000000000177,
+    "cycle": 1,
+    "from": "unload",
+    "to": "lift"
+  },
+  {
+    "time_s": 12.704000000000912,
+    "cycle": 1,
+    "from": "lift",
+    "to": "hold"
+  },
+  {
+    "time_s": 17.704000000001066,
+    "cycle": 1,
+    "from": "hold",
+    "to": "lower"
+  },
+  {
+    "time_s": 21.0719999999992,
+    "cycle": 1,
+    "from": "lower",
+    "to": "confirm"
+  },
+  {
+    "time_s": 21.219999999999118,
+    "cycle": 1,
+    "from": "confirm",
+    "to": "reload"
+  },
+  {
+    "time_s": 24.421999999997343,
+    "cycle": 1,
+    "from": "reload",
+    "to": "recenter"
+  },
+  {
+    "time_s": 28.623999999995014,
+    "cycle": 1,
+    "from": "recenter",
+    "to": "complete"
+  }
+]

@@ -2,11 +2,19 @@
 
 This workspace builds on **Quadruped-PyMPC** to study how a quadruped can
 coordinate body motion, foot motion, and timing when the ground is higher or
-lower than expected. We are building a PRIMP-inspired approach that will learn
-from successful steps and revise movement using contact and missing-contact
-evidence. Stable standing and repeated controlled front-foot steps on flat
-ground are implemented and recorded; terrain estimation and learned adaptation
-are the next research milestones.
+lower than expected. Stable standing and repeated controlled front-foot steps
+on flat ground are implemented and recorded. The next experiment adds a
+separate adjustable landing pad, sensor-based ground-height belief, bounded
+recovery after missing contact, and a PRIMP-based body–foot motion distribution.
+The learning pipeline collects known-height demonstrations and compares learned,
+reactive, and predictive planners using the same sensing and PyMPC executor.
+Nine passing demonstrations now fit a model with measurable coupled body–foot
+variation. All **24 evaluation trials passed** across reactive, predictive,
+and learned planners: 18 primary trials and six additional trials at heights
+reserved from both training and development.
+The learned planner still relies on shared recovery after its modeled phase
+ends, so a useful learned timing advantage has not been shown.
+See the project documentation for the current evaluation status and its limits.
 
 Start with the [project README](primp_project/README.md) for the research goal,
 current status, commands, organized source layout, and recorded results. All

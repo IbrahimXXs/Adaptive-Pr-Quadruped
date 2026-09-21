@@ -37,5 +37,50 @@
     "notes": [
       "One full six-second-hold cycle verifies the reorganized CLI, controller, recorder, and analysis."
     ]
+  },
+  "pad_learned_20260921T071950_152378Z": {
+    "purpose": "Learned-adapter development before reference-state alignment fix",
+    "notes": [
+      "Retained development evidence; excessive fallback exposed tracking-lag/phase misalignment. Excluded from training and formal evaluation."
+    ]
+  },
+  "pad_learned_20260921T072028_147142Z": {
+    "purpose": "Learned-adapter development before reference-state alignment fix",
+    "notes": [
+      "Retained development evidence; excessive fallback exposed tracking-lag/phase misalignment. Excluded from training and formal evaluation."
+    ]
+  },
+  "pad_learned_20260921T072106_222296Z": {
+    "purpose": "Learned-adapter development before reference-state alignment fix",
+    "notes": [
+      "Retained development evidence; excessive fallback exposed tracking-lag/phase misalignment. Excluded from training and formal evaluation."
+    ]
+  },
+  "pad_reactive_20260921T072409_356212Z": {
+    "purpose": "Expected bounded-search abort at an unreachable pad height",
+    "notes": [
+      "FAIL is the correct trial outcome: actual pad -25 mm, initial estimate 0 mm; no weight transfer, command floor -24 mm, all three supports retained. Independent guard audit passed."
+    ]
+  },
+  "pad_reactive_20260921T071044_434722Z": {
+    "purpose": "Early recovery development before freeze/resume continuity fix",
+    "notes": [
+      "Robot completed the step. Reanalysis with independent reference bounds rejects the historical command discontinuity and planner restart timing; fixed before demonstration collection and formal evaluation.",
+      "Current failed checks: pad_commanded_foot_speed, pad_commanded_com_speed, pad_planner_update_cadence"
+    ]
+  },
+  "pad_reactive_20260921T071136_748241Z": {
+    "purpose": "Early recovery development before freeze/resume continuity fix",
+    "notes": [
+      "Robot completed the step. Reanalysis with independent reference bounds rejects the historical command discontinuity and planner restart timing; fixed before demonstration collection and formal evaluation.",
+      "Current failed checks: pad_commanded_foot_speed, pad_commanded_com_speed, pad_planner_update_cadence"
+    ]
+  },
+  "pad_reactive_20260921T071212_733304Z": {
+    "purpose": "Early recovery development before freeze/resume continuity fix",
+    "notes": [
+      "Robot completed the step. Reanalysis with independent reference bounds rejects the historical command discontinuity and planner restart timing; fixed before demonstration collection and formal evaluation.",
+      "Current failed checks: pad_commanded_foot_speed, pad_planner_update_cadence"
+    ]
   }
 }

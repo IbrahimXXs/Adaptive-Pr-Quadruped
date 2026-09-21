@@ -1,0 +1,164 @@
+{
+  "version": 1,
+  "split_manifest_sha256": "337250be6e0a20467025c26a0b0d2ab3baa903ebf505d510467ef25da57d0c12",
+  "created_at": "2026-09-21T07:30:04.035494+00:00",
+  "trials": {
+    "heldout_reactive_h-7.5mm_clean": {
+      "trial_id": "heldout_reactive_h-7.5mm_clean",
+      "status": "completed",
+      "passed": true,
+      "started_at": "2026-09-21T07:43:09.612169+00:00",
+      "source_sha256": "01d9de9112da805eb9590f2e13439d3f0584415016fc0c2b5c661161074f5cb0",
+      "model_sha256": null,
+      "parameters": {
+        "trial_id": "heldout_reactive_h-7.5mm_clean",
+        "actual_height_m": -0.0075,
+        "initial_estimate_m": 0.0,
+        "planner": "reactive",
+        "role": "evaluation",
+        "lower_duration_s": 4.0,
+        "sensor_profile": "clean",
+        "seed": 17
+      },
+      "run_dir": "/home/ibrahim/Documents/GO-2 PRIMP/primp_project/results/landing_pad/study/held_out_heights/recordings/pad_reactive_20260921T074309_905575Z",
+      "signals_sha256": "02d9043852fa62a2554be7a051b901c4f828e87a08e32854667ae5f363b2bc72",
+      "metadata_sha256": "7dd768ac1b0d72ace2c634541319c56e096ac1dbcb13bb418f2183329604572e",
+      "summary_sha256": "f88e17046041d706717276c563531306565896e2d7e3336626b45daa096425bd",
+      "finished_at": "2026-09-21T07:43:51.532793+00:00"
+    },
+    "heldout_predictive_h-7.5mm_clean": {
+      "trial_id": "heldout_predictive_h-7.5mm_clean",
+      "status": "completed",
+      "passed": true,
+      "started_at": "2026-09-21T07:43:51.533074+00:00",
+      "source_sha256": "01d9de9112da805eb9590f2e13439d3f0584415016fc0c2b5c661161074f5cb0",
+      "model_sha256": null,
+      "parameters": {
+        "trial_id": "heldout_predictive_h-7.5mm_clean",
+        "actual_height_m": -0.0075,
+        "initial_estimate_m": 0.0,
+        "planner": "predictive",
+        "role": "evaluation",
+        "lower_duration_s": 4.0,
+        "sensor_profile": "clean",
+        "seed": 17
+      },
+      "run_dir": "/home/ibrahim/Documents/GO-2 PRIMP/primp_project/results/landing_pad/study/held_out_heights/recordings/pad_predictive_20260921T074351_535116Z",
+      "signals_sha256": "be2e58570b0df567f1fa396d900d3ea67e33931c8e87486f4d79d2b3a4af8d32",
+      "metadata_sha256": "0f7c41e95bf2754135759f4d5a945a0b1f9fa432619c1356e612d682de7b1f77",
+      "summary_sha256": "f2526b27558e1c9afb42f8957e57536173fa65eec875345287a04f8665c8474a",
+      "finished_at": "2026-09-21T07:44:31.587492+00:00"
+    },
+    "heldout_learned_h-7.5mm_clean": {
+      "trial_id": "heldout_learned_h-7.5mm_clean",
+      "status": "completed",
+      "passed": true,
+      "started_at": "2026-09-21T07:44:31.588338+00:00",
+      "source_sha256": "01d9de9112da805eb9590f2e13439d3f0584415016fc0c2b5c661161074f5cb0",
+      "model_sha256": "dbd348e8f86bba50f1374b135816b8b0bec86af86d3496dac223dd3db585f5c5",
+      "parameters": {
+        "trial_id": "heldout_learned_h-7.5mm_clean",
+        "actual_height_m": -0.0075,
+        "initial_estimate_m": 0.0,
+        "planner": "learned",
+        "role": "evaluation",
+        "lower_duration_s": 4.0,
+        "sensor_profile": "clean",
+        "seed": 17
+      },
+      "run_dir": "/home/ibrahim/Documents/GO-2 PRIMP/primp_project/results/landing_pad/study/held_out_heights/recordings/pad_learned_20260921T074431_595543Z",
+      "signals_sha256": "c1744ac457f8662556506b0082bb68ee9aefb19cfcec6f3a3bc823733478b734",
+      "metadata_sha256": "73f9bedce61ed916dfe01d5042de6f25a33a104212f97df4136452e12cb5c034",
+      "summary_sha256": "a24c96d949f7993fe8d5af96382b18055de3f8eeb3645ae7f2ec2645244219be",
+      "finished_at": "2026-09-21T07:45:11.233950+00:00"
+    },
+    "heldout_reactive_h+7.5mm_clean": {
+      "trial_id": "heldout_reactive_h+7.5mm_clean",
+      "status": "completed",
+      "passed": true,
+      "started_at": "2026-09-21T07:45:11.234243+00:00",
+      "source_sha256": "01d9de9112da805eb9590f2e13439d3f0584415016fc0c2b5c661161074f5cb0",
+      "model_sha256": null,
+      "parameters": {
+        "trial_id": "heldout_reactive_h+7.5mm_clean",
+        "actual_height_m": 0.0075,
+        "initial_estimate_m": 0.0,
+        "planner": "reactive",
+        "role": "evaluation",
+        "lower_duration_s": 4.0,
+        "sensor_profile": "clean",
+        "seed": 17
+      },
+      "run_dir": "/home/ibrahim/Documents/GO-2 PRIMP/primp_project/results/landing_pad/study/held_out_heights/recordings/pad_reactive_20260921T074511_234520Z",
+      "signals_sha256": "9e47e8cecdd1163e811f5e24b8b6c107d98992b6cea606b57ba45c783e3e95af",
+      "metadata_sha256": "30a807f39ebcd3a633752449e0916c28df2e1dd7c721108ff70eb9c08bebc01a",
+      "summary_sha256": "88ed00ac5d3c1194488cc5460f0f595126280ca8a59feb143f84275ac159896b",
+      "finished_at": "2026-09-21T07:45:48.340578+00:00"
+    },
+    "heldout_predictive_h+7.5mm_clean": {
+      "trial_id": "heldout_predictive_h+7.5mm_clean",
+      "status": "completed",
+      "passed": true,
+      "started_at": "2026-09-21T07:45:48.340906+00:00",
+      "source_sha256": "01d9de9112da805eb9590f2e13439d3f0584415016fc0c2b5c661161074f5cb0",
+      "model_sha256": null,
+      "parameters": {
+        "trial_id": "heldout_predictive_h+7.5mm_clean",
+        "actual_height_m": 0.0075,
+        "initial_estimate_m": 0.0,
+        "planner": "predictive",
+        "role": "evaluation",
+        "lower_duration_s": 4.0,
+        "sensor_profile": "clean",
+        "seed": 17
+      },
+      "run_dir": "/home/ibrahim/Documents/GO-2 PRIMP/primp_project/results/landing_pad/study/held_out_heights/recordings/pad_predictive_20260921T074548_342858Z",
+      "signals_sha256": "2609ed7c088ab8f07ae10d5ac379aeed19c46a1851acf2d7d2300488aed1f766",
+      "metadata_sha256": "ad09bb7af5f45dba6dfe17ccb374d071206e8e9d34f3eb434657f93a222bf365",
+      "summary_sha256": "aa75d3ba8a851355df730a1b4d7d3bfe9abafb0cd7eb9aebc6c48c2669c7ac93",
+      "finished_at": "2026-09-21T07:46:25.592462+00:00"
+    },
+    "heldout_learned_h+7.5mm_clean": {
+      "trial_id": "heldout_learned_h+7.5mm_clean",
+      "status": "completed",
+      "passed": true,
+      "started_at": "2026-09-21T07:46:25.593366+00:00",
+      "source_sha256": "01d9de9112da805eb9590f2e13439d3f0584415016fc0c2b5c661161074f5cb0",
+      "model_sha256": "dbd348e8f86bba50f1374b135816b8b0bec86af86d3496dac223dd3db585f5c5",
+      "parameters": {
+        "trial_id": "heldout_learned_h+7.5mm_clean",
+        "actual_height_m": 0.0075,
+        "initial_estimate_m": 0.0,
+        "planner": "learned",
+        "role": "evaluation",
+        "lower_duration_s": 4.0,
+        "sensor_profile": "clean",
+        "seed": 17
+      },
+      "run_dir": "/home/ibrahim/Documents/GO-2 PRIMP/primp_project/results/landing_pad/study/held_out_heights/recordings/pad_learned_20260921T074625_602021Z",
+      "signals_sha256": "6fc96abcf1dbbe0a4c7f7940ce4a63e25dfdea4c9e8ab8dbf552e98412de5308",
+      "metadata_sha256": "fb642a9a94474a906b27c3e8a07de0d7f66d51d3906bbd18f672e9668599b510",
+      "summary_sha256": "5febbd402c4100c57d966c32c092ccc4440b9821878549847fc7916f0dda644e",
+      "finished_at": "2026-09-21T07:47:03.209704+00:00"
+    }
+  },
+  "model": {
+    "path": "/home/ibrahim/Documents/GO-2 PRIMP/primp_project/results/landing_pad/study/model/model.npz",
+    "model_sha256": "dbd348e8f86bba50f1374b135816b8b0bec86af86d3496dac223dd3db585f5c5",
+    "trained_at": "2026-09-21T07:19:32.925959+00:00",
+    "training_run_ids": [
+      "pad_reactive_20260921T071336_628655Z",
+      "pad_reactive_20260921T071412_218286Z",
+      "pad_reactive_20260921T071447_116871Z",
+      "pad_reactive_20260921T071523_197312Z",
+      "pad_reactive_20260921T071557_323885Z",
+      "pad_reactive_20260921T071632_779659Z",
+      "pad_reactive_20260921T071709_594333Z",
+      "pad_reactive_20260921T071743_601080Z",
+      "pad_reactive_20260921T071818_547110Z"
+    ],
+    "split_manifest_sha256": "7e3466ce5048816090589f99ac86748506e25105e284ce4b31be6f0b6e94edd7"
+  },
+  "primary_study_directory": "/home/ibrahim/Documents/GO-2 PRIMP/primp_project/results/landing_pad/study",
+  "updated_at": "2026-09-21T07:47:03.209715+00:00"
+}

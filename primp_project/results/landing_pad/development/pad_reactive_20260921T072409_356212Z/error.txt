@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/home/ibrahim/Documents/GO-2 PRIMP/primp_project/experiments/pad.py", line 51, in run_trial
+    run_simulation(qpympc_cfg=cfg, num_episodes=1, num_seconds_per_episode=55,
+  File "/home/ibrahim/Documents/GO-2 PRIMP/simulation/simulation.py", line 243, in run_simulation
+    tau = quadrupedpympc_wrapper.compute_actions(
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ibrahim/Documents/GO-2 PRIMP/primp_project/control/controlled_step.py", line 229, in compute_actions
+    self.update_phase(t, feet, com, contacts, normal, a['base_lin_vel'])
+  File "/home/ibrahim/Documents/GO-2 PRIMP/primp_project/control/landing_pad.py", line 76, in update_phase
+    raise RuntimeError('No confirmed landing within bounded descent/time limits')
+RuntimeError: No confirmed landing within bounded descent/time limits

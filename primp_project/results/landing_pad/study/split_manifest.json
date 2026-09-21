@@ -1,0 +1,291 @@
+{
+  "version": 1,
+  "study": "adjustable_landing_pad_pilot",
+  "demonstrations": [
+    {
+      "trial_id": "demo_h-10mm_t3s",
+      "actual_height_m": -0.01,
+      "initial_estimate_m": -0.01,
+      "planner": "reactive",
+      "role": "demonstration",
+      "lower_duration_s": 3.0,
+      "sensor_profile": "clean",
+      "seed": 17
+    },
+    {
+      "trial_id": "demo_h-10mm_t4s",
+      "actual_height_m": -0.01,
+      "initial_estimate_m": -0.01,
+      "planner": "reactive",
+      "role": "demonstration",
+      "lower_duration_s": 4.0,
+      "sensor_profile": "clean",
+      "seed": 17
+    },
+    {
+      "trial_id": "demo_h-10mm_t5s",
+      "actual_height_m": -0.01,
+      "initial_estimate_m": -0.01,
+      "planner": "reactive",
+      "role": "demonstration",
+      "lower_duration_s": 5.0,
+      "sensor_profile": "clean",
+      "seed": 17
+    },
+    {
+      "trial_id": "demo_h+00mm_t3s",
+      "actual_height_m": 0.0,
+      "initial_estimate_m": 0.0,
+      "planner": "reactive",
+      "role": "demonstration",
+      "lower_duration_s": 3.0,
+      "sensor_profile": "clean",
+      "seed": 17
+    },
+    {
+      "trial_id": "demo_h+00mm_t4s",
+      "actual_height_m": 0.0,
+      "initial_estimate_m": 0.0,
+      "planner": "reactive",
+      "role": "demonstration",
+      "lower_duration_s": 4.0,
+      "sensor_profile": "clean",
+      "seed": 17
+    },
+    {
+      "trial_id": "demo_h+00mm_t5s",
+      "actual_height_m": 0.0,
+      "initial_estimate_m": 0.0,
+      "planner": "reactive",
+      "role": "demonstration",
+      "lower_duration_s": 5.0,
+      "sensor_profile": "clean",
+      "seed": 17
+    },
+    {
+      "trial_id": "demo_h+10mm_t3s",
+      "actual_height_m": 0.01,
+      "initial_estimate_m": 0.01,
+      "planner": "reactive",
+      "role": "demonstration",
+      "lower_duration_s": 3.0,
+      "sensor_profile": "clean",
+      "seed": 17
+    },
+    {
+      "trial_id": "demo_h+10mm_t4s",
+      "actual_height_m": 0.01,
+      "initial_estimate_m": 0.01,
+      "planner": "reactive",
+      "role": "demonstration",
+      "lower_duration_s": 4.0,
+      "sensor_profile": "clean",
+      "seed": 17
+    },
+    {
+      "trial_id": "demo_h+10mm_t5s",
+      "actual_height_m": 0.01,
+      "initial_estimate_m": 0.01,
+      "planner": "reactive",
+      "role": "demonstration",
+      "lower_duration_s": 5.0,
+      "sensor_profile": "clean",
+      "seed": 17
+    }
+  ],
+  "evaluations": [
+    {
+      "trial_id": "eval_reactive_h-05mm_clean",
+      "actual_height_m": -0.005,
+      "initial_estimate_m": 0.0,
+      "planner": "reactive",
+      "role": "evaluation",
+      "lower_duration_s": 4.0,
+      "sensor_profile": "clean",
+      "seed": 17
+    },
+    {
+      "trial_id": "eval_predictive_h-05mm_clean",
+      "actual_height_m": -0.005,
+      "initial_estimate_m": 0.0,
+      "planner": "predictive",
+      "role": "evaluation",
+      "lower_duration_s": 4.0,
+      "sensor_profile": "clean",
+      "seed": 17
+    },
+    {
+      "trial_id": "eval_learned_h-05mm_clean",
+      "actual_height_m": -0.005,
+      "initial_estimate_m": 0.0,
+      "planner": "learned",
+      "role": "evaluation",
+      "lower_duration_s": 4.0,
+      "sensor_profile": "clean",
+      "seed": 17
+    },
+    {
+      "trial_id": "eval_reactive_h+00mm_clean",
+      "actual_height_m": 0.0,
+      "initial_estimate_m": 0.0,
+      "planner": "reactive",
+      "role": "evaluation",
+      "lower_duration_s": 4.0,
+      "sensor_profile": "clean",
+      "seed": 17
+    },
+    {
+      "trial_id": "eval_predictive_h+00mm_clean",
+      "actual_height_m": 0.0,
+      "initial_estimate_m": 0.0,
+      "planner": "predictive",
+      "role": "evaluation",
+      "lower_duration_s": 4.0,
+      "sensor_profile": "clean",
+      "seed": 17
+    },
+    {
+      "trial_id": "eval_learned_h+00mm_clean",
+      "actual_height_m": 0.0,
+      "initial_estimate_m": 0.0,
+      "planner": "learned",
+      "role": "evaluation",
+      "lower_duration_s": 4.0,
+      "sensor_profile": "clean",
+      "seed": 17
+    },
+    {
+      "trial_id": "eval_reactive_h+05mm_clean",
+      "actual_height_m": 0.005,
+      "initial_estimate_m": 0.0,
+      "planner": "reactive",
+      "role": "evaluation",
+      "lower_duration_s": 4.0,
+      "sensor_profile": "clean",
+      "seed": 17
+    },
+    {
+      "trial_id": "eval_predictive_h+05mm_clean",
+      "actual_height_m": 0.005,
+      "initial_estimate_m": 0.0,
+      "planner": "predictive",
+      "role": "evaluation",
+      "lower_duration_s": 4.0,
+      "sensor_profile": "clean",
+      "seed": 17
+    },
+    {
+      "trial_id": "eval_learned_h+05mm_clean",
+      "actual_height_m": 0.005,
+      "initial_estimate_m": 0.0,
+      "planner": "learned",
+      "role": "evaluation",
+      "lower_duration_s": 4.0,
+      "sensor_profile": "clean",
+      "seed": 17
+    },
+    {
+      "trial_id": "eval_reactive_h-05mm_noisy_delayed",
+      "actual_height_m": -0.005,
+      "initial_estimate_m": 0.0,
+      "planner": "reactive",
+      "role": "evaluation",
+      "lower_duration_s": 4.0,
+      "sensor_profile": "noisy_delayed",
+      "seed": 17
+    },
+    {
+      "trial_id": "eval_predictive_h-05mm_noisy_delayed",
+      "actual_height_m": -0.005,
+      "initial_estimate_m": 0.0,
+      "planner": "predictive",
+      "role": "evaluation",
+      "lower_duration_s": 4.0,
+      "sensor_profile": "noisy_delayed",
+      "seed": 17
+    },
+    {
+      "trial_id": "eval_learned_h-05mm_noisy_delayed",
+      "actual_height_m": -0.005,
+      "initial_estimate_m": 0.0,
+      "planner": "learned",
+      "role": "evaluation",
+      "lower_duration_s": 4.0,
+      "sensor_profile": "noisy_delayed",
+      "seed": 17
+    },
+    {
+      "trial_id": "eval_reactive_h+00mm_noisy_delayed",
+      "actual_height_m": 0.0,
+      "initial_estimate_m": 0.0,
+      "planner": "reactive",
+      "role": "evaluation",
+      "lower_duration_s": 4.0,
+      "sensor_profile": "noisy_delayed",
+      "seed": 17
+    },
+    {
+      "trial_id": "eval_predictive_h+00mm_noisy_delayed",
+      "actual_height_m": 0.0,
+      "initial_estimate_m": 0.0,
+      "planner": "predictive",
+      "role": "evaluation",
+      "lower_duration_s": 4.0,
+      "sensor_profile": "noisy_delayed",
+      "seed": 17
+    },
+    {
+      "trial_id": "eval_learned_h+00mm_noisy_delayed",
+      "actual_height_m": 0.0,
+      "initial_estimate_m": 0.0,
+      "planner": "learned",
+      "role": "evaluation",
+      "lower_duration_s": 4.0,
+      "sensor_profile": "noisy_delayed",
+      "seed": 17
+    },
+    {
+      "trial_id": "eval_reactive_h+05mm_noisy_delayed",
+      "actual_height_m": 0.005,
+      "initial_estimate_m": 0.0,
+      "planner": "reactive",
+      "role": "evaluation",
+      "lower_duration_s": 4.0,
+      "sensor_profile": "noisy_delayed",
+      "seed": 17
+    },
+    {
+      "trial_id": "eval_predictive_h+05mm_noisy_delayed",
+      "actual_height_m": 0.005,
+      "initial_estimate_m": 0.0,
+      "planner": "predictive",
+      "role": "evaluation",
+      "lower_duration_s": 4.0,
+      "sensor_profile": "noisy_delayed",
+      "seed": 17
+    },
+    {
+      "trial_id": "eval_learned_h+05mm_noisy_delayed",
+      "actual_height_m": 0.005,
+      "initial_estimate_m": 0.0,
+      "planner": "learned",
+      "role": "evaluation",
+      "lower_duration_s": 4.0,
+      "sensor_profile": "noisy_delayed",
+      "seed": 17
+    }
+  ],
+  "evaluation_policy": {
+    "repetitions_per_cell": 1,
+    "seed": 17,
+    "held_out_heights_m": [
+      -0.005,
+      0.005
+    ],
+    "calibration_height_m": 0.0,
+    "held_out_sensor_profile": "noisy_delayed",
+    "shared": "Initial estimate, sensing settings, execution controller, contact gates and feasibility limits",
+    "conclusions": "Descriptive simulation pilot; no statistical superiority claim"
+  },
+  "created_at": "2026-09-21T07:13:36.176131+00:00"
+}

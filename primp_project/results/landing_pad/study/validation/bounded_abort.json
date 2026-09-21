@@ -1,0 +1,12 @@
+{
+  "run_dir": "/home/ibrahim/Documents/GO-2 PRIMP/primp_project/results/landing_pad/development/pad_reactive_20260921T072409_356212Z",
+  "expected_outcome": "bounded abort without weight transfer",
+  "recording_passed": false,
+  "error": "RuntimeError: No confirmed landing within bounded descent/time limits",
+  "no_reload": true,
+  "selected_support_off": true,
+  "three_support_contacts": true,
+  "minimum_commanded_bottom_m": -0.024,
+  "maximum_roll_pitch_deg": 0.43570502247900955,
+  "expected_guard_passed": true
+}

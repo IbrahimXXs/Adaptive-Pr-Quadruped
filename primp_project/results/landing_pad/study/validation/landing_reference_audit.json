@@ -1,0 +1,2179 @@
+{
+  "audit": "Read-only reference bound/cadence audit; original recordings and reports unchanged",
+  "runs": [
+    {
+      "run": "pad_reactive_20260921T071336_628655Z",
+      "group": "demonstrations",
+      "passed": true,
+      "failed": [],
+      "checks": {
+        "pad_reference_limit_configuration": {
+          "passed": true,
+          "requirement": "Declared reference limits are positive and no looser than the shared executor limits",
+          "observed": {
+            "max_foot_speed_m_s": 0.015,
+            "search_speed_m_s": 0.005,
+            "max_com_speed_m_s": 0.008,
+            "max_body_displacement_m": 0.012,
+            "target_xy_tolerance_m": 0.005,
+            "max_orientation_deviation_rad": 0.03490658503988659,
+            "max_orientation_rate_rad_s": 0.02
+          }
+        },
+        "pad_finite_planner_signals": {
+          "passed": true,
+          "requirement": "All recorded planner, belief, and applied reference quantities are finite",
+          "observed": null
+        },
+        "pad_commanded_foot_speed": {
+          "passed": true,
+          "requirement": "Applied foot-position differences during lowering/confirmation respect the nominal speed limit",
+          "observed": {
+            "maximum_m_s": 0.014562457361444204,
+            "limit_m_s": 0.015
+          }
+        },
+        "pad_commanded_com_speed": {
+          "passed": true,
+          "requirement": "Applied CoM-position differences respect the shared body-speed limit",
+          "observed": {
+            "maximum_m_s": 0.008000000000124031,
+            "limit_m_s": 0.008
+          }
+        },
+        "pad_monotone_lowering": {
+          "passed": true,
+          "requirement": "Applied foot Z never rises during lowering or contact confirmation",
+          "observed": {
+            "maximum_upward_speed_m_s": 0.0
+          }
+        },
+        "pad_commanded_body_displacement": {
+          "passed": true,
+          "requirement": "Each CoM coordinate stays within the permitted displacement from lowering entry",
+          "observed": {
+            "maximum_m": 0.004483490305513038,
+            "limit_m": 0.012
+          }
+        },
+        "pad_commanded_target_xy": {
+          "passed": true,
+          "requirement": "The selected foot reference stays within the nominal landing-target XY bounds",
+          "observed": {
+            "maximum_coordinate_error_m": 0.0,
+            "limit_m": 0.005
+          }
+        },
+        "pad_commanded_orientation": {
+          "passed": true,
+          "requirement": "Each body-orientation reference coordinate respects displacement and rate limits",
+          "observed": {
+            "maximum_deviation_rad": 0.0,
+            "maximum_rate_rad_s": 0.0
+          }
+        },
+        "pad_contact_reference_freeze": {
+          "passed": true,
+          "requirement": "Applied body and foot positions remain fixed while loaded contact is being confirmed",
+          "observed": {
+            "maximum_foot_speed_m_s": 0.0,
+            "maximum_com_speed_m_s": 0.0
+          }
+        },
+        "pad_planner_update_cadence": {
+          "passed": true,
+          "requirement": "Planner updates at 20 Hz while active, pauses for loaded-contact debounce, and updates immediately on resume",
+          "observed": {
+            "frequency_hz": 20.0,
+            "period_steps": 25,
+            "missing_updates": 0,
+            "unexpected_updates": 0
+          }
+        },
+        "pad_commanded_recovery_speed": {
+          "passed": true,
+          "requirement": "Segments planned after sensed missing contact respect bounded slow descent, allowing one planning-tick latency",
+          "observed": {
+            "checked_intervals": 0,
+            "maximum_m_s": null,
+            "limit_m_s": 0.005
+          }
+        }
+      },
+      "signals_sha256": "f72ecf567eb80b34d2c7edf2dc28005d77e314437bd569172ba05421fe04f581",
+      "metadata_sha256": "eb207d6e584097f925de6171c7eb3db7465055ccc5e84d4268c84a3767745f40",
+      "summary_sha256": "34fb5bffbcf88a9160a5cf6e890478f12518667cf06c43759787a892ce617b65"
+    },
+    {
+      "run": "pad_reactive_20260921T071412_218286Z",
+      "group": "demonstrations",
+      "passed": true,
+      "failed": [],
+      "checks": {
+        "pad_reference_limit_configuration": {
+          "passed": true,
+          "requirement": "Declared reference limits are positive and no looser than the shared executor limits",
+          "observed": {
+            "max_foot_speed_m_s": 0.015,
+            "search_speed_m_s": 0.005,
+            "max_com_speed_m_s": 0.008,
+            "max_body_displacement_m": 0.012,
+            "target_xy_tolerance_m": 0.005,
+            "max_orientation_deviation_rad": 0.03490658503988659,
+            "max_orientation_rate_rad_s": 0.02
+          }
+        },
+        "pad_finite_planner_signals": {
+          "passed": true,
+          "requirement": "All recorded planner, belief, and applied reference quantities are finite",
+          "observed": null
+        },
+        "pad_commanded_foot_speed": {
+          "passed": true,
+          "requirement": "Applied foot-position differences during lowering/confirmation respect the nominal speed limit",
+          "observed": {
+            "maximum_m_s": 0.010921843021083151,
+            "limit_m_s": 0.015
+          }
+        },
+        "pad_commanded_com_speed": {
+          "passed": true,
+          "requirement": "Applied CoM-position differences respect the shared body-speed limit",
+          "observed": {
+            "maximum_m_s": 0.008000000000126843,
+            "limit_m_s": 0.008
+          }
+        },
+        "pad_monotone_lowering": {
+          "passed": true,
+          "requirement": "Applied foot Z never rises during lowering or contact confirmation",
+          "observed": {
+            "maximum_upward_speed_m_s": 0.0
+          }
+        },
+        "pad_commanded_body_displacement": {
+          "passed": true,
+          "requirement": "Each CoM coordinate stays within the permitted displacement from lowering entry",
+          "observed": {
+            "maximum_m": 0.004548093047342383,
+            "limit_m": 0.012
+          }
+        },
+        "pad_commanded_target_xy": {
+          "passed": true,
+          "requirement": "The selected foot reference stays within the nominal landing-target XY bounds",
+          "observed": {
+            "maximum_coordinate_error_m": 0.0,
+            "limit_m": 0.005
+          }
+        },
+        "pad_commanded_orientation": {
+          "passed": true,
+          "requirement": "Each body-orientation reference coordinate respects displacement and rate limits",
+          "observed": {
+            "maximum_deviation_rad": 0.0,
+            "maximum_rate_rad_s": 0.0
+          }
+        },
+        "pad_contact_reference_freeze": {
+          "passed": true,
+          "requirement": "Applied body and foot positions remain fixed while loaded contact is being confirmed",
+          "observed": {
+            "maximum_foot_speed_m_s": 0.0,
+            "maximum_com_speed_m_s": 0.0
+          }
+        },
+        "pad_planner_update_cadence": {
+          "passed": true,
+          "requirement": "Planner updates at 20 Hz while active, pauses for loaded-contact debounce, and updates immediately on resume",
+          "observed": {
+            "frequency_hz": 20.0,
+            "period_steps": 25,
+            "missing_updates": 0,
+            "unexpected_updates": 0
+          }
+        },
+        "pad_commanded_recovery_speed": {
+          "passed": true,
+          "requirement": "Segments planned after sensed missing contact respect bounded slow descent, allowing one planning-tick latency",
+          "observed": {
+            "checked_intervals": 0,
+            "maximum_m_s": null,
+            "limit_m_s": 0.005
+          }
+        }
+      },
+      "signals_sha256": "6d3bf963ab75fe33169d1242e14401a95f28e60993fd8054d5799b3772661c79",
+      "metadata_sha256": "080bff02e58bcfe5fd89f84abfc166825cb368b61fb354ff2331666c4bc59013",
+      "summary_sha256": "a1dbd8ddbd534f414157cf18d28a2f413238e69c718b73e405de492c283dcf51"
+    },
+    {
+      "run": "pad_reactive_20260921T071447_116871Z",
+      "group": "demonstrations",
+      "passed": true,
+      "failed": [],
+      "checks": {
+        "pad_reference_limit_configuration": {
+          "passed": true,
+          "requirement": "Declared reference limits are positive and no looser than the shared executor limits",
+          "observed": {
+            "max_foot_speed_m_s": 0.015,
+            "search_speed_m_s": 0.005,
+            "max_com_speed_m_s": 0.008,
+            "max_body_displacement_m": 0.012,
+            "target_xy_tolerance_m": 0.005,
+            "max_orientation_deviation_rad": 0.03490658503988659,
+            "max_orientation_rate_rad_s": 0.02
+          }
+        },
+        "pad_finite_planner_signals": {
+          "passed": true,
+          "requirement": "All recorded planner, belief, and applied reference quantities are finite",
+          "observed": null
+        },
+        "pad_commanded_foot_speed": {
+          "passed": true,
+          "requirement": "Applied foot-position differences during lowering/confirmation respect the nominal speed limit",
+          "observed": {
+            "maximum_m_s": 0.008737474416866522,
+            "limit_m_s": 0.015
+          }
+        },
+        "pad_commanded_com_speed": {
+          "passed": true,
+          "requirement": "Applied CoM-position differences respect the shared body-speed limit",
+          "observed": {
+            "maximum_m_s": 0.008000000000124593,
+            "limit_m_s": 0.008
+          }
+        },
+        "pad_monotone_lowering": {
+          "passed": true,
+          "requirement": "Applied foot Z never rises during lowering or contact confirmation",
+          "observed": {
+            "maximum_upward_speed_m_s": 0.0
+          }
+        },
+        "pad_commanded_body_displacement": {
+          "passed": true,
+          "requirement": "Each CoM coordinate stays within the permitted displacement from lowering entry",
+          "observed": {
+            "maximum_m": 0.004529387885735259,
+            "limit_m": 0.012
+          }
+        },
+        "pad_commanded_target_xy": {
+          "passed": true,
+          "requirement": "The selected foot reference stays within the nominal landing-target XY bounds",
+          "observed": {
+            "maximum_coordinate_error_m": 0.0,
+            "limit_m": 0.005
+          }
+        },
+        "pad_commanded_orientation": {
+          "passed": true,
+          "requirement": "Each body-orientation reference coordinate respects displacement and rate limits",
+          "observed": {
+            "maximum_deviation_rad": 0.0,
+            "maximum_rate_rad_s": 0.0
+          }
+        },
+        "pad_contact_reference_freeze": {
+          "passed": true,
+          "requirement": "Applied body and foot positions remain fixed while loaded contact is being confirmed",
+          "observed": {
+            "maximum_foot_speed_m_s": 0.0,
+            "maximum_com_speed_m_s": 0.0
+          }
+        },
+        "pad_planner_update_cadence": {
+          "passed": true,
+          "requirement": "Planner updates at 20 Hz while active, pauses for loaded-contact debounce, and updates immediately on resume",
+          "observed": {
+            "frequency_hz": 20.0,
+            "period_steps": 25,
+            "missing_updates": 0,
+            "unexpected_updates": 0
+          }
+        },
+        "pad_commanded_recovery_speed": {
+          "passed": true,
+          "requirement": "Segments planned after sensed missing contact respect bounded slow descent, allowing one planning-tick latency",
+          "observed": {
+            "checked_intervals": 0,
+            "maximum_m_s": null,
+            "limit_m_s": 0.005
+          }
+        }
+      },
+      "signals_sha256": "009e4df37fc2f8b494cc401ff0284250002dfbf256633cc7e3b2319baaeb5a34",
+      "metadata_sha256": "0924dba9b732788cc89a8b795f6bdc32d5713ef8376cf90145b1edc9385ce8b3",
+      "summary_sha256": "8bf8e55af8fd7277e1d74bfc260aca6597902522d020ed7d038a1dc67bfd1b19"
+    },
+    {
+      "run": "pad_reactive_20260921T071523_197312Z",
+      "group": "demonstrations",
+      "passed": true,
+      "failed": [],
+      "checks": {
+        "pad_reference_limit_configuration": {
+          "passed": true,
+          "requirement": "Declared reference limits are positive and no looser than the shared executor limits",
+          "observed": {
+            "max_foot_speed_m_s": 0.015,
+            "search_speed_m_s": 0.005,
+            "max_com_speed_m_s": 0.008,
+            "max_body_displacement_m": 0.012,
+            "target_xy_tolerance_m": 0.005,
+            "max_orientation_deviation_rad": 0.03490658503988659,
+            "max_orientation_rate_rad_s": 0.02
+          }
+        },
+        "pad_finite_planner_signals": {
+          "passed": true,
+          "requirement": "All recorded planner, belief, and applied reference quantities are finite",
+          "observed": null
+        },
+        "pad_commanded_foot_speed": {
+          "passed": true,
+          "requirement": "Applied foot-position differences during lowering/confirmation respect the nominal speed limit",
+          "observed": {
+            "maximum_m_s": 0.011229124028066369,
+            "limit_m_s": 0.015
+          }
+        },
+        "pad_commanded_com_speed": {
+          "passed": true,
+          "requirement": "Applied CoM-position differences respect the shared body-speed limit",
+          "observed": {
+            "maximum_m_s": 0.008000000000113808,
+            "limit_m_s": 0.008
+          }
+        },
+        "pad_monotone_lowering": {
+          "passed": true,
+          "requirement": "Applied foot Z never rises during lowering or contact confirmation",
+          "observed": {
+            "maximum_upward_speed_m_s": 0.0
+          }
+        },
+        "pad_commanded_body_displacement": {
+          "passed": true,
+          "requirement": "Each CoM coordinate stays within the permitted displacement from lowering entry",
+          "observed": {
+            "maximum_m": 0.001537796017327453,
+            "limit_m": 0.012
+          }
+        },
+        "pad_commanded_target_xy": {
+          "passed": true,
+          "requirement": "The selected foot reference stays within the nominal landing-target XY bounds",
+          "observed": {
+            "maximum_coordinate_error_m": 0.0,
+            "limit_m": 0.005
+          }
+        },
+        "pad_commanded_orientation": {
+          "passed": true,
+          "requirement": "Each body-orientation reference coordinate respects displacement and rate limits",
+          "observed": {
+            "maximum_deviation_rad": 0.0,
+            "maximum_rate_rad_s": 0.0
+          }
+        },
+        "pad_contact_reference_freeze": {
+          "passed": true,
+          "requirement": "Applied body and foot positions remain fixed while loaded contact is being confirmed",
+          "observed": {
+            "maximum_foot_speed_m_s": 0.0,
+            "maximum_com_speed_m_s": 0.0
+          }
+        },
+        "pad_planner_update_cadence": {
+          "passed": true,
+          "requirement": "Planner updates at 20 Hz while active, pauses for loaded-contact debounce, and updates immediately on resume",
+          "observed": {
+            "frequency_hz": 20.0,
+            "period_steps": 25,
+            "missing_updates": 0,
+            "unexpected_updates": 0
+          }
+        },
+        "pad_commanded_recovery_speed": {
+          "passed": true,
+          "requirement": "Segments planned after sensed missing contact respect bounded slow descent, allowing one planning-tick latency",
+          "observed": {
+            "checked_intervals": 0,
+            "maximum_m_s": null,
+            "limit_m_s": 0.005
+          }
+        }
+      },
+      "signals_sha256": "eb60d62e0975f856a87eaf76896dc08bd1c4dac3b97abaaeb92fabff703eaf15",
+      "metadata_sha256": "858aaab33971fce52108b7be16c1a53d15693a78a127f1ce0dcb821aedbf32b6",
+      "summary_sha256": "6dbffc59ca73292008163c4026da242a3f5bddaf331f7fa9682b44746f8d635f"
+    },
+    {
+      "run": "pad_reactive_20260921T071557_323885Z",
+      "group": "demonstrations",
+      "passed": true,
+      "failed": [],
+      "checks": {
+        "pad_reference_limit_configuration": {
+          "passed": true,
+          "requirement": "Declared reference limits are positive and no looser than the shared executor limits",
+          "observed": {
+            "max_foot_speed_m_s": 0.015,
+            "search_speed_m_s": 0.005,
+            "max_com_speed_m_s": 0.008,
+            "max_body_displacement_m": 0.012,
+            "target_xy_tolerance_m": 0.005,
+            "max_orientation_deviation_rad": 0.03490658503988659,
+            "max_orientation_rate_rad_s": 0.02
+          }
+        },
+        "pad_finite_planner_signals": {
+          "passed": true,
+          "requirement": "All recorded planner, belief, and applied reference quantities are finite",
+          "observed": null
+        },
+        "pad_commanded_foot_speed": {
+          "passed": true,
+          "requirement": "Applied foot-position differences during lowering/confirmation respect the nominal speed limit",
+          "observed": {
+            "maximum_m_s": 0.008421843021048042,
+            "limit_m_s": 0.015
+          }
+        },
+        "pad_commanded_com_speed": {
+          "passed": true,
+          "requirement": "Applied CoM-position differences respect the shared body-speed limit",
+          "observed": {
+            "maximum_m_s": 0.00800000000012625,
+            "limit_m_s": 0.008
+          }
+        },
+        "pad_monotone_lowering": {
+          "passed": true,
+          "requirement": "Applied foot Z never rises during lowering or contact confirmation",
+          "observed": {
+            "maximum_upward_speed_m_s": 0.0
+          }
+        },
+        "pad_commanded_body_displacement": {
+          "passed": true,
+          "requirement": "Each CoM coordinate stays within the permitted displacement from lowering entry",
+          "observed": {
+            "maximum_m": 0.001549892822458987,
+            "limit_m": 0.012
+          }
+        },
+        "pad_commanded_target_xy": {
+          "passed": true,
+          "requirement": "The selected foot reference stays within the nominal landing-target XY bounds",
+          "observed": {
+            "maximum_coordinate_error_m": 0.0,
+            "limit_m": 0.005
+          }
+        },
+        "pad_commanded_orientation": {
+          "passed": true,
+          "requirement": "Each body-orientation reference coordinate respects displacement and rate limits",
+          "observed": {
+            "maximum_deviation_rad": 0.0,
+            "maximum_rate_rad_s": 0.0
+          }
+        },
+        "pad_contact_reference_freeze": {
+          "passed": true,
+          "requirement": "Applied body and foot positions remain fixed while loaded contact is being confirmed",
+          "observed": {
+            "maximum_foot_speed_m_s": 0.0,
+            "maximum_com_speed_m_s": 0.0
+          }
+        },
+        "pad_planner_update_cadence": {
+          "passed": true,
+          "requirement": "Planner updates at 20 Hz while active, pauses for loaded-contact debounce, and updates immediately on resume",
+          "observed": {
+            "frequency_hz": 20.0,
+            "period_steps": 25,
+            "missing_updates": 0,
+            "unexpected_updates": 0
+          }
+        },
+        "pad_commanded_recovery_speed": {
+          "passed": true,
+          "requirement": "Segments planned after sensed missing contact respect bounded slow descent, allowing one planning-tick latency",
+          "observed": {
+            "checked_intervals": 0,
+            "maximum_m_s": null,
+            "limit_m_s": 0.005
+          }
+        }
+      },
+      "signals_sha256": "2f4f621b6468c868cd2241ee7f0b360bae89dc7c314f5e201e07aa6c46442706",
+      "metadata_sha256": "82f4d8f0dd401288e212ba43791bf1b5cdc74d3f885183739a3b1bb2c77ec2e2",
+      "summary_sha256": "5ee670bc473b0e286fb150ab696cfdb6dbf11823bdf8e68a26d7030b0fa6d41f"
+    },
+    {
+      "run": "pad_reactive_20260921T071632_779659Z",
+      "group": "demonstrations",
+      "passed": true,
+      "failed": [],
+      "checks": {
+        "pad_reference_limit_configuration": {
+          "passed": true,
+          "requirement": "Declared reference limits are positive and no looser than the shared executor limits",
+          "observed": {
+            "max_foot_speed_m_s": 0.015,
+            "search_speed_m_s": 0.005,
+            "max_com_speed_m_s": 0.008,
+            "max_body_displacement_m": 0.012,
+            "target_xy_tolerance_m": 0.005,
+            "max_orientation_deviation_rad": 0.03490658503988659,
+            "max_orientation_rate_rad_s": 0.02
+          }
+        },
+        "pad_finite_planner_signals": {
+          "passed": true,
+          "requirement": "All recorded planner, belief, and applied reference quantities are finite",
+          "observed": null
+        },
+        "pad_commanded_foot_speed": {
+          "passed": true,
+          "requirement": "Applied foot-position differences during lowering/confirmation respect the nominal speed limit",
+          "observed": {
+            "maximum_m_s": 0.006737474416839127,
+            "limit_m_s": 0.015
+          }
+        },
+        "pad_commanded_com_speed": {
+          "passed": true,
+          "requirement": "Applied CoM-position differences respect the shared body-speed limit",
+          "observed": {
+            "maximum_m_s": 0.008000000000118149,
+            "limit_m_s": 0.008
+          }
+        },
+        "pad_monotone_lowering": {
+          "passed": true,
+          "requirement": "Applied foot Z never rises during lowering or contact confirmation",
+          "observed": {
+            "maximum_upward_speed_m_s": 0.0
+          }
+        },
+        "pad_commanded_body_displacement": {
+          "passed": true,
+          "requirement": "Each CoM coordinate stays within the permitted displacement from lowering entry",
+          "observed": {
+            "maximum_m": 0.0015353205432766526,
+            "limit_m": 0.012
+          }
+        },
+        "pad_commanded_target_xy": {
+          "passed": true,
+          "requirement": "The selected foot reference stays within the nominal landing-target XY bounds",
+          "observed": {
+            "maximum_coordinate_error_m": 0.0,
+            "limit_m": 0.005
+          }
+        },
+        "pad_commanded_orientation": {
+          "passed": true,
+          "requirement": "Each body-orientation reference coordinate respects displacement and rate limits",
+          "observed": {
+            "maximum_deviation_rad": 0.0,
+            "maximum_rate_rad_s": 0.0
+          }
+        },
+        "pad_contact_reference_freeze": {
+          "passed": true,
+          "requirement": "Applied body and foot positions remain fixed while loaded contact is being confirmed",
+          "observed": {
+            "maximum_foot_speed_m_s": 0.0,
+            "maximum_com_speed_m_s": 0.0
+          }
+        },
+        "pad_planner_update_cadence": {
+          "passed": true,
+          "requirement": "Planner updates at 20 Hz while active, pauses for loaded-contact debounce, and updates immediately on resume",
+          "observed": {
+            "frequency_hz": 20.0,
+            "period_steps": 25,
+            "missing_updates": 0,
+            "unexpected_updates": 0
+          }
+        },
+        "pad_commanded_recovery_speed": {
+          "passed": true,
+          "requirement": "Segments planned after sensed missing contact respect bounded slow descent, allowing one planning-tick latency",
+          "observed": {
+            "checked_intervals": 0,
+            "maximum_m_s": null,
+            "limit_m_s": 0.005
+          }
+        }
+      },
+      "signals_sha256": "9552eb8be48b5e2bd9cf80bd5c02f1f0626a077d929c5dd475aa9f3ef01ab2f2",
+      "metadata_sha256": "17759ee56e85725166b2836c9db9deb2de9b2b8cfdcc25cd15359445f3fcc5ea",
+      "summary_sha256": "ecde372c8d3d197d7cc724fa92425e125a1a138a76fb89c46877a1b8ebd5e297"
+    },
+    {
+      "run": "pad_reactive_20260921T071709_594333Z",
+      "group": "demonstrations",
+      "passed": true,
+      "failed": [],
+      "checks": {
+        "pad_reference_limit_configuration": {
+          "passed": true,
+          "requirement": "Declared reference limits are positive and no looser than the shared executor limits",
+          "observed": {
+            "max_foot_speed_m_s": 0.015,
+            "search_speed_m_s": 0.005,
+            "max_com_speed_m_s": 0.008,
+            "max_body_displacement_m": 0.012,
+            "target_xy_tolerance_m": 0.005,
+            "max_orientation_deviation_rad": 0.03490658503988659,
+            "max_orientation_rate_rad_s": 0.02
+          }
+        },
+        "pad_finite_planner_signals": {
+          "passed": true,
+          "requirement": "All recorded planner, belief, and applied reference quantities are finite",
+          "observed": null
+        },
+        "pad_commanded_foot_speed": {
+          "passed": true,
+          "requirement": "Applied foot-position differences during lowering/confirmation respect the nominal speed limit",
+          "observed": {
+            "maximum_m_s": 0.007895790694685064,
+            "limit_m_s": 0.015
+          }
+        },
+        "pad_commanded_com_speed": {
+          "passed": true,
+          "requirement": "Applied CoM-position differences respect the shared body-speed limit",
+          "observed": {
+            "maximum_m_s": 0.00800000000013616,
+            "limit_m_s": 0.008
+          }
+        },
+        "pad_monotone_lowering": {
+          "passed": true,
+          "requirement": "Applied foot Z never rises during lowering or contact confirmation",
+          "observed": {
+            "maximum_upward_speed_m_s": 0.0
+          }
+        },
+        "pad_commanded_body_displacement": {
+          "passed": true,
+          "requirement": "Each CoM coordinate stays within the permitted displacement from lowering entry",
+          "observed": {
+            "maximum_m": 0.0029923933038396022,
+            "limit_m": 0.012
+          }
+        },
+        "pad_commanded_target_xy": {
+          "passed": true,
+          "requirement": "The selected foot reference stays within the nominal landing-target XY bounds",
+          "observed": {
+            "maximum_coordinate_error_m": 0.0,
+            "limit_m": 0.005
+          }
+        },
+        "pad_commanded_orientation": {
+          "passed": true,
+          "requirement": "Each body-orientation reference coordinate respects displacement and rate limits",
+          "observed": {
+            "maximum_deviation_rad": 0.0,
+            "maximum_rate_rad_s": 0.0
+          }
+        },
+        "pad_contact_reference_freeze": {
+          "passed": true,
+          "requirement": "Applied body and foot positions remain fixed while loaded contact is being confirmed",
+          "observed": {
+            "maximum_foot_speed_m_s": 0.0,
+            "maximum_com_speed_m_s": 0.0
+          }
+        },
+        "pad_planner_update_cadence": {
+          "passed": true,
+          "requirement": "Planner updates at 20 Hz while active, pauses for loaded-contact debounce, and updates immediately on resume",
+          "observed": {
+            "frequency_hz": 20.0,
+            "period_steps": 25,
+            "missing_updates": 0,
+            "unexpected_updates": 0
+          }
+        },
+        "pad_commanded_recovery_speed": {
+          "passed": true,
+          "requirement": "Segments planned after sensed missing contact respect bounded slow descent, allowing one planning-tick latency",
+          "observed": {
+            "checked_intervals": 0,
+            "maximum_m_s": null,
+            "limit_m_s": 0.005
+          }
+        }
+      },
+      "signals_sha256": "024e79f620adfe9a02b77a62444353b346b13ef1e054c0e57ad363a841ebdf74",
+      "metadata_sha256": "4caff17de574d283a287ccbdabcf7f929a36d5b475b668082d77aeb8a90a5276",
+      "summary_sha256": "0b3be06b1ea2afdb72eb9c7c7e5a935f1567913a5bc577768983f185a5b91efe"
+    },
+    {
+      "run": "pad_reactive_20260921T071743_601080Z",
+      "group": "demonstrations",
+      "passed": true,
+      "failed": [],
+      "checks": {
+        "pad_reference_limit_configuration": {
+          "passed": true,
+          "requirement": "Declared reference limits are positive and no looser than the shared executor limits",
+          "observed": {
+            "max_foot_speed_m_s": 0.015,
+            "search_speed_m_s": 0.005,
+            "max_com_speed_m_s": 0.008,
+            "max_body_displacement_m": 0.012,
+            "target_xy_tolerance_m": 0.005,
+            "max_orientation_deviation_rad": 0.03490658503988659,
+            "max_orientation_rate_rad_s": 0.02
+          }
+        },
+        "pad_finite_planner_signals": {
+          "passed": true,
+          "requirement": "All recorded planner, belief, and applied reference quantities are finite",
+          "observed": null
+        },
+        "pad_commanded_foot_speed": {
+          "passed": true,
+          "requirement": "Applied foot-position differences during lowering/confirmation respect the nominal speed limit",
+          "observed": {
+            "maximum_m_s": 0.0059218430210129305,
+            "limit_m_s": 0.015
+          }
+        },
+        "pad_commanded_com_speed": {
+          "passed": true,
+          "requirement": "Applied CoM-position differences respect the shared body-speed limit",
+          "observed": {
+            "maximum_m_s": 0.008000000000119184,
+            "limit_m_s": 0.008
+          }
+        },
+        "pad_monotone_lowering": {
+          "passed": true,
+          "requirement": "Applied foot Z never rises during lowering or contact confirmation",
+          "observed": {
+            "maximum_upward_speed_m_s": 0.0
+          }
+        },
+        "pad_commanded_body_displacement": {
+          "passed": true,
+          "requirement": "Each CoM coordinate stays within the permitted displacement from lowering entry",
+          "observed": {
+            "maximum_m": 0.003080787484379399,
+            "limit_m": 0.012
+          }
+        },
+        "pad_commanded_target_xy": {
+          "passed": true,
+          "requirement": "The selected foot reference stays within the nominal landing-target XY bounds",
+          "observed": {
+            "maximum_coordinate_error_m": 0.0,
+            "limit_m": 0.005
+          }
+        },
+        "pad_commanded_orientation": {
+          "passed": true,
+          "requirement": "Each body-orientation reference coordinate respects displacement and rate limits",
+          "observed": {
+            "maximum_deviation_rad": 0.0,
+            "maximum_rate_rad_s": 0.0
+          }
+        },
+        "pad_contact_reference_freeze": {
+          "passed": true,
+          "requirement": "Applied body and foot positions remain fixed while loaded contact is being confirmed",
+          "observed": {
+            "maximum_foot_speed_m_s": 0.0,
+            "maximum_com_speed_m_s": 0.0
+          }
+        },
+        "pad_planner_update_cadence": {
+          "passed": true,
+          "requirement": "Planner updates at 20 Hz while active, pauses for loaded-contact debounce, and updates immediately on resume",
+          "observed": {
+            "frequency_hz": 20.0,
+            "period_steps": 25,
+            "missing_updates": 0,
+            "unexpected_updates": 0
+          }
+        },
+        "pad_commanded_recovery_speed": {
+          "passed": true,
+          "requirement": "Segments planned after sensed missing contact respect bounded slow descent, allowing one planning-tick latency",
+          "observed": {
+            "checked_intervals": 0,
+            "maximum_m_s": null,
+            "limit_m_s": 0.005
+          }
+        }
+      },
+      "signals_sha256": "b571dbbf6bd4a0515cb10c9f95665ef936b756a9901c35ce8a6c7bbadeb32055",
+      "metadata_sha256": "53caac14705892310936223645e6db89b6634fe0c7671e26f0df316ec6886a3c",
+      "summary_sha256": "c73f01e6de460b23a35dbb52bd9657d7364d5844927112b73703242a559a9250"
+    },
+    {
+      "run": "pad_reactive_20260921T071818_547110Z",
+      "group": "demonstrations",
+      "passed": true,
+      "failed": [],
+      "checks": {
+        "pad_reference_limit_configuration": {
+          "passed": true,
+          "requirement": "Declared reference limits are positive and no looser than the shared executor limits",
+          "observed": {
+            "max_foot_speed_m_s": 0.015,
+            "search_speed_m_s": 0.005,
+            "max_com_speed_m_s": 0.008,
+            "max_body_displacement_m": 0.012,
+            "target_xy_tolerance_m": 0.005,
+            "max_orientation_deviation_rad": 0.03490658503988659,
+            "max_orientation_rate_rad_s": 0.02
+          }
+        },
+        "pad_finite_planner_signals": {
+          "passed": true,
+          "requirement": "All recorded planner, belief, and applied reference quantities are finite",
+          "observed": null
+        },
+        "pad_commanded_foot_speed": {
+          "passed": true,
+          "requirement": "Applied foot-position differences during lowering/confirmation respect the nominal speed limit",
+          "observed": {
+            "maximum_m_s": 0.004737474416811732,
+            "limit_m_s": 0.015
+          }
+        },
+        "pad_commanded_com_speed": {
+          "passed": true,
+          "requirement": "Applied CoM-position differences respect the shared body-speed limit",
+          "observed": {
+            "maximum_m_s": 0.0080000000001212,
+            "limit_m_s": 0.008
+          }
+        },
+        "pad_monotone_lowering": {
+          "passed": true,
+          "requirement": "Applied foot Z never rises during lowering or contact confirmation",
+          "observed": {
+            "maximum_upward_speed_m_s": 0.0
+          }
+        },
+        "pad_commanded_body_displacement": {
+          "passed": true,
+          "requirement": "Each CoM coordinate stays within the permitted displacement from lowering entry",
+          "observed": {
+            "maximum_m": 0.003189135393399656,
+            "limit_m": 0.012
+          }
+        },
+        "pad_commanded_target_xy": {
+          "passed": true,
+          "requirement": "The selected foot reference stays within the nominal landing-target XY bounds",
+          "observed": {
+            "maximum_coordinate_error_m": 0.0,
+            "limit_m": 0.005
+          }
+        },
+        "pad_commanded_orientation": {
+          "passed": true,
+          "requirement": "Each body-orientation reference coordinate respects displacement and rate limits",
+          "observed": {
+            "maximum_deviation_rad": 0.0,
+            "maximum_rate_rad_s": 0.0
+          }
+        },
+        "pad_contact_reference_freeze": {
+          "passed": true,
+          "requirement": "Applied body and foot positions remain fixed while loaded contact is being confirmed",
+          "observed": {
+            "maximum_foot_speed_m_s": 0.0,
+            "maximum_com_speed_m_s": 0.0
+          }
+        },
+        "pad_planner_update_cadence": {
+          "passed": true,
+          "requirement": "Planner updates at 20 Hz while active, pauses for loaded-contact debounce, and updates immediately on resume",
+          "observed": {
+            "frequency_hz": 20.0,
+            "period_steps": 25,
+            "missing_updates": 0,
+            "unexpected_updates": 0
+          }
+        },
+        "pad_commanded_recovery_speed": {
+          "passed": true,
+          "requirement": "Segments planned after sensed missing contact respect bounded slow descent, allowing one planning-tick latency",
+          "observed": {
+            "checked_intervals": 0,
+            "maximum_m_s": null,
+            "limit_m_s": 0.005
+          }
+        }
+      },
+      "signals_sha256": "7326fc9a33ea4bf4e7c503273e25a6a5d108f57ca1426268f47cc1e188d4951e",
+      "metadata_sha256": "3c747a32ac3e50ada6158dbd7a83e4eeb8fc7ad093457035b9b01c46e8d5bc86",
+      "summary_sha256": "6904daba71afdccb98919517e232241e42cc2ddbbdda64a1c7ef74c8e17d60e5"
+    },
+    {
+      "run": "pad_learned_20260921T071950_152378Z",
+      "group": "development",
+      "passed": true,
+      "failed": [],
+      "checks": {
+        "pad_reference_limit_configuration": {
+          "passed": true,
+          "requirement": "Declared reference limits are positive and no looser than the shared executor limits",
+          "observed": {
+            "max_foot_speed_m_s": 0.015,
+            "search_speed_m_s": 0.005,
+            "max_com_speed_m_s": 0.008,
+            "max_body_displacement_m": 0.012,
+            "target_xy_tolerance_m": 0.005,
+            "max_orientation_deviation_rad": 0.03490658503988659,
+            "max_orientation_rate_rad_s": 0.02
+          }
+        },
+        "pad_finite_planner_signals": {
+          "passed": true,
+          "requirement": "All recorded planner, belief, and applied reference quantities are finite",
+          "observed": null
+        },
+        "pad_commanded_foot_speed": {
+          "passed": true,
+          "requirement": "Applied foot-position differences during lowering/confirmation respect the nominal speed limit",
+          "observed": {
+            "maximum_m_s": 0.012324523086890297,
+            "limit_m_s": 0.015
+          }
+        },
+        "pad_commanded_com_speed": {
+          "passed": true,
+          "requirement": "Applied CoM-position differences respect the shared body-speed limit",
+          "observed": {
+            "maximum_m_s": 0.008000000000121481,
+            "limit_m_s": 0.008
+          }
+        },
+        "pad_monotone_lowering": {
+          "passed": true,
+          "requirement": "Applied foot Z never rises during lowering or contact confirmation",
+          "observed": {
+            "maximum_upward_speed_m_s": 3.469446951955537e-15
+          }
+        },
+        "pad_commanded_body_displacement": {
+          "passed": true,
+          "requirement": "Each CoM coordinate stays within the permitted displacement from lowering entry",
+          "observed": {
+            "maximum_m": 0.0011842666321494333,
+            "limit_m": 0.012
+          }
+        },
+        "pad_commanded_target_xy": {
+          "passed": true,
+          "requirement": "The selected foot reference stays within the nominal landing-target XY bounds",
+          "observed": {
+            "maximum_coordinate_error_m": 0.0018974057830444258,
+            "limit_m": 0.005
+          }
+        },
+        "pad_commanded_orientation": {
+          "passed": true,
+          "requirement": "Each body-orientation reference coordinate respects displacement and rate limits",
+          "observed": {
+            "maximum_deviation_rad": 0.004748173146098924,
+            "maximum_rate_rad_s": 0.020000000000277417
+          }
+        },
+        "pad_contact_reference_freeze": {
+          "passed": true,
+          "requirement": "Applied body and foot positions remain fixed while loaded contact is being confirmed",
+          "observed": {
+            "maximum_foot_speed_m_s": 0.0,
+            "maximum_com_speed_m_s": 0.0
+          }
+        },
+        "pad_planner_update_cadence": {
+          "passed": true,
+          "requirement": "Planner updates at 20 Hz while active, pauses for loaded-contact debounce, and updates immediately on resume",
+          "observed": {
+            "frequency_hz": 20.0,
+            "period_steps": 25,
+            "missing_updates": 0,
+            "unexpected_updates": 0
+          }
+        },
+        "pad_commanded_recovery_speed": {
+          "passed": true,
+          "requirement": "Segments planned after sensed missing contact respect bounded slow descent, allowing one planning-tick latency",
+          "observed": {
+            "checked_intervals": 0,
+            "maximum_m_s": null,
+            "limit_m_s": 0.005
+          }
+        }
+      },
+      "signals_sha256": "139fa4d6532090be8485fe4509244dc275b7a89587e1aa79c76bef9aeae5bdcb",
+      "metadata_sha256": "0d968b8205f51740cf651356a26ec78ad274c3a024d5bf6bdde8300eb4433a13",
+      "summary_sha256": "b79c4a97bdb67e37dae27b135e991543ba4f5b8b36d2f16ba31c250454b3e725"
+    },
+    {
+      "run": "pad_learned_20260921T072028_147142Z",
+      "group": "development",
+      "passed": true,
+      "failed": [],
+      "checks": {
+        "pad_reference_limit_configuration": {
+          "passed": true,
+          "requirement": "Declared reference limits are positive and no looser than the shared executor limits",
+          "observed": {
+            "max_foot_speed_m_s": 0.015,
+            "search_speed_m_s": 0.005,
+            "max_com_speed_m_s": 0.008,
+            "max_body_displacement_m": 0.012,
+            "target_xy_tolerance_m": 0.005,
+            "max_orientation_deviation_rad": 0.03490658503988659,
+            "max_orientation_rate_rad_s": 0.02
+          }
+        },
+        "pad_finite_planner_signals": {
+          "passed": true,
+          "requirement": "All recorded planner, belief, and applied reference quantities are finite",
+          "observed": null
+        },
+        "pad_commanded_foot_speed": {
+          "passed": true,
+          "requirement": "Applied foot-position differences during lowering/confirmation respect the nominal speed limit",
+          "observed": {
+            "maximum_m_s": 0.012324523086890297,
+            "limit_m_s": 0.015
+          }
+        },
+        "pad_commanded_com_speed": {
+          "passed": true,
+          "requirement": "Applied CoM-position differences respect the shared body-speed limit",
+          "observed": {
+            "maximum_m_s": 0.008000000000121481,
+            "limit_m_s": 0.008
+          }
+        },
+        "pad_monotone_lowering": {
+          "passed": true,
+          "requirement": "Applied foot Z never rises during lowering or contact confirmation",
+          "observed": {
+            "maximum_upward_speed_m_s": 3.469446951955537e-15
+          }
+        },
+        "pad_commanded_body_displacement": {
+          "passed": true,
+          "requirement": "Each CoM coordinate stays within the permitted displacement from lowering entry",
+          "observed": {
+            "maximum_m": 0.002440751108277739,
+            "limit_m": 0.012
+          }
+        },
+        "pad_commanded_target_xy": {
+          "passed": true,
+          "requirement": "The selected foot reference stays within the nominal landing-target XY bounds",
+          "observed": {
+            "maximum_coordinate_error_m": 0.0018974057830444258,
+            "limit_m": 0.005
+          }
+        },
+        "pad_commanded_orientation": {
+          "passed": true,
+          "requirement": "Each body-orientation reference coordinate respects displacement and rate limits",
+          "observed": {
+            "maximum_deviation_rad": 0.004748173146098924,
+            "maximum_rate_rad_s": 0.020000000000277417
+          }
+        },
+        "pad_contact_reference_freeze": {
+          "passed": true,
+          "requirement": "Applied body and foot positions remain fixed while loaded contact is being confirmed",
+          "observed": {
+            "maximum_foot_speed_m_s": 0.0,
+            "maximum_com_speed_m_s": 0.0
+          }
+        },
+        "pad_planner_update_cadence": {
+          "passed": true,
+          "requirement": "Planner updates at 20 Hz while active, pauses for loaded-contact debounce, and updates immediately on resume",
+          "observed": {
+            "frequency_hz": 20.0,
+            "period_steps": 25,
+            "missing_updates": 0,
+            "unexpected_updates": 0
+          }
+        },
+        "pad_commanded_recovery_speed": {
+          "passed": true,
+          "requirement": "Segments planned after sensed missing contact respect bounded slow descent, allowing one planning-tick latency",
+          "observed": {
+            "checked_intervals": 950,
+            "maximum_m_s": 0.005000000000070391,
+            "limit_m_s": 0.005
+          }
+        }
+      },
+      "signals_sha256": "5e0423c31f91a2a32e19291710fc816374fb75e3054bbf9c0ac048c8cef1c314",
+      "metadata_sha256": "e189c812768222f189e11c078e838455f622bfc2156dbc8281ea8827561586d6",
+      "summary_sha256": "f84fc18da0a1d052b7d7b0e25d7d2e83c3641d7803748ad58074268274585e64"
+    },
+    {
+      "run": "pad_learned_20260921T072106_222296Z",
+      "group": "development",
+      "passed": true,
+      "failed": [],
+      "checks": {
+        "pad_reference_limit_configuration": {
+          "passed": true,
+          "requirement": "Declared reference limits are positive and no looser than the shared executor limits",
+          "observed": {
+            "max_foot_speed_m_s": 0.015,
+            "search_speed_m_s": 0.005,
+            "max_com_speed_m_s": 0.008,
+            "max_body_displacement_m": 0.012,
+            "target_xy_tolerance_m": 0.005,
+            "max_orientation_deviation_rad": 0.03490658503988659,
+            "max_orientation_rate_rad_s": 0.02
+          }
+        },
+        "pad_finite_planner_signals": {
+          "passed": true,
+          "requirement": "All recorded planner, belief, and applied reference quantities are finite",
+          "observed": null
+        },
+        "pad_commanded_foot_speed": {
+          "passed": true,
+          "requirement": "Applied foot-position differences during lowering/confirmation respect the nominal speed limit",
+          "observed": {
+            "maximum_m_s": 0.011983931452498122,
+            "limit_m_s": 0.015
+          }
+        },
+        "pad_commanded_com_speed": {
+          "passed": true,
+          "requirement": "Applied CoM-position differences respect the shared body-speed limit",
+          "observed": {
+            "maximum_m_s": 0.008000000000121481,
+            "limit_m_s": 0.008
+          }
+        },
+        "pad_monotone_lowering": {
+          "passed": true,
+          "requirement": "Applied foot Z never rises during lowering or contact confirmation",
+          "observed": {
+            "maximum_upward_speed_m_s": 3.469446951955537e-15
+          }
+        },
+        "pad_commanded_body_displacement": {
+          "passed": true,
+          "requirement": "Each CoM coordinate stays within the permitted displacement from lowering entry",
+          "observed": {
+            "maximum_m": 0.002036921410353776,
+            "limit_m": 0.012
+          }
+        },
+        "pad_commanded_target_xy": {
+          "passed": true,
+          "requirement": "The selected foot reference stays within the nominal landing-target XY bounds",
+          "observed": {
+            "maximum_coordinate_error_m": 0.001958372623938054,
+            "limit_m": 0.005
+          }
+        },
+        "pad_commanded_orientation": {
+          "passed": true,
+          "requirement": "Each body-orientation reference coordinate respects displacement and rate limits",
+          "observed": {
+            "maximum_deviation_rad": 0.004740290220824101,
+            "maximum_rate_rad_s": 0.020000000000277417
+          }
+        },
+        "pad_contact_reference_freeze": {
+          "passed": true,
+          "requirement": "Applied body and foot positions remain fixed while loaded contact is being confirmed",
+          "observed": {
+            "maximum_foot_speed_m_s": 0.0,
+            "maximum_com_speed_m_s": 0.0
+          }
+        },
+        "pad_planner_update_cadence": {
+          "passed": true,
+          "requirement": "Planner updates at 20 Hz while active, pauses for loaded-contact debounce, and updates immediately on resume",
+          "observed": {
+            "frequency_hz": 20.0,
+            "period_steps": 25,
+            "missing_updates": 0,
+            "unexpected_updates": 0
+          }
+        },
+        "pad_commanded_recovery_speed": {
+          "passed": true,
+          "requirement": "Segments planned after sensed missing contact respect bounded slow descent, allowing one planning-tick latency",
+          "observed": {
+            "checked_intervals": 0,
+            "maximum_m_s": null,
+            "limit_m_s": 0.005
+          }
+        }
+      },
+      "signals_sha256": "f6daa8acd24690be9081ea2943e9832c7b79c1b8b3d7d2ce3bfbe9471954ce7d",
+      "metadata_sha256": "b65ee43b8db56bc69ac427c2f3fe87cee11f9da7d21b64308470c1aface175c0",
+      "summary_sha256": "8b32322fab2ccb9bffb5f683804b9bf38701cb2e40cdf495cdbb617f3480493a"
+    },
+    {
+      "run": "pad_learned_20260921T072502_395199Z",
+      "group": "development",
+      "passed": true,
+      "failed": [],
+      "checks": {
+        "pad_reference_limit_configuration": {
+          "passed": true,
+          "requirement": "Declared reference limits are positive and no looser than the shared executor limits",
+          "observed": {
+            "max_foot_speed_m_s": 0.015,
+            "search_speed_m_s": 0.005,
+            "max_com_speed_m_s": 0.008,
+            "max_body_displacement_m": 0.012,
+            "target_xy_tolerance_m": 0.005,
+            "max_orientation_deviation_rad": 0.03490658503988659,
+            "max_orientation_rate_rad_s": 0.02
+          }
+        },
+        "pad_finite_planner_signals": {
+          "passed": true,
+          "requirement": "All recorded planner, belief, and applied reference quantities are finite",
+          "observed": null
+        },
+        "pad_commanded_foot_speed": {
+          "passed": true,
+          "requirement": "Applied foot-position differences during lowering/confirmation respect the nominal speed limit",
+          "observed": {
+            "maximum_m_s": 0.015000000000208987,
+            "limit_m_s": 0.015
+          }
+        },
+        "pad_commanded_com_speed": {
+          "passed": true,
+          "requirement": "Applied CoM-position differences respect the shared body-speed limit",
+          "observed": {
+            "maximum_m_s": 0.005305966150128481,
+            "limit_m_s": 0.008
+          }
+        },
+        "pad_monotone_lowering": {
+          "passed": true,
+          "requirement": "Applied foot Z never rises during lowering or contact confirmation",
+          "observed": {
+            "maximum_upward_speed_m_s": 0.0
+          }
+        },
+        "pad_commanded_body_displacement": {
+          "passed": true,
+          "requirement": "Each CoM coordinate stays within the permitted displacement from lowering entry",
+          "observed": {
+            "maximum_m": 0.0007987901033597589,
+            "limit_m": 0.012
+          }
+        },
+        "pad_commanded_target_xy": {
+          "passed": true,
+          "requirement": "The selected foot reference stays within the nominal landing-target XY bounds",
+          "observed": {
+            "maximum_coordinate_error_m": 0.0017131131948885936,
+            "limit_m": 0.005
+          }
+        },
+        "pad_commanded_orientation": {
+          "passed": true,
+          "requirement": "Each body-orientation reference coordinate respects displacement and rate limits",
+          "observed": {
+            "maximum_deviation_rad": 0.0017267554733548269,
+            "maximum_rate_rad_s": 0.01334006302709999
+          }
+        },
+        "pad_contact_reference_freeze": {
+          "passed": true,
+          "requirement": "Applied body and foot positions remain fixed while loaded contact is being confirmed",
+          "observed": {
+            "maximum_foot_speed_m_s": 0.0,
+            "maximum_com_speed_m_s": 0.0
+          }
+        },
+        "pad_planner_update_cadence": {
+          "passed": true,
+          "requirement": "Planner updates at 20 Hz while active, pauses for loaded-contact debounce, and updates immediately on resume",
+          "observed": {
+            "frequency_hz": 20.0,
+            "period_steps": 25,
+            "missing_updates": 0,
+            "unexpected_updates": 0
+          }
+        },
+        "pad_commanded_recovery_speed": {
+          "passed": true,
+          "requirement": "Segments planned after sensed missing contact respect bounded slow descent, allowing one planning-tick latency",
+          "observed": {
+            "checked_intervals": 0,
+            "maximum_m_s": null,
+            "limit_m_s": 0.005
+          }
+        }
+      },
+      "signals_sha256": "0190fa7e76a7b331379d8b8145c317dd14145f2a2f8295e815d4c6208c67e742",
+      "metadata_sha256": "e8fd730d2fb867aa2e74c4c7b4acbe8578acc8d2d47214fec2fe8fc2395187fb",
+      "summary_sha256": "055b6409652d220b5625671552b866abf2fe200d628a5b301715d7d8769daded"
+    },
+    {
+      "run": "pad_learned_20260921T072539_272822Z",
+      "group": "development",
+      "passed": true,
+      "failed": [],
+      "checks": {
+        "pad_reference_limit_configuration": {
+          "passed": true,
+          "requirement": "Declared reference limits are positive and no looser than the shared executor limits",
+          "observed": {
+            "max_foot_speed_m_s": 0.015,
+            "search_speed_m_s": 0.005,
+            "max_com_speed_m_s": 0.008,
+            "max_body_displacement_m": 0.012,
+            "target_xy_tolerance_m": 0.005,
+            "max_orientation_deviation_rad": 0.03490658503988659,
+            "max_orientation_rate_rad_s": 0.02
+          }
+        },
+        "pad_finite_planner_signals": {
+          "passed": true,
+          "requirement": "All recorded planner, belief, and applied reference quantities are finite",
+          "observed": null
+        },
+        "pad_commanded_foot_speed": {
+          "passed": true,
+          "requirement": "Applied foot-position differences during lowering/confirmation respect the nominal speed limit",
+          "observed": {
+            "maximum_m_s": 0.015000000000208987,
+            "limit_m_s": 0.015
+          }
+        },
+        "pad_commanded_com_speed": {
+          "passed": true,
+          "requirement": "Applied CoM-position differences respect the shared body-speed limit",
+          "observed": {
+            "maximum_m_s": 0.004000909850485808,
+            "limit_m_s": 0.008
+          }
+        },
+        "pad_monotone_lowering": {
+          "passed": true,
+          "requirement": "Applied foot Z never rises during lowering or contact confirmation",
+          "observed": {
+            "maximum_upward_speed_m_s": 0.0
+          }
+        },
+        "pad_commanded_body_displacement": {
+          "passed": true,
+          "requirement": "Each CoM coordinate stays within the permitted displacement from lowering entry",
+          "observed": {
+            "maximum_m": 0.002572780462208546,
+            "limit_m": 0.012
+          }
+        },
+        "pad_commanded_target_xy": {
+          "passed": true,
+          "requirement": "The selected foot reference stays within the nominal landing-target XY bounds",
+          "observed": {
+            "maximum_coordinate_error_m": 0.0017131131948885936,
+            "limit_m": 0.005
+          }
+        },
+        "pad_commanded_orientation": {
+          "passed": true,
+          "requirement": "Each body-orientation reference coordinate respects displacement and rate limits",
+          "observed": {
+            "maximum_deviation_rad": 0.0027319602367317777,
+            "maximum_rate_rad_s": 0.02000000000027709
+          }
+        },
+        "pad_contact_reference_freeze": {
+          "passed": true,
+          "requirement": "Applied body and foot positions remain fixed while loaded contact is being confirmed",
+          "observed": {
+            "maximum_foot_speed_m_s": 0.0,
+            "maximum_com_speed_m_s": 0.0
+          }
+        },
+        "pad_planner_update_cadence": {
+          "passed": true,
+          "requirement": "Planner updates at 20 Hz while active, pauses for loaded-contact debounce, and updates immediately on resume",
+          "observed": {
+            "frequency_hz": 20.0,
+            "period_steps": 25,
+            "missing_updates": 0,
+            "unexpected_updates": 0
+          }
+        },
+        "pad_commanded_recovery_speed": {
+          "passed": true,
+          "requirement": "Segments planned after sensed missing contact respect bounded slow descent, allowing one planning-tick latency",
+          "observed": {
+            "checked_intervals": 975,
+            "maximum_m_s": 0.005000000000070488,
+            "limit_m_s": 0.005
+          }
+        }
+      },
+      "signals_sha256": "c55d70c33873eef62ba449a1869e8f20d77886e254b6c46bb0e9b82f933f61ed",
+      "metadata_sha256": "6d1365cb71405981a238ccf1ff9eb7e77de32889375c3baa6dd76e23c1d2ed00",
+      "summary_sha256": "0fd65f1b4f024531557a3ca42e630cda04d1e403f66f7ea842a438e8cc1df9a6"
+    },
+    {
+      "run": "pad_learned_20260921T072616_186014Z",
+      "group": "development",
+      "passed": true,
+      "failed": [],
+      "checks": {
+        "pad_reference_limit_configuration": {
+          "passed": true,
+          "requirement": "Declared reference limits are positive and no looser than the shared executor limits",
+          "observed": {
+            "max_foot_speed_m_s": 0.015,
+            "search_speed_m_s": 0.005,
+            "max_com_speed_m_s": 0.008,
+            "max_body_displacement_m": 0.012,
+            "target_xy_tolerance_m": 0.005,
+            "max_orientation_deviation_rad": 0.03490658503988659,
+            "max_orientation_rate_rad_s": 0.02
+          }
+        },
+        "pad_finite_planner_signals": {
+          "passed": true,
+          "requirement": "All recorded planner, belief, and applied reference quantities are finite",
+          "observed": null
+        },
+        "pad_commanded_foot_speed": {
+          "passed": true,
+          "requirement": "Applied foot-position differences during lowering/confirmation respect the nominal speed limit",
+          "observed": {
+            "maximum_m_s": 0.015000000000001517,
+            "limit_m_s": 0.015
+          }
+        },
+        "pad_commanded_com_speed": {
+          "passed": true,
+          "requirement": "Applied CoM-position differences respect the shared body-speed limit",
+          "observed": {
+            "maximum_m_s": 0.008000000000115977,
+            "limit_m_s": 0.008
+          }
+        },
+        "pad_monotone_lowering": {
+          "passed": true,
+          "requirement": "Applied foot Z never rises during lowering or contact confirmation",
+          "observed": {
+            "maximum_upward_speed_m_s": 3.469446951955537e-15
+          }
+        },
+        "pad_commanded_body_displacement": {
+          "passed": true,
+          "requirement": "Each CoM coordinate stays within the permitted displacement from lowering entry",
+          "observed": {
+            "maximum_m": 0.0014581732149162585,
+            "limit_m": 0.012
+          }
+        },
+        "pad_commanded_target_xy": {
+          "passed": true,
+          "requirement": "The selected foot reference stays within the nominal landing-target XY bounds",
+          "observed": {
+            "maximum_coordinate_error_m": 0.0018926837151440057,
+            "limit_m": 0.005
+          }
+        },
+        "pad_commanded_orientation": {
+          "passed": true,
+          "requirement": "Each body-orientation reference coordinate respects displacement and rate limits",
+          "observed": {
+            "maximum_deviation_rad": 0.0008259453083105939,
+            "maximum_rate_rad_s": 0.001257865210273812
+          }
+        },
+        "pad_contact_reference_freeze": {
+          "passed": true,
+          "requirement": "Applied body and foot positions remain fixed while loaded contact is being confirmed",
+          "observed": {
+            "maximum_foot_speed_m_s": 0.0,
+            "maximum_com_speed_m_s": 0.0
+          }
+        },
+        "pad_planner_update_cadence": {
+          "passed": true,
+          "requirement": "Planner updates at 20 Hz while active, pauses for loaded-contact debounce, and updates immediately on resume",
+          "observed": {
+            "frequency_hz": 20.0,
+            "period_steps": 25,
+            "missing_updates": 0,
+            "unexpected_updates": 0
+          }
+        },
+        "pad_commanded_recovery_speed": {
+          "passed": true,
+          "requirement": "Segments planned after sensed missing contact respect bounded slow descent, allowing one planning-tick latency",
+          "observed": {
+            "checked_intervals": 0,
+            "maximum_m_s": null,
+            "limit_m_s": 0.005
+          }
+        }
+      },
+      "signals_sha256": "706b95bb10e7234c2441e4bd14496fe98226c500977281f27236672ae7ddf100",
+      "metadata_sha256": "4d09c04937966643ef0a3a291452d2a5d655a0ceca7e6af297563b5be6a3fd83",
+      "summary_sha256": "b46ab11d90597dda6562407af2420b0a5bf38a3172e775a95dc5162624476d1f"
+    },
+    {
+      "run": "pad_predictive_20260921T072141_188960Z",
+      "group": "development",
+      "passed": true,
+      "failed": [],
+      "checks": {
+        "pad_reference_limit_configuration": {
+          "passed": true,
+          "requirement": "Declared reference limits are positive and no looser than the shared executor limits",
+          "observed": {
+            "max_foot_speed_m_s": 0.015,
+            "search_speed_m_s": 0.005,
+            "max_com_speed_m_s": 0.008,
+            "max_body_displacement_m": 0.012,
+            "target_xy_tolerance_m": 0.005,
+            "max_orientation_deviation_rad": 0.03490658503988659,
+            "max_orientation_rate_rad_s": 0.02
+          }
+        },
+        "pad_finite_planner_signals": {
+          "passed": true,
+          "requirement": "All recorded planner, belief, and applied reference quantities are finite",
+          "observed": null
+        },
+        "pad_commanded_foot_speed": {
+          "passed": true,
+          "requirement": "Applied foot-position differences during lowering/confirmation respect the nominal speed limit",
+          "observed": {
+            "maximum_m_s": 0.008421843021048042,
+            "limit_m_s": 0.015
+          }
+        },
+        "pad_commanded_com_speed": {
+          "passed": true,
+          "requirement": "Applied CoM-position differences respect the shared body-speed limit",
+          "observed": {
+            "maximum_m_s": 0.0030687004310746015,
+            "limit_m_s": 0.008
+          }
+        },
+        "pad_monotone_lowering": {
+          "passed": true,
+          "requirement": "Applied foot Z never rises during lowering or contact confirmation",
+          "observed": {
+            "maximum_upward_speed_m_s": 0.0
+          }
+        },
+        "pad_commanded_body_displacement": {
+          "passed": true,
+          "requirement": "Each CoM coordinate stays within the permitted displacement from lowering entry",
+          "observed": {
+            "maximum_m": 0.003565351728823385,
+            "limit_m": 0.012
+          }
+        },
+        "pad_commanded_target_xy": {
+          "passed": true,
+          "requirement": "The selected foot reference stays within the nominal landing-target XY bounds",
+          "observed": {
+            "maximum_coordinate_error_m": 0.0,
+            "limit_m": 0.005
+          }
+        },
+        "pad_commanded_orientation": {
+          "passed": true,
+          "requirement": "Each body-orientation reference coordinate respects displacement and rate limits",
+          "observed": {
+            "maximum_deviation_rad": 0.0,
+            "maximum_rate_rad_s": 0.0
+          }
+        },
+        "pad_contact_reference_freeze": {
+          "passed": true,
+          "requirement": "Applied body and foot positions remain fixed while loaded contact is being confirmed",
+          "observed": {
+            "maximum_foot_speed_m_s": 0.0,
+            "maximum_com_speed_m_s": 0.0
+          }
+        },
+        "pad_planner_update_cadence": {
+          "passed": true,
+          "requirement": "Planner updates at 20 Hz while active, pauses for loaded-contact debounce, and updates immediately on resume",
+          "observed": {
+            "frequency_hz": 20.0,
+            "period_steps": 25,
+            "missing_updates": 0,
+            "unexpected_updates": 0
+          }
+        },
+        "pad_commanded_recovery_speed": {
+          "passed": true,
+          "requirement": "Segments planned after sensed missing contact respect bounded slow descent, allowing one planning-tick latency",
+          "observed": {
+            "checked_intervals": 950,
+            "maximum_m_s": 0.005000000000070222,
+            "limit_m_s": 0.005
+          }
+        }
+      },
+      "signals_sha256": "d4b9076129bc26e25ce699c22e38fe732a23dbbbdb5f0a6daa420c21ff0a8b8a",
+      "metadata_sha256": "b779c9a223ee44b028598682bd92d422699d248eedbdf3789b948a75287955c9",
+      "summary_sha256": "a249036fb6f31e76c1b1a65c2cc9bbd77b2160e3dacdc0c2a6f61c3c6231c7b3"
+    },
+    {
+      "run": "pad_reactive_20260921T071044_434722Z",
+      "group": "development",
+      "passed": false,
+      "failed": [
+        "pad_commanded_foot_speed",
+        "pad_commanded_com_speed",
+        "pad_planner_update_cadence"
+      ],
+      "checks": {
+        "pad_reference_limit_configuration": {
+          "passed": true,
+          "requirement": "Declared reference limits are positive and no looser than the shared executor limits",
+          "observed": {
+            "max_foot_speed_m_s": 0.015,
+            "search_speed_m_s": 0.005,
+            "max_com_speed_m_s": 0.008,
+            "max_body_displacement_m": 0.012,
+            "target_xy_tolerance_m": 0.005,
+            "max_orientation_deviation_rad": 0.03490658503988659,
+            "max_orientation_rate_rad_s": 0.02
+          }
+        },
+        "pad_finite_planner_signals": {
+          "passed": true,
+          "requirement": "All recorded planner, belief, and applied reference quantities are finite",
+          "observed": null
+        },
+        "pad_commanded_foot_speed": {
+          "passed": false,
+          "requirement": "Applied foot-position differences during lowering/confirmation respect the nominal speed limit",
+          "observed": {
+            "maximum_m_s": 0.016843686041861896,
+            "limit_m_s": 0.015
+          }
+        },
+        "pad_commanded_com_speed": {
+          "passed": false,
+          "requirement": "Applied CoM-position differences respect the shared body-speed limit",
+          "observed": {
+            "maximum_m_s": 0.01600000000001118,
+            "limit_m_s": 0.008
+          }
+        },
+        "pad_monotone_lowering": {
+          "passed": true,
+          "requirement": "Applied foot Z never rises during lowering or contact confirmation",
+          "observed": {
+            "maximum_upward_speed_m_s": 0.0
+          }
+        },
+        "pad_commanded_body_displacement": {
+          "passed": true,
+          "requirement": "Each CoM coordinate stays within the permitted displacement from lowering entry",
+          "observed": {
+            "maximum_m": 0.001549892822458987,
+            "limit_m": 0.012
+          }
+        },
+        "pad_commanded_target_xy": {
+          "passed": true,
+          "requirement": "The selected foot reference stays within the nominal landing-target XY bounds",
+          "observed": {
+            "maximum_coordinate_error_m": 0.0,
+            "limit_m": 0.005
+          }
+        },
+        "pad_commanded_orientation": {
+          "passed": true,
+          "requirement": "Each body-orientation reference coordinate respects displacement and rate limits",
+          "observed": {
+            "maximum_deviation_rad": 0.0,
+            "maximum_rate_rad_s": 0.0
+          }
+        },
+        "pad_contact_reference_freeze": {
+          "passed": true,
+          "requirement": "Applied body and foot positions remain fixed while loaded contact is being confirmed",
+          "observed": {
+            "maximum_foot_speed_m_s": 0.0,
+            "maximum_com_speed_m_s": 0.0
+          }
+        },
+        "pad_planner_update_cadence": {
+          "passed": false,
+          "requirement": "Planner updates at 20 Hz while active, pauses for loaded-contact debounce, and updates immediately on resume",
+          "observed": {
+            "frequency_hz": 20.0,
+            "period_steps": 25,
+            "missing_updates": 2,
+            "unexpected_updates": 0
+          }
+        },
+        "pad_commanded_recovery_speed": {
+          "passed": true,
+          "requirement": "Segments planned after sensed missing contact respect bounded slow descent, allowing one planning-tick latency",
+          "observed": {
+            "checked_intervals": 0,
+            "maximum_m_s": null,
+            "limit_m_s": 0.005
+          }
+        }
+      },
+      "signals_sha256": "fc221c7d1f48c91702e25a8aa12936452defdd0cde09fb2a34b8792e6723d2d2",
+      "metadata_sha256": "fb76ca393dee40de6105000ad897bc235c3ba8bbd271a6a033f4bd971a1e56fb",
+      "summary_sha256": "ea7f787155d6a99af35d50b4018d4d20ec9a4c78b16b7dd2a855f3e66aa303bf"
+    },
+    {
+      "run": "pad_reactive_20260921T071136_748241Z",
+      "group": "development",
+      "passed": false,
+      "failed": [
+        "pad_commanded_foot_speed",
+        "pad_commanded_com_speed",
+        "pad_planner_update_cadence"
+      ],
+      "checks": {
+        "pad_reference_limit_configuration": {
+          "passed": true,
+          "requirement": "Declared reference limits are positive and no looser than the shared executor limits",
+          "observed": {
+            "max_foot_speed_m_s": 0.015,
+            "search_speed_m_s": 0.005,
+            "max_com_speed_m_s": 0.008,
+            "max_body_displacement_m": 0.012,
+            "target_xy_tolerance_m": 0.005,
+            "max_orientation_deviation_rad": 0.03490658503988659,
+            "max_orientation_rate_rad_s": 0.02
+          }
+        },
+        "pad_finite_planner_signals": {
+          "passed": true,
+          "requirement": "All recorded planner, belief, and applied reference quantities are finite",
+          "observed": null
+        },
+        "pad_commanded_foot_speed": {
+          "passed": false,
+          "requirement": "Applied foot-position differences during lowering/confirmation respect the nominal speed limit",
+          "observed": {
+            "maximum_m_s": 0.016843686041861896,
+            "limit_m_s": 0.015
+          }
+        },
+        "pad_commanded_com_speed": {
+          "passed": false,
+          "requirement": "Applied CoM-position differences respect the shared body-speed limit",
+          "observed": {
+            "maximum_m_s": 0.01600000000000428,
+            "limit_m_s": 0.008
+          }
+        },
+        "pad_monotone_lowering": {
+          "passed": true,
+          "requirement": "Applied foot Z never rises during lowering or contact confirmation",
+          "observed": {
+            "maximum_upward_speed_m_s": 0.0
+          }
+        },
+        "pad_commanded_body_displacement": {
+          "passed": true,
+          "requirement": "Each CoM coordinate stays within the permitted displacement from lowering entry",
+          "observed": {
+            "maximum_m": 0.0007585866849059153,
+            "limit_m": 0.012
+          }
+        },
+        "pad_commanded_target_xy": {
+          "passed": true,
+          "requirement": "The selected foot reference stays within the nominal landing-target XY bounds",
+          "observed": {
+            "maximum_coordinate_error_m": 0.0,
+            "limit_m": 0.005
+          }
+        },
+        "pad_commanded_orientation": {
+          "passed": true,
+          "requirement": "Each body-orientation reference coordinate respects displacement and rate limits",
+          "observed": {
+            "maximum_deviation_rad": 0.0,
+            "maximum_rate_rad_s": 0.0
+          }
+        },
+        "pad_contact_reference_freeze": {
+          "passed": true,
+          "requirement": "Applied body and foot positions remain fixed while loaded contact is being confirmed",
+          "observed": {
+            "maximum_foot_speed_m_s": 0.0,
+            "maximum_com_speed_m_s": 0.0
+          }
+        },
+        "pad_planner_update_cadence": {
+          "passed": false,
+          "requirement": "Planner updates at 20 Hz while active, pauses for loaded-contact debounce, and updates immediately on resume",
+          "observed": {
+            "frequency_hz": 20.0,
+            "period_steps": 25,
+            "missing_updates": 4,
+            "unexpected_updates": 0
+          }
+        },
+        "pad_commanded_recovery_speed": {
+          "passed": true,
+          "requirement": "Segments planned after sensed missing contact respect bounded slow descent, allowing one planning-tick latency",
+          "observed": {
+            "checked_intervals": 0,
+            "maximum_m_s": null,
+            "limit_m_s": 0.005
+          }
+        }
+      },
+      "signals_sha256": "55becda57d3055ae2d2bdb7102eefab3250ea93560c34fdcd36f236b811996e4",
+      "metadata_sha256": "34525d441d194effdde38f926e90506cf632df6c3dd8b00ff74bafae250d6040",
+      "summary_sha256": "49977443bb36c7acb58948a4432c38dacf0f035b339da6cb4eec5a51355db5a5"
+    },
+    {
+      "run": "pad_reactive_20260921T071212_733304Z",
+      "group": "development",
+      "passed": false,
+      "failed": [
+        "pad_commanded_foot_speed",
+        "pad_planner_update_cadence"
+      ],
+      "checks": {
+        "pad_reference_limit_configuration": {
+          "passed": true,
+          "requirement": "Declared reference limits are positive and no looser than the shared executor limits",
+          "observed": {
+            "max_foot_speed_m_s": 0.015,
+            "search_speed_m_s": 0.005,
+            "max_com_speed_m_s": 0.008,
+            "max_body_displacement_m": 0.012,
+            "target_xy_tolerance_m": 0.005,
+            "max_orientation_deviation_rad": 0.03490658503988659,
+            "max_orientation_rate_rad_s": 0.02
+          }
+        },
+        "pad_finite_planner_signals": {
+          "passed": true,
+          "requirement": "All recorded planner, belief, and applied reference quantities are finite",
+          "observed": null
+        },
+        "pad_commanded_foot_speed": {
+          "passed": false,
+          "requirement": "Applied foot-position differences during lowering/confirmation respect the nominal speed limit",
+          "observed": {
+            "maximum_m_s": 0.01684368604186103,
+            "limit_m_s": 0.015
+          }
+        },
+        "pad_commanded_com_speed": {
+          "passed": true,
+          "requirement": "Applied CoM-position differences respect the shared body-speed limit",
+          "observed": {
+            "maximum_m_s": 0.008000000000125554,
+            "limit_m_s": 0.008
+          }
+        },
+        "pad_monotone_lowering": {
+          "passed": true,
+          "requirement": "Applied foot Z never rises during lowering or contact confirmation",
+          "observed": {
+            "maximum_upward_speed_m_s": 0.0
+          }
+        },
+        "pad_commanded_body_displacement": {
+          "passed": true,
+          "requirement": "Each CoM coordinate stays within the permitted displacement from lowering entry",
+          "observed": {
+            "maximum_m": 0.002583884977336026,
+            "limit_m": 0.012
+          }
+        },
+        "pad_commanded_target_xy": {
+          "passed": true,
+          "requirement": "The selected foot reference stays within the nominal landing-target XY bounds",
+          "observed": {
+            "maximum_coordinate_error_m": 0.0,
+            "limit_m": 0.005
+          }
+        },
+        "pad_commanded_orientation": {
+          "passed": true,
+          "requirement": "Each body-orientation reference coordinate respects displacement and rate limits",
+          "observed": {
+            "maximum_deviation_rad": 0.0,
+            "maximum_rate_rad_s": 0.0
+          }
+        },
+        "pad_contact_reference_freeze": {
+          "passed": true,
+          "requirement": "Applied body and foot positions remain fixed while loaded contact is being confirmed",
+          "observed": {
+            "maximum_foot_speed_m_s": 0.0,
+            "maximum_com_speed_m_s": 0.0
+          }
+        },
+        "pad_planner_update_cadence": {
+          "passed": false,
+          "requirement": "Planner updates at 20 Hz while active, pauses for loaded-contact debounce, and updates immediately on resume",
+          "observed": {
+            "frequency_hz": 20.0,
+            "period_steps": 25,
+            "missing_updates": 1,
+            "unexpected_updates": 0
+          }
+        },
+        "pad_commanded_recovery_speed": {
+          "passed": true,
+          "requirement": "Segments planned after sensed missing contact respect bounded slow descent, allowing one planning-tick latency",
+          "observed": {
+            "checked_intervals": 450,
+            "maximum_m_s": 0.005000000000070222,
+            "limit_m_s": 0.005
+          }
+        }
+      },
+      "signals_sha256": "34cede1673c7212583149cd1d458b720848acabf48312cc90a7530ed2c10d67b",
+      "metadata_sha256": "c15b7edde97f46bf8da6c524ed05562d4f9c6af64cc0b3cf9fdc7d43d5e48f97",
+      "summary_sha256": "6d68fb8226b8f721d165d6afc239a6fd2d4aa9dd25cc67272e828cff3f812ce4"
+    },
+    {
+      "run": "pad_reactive_20260921T072409_356212Z",
+      "group": "development",
+      "passed": true,
+      "failed": [],
+      "checks": {
+        "pad_reference_limit_configuration": {
+          "passed": true,
+          "requirement": "Declared reference limits are positive and no looser than the shared executor limits",
+          "observed": {
+            "max_foot_speed_m_s": 0.015,
+            "search_speed_m_s": 0.005,
+            "max_com_speed_m_s": 0.008,
+            "max_body_displacement_m": 0.012,
+            "target_xy_tolerance_m": 0.005,
+            "max_orientation_deviation_rad": 0.03490658503988659,
+            "max_orientation_rate_rad_s": 0.02
+          }
+        },
+        "pad_finite_planner_signals": {
+          "passed": true,
+          "requirement": "All recorded planner, belief, and applied reference quantities are finite",
+          "observed": null
+        },
+        "pad_commanded_foot_speed": {
+          "passed": true,
+          "requirement": "Applied foot-position differences during lowering/confirmation respect the nominal speed limit",
+          "observed": {
+            "maximum_m_s": 0.008421843021048042,
+            "limit_m_s": 0.015
+          }
+        },
+        "pad_commanded_com_speed": {
+          "passed": true,
+          "requirement": "Applied CoM-position differences respect the shared body-speed limit",
+          "observed": {
+            "maximum_m_s": 0.0019650306204492627,
+            "limit_m_s": 0.008
+          }
+        },
+        "pad_monotone_lowering": {
+          "passed": true,
+          "requirement": "Applied foot Z never rises during lowering or contact confirmation",
+          "observed": {
+            "maximum_upward_speed_m_s": 0.0
+          }
+        },
+        "pad_commanded_body_displacement": {
+          "passed": true,
+          "requirement": "Each CoM coordinate stays within the permitted displacement from lowering entry",
+          "observed": {
+            "maximum_m": 0.005999935658703104,
+            "limit_m": 0.012
+          }
+        },
+        "pad_commanded_target_xy": {
+          "passed": true,
+          "requirement": "The selected foot reference stays within the nominal landing-target XY bounds",
+          "observed": {
+            "maximum_coordinate_error_m": 0.0,
+            "limit_m": 0.005
+          }
+        },
+        "pad_commanded_orientation": {
+          "passed": true,
+          "requirement": "Each body-orientation reference coordinate respects displacement and rate limits",
+          "observed": {
+            "maximum_deviation_rad": 0.0,
+            "maximum_rate_rad_s": 0.0
+          }
+        },
+        "pad_contact_reference_freeze": {
+          "passed": true,
+          "requirement": "Applied body and foot positions remain fixed while loaded contact is being confirmed",
+          "observed": {
+            "maximum_foot_speed_m_s": null,
+            "maximum_com_speed_m_s": null
+          }
+        },
+        "pad_planner_update_cadence": {
+          "passed": true,
+          "requirement": "Planner updates at 20 Hz while active, pauses for loaded-contact debounce, and updates immediately on resume",
+          "observed": {
+            "frequency_hz": 20.0,
+            "period_steps": 25,
+            "missing_updates": 0,
+            "unexpected_updates": 0
+          }
+        },
+        "pad_commanded_recovery_speed": {
+          "passed": true,
+          "requirement": "Segments planned after sensed missing contact respect bounded slow descent, allowing one planning-tick latency",
+          "observed": {
+            "checked_intervals": 4025,
+            "maximum_m_s": 0.005000000000070222,
+            "limit_m_s": 0.005
+          }
+        }
+      },
+      "signals_sha256": "4efe5deae38c7b547c3f1b3cd34aa799b790b4cb4cede8fe602d332d2309d131",
+      "metadata_sha256": "bf951d1d23707dee39ad23c1589be94225b0d8e52a48ffc3324af941284ca144",
+      "summary_sha256": "2f53f3ac04546e4975b2cca66c8e7a9243362f8d15ee3fc43cf660ebc7ef839c"
+    },
+    {
+      "run": "pad_reactive_20260921T072818_935838Z",
+      "group": "development",
+      "passed": true,
+      "failed": [],
+      "checks": {
+        "pad_reference_limit_configuration": {
+          "passed": true,
+          "requirement": "Declared reference limits are positive and no looser than the shared executor limits",
+          "observed": {
+            "max_foot_speed_m_s": 0.015,
+            "search_speed_m_s": 0.005,
+            "max_com_speed_m_s": 0.008,
+            "max_body_displacement_m": 0.012,
+            "target_xy_tolerance_m": 0.005,
+            "max_orientation_deviation_rad": 0.03490658503988659,
+            "max_orientation_rate_rad_s": 0.02
+          }
+        },
+        "pad_finite_planner_signals": {
+          "passed": true,
+          "requirement": "All recorded planner, belief, and applied reference quantities are finite",
+          "observed": null
+        },
+        "pad_commanded_foot_speed": {
+          "passed": true,
+          "requirement": "Applied foot-position differences during lowering/confirmation respect the nominal speed limit",
+          "observed": {
+            "maximum_m_s": 0.008421842479387575,
+            "limit_m_s": 0.015
+          }
+        },
+        "pad_commanded_com_speed": {
+          "passed": true,
+          "requirement": "Applied CoM-position differences respect the shared body-speed limit",
+          "observed": {
+            "maximum_m_s": 0.008000000000125245,
+            "limit_m_s": 0.008
+          }
+        },
+        "pad_monotone_lowering": {
+          "passed": true,
+          "requirement": "Applied foot Z never rises during lowering or contact confirmation",
+          "observed": {
+            "maximum_upward_speed_m_s": 0.0
+          }
+        },
+        "pad_commanded_body_displacement": {
+          "passed": true,
+          "requirement": "Each CoM coordinate stays within the permitted displacement from lowering entry",
+          "observed": {
+            "maximum_m": 0.0015529702414387447,
+            "limit_m": 0.012
+          }
+        },
+        "pad_commanded_target_xy": {
+          "passed": true,
+          "requirement": "The selected foot reference stays within the nominal landing-target XY bounds",
+          "observed": {
+            "maximum_coordinate_error_m": 0.0,
+            "limit_m": 0.005
+          }
+        },
+        "pad_commanded_orientation": {
+          "passed": true,
+          "requirement": "Each body-orientation reference coordinate respects displacement and rate limits",
+          "observed": {
+            "maximum_deviation_rad": 0.0,
+            "maximum_rate_rad_s": 0.0
+          }
+        },
+        "pad_contact_reference_freeze": {
+          "passed": true,
+          "requirement": "Applied body and foot positions remain fixed while loaded contact is being confirmed",
+          "observed": {
+            "maximum_foot_speed_m_s": 0.0,
+            "maximum_com_speed_m_s": 0.0
+          }
+        },
+        "pad_planner_update_cadence": {
+          "passed": true,
+          "requirement": "Planner updates at 20 Hz while active, pauses for loaded-contact debounce, and updates immediately on resume",
+          "observed": {
+            "frequency_hz": 20.0,
+            "period_steps": 25,
+            "missing_updates": 0,
+            "unexpected_updates": 0
+          }
+        },
+        "pad_commanded_recovery_speed": {
+          "passed": true,
+          "requirement": "Segments planned after sensed missing contact respect bounded slow descent, allowing one planning-tick latency",
+          "observed": {
+            "checked_intervals": 0,
+            "maximum_m_s": null,
+            "limit_m_s": 0.005
+          }
+        }
+      },
+      "signals_sha256": "ff4a5eeee16111ef3d72686cf80e7de076ace22cc6702724216c9516fb97690c",
+      "metadata_sha256": "f19b3e8d608d65a10671c634d4c5bd88dc20dd13a95729253014b23c4469b5ff",
+      "summary_sha256": "173eddc0da3e5d14746645fbddcdc79cffdd9a9e71885ce80c030dfd5c0c7e55"
+    }
+  ]
+}

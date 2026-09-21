@@ -77,3 +77,46 @@ def test_list_results_empty_root_is_supported(tmp_path, capsys):
     assert list_results(root) == 0
     assert "0 recording(s)" in capsys.readouterr().out
     assert json.loads((root / "catalog.json").read_text()) == []
+
+
+def test_nested_landing_trials_prefer_pad_validation_and_local_pointers(tmp_path):
+    root = tmp_path / "results"
+    run = _run(root, "landing_pad/studies/pilot/evaluation/reactive", "pad_saved", {
+        "status": "completed", "experiment": "landing_pad", "role": "evaluation",
+        "planner": "reactive", "actual_completed_cycles": 1, "cycles": 1,
+        "initial_height_estimate_m": 0., "evaluation": {"actual_pad_height_m": -.005},
+        "sensor_profile": {"name": "noisy_delayed"},
+    })
+    (run / "step_summary.json").write_text(json.dumps({"passed": True}))
+    (run / "pad_summary.json").write_text(json.dumps({
+        "passed": False, "metrics": {"duration_s": 30., "sample_count": 15000},
+    }))
+    (run / "pad_report.md").write_text("Pad checks failed\n")
+    (run.parent / "LATEST.txt").write_text(run.name + "\n")
+    (root / "landing_pad" / "CANONICAL.txt").write_text(run.relative_to(root / "landing_pad").as_posix() + "\n")
+    source_metadata = run / "source" / "historical" / "metadata.json"
+    source_metadata.parent.mkdir(parents=True)
+    source_metadata.write_text(json.dumps({"status": "completed", "experiment": "landing_pad"}))
+    before = {file: file.read_bytes() for file in run.rglob("*") if file.is_file()}
+    records = refresh_catalog(root)
+    assert len(records) == 1
+    record = records[0]
+    assert record["group"] == "landing_pad"
+    assert record["experiment"] == "landing_pad"
+    assert record["status"] == "FAIL"
+    assert record["canonical"] and record["latest"]
+    assert record["links"]["summary"].endswith("pad_summary.json")
+    assert record["links"]["report"].endswith("pad_report.md")
+    assert record["actual_pad_height_m"] == -.005
+    assert record["samples"] == 15000 and record["duration_s"] == 30.
+    assert all(file.read_bytes() == content for file, content in before.items())
+    assert "noisy_delayed" in (root / "README.md").read_text()
+
+
+def test_missing_pad_summary_does_not_inherit_a_passing_step_report(tmp_path):
+    root = tmp_path / "results"
+    run = _run(root, "landing_pad/development", "pad_without_analysis", {
+        "status": "completed", "experiment": "landing_pad",
+    })
+    (run / "step_summary.json").write_text(json.dumps({"passed": True}))
+    assert refresh_catalog(root)[0]["status"] == "UNANALYZED"

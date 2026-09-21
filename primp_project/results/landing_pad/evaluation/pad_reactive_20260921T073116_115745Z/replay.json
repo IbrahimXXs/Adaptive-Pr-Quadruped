@@ -1,0 +1,20 @@
+{
+  "run_id": "pad_reactive_20260921T073116_115745Z",
+  "video": "/home/ibrahim/Documents/GO-2 PRIMP/primp_project/results/landing_pad/evaluation/pad_reactive_20260921T073116_115745Z/replay.mp4",
+  "preview": "/home/ibrahim/Documents/GO-2 PRIMP/primp_project/results/landing_pad/evaluation/pad_reactive_20260921T073116_115745Z/replay.png",
+  "codec": "avc1",
+  "fps": 30,
+  "resolution": [
+    960,
+    720
+  ],
+  "frame_count": 967,
+  "playback_speed": 1.0,
+  "recorded_start_time_s": 0.002,
+  "recorded_end_time_s": 32.20399999999339,
+  "preview_time_s": 15.206000000001747,
+  "signals_sha256": "59c547d262f5e036866eb96739fb2a6885c698b39a832f5fb13a785b865b41e9",
+  "scene_sha256": "8c639354ef9fdb218760bc1d3458435aa72642754c615e761e27d1a641b88392",
+  "method": "Recorded qpos/qvel plus mj_forward for visualization; no mj_step or controller execution.",
+  "presentation": "Target pad recolored orange; fixed camera and recorded-value labels added for evaluation replay."
+}

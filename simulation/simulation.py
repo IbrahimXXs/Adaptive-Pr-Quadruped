@@ -43,6 +43,7 @@ def run_simulation(
     lock_zero_velocity=False,
     stop_on_termination=False,
     controller_factory=None,
+    environment_factory=None,
 ):
     """Run the simulator, optionally with an experiment wrapper and recorder.
 
@@ -64,7 +65,7 @@ def run_simulation(
     state_obs_names = [] #list(QuadrupedEnv.ALL_OBS)  # + list(IMU.ALL_OBS)
 
     # Create the quadruped robot environment -----------------------------------------------------------
-    env = QuadrupedEnv(
+    env = (environment_factory or QuadrupedEnv)(
         robot=robot_name,
         scene=scene_name,
         sim_dt=simulation_dt,

@@ -1,0 +1,75 @@
+"""Aligned sensor/planner data, with simulator truth isolated for evaluation."""
+import json
+import hashlib
+import shutil
+from pathlib import Path
+from dataclasses import asdict
+import mujoco
+import numpy as np
+from primp_project import PROJECT_ROOT
+from primp_project.recording.step import StepRecorder
+from primp_project.recording.standing import json_value
+
+
+class PadRecorder(StepRecorder):
+    def __init__(self, run_dir, *, initial_estimate_m, planner, role, lower_duration_s,
+                 sensor_profile, seed, rendered, model_path=None, known_height_m=None):
+        super().__init__(run_dir, 1, 5., seed, rendered, .8)
+        self.metadata.update(experiment='landing_pad', planner=planner, role=role,
+            initial_height_estimate_m=initial_estimate_m, nominal_lower_duration_s=lower_duration_s,
+            max_search_depth_m=.02, contact_compression_m=.004,
+            sensor_profile=asdict(sensor_profile), model_path=str(model_path) if model_path else None,
+            planner_frequency_hz=20., recovery_timeout_s=8.)
+        if role == 'demonstration':
+            self.metadata['known_height_m'] = known_height_m
+        if model_path:
+            self.metadata['model_hashes_sha256'] = {
+                name: hashlib.sha256((Path(model_path)/name).read_bytes()).hexdigest()
+                for name in ('model.npz', 'model.json')
+            }
+        self.metadata['controller_changes']['max_downward_search_m'] = .02
+        self.metadata['conventions']['information_boundary'] = (
+            'Planner receives SensorObservation and initial estimate only; evaluation/scene truth is never provided.')
+
+    def start(self, env, cfg):
+        super().start(env, cfg)
+        self.metadata['evaluation'] = json_value(env.landing_pad_evaluation)
+        self.metadata['evaluation']['actual_pad_height_m'] = env.landing_pad_evaluation['true_height_m']
+        self.metadata['landing_target_xy_m'] = env.landing_pad_geometry['target_xy_m']
+        self.metadata['foot_radius_m'] = env.landing_pad_geometry['foot_radius_m']
+        self.pad_geom_id = env.landing_pad_evaluation['landing_geom_id']
+        self.fl_geom_id = env._feet_geom_id['FL']
+        (self.run_dir/'evaluation.json').write_text(json.dumps(self.metadata['evaluation'], indent=2)+'\n')
+        for folder in ('environment', 'planning', 'learning'):
+            shutil.copytree(PROJECT_ROOT/folder, self.run_dir/'source'/folder, ignore=shutil.ignore_patterns('__pycache__'))
+        for name in ('control/landing_pad.py', 'recording/pad.py', 'experiments/pad.py', 'analysis/pad.py'):
+            target = self.run_dir/'source'/name
+            target.parent.mkdir(parents=True, exist_ok=True)
+            shutil.copy2(PROJECT_ROOT/name, target)
+
+    def record_step(self, env, wrapper, *args, **kwargs):
+        super().record_step(env, wrapper, *args, **kwargs)
+        obs, belief = wrapper.sensor_observation, wrapper.belief
+        posterior = belief.summary() if belief else dict(mean=self.metadata['initial_height_estimate_m'], std=.007,
+            lower=self.metadata['initial_height_estimate_m']-.02, upper=self.metadata['initial_height_estimate_m']+.02, missing_contact=False)
+        target_contact, target_force = False, 0.
+        for i, contact in enumerate(self.data.contact):
+            if {int(contact.geom1), int(contact.geom2)} == {self.fl_geom_id, self.pad_geom_id} and contact.efc_address >= 0:
+                force = np.zeros(6)
+                mujoco.mj_contactForce(self.model, self.data, i, force)
+                target_contact = True
+                target_force += max(0., float(force[0]))
+        values = dict(
+            belief_mean_m=posterior['mean'], belief_std_m=posterior['std'],
+            belief_lower_m=posterior['lower'], belief_upper_m=posterior['upper'], missing_contact=posterior['missing_contact'],
+            sensor_contact=obs.contacts, sensor_normal_force=obs.normal_forces,
+            sensor_foot_pos_w=obs.foot_position, sensor_measurement_time_s=obs.measurement_time_s-wrapper.origin,
+            planner_update=wrapper.planner_updated, planner_remaining_time_s=wrapper.remaining_time,
+            planner_com_target_w=wrapper.com_target, planner_foot_target_w=wrapper.foot_target,
+            planner_body_rpy=wrapper.body_orientation_ref, planner_compute_time_s=wrapper.planner_compute_time,
+            reference_projection_count=wrapper.projector.clipped_references if wrapper.projector else 0,
+            planner_fallback_count=wrapper.planner.fallback_count if wrapper.planner else 0,
+            target_pad_contact=target_contact, target_pad_normal_force=target_force,
+            foot_bottom_z_w=self.rows['feet_pos_w'][-1][0,2]-wrapper.foot_radius)
+        for key, value in values.items():
+            self.rows[key].append(np.array(value, copy=True))
