@@ -1024,5 +1024,215 @@
     "notes": [
       "Capacity 62 N development reference. The maximum-policy run reproduces all 98 shared physical/control channels of the frozen V2 baseline exactly."
     ]
+  },
+  "weak_pad_fixed_force_20260921T130937_637381Z": {
+    "purpose": "Task-conditioned probing: fixed_force; 36 mm task, 51.5 N hidden capacity, seed 311",
+    "notes": [
+      "Frozen matched probe-dose evaluation. Probe policy: fixed_force. Focused validation outcome: RECOVERED_STOP; actual pad damage: True.",
+      "The catalog status uses the unchanged V2 physical validator. [Focused report](weak_pad/task_probe/trials/progress36_capacity51p5_fixed_force_seed311/weak_pad_fixed_force_20260921T130937_637381Z/task_probe_report.md) · [Target-integrity summary](weak_pad/task_probe/trials/progress36_capacity51p5_fixed_force_seed311/weak_pad_fixed_force_20260921T130937_637381Z/task_probe_summary.json)."
+    ]
+  },
+  "weak_pad_fixed_force_20260921T130937_641075Z": {
+    "purpose": "Task-conditioned probing: fixed_force; 36 mm task, 51.5 N hidden capacity, seed 1201",
+    "notes": [
+      "Frozen matched probe-dose evaluation. Probe policy: fixed_force. Focused validation outcome: RECOVERED_STOP; actual pad damage: True.",
+      "The catalog status uses the unchanged V2 physical validator. [Focused report](weak_pad/task_probe/trials/progress36_capacity51p5_fixed_force_seed1201/weak_pad_fixed_force_20260921T130937_641075Z/task_probe_report.md) · [Target-integrity summary](weak_pad/task_probe/trials/progress36_capacity51p5_fixed_force_seed1201/weak_pad_fixed_force_20260921T130937_641075Z/task_probe_summary.json)."
+    ]
+  },
+  "weak_pad_task_sufficient_20260921T130937_638053Z": {
+    "purpose": "Task-conditioned probing: task_sufficient; 36 mm task, 51.5 N hidden capacity, seed 311",
+    "notes": [
+      "Frozen matched probe-dose evaluation. Probe policy: task_sufficient. Focused validation outcome: SUCCESS; actual pad damage: False.",
+      "The catalog status uses the unchanged V2 physical validator. [Focused report](weak_pad/task_probe/trials/progress36_capacity51p5_task_sufficient_seed311/weak_pad_task_sufficient_20260921T130937_638053Z/task_probe_report.md) · [Target-integrity summary](weak_pad/task_probe/trials/progress36_capacity51p5_task_sufficient_seed311/weak_pad_task_sufficient_20260921T130937_638053Z/task_probe_summary.json)."
+    ]
+  },
+  "weak_pad_task_sufficient_20260921T130937_642610Z": {
+    "purpose": "Task-conditioned probing: task_sufficient; 36 mm task, 51.5 N hidden capacity, seed 1201",
+    "notes": [
+      "Frozen matched probe-dose evaluation. Probe policy: task_sufficient. Focused validation outcome: SUCCESS; actual pad damage: False.",
+      "The catalog status uses the unchanged V2 physical validator. [Focused report](weak_pad/task_probe/trials/progress36_capacity51p5_task_sufficient_seed1201/weak_pad_task_sufficient_20260921T130937_642610Z/task_probe_report.md) · [Target-integrity summary](weak_pad/task_probe/trials/progress36_capacity51p5_task_sufficient_seed1201/weak_pad_task_sufficient_20260921T130937_642610Z/task_probe_summary.json)."
+    ]
+  },
+  "weak_pad_fixed_force_20260921T131035_137657Z": {
+    "purpose": "Task-conditioned probing: fixed_force; 36 mm task, 55 N hidden capacity, seed 311",
+    "notes": [
+      "Frozen matched probe-dose evaluation. Probe policy: fixed_force. Focused validation outcome: SUCCESS; actual pad damage: False.",
+      "The catalog status uses the unchanged V2 physical validator. [Focused report](weak_pad/task_probe/trials/progress36_capacity55p0_fixed_force_seed311/weak_pad_fixed_force_20260921T131035_137657Z/task_probe_report.md) · [Target-integrity summary](weak_pad/task_probe/trials/progress36_capacity55p0_fixed_force_seed311/weak_pad_fixed_force_20260921T131035_137657Z/task_probe_summary.json)."
+    ]
+  },
+  "weak_pad_fixed_force_20260921T131035_237521Z": {
+    "purpose": "Task-conditioned probing: fixed_force; 36 mm task, 55 N hidden capacity, seed 1201",
+    "notes": [
+      "Frozen matched probe-dose evaluation. Probe policy: fixed_force. Focused validation outcome: SUCCESS; actual pad damage: False.",
+      "The catalog status uses the unchanged V2 physical validator. [Focused report](weak_pad/task_probe/trials/progress36_capacity55p0_fixed_force_seed1201/weak_pad_fixed_force_20260921T131035_237521Z/task_probe_report.md) · [Target-integrity summary](weak_pad/task_probe/trials/progress36_capacity55p0_fixed_force_seed1201/weak_pad_fixed_force_20260921T131035_237521Z/task_probe_summary.json)."
+    ]
+  },
+  "weak_pad_task_sufficient_20260921T131051_948927Z": {
+    "purpose": "Task-conditioned probing: task_sufficient; 36 mm task, 55 N hidden capacity, seed 311",
+    "notes": [
+      "Frozen matched probe-dose evaluation. Probe policy: task_sufficient. Focused validation outcome: SUCCESS; actual pad damage: False.",
+      "The catalog status uses the unchanged V2 physical validator. [Focused report](weak_pad/task_probe/trials/progress36_capacity55p0_task_sufficient_seed311/weak_pad_task_sufficient_20260921T131051_948927Z/task_probe_report.md) · [Target-integrity summary](weak_pad/task_probe/trials/progress36_capacity55p0_task_sufficient_seed311/weak_pad_task_sufficient_20260921T131051_948927Z/task_probe_summary.json)."
+    ]
+  },
+  "weak_pad_task_sufficient_20260921T131052_317971Z": {
+    "purpose": "Task-conditioned probing: task_sufficient; 36 mm task, 55 N hidden capacity, seed 1201",
+    "notes": [
+      "Frozen matched probe-dose evaluation. Probe policy: task_sufficient. Focused validation outcome: SUCCESS; actual pad damage: False.",
+      "The catalog status uses the unchanged V2 physical validator. [Focused report](weak_pad/task_probe/trials/progress36_capacity55p0_task_sufficient_seed1201/weak_pad_task_sufficient_20260921T131052_317971Z/task_probe_report.md) · [Target-integrity summary](weak_pad/task_probe/trials/progress36_capacity55p0_task_sufficient_seed1201/weak_pad_task_sufficient_20260921T131052_317971Z/task_probe_summary.json)."
+    ]
+  },
+  "weak_pad_fixed_force_20260921T131153_502540Z": {
+    "purpose": "Task-conditioned probing: fixed_force; 40 mm task, 51.5 N hidden capacity, seed 311",
+    "notes": [
+      "Frozen matched probe-dose evaluation. Probe policy: fixed_force. Focused validation outcome: RECOVERED_STOP; actual pad damage: True.",
+      "The catalog status uses the unchanged V2 physical validator. [Focused report](weak_pad/task_probe/trials/progress40_capacity51p5_fixed_force_seed311/weak_pad_fixed_force_20260921T131153_502540Z/task_probe_report.md) · [Target-integrity summary](weak_pad/task_probe/trials/progress40_capacity51p5_fixed_force_seed311/weak_pad_fixed_force_20260921T131153_502540Z/task_probe_summary.json)."
+    ]
+  },
+  "weak_pad_fixed_force_20260921T131154_829838Z": {
+    "purpose": "Task-conditioned probing: fixed_force; 40 mm task, 51.5 N hidden capacity, seed 1201",
+    "notes": [
+      "Frozen matched probe-dose evaluation. Probe policy: fixed_force. Focused validation outcome: RECOVERED_STOP; actual pad damage: True.",
+      "The catalog status uses the unchanged V2 physical validator. [Focused report](weak_pad/task_probe/trials/progress40_capacity51p5_fixed_force_seed1201/weak_pad_fixed_force_20260921T131154_829838Z/task_probe_report.md) · [Target-integrity summary](weak_pad/task_probe/trials/progress40_capacity51p5_fixed_force_seed1201/weak_pad_fixed_force_20260921T131154_829838Z/task_probe_summary.json)."
+    ]
+  },
+  "weak_pad_task_sufficient_20260921T131210_560294Z": {
+    "purpose": "Task-conditioned probing: task_sufficient; 40 mm task, 51.5 N hidden capacity, seed 311",
+    "notes": [
+      "Frozen matched probe-dose evaluation. Probe policy: task_sufficient. Focused validation outcome: SUCCESS; actual pad damage: False.",
+      "The catalog status uses the unchanged V2 physical validator. [Focused report](weak_pad/task_probe/trials/progress40_capacity51p5_task_sufficient_seed311/weak_pad_task_sufficient_20260921T131210_560294Z/task_probe_report.md) · [Target-integrity summary](weak_pad/task_probe/trials/progress40_capacity51p5_task_sufficient_seed311/weak_pad_task_sufficient_20260921T131210_560294Z/task_probe_summary.json)."
+    ]
+  },
+  "weak_pad_task_sufficient_20260921T131210_682645Z": {
+    "purpose": "Task-conditioned probing: task_sufficient; 40 mm task, 51.5 N hidden capacity, seed 1201",
+    "notes": [
+      "Frozen matched probe-dose evaluation. Probe policy: task_sufficient. Focused validation outcome: SUCCESS; actual pad damage: False.",
+      "The catalog status uses the unchanged V2 physical validator. [Focused report](weak_pad/task_probe/trials/progress40_capacity51p5_task_sufficient_seed1201/weak_pad_task_sufficient_20260921T131210_682645Z/task_probe_report.md) · [Target-integrity summary](weak_pad/task_probe/trials/progress40_capacity51p5_task_sufficient_seed1201/weak_pad_task_sufficient_20260921T131210_682645Z/task_probe_summary.json)."
+    ]
+  },
+  "weak_pad_fixed_force_20260921T131251_936380Z": {
+    "purpose": "Task-conditioned probing: fixed_force; 40 mm task, 55 N hidden capacity, seed 311",
+    "notes": [
+      "Frozen matched probe-dose evaluation. Probe policy: fixed_force. Focused validation outcome: SUCCESS; actual pad damage: False.",
+      "The catalog status uses the unchanged V2 physical validator. [Focused report](weak_pad/task_probe/trials/progress40_capacity55p0_fixed_force_seed311/weak_pad_fixed_force_20260921T131251_936380Z/task_probe_report.md) · [Target-integrity summary](weak_pad/task_probe/trials/progress40_capacity55p0_fixed_force_seed311/weak_pad_fixed_force_20260921T131251_936380Z/task_probe_summary.json)."
+    ]
+  },
+  "weak_pad_fixed_force_20260921T131252_918659Z": {
+    "purpose": "Task-conditioned probing: fixed_force; 40 mm task, 55 N hidden capacity, seed 1201",
+    "notes": [
+      "Frozen matched probe-dose evaluation. Probe policy: fixed_force. Focused validation outcome: SUCCESS; actual pad damage: False.",
+      "The catalog status uses the unchanged V2 physical validator. [Focused report](weak_pad/task_probe/trials/progress40_capacity55p0_fixed_force_seed1201/weak_pad_fixed_force_20260921T131252_918659Z/task_probe_report.md) · [Target-integrity summary](weak_pad/task_probe/trials/progress40_capacity55p0_fixed_force_seed1201/weak_pad_fixed_force_20260921T131252_918659Z/task_probe_summary.json)."
+    ]
+  },
+  "weak_pad_task_sufficient_20260921T131326_103705Z": {
+    "purpose": "Task-conditioned probing: task_sufficient; 40 mm task, 55 N hidden capacity, seed 311",
+    "notes": [
+      "Frozen matched probe-dose evaluation. Probe policy: task_sufficient. Focused validation outcome: SUCCESS; actual pad damage: False.",
+      "The catalog status uses the unchanged V2 physical validator. [Focused report](weak_pad/task_probe/trials/progress40_capacity55p0_task_sufficient_seed311/weak_pad_task_sufficient_20260921T131326_103705Z/task_probe_report.md) · [Target-integrity summary](weak_pad/task_probe/trials/progress40_capacity55p0_task_sufficient_seed311/weak_pad_task_sufficient_20260921T131326_103705Z/task_probe_summary.json)."
+    ]
+  },
+  "weak_pad_task_sufficient_20260921T131326_521189Z": {
+    "purpose": "Task-conditioned probing: task_sufficient; 40 mm task, 55 N hidden capacity, seed 1201",
+    "notes": [
+      "Frozen matched probe-dose evaluation. Probe policy: task_sufficient. Focused validation outcome: SUCCESS; actual pad damage: False.",
+      "The catalog status uses the unchanged V2 physical validator. [Focused report](weak_pad/task_probe/trials/progress40_capacity55p0_task_sufficient_seed1201/weak_pad_task_sufficient_20260921T131326_521189Z/task_probe_report.md) · [Target-integrity summary](weak_pad/task_probe/trials/progress40_capacity55p0_task_sufficient_seed1201/weak_pad_task_sufficient_20260921T131326_521189Z/task_probe_summary.json)."
+    ]
+  },
+  "weak_pad_fixed_force_20260921T131407_117234Z": {
+    "purpose": "Task-conditioned probing: fixed_force; 44 mm task, 51.5 N hidden capacity, seed 311",
+    "notes": [
+      "Frozen matched probe-dose evaluation. Probe policy: fixed_force. Focused validation outcome: RECOVERED_STOP; actual pad damage: True.",
+      "The catalog status uses the unchanged V2 physical validator. [Focused report](weak_pad/task_probe/trials/progress44_capacity51p5_fixed_force_seed311/weak_pad_fixed_force_20260921T131407_117234Z/task_probe_report.md) · [Target-integrity summary](weak_pad/task_probe/trials/progress44_capacity51p5_fixed_force_seed311/weak_pad_fixed_force_20260921T131407_117234Z/task_probe_summary.json)."
+    ]
+  },
+  "weak_pad_fixed_force_20260921T131408_351667Z": {
+    "purpose": "Task-conditioned probing: fixed_force; 44 mm task, 51.5 N hidden capacity, seed 1201",
+    "notes": [
+      "Frozen matched probe-dose evaluation. Probe policy: fixed_force. Focused validation outcome: RECOVERED_STOP; actual pad damage: True.",
+      "The catalog status uses the unchanged V2 physical validator. [Focused report](weak_pad/task_probe/trials/progress44_capacity51p5_fixed_force_seed1201/weak_pad_fixed_force_20260921T131408_351667Z/task_probe_report.md) · [Target-integrity summary](weak_pad/task_probe/trials/progress44_capacity51p5_fixed_force_seed1201/weak_pad_fixed_force_20260921T131408_351667Z/task_probe_summary.json)."
+    ]
+  },
+  "weak_pad_task_sufficient_20260921T131441_182324Z": {
+    "purpose": "Task-conditioned probing: task_sufficient; 44 mm task, 51.5 N hidden capacity, seed 311",
+    "notes": [
+      "Frozen matched probe-dose evaluation. Probe policy: task_sufficient. Focused validation outcome: RECOVERED_STOP; actual pad damage: True.",
+      "The catalog status uses the unchanged V2 physical validator. [Focused report](weak_pad/task_probe/trials/progress44_capacity51p5_task_sufficient_seed311/weak_pad_task_sufficient_20260921T131441_182324Z/task_probe_report.md) · [Target-integrity summary](weak_pad/task_probe/trials/progress44_capacity51p5_task_sufficient_seed311/weak_pad_task_sufficient_20260921T131441_182324Z/task_probe_summary.json)."
+    ]
+  },
+  "weak_pad_task_sufficient_20260921T131441_568138Z": {
+    "purpose": "Task-conditioned probing: task_sufficient; 44 mm task, 51.5 N hidden capacity, seed 1201",
+    "notes": [
+      "Frozen matched probe-dose evaluation. Probe policy: task_sufficient. Focused validation outcome: RECOVERED_STOP; actual pad damage: True.",
+      "The catalog status uses the unchanged V2 physical validator. [Focused report](weak_pad/task_probe/trials/progress44_capacity51p5_task_sufficient_seed1201/weak_pad_task_sufficient_20260921T131441_568138Z/task_probe_report.md) · [Target-integrity summary](weak_pad/task_probe/trials/progress44_capacity51p5_task_sufficient_seed1201/weak_pad_task_sufficient_20260921T131441_568138Z/task_probe_summary.json)."
+    ]
+  },
+  "weak_pad_fixed_force_20260921T131506_780152Z": {
+    "purpose": "Task-conditioned probing: fixed_force; 44 mm task, 55 N hidden capacity, seed 311",
+    "notes": [
+      "Frozen matched probe-dose evaluation. Probe policy: fixed_force. Focused validation outcome: SUCCESS; actual pad damage: False.",
+      "The catalog status uses the unchanged V2 physical validator. [Focused report](weak_pad/task_probe/trials/progress44_capacity55p0_fixed_force_seed311/weak_pad_fixed_force_20260921T131506_780152Z/task_probe_report.md) · [Target-integrity summary](weak_pad/task_probe/trials/progress44_capacity55p0_fixed_force_seed311/weak_pad_fixed_force_20260921T131506_780152Z/task_probe_summary.json)."
+    ]
+  },
+  "weak_pad_fixed_force_20260921T131507_090575Z": {
+    "purpose": "Task-conditioned probing: fixed_force; 44 mm task, 55 N hidden capacity, seed 1201",
+    "notes": [
+      "Frozen matched probe-dose evaluation. Probe policy: fixed_force. Focused validation outcome: SUCCESS; actual pad damage: False.",
+      "The catalog status uses the unchanged V2 physical validator. [Focused report](weak_pad/task_probe/trials/progress44_capacity55p0_fixed_force_seed1201/weak_pad_fixed_force_20260921T131507_090575Z/task_probe_report.md) · [Target-integrity summary](weak_pad/task_probe/trials/progress44_capacity55p0_fixed_force_seed1201/weak_pad_fixed_force_20260921T131507_090575Z/task_probe_summary.json)."
+    ]
+  },
+  "weak_pad_task_sufficient_20260921T131539_986466Z": {
+    "purpose": "Task-conditioned probing: task_sufficient; 44 mm task, 55 N hidden capacity, seed 311",
+    "notes": [
+      "Frozen matched probe-dose evaluation. Probe policy: task_sufficient. Focused validation outcome: SUCCESS; actual pad damage: False.",
+      "The catalog status uses the unchanged V2 physical validator. [Focused report](weak_pad/task_probe/trials/progress44_capacity55p0_task_sufficient_seed311/weak_pad_task_sufficient_20260921T131539_986466Z/task_probe_report.md) · [Target-integrity summary](weak_pad/task_probe/trials/progress44_capacity55p0_task_sufficient_seed311/weak_pad_task_sufficient_20260921T131539_986466Z/task_probe_summary.json)."
+    ]
+  },
+  "weak_pad_task_sufficient_20260921T131540_524545Z": {
+    "purpose": "Task-conditioned probing: task_sufficient; 44 mm task, 55 N hidden capacity, seed 1201",
+    "notes": [
+      "Frozen matched probe-dose evaluation. Probe policy: task_sufficient. Focused validation outcome: SUCCESS; actual pad damage: False.",
+      "The catalog status uses the unchanged V2 physical validator. [Focused report](weak_pad/task_probe/trials/progress44_capacity55p0_task_sufficient_seed1201/weak_pad_task_sufficient_20260921T131540_524545Z/task_probe_report.md) · [Target-integrity summary](weak_pad/task_probe/trials/progress44_capacity55p0_task_sufficient_seed1201/weak_pad_task_sufficient_20260921T131540_524545Z/task_probe_summary.json)."
+    ]
+  },
+  "weak_pad_fixed_force_20260921T130326_682698Z": {
+    "purpose": "Task-conditioned probing development: 34 mm task, fixed_force, 53 N fixed candidate, seed 101; excluded from the 24-trial comparison",
+    "notes": [
+      "Development evidence only; six fixed-force candidates cover both task endpoints, and a separate task-policy replay checks preservation of prior behavior."
+    ]
+  },
+  "weak_pad_fixed_force_20260921T130326_683022Z": {
+    "purpose": "Task-conditioned probing development: 34 mm task, fixed_force, 52.5 N fixed candidate, seed 101; excluded from the 24-trial comparison",
+    "notes": [
+      "Development evidence only; six fixed-force candidates cover both task endpoints, and a separate task-policy replay checks preservation of prior behavior."
+    ]
+  },
+  "weak_pad_fixed_force_20260921T130326_688211Z": {
+    "purpose": "Task-conditioned probing development: 34 mm task, fixed_force, 50.57 N fixed candidate, seed 101; excluded from the 24-trial comparison",
+    "notes": [
+      "Development evidence only; six fixed-force candidates cover both task endpoints, and a separate task-policy replay checks preservation of prior behavior."
+    ]
+  },
+  "weak_pad_fixed_force_20260921T130435_493705Z": {
+    "purpose": "Task-conditioned probing development: 45 mm task, fixed_force, 50.57 N fixed candidate, seed 101; excluded from the 24-trial comparison",
+    "notes": [
+      "Development evidence only; six fixed-force candidates cover both task endpoints, and a separate task-policy replay checks preservation of prior behavior."
+    ]
+  },
+  "weak_pad_fixed_force_20260921T130435_737727Z": {
+    "purpose": "Task-conditioned probing development: 45 mm task, fixed_force, 52.5 N fixed candidate, seed 101; excluded from the 24-trial comparison",
+    "notes": [
+      "Development evidence only; six fixed-force candidates cover both task endpoints, and a separate task-policy replay checks preservation of prior behavior."
+    ]
+  },
+  "weak_pad_fixed_force_20260921T130435_920406Z": {
+    "purpose": "Task-conditioned probing development: 45 mm task, fixed_force, 53 N fixed candidate, seed 101; excluded from the 24-trial comparison",
+    "notes": [
+      "Development evidence only; six fixed-force candidates cover both task endpoints, and a separate task-policy replay checks preservation of prior behavior."
+    ]
+  },
+  "weak_pad_task_sufficient_20260921T130533_840457Z": {
+    "purpose": "Task-conditioned probing development: 40 mm task, task_sufficient, frozen-method replay, seed 101; excluded from the 24-trial comparison",
+    "notes": [
+      "Development evidence only; six fixed-force candidates cover both task endpoints, and a separate task-policy replay checks preservation of prior behavior."
+    ]
   }
 }

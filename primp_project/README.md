@@ -6,24 +6,36 @@ survive a light load while still failing during later weight transfer. The
 robot must account for how much load its intended body motion and next leg
 lift will place on the new support.
 
-The latest experiment asks **how much additional testing is necessary** while
-keeping the existing controller and evaluation frozen. Its 32-cell capacity
-sweep compares the maximum-feasible test with a minimum sufficient test target,
-including the same certificate reserves and explicit command allowances.
-The smaller test completes **8/16 movements and damages 8/16 pads**, compared with
-**4/16 completions and 12/16 damaged pads** for the baseline. All damage is followed by
-controlled recovery. At 52 N and 53 N, four matched trials complete intact where
-the larger test breaks the pad. Lower boundary capacities still fail under both
-policies, and probing time does not improve.
+The latest experiment compares **task-derived testing with one fixed force
+selected on development**, across different required future loads. A six-trial
+tournament on 34 mm and 45 mm movements selected one **52.5 N** command, which
+then remains unchanged for every formal task, capacity, and seed. Both policies
+retain identical movement and probing-posture freedoms, controller, sensing,
+certificate reserves, and recovery.
 
-Start with the [probe-efficiency results](docs/results/probe_efficiency.md),
-[paired replay](results/weak_pad/probe_efficiency/media/README.md),
-[experiment guide](docs/probe_efficiency.md), and
-[independent audit](results/weak_pad/probe_efficiency/validation/independent_execution_audit.json).
-All 32 predeclared outcomes were observed; the
-[combined suite passes 549 tests](results/weak_pad/probe_efficiency/validation/final_tests.json).
-The four newly avoided failures involve stronger pads and are distinct from
-the four earlier V2 failures, which remain below the relaxed task load.
+All **24 declared evaluations** are complete: task-derived testing completes
+**10/12 movements and damages 2/12 pads**, versus **6/12 completions and 6/12
+damaged pads** for the calibrated fixed policy. At 36 mm and 40 mm on the 51.5 N
+pad, four matched trials avoid damage and complete the movement. Both policies
+still damage that pad at 44 mm, and both complete all tasks on the 55 N pad.
+Every damaged trial recovers; recovery is not task completion. Probing time
+does not improve with the existing phase durations.
+
+Start with the [task-demand results and limits](docs/results/task_probe.md),
+[paired replay](results/weak_pad/task_probe/media/README.md),
+[experiment guide](docs/task_probe.md), and
+[independent raw audit](results/weak_pad/task_probe/validation/independent_execution_audit.json).
+The [combined suite passes 597 tests](results/weak_pad/task_probe/validation/final_tests.json).
+The selected constant is the lowest successful member of three declared
+candidates, not a globally optimized constant. The tasks interpolate within the
+development range on one known support geometry.
+
+The preserved [32-trial probe-efficiency sweep](docs/results/probe_efficiency.md)
+compared sufficient testing with near-maximum testing for one task, completing
+8/16 versus 4/16 movements. It motivated the stronger constant-force comparison
+above. Its [guide and evidence](docs/probe_efficiency.md) remain unchanged.
+Neither extension claims to prevent the four old V2 failures on 29 N and 34 N
+pads, which are below even the relaxed task's required load.
 
 The preserved V2 comparison turns a measured load plateau into a conservative
 certificate and gives **every policy the same body/load optimizer and movement
@@ -84,6 +96,7 @@ extension from published PRIMP.
 
 | Milestone | Status | Evidence or intended outcome |
 | --- | --- | --- |
+| Test different task loads against a calibrated fixed force | Complete: 24 declared trials | Task-derived testing completes 10/12 versus 6/12 for one development-selected 52.5 N test; 2 versus 6 damaged pads, all recovered. Four matched completions avoid damage; no probing-time advantage |
 | Target only sufficient additional testing | Complete: 32 declared trials | Minimum targeting completes 8/16 versus 4/16 for the frozen baseline; four new matched pairs avoid damage, while eight minimum-policy trials still damage the pad and recover. No timing advantage |
 | Compare testing policies with matched movement freedoms | Complete: 48 held-out trials | Fixed/force-only/adaptive probing complete 4/6/10 of 16 tasks each; 24 safe stops and 4 controlled recoveries remain separate. Independent settled-geometry necessity and raw audits pass |
 | Plan beyond first contact on a weak foothold | Preserved V1: 11 declared cases | Four adapted movements, four conservative safe stops, three unaware collapses; its body/load optimizer becomes the V2 shared baseline |
@@ -222,6 +235,7 @@ and validation: [standing](docs/standing.md) and
 [V2 matched study](docs/landing_pad_v2.md),
 the [matched weak-pad experiment](docs/weak_pad_v2.md),
 the [probe-efficiency extension](docs/probe_efficiency.md),
+the [calibrated fixed-force comparison](docs/task_probe.md),
 and [learned model](docs/PRIMP_MODEL.md).
 
 ## Project layout
@@ -242,7 +256,8 @@ primp_project/
 ├── recording/             # Synchronized simulation and experiment logging
 ├── analysis/              # Independent acceptance checks and plots
 ├── visualization/         # Offline rendering of recorded physical states
-├── probe_efficiency/      # Isolated test-target policy, runner, evaluation, tests
+├── probe_efficiency/      # Preserved sufficient-target policy and 32-cell study
+├── task_probe/            # Calibrated fixed-force comparison, task checks, tests
 ├── tests/                 # Recording, controller, and analysis checks
 ├── docs/                  # Experiment guides and written result summaries
 │   └── results/
@@ -300,7 +315,7 @@ python -m primp_project analyze-pad primp_project/results/landing_pad/evaluation
 ## Checks
 
 ```bash
-PYTEST_DISABLE_PLUGIN_AUTOLOAD=1 python -m pytest primp_project/tests primp_project/probe_efficiency/tests -q -o cache_dir=primp_project/artifacts/cache/pytest --basetemp=primp_project/artifacts/test_tmp
+PYTEST_DISABLE_PLUGIN_AUTOLOAD=1 python -m pytest primp_project/tests primp_project/probe_efficiency/tests primp_project/task_probe/tests -q -o cache_dir=primp_project/artifacts/cache/pytest --basetemp=primp_project/artifacts/test_tmp
 ```
 
 Plugin autoload is disabled for this command because the installed ROS pytest

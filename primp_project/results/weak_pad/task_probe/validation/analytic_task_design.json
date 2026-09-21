@@ -1,0 +1,348 @@
+{
+  "kind": "ANALYTIC DESIGN ONLY; native outcomes and fixed-force selection are not inferred",
+  "reference_recording": "results/weak_pad/study_v2/trials/fr_necessary_b_capacity62_adaptive_probe_seed101/weak_pad_adaptive_probe_20260921T111734_321818Z",
+  "reference_hashes": {
+    "metadata.json": "376e72521a134e75f0f5380591263f9aef05074555731a9aa14c2de0a34bf676",
+    "signals.npz": "dc4e4579859acaf7f0a5c2d808ffc1251e888480f828a6205bbea2b0c99407f1"
+  },
+  "audit_source_sha256": "1853d2f589a8adb66b7b6efd073d1c688ff8bb8e838f88bf7067d486bbefdeef",
+  "independent_lp_source_sha256": "63390f51cb643314cff881134ddc82f75d60c0d4b2b58ea73e1071e1ddda731d",
+  "first_probe_sample": 11023,
+  "anchors_from_allowed_observations_w": [
+    [
+      0.24151413770743024,
+      0.116710023028592,
+      0.02276514009231076
+    ],
+    [
+      0.1432247268191225,
+      -0.16894183054070538,
+      0.021995366910229075
+    ],
+    [
+      -0.1604179210817029,
+      0.1606355617913142,
+      0.021378028834260474
+    ],
+    [
+      -0.164395478764504,
+      -0.1685114577235914,
+      0.02070503228083384
+    ]
+  ],
+  "initial_probe_origin_w": [
+    -0.09263290579305362,
+    -0.05520042751685033,
+    0.2602410663355121
+  ],
+  "weight_n": 149.17486248000003,
+  "unchanged_movement_settings_except_progress": {
+    "weak_leg": 0,
+    "next_lift_leg": 1,
+    "forward_progress_m": 0.04,
+    "nominal_lateral_shift_m": -0.02,
+    "maximum_lateral_adjustment_m": 0.08,
+    "maximum_extra_forward_m": 0.01,
+    "support_margin_m": 0.01,
+    "original_tripod_margin_m": 0.02,
+    "minimum_support_force_n": 8.0,
+    "next_lift_height_m": 0.03,
+    "next_hold_s": 1.0,
+    "probe_posture_adjustment_m": 0.12,
+    "maximum_probe_request_n": 60.0,
+    "requested_probe_load_n": 60.0,
+    "probe_force_ceiling_n": 60.0,
+    "probe_robustness_margin_n": 2.0
+  },
+  "robust_maximum_moved_posture_probe_n": 53.11965540021643,
+  "target_arithmetic": {
+    "sensing_reserve_n": 1.0,
+    "tracking_reserve_n": 8.0,
+    "numerical_tolerance_n": 0.001,
+    "command_sensor_error_allowance_n": 0.8,
+    "empirical_probe_undershoot_allowance_n": 0.2
+  },
+  "development_protocol": {
+    "tasks_forward_m": [
+      0.034,
+      0.045
+    ],
+    "fixed_command_candidates_n": [
+      50.57,
+      52.5,
+      53.0
+    ],
+    "hidden_capacity_n": 62.0,
+    "seed": 101,
+    "trial_count": 6,
+    "selection": "Smallest single command whose native trials complete both development tasks undamaged; no formal data may change the scalar.",
+    "retain_all_attempts": true
+  },
+  "evaluation_protocol": {
+    "tasks_forward_m": [
+      0.036,
+      0.04,
+      0.044
+    ],
+    "hidden_capacities_n": [
+      51.5,
+      55.0
+    ],
+    "seeds": [
+      311,
+      1201
+    ],
+    "policies": [
+      "development_selected_fixed_force",
+      "task_derived_minimum_sufficient"
+    ],
+    "trial_count": 24,
+    "task_range": "Interpolate inside the wider development 34\u201345 mm range.",
+    "novelty": "New physical task/capacity combinations and seeds; geometry is known, and 40 mm is a nominal-demand control.",
+    "task_tracking_requirement": "In addition to unchanged V2 safety/progress criteria, verify actual task-specific terminal progress under a declared common tracking tolerance."
+  },
+  "tasks": [
+    {
+      "purpose": "development_low",
+      "forward_progress_m": 0.034,
+      "minimum_future_load_n": 38.33555210308443,
+      "required_minimum_measured_plateau_n": 47.33655210308443,
+      "task_derived_probe_command_n": 48.33655210308443,
+      "remaining_probe_achievability_slack_n": 4.783103297132001,
+      "future_lp": {
+        "feasible": true,
+        "weak_force_n": 38.33555210308443,
+        "forces_n": [
+          38.33555210308443,
+          0.0,
+          54.39217841634675,
+          56.44713196056884
+        ],
+        "com_xy_w": [
+          -0.05863290579305362,
+          0.024799572483149672
+        ],
+        "minimum_triangle_margin_m": 0.09736177392140405,
+        "maximum_equilibrium_residual": 5.329070518200751e-15
+      },
+      "fixed_candidates": [
+        {
+          "command_n": 50.57,
+          "geometrically_achievable": true,
+          "exceeds_task_command_with_all_declared_allowances": true,
+          "optimistic_posttest_cap_n": 41.57,
+          "optimistic_future_feasible": true
+        },
+        {
+          "command_n": 52.5,
+          "geometrically_achievable": true,
+          "exceeds_task_command_with_all_declared_allowances": true,
+          "optimistic_posttest_cap_n": 43.5,
+          "optimistic_future_feasible": true
+        },
+        {
+          "command_n": 53.0,
+          "geometrically_achievable": true,
+          "exceeds_task_command_with_all_declared_allowances": true,
+          "optimistic_posttest_cap_n": 44.0,
+          "optimistic_future_feasible": true
+        }
+      ]
+    },
+    {
+      "purpose": "evaluation_low",
+      "forward_progress_m": 0.036,
+      "minimum_future_load_n": 39.07686203243364,
+      "required_minimum_measured_plateau_n": 48.077862032433636,
+      "task_derived_probe_command_n": 49.077862032433636,
+      "remaining_probe_achievability_slack_n": 4.041793367782795,
+      "future_lp": {
+        "feasible": true,
+        "weak_force_n": 39.07686203243364,
+        "forces_n": [
+          39.07686203243364,
+          0.0,
+          53.749798254263276,
+          56.348202193303116
+        ],
+        "com_xy_w": [
+          -0.05663290579305363,
+          0.024799572483149672
+        ],
+        "minimum_triangle_margin_m": 0.09621191609380195,
+        "maximum_equilibrium_residual": 3.552713678800501e-15
+      },
+      "fixed_candidates": [
+        {
+          "command_n": 50.57,
+          "geometrically_achievable": true,
+          "exceeds_task_command_with_all_declared_allowances": true,
+          "optimistic_posttest_cap_n": 41.57,
+          "optimistic_future_feasible": true
+        },
+        {
+          "command_n": 52.5,
+          "geometrically_achievable": true,
+          "exceeds_task_command_with_all_declared_allowances": true,
+          "optimistic_posttest_cap_n": 43.5,
+          "optimistic_future_feasible": true
+        },
+        {
+          "command_n": 53.0,
+          "geometrically_achievable": true,
+          "exceeds_task_command_with_all_declared_allowances": true,
+          "optimistic_posttest_cap_n": 44.0,
+          "optimistic_future_feasible": true
+        }
+      ]
+    },
+    {
+      "purpose": "evaluation_nominal_control",
+      "forward_progress_m": 0.04,
+      "minimum_future_load_n": 40.55948189113205,
+      "required_minimum_measured_plateau_n": 49.56048189113205,
+      "task_derived_probe_command_n": 50.56048189113205,
+      "remaining_probe_achievability_slack_n": 2.5591735090843812,
+      "future_lp": {
+        "feasible": true,
+        "weak_force_n": 40.55948189113205,
+        "forces_n": [
+          40.55948189113205,
+          0.0,
+          52.46503793009633,
+          56.15034265877165
+        ],
+        "com_xy_w": [
+          -0.05263290579305362,
+          0.024799572483149672
+        ],
+        "minimum_triangle_margin_m": 0.09391220043859774,
+        "maximum_equilibrium_residual": 2.6645352591003757e-15
+      },
+      "fixed_candidates": [
+        {
+          "command_n": 50.57,
+          "geometrically_achievable": true,
+          "exceeds_task_command_with_all_declared_allowances": true,
+          "optimistic_posttest_cap_n": 41.57,
+          "optimistic_future_feasible": true
+        },
+        {
+          "command_n": 52.5,
+          "geometrically_achievable": true,
+          "exceeds_task_command_with_all_declared_allowances": true,
+          "optimistic_posttest_cap_n": 43.5,
+          "optimistic_future_feasible": true
+        },
+        {
+          "command_n": 53.0,
+          "geometrically_achievable": true,
+          "exceeds_task_command_with_all_declared_allowances": true,
+          "optimistic_posttest_cap_n": 44.0,
+          "optimistic_future_feasible": true
+        }
+      ]
+    },
+    {
+      "purpose": "evaluation_high",
+      "forward_progress_m": 0.044,
+      "minimum_future_load_n": 42.04210174983047,
+      "required_minimum_measured_plateau_n": 51.04310174983047,
+      "task_derived_probe_command_n": 52.04310174983047,
+      "remaining_probe_achievability_slack_n": 1.0765536503859607,
+      "future_lp": {
+        "feasible": true,
+        "weak_force_n": 42.04210174983047,
+        "forces_n": [
+          42.04210174983047,
+          0.0,
+          51.180277605929376,
+          55.95248312424019
+        ],
+        "com_xy_w": [
+          -0.04863290579305363,
+          0.024799572483149672
+        ],
+        "minimum_triangle_margin_m": 0.09161248478339355,
+        "maximum_equilibrium_residual": 4.440892098500626e-15
+      },
+      "fixed_candidates": [
+        {
+          "command_n": 50.57,
+          "geometrically_achievable": true,
+          "exceeds_task_command_with_all_declared_allowances": false,
+          "optimistic_posttest_cap_n": 41.57,
+          "optimistic_future_feasible": false
+        },
+        {
+          "command_n": 52.5,
+          "geometrically_achievable": true,
+          "exceeds_task_command_with_all_declared_allowances": true,
+          "optimistic_posttest_cap_n": 43.5,
+          "optimistic_future_feasible": true
+        },
+        {
+          "command_n": 53.0,
+          "geometrically_achievable": true,
+          "exceeds_task_command_with_all_declared_allowances": true,
+          "optimistic_posttest_cap_n": 44.0,
+          "optimistic_future_feasible": true
+        }
+      ]
+    },
+    {
+      "purpose": "development_high",
+      "forward_progress_m": 0.045,
+      "minimum_future_load_n": 42.41275671450508,
+      "required_minimum_measured_plateau_n": 51.41375671450508,
+      "task_derived_probe_command_n": 52.41375671450508,
+      "remaining_probe_achievability_slack_n": 0.7058986857113538,
+      "future_lp": {
+        "feasible": true,
+        "weak_force_n": 42.41275671450508,
+        "forces_n": [
+          42.41275671450508,
+          0.0,
+          50.85908752488764,
+          55.90301824060731
+        ],
+        "com_xy_w": [
+          -0.047632905793053626,
+          0.024799572483149672
+        ],
+        "minimum_triangle_margin_m": 0.0910375558695925,
+        "maximum_equilibrium_residual": 8.881784197001252e-16
+      },
+      "fixed_candidates": [
+        {
+          "command_n": 50.57,
+          "geometrically_achievable": true,
+          "exceeds_task_command_with_all_declared_allowances": false,
+          "optimistic_posttest_cap_n": 41.57,
+          "optimistic_future_feasible": false
+        },
+        {
+          "command_n": 52.5,
+          "geometrically_achievable": true,
+          "exceeds_task_command_with_all_declared_allowances": true,
+          "optimistic_posttest_cap_n": 43.5,
+          "optimistic_future_feasible": true
+        },
+        {
+          "command_n": 53.0,
+          "geometrically_achievable": true,
+          "exceeds_task_command_with_all_declared_allowances": true,
+          "optimistic_posttest_cap_n": 44.0,
+          "optimistic_future_feasible": true
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Equilibrium feasibility and requested force do not demonstrate physical execution or surface survival.",
+    "The selected fixed command must come from the native six-cell development tournament.",
+    "Both policies retain the same pose and load freedoms; only additional test amplitude policy differs.",
+    "The higher-demand weak-capacity case can expose damage under both policies; stopping and recovery are separate from completion.",
+    "Only the simulator and evaluator receive hidden pad strength."
+  ]
+}

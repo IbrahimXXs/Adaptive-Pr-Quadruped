@@ -1,0 +1,39 @@
+{
+  "verified": true,
+  "checks": {
+    "all_formal_runs_listed": true,
+    "all_policies_explicit_in_purpose": true,
+    "catalog_and_focused_outcomes_agree": true,
+    "recovery_distinct_from_completion": true,
+    "historical_annotations_preserved": true
+  },
+  "total_catalog_recordings": 268,
+  "formal_task_probe_recordings": 24,
+  "development_task_probe_recordings": 7,
+  "outcomes": {
+    "RECOVERED_STOP": 8,
+    "SUCCESS": 16
+  },
+  "catalog_statuses": {
+    "RECOVERED_STOP": 8,
+    "PASS": 16
+  },
+  "recording_evidence_modified": false,
+  "post_catalog_study_verification": {
+    "verified": true,
+    "trials": 24,
+    "source_sha256": "d9bca4b5a7a7dcf5ee8fee49c8256ac6e5a8c4bf47539b9eb60f2d555c4a5499",
+    "legacy_baseline": {
+      "verified": true,
+      "trials": 32,
+      "source_sha256": "ae942d6cb4139dbe3322aef4e56bf43647604de79298aab43c98285f7360e8ab",
+      "canonical_files": 131,
+      "original_v2": {
+        "verified": true,
+        "trials": 48,
+        "source_sha256": "7f8501f0270429c3929f9c888604dd54448064f60e78fe24079746cd740f4afd",
+        "canonical_files": 147
+      }
+    }
+  }
+}

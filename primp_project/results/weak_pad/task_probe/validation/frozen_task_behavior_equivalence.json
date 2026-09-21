@@ -1,0 +1,16 @@
+{
+  "verified": true,
+  "original_run_dir": "/home/ibrahim/Documents/GO-2 PRIMP/primp_project/results/weak_pad/probe_efficiency_development/weak_pad_minimum_sufficient_20260921T121507_334941Z",
+  "extension_run_dir": "/home/ibrahim/Documents/GO-2 PRIMP/primp_project/results/weak_pad/task_probe_development/weak_pad_task_sufficient_20260921T130533_840457Z",
+  "compared_channels": 104,
+  "ignored_host_runtime_channels": [
+    "solver_time_s",
+    "wall_time_s"
+  ],
+  "missing": [],
+  "mismatches": [],
+  "metadata_sha256": {
+    "primp_project/results/weak_pad/probe_efficiency_development/weak_pad_minimum_sufficient_20260921T121507_334941Z": "742064bdb552f31729813ca8d428389ba17f871848f460ca5e187a1a372d2498",
+    "primp_project/results/weak_pad/task_probe_development/weak_pad_task_sufficient_20260921T130533_840457Z": "67b2dc48ce063e609f88134c0073f1de4a142afacd3351f5475b943c7f99dc6e"
+  }
+}

@@ -6,19 +6,26 @@ and a large unachieved force request are insufficient. The robot must advance
 its body and lift another leg within a measured support limit, request a
 stronger feasible probe, or stop safely.
 
-The latest focused experiment asks **how much additional testing is necessary**.
-A 32-trial capacity sweep keeps the existing controller and evaluation frozen
-and compares its maximum-feasible test with a minimum sufficient test target.
-The smaller test completes **8/16 movements and damages 8/16 pads**, versus
-**4/16 completions and 12/16 damaged pads** for the baseline; every damaged trial recovers to
-the original supporting tripod. At the new 52 N and 53 N capacities, four
-matched trials complete intact where the larger test breaks the pad. Probing
-time does not improve with the phase durations frozen. See the
-[results and boundary failures](primp_project/docs/results/probe_efficiency.md),
-[paired replay](primp_project/results/weak_pad/probe_efficiency/media/README.md),
-and [549-test validation](primp_project/results/weak_pad/probe_efficiency/validation/final_tests.json).
-This does not claim to prevent the earlier four failures: those pads are below
-even the relaxed task load.
+The latest experiment varies the next movement and compares task-derived
+probing with **one fixed 52.5 N test selected on development**. The fixed force
+was chosen to complete both 34 mm and 45 mm development tasks; evaluation uses
+36/40/44 mm tasks, two new pad capacities, and two new sensing seeds. Across all
+24 frozen trials, task-derived testing completes **10/12 movements and damages
+2/12 pads**, versus **6/12 completions and 6/12 damaged pads** for the calibrated
+fixed policy. Every damaged trial recovers. Four matched cases avoid damage
+and complete the task; both policies still damage the weaker pad at 44 mm.
+Probing time does not improve. See the
+[results and limits](primp_project/docs/results/task_probe.md),
+[paired replay](primp_project/results/weak_pad/task_probe/media/README.md), and
+[597-test validation](primp_project/results/weak_pad/task_probe/validation/final_tests.json).
+This supports task-dependent testing in these cases; it does not establish an
+optimal constant, universal force-tracking bounds, or algorithmic novelty.
+
+The preserved [32-trial probe-efficiency sweep](primp_project/docs/results/probe_efficiency.md)
+compared a sufficient test with near-maximum testing for one movement demand.
+It completed 8/16 versus 4/16 movements and motivated the stronger calibrated
+fixed-force comparison above. The earlier four failures on 29 N and 34 N pads
+remain unchanged; neither extension claims to prevent them.
 
 The preserved V2 comparison gives every probing policy the **same body/load
 optimizer and movement freedoms**. All 48 held-out evaluations are complete:

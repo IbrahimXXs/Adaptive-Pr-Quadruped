@@ -1,0 +1,91 @@
+{
+  "version": 1,
+  "rule": "lowest_force_with_undamaged_success_on_all_development_tasks",
+  "candidate_forces_n": [
+    50.57,
+    52.5,
+    53.0
+  ],
+  "task_ids": [
+    "dev034",
+    "dev045"
+  ],
+  "selected_force_n": 52.5,
+  "protocol_path": "/home/ibrahim/Documents/GO-2 PRIMP/primp_project/results/weak_pad/task_probe/validation/development_protocol.json",
+  "protocol_sha256": "f1c1ab1ad4f8febf25a6a28de741fed5c5cad5dc36012f971e70bcafef2a0a9e",
+  "candidate_trials": [
+    {
+      "task_id": "dev034",
+      "fixed_probe_force_n": 50.57,
+      "run_dir": "/home/ibrahim/Documents/GO-2 PRIMP/primp_project/results/weak_pad/task_probe_development/weak_pad_fixed_force_20260921T130326_688211Z",
+      "run_id": "weak_pad_fixed_force_20260921T130326_688211Z",
+      "outcome": "SUCCESS",
+      "physical_success": true,
+      "pad_damaged": false,
+      "metadata_sha256": "3446558e6ff4a8823f1859c67df9710b958fd7b5c4958d37d121b24064ac1dcc",
+      "signals_sha256": "d3d6fdbd1690597d7cdbc431c8882fc1b80765ba08d3544fce90b9b0191ce6e8",
+      "summary_sha256": "a6f62fd9a9073f464d8bfe4e5d09feef95c3215bec55794989c24fb58c415736"
+    },
+    {
+      "task_id": "dev034",
+      "fixed_probe_force_n": 52.5,
+      "run_dir": "/home/ibrahim/Documents/GO-2 PRIMP/primp_project/results/weak_pad/task_probe_development/weak_pad_fixed_force_20260921T130326_683022Z",
+      "run_id": "weak_pad_fixed_force_20260921T130326_683022Z",
+      "outcome": "SUCCESS",
+      "physical_success": true,
+      "pad_damaged": false,
+      "metadata_sha256": "d58ae1926481fe1cf0e756e78b1a1c38db38c11ae9e7afcf2c2453406e7ceeae",
+      "signals_sha256": "008b49c187a0f2821df0ce3e660373d1861740c437a7eca228d3bed6df397a13",
+      "summary_sha256": "cf014179b62da91c29768976b254d1033dce17a863b7aded96f19ad5cd037dce"
+    },
+    {
+      "task_id": "dev034",
+      "fixed_probe_force_n": 53.0,
+      "run_dir": "/home/ibrahim/Documents/GO-2 PRIMP/primp_project/results/weak_pad/task_probe_development/weak_pad_fixed_force_20260921T130326_682698Z",
+      "run_id": "weak_pad_fixed_force_20260921T130326_682698Z",
+      "outcome": "SUCCESS",
+      "physical_success": true,
+      "pad_damaged": false,
+      "metadata_sha256": "c389c7daa888ece43d344a9fc79cf81cc971fa2f1b90b99eed2e47f3c753eece",
+      "signals_sha256": "3ce879b5d40b1013c171ac15048c9fbd7f395590fda8aef8332fd6bdb0bab904",
+      "summary_sha256": "b4f08cb9a551e473e9379a1f4f296b4241600c2300907a96619ad40db77801b8"
+    },
+    {
+      "task_id": "dev045",
+      "fixed_probe_force_n": 50.57,
+      "run_dir": "/home/ibrahim/Documents/GO-2 PRIMP/primp_project/results/weak_pad/task_probe_development/weak_pad_fixed_force_20260921T130435_493705Z",
+      "run_id": "weak_pad_fixed_force_20260921T130435_493705Z",
+      "outcome": "SAFE_STOP",
+      "physical_success": false,
+      "pad_damaged": false,
+      "metadata_sha256": "ca24dfef8f35511158ca33706a90c102be2708be13620dd28eb680486d2ebac5",
+      "signals_sha256": "747b556e11949b800567c150ae2e0347e0da18de0e4d8f7abd40adb94d4acece",
+      "summary_sha256": "15ef6cd078f7c92f169a42907f49999aa2c21bbcdb834e5024b63d9d1f621439"
+    },
+    {
+      "task_id": "dev045",
+      "fixed_probe_force_n": 52.5,
+      "run_dir": "/home/ibrahim/Documents/GO-2 PRIMP/primp_project/results/weak_pad/task_probe_development/weak_pad_fixed_force_20260921T130435_737727Z",
+      "run_id": "weak_pad_fixed_force_20260921T130435_737727Z",
+      "outcome": "SUCCESS",
+      "physical_success": true,
+      "pad_damaged": false,
+      "metadata_sha256": "854a6a4a68dcb0b90280e4798478b3b2397ea9e4367a46c6567ab8597c093c22",
+      "signals_sha256": "95843a5bd0c325e2ebe46fe714aa7edd0508db795f045127ca6ab93244384bf1",
+      "summary_sha256": "076ece1768ea7c12187edfc0aac60a36c747b1b995c689979ecb3eb9c0796d39"
+    },
+    {
+      "task_id": "dev045",
+      "fixed_probe_force_n": 53.0,
+      "run_dir": "/home/ibrahim/Documents/GO-2 PRIMP/primp_project/results/weak_pad/task_probe_development/weak_pad_fixed_force_20260921T130435_920406Z",
+      "run_id": "weak_pad_fixed_force_20260921T130435_920406Z",
+      "outcome": "SUCCESS",
+      "physical_success": true,
+      "pad_damaged": false,
+      "metadata_sha256": "feff328dc1d1841df0a3c3c7f0bca25ac89887e841acdc44342bafbe8efef80f",
+      "signals_sha256": "179ce92d63eaf3633072a81f1fc2e4dd44a367fe2332a1d4977afa47add475c8",
+      "summary_sha256": "6d9cf1addca9372f3c6f49762809b4f65ee03934dd92abf0753e70899249dada"
+    }
+  ],
+  "selected_at": "2026-09-21T13:07:22.166265+00:00"
+}

@@ -1,0 +1,170 @@
+{
+  "version": 1,
+  "candidate_forces_n": [
+    50.57,
+    52.5,
+    53.0
+  ],
+  "rule": "lowest_force_with_undamaged_success_on_all_development_tasks",
+  "tasks": [
+    {
+      "task_id": "dev034",
+      "parameters": {
+        "scenario": "dev034",
+        "failure_threshold_n": 62.0,
+        "initial_probe_force_n": 12.0,
+        "requested_probe_force_n": 60.0,
+        "maximum_probe_force_n": 60.0,
+        "measurement_reserve_n": 1.0,
+        "tracking_reserve_n": 8.0,
+        "planning_config": {
+          "weak_leg": 0,
+          "next_lift_leg": 1,
+          "forward_progress_m": 0.034,
+          "nominal_lateral_shift_m": -0.02,
+          "maximum_lateral_adjustment_m": 0.08,
+          "maximum_extra_forward_m": 0.01,
+          "support_margin_m": 0.01,
+          "original_tripod_margin_m": 0.02,
+          "minimum_support_force_n": 8.0,
+          "next_lift_height_m": 0.03,
+          "next_hold_s": 1.0,
+          "probe_posture_adjustment_m": 0.12,
+          "maximum_probe_request_n": 60.0,
+          "requested_probe_load_n": 60.0,
+          "probe_force_ceiling_n": 60.0,
+          "probe_robustness_margin_n": 2.0
+        },
+        "probe_offset_xy_m": [
+          -0.048,
+          0.0
+        ],
+        "initial_state": {
+          "body_offset_xy_m": [
+            0.004,
+            -0.005
+          ],
+          "foot_offsets_xy_m": [
+            [
+              -0.039,
+              -0.024
+            ],
+            [
+              -0.039,
+              -0.024
+            ],
+            [
+              0.039,
+              0.024
+            ],
+            [
+              0.039,
+              -0.024
+            ]
+          ]
+        },
+        "sensor_config": {
+          "force_bias_n": -0.6,
+          "force_noise_n": 0.2,
+          "position_noise_m": 0.0001
+        },
+        "seed": 101,
+        "target_tolerance_n": 0.001,
+        "probe_undershoot_allowance_n": 0.2,
+        "role": "development"
+      }
+    },
+    {
+      "task_id": "dev045",
+      "parameters": {
+        "scenario": "dev045",
+        "failure_threshold_n": 62.0,
+        "initial_probe_force_n": 12.0,
+        "requested_probe_force_n": 60.0,
+        "maximum_probe_force_n": 60.0,
+        "measurement_reserve_n": 1.0,
+        "tracking_reserve_n": 8.0,
+        "planning_config": {
+          "weak_leg": 0,
+          "next_lift_leg": 1,
+          "forward_progress_m": 0.045,
+          "nominal_lateral_shift_m": -0.02,
+          "maximum_lateral_adjustment_m": 0.08,
+          "maximum_extra_forward_m": 0.01,
+          "support_margin_m": 0.01,
+          "original_tripod_margin_m": 0.02,
+          "minimum_support_force_n": 8.0,
+          "next_lift_height_m": 0.03,
+          "next_hold_s": 1.0,
+          "probe_posture_adjustment_m": 0.12,
+          "maximum_probe_request_n": 60.0,
+          "requested_probe_load_n": 60.0,
+          "probe_force_ceiling_n": 60.0,
+          "probe_robustness_margin_n": 2.0
+        },
+        "probe_offset_xy_m": [
+          -0.048,
+          0.0
+        ],
+        "initial_state": {
+          "body_offset_xy_m": [
+            0.004,
+            -0.005
+          ],
+          "foot_offsets_xy_m": [
+            [
+              -0.039,
+              -0.024
+            ],
+            [
+              -0.039,
+              -0.024
+            ],
+            [
+              0.039,
+              0.024
+            ],
+            [
+              0.039,
+              -0.024
+            ]
+          ]
+        },
+        "sensor_config": {
+          "force_bias_n": -0.6,
+          "force_noise_n": 0.2,
+          "position_noise_m": 0.0001
+        },
+        "seed": 101,
+        "target_tolerance_n": 0.001,
+        "probe_undershoot_allowance_n": 0.2,
+        "role": "development"
+      }
+    }
+  ],
+  "declared_at": "2026-09-21T13:02:18.547232+00:00",
+  "capacity_selection": "Strong development pad62N shared by every candidate; hidden from policies.",
+  "formal_plan": {
+    "forward_progress_m": [
+      0.036,
+      0.04,
+      0.044
+    ],
+    "hidden_capacities_n": [
+      51.5,
+      55.0
+    ],
+    "seeds": [
+      311,
+      1201
+    ],
+    "policy_count": 2,
+    "expected_trials": 24,
+    "attempt_policy": "Exactly one attempt per declared cell; retain all outcomes and no retuning after formal freeze."
+  },
+  "task_completion_requirement": {
+    "terminal_progress_tolerance_m": 0.001,
+    "useful_progress_hold_s": 1.0,
+    "criterion": "In addition to unchanged V2 physical acceptance, require each task-specific forward reference within1mm, with measured next-leg lift and certified support during at least1s useful progress."
+  }
+}

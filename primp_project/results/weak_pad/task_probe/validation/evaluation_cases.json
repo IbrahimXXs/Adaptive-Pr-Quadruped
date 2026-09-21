@@ -1,0 +1,464 @@
+[
+  {
+    "case_id": "progress36_capacity51p5",
+    "task_id": "progress36",
+    "family": "fixed_geometry_varying_forward_progress",
+    "condition_role": "held_out",
+    "parameters": {
+      "scenario": "progress36_capacity51p5",
+      "failure_threshold_n": 51.5,
+      "initial_probe_force_n": 12.0,
+      "requested_probe_force_n": 60.0,
+      "maximum_probe_force_n": 60.0,
+      "measurement_reserve_n": 1.0,
+      "tracking_reserve_n": 8.0,
+      "planning_config": {
+        "weak_leg": 0,
+        "next_lift_leg": 1,
+        "forward_progress_m": 0.036,
+        "nominal_lateral_shift_m": -0.02,
+        "maximum_lateral_adjustment_m": 0.08,
+        "maximum_extra_forward_m": 0.01,
+        "support_margin_m": 0.01,
+        "original_tripod_margin_m": 0.02,
+        "minimum_support_force_n": 8.0,
+        "next_lift_height_m": 0.03,
+        "next_hold_s": 1.0,
+        "probe_posture_adjustment_m": 0.12,
+        "maximum_probe_request_n": 60.0,
+        "requested_probe_load_n": 60.0,
+        "probe_force_ceiling_n": 60.0,
+        "probe_robustness_margin_n": 2.0
+      },
+      "probe_offset_xy_m": [
+        -0.048,
+        0.0
+      ],
+      "initial_state": {
+        "body_offset_xy_m": [
+          0.004,
+          -0.005
+        ],
+        "foot_offsets_xy_m": [
+          [
+            -0.039,
+            -0.024
+          ],
+          [
+            -0.039,
+            -0.024
+          ],
+          [
+            0.039,
+            0.024
+          ],
+          [
+            0.039,
+            -0.024
+          ]
+        ]
+      },
+      "sensor_config": {
+        "force_bias_n": -0.6,
+        "force_noise_n": 0.2,
+        "position_noise_m": 0.0001
+      },
+      "target_tolerance_n": 0.001,
+      "probe_undershoot_allowance_n": 0.2,
+      "fixed_probe_force_n": 52.5
+    },
+    "expected_outcomes": {
+      "fixed_force": [
+        "RECOVERED_STOP"
+      ],
+      "task_sufficient": [
+        "SUCCESS"
+      ]
+    }
+  },
+  {
+    "case_id": "progress36_capacity55p0",
+    "task_id": "progress36",
+    "family": "fixed_geometry_varying_forward_progress",
+    "condition_role": "held_out",
+    "parameters": {
+      "scenario": "progress36_capacity55p0",
+      "failure_threshold_n": 55.0,
+      "initial_probe_force_n": 12.0,
+      "requested_probe_force_n": 60.0,
+      "maximum_probe_force_n": 60.0,
+      "measurement_reserve_n": 1.0,
+      "tracking_reserve_n": 8.0,
+      "planning_config": {
+        "weak_leg": 0,
+        "next_lift_leg": 1,
+        "forward_progress_m": 0.036,
+        "nominal_lateral_shift_m": -0.02,
+        "maximum_lateral_adjustment_m": 0.08,
+        "maximum_extra_forward_m": 0.01,
+        "support_margin_m": 0.01,
+        "original_tripod_margin_m": 0.02,
+        "minimum_support_force_n": 8.0,
+        "next_lift_height_m": 0.03,
+        "next_hold_s": 1.0,
+        "probe_posture_adjustment_m": 0.12,
+        "maximum_probe_request_n": 60.0,
+        "requested_probe_load_n": 60.0,
+        "probe_force_ceiling_n": 60.0,
+        "probe_robustness_margin_n": 2.0
+      },
+      "probe_offset_xy_m": [
+        -0.048,
+        0.0
+      ],
+      "initial_state": {
+        "body_offset_xy_m": [
+          0.004,
+          -0.005
+        ],
+        "foot_offsets_xy_m": [
+          [
+            -0.039,
+            -0.024
+          ],
+          [
+            -0.039,
+            -0.024
+          ],
+          [
+            0.039,
+            0.024
+          ],
+          [
+            0.039,
+            -0.024
+          ]
+        ]
+      },
+      "sensor_config": {
+        "force_bias_n": -0.6,
+        "force_noise_n": 0.2,
+        "position_noise_m": 0.0001
+      },
+      "target_tolerance_n": 0.001,
+      "probe_undershoot_allowance_n": 0.2,
+      "fixed_probe_force_n": 52.5
+    },
+    "expected_outcomes": {
+      "fixed_force": [
+        "SUCCESS"
+      ],
+      "task_sufficient": [
+        "SUCCESS"
+      ]
+    }
+  },
+  {
+    "case_id": "progress40_capacity51p5",
+    "task_id": "progress40",
+    "family": "fixed_geometry_varying_forward_progress",
+    "condition_role": "held_out",
+    "parameters": {
+      "scenario": "progress40_capacity51p5",
+      "failure_threshold_n": 51.5,
+      "initial_probe_force_n": 12.0,
+      "requested_probe_force_n": 60.0,
+      "maximum_probe_force_n": 60.0,
+      "measurement_reserve_n": 1.0,
+      "tracking_reserve_n": 8.0,
+      "planning_config": {
+        "weak_leg": 0,
+        "next_lift_leg": 1,
+        "forward_progress_m": 0.04,
+        "nominal_lateral_shift_m": -0.02,
+        "maximum_lateral_adjustment_m": 0.08,
+        "maximum_extra_forward_m": 0.01,
+        "support_margin_m": 0.01,
+        "original_tripod_margin_m": 0.02,
+        "minimum_support_force_n": 8.0,
+        "next_lift_height_m": 0.03,
+        "next_hold_s": 1.0,
+        "probe_posture_adjustment_m": 0.12,
+        "maximum_probe_request_n": 60.0,
+        "requested_probe_load_n": 60.0,
+        "probe_force_ceiling_n": 60.0,
+        "probe_robustness_margin_n": 2.0
+      },
+      "probe_offset_xy_m": [
+        -0.048,
+        0.0
+      ],
+      "initial_state": {
+        "body_offset_xy_m": [
+          0.004,
+          -0.005
+        ],
+        "foot_offsets_xy_m": [
+          [
+            -0.039,
+            -0.024
+          ],
+          [
+            -0.039,
+            -0.024
+          ],
+          [
+            0.039,
+            0.024
+          ],
+          [
+            0.039,
+            -0.024
+          ]
+        ]
+      },
+      "sensor_config": {
+        "force_bias_n": -0.6,
+        "force_noise_n": 0.2,
+        "position_noise_m": 0.0001
+      },
+      "target_tolerance_n": 0.001,
+      "probe_undershoot_allowance_n": 0.2,
+      "fixed_probe_force_n": 52.5
+    },
+    "expected_outcomes": {
+      "fixed_force": [
+        "RECOVERED_STOP"
+      ],
+      "task_sufficient": [
+        "SUCCESS"
+      ]
+    }
+  },
+  {
+    "case_id": "progress40_capacity55p0",
+    "task_id": "progress40",
+    "family": "fixed_geometry_varying_forward_progress",
+    "condition_role": "held_out",
+    "parameters": {
+      "scenario": "progress40_capacity55p0",
+      "failure_threshold_n": 55.0,
+      "initial_probe_force_n": 12.0,
+      "requested_probe_force_n": 60.0,
+      "maximum_probe_force_n": 60.0,
+      "measurement_reserve_n": 1.0,
+      "tracking_reserve_n": 8.0,
+      "planning_config": {
+        "weak_leg": 0,
+        "next_lift_leg": 1,
+        "forward_progress_m": 0.04,
+        "nominal_lateral_shift_m": -0.02,
+        "maximum_lateral_adjustment_m": 0.08,
+        "maximum_extra_forward_m": 0.01,
+        "support_margin_m": 0.01,
+        "original_tripod_margin_m": 0.02,
+        "minimum_support_force_n": 8.0,
+        "next_lift_height_m": 0.03,
+        "next_hold_s": 1.0,
+        "probe_posture_adjustment_m": 0.12,
+        "maximum_probe_request_n": 60.0,
+        "requested_probe_load_n": 60.0,
+        "probe_force_ceiling_n": 60.0,
+        "probe_robustness_margin_n": 2.0
+      },
+      "probe_offset_xy_m": [
+        -0.048,
+        0.0
+      ],
+      "initial_state": {
+        "body_offset_xy_m": [
+          0.004,
+          -0.005
+        ],
+        "foot_offsets_xy_m": [
+          [
+            -0.039,
+            -0.024
+          ],
+          [
+            -0.039,
+            -0.024
+          ],
+          [
+            0.039,
+            0.024
+          ],
+          [
+            0.039,
+            -0.024
+          ]
+        ]
+      },
+      "sensor_config": {
+        "force_bias_n": -0.6,
+        "force_noise_n": 0.2,
+        "position_noise_m": 0.0001
+      },
+      "target_tolerance_n": 0.001,
+      "probe_undershoot_allowance_n": 0.2,
+      "fixed_probe_force_n": 52.5
+    },
+    "expected_outcomes": {
+      "fixed_force": [
+        "SUCCESS"
+      ],
+      "task_sufficient": [
+        "SUCCESS"
+      ]
+    }
+  },
+  {
+    "case_id": "progress44_capacity51p5",
+    "task_id": "progress44",
+    "family": "fixed_geometry_varying_forward_progress",
+    "condition_role": "held_out",
+    "parameters": {
+      "scenario": "progress44_capacity51p5",
+      "failure_threshold_n": 51.5,
+      "initial_probe_force_n": 12.0,
+      "requested_probe_force_n": 60.0,
+      "maximum_probe_force_n": 60.0,
+      "measurement_reserve_n": 1.0,
+      "tracking_reserve_n": 8.0,
+      "planning_config": {
+        "weak_leg": 0,
+        "next_lift_leg": 1,
+        "forward_progress_m": 0.044,
+        "nominal_lateral_shift_m": -0.02,
+        "maximum_lateral_adjustment_m": 0.08,
+        "maximum_extra_forward_m": 0.01,
+        "support_margin_m": 0.01,
+        "original_tripod_margin_m": 0.02,
+        "minimum_support_force_n": 8.0,
+        "next_lift_height_m": 0.03,
+        "next_hold_s": 1.0,
+        "probe_posture_adjustment_m": 0.12,
+        "maximum_probe_request_n": 60.0,
+        "requested_probe_load_n": 60.0,
+        "probe_force_ceiling_n": 60.0,
+        "probe_robustness_margin_n": 2.0
+      },
+      "probe_offset_xy_m": [
+        -0.048,
+        0.0
+      ],
+      "initial_state": {
+        "body_offset_xy_m": [
+          0.004,
+          -0.005
+        ],
+        "foot_offsets_xy_m": [
+          [
+            -0.039,
+            -0.024
+          ],
+          [
+            -0.039,
+            -0.024
+          ],
+          [
+            0.039,
+            0.024
+          ],
+          [
+            0.039,
+            -0.024
+          ]
+        ]
+      },
+      "sensor_config": {
+        "force_bias_n": -0.6,
+        "force_noise_n": 0.2,
+        "position_noise_m": 0.0001
+      },
+      "target_tolerance_n": 0.001,
+      "probe_undershoot_allowance_n": 0.2,
+      "fixed_probe_force_n": 52.5
+    },
+    "expected_outcomes": {
+      "fixed_force": [
+        "RECOVERED_STOP"
+      ],
+      "task_sufficient": [
+        "RECOVERED_STOP"
+      ]
+    }
+  },
+  {
+    "case_id": "progress44_capacity55p0",
+    "task_id": "progress44",
+    "family": "fixed_geometry_varying_forward_progress",
+    "condition_role": "held_out",
+    "parameters": {
+      "scenario": "progress44_capacity55p0",
+      "failure_threshold_n": 55.0,
+      "initial_probe_force_n": 12.0,
+      "requested_probe_force_n": 60.0,
+      "maximum_probe_force_n": 60.0,
+      "measurement_reserve_n": 1.0,
+      "tracking_reserve_n": 8.0,
+      "planning_config": {
+        "weak_leg": 0,
+        "next_lift_leg": 1,
+        "forward_progress_m": 0.044,
+        "nominal_lateral_shift_m": -0.02,
+        "maximum_lateral_adjustment_m": 0.08,
+        "maximum_extra_forward_m": 0.01,
+        "support_margin_m": 0.01,
+        "original_tripod_margin_m": 0.02,
+        "minimum_support_force_n": 8.0,
+        "next_lift_height_m": 0.03,
+        "next_hold_s": 1.0,
+        "probe_posture_adjustment_m": 0.12,
+        "maximum_probe_request_n": 60.0,
+        "requested_probe_load_n": 60.0,
+        "probe_force_ceiling_n": 60.0,
+        "probe_robustness_margin_n": 2.0
+      },
+      "probe_offset_xy_m": [
+        -0.048,
+        0.0
+      ],
+      "initial_state": {
+        "body_offset_xy_m": [
+          0.004,
+          -0.005
+        ],
+        "foot_offsets_xy_m": [
+          [
+            -0.039,
+            -0.024
+          ],
+          [
+            -0.039,
+            -0.024
+          ],
+          [
+            0.039,
+            0.024
+          ],
+          [
+            0.039,
+            -0.024
+          ]
+        ]
+      },
+      "sensor_config": {
+        "force_bias_n": -0.6,
+        "force_noise_n": 0.2,
+        "position_noise_m": 0.0001
+      },
+      "target_tolerance_n": 0.001,
+      "probe_undershoot_allowance_n": 0.2,
+      "fixed_probe_force_n": 52.5
+    },
+    "expected_outcomes": {
+      "fixed_force": [
+        "SUCCESS"
+      ],
+      "task_sufficient": [
+        "SUCCESS"
+      ]
+    }
+  }
+]

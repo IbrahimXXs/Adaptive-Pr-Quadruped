@@ -1,0 +1,207 @@
+{
+  "audit": "Independent native development mutation audit of the additional task_probe validator",
+  "old_validator": "primp_project.analysis.weak_pad_v2.evaluate_weak_pad_v2 (unchanged)",
+  "new_validator": "primp_project.task_probe.analysis.evaluate_task_probe (additional integrity/task criteria)",
+  "raw_logs_modified": false,
+  "native_originals": [
+    {
+      "run": "primp_project/results/weak_pad/task_probe_development/weak_pad_fixed_force_20260921T130326_682698Z",
+      "policy": "fixed_force",
+      "requested_progress_m": 0.034,
+      "fixed_probe_force_n": 53.0,
+      "outcome": "SUCCESS",
+      "baseline_outcome": "SUCCESS",
+      "valid": true
+    },
+    {
+      "run": "primp_project/results/weak_pad/task_probe_development/weak_pad_fixed_force_20260921T130326_683022Z",
+      "policy": "fixed_force",
+      "requested_progress_m": 0.034,
+      "fixed_probe_force_n": 52.5,
+      "outcome": "SUCCESS",
+      "baseline_outcome": "SUCCESS",
+      "valid": true
+    },
+    {
+      "run": "primp_project/results/weak_pad/task_probe_development/weak_pad_fixed_force_20260921T130326_688211Z",
+      "policy": "fixed_force",
+      "requested_progress_m": 0.034,
+      "fixed_probe_force_n": 50.57,
+      "outcome": "SUCCESS",
+      "baseline_outcome": "SUCCESS",
+      "valid": true
+    },
+    {
+      "run": "primp_project/results/weak_pad/task_probe_development/weak_pad_fixed_force_20260921T130435_493705Z",
+      "policy": "fixed_force",
+      "requested_progress_m": 0.045,
+      "fixed_probe_force_n": 50.57,
+      "outcome": "SAFE_STOP",
+      "baseline_outcome": "SAFE_STOP",
+      "valid": true
+    },
+    {
+      "run": "primp_project/results/weak_pad/task_probe_development/weak_pad_fixed_force_20260921T130435_737727Z",
+      "policy": "fixed_force",
+      "requested_progress_m": 0.045,
+      "fixed_probe_force_n": 52.5,
+      "outcome": "SUCCESS",
+      "baseline_outcome": "SUCCESS",
+      "valid": true
+    },
+    {
+      "run": "primp_project/results/weak_pad/task_probe_development/weak_pad_fixed_force_20260921T130435_920406Z",
+      "policy": "fixed_force",
+      "requested_progress_m": 0.045,
+      "fixed_probe_force_n": 53.0,
+      "outcome": "SUCCESS",
+      "baseline_outcome": "SUCCESS",
+      "valid": true
+    },
+    {
+      "run": "primp_project/results/weak_pad/task_probe_development/weak_pad_task_sufficient_20260921T130533_840457Z",
+      "policy": "task_sufficient",
+      "requested_progress_m": 0.04,
+      "fixed_probe_force_n": 50.57,
+      "outcome": "SUCCESS",
+      "baseline_outcome": "SUCCESS",
+      "valid": true
+    }
+  ],
+  "mutations": [
+    {
+      "mutation": "false_fixed_force_metadata",
+      "baseline_outcome": "SUCCESS",
+      "new_outcome": "INVALID",
+      "rejected": true,
+      "failed_integrity_checks": [
+        "fixed_policy_uses_declared_constant"
+      ]
+    },
+    {
+      "mutation": "command_exceeds_selected_target",
+      "baseline_outcome": "SUCCESS",
+      "new_outcome": "INVALID",
+      "rejected": true,
+      "failed_integrity_checks": [
+        "selected_target_matches_executed_command"
+      ]
+    },
+    {
+      "mutation": "selected_request_disagrees_with_execution",
+      "baseline_outcome": "SUCCESS",
+      "new_outcome": "INVALID",
+      "rejected": true,
+      "failed_integrity_checks": [
+        "selected_target_matches_planner_decision",
+        "fixed_policy_uses_declared_constant"
+      ]
+    },
+    {
+      "mutation": "consistent_false_smaller_fixed_command",
+      "baseline_outcome": "SUCCESS",
+      "new_outcome": "INVALID",
+      "rejected": true,
+      "failed_integrity_checks": [
+        "probe_mpc_bounds_match_target"
+      ]
+    },
+    {
+      "mutation": "requested_force_substituted_for_measured_proof",
+      "baseline_outcome": "INVALID",
+      "new_outcome": "INVALID",
+      "rejected": true,
+      "failed_integrity_checks": [
+        "certificate_evidence_sound"
+      ]
+    },
+    {
+      "mutation": "tracking_reserve_consistently_weakened",
+      "baseline_outcome": "SUCCESS",
+      "new_outcome": "INVALID",
+      "rejected": true,
+      "failed_integrity_checks": [
+        "reserve_and_sensor_configuration_consistent"
+      ]
+    },
+    {
+      "mutation": "hidden_failure_despite_overload",
+      "baseline_outcome": "INVALID",
+      "new_outcome": "INVALID",
+      "rejected": true,
+      "failed_integrity_checks": [
+        "physical_failure_model"
+      ]
+    },
+    {
+      "mutation": "inconsistent_damage_displacement",
+      "baseline_outcome": "SUCCESS",
+      "new_outcome": "INVALID",
+      "rejected": true,
+      "failed_integrity_checks": [
+        "pad_displacement_channels_agree"
+      ]
+    },
+    {
+      "mutation": "old_30mm_completion_with_forged_easier_target",
+      "baseline_outcome": "SUCCESS",
+      "new_outcome": "INVALID",
+      "rejected": true,
+      "failed_integrity_checks": [
+        "task_specific_goal_attained"
+      ]
+    }
+  ],
+  "raw_sha256_before": {
+    "primp_project/results/weak_pad/task_probe_development/weak_pad_fixed_force_20260921T130326_682698Z/metadata.json": "c389c7daa888ece43d344a9fc79cf81cc971fa2f1b90b99eed2e47f3c753eece",
+    "primp_project/results/weak_pad/task_probe_development/weak_pad_fixed_force_20260921T130326_682698Z/signals.npz": "3ce879b5d40b1013c171ac15048c9fbd7f395590fda8aef8332fd6bdb0bab904",
+    "primp_project/results/weak_pad/task_probe_development/weak_pad_fixed_force_20260921T130326_683022Z/metadata.json": "d58ae1926481fe1cf0e756e78b1a1c38db38c11ae9e7afcf2c2453406e7ceeae",
+    "primp_project/results/weak_pad/task_probe_development/weak_pad_fixed_force_20260921T130326_683022Z/signals.npz": "008b49c187a0f2821df0ce3e660373d1861740c437a7eca228d3bed6df397a13",
+    "primp_project/results/weak_pad/task_probe_development/weak_pad_fixed_force_20260921T130326_688211Z/metadata.json": "3446558e6ff4a8823f1859c67df9710b958fd7b5c4958d37d121b24064ac1dcc",
+    "primp_project/results/weak_pad/task_probe_development/weak_pad_fixed_force_20260921T130326_688211Z/signals.npz": "d3d6fdbd1690597d7cdbc431c8882fc1b80765ba08d3544fce90b9b0191ce6e8",
+    "primp_project/results/weak_pad/task_probe_development/weak_pad_fixed_force_20260921T130435_493705Z/metadata.json": "ca24dfef8f35511158ca33706a90c102be2708be13620dd28eb680486d2ebac5",
+    "primp_project/results/weak_pad/task_probe_development/weak_pad_fixed_force_20260921T130435_493705Z/signals.npz": "747b556e11949b800567c150ae2e0347e0da18de0e4d8f7abd40adb94d4acece",
+    "primp_project/results/weak_pad/task_probe_development/weak_pad_fixed_force_20260921T130435_737727Z/metadata.json": "854a6a4a68dcb0b90280e4798478b3b2397ea9e4367a46c6567ab8597c093c22",
+    "primp_project/results/weak_pad/task_probe_development/weak_pad_fixed_force_20260921T130435_737727Z/signals.npz": "95843a5bd0c325e2ebe46fe714aa7edd0508db795f045127ca6ab93244384bf1",
+    "primp_project/results/weak_pad/task_probe_development/weak_pad_fixed_force_20260921T130435_920406Z/metadata.json": "feff328dc1d1841df0a3c3c7f0bca25ac89887e841acdc44342bafbe8efef80f",
+    "primp_project/results/weak_pad/task_probe_development/weak_pad_fixed_force_20260921T130435_920406Z/signals.npz": "179ce92d63eaf3633072a81f1fc2e4dd44a367fe2332a1d4977afa47add475c8",
+    "primp_project/results/weak_pad/task_probe_development/weak_pad_task_sufficient_20260921T130533_840457Z/metadata.json": "67b2dc48ce063e609f88134c0073f1de4a142afacd3351f5475b943c7f99dc6e",
+    "primp_project/results/weak_pad/task_probe_development/weak_pad_task_sufficient_20260921T130533_840457Z/signals.npz": "52f514fb15b4e28fea4d335068eb644ba71c896d0c3f9c3921f03956100a29bf"
+  },
+  "raw_sha256_after": {
+    "primp_project/results/weak_pad/task_probe_development/weak_pad_fixed_force_20260921T130326_682698Z/metadata.json": "c389c7daa888ece43d344a9fc79cf81cc971fa2f1b90b99eed2e47f3c753eece",
+    "primp_project/results/weak_pad/task_probe_development/weak_pad_fixed_force_20260921T130326_682698Z/signals.npz": "3ce879b5d40b1013c171ac15048c9fbd7f395590fda8aef8332fd6bdb0bab904",
+    "primp_project/results/weak_pad/task_probe_development/weak_pad_fixed_force_20260921T130326_683022Z/metadata.json": "d58ae1926481fe1cf0e756e78b1a1c38db38c11ae9e7afcf2c2453406e7ceeae",
+    "primp_project/results/weak_pad/task_probe_development/weak_pad_fixed_force_20260921T130326_683022Z/signals.npz": "008b49c187a0f2821df0ce3e660373d1861740c437a7eca228d3bed6df397a13",
+    "primp_project/results/weak_pad/task_probe_development/weak_pad_fixed_force_20260921T130326_688211Z/metadata.json": "3446558e6ff4a8823f1859c67df9710b958fd7b5c4958d37d121b24064ac1dcc",
+    "primp_project/results/weak_pad/task_probe_development/weak_pad_fixed_force_20260921T130326_688211Z/signals.npz": "d3d6fdbd1690597d7cdbc431c8882fc1b80765ba08d3544fce90b9b0191ce6e8",
+    "primp_project/results/weak_pad/task_probe_development/weak_pad_fixed_force_20260921T130435_493705Z/metadata.json": "ca24dfef8f35511158ca33706a90c102be2708be13620dd28eb680486d2ebac5",
+    "primp_project/results/weak_pad/task_probe_development/weak_pad_fixed_force_20260921T130435_493705Z/signals.npz": "747b556e11949b800567c150ae2e0347e0da18de0e4d8f7abd40adb94d4acece",
+    "primp_project/results/weak_pad/task_probe_development/weak_pad_fixed_force_20260921T130435_737727Z/metadata.json": "854a6a4a68dcb0b90280e4798478b3b2397ea9e4367a46c6567ab8597c093c22",
+    "primp_project/results/weak_pad/task_probe_development/weak_pad_fixed_force_20260921T130435_737727Z/signals.npz": "95843a5bd0c325e2ebe46fe714aa7edd0508db795f045127ca6ab93244384bf1",
+    "primp_project/results/weak_pad/task_probe_development/weak_pad_fixed_force_20260921T130435_920406Z/metadata.json": "feff328dc1d1841df0a3c3c7f0bca25ac89887e841acdc44342bafbe8efef80f",
+    "primp_project/results/weak_pad/task_probe_development/weak_pad_fixed_force_20260921T130435_920406Z/signals.npz": "179ce92d63eaf3633072a81f1fc2e4dd44a367fe2332a1d4977afa47add475c8",
+    "primp_project/results/weak_pad/task_probe_development/weak_pad_task_sufficient_20260921T130533_840457Z/metadata.json": "67b2dc48ce063e609f88134c0073f1de4a142afacd3351f5475b943c7f99dc6e",
+    "primp_project/results/weak_pad/task_probe_development/weak_pad_task_sufficient_20260921T130533_840457Z/signals.npz": "52f514fb15b4e28fea4d335068eb644ba71c896d0c3f9c3921f03956100a29bf"
+  },
+  "raw_hashes_unchanged": true,
+  "selection_sha256_before": {
+    "primp_project/results/weak_pad/task_probe/validation/development_protocol.json": "f1c1ab1ad4f8febf25a6a28de741fed5c5cad5dc36012f971e70bcafef2a0a9e",
+    "primp_project/results/weak_pad/task_probe/validation/fixed_force_selection.json": "824688f1d2e407eb2f9d86c4a545e9a2696b92cb125baf156947c1788a00b30d",
+    "primp_project/results/weak_pad/task_probe/validation/evaluation_cases.json": "328e9d17b3cea6f11ba35c039f9681ce45b4cd0fc20802754b0a6516591a61c4",
+    "primp_project/results/weak_pad/task_probe/split_manifest.json": "0c40b131ff7be50898bc87b50f283644653f7c121bb15a34086e32b3a00b840b",
+    "primp_project/results/weak_pad/task_probe/execution_freeze.json": "91a0a20bd742367cff3f91e8d91e1904a2b672530902ae784e7ad305929d4484"
+  },
+  "selection_sha256_after": {
+    "primp_project/results/weak_pad/task_probe/validation/development_protocol.json": "f1c1ab1ad4f8febf25a6a28de741fed5c5cad5dc36012f971e70bcafef2a0a9e",
+    "primp_project/results/weak_pad/task_probe/validation/fixed_force_selection.json": "824688f1d2e407eb2f9d86c4a545e9a2696b92cb125baf156947c1788a00b30d",
+    "primp_project/results/weak_pad/task_probe/validation/evaluation_cases.json": "328e9d17b3cea6f11ba35c039f9681ce45b4cd0fc20802754b0a6516591a61c4",
+    "primp_project/results/weak_pad/task_probe/split_manifest.json": "0c40b131ff7be50898bc87b50f283644653f7c121bb15a34086e32b3a00b840b",
+    "primp_project/results/weak_pad/task_probe/execution_freeze.json": "91a0a20bd742367cff3f91e8d91e1904a2b672530902ae784e7ad305929d4484"
+  },
+  "selection_hashes_unchanged": true,
+  "new_analyzer_sha256": "7aa4060be28e3c0e292d2b98bf3be7acf59d0fffb29bc27ed75b592c4080ee1e",
+  "frozen_v2_analyzer_sha256": "edbeb67485dc4dff4b4ed329d941072f6c97a5e5c67c4bd505c4e74873d174fe",
+  "audit_script_sha256": "ccaba338417cf50974ebf1e9074bc4d360107983bea4c0a64c770e1477413b6c",
+  "passed": true
+}

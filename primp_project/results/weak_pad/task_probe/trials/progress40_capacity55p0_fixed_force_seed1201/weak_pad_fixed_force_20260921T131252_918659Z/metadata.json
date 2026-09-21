@@ -1,0 +1,789 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-09-21T13:12:52.918775+00:00",
+  "standing_duration_s": 0.0,
+  "settling_duration_s": 3.0,
+  "seed": 1201,
+  "rendered": false,
+  "legs": [
+    "FL",
+    "FR",
+    "RL",
+    "RR"
+  ],
+  "status": "completed",
+  "conventions": {
+    "sample": "Post-step state on copied MjData, refreshed with mj_forward; live MjData is unchanged.",
+    "time_s": "Seconds since reset returned; initial MuJoCo time is retained separately.",
+    "control_time_s": "Start of the integration interval; desired positions/forces and command held over this interval.",
+    "contact_force_w": "Instantaneous simulated constraint reaction at sample state under held control, ON the foot, world XYZ, N; not an integrated impulse or hardware sensor.",
+    "contact_measured": "At least one active constraint (efc_address >= 0) between exact foot geom and a world-body geom. Intended for static flat terrain.",
+    "feet_pos_w": "Foot geometry center in world XYZ metres; not ground contact point.",
+    "feet_desired_w": "Fixed settled world anchors for supports, explicit Cartesian trajectory for FL.",
+    "feet_foothold_ref_w": "Foothold planner touchdown reference, separate from instantaneous desired foot position.",
+    "contact_planned": "wb.current_contact used for current torque; distinct from physical contact.",
+    "gait_phase": "Raw PGG phase, dimensionless. FULL_STANCE resets phase to constant offsets; it is not elapsed standing phase.",
+    "phase": "Nonperiodic command phase held over control interval; cycle starts at 1.",
+    "base_quat_wxyz": "Unit quaternion, scalar first; base_rpy_rad is extrinsic XYZ roll/pitch/yaw in radians.",
+    "base_ang_vel_b": "Angular velocity in base frame, rad/s; linear velocities and all positions are world frame.",
+    "com_pos_w": "Physical model CoM from body-mass-weighted xipos, independent of the controller's CoM estimate.",
+    "mpc_status": "Held latest acados NLP status; count solves only where mpc_update is true. Status 2 is expected with default one-iteration SQP.",
+    "qp_status": "Maximum absolute underlying QP status from latest solve (0 means success).",
+    "solver_time_s": "Latest acados solve time; wall_time_s is recorder elapsed wall time, including rendering and logging.",
+    "actuator_torque": "Applied torque after clipping, model actuator order, Nm; torque_saturated reports pre-clip limit violations.",
+    "selected_force_cap_N": "FL MPC Fz upper bound at most recent solve; held between MPC updates.",
+    "com_target_w": "Desired physical center of mass in world coordinates; controller uses mass-weighted body xipos.",
+    "certificate_observation_phase": "State before processing this control interval observation; command phase may transition afterwards.",
+    "sensor_force_error_bound_n": "Capacity-channel bounded force bias+uniform noise; existing MPC state/other-leg channels remain ideal.",
+    "forward_progress": "World X relative to the first confirmed probing posture; the global movement goal stays fixed during further tests.",
+    "minimum_sufficient_probe_load_n": "Required measured plateau: minimum future load + unchanged measurement and tracking reserves + numerical tolerance.",
+    "probe_target_load_n": "Selected additional test command; differs from requested force budget, MPC output, and actual measured load.",
+    "probe_execution_allowance": "Minimum policy command also accounts for the declared force observation error bound and empirical probe undershoot allowance. This predicts targeting only and supplies no capacity certificate."
+  },
+  "experiment": "weak_pad",
+  "selected_leg": "FL",
+  "cycles": 1,
+  "hold_seconds": 5.0,
+  "lift_height_m": 0.03,
+  "contact_debounce_s": 0.1,
+  "friction": 0.8,
+  "actual_completed_cycles": 1,
+  "controller_changes": {
+    "xy_position_cost": 2000.0,
+    "bias_compensation_all_legs": true,
+    "physical_mass_and_com": true,
+    "periodic_gait_and_terrain_estimation_bypassed": true,
+    "schedule": "Binary FL=0 through lift/hold/lower/confirm for entire MPC horizon",
+    "support_gate_margin_m": 0.02,
+    "touchdown_normal_threshold_N": 2.0,
+    "max_downward_search_m": 0.005
+  },
+  "strategy": "adaptive_probe",
+  "role": "evaluation",
+  "requested_probe_force_n": 60.0,
+  "probe_command_limit_n": 12.0,
+  "probe_dwell_s": 0.5,
+  "sensor_force_reserve_n": 1.0,
+  "tracking_reserve_n": 8.0,
+  "next_leg": "FR",
+  "next_leg_index": 1,
+  "required_forward_progress_m": 0.03,
+  "required_next_leg_lift_m": 0.02,
+  "required_progress_hold_s": 1.0,
+  "max_probe_motion_m": 0.001,
+  "progression_axis": [
+    1.0,
+    0.0,
+    0.0
+  ],
+  "force_tolerance_n": 0.5,
+  "assumptions": [
+    "Time-invariant monotone normal-force threshold at the same contact location.",
+    "Uniform strength within 10 mm horizontal contact motion; >2.5 mm vertical motion invalidates the test.",
+    "No fatigue, shear failure, history-dependent damage or rate-dependent strength.",
+    "A stable test supplies a demonstrated load bound, never the exact breaking force."
+  ],
+  "protocol_version": 2,
+  "trial_parameters": {
+    "strategy": "adaptive_probe",
+    "probe_policy": "fixed_force",
+    "scenario": "progress40_capacity55p0",
+    "fixed_probe_force_n": 52.5,
+    "initial_probe_force_n": 12.0,
+    "requested_probe_force_n": 60.0,
+    "maximum_probe_force_n": 60.0,
+    "measurement_reserve_n": 1.0,
+    "tracking_reserve_n": 8.0,
+    "planning_config": {
+      "weak_leg": 0,
+      "next_lift_leg": 1,
+      "forward_progress_m": 0.04,
+      "nominal_lateral_shift_m": -0.02,
+      "maximum_lateral_adjustment_m": 0.08,
+      "maximum_extra_forward_m": 0.01,
+      "support_margin_m": 0.01,
+      "original_tripod_margin_m": 0.02,
+      "minimum_support_force_n": 8.0,
+      "next_lift_height_m": 0.03,
+      "next_hold_s": 1.0,
+      "probe_posture_adjustment_m": 0.12,
+      "maximum_probe_request_n": 60.0,
+      "requested_probe_load_n": 60.0,
+      "probe_force_ceiling_n": 60.0,
+      "probe_robustness_margin_n": 2.0
+    },
+    "probe_offset_xy_m": [
+      -0.048,
+      0.0
+    ],
+    "initial_state": {
+      "body_offset_xy_m": [
+        0.004,
+        -0.005
+      ],
+      "foot_offsets_xy_m": [
+        [
+          -0.039,
+          -0.024
+        ],
+        [
+          -0.039,
+          -0.024
+        ],
+        [
+          0.039,
+          0.024
+        ],
+        [
+          0.039,
+          -0.024
+        ]
+      ]
+    },
+    "sensor_config": {
+      "force_bias_n": -0.6,
+      "force_noise_n": 0.2,
+      "position_noise_m": 0.0001
+    },
+    "target_tolerance_n": 0.001,
+    "probe_undershoot_allowance_n": 0.2,
+    "seed": 1201,
+    "role": "evaluation"
+  },
+  "scenario": "progress40_capacity55p0",
+  "movement_optimizer_id": "shared_quasistatic_body_force_qp_v2",
+  "movement_optimizer_settings": {
+    "weak_leg": 0,
+    "next_lift_leg": 1,
+    "forward_progress_m": 0.04,
+    "nominal_lateral_shift_m": -0.02,
+    "maximum_lateral_adjustment_m": 0.08,
+    "maximum_extra_forward_m": 0.01,
+    "support_margin_m": 0.01,
+    "original_tripod_margin_m": 0.02,
+    "minimum_support_force_n": 8.0,
+    "next_lift_height_m": 0.03,
+    "next_hold_s": 1.0,
+    "probe_posture_adjustment_m": 0.12,
+    "maximum_probe_request_n": 60.0,
+    "requested_probe_load_n": 60.0,
+    "probe_force_ceiling_n": 60.0,
+    "probe_robustness_margin_n": 2.0
+  },
+  "movement_optimizer_config_sha256": "47b063f1cb35a2a2b09f12f190d58062696c7a70828766b990cd7078b1a5d317",
+  "sensor_config": {
+    "force_bias_n": -0.6,
+    "force_noise_n": 0.2,
+    "position_noise_m": 0.0001
+  },
+  "sensor_force_error_bound_n": 0.8,
+  "sensor_position_error_bound_m": 0.0001,
+  "sensor_delay_s": 0.0,
+  "recovery_minimum_tripod_hold_s": 2.0,
+  "recovery_maximum_unload_delay_s": 1.5,
+  "recovery_maximum_abs_roll_pitch_deg": 8.0,
+  "recovery_minimum_foot_clearance_m": 0.025,
+  "study_name": "task_probe",
+  "task_probe_version": 1,
+  "fixed_probe_force_n": 52.5,
+  "probe_policy": "fixed_force",
+  "target_tolerance_n": 0.001,
+  "probe_undershoot_allowance_n": 0.2,
+  "robot": "go2",
+  "controller": "nominal",
+  "dt_s": 0.002,
+  "sample_rate_hz": 500.0,
+  "initial_mujoco_time_s": 0.002,
+  "initial_qpos": [
+    0.004,
+    -0.005,
+    0.2901705103328136,
+    1.0,
+    4.933667358322009e-20,
+    0.0,
+    0.0,
+    -0.07213817192604803,
+    1.0712000442087577,
+    -1.8148411435268994,
+    -0.07032416554680959,
+    1.022212115797518,
+    -1.7333062135277972,
+    0.1064264197690547,
+    0.7324334882743695,
+    -1.7157993950064123,
+    -0.07032416554680058,
+    0.743859150267701,
+    -1.7424334135229227
+  ],
+  "initial_qvel": [
+    2.318801078110108e-18,
+    1.1918370397283574e-19,
+    -0.01962000000000001,
+    5.3290705182007515e-18,
+    -4.75175454539567e-17,
+    -1.2156942119645464e-17,
+    2.1316282072803005e-16,
+    -1.7408297026122455e-16,
+    5.329070518200751e-17,
+    -5.684341886080802e-17,
+    1.0658141036401502e-16,
+    -1.5987211554602256e-17,
+    1.2789769243681805e-16,
+    4.973799150320702e-16,
+    -1.4210854715202004e-16,
+    -2.913225216616411e-16,
+    1.7053025658242405e-16,
+    1.7763568394002505e-17
+  ],
+  "model_mass_kg": 15.206408000000003,
+  "initial_contact_measured": [
+    false,
+    false,
+    false,
+    false
+  ],
+  "initial_feet_pos_w": [
+    [
+      0.15315678006345865,
+      0.11800000000000004,
+      0.02379801003025578
+    ],
+    [
+      0.1531567800631334,
+      -0.16599999999996923,
+      0.02379801003064491
+    ],
+    [
+      -0.15564322000884112,
+      0.16599999999544035,
+      0.023798010079792292
+    ],
+    [
+      -0.1556432199357681,
+      -0.16599999999993434,
+      0.023798010031105196
+    ]
+  ],
+  "gravity_m_s2": 9.81,
+  "config_mass_kg": 15.019,
+  "mpc_params": {
+    "type": "nominal",
+    "verbose": false,
+    "horizon": 12,
+    "dt": 0.02,
+    "grf_max": 147.33639000000002,
+    "grf_min": 0,
+    "mu": 0.5,
+    "use_nonuniform_discretization": false,
+    "horizon_fine_grained": 2,
+    "dt_fine_grained": 0.01,
+    "optimize_step_freq": false,
+    "step_freq_available": [
+      1.4,
+      2.0,
+      2.4
+    ],
+    "use_warm_start": false,
+    "use_integrators": false,
+    "alpha_integrator": 0.1,
+    "integrator_cap": [
+      0.5,
+      0.2,
+      0.2,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "use_foothold_optimization": true,
+    "use_foothold_constraints": false,
+    "use_RTI": false,
+    "as_rti_type": "Standard",
+    "as_rti_iter": 1,
+    "use_DDP": false,
+    "num_qp_iterations": 1,
+    "solver_mode": "balance",
+    "use_input_prediction": false,
+    "use_static_stability": false,
+    "use_zmp_stability": false,
+    "trot_stability_margin": 0.04,
+    "pace_stability_margin": 0.1,
+    "crawl_stability_margin": 0.04,
+    "external_wrenches_compensation": true,
+    "external_wrenches_compensation_num_step": 15,
+    "passive_arm_compensation": true,
+    "K_z1": [
+      1,
+      1,
+      10
+    ],
+    "K_z2": [
+      1,
+      4,
+      10
+    ],
+    "residual_dynamics_upper_bound": 30,
+    "use_residual_dynamics_decay": false,
+    "sampling_method": "random_sampling",
+    "control_parametrization": "cubic_spline",
+    "num_splines": 2,
+    "num_parallel_computations": 10000,
+    "num_sampling_iterations": 1,
+    "device": "gpu",
+    "sigma_cem_mppi": 3,
+    "sigma_mppi": 3,
+    "sigma_random_sampling": [
+      0.2,
+      3,
+      10
+    ],
+    "shift_solution": false
+  },
+  "simulation_params": {
+    "swing_generator": "scipy",
+    "swing_position_gain_fb": 500,
+    "swing_velocity_gain_fb": 10,
+    "impedence_joint_position_gain": 10.0,
+    "impedence_joint_velocity_gain": 2.0,
+    "step_height": 0.05600000000000001,
+    "visual_foothold_adaptation": "blind",
+    "dt": 0.002,
+    "gait": "full_stance",
+    "gait_params": {
+      "trot": {
+        "step_freq": 1.4,
+        "duty_factor": 0.65,
+        "type": 0
+      },
+      "crawl": {
+        "step_freq": 0.5,
+        "duty_factor": 0.8,
+        "type": 5
+      },
+      "pace": {
+        "step_freq": 1.4,
+        "duty_factor": 0.7,
+        "type": 1
+      },
+      "bound": {
+        "step_freq": 1.8,
+        "duty_factor": 0.65,
+        "type": 2
+      },
+      "full_stance": {
+        "step_freq": 2,
+        "duty_factor": 0.65,
+        "type": 7
+      }
+    },
+    "reflex_trigger_mode": "tracking",
+    "reflex_max_step_height": 0.14,
+    "reflex_next_steps_height_enhancement": false,
+    "velocity_modulator": true,
+    "mode": "human",
+    "ref_z": 0.28,
+    "mpc_frequency": 100,
+    "use_inertia_recomputation": true,
+    "scene": "flat"
+  },
+  "git_commit": "3568c9c8ee51949cf04bac6c2968af41befa1a17",
+  "packages": {
+    "mujoco": "3.12.0",
+    "gym-quadruped": "1.1.5",
+    "numpy": "2.5.2",
+    "scipy": "1.18.0",
+    "casadi": "3.7.2",
+    "acados-template": "0.1"
+  },
+  "actuator_names": [
+    "FL_hip",
+    "FL_thigh",
+    "FL_calf",
+    "FR_hip",
+    "FR_thigh",
+    "FR_calf",
+    "RL_hip",
+    "RL_thigh",
+    "RL_calf",
+    "RR_hip",
+    "RR_thigh",
+    "RR_calf"
+  ],
+  "evaluation": {
+    "schema_version": 1,
+    "failure_load_n": 55.0,
+    "overload_dwell_s": 0.01,
+    "sink_depth_m": 0.06,
+    "sink_speed_m_s": 0.1,
+    "failed": false,
+    "failure_time_s": null,
+    "failure_trigger_force_n": null,
+    "overload_elapsed_s": 0.0,
+    "force_before_deformation_n": 0.0,
+    "target_normal_force_n": 0.0,
+    "sink_displacement_m": -0.0,
+    "top_height_m": 0.0,
+    "simulation_time_s": 0.002,
+    "failure_threshold_n": 55.0
+  },
+  "initial_state": {
+    "schema_version": 1,
+    "body_offset_xy_m": [
+      0.004,
+      -0.005
+    ],
+    "foot_offsets_xy_m": [
+      [
+        -0.039,
+        -0.024
+      ],
+      [
+        -0.039,
+        -0.024
+      ],
+      [
+        0.039,
+        0.024
+      ],
+      [
+        0.039,
+        -0.024
+      ]
+    ],
+    "nominal_keyframe_foot_pos_w": [
+      [
+        0.19215678006345865,
+        0.14200000000000002,
+        0.003627499697442027
+      ],
+      [
+        0.19215678006345865,
+        -0.14200000000000002,
+        0.003627499697442027
+      ],
+      [
+        -0.1946432199365413,
+        0.14200000000000002,
+        0.003627499697442027
+      ],
+      [
+        -0.1946432199365413,
+        -0.14200000000000002,
+        0.003627499697442027
+      ]
+    ],
+    "requested_keyframe_foot_pos_w": [
+      [
+        0.15315678006345865,
+        0.11800000000000002,
+        0.003627499697442027
+      ],
+      [
+        0.15315678006345865,
+        -0.166,
+        0.003627499697442027
+      ],
+      [
+        -0.1556432199365413,
+        0.166,
+        0.003627499697442027
+      ],
+      [
+        -0.1556432199365413,
+        -0.166,
+        0.003627499697442027
+      ]
+    ],
+    "keyframe_foot_pos_w": [
+      [
+        0.15315678006345865,
+        0.11800000000000004,
+        0.0036274996974421936
+      ],
+      [
+        0.1531567800631334,
+        -0.16599999999996923,
+        0.0036274996978313268
+      ],
+      [
+        -0.15564322000884112,
+        0.16599999999544035,
+        0.0036274997469787074
+      ],
+      [
+        -0.1556432199357681,
+        -0.16599999999993434,
+        0.0036274996982916113
+      ]
+    ],
+    "keyframe_base_pos_w": [
+      0.004,
+      -0.005,
+      0.27
+    ],
+    "keyframe_com_pos_w": [
+      0.0018805593550371548,
+      -0.005438318204652328,
+      0.24968319443891915
+    ],
+    "maximum_foot_target_error_m": 8.776069165917243e-11,
+    "minimum_joint_limit_margin_rad": 0.8780393950064124,
+    "keyframe_qpos": [
+      0.004,
+      -0.005,
+      0.27,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      -0.07213817192604803,
+      1.0712000442087577,
+      -1.8148411435268994,
+      -0.07032416554680959,
+      1.022212115797518,
+      -1.7333062135277972,
+      0.1064264197690547,
+      0.7324334882743695,
+      -1.7157993950064123,
+      -0.07032416554680058,
+      0.743859150267701,
+      -1.7424334135229227
+    ],
+    "fixed_support_xy_m": [
+      [
+        0.15315678006345865,
+        0.11800000000000004
+      ],
+      [
+        0.1531567800631334,
+        -0.16599999999996923
+      ],
+      [
+        -0.15564322000884112,
+        0.16599999999544035
+      ],
+      [
+        -0.1556432199357681,
+        -0.16599999999993434
+      ]
+    ],
+    "target_xy_m": [
+      0.24315678006345864,
+      0.11800000000000004
+    ],
+    "convention": "Public initial kinematics; rigid supports fixed within each trial; no strength truth",
+    "reset_qpos": [
+      0.004,
+      -0.005,
+      0.2901705103328136,
+      1.0,
+      4.933667358322009e-20,
+      0.0,
+      0.0,
+      -0.07213817192604803,
+      1.0712000442087577,
+      -1.8148411435268994,
+      -0.07032416554680959,
+      1.022212115797518,
+      -1.7333062135277972,
+      0.1064264197690547,
+      0.7324334882743695,
+      -1.7157993950064123,
+      -0.07032416554680058,
+      0.743859150267701,
+      -1.7424334135229227
+    ],
+    "reset_base_pos_w": [
+      0.004,
+      -0.005,
+      0.2901705103328136
+    ],
+    "reset_com_pos_w": [
+      0.0018805593550371548,
+      -0.005438318204652328,
+      0.2698929447717327
+    ],
+    "reset_foot_pos_w": [
+      [
+        0.15315678006345865,
+        0.11800000000000004,
+        0.023837250030255774
+      ],
+      [
+        0.1531567800631334,
+        -0.16599999999996923,
+        0.023837250030644908
+      ],
+      [
+        -0.15564322000884112,
+        0.16599999999544035,
+        0.023837250079792288
+      ],
+      [
+        -0.1556432199357681,
+        -0.16599999999993434,
+        0.023837250031105192
+      ]
+    ],
+    "reset_time_s": 0.002
+  },
+  "evaluation_final": {
+    "schema_version": 1,
+    "failure_load_n": 55.0,
+    "overload_dwell_s": 0.01,
+    "sink_depth_m": 0.06,
+    "sink_speed_m_s": 0.1,
+    "failed": false,
+    "failure_time_s": null,
+    "failure_trigger_force_n": null,
+    "overload_elapsed_s": 0.0,
+    "force_before_deformation_n": 40.313130799099106,
+    "target_normal_force_n": 40.313130799099106,
+    "sink_displacement_m": -0.0,
+    "top_height_m": 0.0,
+    "simulation_time_s": 57.39400000002418
+  },
+  "terminal_state": "SUCCESS",
+  "probe_origin_com_w": [
+    -0.09263286276441195,
+    -0.05520268997541532,
+    0.2602441673187865
+  ],
+  "experiment_complete": true,
+  "additional_probe_count": 1,
+  "capacity_decision_history": [
+    {
+      "time_s": 30.251999999994112,
+      "action": "PROBE",
+      "reason": "Apply the development-selected fixed test, then reassess measured proof",
+      "body_target_w": [
+        -0.0046667422900152295,
+        -0.037935660537711635,
+        0.2602441673187865
+      ],
+      "allocated_forces_n": [
+        52.5,
+        8.0,
+        13.705363695088932,
+        74.9694987849111
+      ],
+      "mpc_force_caps_n": [
+        52.5,
+        149.17486248000003,
+        149.17486248000003,
+        149.17486248000003
+      ],
+      "next_lift_leg": 1,
+      "next_lift_height_m": 0.03,
+      "next_hold_s": 1.0,
+      "certified_load_n": 10.509399633377082,
+      "usable_force_cap_n": 2.5093996333770825,
+      "nominal_required_load_n": 0.0,
+      "chosen_future_load_n": 0.0,
+      "requested_probe_load_n": 52.5,
+      "achievable_probe_load_n": 52.5,
+      "maximum_achievable_probe_load_n": 55.12137350151396,
+      "support_margin_m": 0.02,
+      "minimum_future_load_n": 40.556009758125974,
+      "fixed_pose_maximum_probe_load_n": 19.974995348592042,
+      "fixed_probe_target": {
+        "fixed_probe_force_n": 52.5,
+        "minimum_future_load_n": 40.556009758125974,
+        "measurement_reserve_n": 1.0,
+        "tracking_reserve_n": 8.0,
+        "sensor_force_error_bound_n": 0.8,
+        "probe_undershoot_allowance_n": 0.2,
+        "predicted_certified_load_n": 50.5,
+        "predicted_usable_force_cap_n": 42.5,
+        "predicted_sufficient_for_task": true,
+        "command_formula": "fixed_probe_force_n; unchanged across evaluation tasks",
+        "commanded_force_is_not_measured_proof": true
+      }
+    },
+    {
+      "time_s": 43.51800000000722,
+      "action": "EXECUTE",
+      "reason": "Shared future optimizer fits demonstrated loading",
+      "body_target_w": [
+        -0.052632862764411946,
+        -0.07250037845740968,
+        0.2602441673187865
+      ],
+      "allocated_forces_n": [
+        40.991741485034005,
+        0.0,
+        8.0,
+        100.18312099496602
+      ],
+      "mpc_force_caps_n": [
+        42.98396880827526,
+        0.0,
+        149.17486248000003,
+        149.17486248000003
+      ],
+      "next_lift_leg": 1,
+      "next_lift_height_m": 0.03,
+      "next_hold_s": 1.0,
+      "certified_load_n": 50.98396880827526,
+      "usable_force_cap_n": 42.98396880827526,
+      "nominal_required_load_n": 0.0,
+      "chosen_future_load_n": 40.991741485034005,
+      "requested_probe_load_n": 0.0,
+      "achievable_probe_load_n": 0.0,
+      "maximum_achievable_probe_load_n": 0.0,
+      "support_margin_m": 0.014321377952708075,
+      "minimum_future_load_n": 40.556009758125974,
+      "fixed_pose_maximum_probe_load_n": 19.974995348592042,
+      "fixed_probe_target": {
+        "fixed_probe_force_n": 52.5,
+        "minimum_future_load_n": 40.556009758125974,
+        "measurement_reserve_n": 1.0,
+        "tracking_reserve_n": 8.0,
+        "sensor_force_error_bound_n": 0.8,
+        "probe_undershoot_allowance_n": 0.2,
+        "predicted_certified_load_n": 50.5,
+        "predicted_usable_force_cap_n": 42.5,
+        "predicted_sufficient_for_task": true,
+        "command_formula": "fixed_probe_force_n; unchanged across evaluation tasks",
+        "commanded_force_is_not_measured_proof": true
+      }
+    }
+  ],
+  "recovered_stop_declared": false,
+  "recovery_trigger_reason": "",
+  "capacity_decision": {
+    "action": "EXECUTE",
+    "reason": "Shared future optimizer fits demonstrated loading",
+    "body_target_w": [
+      -0.052632862764411946,
+      -0.07250037845740968,
+      0.2602441673187865
+    ],
+    "allocated_forces_n": [
+      40.991741485034005,
+      0.0,
+      8.0,
+      100.18312099496602
+    ],
+    "mpc_force_caps_n": [
+      42.98396880827526,
+      0.0,
+      149.17486248000003,
+      149.17486248000003
+    ],
+    "next_lift_leg": 1,
+    "next_lift_height_m": 0.03,
+    "next_hold_s": 1.0,
+    "certified_load_n": 50.98396880827526,
+    "usable_force_cap_n": 42.98396880827526,
+    "nominal_required_load_n": 0.0,
+    "chosen_future_load_n": 40.991741485034005,
+    "requested_probe_load_n": 0.0,
+    "achievable_probe_load_n": 0.0,
+    "maximum_achievable_probe_load_n": 0.0,
+    "support_margin_m": 0.014321377952708075,
+    "minimum_future_load_n": 40.556009758125974,
+    "fixed_pose_maximum_probe_load_n": 19.974995348592042
+  },
+  "error": null,
+  "recorded_steps": 28696
+}

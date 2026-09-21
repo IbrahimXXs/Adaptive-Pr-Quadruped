@@ -1,0 +1,43 @@
+{
+  "run_id": "weak_pad_task_sufficient_20260921T130937_638053Z",
+  "video": "/home/ibrahim/Documents/GO-2 PRIMP/primp_project/results/weak_pad/task_probe/media/progress36_capacity51p5_task_sufficient_seed311.mp4",
+  "preview": "/home/ibrahim/Documents/GO-2 PRIMP/primp_project/results/weak_pad/task_probe/media/progress36_capacity51p5_task_sufficient_seed311.png",
+  "codec": "avc1",
+  "fps": 20,
+  "resolution": [
+    960,
+    720
+  ],
+  "frame_count": 591,
+  "playback_speed": 1.0,
+  "recorded_start_time_s": 28.00199999999536,
+  "recorded_end_time_s": 57.50000000002431,
+  "preview_time_s": 55.89800000002235,
+  "signals_sha256": "78de5d594cc81597826a292ff715af4b9024e260bdb97b1336e4fc29cebb22fc",
+  "scene_sha256": "359687cb4f56ad06fea79f7c2bc16d873a5b088632a8592a30569a2ebcbba1fd",
+  "weak_truth_sha256": "ceb38240e6635f7fbe8efdfe88b0ec09592a8377bfc22a456887b1d940e70842",
+  "method": "Restore recorded qpos/qvel and pad_sink_displacement_m with mj_forward; no mj_step or controller execution",
+  "presentation": "Orange weak target; hidden capacity, failure, and sink shown only as evaluation-replay truth",
+  "overlay_evidence": {
+    "source": "Recorded actual target force, certificate, installed cap and measured body/feet",
+    "progress": "Physical CoM world-X minus its first confirmed probe origin; stronger probing is not task completion",
+    "recovery_lift": "Measured FL Z change from first recovery sample",
+    "next_leg": "FR",
+    "first_probe_sample": 11010,
+    "first_recovery_sample": null,
+    "script_sha256": "f296128bedb873dc6d85eab7b98c367b9a620a1d49d8effda14a82e21c82f506"
+  },
+  "decode_validation": {
+    "all_frames_decoded": true,
+    "decoded_frames": 591,
+    "resolution_valid": true
+  },
+  "video_sha256": "ceb97c2769c67bde741cfd1fcab20529d0f9199df9175af2cb590247f7a5ae62",
+  "probe_policy": "task_sufficient",
+  "policy_label": "TASK-DERIVED SUFFICIENT TEST",
+  "forward_task_m": 0.036,
+  "hidden_capacity_n": 51.5,
+  "capacity_evaluator_only": true,
+  "wrapper_sha256": "bac58dac6441a225114cf859793168e50beaeaa6d2bfc543e644e1ff0690eac7",
+  "legacy_renderer_sha256": "f296128bedb873dc6d85eab7b98c367b9a620a1d49d8effda14a82e21c82f506"
+}
