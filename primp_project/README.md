@@ -1,11 +1,34 @@
-# Go2 ground-height adaptation with PRIMP-inspired motion learning
+# Go2 foothold testing and movement within demonstrated load limits
 
-Our goal is to teach a quadruped to adjust its **body motion, foot motion, and
-timing together** when the ground is higher or lower than expected. This
-project uses the Go2 simulation and nominal acados controller in
+Our current goal is to make a quadruped **test a foothold and choose a next
+movement supported by that measured evidence**. A foot can make contact and
+survive a light load while still failing during later weight transfer. The
+robot must account for how much load its intended body motion and next leg
+lift will place on the new support.
+
+The implemented milestone turns a sustained measured load plateau into a
+conservative certificate, then selects a feasible body/force plan, requests a
+stronger achievable probe, or stops. Actual task completion requires at least
+30 mm forward CoM movement and a 20 mm rear-left foot lift together for at
+least one second. The 11-case native study records **four completed adaptive
+movements, four conservative safe stops, and three unaware pad collapses**.
+Only the completed movements count as physical success.
+
+Start with the [weak-pad results and replays](docs/results/weak_pad.md),
+[experiment guide](docs/weak_pad.md), and
+[independent audit](results/weak_pad/study/validation/independent_audit.json).
+This is a measured-load planning layer, not a newly trained PRIMP model of
+material strength. The earlier height-adaptation and motion-learning work
+provides its control foundation and remains preserved below.
+
+## Control and motion-learning foundation
+
+The project uses the Go2 simulation and nominal acados controller in
 [Quadruped-PyMPC](https://github.com/iit-DLSLab/Quadruped-PyMPC).
 
-The first scenario is a controlled front-foot lowering movement. If the foot
+The initial research scenario coordinates **body motion, foot motion, and
+timing** when the ground is higher or lower than expected. In a controlled
+front-foot lowering movement, if the foot
 reaches the expected surface height without contact, the robot should decide
 how much farther to lower it, how to move its body while the other three feet
 support it, and when to transfer weight. Early contact should also update its
@@ -24,10 +47,11 @@ shift, unloading, lift, hold, contact confirmation, and reload remain explicit
 control phases. [Model details](docs/PRIMP_MODEL.md) distinguish the quadruped
 extension from published PRIMP.
 
-## Current status and next milestones
+## Current milestone and established foundation
 
 | Milestone | Status | Evidence or intended outcome |
 | --- | --- | --- |
+| Plan beyond first contact on a weak foothold | Validated in 11 declared simulator cases | Four adapted movements, four conservative safe stops, three unaware collapses; includes a stronger-probe-then-execute case with fresh measured proof |
 | Stable four-foot standing | Complete | 30 seconds at zero commanded velocity, with synchronized body, foot, contact, force, support, and timing logs |
 | Controlled front-left step on flat ground | Complete | Body shift, gradual unloading, 3 cm lift, 5–10 second airborne hold, slow lowering, contact confirmation, gradual reloading, and recentering |
 | Repeat the controlled step | Complete for tested flat-ground conditions | Six successful cycles across two runs, with 6 and 10 second holds and friction coefficients 0.8 and 0.6 |
@@ -161,6 +185,7 @@ The experiment guides describe the full behavior, controller choices, signals,
 and validation: [standing](docs/standing.md) and
 [controlled step](docs/controlled_step.md), [V1 landing pad](docs/landing_pad.md),
 [V2 matched study](docs/landing_pad_v2.md),
+the [weak-pad experiment](docs/weak_pad.md),
 and [learned model](docs/PRIMP_MODEL.md).
 
 ## Project layout
@@ -174,9 +199,9 @@ primp_project/
 ├── README.md              # Research goal, status, and entry points
 ├── __main__.py            # Unified command-line entry point
 ├── experiments/           # Standing, step, landing-pad, and study runners
-├── environment/           # Independent adjustable-pad scene and environment
+├── environment/           # Adjustable-height and load-limited pad environments
 ├── control/               # Shared step execution, support gates, MPC references
-├── planning/              # Sensor boundary, belief, legacy and matched planners
+├── planning/              # Height belief, motion priors, measured-load planning
 ├── learning/              # PRIMP-based distribution, fitting, and conditioning
 ├── recording/             # Synchronized simulation and experiment logging
 ├── analysis/              # Independent acceptance checks and plots
@@ -188,6 +213,7 @@ primp_project/
 │   ├── standing/
 │   ├── controlled_step/
 │   ├── landing_pad/        # Preserved V1 groups plus the separate study_v2/
+│   ├── weak_pad/           # Separate load-testing development/evaluation evidence
 │   └── archive/
 └── artifacts/             # Diagnostic logs, caches, and temporary test files
 ```
@@ -204,6 +230,9 @@ retained under `archive/`.
 discovers nested landing-pad demonstration and evaluation groups. A pad trial
 passes only when its pad-specific summary passes; a passing underlying step
 summary does not replace those extra checks.
+Weak-pad records use their own summary. `SAFE_STOP` and `PROBLEM_COLLAPSE` remain
+explicit outcomes even when expected by the protocol; neither counts as a
+successful physical movement. Only a validated `SUCCESS` receives `PASS`.
 
 Each run keeps its measurements, metadata, reports, and plots together.
 Signals include body pose, actual and desired foot positions, measured contacts

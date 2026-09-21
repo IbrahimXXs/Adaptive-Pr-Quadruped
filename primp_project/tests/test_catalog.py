@@ -2,6 +2,7 @@
 
 import json
 from pathlib import Path
+import pytest
 
 from primp_project.recording.catalog import list_results, refresh_catalog
 
@@ -120,3 +121,39 @@ def test_missing_pad_summary_does_not_inherit_a_passing_step_report(tmp_path):
     })
     (run / "step_summary.json").write_text(json.dumps({"passed": True}))
     assert refresh_catalog(root)[0]["status"] == "UNANALYZED"
+
+
+@pytest.mark.parametrize('outcome,status,physical', [
+    ('SUCCESS', 'PASS', True), ('PROBLEM_COLLAPSE', 'PROBLEM_COLLAPSE', False),
+    ('SAFE_STOP', 'SAFE_STOP', False), ('UNSAFE', 'UNSAFE', False),
+    ('INCOMPLETE', 'INCOMPLETE', False), ('INVALID', 'INVALID', False),
+])
+def test_weak_pad_expected_outcomes_do_not_masquerade_as_physical_success(tmp_path, outcome, status, physical):
+    root = tmp_path/'results'
+    run = _run(root, 'weak_pad/study/evaluation', 'weak_record', {
+        'experiment':'weak_pad', 'status':'completed', 'strategy':'adaptive', 'role':'evaluation',
+        'requested_probe_force_n':45., 'recorded_steps':100, 'dt_s':.002,
+    })
+    # Historical generic summaries must not override weak-pad-specific results.
+    (run/'step_summary.json').write_text(json.dumps({'passed':True}))
+    (run/'weak_pad_summary.json').write_text(json.dumps(dict(outcome=outcome, passed=physical,
+        physical_success=physical, expected_outcome_met=True, metrics={'maximum_certified_force_n':21.})))
+    (run/'weak_pad_report.md').write_text('Preserved weak-pad report\n')
+    before = {path:path.read_bytes() for path in run.rglob('*') if path.is_file()}
+    record = refresh_catalog(root)[0]
+    assert record['status'] == status and record['physical_success'] is physical
+    assert record['expected_outcome_met'] is True
+    assert record['links']['report'].endswith('weak_pad_report.md')
+    assert record['links']['summary'].endswith('weak_pad_summary.json')
+    assert record['certified_load_n'] == 21.
+    assert all(path.read_bytes() == value for path,value in before.items())
+
+
+def test_weak_pad_missing_or_contradictory_summary_cannot_inherit_success(tmp_path):
+    root = tmp_path/'results'
+    run = _run(root, 'weak_pad/development', 'weak_missing', {
+        'experiment':'weak_pad', 'status':'completed'}, {'passed':True})
+    (run/'step_summary.json').write_text(json.dumps({'passed':True}))
+    assert refresh_catalog(root)[0]['status'] == 'UNANALYZED'
+    (run/'weak_pad_summary.json').write_text(json.dumps(dict(outcome='SAFE_STOP', passed=True, physical_success=True)))
+    assert refresh_catalog(root)[0]['status'] == 'INVALID'

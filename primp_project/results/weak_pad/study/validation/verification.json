@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "tests_passed": 405,
+  "warnings": 6,
+  "command": "PYTEST_DISABLE_PLUGIN_AUTOLOAD=1 OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python -m pytest primp_project/tests -q -o cache_dir=primp_project/artifacts/cache/pytest --basetemp=primp_project/artifacts/test_tmp",
+  "executor_sha256": "4bef1548dc55493cf759452312d0bc3d4901ec8c2fe828d2d0706efea3e161d3",
+  "analyzer_sha256": "dc17c61bde2d018f982f4ddb683b29736f6daeb16a1db6187cace724c558e484",
+  "tests_log_sha256": "9b7798eafc49c6f2a5160c83787fc2979de422f8e22a016ba60ee7d518fb0067",
+  "formal_expected_outcomes": 11,
+  "formal_physical_successes": 4,
+  "independent_raw_audit": "independent_audit.json",
+  "read_only_study_verify_passed": true
+}

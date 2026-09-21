@@ -1,0 +1,21 @@
+{
+  "run_id": "weak_pad_unaware_20260921T095916_235070Z",
+  "video": "/home/ibrahim/Documents/GO-2 PRIMP/primp_project/results/weak_pad/development/weak_pad_unaware_20260921T095916_235070Z/media/weak_replay.mp4",
+  "preview": "/home/ibrahim/Documents/GO-2 PRIMP/primp_project/results/weak_pad/development/weak_pad_unaware_20260921T095916_235070Z/media/weak_replay.png",
+  "codec": "avc1",
+  "fps": 20,
+  "resolution": [
+    960,
+    720
+  ],
+  "frame_count": 561,
+  "playback_speed": 1.0,
+  "recorded_start_time_s": 0.002,
+  "recorded_end_time_s": 28.003999999995358,
+  "preview_time_s": 28.013999999995352,
+  "signals_sha256": "bb401353d2b2f48cb5935a332f1943154c5916f037d641b3134023b90b7993bc",
+  "scene_sha256": "20b6f6b26e2425f103e2002d12f1b7f019daa76863fef065f727920fd88dfe80",
+  "weak_truth_sha256": "45fdbe9ac25f552086c0426b13bc5589f2c1ed8c797f7d9cdb4db248591083e7",
+  "method": "Restore recorded qpos/qvel and pad_sink_displacement_m with mj_forward; no mj_step or controller execution",
+  "presentation": "Orange weak target; hidden capacity, failure, and sink shown only as evaluation-replay truth"
+}

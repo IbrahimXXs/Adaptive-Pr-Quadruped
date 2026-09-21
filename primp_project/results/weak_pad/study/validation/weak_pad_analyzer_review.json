@@ -1,0 +1,111 @@
+{
+  "source_sha256": "5ef08c24859119935237b8eca1535f9e959e40507015f3651859559b9e319c41",
+  "source_run": "primp_project/results/weak_pad/development/weak_pad_adaptive_20260921T100108_276534Z",
+  "raw_sha256": "7396564563b26ffee34fdc0cd7ef49c2f412a9f347f0231e2c6c9561bae228f5",
+  "base_outcome": "SUCCESS",
+  "mutations_in_memory_only": true,
+  "cases": {
+    "lost_support_during_probe": {
+      "outcome": "SUCCESS",
+      "physical_success": true,
+      "detail": {
+        "sample": 10964,
+        "time_s": 21.927999999998725
+      },
+      "failed_checks": [
+        "conservative_stop",
+        "collapse_after_light_touch"
+      ]
+    },
+    "lost_support_at_completion": {
+      "outcome": "SUCCESS",
+      "physical_success": true,
+      "detail": {
+        "last_seconds": 0.2,
+        "support": "FR"
+      },
+      "failed_checks": [
+        "conservative_stop",
+        "collapse_after_light_touch"
+      ]
+    },
+    "incomplete_terminal_declaration": {
+      "outcome": "SUCCESS",
+      "physical_success": true,
+      "detail": {
+        "metadata_experiment_complete": false,
+        "last_task_complete": false
+      },
+      "failed_checks": [
+        "conservative_stop",
+        "collapse_after_light_touch"
+      ]
+    },
+    "hide_overload_with_future_flag": {
+      "outcome": "SUCCESS",
+      "physical_success": true,
+      "detail": {
+        "sample": 28249,
+        "actual_force": 31.191321260079253,
+        "certificate": 30.191321260079253
+      },
+      "failed_checks": [
+        "conservative_stop",
+        "collapse_after_light_touch"
+      ]
+    },
+    "short_certificate_dwell": {
+      "outcome": "INCOMPLETE",
+      "physical_success": false,
+      "detail": {
+        "dwell_s": 0.05
+      },
+      "failed_checks": [
+        "actual_dwell_certificate",
+        "conservative_stop",
+        "requested_force_is_not_achieved",
+        "collapse_after_light_touch"
+      ]
+    },
+    "requested_certificate": {
+      "outcome": "INCOMPLETE",
+      "physical_success": false,
+      "detail": {
+        "certificate": "requested"
+      },
+      "failed_checks": [
+        "actual_dwell_certificate",
+        "conservative_stop",
+        "requested_force_is_not_achieved",
+        "collapse_after_light_touch"
+      ]
+    },
+    "missing_mpc_update": {
+      "outcome": "INVALID",
+      "physical_success": false,
+      "detail": {
+        "sample": 250
+      },
+      "failed_checks": [
+        "mpc_update_cadence",
+        "conservative_stop",
+        "collapse_after_light_touch"
+      ]
+    },
+    "list_nested_truth_leak": {
+      "outcome": "SUCCESS",
+      "physical_success": true,
+      "detail": {
+        "metadata.planner_inputs": [
+          {
+            "failure_load_n": 35.0
+          }
+        ]
+      },
+      "failed_checks": [
+        "conservative_stop",
+        "collapse_after_light_touch"
+      ]
+    }
+  }
+}

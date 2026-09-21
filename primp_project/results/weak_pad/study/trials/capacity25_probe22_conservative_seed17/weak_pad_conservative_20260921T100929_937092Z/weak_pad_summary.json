@@ -1,0 +1,258 @@
+{
+  "version": 1,
+  "analyzer_sha256": "dc17c61bde2d018f982f4ddb683b29736f6daeb16a1db6187cace724c558e484",
+  "experiment": "weak_pad",
+  "strategy": "conservative",
+  "role": "evaluation",
+  "outcome": "SAFE_STOP",
+  "expected_outcome": "SAFE_STOP",
+  "expected_outcome_met": true,
+  "physical_success": false,
+  "physical_safety_passed": true,
+  "passed": false,
+  "criteria": {
+    "finite_data": {
+      "passed": true,
+      "category": "integrity",
+      "requirement": "All recorded numeric evidence is finite",
+      "observed": []
+    },
+    "sensor_evidence_channels": {
+      "passed": true,
+      "category": "integrity",
+      "requirement": "Capacity-aware trials record aligned foot velocity as well as measured force/position",
+      "observed": []
+    },
+    "configuration": {
+      "passed": true,
+      "category": "integrity",
+      "requirement": "Declared experiment, timing, finite force reserves and bounded movement checks",
+      "observed": {
+        "strategy": "conservative",
+        "dwell_s": 0.5
+      }
+    },
+    "completed_recording": {
+      "passed": true,
+      "category": "integrity",
+      "requirement": "Recording ends through the experiment's declared controlled completion/stop path",
+      "observed": {
+        "status": "completed",
+        "experiment_complete": true
+      }
+    },
+    "future_loading_coverage": {
+      "passed": true,
+      "category": "integrity",
+      "requirement": "Known movement/stop phases determine future loading coverage; a logged flag cannot hide an interval",
+      "observed": null
+    },
+    "sample_clock": {
+      "passed": true,
+      "category": "integrity",
+      "requirement": "Continuous physics timestamps and aligned control/measurement intervals",
+      "observed": null
+    },
+    "mpc_update_cadence": {
+      "passed": true,
+      "category": "integrity",
+      "requirement": "Every periodic/support-change solve occurs; extra solves must install a changed force cap",
+      "observed": {
+        "missing_required": 0,
+        "unexpected": 0
+      }
+    },
+    "solver_success": {
+      "passed": true,
+      "category": "integrity",
+      "requirement": "MPC NLP status is 0 or the existing controller's accepted status 2; every QP status is zero",
+      "observed": null
+    },
+    "strength_truth_boundary": {
+      "passed": true,
+      "category": "integrity",
+      "requirement": "Hidden pad capacity occurs only in evaluator metadata",
+      "observed": []
+    },
+    "physical_failure_model": {
+      "passed": true,
+      "category": "integrity",
+      "requirement": "Latched failure and subsequent deformation follow actual overload dwell, not commanded loading",
+      "observed": {
+        "first_failure_time_s": null,
+        "maximum_sink_m": -0.0
+      }
+    },
+    "probe_observed": {
+      "passed": true,
+      "category": "evidence",
+      "requirement": "A probe phase is physically recorded",
+      "observed": null
+    },
+    "probe_tripod_support": {
+      "passed": true,
+      "category": "evidence",
+      "requirement": "The original three legs remain measured supports throughout probe ramp, dwell, release and any probe-posture change",
+      "observed": null
+    },
+    "actual_dwell_certificate": {
+      "passed": true,
+      "category": "evidence",
+      "requirement": "Every capacity certificate is bounded by sustained actual achieved loading and measured-force reserve, with original three supports stable",
+      "observed": [
+        {
+          "sample": 13196,
+          "time_s": 26.39199999999625,
+          "evidence_start_s": 25.89199999999653,
+          "evidence_end_s": 26.39199999999625,
+          "observed_dwell_s": 0.4999999999997229,
+          "measured_min_force_n": 22.467081665114414,
+          "actual_min_force_n": 22.467112831209448,
+          "requested_force_n": 45.0,
+          "certificate_force_n": 21.467081665114414,
+          "measured_foot_motion_m": 1.961070034759318e-05,
+          "passed": true
+        }
+      ]
+    },
+    "certificate_changes_logged": {
+      "passed": true,
+      "category": "evidence",
+      "requirement": "A valid certificate has strictly positive tested capacity",
+      "observed": null
+    },
+    "future_declared": {
+      "passed": true,
+      "category": "decision",
+      "requirement": "A future plan or conservative stop is reached",
+      "observed": null
+    },
+    "future_valid_certificate": {
+      "passed": true,
+      "category": "safety",
+      "requirement": "Every future loading interval has a valid measured-evidence certificate",
+      "observed": null
+    },
+    "future_certificate_no_growth": {
+      "passed": true,
+      "category": "safety",
+      "requirement": "Monitoring during continuous future execution may invalidate but cannot increase a capacity certificate",
+      "observed": null
+    },
+    "planned_force_with_reserve": {
+      "passed": true,
+      "category": "safety",
+      "requirement": "Every planned/installed MPC load respects certificate minus declared tracking reserve",
+      "observed": null
+    },
+    "actual_future_loading": {
+      "passed": true,
+      "category": "safety",
+      "requirement": "Actual future target loading stays below tested capacity throughout, independently of the MPC cap",
+      "observed": {
+        "maximum_actual_n": 12.092192106707342,
+        "maximum_excess_n": -9.374889558407071
+      }
+    },
+    "pad_survives": {
+      "passed": true,
+      "category": "safety",
+      "requirement": "No weak-pad failure occurs",
+      "observed": null
+    },
+    "body_stable": {
+      "passed": true,
+      "category": "safety",
+      "requirement": "Measured roll and pitch stay within the declared stability limit",
+      "observed": 0.4357050138230353
+    },
+    "certificate_site_guard": {
+      "passed": true,
+      "category": "safety",
+      "requirement": "A valid future certificate retains sensed contact within the declared uniform 10 mm horizontal / 2.5 mm vertical test region",
+      "observed": null
+    },
+    "meaningful_progress": {
+      "passed": false,
+      "category": "task",
+      "requirement": "Measured CoM advances >=30 mm while another foot is actually >=20 mm airborne for >=1 s, with three other measured supports",
+      "observed": {
+        "maximum_forward_m": 0.0018939354565573052,
+        "maximum_clearance_m": 0.0002973714270983058,
+        "simultaneous_hold_s": 0.0
+      }
+    },
+    "airborne_contact_schedule": {
+      "passed": true,
+      "category": "task",
+      "requirement": "A physically lifted foot is not still scheduled as a support",
+      "observed": null
+    },
+    "terminal_support": {
+      "passed": true,
+      "category": "task",
+      "requirement": "Every planned support remains physically loaded throughout the final half-second, with at least three stable supports",
+      "observed": null
+    },
+    "conservative_stop": {
+      "passed": true,
+      "category": "task",
+      "requirement": "An infeasible untested movement causes a sustained safe stop on the original three legs without claiming task completion",
+      "observed": {
+        "stable_stop_s": 3.0020000000002804
+      }
+    },
+    "requested_force_is_not_achieved": {
+      "passed": true,
+      "category": "evidence",
+      "requirement": "At least 1 N of requested probe loading remains unachieved and cannot be certified",
+      "observed": 22.532887168790552
+    },
+    "collapse_after_light_touch": {
+      "passed": false,
+      "category": "problem",
+      "requirement": "Confirmed light contact is followed by actual weight-transfer overload and >=2 mm physical pad collapse; the unaware baseline intentionally has no capacity probe",
+      "observed": {
+        "light_contact_dwell_s": 0.0979999999999468
+      }
+    }
+  },
+  "metrics": {
+    "duration_s": 33.09599999999448,
+    "probe_requested_shortfall_n": 22.532887168790552,
+    "maximum_certified_force_n": 21.467081665114414,
+    "maximum_actual_future_pad_force_n": 12.092192106707342,
+    "maximum_forward_com_motion_m": 0.0018939354565573052,
+    "maximum_next_foot_clearance_m": 0.0002973714270983058,
+    "simultaneous_progress_hold_s": 0.0,
+    "progress_window_samples": null,
+    "maximum_roll_pitch_deg": 0.4357050138230353,
+    "maximum_pad_sink_m": -0.0,
+    "pad_failed": false,
+    "certificate_updates_audited": 1,
+    "stable_safe_stop_s": 3.0020000000002804
+  },
+  "evaluation": {
+    "schema_version": 1,
+    "failure_load_n": 25.0,
+    "overload_dwell_s": 0.01,
+    "sink_depth_m": 0.06,
+    "sink_speed_m_s": 0.1,
+    "failed": false,
+    "failure_time_s": null,
+    "failure_trigger_force_n": null,
+    "overload_elapsed_s": 0.0,
+    "force_before_deformation_n": 0.0,
+    "target_normal_force_n": 0.0,
+    "sink_displacement_m": -0.0,
+    "top_height_m": 0.0,
+    "simulation_time_s": 0.002,
+    "failure_threshold_n": 25.0
+  },
+  "conventions": {
+    "passed": "Only physical movement SUCCESS; expected collapse and SAFE_STOP are not task completion",
+    "expected_outcome_met": "Protocol outcome validation, distinct from physical success",
+    "capacity": "Sustained achieved minimum measured force minus measurement reserve; future caps also subtract tracking reserve"
+  },
+  "run_id": "weak_pad_conservative_20260921T100929_937092Z"
+}

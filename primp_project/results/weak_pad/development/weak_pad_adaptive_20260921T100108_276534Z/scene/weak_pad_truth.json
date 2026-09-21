@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "scene_type": "normal_load_limited_weak_pad",
+  "initial_top_height_m": 0.0,
+  "landing_geom_name": "primp_landing_pad",
+  "landing_geom_id": 5,
+  "failure_load_n": 35.0,
+  "overload_dwell_s": 0.01,
+  "sink_depth_m": 0.06,
+  "sink_speed_m_s": 0.1,
+  "failure_model": "Strictly over threshold for continuous dwell; irreversible prescribed descent on subsequent steps",
+  "force_convention": "Sum of nonnegative contact-frame normal forces involving the target geom",
+  "assumptions": [
+    "time-invariant threshold",
+    "same contact location",
+    "no fatigue",
+    "no stochastic failure",
+    "kinematic surface descent, not a structural material model",
+    "robot mass and CoM model unchanged"
+  ]
+}

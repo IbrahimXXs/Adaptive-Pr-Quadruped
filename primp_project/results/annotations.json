@@ -545,5 +545,17 @@
     "notes": [
       "Reserved study cell eval_matched_predictive_h+6mm_seed43_raised; shares frozen source/model and records measured initial condition. One preserved attempt, excluded from fitting."
     ]
+  },
+  "weak_pad_unaware_20260921T095732_123213Z": {
+    "purpose": "Weak-pad development control: 35 N capacity, no collapse",
+    "notes": [
+      "The unaware controller completed ordinary transfer with actual target loading at most 32.677 N, below 35 N. No threshold crossing or pad collapse occurred; this is a retained negative control, not the intended collapse demonstration or later progression task."
+    ]
+  },
+  "weak_pad_unaware_20260921T095916_235070Z": {
+    "purpose": "Weak-pad development: ordinary transfer collapses a 25 N target",
+    "notes": [
+      "Measured load exceeded 25 N continuously for 10 ms; failure at 27.860 s during recentering, after reload started at 21.890 s. Sensor-triggered controlled termination at 28.014 s preserves 15.4 mm sink. Demonstrates failed/deforming support, not a physical fall or successful task completion."
+    ]
   }
 }

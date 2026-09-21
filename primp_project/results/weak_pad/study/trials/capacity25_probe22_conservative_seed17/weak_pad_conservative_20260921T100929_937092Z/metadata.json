@@ -1,0 +1,409 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-09-21T10:09:29.937188+00:00",
+  "standing_duration_s": 0.0,
+  "settling_duration_s": 3.0,
+  "seed": 17,
+  "rendered": false,
+  "legs": [
+    "FL",
+    "FR",
+    "RL",
+    "RR"
+  ],
+  "status": "completed",
+  "conventions": {
+    "sample": "Post-step state on copied MjData, refreshed with mj_forward; live MjData is unchanged.",
+    "time_s": "Seconds since reset returned; initial MuJoCo time is retained separately.",
+    "control_time_s": "Start of the integration interval; desired positions/forces and command held over this interval.",
+    "contact_force_w": "Instantaneous simulated constraint reaction at sample state under held control, ON the foot, world XYZ, N; not an integrated impulse or hardware sensor.",
+    "contact_measured": "At least one active constraint (efc_address >= 0) between exact foot geom and a world-body geom. Intended for static flat terrain.",
+    "feet_pos_w": "Foot geometry center in world XYZ metres; not ground contact point.",
+    "feet_desired_w": "Fixed settled world anchors for supports, explicit Cartesian trajectory for FL.",
+    "feet_foothold_ref_w": "Foothold planner touchdown reference, separate from instantaneous desired foot position.",
+    "contact_planned": "wb.current_contact used for current torque; distinct from physical contact.",
+    "gait_phase": "Raw PGG phase, dimensionless. FULL_STANCE resets phase to constant offsets; it is not elapsed standing phase.",
+    "phase": "Nonperiodic command phase held over control interval; cycle starts at 1.",
+    "base_quat_wxyz": "Unit quaternion, scalar first; base_rpy_rad is extrinsic XYZ roll/pitch/yaw in radians.",
+    "base_ang_vel_b": "Angular velocity in base frame, rad/s; linear velocities and all positions are world frame.",
+    "com_pos_w": "Physical model CoM from body-mass-weighted xipos, independent of the controller's CoM estimate.",
+    "mpc_status": "Held latest acados NLP status; count solves only where mpc_update is true. Status 2 is expected with default one-iteration SQP.",
+    "qp_status": "Maximum absolute underlying QP status from latest solve (0 means success).",
+    "solver_time_s": "Latest acados solve time; wall_time_s is recorder elapsed wall time, including rendering and logging.",
+    "actuator_torque": "Applied torque after clipping, model actuator order, Nm; torque_saturated reports pre-clip limit violations.",
+    "selected_force_cap_N": "FL MPC Fz upper bound at most recent solve; held between MPC updates.",
+    "com_target_w": "Desired physical center of mass in world coordinates; controller uses mass-weighted body xipos."
+  },
+  "experiment": "weak_pad",
+  "selected_leg": "FL",
+  "cycles": 1,
+  "hold_seconds": 5.0,
+  "lift_height_m": 0.03,
+  "contact_debounce_s": 0.1,
+  "friction": 0.8,
+  "actual_completed_cycles": 0,
+  "controller_changes": {
+    "xy_position_cost": 2000.0,
+    "bias_compensation_all_legs": true,
+    "physical_mass_and_com": true,
+    "periodic_gait_and_terrain_estimation_bypassed": true,
+    "schedule": "Binary FL=0 through lift/hold/lower/confirm for entire MPC horizon",
+    "support_gate_margin_m": 0.02,
+    "touchdown_normal_threshold_N": 2.0,
+    "max_downward_search_m": 0.005
+  },
+  "strategy": "conservative",
+  "role": "evaluation",
+  "requested_probe_force_n": 45.0,
+  "probe_command_limit_n": 22.0,
+  "probe_dwell_s": 0.5,
+  "sensor_force_reserve_n": 1.0,
+  "tracking_reserve_n": 8.0,
+  "next_leg": "RL",
+  "next_leg_index": 2,
+  "required_forward_progress_m": 0.03,
+  "required_next_leg_lift_m": 0.02,
+  "required_progress_hold_s": 1.0,
+  "max_probe_motion_m": 0.001,
+  "progression_axis": [
+    1.0,
+    0.0,
+    0.0
+  ],
+  "force_tolerance_n": 0.5,
+  "assumptions": [
+    "Time-invariant monotone normal-force threshold at the same contact location.",
+    "Uniform strength within 10 mm horizontal contact motion; >2.5 mm vertical motion invalidates the test.",
+    "No fatigue, shear failure, history-dependent damage or rate-dependent strength.",
+    "A stable test supplies a demonstrated load bound, never the exact breaking force."
+  ],
+  "robot": "go2",
+  "controller": "nominal",
+  "dt_s": 0.002,
+  "sample_rate_hz": 500.0,
+  "initial_mujoco_time_s": 0.002,
+  "initial_qpos": [
+    2.8725914055507738e-21,
+    -6.574630108921224e-21,
+    0.29017051033281377,
+    1.0,
+    3.7283630298525457e-19,
+    0.0,
+    0.0,
+    2.4442670110147447e-18,
+    0.9,
+    -1.8,
+    2.2737367544323205e-19,
+    0.9,
+    -1.8,
+    1.7053025658242405e-18,
+    0.9,
+    -1.8,
+    3.1263880373444407e-19,
+    0.9,
+    -1.8
+  ],
+  "initial_qvel": [
+    1.436295702775387e-18,
+    -3.287315054460612e-18,
+    -0.01962000000000001,
+    -3.7125857943465233e-16,
+    -3.419486915845482e-17,
+    2.1649348980190553e-18,
+    1.2221335055073724e-15,
+    -4.263256414560601e-17,
+    2.3092638912203258e-17,
+    1.1368683772161603e-16,
+    -6.039613253960852e-17,
+    8.881784197001253e-18,
+    8.526512829121202e-16,
+    2.6645352591003756e-16,
+    -7.815970093361102e-17,
+    1.5631940186722203e-16,
+    3.481659405224491e-16,
+    -5.1514348342607266e-17
+  ],
+  "model_mass_kg": 15.206408000000003,
+  "initial_contact_measured": [
+    false,
+    false,
+    false,
+    false
+  ],
+  "initial_feet_pos_w": [
+    [
+      0.19215678006345865,
+      0.14200000000000002,
+      0.02379801003025578
+    ],
+    [
+      0.19215678006345865,
+      -0.14200000000000002,
+      0.02379801003025578
+    ],
+    [
+      -0.1946432199365413,
+      0.14200000000000002,
+      0.02379801003025578
+    ],
+    [
+      -0.1946432199365413,
+      -0.14200000000000002,
+      0.02379801003025578
+    ]
+  ],
+  "gravity_m_s2": 9.81,
+  "config_mass_kg": 15.019,
+  "mpc_params": {
+    "type": "nominal",
+    "verbose": false,
+    "horizon": 12,
+    "dt": 0.02,
+    "grf_max": 147.33639000000002,
+    "grf_min": 0,
+    "mu": 0.5,
+    "use_nonuniform_discretization": false,
+    "horizon_fine_grained": 2,
+    "dt_fine_grained": 0.01,
+    "optimize_step_freq": false,
+    "step_freq_available": [
+      1.4,
+      2.0,
+      2.4
+    ],
+    "use_warm_start": false,
+    "use_integrators": false,
+    "alpha_integrator": 0.1,
+    "integrator_cap": [
+      0.5,
+      0.2,
+      0.2,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "use_foothold_optimization": true,
+    "use_foothold_constraints": false,
+    "use_RTI": false,
+    "as_rti_type": "Standard",
+    "as_rti_iter": 1,
+    "use_DDP": false,
+    "num_qp_iterations": 1,
+    "solver_mode": "balance",
+    "use_input_prediction": false,
+    "use_static_stability": false,
+    "use_zmp_stability": false,
+    "trot_stability_margin": 0.04,
+    "pace_stability_margin": 0.1,
+    "crawl_stability_margin": 0.04,
+    "external_wrenches_compensation": true,
+    "external_wrenches_compensation_num_step": 15,
+    "passive_arm_compensation": true,
+    "K_z1": [
+      1,
+      1,
+      10
+    ],
+    "K_z2": [
+      1,
+      4,
+      10
+    ],
+    "residual_dynamics_upper_bound": 30,
+    "use_residual_dynamics_decay": false,
+    "sampling_method": "random_sampling",
+    "control_parametrization": "cubic_spline",
+    "num_splines": 2,
+    "num_parallel_computations": 10000,
+    "num_sampling_iterations": 1,
+    "device": "gpu",
+    "sigma_cem_mppi": 3,
+    "sigma_mppi": 3,
+    "sigma_random_sampling": [
+      0.2,
+      3,
+      10
+    ],
+    "shift_solution": false
+  },
+  "simulation_params": {
+    "swing_generator": "scipy",
+    "swing_position_gain_fb": 500,
+    "swing_velocity_gain_fb": 10,
+    "impedence_joint_position_gain": 10.0,
+    "impedence_joint_velocity_gain": 2.0,
+    "step_height": 0.05600000000000001,
+    "visual_foothold_adaptation": "blind",
+    "dt": 0.002,
+    "gait": "full_stance",
+    "gait_params": {
+      "trot": {
+        "step_freq": 1.4,
+        "duty_factor": 0.65,
+        "type": 0
+      },
+      "crawl": {
+        "step_freq": 0.5,
+        "duty_factor": 0.8,
+        "type": 5
+      },
+      "pace": {
+        "step_freq": 1.4,
+        "duty_factor": 0.7,
+        "type": 1
+      },
+      "bound": {
+        "step_freq": 1.8,
+        "duty_factor": 0.65,
+        "type": 2
+      },
+      "full_stance": {
+        "step_freq": 2,
+        "duty_factor": 0.65,
+        "type": 7
+      }
+    },
+    "reflex_trigger_mode": "tracking",
+    "reflex_max_step_height": 0.14,
+    "reflex_next_steps_height_enhancement": false,
+    "velocity_modulator": true,
+    "mode": "human",
+    "ref_z": 0.28,
+    "mpc_frequency": 100,
+    "use_inertia_recomputation": true,
+    "scene": "flat"
+  },
+  "git_commit": "ef995a55fc12d637b2a39d5a6bbc5567385c1ed6",
+  "packages": {
+    "mujoco": "3.12.0",
+    "gym-quadruped": "1.1.5",
+    "numpy": "2.5.2",
+    "scipy": "1.18.0",
+    "casadi": "3.7.2",
+    "acados-template": "0.1"
+  },
+  "actuator_names": [
+    "FL_hip",
+    "FL_thigh",
+    "FL_calf",
+    "FR_hip",
+    "FR_thigh",
+    "FR_calf",
+    "RL_hip",
+    "RL_thigh",
+    "RL_calf",
+    "RR_hip",
+    "RR_thigh",
+    "RR_calf"
+  ],
+  "evaluation": {
+    "schema_version": 1,
+    "failure_load_n": 25.0,
+    "overload_dwell_s": 0.01,
+    "sink_depth_m": 0.06,
+    "sink_speed_m_s": 0.1,
+    "failed": false,
+    "failure_time_s": null,
+    "failure_trigger_force_n": null,
+    "overload_elapsed_s": 0.0,
+    "force_before_deformation_n": 0.0,
+    "target_normal_force_n": 0.0,
+    "sink_displacement_m": -0.0,
+    "top_height_m": 0.0,
+    "simulation_time_s": 0.002,
+    "failure_threshold_n": 25.0
+  },
+  "evaluation_final": {
+    "schema_version": 1,
+    "failure_load_n": 25.0,
+    "overload_dwell_s": 0.01,
+    "sink_depth_m": 0.06,
+    "sink_speed_m_s": 0.1,
+    "failed": false,
+    "failure_time_s": null,
+    "failure_trigger_force_n": null,
+    "overload_elapsed_s": 0.0,
+    "force_before_deformation_n": 12.075176171661223,
+    "target_normal_force_n": 12.075176171661223,
+    "sink_displacement_m": -0.0,
+    "top_height_m": 0.0,
+    "simulation_time_s": 33.097999999994485
+  },
+  "terminal_state": "SAFE_STOP",
+  "probe_origin_com_w": [
+    -0.06790095510757087,
+    -0.047698555876296296,
+    0.25790774633985364
+  ],
+  "experiment_complete": true,
+  "additional_probe_count": 0,
+  "capacity_decision_history": [
+    {
+      "time_s": 30.0939999999942,
+      "action": "SAFE_STOP",
+      "reason": "No certified feasible next movement",
+      "body_target_w": [
+        -0.06790095510757087,
+        -0.047698555876296296,
+        0.25790774633985364
+      ],
+      "allocated_forces_n": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mpc_force_caps_n": [
+        13.467081665114414,
+        149.17486248000003,
+        149.17486248000003,
+        149.17486248000003
+      ],
+      "next_lift_leg": 2,
+      "next_lift_height_m": 0.03,
+      "next_hold_s": 1.0,
+      "certified_load_n": 21.467081665114414,
+      "usable_force_cap_n": 13.467081665114414,
+      "nominal_required_load_n": 38.74435493452816,
+      "chosen_future_load_n": 0.0,
+      "requested_probe_load_n": 0.0,
+      "achievable_probe_load_n": 0.0,
+      "maximum_achievable_probe_load_n": 0.0,
+      "support_margin_m": 0.0
+    }
+  ],
+  "capacity_decision": {
+    "action": "SAFE_STOP",
+    "reason": "No certified feasible next movement",
+    "body_target_w": [
+      -0.06790095510757087,
+      -0.047698555876296296,
+      0.25790774633985364
+    ],
+    "allocated_forces_n": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "mpc_force_caps_n": [
+      13.467081665114414,
+      149.17486248000003,
+      149.17486248000003,
+      149.17486248000003
+    ],
+    "next_lift_leg": 2,
+    "next_lift_height_m": 0.03,
+    "next_hold_s": 1.0,
+    "certified_load_n": 21.467081665114414,
+    "usable_force_cap_n": 13.467081665114414,
+    "nominal_required_load_n": 38.74435493452816,
+    "chosen_future_load_n": 0.0,
+    "requested_probe_load_n": 0.0,
+    "achievable_probe_load_n": 0.0,
+    "maximum_achievable_probe_load_n": 0.0,
+    "support_margin_m": 0.0
+  },
+  "error": null,
+  "recorded_steps": 16548
+}

@@ -1,6 +1,21 @@
-# Go2 PRIMP ground-height adaptation project
+# Go2 foothold testing and movement within demonstrated load limits
 
-This workspace builds on **Quadruped-PyMPC** to study how a quadruped can
+Our current goal is to make a quadruped **test a foothold, then choose a next
+movement justified by the load it actually demonstrated**. Successful contact
+and a large unachieved force request are insufficient. The robot must advance
+its body and lift another leg within a measured support limit, request a
+stronger feasible probe, or stop safely.
+
+The load-limited-pad study records **four adapted movements, four conservative
+safe stops, and three unaware pad-collapse demonstrations** across 11 declared
+trials. Only the four movements count as physical success. This milestone uses
+measured-load certificates and a constrained body/force planner on the existing
+**Quadruped-PyMPC** controller; it does not claim a learned PRIMP strength model.
+See the [results and three replays](primp_project/docs/results/weak_pad.md),
+[experiment guide](primp_project/docs/weak_pad.md), and
+[independent audit](primp_project/results/weak_pad/study/validation/independent_audit.json).
+
+The earlier control and motion-learning foundation studies how a quadruped can
 coordinate body motion, foot motion, and timing when the ground is higher or
 lower than expected. Stable standing and repeated controlled front-foot steps
 on flat ground are implemented and recorded. The landing experiment uses a

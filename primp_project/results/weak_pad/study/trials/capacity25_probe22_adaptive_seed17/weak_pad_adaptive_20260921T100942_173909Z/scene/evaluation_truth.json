@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "scene_type": "independent_landing_pad",
+  "true_height_m": 0.0,
+  "scene_spec": {
+    "true_height_m": 0.0,
+    "target_offset_xy_m": [
+      0.09,
+      0.0
+    ],
+    "pad_half_size_xy_m": [
+      0.032,
+      0.065
+    ],
+    "floor_height_m": -0.12
+  },
+  "landing_geom_name": "primp_landing_pad",
+  "landing_geom_id": 5,
+  "support_geom_names": [
+    "primp_support_FL",
+    "primp_support_FR",
+    "primp_support_RL",
+    "primp_support_RR"
+  ],
+  "support_geom_ids": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "support_top_heights_m": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "scene_path": "/home/ibrahim/Documents/GO-2 PRIMP/primp_project/results/weak_pad/study/trials/capacity25_probe22_adaptive_seed17/weak_pad_adaptive_20260921T100942_173909Z/scene/scene.xml",
+  "geometry": {
+    "target_xy_m": [
+      0.2821567800634587,
+      0.14200000000000002
+    ],
+    "target_offset_xy_m": [
+      0.09,
+      0.0
+    ],
+    "launch_support_xy_m": [
+      [
+        0.19215678006345865,
+        0.14200000000000002
+      ],
+      [
+        0.19215678006345865,
+        -0.14200000000000002
+      ],
+      [
+        -0.1946432199365413,
+        0.14200000000000002
+      ],
+      [
+        -0.1946432199365413,
+        -0.14200000000000002
+      ]
+    ],
+    "foot_radius_m": 0.022,
+    "pad_half_size_xy_m": [
+      0.032,
+      0.065
+    ],
+    "fixed_surface_height_m": 0.0
+  }
+}

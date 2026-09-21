@@ -1,0 +1,27 @@
+{
+  "run_id": "weak_pad_conservative_20260921T100929_937092Z",
+  "video": "/home/ibrahim/Documents/GO-2 PRIMP/primp_project/results/weak_pad/study/trials/capacity25_probe22_conservative_seed17/weak_pad_conservative_20260921T100929_937092Z/media/weak_replay.mp4",
+  "preview": "/home/ibrahim/Documents/GO-2 PRIMP/primp_project/results/weak_pad/study/trials/capacity25_probe22_conservative_seed17/weak_pad_conservative_20260921T100929_937092Z/media/weak_replay.png",
+  "codec": "avc1",
+  "fps": 20,
+  "resolution": [
+    960,
+    720
+  ],
+  "frame_count": 662,
+  "playback_speed": 1.0,
+  "recorded_start_time_s": 0.002,
+  "recorded_end_time_s": 33.05399999999443,
+  "preview_time_s": 31.597999999993366,
+  "signals_sha256": "0266cb01609e1b32b71491415ab70b1d57963936d2d96f461cc9eeb39e4086fd",
+  "scene_sha256": "20b6f6b26e2425f103e2002d12f1b7f019daa76863fef065f727920fd88dfe80",
+  "weak_truth_sha256": "45fdbe9ac25f552086c0426b13bc5589f2c1ed8c797f7d9cdb4db248591083e7",
+  "method": "Restore recorded qpos/qvel and pad_sink_displacement_m with mj_forward; no mj_step or controller execution",
+  "presentation": "Orange weak target; hidden capacity, failure, and sink shown only as evaluation-replay truth",
+  "preview_selection": "Middle of recorded safe_stop interval",
+  "decode_validation": {
+    "all_frames_decoded": true,
+    "decoded_frames": 662,
+    "resolution_valid": true
+  }
+}
